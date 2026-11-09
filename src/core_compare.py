@@ -12,6 +12,8 @@ import math
 import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
@@ -125,9 +127,22 @@ def main(asof: dt.date):
         hs.append(dict(d=day, pl2=p2, pl10=p10, de2=C["bund"]["2"][day], de10=C["bund"]["10"][day],
                        us2=u.get("2 Yr"), us10=u.get("10 Yr")))
 
-    # ------------------------------------------------------------------ FX-hedged yields (rolling 3M hedge, CIP)
-    # hedge pickup for base currency B holding asset in currency L: (r_B - r_L) at 3M, from CIP; + basis adj.
-    r3 = {"PLN": mm["wibor_3m"], "EUR": I["money"]["EUR"]["3m"], "USD": I["money"]["USD"]["3m"]}
+    # ------------------------------------------------------------------ FX hedge pickups
+    # Market EUR/PLN forward points -> FX-implied PLN rate (OIS-consistent); USD via Fed funds OIS.
+    fx = I["fx"]
+    S = fx["eurpln_spot"]
+    mid = lambda k: sum(fx["fwd_points"][k]) / 2 / 1e4
+    fs1 = 1 + mid("1Y") / S                       # F/S over 1Y (365 days from spot)
+    fs3 = 1 + mid("3M") / S                       # 92 days (12 Nov -> 12 Feb)
+    r_eur1 = I["money"]["EUR"]["ois"]["1"] * 365 / 360          # ACT/360 -> annual-ish
+    r_usd1 = I["money"]["USD"]["ois"]["1"] * 365 / 360
+    r_pln1 = ((1 + r_eur1 / 100) * fs1 - 1) * 100                 # FX-implied PLN 1Y rate
+    r1 = {"PLN": r_pln1, "EUR": r_eur1, "USD": r_usd1}
+    pick = dict(
+        eurpln_1y_market=r_pln1 - r_eur1,
+        eurpln_3m_market=(fs3 - 1) * 365 / 92 * 100,
+        eurpln_3m_ibor=(((1 + mm["wibor_3m"] / 100 * 92 / 365) / (1 + I["money"]["EUR"]["3m"] / 100 * 92 / 360)) - 1) * 365 / 92 * 100,
+        usdpln_1y=r_pln1 - r_usd1, pln_implied_1y=r_pln1, eur_ois_1y=r_eur1, usd_ois_1y=r_usd1)
     ccy = {"PL": "PLN", "DE": "EUR", "US": "USD"}
     hedged = []
     for T in (1, 2, 5, 10):
@@ -135,10 +150,7 @@ def main(asof: dt.date):
             y = fn(T)
             row = dict(T=T, asset=asset, local=y)
             for base in ("PLN", "EUR", "USD"):
-                L = ccy[asset]
-                t = 0.25
-                fwd_pick = ((1 + r3[base] / 100 * t) / (1 + r3[L] / 100 * t) - 1) / t * 100  # %/yr
-                row[base] = y + (fwd_pick if base != L else 0.0)
+                row[base] = y + (r1[base] - r1[ccy[asset]])
             hedged.append(row)
 
     # ------------------------------------------------------------------ Bund swapped into PLN (matched maturity)
@@ -156,8 +168,24 @@ def main(asof: dt.date):
             swap_to_pln.append(dict(T=Tf, bund=bund_y, eur_irs=eur_irs[T], bund_asw=bund_asw, pln_irs=pln_irs[T],
                                     synth_pln=synth, polgb=pl_y, pl_asw=pl_asw, adv_pl_bp=(pl_y - synth) * 100))
 
+    # ------------------------------------------------------------------ Poland EUR Eurobonds vs POLGB (local vs hard currency)
+    from analytics import irs_curve
+    pirs = irs_curve(A["market_inputs"])
+    ex = sorted((float(k), v) for k, v in eur_irs.items()) if eur_irs else []
+    eirs = lambda T: interp([e[0] for e in ex], [e[1] for e in ex], T)
+    eurobonds = []
+    for eb in I.get("pl_eurobonds", []):
+        T = eb["T"]
+        asw_e = (eb["yield"] - eirs(T)) * 100
+        pl_y = pl(T)
+        asw_p = (pl_y - pirs(T)) * 100
+        eurobonds.append(dict(name=eb["name"], T=T, eur_yield=eb["yield"], eur_swap=eirs(T), asw_eur=asw_e, bund=de(T),
+                              sp_bund=(eb["yield"] - de(T)) * 100, polgb=pl_y, pln_irs=pirs(T), asw_pln=asw_p,
+                              local_premium=asw_p - asw_e, polgb_hedged_eur=pl_y - (r_pln1 - r_eur1),
+                              hedged_minus_eurobond=(pl_y - (r_pln1 - r_eur1) - eb["yield"]) * 100, issue=eb["issue"]))
+
     out = dict(asof=asof.isoformat(), bund_date=bd, ust_date=ud, grid=grid, carry_roll=cr, snapshot=snap,
-               spread_hist=hs, hedged=hedged, r3=r3, swap_to_pln=swap_to_pln, inputs=I, pap_date=pap["date"],
+               spread_hist=hs, hedged=hedged, r3=m3, pick=pick, r1=r1, swap_to_pln=swap_to_pln, eurobonds=eurobonds, inputs=I, pap_date=pap["date"],
                pap_url=pap["url"], estr=C["estr"], sofr=C["sofr"], euribor=C["euribor"])
     p = DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
     p.write_text(json.dumps(out, indent=1))
@@ -167,8 +195,11 @@ def main(asof: dt.date):
               f"rollret={r['roll_ret_bp']:5.0f} tot={r['total_bp']:6.0f} MD={r['md']:.2f} per_dur={r['per_dur']:5.0f}")
     for h in hedged:
         print(f"T={h['T']:>2} {h['asset']} local={h['local']:.2f}  inPLN={h['PLN']:.2f} inEUR={h['EUR']:.2f} inUSD={h['USD']:.2f}")
-    for s in swap_to_pln:
-        print(s)
+    print("pickups", {k: round(v, 3) for k, v in pick.items()})
+    for x in swap_to_pln:
+        print({k: round(v, 2) if isinstance(v, float) else v for k, v in x.items()})
+    for x in eurobonds:
+        print({k: round(v, 2) if isinstance(v, float) else v for k, v in x.items()})
     print("hist", hs[0], hs[-1], len(hs))
 
 

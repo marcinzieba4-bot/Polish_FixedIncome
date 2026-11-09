@@ -8,6 +8,8 @@ Bond-by-bond analytics for Polish government bonds (POLGB), rendered as one self
 - **Curve & asset swaps**: Nelson-Siegel-Svensson fit to Treasury BondSpot fixings; yield-to-IRS spreads by bond and tenor bucket.
 - **Rich/cheap**: residual of each bond vs the fitted zero curve.
 - **Roll yield, decomposed**: coupon income, pull-to-par, roll-down and repo funding as separate additive pieces (3M and 12M horizons), with breakevens.
+- **Poland vs core markets**: curve steepness, carry+roll, central-bank stance and real rates (NBP, ECB, Fed, BoE, CNB, MNB, BNR),
+  PL−DE/PL−US spread history, FX-hedged yields from EUR/PLN forward points, Bund-swapped-into-PLN (asset swap + CCS) and POLGB vs Poland EUR Eurobonds.
 - **Auctions & timing**: MoF calendar, recent auction results, measured auction-cycle behaviour, cash flows, index rebalances.
 - **Assessment**: ranked trade ideas with entry timing and risks.
 
@@ -19,6 +21,8 @@ python src/fetch_bondspot.py 2026-11-09          # BondSpot fixing + session sum
 python src/fetch_history.py 2026-08-03 2026-11-09 # optional: fixing history for the auction-cycle study
 python src/auction_study.py                       # auction-cycle stats (add --xlsm to re-read the MoF database)
 python src/analytics.py 2026-11-09               # -> data/analytics/analytics_YYYYMMDD.json
+python src/fetch_core.py 2026-08-01              # Bund/UST curves, €STR, SOFR, EURIBOR, PAP cross-country table
+python src/core_compare.py 2026-11-09            # -> data/analytics/core_YYYYMMDD.json
 python src/build_dashboard.py 2026-11-09         # -> dist/dashboard/index.html
 python src/deploy.py                             # needs PFI_S3_BUCKET / PFI_S3_KEY (+ optional PFI_CF_DIST, PFI_CF_PATHS)
 ```
@@ -30,6 +34,7 @@ Inputs that are maintained by hand (sources are listed inside each file):
 | `data/market_inputs.json` | IRS pillars, WIBOR/POLSTR, repo/funding, NBP rates, macro notes | daily/weekly |
 | `data/index_portfolios.json` | GPW Benchmark index units + official stats | monthly (after each "Portfele obligacji" communiqué) |
 | `data/bonds_static.json` | coupons/maturities of fixed-rate POLGBs | when a new line is issued |
+| `data/core/core_inputs.json` | central-bank rates/stance, CPI, EUR/USD swaps & OIS, EUR/PLN forward points, Poland Eurobond yields | weekly / after CB meetings |
 | `data/calendar.json` | auctions, MPC, data, flows, index events | monthly (MoF supply plan) |
 
 ## Conventions

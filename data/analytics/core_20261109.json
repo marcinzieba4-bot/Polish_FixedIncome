@@ -200,7 +200,16 @@
    "ch10_12m": 81.99999999999994,
    "ch2_12m": 67.0,
    "slope_12m_ago": 112.00000000000001,
-   "cb": null
+   "cb": {
+    "bank": "NBP",
+    "rate": 3.75,
+    "rate_disp": "3.75",
+    "last": "\u221225bp, 5 Mar 2026 (only 2026 move)",
+    "next": "1-2 Dec 2026",
+    "stance": "Hawkish hold",
+    "tone": "wait",
+    "pricing": "~125bp of hikes over 12M priced on 2 Nov (Millennium), pared since; PAP consensus: hold to Q3 2027; ING: +50bp in Q1 2027"
+   }
   },
   {
    "country": "Germany",
@@ -216,7 +225,16 @@
    "ch10_12m": 60.00000000000001,
    "ch2_12m": 100.00000000000003,
    "slope_12m_ago": 65.99999999999999,
-   "cb": null
+   "cb": {
+    "bank": "ECB depo",
+    "rate": 2.5,
+    "rate_disp": "2.50",
+    "last": "+25bp eff. 16 Sep 2026 (also +25 Jun); held 29 Oct",
+    "next": "16-17 Dec 2026",
+    "stance": "Hiking, late cycle",
+    "tone": "avoid",
+    "pricing": ">20bp priced for Dec, ~65bp over 12M (ING, 29 Oct)"
+   }
   },
   {
    "country": "United States",
@@ -232,7 +250,16 @@
    "ch10_12m": 77.00000000000004,
    "ch2_12m": 97.00000000000001,
    "slope_12m_ago": 53.99999999999996,
-   "cb": null
+   "cb": {
+    "bank": "Fed",
+    "rate": 3.875,
+    "rate_disp": "3.75-4.00",
+    "last": "+25bp 16 Sep 2026; held 28 Oct (2 dissents for a hike)",
+    "next": "8-9 Dec 2026",
+    "stance": "Hiking bias",
+    "tone": "avoid",
+    "pricing": "~75% for a Dec hike (6 Nov)"
+   }
   },
   {
    "country": "United Kingdom",
@@ -248,7 +275,16 @@
    "ch10_12m": 72.00000000000006,
    "ch2_12m": 97.99999999999996,
    "slope_12m_ago": 63.99999999999997,
-   "cb": null
+   "cb": {
+    "bank": "BoE",
+    "rate": 4.0,
+    "rate_disp": "4.00",
+    "last": "+25bp 5 Nov 2026 (unanimous)",
+    "next": "17 Dec 2026",
+    "stance": "Hiking",
+    "tone": "avoid",
+    "pricing": "~50% for Dec; ~+75bp more by end-2027"
+   }
   },
   {
    "country": "France",
@@ -312,7 +348,16 @@
    "ch10_12m": 58.999999999999986,
    "ch2_12m": 56.999999999999986,
    "slope_12m_ago": 90.99999999999997,
-   "cb": null
+   "cb": {
+    "bank": "CNB",
+    "rate": 4.0,
+    "rate_disp": "4.00",
+    "last": "+25bp 5 Nov 2026 (4-3 vote; also +25 Jun)",
+    "next": "17 Dec 2026",
+    "stance": "Hiking, cautious",
+    "tone": "wait",
+    "pricing": "not found; ING sees 4.00% flat through 2027"
+   }
   },
   {
    "country": "Hungary",
@@ -328,7 +373,16 @@
    "ch10_12m": -147.99999999999994,
    "ch2_12m": -90.00000000000003,
    "slope_12m_ago": 40.99999999999993,
-   "cb": null
+   "cb": {
+    "bank": "MNB",
+    "rate": 5.5,
+    "rate_disp": "5.50",
+    "last": "\u221225bp 25 Aug 2026; held Sep, Oct",
+    "next": "17 Nov 2026",
+    "stance": "Easing bias, on hold",
+    "tone": "go",
+    "pricing": "not found; ING sees 5.25% at 4Q26"
+   }
   },
   {
    "country": "Japan",
@@ -967,23 +1021,23 @@
    "asset": "PL",
    "local": 3.879907675108893,
    "PLN": 3.879907675108893,
-   "EUR": 2.7944636185588707,
-   "USD": 4.177018274529573
+   "EUR": 2.421489872732237,
+   "USD": 3.911906539398904
   },
   {
    "T": 1,
    "asset": "DE",
    "local": 2.87,
-   "PLN": 3.9583975431609906,
+   "PLN": 4.328417802376656,
    "EUR": 2.87,
-   "USD": 4.256316578697766
+   "USD": 4.3604166666666675
   },
   {
    "T": 1,
    "asset": "US",
    "local": 4.33,
-   "PLN": 4.033109923550803,
-   "EUR": 2.948471510923067,
+   "PLN": 4.298001135709989,
+   "EUR": 2.839583333333333,
    "USD": 4.33
   },
   {
@@ -991,23 +1045,23 @@
    "asset": "PL",
    "local": 4.6698253178555005,
    "PLN": 4.6698253178555005,
-   "EUR": 3.584381261305478,
-   "USD": 4.966935917276181
+   "EUR": 3.2114075154788444,
+   "USD": 4.701824182145511
   },
   {
    "T": 2,
    "asset": "DE",
    "local": 2.95,
-   "PLN": 4.038397543160991,
+   "PLN": 4.408417802376656,
    "EUR": 2.95,
-   "USD": 4.336316578697766
+   "USD": 4.440416666666668
   },
   {
    "T": 2,
    "asset": "US",
    "local": 4.51,
-   "PLN": 4.213109923550803,
-   "EUR": 3.1284715109230667,
+   "PLN": 4.478001135709989,
+   "EUR": 3.019583333333333,
    "USD": 4.51
   },
   {
@@ -1015,23 +1069,23 @@
    "asset": "PL",
    "local": 5.603614448395709,
    "PLN": 5.603614448395709,
-   "EUR": 4.518170391845687,
-   "USD": 5.9007250478163895
+   "EUR": 4.145196646019054,
+   "USD": 5.63561331268572
   },
   {
    "T": 5,
    "asset": "DE",
    "local": 3.02,
-   "PLN": 4.10839754316099,
+   "PLN": 4.478417802376656,
    "EUR": 3.02,
-   "USD": 4.406316578697766
+   "USD": 4.510416666666667
   },
   {
    "T": 5,
    "asset": "US",
    "local": 4.64,
-   "PLN": 4.343109923550803,
-   "EUR": 3.2584715109230666,
+   "PLN": 4.608001135709989,
+   "EUR": 3.1495833333333327,
    "USD": 4.64
   },
   {
@@ -1039,51 +1093,300 @@
    "asset": "PL",
    "local": 6.142093350899968,
    "PLN": 6.142093350899968,
-   "EUR": 5.0566492943499455,
-   "USD": 6.439203950320648
+   "EUR": 4.683675548523311,
+   "USD": 6.174092215189979
   },
   {
    "T": 10,
    "asset": "DE",
    "local": 3.29,
-   "PLN": 4.3783975431609905,
+   "PLN": 4.748417802376656,
    "EUR": 3.29,
-   "USD": 4.676316578697766
+   "USD": 4.780416666666667
   },
   {
    "T": 10,
    "asset": "US",
    "local": 4.86,
-   "PLN": 4.563109923550804,
-   "EUR": 3.4784715109230673,
+   "PLN": 4.8280011357099895,
+   "EUR": 3.3695833333333334,
    "USD": 4.86
   }
  ],
  "r3": {
-  "PLN": 3.89,
-  "EUR": 2.794,
-  "USD": 4.19
+  "PL": 3.89,
+  "DE": 2.794,
+  "US": 4.19
  },
- "swap_to_pln": [],
+ "pick": {
+  "eurpln_1y_market": 1.458417802376656,
+  "eurpln_3m_market": 1.325087704163801,
+  "eurpln_3m_ibor": 1.0496993577634883,
+  "usdpln_1y": -0.031998864290010864,
+  "pln_implied_1y": 4.327723357932212,
+  "eur_ois_1y": 2.8693055555555556,
+  "usd_ois_1y": 4.3597222222222225
+ },
+ "r1": {
+  "PLN": 4.327723357932212,
+  "EUR": 2.8693055555555556,
+  "USD": 4.3597222222222225
+ },
+ "swap_to_pln": [
+  {
+   "T": 2.0,
+   "bund": 2.95,
+   "eur_irs": 3.28,
+   "bund_asw": -32.999999999999964,
+   "pln_irs": 4.5,
+   "synth_pln": 4.17,
+   "polgb": 4.6698253178555005,
+   "pl_asw": 16.982531785550048,
+   "adv_pl_bp": 49.98253178555005
+  },
+  {
+   "T": 5.0,
+   "bund": 3.02,
+   "eur_irs": 3.29,
+   "bund_asw": -27.0,
+   "pln_irs": 4.67,
+   "synth_pln": 4.4,
+   "polgb": 5.603614448395709,
+   "pl_asw": 93.36144483957094,
+   "adv_pl_bp": 120.3614448395709
+  },
+  {
+   "T": 10.0,
+   "bund": 3.29,
+   "eur_irs": 3.34,
+   "bund_asw": -4.999999999999982,
+   "pln_irs": 4.99,
+   "synth_pln": 4.94,
+   "polgb": 6.142093350899968,
+   "pl_asw": 115.20933508999676,
+   "adv_pl_bp": 120.20933508999674
+  }
+ ],
+ "eurobonds": [
+  {
+   "name": "Poland EUR 2.875% Jan-2031",
+   "T": 4.2,
+   "eur_yield": 3.81,
+   "eur_swap": 3.287333333333333,
+   "asw_eur": 52.26666666666668,
+   "bund": 3.0,
+   "sp_bund": 81.0,
+   "polgb": 5.444748815675663,
+   "pln_irs": 4.631065871247026,
+   "asw_pln": 81.36829444286366,
+   "local_premium": 29.101627776196977,
+   "polgb_hedged_eur": 3.9863310132990066,
+   "hedged_minus_eurobond": 17.633101329900658,
+   "issue": "8 Jan 2026, \u20ac2bn, MS+43bp, 2.964%"
+  },
+  {
+   "name": "Poland EUR 3.625% Jun-2036",
+   "T": 9.6,
+   "eur_yield": 4.23,
+   "eur_swap": 3.336,
+   "asw_eur": 89.40000000000006,
+   "bund": 3.267333333333333,
+   "sp_bund": 96.26666666666672,
+   "polgb": 6.120302160004929,
+   "pln_irs": 4.962724842534738,
+   "asw_pln": 115.75773174701914,
+   "local_premium": 26.357731747019074,
+   "polgb_hedged_eur": 4.6618843576282725,
+   "hedged_minus_eurobond": 43.188435762827204,
+   "issue": "8 Jan 2026, \u20ac1.25bn, MS+83bp, 3.739%"
+  }
+ ],
  "inputs": {
-  "_note": "Provisional; policy/CPI/swaps filled from research (sources per field).",
+  "_note": "Core-market inputs, research date 9 Nov 2026. Sources per block.",
   "money": {
    "EUR": {
     "3m": 2.794,
     "6m": 3.016,
+    "12m": 3.248,
     "estr": 2.443,
-    "source": "EURIBOR 6 Nov 2026 (euribor-rates.eu); \u20acSTR 6 Nov (ECB)"
+    "ois": {
+     "1": 2.83,
+     "2": 2.93,
+     "5": 2.98,
+     "10": 3.11,
+     "30": 3.13
+    },
+    "source": "EURIBOR fixings 6 Nov 2026 (euribor-rates.eu); \u20acSTR 6 Nov (ECB data API); \u20acSTR OIS 6 Nov (BlueGamma interdealer mids)"
    },
    "USD": {
     "3m": 4.19,
     "sofr": 3.92,
-    "source": "3M T-bill CMT 6 Nov 2026 (US Treasury) as USD 3M proxy; SOFR 5 Nov (NY Fed)"
+    "effr": 3.88,
+    "ois": {
+     "1": 4.3,
+     "2": 4.34,
+     "5": 4.32,
+     "10": 4.41
+    },
+    "source": "3M T-bill CMT 6 Nov (US Treasury); SOFR/EFFR 5 Nov (NY Fed); Fed funds OIS 6 Nov (BlueGamma)"
    }
   },
-  "policy": {},
+  "eur_irs": {
+   "pillars": {
+    "2": 3.28,
+    "5": 3.29,
+    "10": 3.34,
+    "30": 3.23
+   },
+   "source": "EUR swaps vs 6M EURIBOR, 6 Nov 2026 close (BlueGamma interdealer mids; investing.com cross-check 2Y 3.274 / 10Y 3.322)."
+  },
+  "usd_sofr_swaps": {
+   "2": 4.34,
+   "5": 4.36,
+   "10": 4.46,
+   "30": 4.59,
+   "source": "BlueGamma, 6 Nov 2026"
+  },
   "fx": {
-   "basis_note": "provisional"
-  }
+   "eurpln_spot": 4.3848,
+   "spot_note": "9 Nov morning (investing.com); 6 Nov close 4.3934 (LSEG via Bank Millennium)",
+   "fwd_points": {
+    "3M": [
+     145.7,
+     147.2
+    ],
+    "6M": [
+     287.0,
+     297.4
+    ],
+    "1Y": [
+     609.8,
+     633.5
+    ]
+   },
+   "fwd_source": "EUR/PLN forward points, investing.com intraday 9 Nov 2026 (relayed by research; page shows time but no date - treat as indicative)",
+   "basis_note": "No published EUR/PLN cross-currency basis level was found. Market forward points (1Y \u2248 +1.42%/yr EUR\u2192PLN) line up with the OIS gap (\u20acSTR OIS 1Y 2.83% vs FX-implied PLN ~4.25%), so the FX-swap basis looks small. The IBOR-based shortcut (WIBOR\u2212EURIBOR 3M) understates the pickup by ~25-35bp because forwards price the expected policy path, not the fixings."
+  },
+  "pl_eurobonds": [
+   {
+    "name": "Poland EUR 2.875% Jan-2031",
+    "isin": "XS3268040964",
+    "T": 4.2,
+    "yield": 3.81,
+    "issue": "8 Jan 2026, \u20ac2bn, MS+43bp, 2.964%"
+   },
+   {
+    "name": "Poland EUR 3.625% Jun-2036",
+    "isin": "XS3268043554",
+    "T": 9.6,
+    "yield": 4.23,
+    "issue": "8 Jan 2026, \u20ac1.25bn, MS+83bp, 3.739%"
+   }
+  ],
+  "pl_eurobond_source": "Indicative yields: Borsa Italiana MOT reference prices 6 Nov 2026 (retail venue). Issue terms: gov.pl/web/finanse/wycena-obligacji-w-euro-20260109",
+  "policy": {
+   "Poland": {
+    "bank": "NBP",
+    "rate": 3.75,
+    "rate_disp": "3.75",
+    "last": "\u221225bp, 5 Mar 2026 (only 2026 move)",
+    "next": "1-2 Dec 2026",
+    "stance": "Hawkish hold",
+    "tone": "wait",
+    "pricing": "~125bp of hikes over 12M priced on 2 Nov (Millennium), pared since; PAP consensus: hold to Q3 2027; ING: +50bp in Q1 2027"
+   },
+   "Germany": {
+    "bank": "ECB depo",
+    "rate": 2.5,
+    "rate_disp": "2.50",
+    "last": "+25bp eff. 16 Sep 2026 (also +25 Jun); held 29 Oct",
+    "next": "16-17 Dec 2026",
+    "stance": "Hiking, late cycle",
+    "tone": "avoid",
+    "pricing": ">20bp priced for Dec, ~65bp over 12M (ING, 29 Oct)"
+   },
+   "United States": {
+    "bank": "Fed",
+    "rate": 3.875,
+    "rate_disp": "3.75-4.00",
+    "last": "+25bp 16 Sep 2026; held 28 Oct (2 dissents for a hike)",
+    "next": "8-9 Dec 2026",
+    "stance": "Hiking bias",
+    "tone": "avoid",
+    "pricing": "~75% for a Dec hike (6 Nov)"
+   },
+   "United Kingdom": {
+    "bank": "BoE",
+    "rate": 4.0,
+    "rate_disp": "4.00",
+    "last": "+25bp 5 Nov 2026 (unanimous)",
+    "next": "17 Dec 2026",
+    "stance": "Hiking",
+    "tone": "avoid",
+    "pricing": "~50% for Dec; ~+75bp more by end-2027"
+   },
+   "Czechia": {
+    "bank": "CNB",
+    "rate": 4.0,
+    "rate_disp": "4.00",
+    "last": "+25bp 5 Nov 2026 (4-3 vote; also +25 Jun)",
+    "next": "17 Dec 2026",
+    "stance": "Hiking, cautious",
+    "tone": "wait",
+    "pricing": "not found; ING sees 4.00% flat through 2027"
+   },
+   "Hungary": {
+    "bank": "MNB",
+    "rate": 5.5,
+    "rate_disp": "5.50",
+    "last": "\u221225bp 25 Aug 2026; held Sep, Oct",
+    "next": "17 Nov 2026",
+    "stance": "Easing bias, on hold",
+    "tone": "go",
+    "pricing": "not found; ING sees 5.25% at 4Q26"
+   },
+   "Romania": {
+    "bank": "BNR",
+    "rate": 6.5,
+    "rate_disp": "6.50",
+    "last": "unchanged since Aug 2024; held 8 Oct",
+    "next": "12 Nov 2026",
+    "stance": "On hold",
+    "tone": "wait",
+    "pricing": "not found; PKO expects a hold"
+   }
+  },
+  "cpi": {
+   "Poland": {
+    "v": 3.5,
+    "m": "Oct flash"
+   },
+   "Germany": {
+    "v": 4.0,
+    "m": "euro area HICP Oct flash (Germany CPI 2.8%)"
+   },
+   "United States": {
+    "v": 3.7,
+    "m": "Sep (core 2.6)"
+   },
+   "United Kingdom": {
+    "v": 3.5,
+    "m": "latest"
+   },
+   "Czechia": {
+    "v": 2.4,
+    "m": "Oct flash"
+   },
+   "Hungary": {
+    "v": 1.6,
+    "m": "Sep (core 1.9)"
+   },
+   "Romania": {
+    "v": 6.61,
+    "m": "Sep"
+   }
+  },
+  "policy_note": "Real rate = policy rate \u2212 latest CPI (ECB vs euro-area HICP 4.0%; US Sep CPI 3.7%; CZ Oct flash 2.4%; HU Sep 1.6%; RO Sep 6.6%). Fed rate = midpoint of the 3.75-4.00% range. Sources: ECB key rates page and calendar; Fed press releases 16 Sep / 28 Oct 2026; Bank of England Bank Rate page; CNB board decisions; MNB press release 20 Oct 2026; NBP/MPC communiqu\u00e9 4 Nov; ING Think Rates Spark (29 Oct-5 Nov); Bank Millennium and PKO BP dailies. Fed Chair: Warsh."
  },
  "pap_date": "09.11.2026",
  "pap_url": "https://www.wnp.pl/rynki/rentownosci-obligacji-wybranych-panstw,1117879.html",

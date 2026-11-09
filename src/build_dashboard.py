@@ -148,8 +148,10 @@ def main(asof: dt.date):
       <b>18 Nov and 25 Nov</b>, not in the run-up. Scale into the front end around the <b>2 Dec MPC</b>. Hold through the December supply pause
       and the <b>25 Jan</b> OK0127 redemption and coupon reinvestment.</li>""" + (f"""
     <li><b>Versus core:</b> Poland is the steep, high-carry curve in a world of flattening core curves. 10Y carry+roll is {f(kc[('PL', 10)]['total_bp'], 0)}bp/yr vs {f(kc[('DE', 10)]['total_bp'], 0)} (Bund) and {f(kc[('US', 10)]['total_bp'], 0)} (UST).
-      PL−Bund 10Y is ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp. FX-hedged into PLN, Bunds and USTs lose to POLGBs from 2Y out by 50-180bp, so "buy Bund and swap it into PLN" doesn't pay for duration.
-      It does pay at the very front end: a 1Y Bund hedged into PLN ≈ {f(k_de1)}% vs {f(k_sub1)}% on sub-1Y POLGBs (basis caveat in the section).</li>""" if K else "") + f"""
+      PL−Bund 10Y is ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp. Hedged into PLN at market forward points (EUR→PLN hedge pays ~{f(K['pick']['eurpln_1y_market'])}%/yr), Bunds lose to POLGBs from 2Y out
+      ({f((kh[('PL', 2)]['PLN'] - kh[('DE', 2)]['PLN']) * 100, 0)}bp at 2Y, ~120bp at 5-10Y matched-maturity), so "buy Bund and swap into PLN" doesn't pay for duration.
+      It does pay at the front end: a 1Y Bund hedged into PLN ≈ {f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for the 1Y POLGB and {f(k_sub1)}% for sub-1Y POLGBs.
+      A EUR investor gets ~{f(K['eurobonds'][-1]['hedged_minus_eurobond'], 0) if K.get('eurobonds') else '–'}bp more from a hedged POLGB than from Poland's own EUR 2036 bond.</li>""" if K else "") + f"""
   </ol>
   <div class="sub">Funding {f(fund)}% · IRS pillars from LSEG via Bank Millennium (6 Nov close), other tenors interpolated · horizon returns assume an unchanged curve and constant rich/cheap.</div>
 </div>
@@ -379,8 +381,9 @@ def main(asof: dt.date):
          "For cash, use EUR bills + EUR/PLN FX swap (next card), T-bills or POLSTR deposits instead."),
     ] + ([
         ("go", "PLN cash/short book: EUR bills or Schatz + rolling EUR/PLN FX swap instead of sub-1Y POLGBs",
-         f"A 1Y Bund hedged into PLN yields ≈{f(k_de1)}% (covered parity with WIBOR/EURIBOR 3M) vs {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity.",
-         "Risk: the FX-swap-implied PLN rate can sit below WIBOR (basis), which eats the pickup one for one. Check live forward points before executing."),
+         f"A 1Y Bund/Schatz hedged into PLN on the 1Y forward yields ≈{f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for a 1Y POLGB and {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity. "
+         "The forward points pay for the NBP hikes the market prices.",
+         "Risk: forward points move with NBP pricing, and the quotes used are indicative. Lock the forward at execution. If the NBP hikes more than priced, short POLGBs catch up."),
         ("wait", "Long POLGB 10Y vs short Bund 10Y (DV01-matched, FX-hedged): the fiscal-premium compression trade",
          f"PL−DE 10Y at ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp (peak ~299bp on 28 Oct, ~245bp in early August). It carries ~{f(kc[('PL', 10)]['total_bp'] - kc[('DE', 10)]['total_bp'], 0)}bp/yr more than the Bund leg.",
          "Risk: fiscal or ratings news widens the spread. Needs a catalyst (2027 consolidation, rating stabilisation). Enter on supply-driven widening."),
@@ -417,6 +420,10 @@ def main(asof: dt.date):
     <li><b>IRS / ASW:</b> {E(mi['irs']['source'])} Cross-check (unverified) quotes of 1Y 4.285 / 3Y 4.52 / 7Y 4.853 are within ~5bp of the interpolated curve.</li>
     <li><b>Money market:</b> {E(mm['source'])}</li>
     <li><b>Carry/roll:</b> per-bond horizon repricing. The fitted zero curve is held fixed by time-to-cash-flow and each bond's z-spread residual is held constant. Bonds that mature inside the horizon redeem at par and the cash earns the funding rate.</li>
+    <li><b>Poland vs core:</b> Bund curve from the Bundesbank term-structure series (BBSIS, fitted yields by residual maturity); US Treasury daily par yield curve; €STR (ECB data API), SOFR/EFFR (NY Fed), EURIBOR (euribor-rates.eu);
+      cross-country benchmark yields from the PAP table republished by wnp.pl; EUR swaps vs 6M EURIBOR, €STR OIS and Fed funds OIS from BlueGamma interdealer mids (6 Nov); EUR/PLN forward points from investing.com (indicative, 9 Nov);
+      Poland EUR Eurobond yields from Borsa Italiana MOT (indicative). Carry+roll = (yield − local 3M rate) + duration × 1Y slide on each market's curve. Hedged yields use 1Y FX-implied rates.
+      Matched-maturity swaps assume zero cross-currency basis; no published EUR/PLN basis level was found.</li>
     <li><b>Calendar &amp; supply:</b> MoF 2026 auction calendar, Q4 financing plan, November supply plan and the MoF auction database (<a href="{E(cal['_sources']['nov_2026_supply'])}" rel="noopener">Nov plan</a>,
       <a href="{E(cal['_sources']['auction_results_db'])}" rel="noopener">results DB</a>). MPC: NBP 2026 schedule. Macro: NBP projection, GUS flash CPI, MoF, PKO BP and Bank Millennium dailies of 9 Nov 2026.</li>
     <li><b>Refresh:</b> <code>python src/fetch_bondspot.py YYYY-MM-DD &amp;&amp; python src/analytics.py YYYY-MM-DD &amp;&amp; python src/build_dashboard.py YYYY-MM-DD</code>, then <code>python src/deploy.py</code>. Update data/market_inputs.json (IRS, WIBOR) and data/index_portfolios.json each month.</li>

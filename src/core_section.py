@@ -27,16 +27,16 @@ def core_section(K, A, B):
     hs = K["spread_hist"]
     first, last = hs[0], hs[-1]
     peak = max(hs, key=lambda x: x["pl10"] - x["de10"])
-    r3 = K["r3"]
-    pick_eur = hed[("DE", 10)]["PLN"] - hed[("DE", 10)]["local"]
-    pick_usd = hed[("US", 10)]["PLN"] - hed[("US", 10)]["local"]
+    pk = K["pick"]
+    pick_eur, pick_usd = pk["eurpln_1y_market"], pk["usdpln_1y"]
+    fx = I.get("fx", {})
     mm = A["market_inputs"]["money_market"]
     pl, de, us = snap["Poland"], snap["Germany"], snap["United States"]
     cm = {k: (cr[(k, 10)]["y"] - cr[(k, 2)]["y"]) * 100 for k in ("PL", "DE", "US")}  # constant-maturity 2s10s
     ch2 = sorted([de["ch2_12m"], us["ch2_12m"]])
 
     # ---------------- central banks table
-    order = ["Poland", "Germany", "United States", "United Kingdom", "Czechia", "Hungary"]
+    order = ["Poland", "Germany", "United States", "United Kingdom", "Czechia", "Hungary", "Romania"]
     cb_rows = []
     for c in order:
         p = pol.get(c)
@@ -45,11 +45,11 @@ def core_section(K, A, B):
         infl = cpi.get(c, {})
         real = (p["rate"] - infl["v"]) if (p.get("rate") is not None and infl.get("v") is not None) else None
         cb_rows.append(
-            f"<tr><td class='l'><b>{E(p['bank'])}</b> <span class='small'>{E(c)}</span></td><td>{f(p.get('rate'))}%</td>"
+            f"<tr><td class='l'><b>{E(p['bank'])}</b> <span class='small'>{E(c)}</span></td><td>{E(p.get('rate_disp') or f(p.get('rate')))}%</td>"
             f"<td class='l' style='white-space:normal;min-width:120px'>{E(p.get('last', ''))}</td><td class='l'>{E(p.get('next', ''))}</td>"
             f"<td class='l'><span class='status {E(p.get('tone', ''))}'>{E(p.get('stance', ''))}</span></td>"
-            f"<td class='l' style='white-space:normal;min-width:220px'>{E(p.get('pricing', ''))}</td>"
-            f"<td>{f(infl.get('v'), 1)}% <span class='small'>{E(infl.get('m', ''))}</span></td><td>{sg(real, 2)}</td></tr>")
+            f"<td class='l' style='white-space:normal;min-width:170px;max-width:260px'>{E(p.get('pricing', ''))}</td>"
+            f"<td title='{E(infl.get('m', ''))}'>{f(infl.get('v'), 1)}%</td><td><b>{sg(real, 2)}</b></td></tr>")
 
     # ---------------- cross-country table
     ctry = ["Poland", "Hungary", "Czechia", "United Kingdom", "United States", "France", "Italy", "Spain", "Germany", "Japan"]
@@ -82,14 +82,20 @@ def core_section(K, A, B):
   <h3>Bund swapped into PLN at matched maturity (asset swap + cross-currency swap)</h3>
   <p class="small">Buy the Bund, pay EUR IRS (now earning EURIBOR + Bund ASW), swap the EURIBOR leg into WIBOR with a EUR/PLN cross-currency basis swap,
   then receive PLN IRS. You end up with a PLN fixed yield of ≈ PLN IRS + Bund ASW + basis. A POLGB gives PLN IRS + POLGB ASW. So the comparison
-  reduces to <b>POLGB ASW vs Bund ASW (+ basis)</b>. Basis is set to 0 here; see the sensitivity line. EUR swap source: {E(src)}</p>
+  reduces to <b>POLGB ASW vs Bund ASW (+ basis)</b>. Basis is set to 0 here, so the last column is also the basis it would take to flip the result. EUR swap source: {E(src)}</p>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th>Bund %</th><th>EUR IRS %</th><th>Bund ASW bp</th><th>PLN IRS %</th>
   <th>Synthetic PLN yield %</th><th>POLGB %</th><th>POLGB ASW bp</th><th>POLGB advantage bp</th></tr></thead><tbody>{stp_rows}</tbody></table></div>"""
     else:
         stp_html = """<p class="small">EUR swap quotes were not available from a verifiable free source, so the matched-maturity (asset swap + CCS)
   version is not shown. The rolling-hedge table above is the conservative proxy.</p>"""
 
-    basis_note = I.get("fx", {}).get("basis_note", "")
+    basis_note = fx.get("basis_note", "")
+    ebs = K.get("eurobonds") or []
+    eb_rows = "".join(
+        f"<tr><td class='l'>{E(e['name'])}</td><td>{f(e['T'], 1)}</td><td>{f(e['eur_yield'])}</td><td>{sg(e['sp_bund'], 0)}</td><td>{sg(e['asw_eur'], 0)}</td>"
+        f"<td>{f(e['polgb'])}</td><td>{sg(e['asw_pln'], 0)}</td><td><b>{sg(e['local_premium'], 0)}</b></td><td>{f(e['polgb_hedged_eur'])}</td><td><b>{sg(e['hedged_minus_eurobond'], 0)}</b></td></tr>"
+        for e in ebs)
+    eb10 = ebs[-1] if ebs else None
     lo_pl = min(B["PS0527"]["ytm"], B["DS0727"]["ytm"])
     hi_pl = max(B["PS0527"]["ytm"], B["DS0727"]["ytm"])
     de1_pln = hed[("DE", 1)]["PLN"]
@@ -114,7 +120,7 @@ def core_section(K, A, B):
       <div class="kv"><span>Germany / US</span><b>{f(cr[('DE', 10)]['total_bp'], 0)} / {f(cr[('US', 10)]['total_bp'], 0)}bp</b>
       <span>Per duration year PL / DE / US</span><b>{f(cr[('PL', 10)]['per_dur'], 0)} / {f(cr[('DE', 10)]['per_dur'], 0)} / {f(cr[('US', 10)]['per_dur'], 0)}</b>
       <span>2Y per duration PL / DE / US</span><b>{f(cr[('PL', 2)]['per_dur'], 0)} / {f(cr[('DE', 2)]['per_dur'], 0)} / {f(cr[('US', 2)]['per_dur'], 0)}</b></div>
-      <p class="small">Excess over local 3M cash, which equals what an FX-hedged investor earns under covered interest parity.</p></div>
+      <p class="small">Excess over local 3M cash. That is roughly what an FX-hedged investor keeps, since the hedge pays the short-rate differential.</p></div>
     <div class="ixcard"><div class="name">10Y spread over Bunds</div><div class="hero">{sg((last['pl10'] - last['de10']) * 100, 0)}<small>bp</small></div>
       <div class="kv"><span>{E(first['d'])}</span><b>{sg((first['pl10'] - first['de10']) * 100, 0)}bp</b><span>Peak {E(peak['d'])}</span><b>{sg((peak['pl10'] - peak['de10']) * 100, 0)}bp</b>
       <span>vs Hungary / Czechia (PAP)</span><b>{sg((pl['y10'] - snap['Hungary']['y10']) * 100, 0)} / {sg((pl['y10'] - snap['Czechia']['y10']) * 100, 0)}bp</b></div>
@@ -122,7 +128,7 @@ def core_section(K, A, B):
   </div>
 
   <h3>Central banks</h3>
-  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Bank</th><th>Policy rate</th><th class="l">Last move</th><th class="l">Next meeting</th><th class="l">Stance</th><th class="l">What markets price</th><th>Latest CPI</th><th>Real policy rate</th></tr></thead>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Bank</th><th>Policy rate</th><th class="l">Last move</th><th class="l">Next meeting</th><th class="l">Stance</th><th class="l">What markets price</th><th>CPI</th><th>Real rate</th></tr></thead>
   <tbody>{''.join(cb_rows)}</tbody></table></div>
   <p class="small">{E(I.get('policy_note', ''))}</p>
 
@@ -140,20 +146,31 @@ def core_section(K, A, B):
   <tbody>{cc_rows}</tbody></table></div>
   <p class="small">* Hungary short tenor is 3Y. Source: <a href="{E(K['pap_url'])}" rel="noopener">PAP via wnp.pl</a>. The PAP "2Y" for Poland is the OK0129 benchmark (2.2Y), slightly above the fitted 2.0Y point used in the carry figures.</p>
 
-  <h3>FX-hedged yields: who pays most in your own currency? (rolling 3M FX hedge)</h3>
-  <p class="small">Hedged yield = local yield + (3M rate of your currency − 3M rate of the bond's currency), using covered-interest-parity forwards from
-  WIBOR 3M {f(r3['PLN'])}%, EURIBOR 3M {f(r3['EUR'])}% and USD 3M {f(r3['USD'])}% (3M T-bill as the USD proxy). A PLN investor is paid ≈{sg(pick_eur)}%/yr to hedge EUR assets
-  and pays ≈{sg(pick_usd)}%/yr to hedge USD assets. Bold marks the highest hedged yield per tenor and currency.</p>
+  <h3>FX-hedged yields: which bond pays most in your own currency?</h3>
+  <p class="small"><b>Hedge cost from market forward points, not a formula.</b> EUR/PLN spot {f(fx.get('eurpln_spot'), 4)}, 1Y forward points ≈{f(sum(fx['fwd_points']['1Y']) / 2, 0)} pips
+  and 3M ≈{f(sum(fx['fwd_points']['3M']) / 2, 0)} pips. A PLN investor holding EUR assets is therefore <b>paid {f(pick_eur)}%/yr</b> to hedge on a 1Y forward ({f(pk['eurpln_3m_market'])}%/yr rolling 3M).
+  The textbook WIBOR−EURIBOR 3M shortcut gives only {f(pk['eurpln_3m_ibor'])}%. The FX-implied 1Y PLN rate is {f(pk['pln_implied_1y'])}% vs €STR OIS 1Y {f(pk['eur_ois_1y'])}%, consistent with the
+  NBP hikes priced in the PLN curve. USD has no direct USD/PLN points here, so it uses Fed funds OIS 1Y ({f(pk['usd_ois_1y'])}%) against the FX-implied PLN rate: hedge ≈{sg(pick_usd)}%/yr.
+  Hedged yield = local yield + (1Y rate of your currency − 1Y rate of the bond's currency). Longer bonds carry roll risk on the hedge. Bold marks the highest hedged yield per tenor and currency.
+  Forward points: {E(fx.get('fwd_source', ''))}.</p>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th class="l">Bond</th><th>Local %</th><th>Hedged into PLN %</th><th>Hedged into EUR %</th><th>Hedged into USD %</th></tr></thead><tbody>{hm_rows}</tbody></table></div>
   {stp_html}
+  <h3>Same issuer, two currencies: POLGB (PLN) vs Poland's EUR Eurobonds</h3>
+  <p class="small">The cleanest "basis" signal: identical Polish sovereign credit, priced in two markets. Local premium = POLGB ASW vs WIBOR swaps minus Eurobond ASW vs EURIBOR swaps (tenor-matched on the fitted curves).
+  Eurobond yields are indicative ({E(I.get('pl_eurobond_source', ''))}).</p>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Eurobond</th><th>Yrs</th><th>EUR yld %</th><th>vs Bund</th><th>ASW EUR</th><th>POLGB %</th><th>ASW PLN</th><th>Local prem.</th><th>POLGB→EUR %</th><th>vs Eurobond</th></tr></thead><tbody>{eb_rows}</tbody></table></div>
   <div class="note"><b>Does "buy Bund, swap into PLN" make sense?</b>
     <ul class="tight">
-      <li><b>From 2Y out, no.</b> POLGBs beat hedged Bunds by {f(adv2_de * 100, 0)}bp at 2Y and {f(adv10_de * 100, 0)}bp at 10Y (rolling hedge). Matched-maturity, the gap is the POLGB-minus-Bund asset-swap spread,
-        roughly 100bp at 5-10Y. For the Bund route to win, the EUR/PLN cross-currency basis would have to move by about a full percentage point. That is far outside anything seen for a liquid pair like EUR/PLN.</li>
-      <li><b>At the very front end, yes.</b> Sub-1Y POLGBs (PS0527/DS0727) yield {f(lo_pl)}-{f(hi_pl)}%, below repo. A 1Y German bill or Schatz hedged into PLN gives ≈{f(de1_pln)}%, and a 1Y UST
-        ≈{f(us1_pln)}%. For a PLN liquidity book, EUR bills plus a rolling EUR/PLN FX swap pick up ~{f((de1_pln - hi_pl) * 100, 0)}-{f((de1_pln - lo_pl) * 100, 0)}bp over short POLGBs, with Bund credit.
-        The pickup depends on the FX-swap-implied PLN rate. If FX swaps price PLN below WIBOR (a negative basis for the PLN holder), the gain shrinks one for one.</li>
-      <li><b>For EUR-based money, the trade runs the other way.</b> POLGB 10Y hedged into EUR ≈ {f(pl_e10)}%, which is {f(adv10_eur * 100, 0)}bp over Bunds, against ~150bp for French OATs and ~110bp for Italian BTPs unhedged.
+      <li><b>From 2Y out, no.</b> POLGBs beat hedged Bunds by {f(adv2_de * 100, 0)}bp at 2Y and {f(adv10_de * 100, 0)}bp at 10Y on the 1Y hedge. At matched maturity (asset swap + CCS) the gap is
+        {', '.join(f"{sg(x['adv_pl_bp'], 0)}bp at {int(x['T'])}Y" for x in stp)}: POLGB ASW is ~+95-115bp, while Bunds trade below EURIBOR swaps ({', '.join(f"{sg(x['bund_asw'], 0)}" for x in stp)}bp).
+        For the Bund route to win, the EUR/PLN cross-currency basis would have to be worth that much. The forward points suggest it is small, so it isn't close.</li>
+      <li><b>At the front end, yes, and this is the real basis trade.</b> Sub-1Y POLGBs (PS0527/DS0727) yield {f(lo_pl)}-{f(hi_pl)}%, below repo, and the fitted 1Y POLGB is {f(hed[('PL', 1)]['local'])}%.
+        A 1Y Bund/Schatz (or German bill) hedged into PLN on the 1Y forward gives ≈{f(de1_pln)}%, and a 1Y UST ≈{f(us1_pln)}%. That is <b>+{f((de1_pln - hed[('PL', 1)]['local']) * 100, 0)}bp vs the 1Y POLGB and
+        +{f((de1_pln - hi_pl) * 100, 0)}-{f((de1_pln - lo_pl) * 100, 0)}bp vs short POLGBs</b>, with Bund credit. The reason: forward points embed the NBP hikes the market prices, while short POLGBs are held down by bank liquidity demand and MoF buybacks.
+        If the NBP doesn't hike, the forward was "too generous" and you keep the pickup. If it does, short POLGBs reprice and the edge narrows.</li>
+      <li><b>For EUR-based money, the trade runs the other way.</b> POLGB 10Y hedged into EUR ≈ {f(pl_e10)}%, which is {f(adv10_eur * 100, 0)}bp over Bunds,
+        against {sg(snap['France']['sp_de'], 0)}bp for French OATs and {sg(snap['Italy']['sp_de'], 0)}bp for Italian BTPs.""" + (f""" It also pays {sg(eb10['hedged_minus_eurobond'], 0)}bp more than Poland's own EUR 2036 Eurobond ({f(eb10['eur_yield'])}%),
+        i.e. a local-currency premium of ~{f(eb10['local_premium'], 0)}bp in swap terms for the same credit.""" if eb10 else "") + f"""
         The rolling hedge leaves you exposed to the PLN-EUR short-rate gap: an NBP hike raises your hedge cost.</li>
       <li><b>Basis data caveat.</b> {E(basis_note)}</li>
     </ul>

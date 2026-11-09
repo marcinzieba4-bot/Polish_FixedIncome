@@ -1,20 +1,187 @@
 {
-  "_note": "Provisional; policy/CPI/swaps filled from research (sources per field).",
+  "_note": "Core-market inputs, research date 9 Nov 2026. Sources per block.",
   "money": {
     "EUR": {
       "3m": 2.794,
       "6m": 3.016,
+      "12m": 3.248,
       "estr": 2.443,
-      "source": "EURIBOR 6 Nov 2026 (euribor-rates.eu); \u20acSTR 6 Nov (ECB)"
+      "ois": {
+        "1": 2.83,
+        "2": 2.93,
+        "5": 2.98,
+        "10": 3.11,
+        "30": 3.13
+      },
+      "source": "EURIBOR fixings 6 Nov 2026 (euribor-rates.eu); €STR 6 Nov (ECB data API); €STR OIS 6 Nov (BlueGamma interdealer mids)"
     },
     "USD": {
       "3m": 4.19,
       "sofr": 3.92,
-      "source": "3M T-bill CMT 6 Nov 2026 (US Treasury) as USD 3M proxy; SOFR 5 Nov (NY Fed)"
+      "effr": 3.88,
+      "ois": {
+        "1": 4.3,
+        "2": 4.34,
+        "5": 4.32,
+        "10": 4.41
+      },
+      "source": "3M T-bill CMT 6 Nov (US Treasury); SOFR/EFFR 5 Nov (NY Fed); Fed funds OIS 6 Nov (BlueGamma)"
     }
   },
-  "policy": {},
+  "eur_irs": {
+    "pillars": {
+      "2": 3.28,
+      "5": 3.29,
+      "10": 3.34,
+      "30": 3.23
+    },
+    "source": "EUR swaps vs 6M EURIBOR, 6 Nov 2026 close (BlueGamma interdealer mids; investing.com cross-check 2Y 3.274 / 10Y 3.322)."
+  },
+  "usd_sofr_swaps": {
+    "2": 4.34,
+    "5": 4.36,
+    "10": 4.46,
+    "30": 4.59,
+    "source": "BlueGamma, 6 Nov 2026"
+  },
   "fx": {
-    "basis_note": "provisional"
-  }
+    "eurpln_spot": 4.3848,
+    "spot_note": "9 Nov morning (investing.com); 6 Nov close 4.3934 (LSEG via Bank Millennium)",
+    "fwd_points": {
+      "3M": [
+        145.7,
+        147.2
+      ],
+      "6M": [
+        287.0,
+        297.4
+      ],
+      "1Y": [
+        609.8,
+        633.5
+      ]
+    },
+    "fwd_source": "EUR/PLN forward points, investing.com intraday 9 Nov 2026 (relayed by research; page shows time but no date - treat as indicative)",
+    "basis_note": "No published EUR/PLN cross-currency basis level was found. Market forward points (1Y ≈ +1.42%/yr EUR→PLN) line up with the OIS gap (€STR OIS 1Y 2.83% vs FX-implied PLN ~4.25%), so the FX-swap basis looks small. The IBOR-based shortcut (WIBOR−EURIBOR 3M) understates the pickup by ~25-35bp because forwards price the expected policy path, not the fixings."
+  },
+  "pl_eurobonds": [
+    {
+      "name": "Poland EUR 2.875% Jan-2031",
+      "isin": "XS3268040964",
+      "T": 4.2,
+      "yield": 3.81,
+      "issue": "8 Jan 2026, €2bn, MS+43bp, 2.964%"
+    },
+    {
+      "name": "Poland EUR 3.625% Jun-2036",
+      "isin": "XS3268043554",
+      "T": 9.6,
+      "yield": 4.23,
+      "issue": "8 Jan 2026, €1.25bn, MS+83bp, 3.739%"
+    }
+  ],
+  "pl_eurobond_source": "Indicative yields: Borsa Italiana MOT reference prices 6 Nov 2026 (retail venue). Issue terms: gov.pl/web/finanse/wycena-obligacji-w-euro-20260109",
+  "policy": {
+    "Poland": {
+      "bank": "NBP",
+      "rate": 3.75,
+      "rate_disp": "3.75",
+      "last": "−25bp, 5 Mar 2026 (only 2026 move)",
+      "next": "1-2 Dec 2026",
+      "stance": "Hawkish hold",
+      "tone": "wait",
+      "pricing": "~125bp of hikes over 12M priced on 2 Nov (Millennium), pared since; PAP consensus: hold to Q3 2027; ING: +50bp in Q1 2027"
+    },
+    "Germany": {
+      "bank": "ECB depo",
+      "rate": 2.5,
+      "rate_disp": "2.50",
+      "last": "+25bp eff. 16 Sep 2026 (also +25 Jun); held 29 Oct",
+      "next": "16-17 Dec 2026",
+      "stance": "Hiking, late cycle",
+      "tone": "avoid",
+      "pricing": ">20bp priced for Dec, ~65bp over 12M (ING, 29 Oct)"
+    },
+    "United States": {
+      "bank": "Fed",
+      "rate": 3.875,
+      "rate_disp": "3.75-4.00",
+      "last": "+25bp 16 Sep 2026; held 28 Oct (2 dissents for a hike)",
+      "next": "8-9 Dec 2026",
+      "stance": "Hiking bias",
+      "tone": "avoid",
+      "pricing": "~75% for a Dec hike (6 Nov)"
+    },
+    "United Kingdom": {
+      "bank": "BoE",
+      "rate": 4.0,
+      "rate_disp": "4.00",
+      "last": "+25bp 5 Nov 2026 (unanimous)",
+      "next": "17 Dec 2026",
+      "stance": "Hiking",
+      "tone": "avoid",
+      "pricing": "~50% for Dec; ~+75bp more by end-2027"
+    },
+    "Czechia": {
+      "bank": "CNB",
+      "rate": 4.0,
+      "rate_disp": "4.00",
+      "last": "+25bp 5 Nov 2026 (4-3 vote; also +25 Jun)",
+      "next": "17 Dec 2026",
+      "stance": "Hiking, cautious",
+      "tone": "wait",
+      "pricing": "not found; ING sees 4.00% flat through 2027"
+    },
+    "Hungary": {
+      "bank": "MNB",
+      "rate": 5.5,
+      "rate_disp": "5.50",
+      "last": "−25bp 25 Aug 2026; held Sep, Oct",
+      "next": "17 Nov 2026",
+      "stance": "Easing bias, on hold",
+      "tone": "go",
+      "pricing": "not found; ING sees 5.25% at 4Q26"
+    },
+    "Romania": {
+      "bank": "BNR",
+      "rate": 6.5,
+      "rate_disp": "6.50",
+      "last": "unchanged since Aug 2024; held 8 Oct",
+      "next": "12 Nov 2026",
+      "stance": "On hold",
+      "tone": "wait",
+      "pricing": "not found; PKO expects a hold"
+    }
+  },
+  "cpi": {
+    "Poland": {
+      "v": 3.5,
+      "m": "Oct flash"
+    },
+    "Germany": {
+      "v": 4.0,
+      "m": "euro area HICP Oct flash (Germany CPI 2.8%)"
+    },
+    "United States": {
+      "v": 3.7,
+      "m": "Sep (core 2.6)"
+    },
+    "United Kingdom": {
+      "v": 3.5,
+      "m": "latest"
+    },
+    "Czechia": {
+      "v": 2.4,
+      "m": "Oct flash"
+    },
+    "Hungary": {
+      "v": 1.6,
+      "m": "Sep (core 1.9)"
+    },
+    "Romania": {
+      "v": 6.61,
+      "m": "Sep"
+    }
+  },
+  "policy_note": "Real rate = policy rate − latest CPI (ECB vs euro-area HICP 4.0%; US Sep CPI 3.7%; CZ Oct flash 2.4%; HU Sep 1.6%; RO Sep 6.6%). Fed rate = midpoint of the 3.75-4.00% range. Sources: ECB key rates page and calendar; Fed press releases 16 Sep / 28 Oct 2026; Bank of England Bank Rate page; CNB board decisions; MNB press release 20 Oct 2026; NBP/MPC communiqué 4 Nov; ING Think Rates Spark (29 Oct-5 Nov); Bank Millennium and PKO BP dailies. Fed Chair: Warsh."
 }
