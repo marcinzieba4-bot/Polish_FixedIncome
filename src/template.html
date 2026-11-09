@@ -323,7 +323,7 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
   function hbarChart(host, rows, opts) {
     // rows: [{label, segs:[{v, key}], marker:{v,name}, tt:[...]}]
     clear(host);
-    var rowH = 22, W = widthOf(host), m = { l: 66, r: W < 600 ? 44 : 60, t: 10, b: 30 };
+    var rowH = 22, W = widthOf(host), m = { l: 66, r: opts.mr || (W < 600 ? 44 : 60), t: 10, b: 30 };
     var H = m.t + m.b + rows.length * rowH;
     var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria }, host);
     var mins = rows.map(function (r) { return r.segs.reduce(function (a, s) { return a + Math.min(0, s.v); }, 0); });
@@ -576,6 +576,92 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
     });
     hit.addEventListener("pointerleave", function () { cross.setAttribute("opacity", 0); hideTT(); });
     }; renderers.push(r); r();
+  })();
+
+  // ---------------------------------------------------------------- generic multi-line chart (crosshair)
+  // series: [{name, color:'--s1', pts:[[x,y],...]}]; opts: {xType:'date'|'num', xTicks:[...], xFmt, yUnit, yDp, sqrt, aria, h, zero}
+  function lineChart(host, series, opts) {
+    clear(host);
+    var W = widthOf(host), H = opts.h || 280, m = { l: 44, r: W < 600 ? 70 : 96, t: 12, b: 30 };
+    var xs = []; series.forEach(function (s) { s.pts.forEach(function (p) { if (xs.indexOf(p[0]) < 0) xs.push(p[0]); }); });
+    xs.sort(function (a, b) { return a < b ? -1 : a > b ? 1 : 0; });
+    var ys = []; series.forEach(function (s) { s.pts.forEach(function (p) { if (p[1] !== null && p[1] !== undefined) ys.push(p[1]); }); });
+    var lo = Math.min.apply(null, ys), hi = Math.max.apply(null, ys), pad = (hi - lo) * 0.08 || 1;
+    lo -= pad; hi += pad; if (opts.zero) { lo = Math.min(lo, 0); }
+    var ticks = niceTicks(lo, hi, 5); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+    var fx = opts.xType === "date" ? function (x) { return xs.indexOf(x) / Math.max(1, xs.length - 1); }
+             : (opts.sqrt ? function (x) { return (Math.sqrt(x) - Math.sqrt(xs[0])) / (Math.sqrt(xs[xs.length - 1]) - Math.sqrt(xs[0])); }
+                          : function (x) { return (x - xs[0]) / (xs[xs.length - 1] - xs[0]); });
+    var X = function (x) { return m.l + fx(x) * (W - m.l - m.r); };
+    var Y = function (v) { return m.t + (hi - v) / (hi - lo) * (H - m.t - m.b); };
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria || "" }, host);
+    var g = el("g", {}, svg), dp = opts.yDp === undefined ? 1 : opts.yDp, un = opts.yUnit || "";
+    ticks.forEach(function (v) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), "class": v === 0 && lo < 0 ? "ax" : "gl" }, g); txt(g, m.l - 6, Y(v) + 4, (+v.toFixed(2)) + un, "", "end"); });
+    el("line", { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, "class": "ax" }, g);
+    if (opts.xType === "date") {
+      var lastM = ""; xs.forEach(function (d) { var mo = d.slice(0, 7); if (mo !== lastM) { lastM = mo; txt(g, X(d), H - m.b + 16, new Date(d + "T00:00:00").toLocaleString("en", { month: "short" }), "", "start"); } });
+    } else {
+      (opts.xTicks || xs).forEach(function (x) { if (W < 600 && opts.xTicksPhone && opts.xTicksPhone.indexOf(x) < 0) return; txt(g, X(x), H - m.b + 16, opts.xFmt ? opts.xFmt(x) : String(x), "", "middle"); });
+    }
+    (opts.marks || []).forEach(function (x) { if (xs.indexOf(x) >= 0) el("line", { x1: X(x), x2: X(x), y1: m.t, y2: H - m.b, stroke: cssVar("--axis"), "stroke-width": 1 }, g); });
+    var endLab = [];
+    series.forEach(function (s) {
+      var c = cssVar(s.color), pts = s.pts.filter(function (p) { return p[1] !== null && p[1] !== undefined; });
+      var d = pts.map(function (p, j) { return (j ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1); }).join("");
+      el("path", { d: d, fill: "none", stroke: c, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: s.faint ? 0.6 : 1 }, g);
+      if (opts.dots) pts.forEach(function (p) { el("circle", { cx: X(p[0]), cy: Y(p[1]), r: 3.5, fill: c, stroke: cssVar("--surface"), "stroke-width": 2 }, g); });
+      var last = pts[pts.length - 1];
+      el("circle", { cx: X(last[0]), cy: Y(last[1]), r: 4, fill: c, stroke: cssVar("--surface"), "stroke-width": 2 }, g);
+      endLab.push({ y: Y(last[1]), x: X(last[0]), t: s.name + " " + f(last[1], dp) + un });
+    });
+    endLab.sort(function (a, b) { return a.y - b.y; });
+    for (var i = 1; i < endLab.length; i++) if (endLab[i].y - endLab[i - 1].y < 13) endLab[i].y = endLab[i - 1].y + 13;
+    endLab.forEach(function (l) { txt(g, l.x + 8, l.y + 4, l.t, "lbl"); });
+    var cross = el("line", { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: cssVar("--ink-2"), "stroke-width": 1, opacity: 0 }, g);
+    var hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, "class": "hit" }, g);
+    hit.addEventListener("pointermove", function (e) {
+      var r = svg.getBoundingClientRect(), sx = (e.clientX - r.left) / r.width * W, best = xs[0], bd = 1e9;
+      xs.forEach(function (x) { var dd = Math.abs(X(x) - sx); if (dd < bd) { bd = dd; best = x; } });
+      cross.setAttribute("x1", X(best)); cross.setAttribute("x2", X(best)); cross.setAttribute("opacity", 1);
+      var rows = series.map(function (s) { var p = s.pts.filter(function (q) { return q[0] === best; })[0]; return { name: s.name, value: p && p[1] !== null ? f(p[1], dp) + un : "–", color: cssVar(s.color) }; });
+      showTT(e, opts.xFmt ? opts.xFmt(best) : String(best), rows);
+    });
+    hit.addEventListener("pointerleave", function () { cross.setAttribute("opacity", 0); hideTT(); });
+  }
+
+  // ---- Poland vs core
+  (function () {
+    var K = D.core; if (!K) return;
+    var h1 = document.getElementById("coreCurves"), h2 = document.getElementById("coreSpreads"), h3 = document.getElementById("coreSlopes"), h4 = document.getElementById("coreCarry");
+    var r = function () {
+      if (h1) {
+        var mk = function (k) { return K.grid.filter(function (g) { return g[k] !== null && g[k] !== undefined; }).map(function (g) { return [g.t, g[k]]; }); };
+        lineChart(h1, [{ name: "PL", color: "--s1", pts: mk("PL") }, { name: "US", color: "--s2", pts: mk("US") }, { name: "DE", color: "--s3", pts: mk("DE") }],
+          { sqrt: true, dots: true, yUnit: "%", yDp: 2, xTicks: [0.5, 1, 2, 5, 10, 20, 30], xTicksPhone: [1, 2, 5, 10, 30], xFmt: function (x) { return x < 1 ? (x * 12) + "M" : x + "Y"; }, aria: "Government yield curves Poland, US, Germany", h: 300 });
+      }
+      if (h2) {
+        lineChart(h2, [{ name: "PL−DE 10Y", color: "--s1", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.pl10 - s.de10) * 100)]; }) },
+                       { name: "PL−US 10Y", color: "--s2", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.pl10 - s.us10) * 100)]; }) },
+                       { name: "PL−DE 2Y", color: "--s3", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.pl2 - s.de2) * 100)]; }) }],
+          { xType: "date", yUnit: "bp", yDp: 0, xFmt: function (d) { return d; }, aria: "Poland spreads over Germany and the US", h: 260 });
+      }
+      if (h3) {
+        lineChart(h3, [{ name: "PL 2s10s", color: "--s1", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.pl10 - s.pl2) * 100)]; }) },
+                       { name: "US 2s10s", color: "--s2", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.us10 - s.us2) * 100)]; }) },
+                       { name: "DE 2s10s", color: "--s3", pts: K.spread_hist.map(function (s) { return [s.d, Math.round((s.de10 - s.de2) * 100)]; }) }],
+          { xType: "date", yUnit: "bp", yDp: 0, zero: true, xFmt: function (d) { return d; }, aria: "2s10s slope Poland, US, Germany", h: 260 });
+      }
+      if (h4) {
+        var rows = K.carry_roll.map(function (c) {
+          return { label: c.mkt + " " + c.T + "Y", strong: c.mkt === "PL", segs: [{ v: c.carry_bp, key: "c" }, { v: c.roll_ret_bp, key: "r" }], end: f(c.total_bp, 0) + " (" + f(c.per_dur, 0) + ")",
+                   ttHead: c.mkt + " " + c.T + "Y · yield " + f(c.y, 2) + "% vs 3M " + f(c.m3, 2) + "%",
+                   tt: [{ name: "Carry (yield − 3M)", value: sg(c.carry_bp, 0) + " bp", color: cssVar("--s1") }, { name: "Roll-down return", value: sg(c.roll_ret_bp, 0) + " bp (" + f(c.roll_bp, 1) + "bp slide)", color: cssVar("--s2") },
+                        { name: "Carry + roll / yr", value: f(c.total_bp, 0) + " bp" }, { name: "Per unit of duration", value: f(c.per_dur, 0) + " bp" }, { name: "Mod. duration", value: f(c.md, 2) }] };
+        });
+        hbarChart(h4, rows, { colors: { c: "--s1", r: "--s2" }, unit: "", mr: 70, aria: "Carry and roll by market and tenor (bp per year)" });
+      }
+    };
+    renderers.push(r); r();
   })();
 
   // ---- full bond table

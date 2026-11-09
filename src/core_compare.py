@@ -1,0 +1,176 @@
+"""Poland vs core markets: curve steepness, carry & roll, spreads history, FX-hedged yields / basis.
+
+Inputs:  data/core/core_rates.json (fetch_core.py), data/core/core_inputs.json (policy, CPI, swaps, FX),
+         data/analytics/analytics_<date>.json, data/market/fixing_history.json, data/bonds_static.json
+Output:  data/analytics/core_<date>.json
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import math
+import pathlib
+import sys
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+
+
+def load(p):
+    return json.loads(pathlib.Path(p).read_text())
+
+
+def interp(xs, ys, x):
+    pts = sorted(zip(xs, ys))
+    if x <= pts[0][0]:
+        return pts[0][1]
+    if x >= pts[-1][0]:
+        return pts[-1][1]
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        if x0 <= x <= x1:
+            return y0 + (y1 - y0) * (x - x0) / (x1 - x0)
+
+
+def par_md(y, T):
+    """Modified duration of an annual-pay par bond (y in %)."""
+    y = y / 100
+    return (1 - (1 + y) ** -T) / y if y else T
+
+
+UST_COLS = {"1 Mo": 1 / 12, "2 Mo": 2 / 12, "3 Mo": 0.25, "4 Mo": 4 / 12, "6 Mo": 0.5, "1 Yr": 1, "2 Yr": 2, "3 Yr": 3,
+            "5 Yr": 5, "7 Yr": 7, "10 Yr": 10, "20 Yr": 20, "30 Yr": 30}
+
+
+def main(asof: dt.date):
+    A = load(DATA / "analytics" / f"analytics_{asof:%Y%m%d}.json")
+    C = load(DATA / "core" / "core_rates.json")
+    I = load(DATA / "core" / "core_inputs.json")
+    hist = load(DATA / "market" / "fixing_history.json")
+    static = {b["ticker"]: dt.date.fromisoformat(b["maturity"]) for b in load(DATA / "bonds_static.json")["bonds"]}
+    mm = A["market_inputs"]["money_market"]
+
+    # ------------------------------------------------------------------ curve functions
+    pl_grid = A["curve"]
+    pl = lambda T: interp([g["t"] for g in pl_grid], [g["fit"] for g in pl_grid], T)
+    bd = max(C["bund"]["10"])
+    de_pts = {float(k): v[bd] for k, v in C["bund"].items() if bd in v}
+    de = lambda T: interp(list(de_pts), list(de_pts.values()), T)
+    ud = max(C["ust"])
+    us_pts = {UST_COLS[k]: v for k, v in C["ust"][ud].items() if k in UST_COLS}
+    us = lambda T: interp(list(us_pts), list(us_pts.values()), T)
+    curves = {"PL": pl, "DE": de, "US": us}
+    m3 = {"PL": mm["wibor_3m"], "DE": I["money"]["EUR"]["3m"], "US": I["money"]["USD"]["3m"]}
+
+    grid = []
+    for T in [0.25, 0.5, 1, 2, 3, 4, 5, 7, 10, 15, 20, 30]:
+        row = {"t": T}
+        for k, fn in curves.items():
+            if k == "PL" and T > 21:
+                continue
+            if (k == "PL" and T < 0.5) or (k == "DE" and T < 1):
+                row[k] = None
+                continue
+            row[k] = fn(T)
+        grid.append(row)
+
+    # ------------------------------------------------------------------ carry & roll by market/tenor
+    cr = []
+    for k, fn in curves.items():
+        for T in (2, 5, 10):
+            y = fn(T)
+            roll = (fn(T) - fn(T - 1)) * 100  # bp over 1Y if the curve is unchanged
+            D1 = par_md(y, T - 1)
+            carry = (y - m3[k]) * 100
+            tot_bp = carry + D1 * roll   # ~ excess return over local 3M cash, bp per year
+            D = par_md(y, T)
+            cr.append(dict(mkt=k, T=T, y=y, m3=m3[k], carry_bp=carry, roll_bp=roll, roll_ret_bp=D1 * roll,
+                           total_bp=tot_bp, md=D, per_dur=tot_bp / D))
+
+    # ------------------------------------------------------------------ PAP cross-country snapshot
+    pap = C["pap"]
+    names = {"Polska": "Poland", "Niemcy": "Germany", "USA": "United States", "Wielka Brytania": "United Kingdom",
+             "Francja": "France", "Włochy": "Italy", "Hiszpania": "Spain", "Czechy": "Czechia", "Węgry": "Hungary",
+             "Japonia": "Japan"}
+    snap = []
+    de10 = pap["data"]["Niemcy"]["10Y"][0]
+    for pl_name, en in names.items():
+        d = pap["data"].get(pl_name)
+        if not d:
+            continue
+        short = d.get("2Y") or d.get("3Y")
+        s_lab = "2Y" if d.get("2Y") else "3Y"
+        y10 = d["10Y"]
+        snap.append(dict(country=en, short_tenor=s_lab, y2=short[0], y5=d["5Y"][0], y10=y10[0],
+                         s2s10=(y10[0] - short[0]) * 100, s5s10=(y10[0] - d["5Y"][0]) * 100,
+                         sp_de=(y10[0] - de10) * 100, ch10_1m=(y10[0] - y10[3]) * 100, ch10_3m=(y10[0] - y10[4]) * 100,
+                         ch10_12m=(y10[0] - y10[5]) * 100, ch2_12m=(short[0] - short[5]) * 100,
+                         slope_12m_ago=(y10[5] - short[5]) * 100, cb=I["policy"].get(en)))
+
+    # ------------------------------------------------------------------ spread history (PL CMT from fixings)
+    def pl_cmt(day, T):
+        d0 = dt.date.fromisoformat(day)
+        pts = [((static[t] - d0).days / 365.25, v[1]) for t, v in hist[day].items()
+               if t in static and v and v[1] is not None and not t.startswith("_")]
+        pts = [p for p in pts if p[0] > 0.9]
+        return interp([p[0] for p in pts], [p[1] for p in pts], T) if len(pts) > 5 else None
+
+    hs = []
+    for day in sorted(hist):
+        if day not in C["bund"]["10"] or day not in C["ust"]:
+            continue
+        u = C["ust"][day]
+        p2, p10 = pl_cmt(day, 2), pl_cmt(day, 10)
+        if p2 is None or p10 is None:
+            continue
+        hs.append(dict(d=day, pl2=p2, pl10=p10, de2=C["bund"]["2"][day], de10=C["bund"]["10"][day],
+                       us2=u.get("2 Yr"), us10=u.get("10 Yr")))
+
+    # ------------------------------------------------------------------ FX-hedged yields (rolling 3M hedge, CIP)
+    # hedge pickup for base currency B holding asset in currency L: (r_B - r_L) at 3M, from CIP; + basis adj.
+    r3 = {"PLN": mm["wibor_3m"], "EUR": I["money"]["EUR"]["3m"], "USD": I["money"]["USD"]["3m"]}
+    ccy = {"PL": "PLN", "DE": "EUR", "US": "USD"}
+    hedged = []
+    for T in (1, 2, 5, 10):
+        for asset, fn in curves.items():
+            y = fn(T)
+            row = dict(T=T, asset=asset, local=y)
+            for base in ("PLN", "EUR", "USD"):
+                L = ccy[asset]
+                t = 0.25
+                fwd_pick = ((1 + r3[base] / 100 * t) / (1 + r3[L] / 100 * t) - 1) / t * 100  # %/yr
+                row[base] = y + (fwd_pick if base != L else 0.0)
+            hedged.append(row)
+
+    # ------------------------------------------------------------------ Bund swapped into PLN (matched maturity)
+    eur_irs = I.get("eur_irs", {}).get("pillars")
+    pln_irs = A["market_inputs"]["irs"]["pillars"]
+    swap_to_pln = []
+    if eur_irs:
+        for T in ("2", "5", "10"):
+            Tf = float(T)
+            bund_y = de(Tf)
+            bund_asw = (bund_y - eur_irs[T]) * 100
+            pl_y = pl(Tf)
+            pl_asw = (pl_y - pln_irs[T]) * 100
+            synth = pln_irs[T] + bund_asw / 100  # PLN fixed via EUR IRS + CCS (basis 0) + PLN IRS
+            swap_to_pln.append(dict(T=Tf, bund=bund_y, eur_irs=eur_irs[T], bund_asw=bund_asw, pln_irs=pln_irs[T],
+                                    synth_pln=synth, polgb=pl_y, pl_asw=pl_asw, adv_pl_bp=(pl_y - synth) * 100))
+
+    out = dict(asof=asof.isoformat(), bund_date=bd, ust_date=ud, grid=grid, carry_roll=cr, snapshot=snap,
+               spread_hist=hs, hedged=hedged, r3=r3, swap_to_pln=swap_to_pln, inputs=I, pap_date=pap["date"],
+               pap_url=pap["url"], estr=C["estr"], sofr=C["sofr"], euribor=C["euribor"])
+    p = DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
+    p.write_text(json.dumps(out, indent=1))
+    print("wrote", p)
+    for r in cr:
+        print(f"{r['mkt']} {r['T']:>2}Y y={r['y']:.2f} 3m={r['m3']:.2f} carry={r['carry_bp']:6.0f} roll={r['roll_bp']:5.1f}bp "
+              f"rollret={r['roll_ret_bp']:5.0f} tot={r['total_bp']:6.0f} MD={r['md']:.2f} per_dur={r['per_dur']:5.0f}")
+    for h in hedged:
+        print(f"T={h['T']:>2} {h['asset']} local={h['local']:.2f}  inPLN={h['PLN']:.2f} inEUR={h['EUR']:.2f} inUSD={h['USD']:.2f}")
+    for s in swap_to_pln:
+        print(s)
+    print("hist", hs[0], hs[-1], len(hs))
+
+
+if __name__ == "__main__":
+    main(dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9))

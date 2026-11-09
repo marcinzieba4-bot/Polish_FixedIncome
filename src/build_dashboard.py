@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from analytics import Bond, DATA, ROOT, add_bdays, irs_curve  # noqa: E402
+from core_section import core_section  # noqa: E402
 
 E = html.escape
 
@@ -35,6 +36,8 @@ def main(asof: dt.date):
     cal = load(DATA / "calendar.json")
     cyc = load(DATA / "analytics" / "auction_cycle.json")
     hist = load(DATA / "market" / "fixing_history.json")
+    core_p = DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
+    K = load(core_p) if core_p.exists() else None
     mi = A["market_inputs"]
     mm, pol, mac = mi["money_market"], mi["policy"], mi["macro"]
     B = {b["ticker"]: b for b in A["bonds"]}
@@ -66,6 +69,12 @@ def main(asof: dt.date):
     p14 = proj("GPWB-B1Y4Y", "OK0128", "PS0131", 56695631)
 
     ex_md = lambda t: B[t]["h12"]["net"] / B[t]["mod"] * 100  # bp of 12M excess per unit MD
+    if K:
+        kh = {(h["asset"], h["T"]): h for h in K["hedged"]}
+        kc = {(c["mkt"], c["T"]): c for c in K["carry_roll"]}
+        k_last = K["spread_hist"][-1]
+        k_de1 = kh[("DE", 1)]["PLN"]
+        k_sub1 = max(B["PS0527"]["ytm"], B["DS0727"]["ytm"])
     best_front = max(["OK0129", "WS0429", "PS0729", "DS1029", "PS0130"], key=ex_md)
 
     # ------------------------------------------------------------------ data passed to JS
@@ -77,7 +86,8 @@ def main(asof: dt.date):
     js = dict(bonds=A["bonds"], curve=A["curve"], asw_buckets=A["asw_buckets"], indices=IX,
               market_inputs={"asw_lseg_2026_11_06": mi["asw_lseg_2026_11_06"]}, label_bonds=labels,
               highlight=["OK0129", "PS0729", "PS0130", "PS1031", "DS1035", "DS0436"],
-              hist=hist_series, auctions=auc_dates, cycle={k: v for k, v in cyc.items() if not k.startswith("_")})
+              hist=hist_series, auctions=auc_dates, cycle={k: v for k, v in cyc.items() if not k.startswith("_")},
+              core=({k: K[k] for k in ("grid", "carry_roll", "spread_hist")} if K else None))
 
     # ------------------------------------------------------------------ HTML pieces
     o = []
@@ -87,14 +97,14 @@ def main(asof: dt.date):
 <header class="top">
   <div>
     <h1>Polish fixed income desk</h1>
-    <p class="sub">POLGB curve, index duration (GPWB 1-3Y, GPWB 1-4Y, TBSP.Index), asset swaps, rich/cheap, carry &amp; roll, auction timing and trade ideas.</p>
+    <p class="sub">POLGB curve, index duration (GPWB 1-3Y, GPWB 1-4Y, TBSP.Index), asset swaps, rich/cheap, carry &amp; roll, Poland vs core markets (incl. FX-hedged), auction timing and trade ideas.</p>
     <div class="meta">Prices: Treasury BondSpot Poland fixing {E(A['asof'])} · settlement {E(settle)} · private page, not indexed</div>
   </div>
   <button class="theme-btn" id="themeBtn" type="button">Dark mode</button>
 </header>
 <nav class="toc" aria-label="Sections">
   <a href="#bottom">Bottom line</a><a href="#indices">Index duration</a><a href="#curve">Curve &amp; ASW</a>
-  <a href="#rv">Single bonds</a><a href="#roll">Carry &amp; roll</a><a href="#auctions">Auctions &amp; timing</a>
+  <a href="#rv">Single bonds</a><a href="#roll">Carry &amp; roll</a><a href="#core">PL vs core</a><a href="#auctions">Auctions &amp; timing</a>
   <a href="#ideas">What to play</a><a href="#bonds">All bonds</a><a href="#method">Method</a>
 </nav>
 """)
@@ -136,7 +146,10 @@ def main(asof: dt.date):
     <li><b>When to buy:</b> across the last 9 auctions the curve cheapened ~{f(cyc['T-2']['mean'], 1)}bp two days before (the final-offer day)
       and {sg(cyc['T+0']['mean'], 1)}bp on auction day, then rallied {sg(cyc['T+1']['mean'], 1)}bp the day after. So buy at the close of
       <b>18 Nov and 25 Nov</b>, not in the run-up. Scale into the front end around the <b>2 Dec MPC</b>. Hold through the December supply pause
-      and the <b>25 Jan</b> OK0127 redemption and coupon reinvestment.</li>
+      and the <b>25 Jan</b> OK0127 redemption and coupon reinvestment.</li>""" + (f"""
+    <li><b>Versus core:</b> Poland is the steep, high-carry curve in a world of flattening core curves. 10Y carry+roll is {f(kc[('PL', 10)]['total_bp'], 0)}bp/yr vs {f(kc[('DE', 10)]['total_bp'], 0)} (Bund) and {f(kc[('US', 10)]['total_bp'], 0)} (UST).
+      PL−Bund 10Y is ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp. FX-hedged into PLN, Bunds and USTs lose to POLGBs from 2Y out by 50-180bp, so "buy Bund and swap it into PLN" doesn't pay for duration.
+      It does pay at the very front end: a 1Y Bund hedged into PLN ≈ {f(k_de1)}% vs {f(k_sub1)}% on sub-1Y POLGBs (basis caveat in the section).</li>""" if K else "") + f"""
   </ol>
   <div class="sub">Funding {f(fund)}% · IRS pillars from LSEG via Bank Millennium (6 Nov close), other tenors interpolated · horizon returns assume an unchanged curve and constant rich/cheap.</div>
 </div>
@@ -287,6 +300,10 @@ def main(asof: dt.date):
 </section>
 """)
 
+    # ------------------------------------------------------------------ Poland vs core
+    if K:
+        w(core_section(K, A, B))
+
     # ------------------------------------------------------------------ auctions & timing
     ev_rows = []
     today = asof.isoformat()
@@ -359,7 +376,15 @@ def main(asof: dt.date):
         ("avoid", "Sub-1Y paper (OK0127, PS0527, DS0727) and WS0447",
          f"Yields of {f(B['OK0127']['ytm'])}-{f(B['DS0727']['ytm'])}% are below repo ({f(fund)}%) and the ASW is about −50bp: negative carry, held up by MoF switch buybacks. "
          "WS0447 has a 1-point bid/offer and no fixing.",
-         "Use T-bills or POLSTR deposits for cash instead."),
+         "For cash, use EUR bills + EUR/PLN FX swap (next card), T-bills or POLSTR deposits instead."),
+    ] + ([
+        ("go", "PLN cash/short book: EUR bills or Schatz + rolling EUR/PLN FX swap instead of sub-1Y POLGBs",
+         f"A 1Y Bund hedged into PLN yields ≈{f(k_de1)}% (covered parity with WIBOR/EURIBOR 3M) vs {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity.",
+         "Risk: the FX-swap-implied PLN rate can sit below WIBOR (basis), which eats the pickup one for one. Check live forward points before executing."),
+        ("wait", "Long POLGB 10Y vs short Bund 10Y (DV01-matched, FX-hedged): the fiscal-premium compression trade",
+         f"PL−DE 10Y at ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp (peak ~299bp on 28 Oct, ~245bp in early August). It carries ~{f(kc[('PL', 10)]['total_bp'] - kc[('DE', 10)]['total_bp'], 0)}bp/yr more than the Bund leg.",
+         "Risk: fiscal or ratings news widens the spread. Needs a catalyst (2027 consolidation, rating stabilisation). Enter on supply-driven widening."),
+    ] if K else []) + [
         ("avoid", "Outright 2s10s flattener as a core trade",
          f"It wins in both the hike and fiscal-relief scenarios but gives up about {f(ex_md('OK0129') - ex_md('DS0436'), 0)}bp a year of carry+roll (DV01-neutral).",
          "Use it only as a hedge on the front-end long if the MPC turns hawkish."),

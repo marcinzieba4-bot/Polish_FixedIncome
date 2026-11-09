@@ -1,0 +1,20 @@
+{
+  "_note": "Provisional; policy/CPI/swaps filled from research (sources per field).",
+  "money": {
+    "EUR": {
+      "3m": 2.794,
+      "6m": 3.016,
+      "estr": 2.443,
+      "source": "EURIBOR 6 Nov 2026 (euribor-rates.eu); \u20acSTR 6 Nov (ECB)"
+    },
+    "USD": {
+      "3m": 4.19,
+      "sofr": 3.92,
+      "source": "3M T-bill CMT 6 Nov 2026 (US Treasury) as USD 3M proxy; SOFR 5 Nov (NY Fed)"
+    }
+  },
+  "policy": {},
+  "fx": {
+    "basis_note": "provisional"
+  }
+}
