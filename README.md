@@ -28,6 +28,7 @@ python src/fetch_swaps.py                        # PLN/CZK/HUF/EUR/USD swap curv
 python src/fetch_core.py 2026-08-01              # Bund/UST curves, €STR, SOFR, EURIBOR, PAP cross-country table
 python src/core_compare.py 2026-11-09            # -> data/analytics/core_YYYYMMDD.json
 python src/floaters_linkers.py 2026-11-09        # -> data/analytics/fl_YYYYMMDD.json (WZ/NZ/IZ)
+python src/quasi.py 2026-11-09                   # -> data/quasi.json (BGK FPC/FWSZ, PFR; prices hand-entered in the script)
 python src/build_dashboard.py 2026-11-09         # -> dist/dashboard/index.html
 python src/deploy.py                             # needs PFI_S3_BUCKET / PFI_S3_KEY (+ optional PFI_CF_DIST, PFI_CF_PATHS)
 ```

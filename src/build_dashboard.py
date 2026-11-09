@@ -41,6 +41,8 @@ def main(asof: dt.date):
     K = load(core_p) if core_p.exists() else None
     fl_p = DATA / "analytics" / f"fl_{asof:%Y%m%d}.json"
     FL = load(fl_p) if fl_p.exists() else None
+    q_p = DATA / "quasi.json"
+    Q = load(q_p) if q_p.exists() else None
     mi = A["market_inputs"]
     mm, pol, mac = mi["money_market"], mi["policy"], mi["macro"]
     B = {b["ticker"]: b for b in A["bonds"]}
@@ -410,6 +412,12 @@ def main(asof: dt.date):
          f"Breakeven {f(flk['IZ0836']['breakeven'])}% vs NBP CPI projection of 4.2% for 2027. It out-carries the nominal by ≈{sg(flk['IZ0836']['vs_nominal_12m'][fl_sc])}% over 12M if CPI follows the NBP path, and breaks even at ~3% CPI.",
          "Risk: an extension of the fuel/energy shields drags CPI lower, plus a ~0.85-point bid/offer and thin liquidity. Size small and buy on IZ auction days."),
     ] if FL else []) + ([
+        ("wait", "Quasi pickup: BGK FPC bonds (FPC0229 / FPC0231 / FPC0235) at BGK auctions instead of POLGBs",
+         "Same State Treasury credit for ~" + f(Q['avg_spread_bp'], 0) + "bp more yield on average ("
+         + ", ".join(f"{r['ticker']} {sg(r['spread_polgb_bp'], 0)}bp" for r in Q['bonds'] if r.get('spread_polgb_bp') is not None and r['ttm'] <= 11 and r['ticker'] in ('FPC0229', 'FPC0231', 'FPC0235'))
+         + "). The quasi premium held steady while POLGB ASW widened, so FPC ASW now runs to ~" + f(max(r['asw_bp'] for r in Q['bonds'] if r.get('asw_bp') is not None and r['ttm'] <= 11), 0) + "bp.",
+         "Risk: illiquid (thin Catalyst prints), plus heavy 2027 FPC refinancing (~PLN 52bn of FPC/PFR maturities) that can push spreads toward 30-40bp. Buy-and-hold only, and buy at auctions."),
+    ] if Q else []) + ([
         ("go", "PLN cash/short book: EUR bills or Schatz + rolling EUR/PLN FX swap instead of sub-1Y POLGBs",
          f"A 1Y Bund/Schatz hedged into PLN on the 1Y forward yields ≈{f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for a 1Y POLGB and {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity. "
          "The forward points pay for the NBP hikes the market prices.",

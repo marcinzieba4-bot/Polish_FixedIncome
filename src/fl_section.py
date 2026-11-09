@@ -27,14 +27,14 @@ def quasi_html(B):
     Q = json.loads(p.read_text())
     rows = []
     for r in Q.get("bonds", []):
-        rows.append(f"<tr><td class='l'>{E(r['ticker'])}</td><td class='l'>{E(r.get('issuer', ''))}</td><td class='l'>{E(r.get('coupon_desc', ''))}</td>"
+        rows.append(f"<tr><td class='l'>{E(r['ticker'])}</td><td class='l'>{E(r.get('issuer', ''))}</td><td class='l' style='white-space:normal;min-width:110px;max-width:170px'>{E(r.get('coupon_desc', ''))}</td>"
                     f"<td>{E(r.get('maturity', ''))}</td><td>{f(r.get('outstanding_bn'), 1)}</td><td>{f(r.get('yield'))}</td><td>{f(r.get('polgb_same'))}</td>"
-                    f"<td><b>{sg(r.get('spread_polgb_bp'), 0)}</b></td><td>{sg(r.get('asw_bp'), 0)}</td><td class='l' style='white-space:normal;min-width:180px'>{E(r.get('note', ''))}</td></tr>")
+                    f"<td><b>{sg(r.get('spread_polgb_bp'), 0)}</b></td><td>{sg(r.get('asw_bp'), 0)}</td><td class='l' style='white-space:normal;min-width:160px;max-width:240px'>{E(r.get('note', ''))}</td></tr>")
     bullets = "".join(f"<li>{x}</li>" for x in Q.get("takeaways_html", []))
     return f"""
   <h3>Quasi-sovereigns (BGK, PFR)</h3>
   <p class="small">{E(Q.get('lede', ''))}</p>
-  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Series</th><th class="l">Issuer</th><th class="l">Coupon</th><th>Maturity</th><th>Out. PLN bn</th><th>Yield %</th><th>POLGB same mat. %</th><th>Spread vs POLGB bp</th><th>ASW bp</th><th class="l">Basis of the level</th></tr></thead>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Series</th><th class="l">Issuer</th><th class="l">Coupon</th><th>Maturity</th><th>Out. PLN bn</th><th>Yield %</th><th>POLGB same mat. %</th><th>Spread vs POLGB bp</th><th>ASW bp</th><th class="l">Price / note</th></tr></thead>
   <tbody>{''.join(rows)}</tbody></table></div>
   <div class="note"><b>Quasi-sovereign takeaways.</b><ul class="tight">{bullets}</ul></div>
   <p class="small">{E(Q.get('sources', ''))}</p>"""
