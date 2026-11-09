@@ -11,6 +11,8 @@ Bond-by-bond analytics for Polish government bonds (POLGB), rendered as one self
 - **Poland vs core markets**: curve steepness, carry+roll, central-bank stance and real rates (NBP, ECB, Fed, BoE, CNB, MNB, BNR),
   PL−DE/PL−US spread history, FX-hedged yields from EUR/PLN forward points, German/French/Italian/Spanish/Czech/Hungarian/US bonds
   asset-swapped and swapped into PLN/EUR (ASW now, 1M and 12M ago) vs POLGB, and POLGB vs Poland EUR Eurobonds.
+- **Floaters, linkers & quasi-sovereigns**: WZ (6M WIBOR) and NZ (POLSTR) discount margins from a bootstrapped WIBOR forward curve,
+  spread/rate duration, floater-vs-fixed-ASW by tenor; IZ real yields, breakevens and 12M carry vs nominals under CPI scenarios; BGK/PFR spreads.
 - **Auctions & timing**: MoF calendar, recent auction results, measured auction-cycle behaviour, cash flows, index rebalances.
 - **Assessment**: ranked trade ideas with entry timing and risks.
 
@@ -25,6 +27,7 @@ python src/analytics.py 2026-11-09               # -> data/analytics/analytics_Y
 python src/fetch_swaps.py                        # PLN/CZK/HUF/EUR/USD swap curves + €STR OIS (BlueGamma, last close)
 python src/fetch_core.py 2026-08-01              # Bund/UST curves, €STR, SOFR, EURIBOR, PAP cross-country table
 python src/core_compare.py 2026-11-09            # -> data/analytics/core_YYYYMMDD.json
+python src/floaters_linkers.py 2026-11-09        # -> data/analytics/fl_YYYYMMDD.json (WZ/NZ/IZ)
 python src/build_dashboard.py 2026-11-09         # -> dist/dashboard/index.html
 python src/deploy.py                             # needs PFI_S3_BUCKET / PFI_S3_KEY (+ optional PFI_CF_DIST, PFI_CF_PATHS)
 ```

@@ -13,6 +13,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from analytics import Bond, DATA, ROOT, add_bdays, irs_curve  # noqa: E402
 from core_section import core_section  # noqa: E402
+from fl_section import fl_section  # noqa: E402
 
 E = html.escape
 
@@ -38,6 +39,8 @@ def main(asof: dt.date):
     hist = load(DATA / "market" / "fixing_history.json")
     core_p = DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
     K = load(core_p) if core_p.exists() else None
+    fl_p = DATA / "analytics" / f"fl_{asof:%Y%m%d}.json"
+    FL = load(fl_p) if fl_p.exists() else None
     mi = A["market_inputs"]
     mm, pol, mac = mi["money_market"], mi["policy"], mi["macro"]
     B = {b["ticker"]: b for b in A["bonds"]}
@@ -70,6 +73,11 @@ def main(asof: dt.date):
     p14 = proj("GPWB-B1Y4Y", "OK0128", "PS0131", 56695631)
 
     ex_md = lambda t: B[t]["h12"]["net"] / B[t]["mod"] * 100  # bp of 12M excess per unit MD
+    if FL:
+        flb = {x["ticker"]: x for x in FL["floaters"]}
+        flk = {x["ticker"]: x for x in FL["linkers"]}
+        fl_sweet = [flb[t] for t in ("WZ1129", "WZ0330", "WZ0930") if t in flb]
+        fl_sc = list(FL["linkers"][0]["vs_nominal_12m"].keys())[1] if FL["linkers"] else None
     if K:
         kh = {(h["asset"], h["T"]): h for h in K["hedged"]}
         kc = {(c["mkt"], c["T"]): c for c in K["carry_roll"]}
@@ -89,7 +97,8 @@ def main(asof: dt.date):
               market_inputs={"asw_lseg_2026_11_06": mi["asw_lseg_2026_11_06"]}, label_bonds=labels,
               highlight=["OK0129", "PS0729", "PS0130", "PS1031", "DS1035", "DS0436"],
               hist=hist_series, auctions=auc_dates, cycle={k: v for k, v in cyc.items() if not k.startswith("_")},
-              core=({k: K[k] for k in ("grid", "carry_roll", "spread_hist", "swapped")} if K else None))
+              core=({k: K[k] for k in ("grid", "carry_roll", "spread_hist", "swapped")} if K else None),
+              fl=({"floaters": FL["floaters"]} if FL else None))
 
     # ------------------------------------------------------------------ HTML pieces
     o = []
@@ -106,7 +115,7 @@ def main(asof: dt.date):
 </header>
 <nav class="toc" aria-label="Sections">
   <a href="#bottom">Bottom line</a><a href="#indices">Index duration</a><a href="#curve">Curve &amp; ASW</a>
-  <a href="#rv">Single bonds</a><a href="#roll">Carry &amp; roll</a><a href="#core">PL vs core</a><a href="#auctions">Auctions &amp; timing</a>
+  <a href="#rv">Single bonds</a><a href="#floaters">Floaters, IZ &amp; quasi</a><a href="#roll">Carry &amp; roll</a><a href="#core">PL vs core</a><a href="#auctions">Auctions &amp; timing</a>
   <a href="#ideas">What to play</a><a href="#bonds">All bonds</a><a href="#method">Method</a>
 </nav>
 """)
@@ -150,6 +159,10 @@ def main(asof: dt.date):
       and {sg(cyc['T+0']['mean'], 1)}bp on auction day, then rallied {sg(cyc['T+1']['mean'], 1)}bp the day after. So buy at the close of
       <b>18 Nov and 25 Nov</b>, not in the run-up. Scale into the front end around the <b>2 Dec MPC</b>. Hold through the December supply pause
       and the <b>25 Jan</b> OK0127 redemption and coupon reinvestment.</li>""" + (f"""
+""" + (f"""
+    <li><b>Floaters &amp; linkers:</b> to own Polish spread without rate risk, the 3-4Y WZ ({', '.join(x['ticker'] for x in fl_sweet)}) pay {f(min(x['dm_bp'] for x in fl_sweet), 0)}-{f(max(x['dm_bp'] for x in fl_sweet), 0)}bp over WIBOR,
+      more than fixed bonds' ASW at the same maturity, with ~{f(max(x['carry_12m'] for x in fl_sweet))}% 12M carry over repo. Past 4.5Y, asset-swapped fixed lines pay more than WZ.
+      IZ breakevens ({f(flk['IZ0831']['breakeven'])}% / {f(flk['IZ0836']['breakeven'])}%) sit at the 2.5% target while the NBP projects 4.2% CPI for 2027. IZ0836 out-carries DS0436 by ~{f(flk['IZ0836']['vs_nominal_12m'][fl_sc])}% over 12M on that path.</li>""" if FL else "") + f"""
     <li><b>Versus core:</b> Poland is the steep, high-carry curve in a world of flattening core curves. 10Y carry+roll is {f(kc[('PL', 10)]['total_bp'], 0)}bp/yr vs {f(kc[('DE', 10)]['total_bp'], 0)} (Bund) and {f(kc[('US', 10)]['total_bp'], 0)} (UST).
       PL−Bund 10Y is ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp. Hedged into PLN at market forward points (EUR→PLN hedge pays ~{f(K['pick']['eurpln_1y_market'])}%/yr), Bunds lose to POLGBs from 2Y out
       ({f((kh[('PL', 2)]['PLN'] - kh[('DE', 2)]['PLN']) * 100, 0)}bp at 2Y, ~120bp at 5-10Y matched-maturity), so "buy Bund and swap into PLN" doesn't pay for duration.
@@ -276,6 +289,10 @@ def main(asof: dt.date):
 </section>
 """)
 
+    # ------------------------------------------------------------------ floaters / linkers / quasi
+    if FL:
+        w(fl_section(FL, A, B))
+
     # ------------------------------------------------------------------ carry & roll
     ok29 = B["OK0129"]["h12"]
     w(f"""
@@ -385,6 +402,14 @@ def main(asof: dt.date):
          "WS0447 has a 1-point bid/offer and no fixing.",
          "For cash, use EUR bills + EUR/PLN FX swap (next card), T-bills or POLSTR deposits instead."),
     ] + ([
+        ("go", "No-duration spread: 3-4Y WZ floaters (WZ1129 / WZ0330 / WZ0930)",
+         f"DM {f(min(x['dm_bp'] for x in fl_sweet), 0)}-{f(max(x['dm_bp'] for x in fl_sweet), 0)}bp over 6M WIBOR, the top of the WZ curve and {sg(min(x['vs_fixed_bp'] for x in fl_sweet), 0)} to {sg(max(x['vs_fixed_bp'] for x in fl_sweet), 0)}bp over fixed ASW at the same maturity. "
+         f"Rate duration ≈0, 12M carry over repo ≈{f(max(x['carry_12m'] for x in fl_sweet))}%. It hedges the MPC hike risk that hangs over the fixed 2-3Y trade.",
+         "Risk: spread widening (fiscal/ratings) hits WZ too, with a spread duration of ~3. In a no-hike rally, fixed 2-3Y outperform through roll-down."),
+        ("wait", "Breakeven widener: long IZ0836 vs short DS0436 (real-duration weighted)",
+         f"Breakeven {f(flk['IZ0836']['breakeven'])}% vs NBP CPI projection of 4.2% for 2027. It out-carries the nominal by ≈{sg(flk['IZ0836']['vs_nominal_12m'][fl_sc])}% over 12M if CPI follows the NBP path, and breaks even at ~3% CPI.",
+         "Risk: an extension of the fuel/energy shields drags CPI lower, plus a ~0.85-point bid/offer and thin liquidity. Size small and buy on IZ auction days."),
+    ] if FL else []) + ([
         ("go", "PLN cash/short book: EUR bills or Schatz + rolling EUR/PLN FX swap instead of sub-1Y POLGBs",
          f"A 1Y Bund/Schatz hedged into PLN on the 1Y forward yields ≈{f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for a 1Y POLGB and {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity. "
          "The forward points pay for the NBP hikes the market prices.",
@@ -434,6 +459,9 @@ def main(asof: dt.date):
       Poland EUR Eurobond yields from Borsa Italiana MOT (indicative). Swap curves (PLN/WIBOR, CZK/PRIBOR, HUF/BUBOR, EUR/6M EURIBOR, USD/SOFR, €STR OIS) from BlueGamma public pages (6 Nov close plus 1W/1M/1Y-ago columns);
       swapped yields = own-currency asset-swap spread + PLN (or EUR) swap at the same maturity, CCS basis zero. Carry+roll = (yield − local 3M rate) + duration × 1Y slide on each market's curve. Hedged yields use 1Y FX-implied rates.
       Matched-maturity swaps assume zero cross-currency basis; no published EUR/PLN basis level was found.</li>
+    <li><b>Floaters &amp; linkers:</b> WZ coupon = 6M WIBOR flat (MoF notices), NZ = compounded POLSTR flat. Single-curve 6M WIBOR discount factors are bootstrapped from 6M WIBOR + the PLN swap curve;
+      DM = constant spread over that curve (continuous) that reprices the dirty price; NZ projects WIBOR forwards − {FL['polstr_basis'] * 100 if FL else 35:.0f}bp. Rate duration = repricing after a +1bp curve shift at constant DM.
+      IZ: real yield from the real price (annual coupons), breakeven vs the fitted nominal curve; IZ0831 real coupon 1.75%, IZ0836 2.00% (MoF database).</li>
     <li><b>Calendar &amp; supply:</b> MoF 2026 auction calendar, Q4 financing plan, November supply plan and the MoF auction database (<a href="{E(cal['_sources']['nov_2026_supply'])}" rel="noopener">Nov plan</a>,
       <a href="{E(cal['_sources']['auction_results_db'])}" rel="noopener">results DB</a>). MPC: NBP 2026 schedule. Macro: NBP projection, GUS flash CPI, MoF, PKO BP and Bank Millennium dailies of 9 Nov 2026.</li>
     <li><b>Refresh:</b> <code>python src/fetch_bondspot.py YYYY-MM-DD &amp;&amp; python src/analytics.py YYYY-MM-DD &amp;&amp; python src/build_dashboard.py YYYY-MM-DD</code>, then <code>python src/deploy.py</code>. Update data/market_inputs.json (IRS, WIBOR) and data/index_portfolios.json each month.</li>

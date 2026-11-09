@@ -629,6 +629,77 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
     hit.addEventListener("pointerleave", function () { cross.setAttribute("opacity", 0); hideTT(); });
   }
 
+  // ---------------------------------------------------------------- scatter (per-point tooltips, optional connecting line per series)
+  // series: [{name, color, line:bool, pts:[{x,y,label,tt:[...]}]}]
+  function scatterChart(host, series, opts) {
+    clear(host);
+    var W = widthOf(host), H = opts.h || 320, m = { l: 46, r: 16, t: 14, b: 36 };
+    var xs = [], ys = [];
+    series.forEach(function (s) { s.pts.forEach(function (p) { xs.push(p.x); ys.push(p.y); }); });
+    var xlo = 0, xhi = Math.ceil(Math.max.apply(null, xs) + 0.5);
+    var lo = Math.min(0, Math.min.apply(null, ys)), hi = Math.max.apply(null, ys);
+    var pad = (hi - lo) * 0.1; lo -= pad; hi += pad;
+    var ticks = niceTicks(lo, hi, 6); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+    var X = function (x) { return m.l + (x - xlo) / (xhi - xlo) * (W - m.l - m.r); };
+    var Y = function (v) { return m.t + (hi - v) / (hi - lo) * (H - m.t - m.b); };
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria || "" }, host);
+    var g = el("g", {}, svg);
+    ticks.forEach(function (v) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), "class": v === 0 ? "ax" : "gl" }, g); txt(g, m.l - 6, Y(v) + 4, v + (opts.yUnit || ""), "", "end"); });
+    for (var xt = 0; xt <= xhi; xt += (xhi > 8 ? 2 : 1)) { txt(g, X(xt), H - m.b + 16, xt + "Y", "", "middle"); }
+    el("line", { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, "class": "ax" }, g);
+    if (opts.xLabel) txt(g, W - m.r, H - 4, opts.xLabel, "", "end");
+    var surf = cssVar("--surface"), placed = [], allPts = [];
+    series.forEach(function (s) {
+      var c = cssVar(s.color), pts = s.pts.slice().sort(function (a, b) { return a.x - b.x; });
+      if (s.line && pts.length > 1) el("path", { d: pts.map(function (p, j) { return (j ? "L" : "M") + X(p.x).toFixed(1) + "," + Y(p.y).toFixed(1); }).join(""), fill: "none", stroke: c, "stroke-width": 2, opacity: 0.5, "stroke-linejoin": "round" }, g);
+      pts.forEach(function (p) { allPts.push({ x: X(p.x), y: Y(p.y) }); });
+    });
+    series.forEach(function (s) {
+      var c = cssVar(s.color);
+      s.pts.forEach(function (p) {
+        var cx = X(p.x), cy = Y(p.y);
+        var dot = el(s.shape === "square" ? "rect" : "circle", s.shape === "square" ? { x: cx - 4.5, y: cy - 4.5, width: 9, height: 9, rx: 2, fill: c, stroke: surf, "stroke-width": 2 } : { cx: cx, cy: cy, r: s.small ? 3.5 : 5, fill: c, stroke: surf, "stroke-width": 2 }, g);
+        var hit = el("circle", { cx: cx, cy: cy, r: 12, "class": "hit" }, g);
+        bindTT(hit, p.head || (p.label + " · " + s.name), function () { return p.tt; });
+        if (p.label && !s.small) {
+          var w = p.label.length * 6.4, cands = [[8, -7, "start"], [8, 14, "start"], [-8, -7, "end"], [-8, 14, "end"]];
+          for (var i = 0; i < cands.length; i++) {
+            var x = cx + cands[i][0], y = cy + cands[i][1], x0 = cands[i][2] === "end" ? x - w : x, box = [x0 - 2, y - 11, x0 + w + 2, y + 3];
+            if (x0 < m.l || x0 + w > W - 2) continue;
+            var hd = allPts.some(function (o) { return o.x > box[0] - 3 && o.x < box[2] + 3 && o.y > box[1] - 3 && o.y < box[3] + 3; });
+            var hl = placed.some(function (q) { return !(box[2] < q[0] || box[0] > q[2] || box[3] < q[1] || box[1] > q[3]); });
+            if (!hd && !hl) { placed.push(box); txt(g, x, y, p.label, "lbl", cands[i][2]); break; }
+          }
+        }
+      });
+    });
+  }
+
+  // ---- floaters vs fixed ASW
+  (function () {
+    var F = D.fl; if (!F) return;
+    var h = document.getElementById("flChart"); if (!h) return;
+    var r = function () {
+      var fixed = D.bonds.filter(function (b) { return b.ttm > 0.9 && b.ttm < 11; }).map(function (b) {
+        return { x: b.ttm, y: b.asw_bp, label: "", head: b.ticker + " · fixed " + f(b.coupon, 2) + "% · " + b.maturity, tt: [{ name: "ASW (yield − PLN IRS)", value: sg(b.asw_bp, 0) + " bp", color: cssVar("--s1") }, { name: "Yield", value: f(b.ytm, 3) + "%" }, { name: "Mod. duration", value: f(b.mod, 2) }] };
+      });
+      var mk = function (pref) {
+        return F.floaters.filter(function (x) { return x.ticker.indexOf(pref) === 0; }).map(function (x) {
+          return { x: x.ttm, y: x.dm_wibor_eq_bp, label: x.ticker, head: x.ticker + " · " + x.index + " floater · " + x.maturity,
+                   tt: [{ name: "DM vs WIBOR (equiv.)", value: sg(x.dm_wibor_eq_bp, 0) + " bp", color: cssVar(pref === "WZ" ? "--s2" : "--s3") },
+                        { name: "DM vs own index", value: sg(x.dm_bp, 0) + " bp" }, { name: "Fixed ASW same maturity", value: sg(x.fixed_asw_bp, 0) + " bp" },
+                        { name: "Floater − fixed", value: sg(x.vs_fixed_bp, 0) + " bp" }, { name: "Spread duration", value: f(x.spread_dur, 2) }, { name: "Rate duration", value: f(x.rate_dur, 2) },
+                        { name: "Price", value: f(x.clean, 2) }] };
+        });
+      };
+      scatterChart(h, [{ name: "Fixed POLGB ASW", color: "--s1", line: true, small: true, pts: fixed },
+                       { name: "WZ (6M WIBOR)", color: "--s2", pts: mk("WZ") },
+                       { name: "NZ (POLSTR, WIBOR-equiv.)", color: "--s3", shape: "square", pts: mk("NZ") }],
+                   { yUnit: "", aria: "Floater discount margins vs fixed-bond asset-swap spreads by maturity", xLabel: "Years to maturity", h: 320 });
+    };
+    renderers.push(r); r();
+  })();
+
   // ---- Poland vs core
   (function () {
     var K = D.core; if (!K) return;
