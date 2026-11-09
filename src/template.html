@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Polish FI Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --surface-2: #f4f4f1; --chip: #f0efec;
+  --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
+  --gold: #9a6f12; --gold-soft: rgba(154,111,18,0.10);
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+  --pos: #2a78d6; --neg: #e34948; --mid: #f0efec;
+  --good: #0ca30c; --good-ink: #006300; --warn: #fab219; --crit: #d03b3b;
+  --hero-bg: #12122a; --hero-ink: #fcfcfb; --hero-sub: #c3c2b7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --surface-2: #222220; --chip: #2a2a28;
+    --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+    --gold: #c9a961; --gold-soft: rgba(201,169,97,0.12);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+    --pos: #3987e5; --neg: #e66767; --mid: #383835;
+    --good-ink: #0ca30c;
+    --hero-bg: #f0efec; --hero-ink: #12122a; --hero-sub: #52514e;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --surface-2: #222220; --chip: #2a2a28;
+  --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+  --gold: #c9a961; --gold-soft: rgba(201,169,97,0.12);
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --pos: #3987e5; --neg: #e66767; --mid: #383835;
+  --good-ink: #0ca30c;
+  --hero-bg: #f0efec; --hero-ink: #12122a; --hero-sub: #52514e;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--page); color: var(--ink); }
+body { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 72px; }
+a { color: var(--gold); }
+header.top { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+header.top h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+header.top .sub { color: var(--ink-2); margin: 4px 0 0; max-width: 70ch; }
+.meta { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
+.theme-btn { font: inherit; font-size: 12px; background: var(--chip); color: var(--ink-2); border: 1px solid var(--ring); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+nav.toc { display: flex; gap: 6px; flex-wrap: wrap; margin: 18px 0 4px; position: sticky; top: 0; z-index: 5; background: var(--page); padding: 8px 0; border-bottom: 1px solid var(--grid); }
+nav.toc a { font-size: 12.5px; text-decoration: none; color: var(--ink-2); padding: 4px 10px; border: 1px solid var(--grid); border-radius: 999px; }
+nav.toc a:hover { border-color: var(--gold); color: var(--gold); }
+section.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 8px; padding: 20px 22px 18px; margin-top: 22px; }
+section.card > h2 { font-size: 19px; margin: 0 0 2px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+section.card > h2 .tag { font-size: 11px; font-weight: 500; color: var(--gold); background: var(--gold-soft); border-radius: 4px; padding: 2px 7px; letter-spacing: 0.04em; text-transform: uppercase; }
+.lede { color: var(--ink-2); margin: 2px 0 14px; max-width: 95ch; }
+h3 { font-size: 15px; margin: 18px 0 6px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 8px; margin-top: 18px; }
+.tile { background: var(--surface); border: 1px solid var(--ring); border-radius: 6px; padding: 10px 12px; }
+.tile .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.tile .v { font-size: 21px; font-weight: 600; margin-top: 2px; }
+.tile .d { font-size: 11.5px; color: var(--ink-2); }
+.bottomline { background: var(--hero-bg); color: var(--hero-ink); border-radius: 8px; padding: 18px 22px; margin-top: 22px; }
+.bottomline h2 { margin: 0 0 8px; font-size: 18px; }
+.bottomline ol { margin: 0; padding-left: 20px; }
+.bottomline li { margin: 6px 0; }
+.bottomline .sub { color: var(--hero-sub); font-size: 12.5px; margin-top: 10px; }
+.bottomline b { color: inherit; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; }
+@media (max-width: 520px) { .grid2 { grid-template-columns: 1fr; } }
+.ixcard { background: var(--surface-2); border-radius: 6px; padding: 14px 16px; }
+.ixcard .name { font-weight: 600; font-size: 15px; }
+.ixcard .rule { color: var(--muted); font-size: 12px; }
+.ixcard .hero { font-size: 44px; font-weight: 600; line-height: 1.1; margin: 8px 0 0; }
+.ixcard .hero small { font-size: 14px; font-weight: 500; color: var(--ink-2); margin-left: 4px; }
+.kv { display: grid; grid-template-columns: 1fr auto; gap: 3px 12px; margin-top: 10px; font-size: 13px; }
+.kv span { color: var(--ink-2); }
+.kv b { font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-variant-numeric: tabular-nums; text-align: right; }
+.kv .off { color: var(--muted); font-weight: 400; font-size: 11.5px; }
+.tablewrap { overflow-x: auto; margin-top: 8px; border: 1px solid var(--grid); border-radius: 6px; }
+table.t { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+table.t th, table.t td { padding: 6px 9px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+table.t th { color: var(--ink-2); font-weight: 600; background: var(--surface-2); position: sticky; top: 0; cursor: default; }
+table.t th.sortable { cursor: pointer; }
+table.t td { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }
+table.t td.l, table.t th.l { text-align: left; font-family: 'IBM Plex Sans', system-ui, sans-serif; }
+table.t tr:last-child td { border-bottom: 0; }
+table.t tr.hl td { background: var(--gold-soft); }
+.pill { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--chip); color: var(--ink-2); font-family: 'IBM Plex Sans', sans-serif; }
+.pill.cheap { background: rgba(42,120,214,0.14); color: var(--ink); }
+.pill.rich { background: rgba(227,73,72,0.14); color: var(--ink); }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: 'IBM Plex Sans', system-ui, sans-serif; fill: var(--muted); font-size: 11px; }
+.chart .gl { stroke: var(--grid); stroke-width: 1; }
+.chart .ax { stroke: var(--axis); stroke-width: 1; }
+.chart .lbl { fill: var(--ink-2); font-size: 11px; }
+.chart .lbl-strong { fill: var(--ink); font-size: 11.5px; font-weight: 600; }
+.chart .hit { fill: transparent; cursor: default; }
+.chart .mark:hover, .chart .mark.on { filter: brightness(1.12); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); margin: 6px 0 2px; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 5px; }
+.legend i.line { height: 2px; border-radius: 1px; vertical-align: 3px; width: 16px; }
+.legend i.dot { width: 9px; height: 9px; border-radius: 50%; vertical-align: 0; }
+.legend i.tick { width: 2px; height: 12px; border-radius: 0; }
+#tt { position: fixed; pointer-events: none; z-index: 50; background: var(--surface); color: var(--ink); border: 1px solid var(--ring); box-shadow: 0 6px 20px rgba(0,0,0,0.14); border-radius: 6px; padding: 8px 10px; font-size: 12px; min-width: 140px; display: none; }
+#tt .tth { color: var(--ink-2); font-size: 11.5px; margin-bottom: 4px; }
+#tt .ttr { display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+#tt .ttr b { font-family: 'IBM Plex Mono', monospace; font-weight: 500; }
+#tt .key { display: inline-block; width: 12px; height: 2px; margin-right: 6px; vertical-align: 3px; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 4px; }
+.tabs button { font: inherit; font-size: 12.5px; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--grid); background: transparent; color: var(--ink-2); cursor: pointer; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.note { background: var(--surface-2); border-radius: 6px; padding: 12px 15px; font-size: 13px; color: var(--ink-2); margin-top: 14px; }
+.note b { color: var(--ink); }
+.callout { border-left: 3px solid var(--gold); padding: 4px 0 4px 12px; margin: 10px 0; }
+.ideas { display: grid; gap: 10px; }
+.idea { background: var(--surface-2); border-radius: 6px; padding: 12px 15px; }
+.idea .hd { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+.idea .hd b { font-size: 14.5px; }
+.idea .score { font-size: 11.5px; color: var(--ink-2); }
+.idea p { margin: 6px 0 0; color: var(--ink-2); }
+.idea .risk { font-size: 12.5px; }
+.status { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink); }
+.status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.status.go::before { background: var(--good); }
+.status.wait::before { background: var(--warn); }
+.status.avoid::before { background: var(--crit); }
+ul.tight { margin: 6px 0; padding-left: 18px; }
+ul.tight li { margin: 3px 0; }
+.small { font-size: 12px; color: var(--muted); }
+footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
+.decomp-eq { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; background: var(--chip); padding: 8px 10px; border-radius: 5px; color: var(--ink); overflow-x: auto; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+<!--BODY-->
+</div>
+<div id="tt" role="status" aria-live="polite"></div>
+<script>window.DASH = /*DATA*/;</script>
+<script>
+(function () {
+  "use strict";
+  var D = window.DASH;
+  var NS = "http://www.w3.org/2000/svg";
+  var tt = document.getElementById("tt");
+
+  // ---------------------------------------------------------------- theme toggle
+  var btn = document.getElementById("themeBtn");
+  function curTheme() {
+    var a = document.documentElement.getAttribute("data-theme");
+    if (a) return a;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function setTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    try { localStorage.setItem("pfi-theme", t); } catch (e) {}
+    if (btn) btn.textContent = t === "dark" ? "Light mode" : "Dark mode";
+  }
+  try { var saved = localStorage.getItem("pfi-theme"); if (saved) setTheme(saved); } catch (e) {}
+  if (btn) { btn.textContent = curTheme() === "dark" ? "Light mode" : "Dark mode"; btn.addEventListener("click", function () { setTheme(curTheme() === "dark" ? "light" : "dark"); renderAll(); }); }
+  var renderers = [];
+  function renderAll() { renderers.forEach(function (r) { r(); }); }
+  if (window.matchMedia) { try { window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () { renderAll(); }); } catch (e) {} }
+  var lastW = window.innerWidth, rt = null;
+  window.addEventListener("resize", function () { if (window.innerWidth === lastW) return; lastW = window.innerWidth; clearTimeout(rt); rt = setTimeout(renderAll, 150); });
+
+  // ---------------------------------------------------------------- helpers
+  function el(tag, attrs, parent) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) if (attrs[k] !== undefined && attrs[k] !== null) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function txt(parent, x, y, s, cls, anchor) {
+    var t = el("text", { x: x, y: y, "class": cls || "", "text-anchor": anchor || "start" }, parent);
+    t.textContent = s; return t;
+  }
+  function f(x, d) { if (x === null || x === undefined || isNaN(x)) return "–"; d = d === undefined ? 2 : d; var s = Number(x).toFixed(d); return /^-0\.?0*$/.test(s) ? s.slice(1) : s; }
+  function sg(x, d) { if (x === null || x === undefined || isNaN(x)) return "–"; d = d === undefined ? 2 : d; var r = Number(Number(x).toFixed(d)); return (r > 0 ? "+" : r < 0 ? "−" : "") + Math.abs(r).toFixed(d); }
+  function widthOf(host, min) { return Math.max(min || 300, Math.round(host.clientWidth || host.getBoundingClientRect().width || 1100)); }
+  function clear(host) { while (host.firstChild) host.removeChild(host.firstChild); }
+  function niceTicks(lo, hi, n) {
+    var span = hi - lo, step = Math.pow(10, Math.floor(Math.log10(span / n))), err = span / n / step;
+    if (err >= 7.5) step *= 10; else if (err >= 3.5) step *= 5; else if (err >= 1.5) step *= 2;
+    var out = [], v = Math.ceil(lo / step) * step;
+    for (; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10));
+    return out;
+  }
+  function cssVar(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+  function showTT(evt, head, rows) {
+    while (tt.firstChild) tt.removeChild(tt.firstChild);
+    var h = document.createElement("div"); h.className = "tth"; h.textContent = head; tt.appendChild(h);
+    rows.forEach(function (r) {
+      var row = document.createElement("div"); row.className = "ttr";
+      var left = document.createElement("span");
+      if (r.color) { var k = document.createElement("i"); k.className = "key"; k.style.background = r.color; left.appendChild(k); }
+      left.appendChild(document.createTextNode(r.name));
+      var v = document.createElement("b"); v.textContent = r.value;
+      row.appendChild(left); row.appendChild(v); tt.appendChild(row);
+    });
+    tt.style.display = "block";
+    var x = evt.clientX + 14, y = evt.clientY + 14, w = tt.offsetWidth, hh = tt.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = evt.clientX - w - 14;
+    if (y + hh > window.innerHeight - 8) y = evt.clientY - hh - 14;
+    tt.style.left = Math.max(8, x) + "px"; tt.style.top = Math.max(8, y) + "px";
+  }
+  function hideTT() { tt.style.display = "none"; }
+  function bindTT(node, head, rowsFn) {
+    node.setAttribute("tabindex", "0");
+    node.addEventListener("pointermove", function (e) { showTT(e, head, rowsFn()); });
+    node.addEventListener("pointerleave", hideTT);
+    node.addEventListener("focus", function () { var r = node.getBoundingClientRect(); showTT({ clientX: r.right, clientY: r.top }, head, rowsFn()); });
+    node.addEventListener("blur", hideTT);
+  }
+  function roundedBar(g, x, y, w, h, dir, cls, color) {
+    // 4px rounded data-end, square at baseline. dir: 'up' | 'down' | 'right' | 'left'
+    var r = Math.min(4, Math.abs(dir === "up" || dir === "down" ? h : w) / 2, Math.abs(dir === "up" || dir === "down" ? w : h) / 2);
+    var d;
+    if (dir === "up") d = "M" + x + "," + (y + h) + "V" + (y + r) + "Q" + x + "," + y + " " + (x + r) + "," + y + "H" + (x + w - r) + "Q" + (x + w) + "," + y + " " + (x + w) + "," + (y + r) + "V" + (y + h) + "Z";
+    else if (dir === "down") d = "M" + x + "," + y + "V" + (y + h - r) + "Q" + x + "," + (y + h) + " " + (x + r) + "," + (y + h) + "H" + (x + w - r) + "Q" + (x + w) + "," + (y + h) + " " + (x + w) + "," + (y + h - r) + "V" + y + "Z";
+    else if (dir === "right") d = "M" + x + "," + y + "H" + (x + w - r) + "Q" + (x + w) + "," + y + " " + (x + w) + "," + (y + r) + "V" + (y + h - r) + "Q" + (x + w) + "," + (y + h) + " " + (x + w - r) + "," + (y + h) + "H" + x + "Z";
+    else d = "M" + (x + w) + "," + y + "H" + (x + r) + "Q" + x + "," + y + " " + x + "," + (y + r) + "V" + (y + h - r) + "Q" + x + "," + (y + h) + " " + (x + r) + "," + (y + h) + "H" + (x + w) + "Z";
+    return el("path", { d: d, "class": "mark " + (cls || ""), fill: color }, g);
+  }
+
+  // ---------------------------------------------------------------- chart: yield curve
+  function curveChart(host) {
+    clear(host);
+    var W = widthOf(host), H = W < 600 ? 300 : 380, m = { l: 46, r: 18, t: 16, b: 40 };
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "POLGB yield curve, fitted curve and IRS curve" }, host);
+    var bonds = D.bonds, grid = D.curve.filter(function (g) { return g.t <= 21; });
+    var xmax = 21, ylo = 3.2, yhi = 6.6;
+    var X = function (t) { return m.l + (Math.sqrt(t) / Math.sqrt(xmax)) * (W - m.l - m.r); };  // sqrt time axis
+    var Y = function (y) { return m.t + (yhi - y) / (yhi - ylo) * (H - m.t - m.b); };
+    var g = el("g", {}, svg);
+    niceTicks(ylo, yhi, 6).forEach(function (v) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), "class": "gl" }, g); txt(g, m.l - 6, Y(v) + 4, v.toFixed(1) + "%", "", "end"); });
+    (W < 600 ? [1, 2, 5, 10, 20] : [0.5, 1, 2, 3, 5, 7, 10, 15, 20]).forEach(function (t) { el("line", { x1: X(t), x2: X(t), y1: H - m.b, y2: H - m.b + 4, "class": "ax" }, g); txt(g, X(t), H - m.b + 17, t + "Y", "", "middle"); });
+    el("line", { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, "class": "ax" }, g);
+    txt(g, W - m.r, H - 6, W < 600 ? "Maturity (sqrt scale)" : "Time to maturity (square-root scale)", "", "end");
+    function path(key) { return grid.map(function (p, i) { return (i ? "L" : "M") + X(p.t).toFixed(1) + "," + Y(p[key]).toFixed(1); }).join(""); }
+    var cIRS = cssVar("--s2"), cFit = cssVar("--s1");
+    el("path", { d: path("irs"), fill: "none", stroke: cIRS, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, g);
+    el("path", { d: path("fit"), fill: "none", stroke: cFit, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", opacity: 0.55 }, g);
+    // ASW shading between curves at bond points (thin verticals)
+    bonds.forEach(function (b) {
+      if (b.ttm > 21) return;
+      el("line", { x1: X(b.ttm), x2: X(b.ttm), y1: Y(b.ytm), y2: Y(b.irs), stroke: cssVar("--axis"), "stroke-width": 1 }, g);
+    });
+    var surf = cssVar("--surface");
+    bonds.forEach(function (b) {
+      var cx = X(b.ttm), cy = Y(b.ytm);
+      var dot = el("circle", { cx: cx, cy: cy, r: 4.5, fill: cFit, stroke: surf, "stroke-width": 2, "class": "mark" }, g);
+      var hit = el("circle", { cx: cx, cy: cy, r: 12, "class": "hit" }, g);
+      bindTT(hit, b.ticker + " · " + b.maturity + " · cpn " + f(b.coupon, 2) + "%", function () {
+        return [{ name: "Yield", value: f(b.ytm, 3) + "%", color: cFit }, { name: "Fitted curve", value: f(b.fit_ytm, 3) + "%" },
+                { name: "Rich(−)/cheap(+)", value: b.rc_bp === null ? "n/a" : sg(b.rc_bp, 1) + " bp" },
+                { name: "IRS (interp.)", value: f(b.irs, 2) + "%", color: cIRS }, { name: "ASW", value: sg(b.asw_bp, 0) + " bp" },
+                { name: "Mod. duration", value: f(b.mod, 2) }];
+      });
+      hit.addEventListener("pointerenter", function () { dot.setAttribute("r", 6); });
+      hit.addEventListener("pointerleave", function () { dot.setAttribute("r", 4.5); });
+    });
+    // selective direct labels: benchmarks + extremes
+    var lab = D.label_bonds || [], placed = [];
+    bonds.forEach(function (b) {
+      if (lab.indexOf(b.ticker) < 0 || b.ttm > 21) return;
+      var w = b.ticker.length * 6.6, cands = [[7, -8, "start"], [7, 16, "start"], [-7, -8, "end"], [-7, 16, "end"]];
+      for (var i = 0; i < cands.length; i++) {
+        var x = X(b.ttm) + cands[i][0], y = Y(b.ytm) + cands[i][1], x0 = cands[i][2] === "end" ? x - w : x;
+        if (x0 < m.l || x0 + w > W - 2) continue;
+        var box = [x0 - 2, y - 11, x0 + w + 2, y + 3];
+        var hitDot = bonds.some(function (o) { var cx = X(o.ttm), cy = Y(o.ytm); return cx > box[0] - 4 && cx < box[2] + 4 && cy > box[1] - 4 && cy < box[3] + 4; });
+        var hitLab = placed.some(function (p) { return !(box[2] < p[0] || box[0] > p[2] || box[3] < p[1] || box[1] > p[3]); });
+        if (!hitDot && !hitLab) { placed.push(box); txt(g, x, y, b.ticker, "lbl", cands[i][2]); break; }
+      }
+    });
+    var last = grid[grid.length - 1];
+    txt(g, X(last.t) - 4, Y(last.irs) + 16, "IRS " + f(last.irs, 2) + "%", "lbl", "end");
+  }
+
+  // ---------------------------------------------------------------- chart: column bars (ASW by bucket)
+  function columnChart(host, items, opts) {
+    clear(host);
+    var W = widthOf(host), H = opts.h || 280, m = { l: 40, r: 8, t: 22, b: 42 };
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria }, host);
+    var vals = items.map(function (d) { return d.v; }).concat(items.map(function (d) { return d.ref === undefined ? 0 : d.ref; }));
+    var lo = Math.min(0, Math.min.apply(null, vals)), hi = Math.max.apply(null, vals) * 1.12;
+    var ticks = niceTicks(lo, hi, 5); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+    if (lo < 0) lo -= (hi - lo) * 0.1;
+    var Y = function (v) { return m.t + (hi - v) / (hi - lo) * (H - m.t - m.b); };
+    var bw = (W - m.l - m.r) / items.length, barW = Math.min(24, bw * 0.5);
+    var g = el("g", {}, svg);
+    ticks.forEach(function (v) { if (v < lo) return; el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), "class": v === 0 ? "ax" : "gl" }, g); txt(g, m.l - 6, Y(v) + 4, v + (opts.unit || ""), "", "end"); });
+    var c = cssVar(opts.color || "--s1"), cr = cssVar("--ink-2");
+    items.forEach(function (d, i) {
+      var cx = m.l + bw * i + bw / 2, x = cx - barW / 2;
+      var y0 = Y(0), y1 = Y(d.v);
+      var p = roundedBar(g, x, Math.min(y0, y1), barW, Math.abs(y1 - y0), d.v >= 0 ? "up" : "down", "", d.v >= 0 ? c : cssVar("--neg"));
+      var top = d.ref !== undefined && d.ref !== null && d.v >= 0 ? Math.min(y1, Y(d.ref)) : y1;
+      txt(g, cx, d.v >= 0 ? top - 6 : y1 + 14, sg(d.v, opts.dp || 0), "lbl-strong", "middle");
+      txt(g, cx, H - m.b + 16, d.label, "lbl", "middle");
+      if (d.sub && bw >= d.sub.length * 6.2 + 8) txt(g, cx, H - m.b + 30, d.sub, "", "middle");
+      if (d.ref !== undefined && d.ref !== null) {
+        el("line", { x1: x - 5, x2: x + barW + 5, y1: Y(d.ref), y2: Y(d.ref), stroke: cr, "stroke-width": 2, "stroke-linecap": "round" }, g);
+      }
+      var hit = el("rect", { x: m.l + bw * i, y: m.t, width: bw, height: H - m.t - m.b, "class": "hit" }, g);
+      bindTT(hit, d.label + (d.sub ? " · " + d.sub : ""), function () { return d.tt; });
+      hit.addEventListener("pointerenter", function () { p.classList.add("on"); });
+      hit.addEventListener("pointerleave", function () { p.classList.remove("on"); });
+    });
+  }
+
+  // ---------------------------------------------------------------- chart: horizontal diverging / stacked bars
+  function hbarChart(host, rows, opts) {
+    // rows: [{label, segs:[{v, key}], marker:{v,name}, tt:[...]}]
+    clear(host);
+    var rowH = 22, W = widthOf(host), m = { l: 66, r: W < 600 ? 44 : 60, t: 10, b: 30 };
+    var H = m.t + m.b + rows.length * rowH;
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria }, host);
+    var mins = rows.map(function (r) { return r.segs.reduce(function (a, s) { return a + Math.min(0, s.v); }, 0); });
+    var maxs = rows.map(function (r) { return Math.max(r.segs.reduce(function (a, s) { return a + Math.max(0, s.v); }, 0), r.marker ? r.marker.v : 0); });
+    var lo = Math.min(0, Math.min.apply(null, mins)), hi = Math.max(0, Math.max.apply(null, maxs));
+    if (opts.symmetric) { var a = Math.max(-lo, hi) * 1.2; lo = -a; hi = a; }
+    else if (lo < 0) lo -= (hi - lo) * 0.04;
+    var ticks = niceTicks(lo, hi, 6); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+    var X = function (v) { return m.l + (v - lo) / (hi - lo) * (W - m.l - m.r); };
+    var g = el("g", {}, svg);
+    var tstep = W < 600 ? 2 : 1;
+    ticks.forEach(function (v, i) { if (v < lo || v > hi) return; el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, "class": v === 0 ? "ax" : "gl" }, g); if (i % tstep === 0 || v === 0) txt(g, X(v), H - m.b + 16, v + (opts.unit || ""), "", "middle"); });
+    var colors = opts.colors;
+    rows.forEach(function (r, i) {
+      var y = m.t + i * rowH + 4, h = rowH - 8;
+      txt(g, m.l - 8, y + h - 3, r.label, r.strong ? "lbl-strong" : "lbl", "end");
+      var pos = 0, neg = 0, paths = [];
+      r.segs.forEach(function (s, j) {
+        if (!s.v) return;
+        var c = typeof colors === "function" ? colors(s) : cssVar(colors[s.key]);
+        var lastPos = s.v > 0 && r.segs.slice(j + 1).every(function (q) { return !(q.v > 0); });
+        var lastNeg = s.v < 0 && r.segs.slice(j + 1).every(function (q) { return !(q.v < 0); });
+        var x0, w;
+        if (s.v > 0) { x0 = X(pos); w = X(pos + s.v) - x0; pos += s.v; }
+        else { w = X(neg) - X(neg + s.v); x0 = X(neg + s.v); neg += s.v; }
+        var gap = (r.segs.length > 1 && !(s.v > 0 ? lastPos : lastNeg)) ? 2 : 0;
+        var dir = s.v > 0 ? "right" : "left";
+        var p;
+        if ((s.v > 0 && lastPos) || (s.v < 0 && lastNeg)) p = roundedBar(g, x0, y, Math.max(0.5, w), h, dir, "", c);
+        else p = el("rect", { x: s.v > 0 ? x0 : x0 + gap, y: y, width: Math.max(0.5, w - gap), height: h, fill: c, "class": "mark" }, g);
+        paths.push(p);
+      });
+      if (r.marker && r.marker.v !== null && r.marker.v !== undefined) {
+        el("line", { x1: X(r.marker.v), x2: X(r.marker.v), y1: y - 3, y2: y + h + 3, stroke: cssVar("--ink"), "stroke-width": 2, "stroke-linecap": "round" }, g);
+      }
+      if (r.end !== undefined) {
+        var endV = r.segs.reduce(function (a, s) { return a + s.v; }, 0);
+        var ex = endV >= 0 ? X(pos) + 6 : X(neg) - 6;
+        txt(g, ex, y + h - 3, r.end, "lbl", endV >= 0 ? "start" : "end");
+      }
+      var hit = el("rect", { x: 0, y: m.t + i * rowH, width: W, height: rowH, "class": "hit" }, g);
+      bindTT(hit, r.ttHead || r.label, function () { return r.tt; });
+      hit.addEventListener("pointerenter", function () { paths.forEach(function (p) { p.classList.add("on"); }); });
+      hit.addEventListener("pointerleave", function () { paths.forEach(function (p) { p.classList.remove("on"); }); });
+    });
+  }
+
+  // ---------------------------------------------------------------- tables
+  function table(host, cols, rows, opts) {
+    var wrap = document.createElement("div"); wrap.className = "tablewrap";
+    var t = document.createElement("table"); t.className = "t";
+    var thead = document.createElement("thead"), trh = document.createElement("tr");
+    var state = { k: null, dir: 1 };
+    cols.forEach(function (c, ci) {
+      var th = document.createElement("th"); th.textContent = c.h; if (c.l) th.className = "l";
+      if (c.title) th.title = c.title;
+      if (c.sort !== false) { th.classList.add("sortable"); th.addEventListener("click", function () { state.dir = state.k === ci ? -state.dir : (c.l ? 1 : -1); state.k = ci; render(); }); }
+      trh.appendChild(th);
+    });
+    thead.appendChild(trh); t.appendChild(thead);
+    var tb = document.createElement("tbody"); t.appendChild(tb);
+    function render() {
+      while (tb.firstChild) tb.removeChild(tb.firstChild);
+      var rs = rows.slice();
+      if (state.k !== null) { var c = cols[state.k]; rs.sort(function (a, b) { var x = c.v(a), y = c.v(b); if (x === null || x === undefined) return 1; if (y === null || y === undefined) return -1; return (x > y ? 1 : x < y ? -1 : 0) * state.dir; }); }
+      rs.forEach(function (r) {
+        var tr = document.createElement("tr"); if (opts && opts.hl && opts.hl(r)) tr.className = "hl";
+        cols.forEach(function (c) {
+          var td = document.createElement("td"); if (c.l) td.className = "l";
+          var out = c.fmt ? c.fmt(r) : c.v(r);
+          if (out && typeof out === "object" && out.pill) { var s = document.createElement("span"); s.className = "pill " + (out.cls || ""); s.textContent = out.pill; td.appendChild(s); }
+          else td.textContent = out === null || out === undefined ? "–" : out;
+          tr.appendChild(td);
+        });
+        tb.appendChild(tr);
+      });
+    }
+    render(); wrap.appendChild(t); host.appendChild(wrap);
+  }
+
+  // ================================================================= render sections
+  var byT = {}; D.bonds.forEach(function (b) { byT[b.ticker] = b; });
+
+  // ---- index duration contribution charts + constituents (tabs)
+  (function () {
+    var host = document.getElementById("ixDetail"); if (!host) return;
+    var tabs = document.getElementById("ixTabs"), codes = Object.keys(D.indices);
+    var cur = codes[codes.length - 1];
+    renderers.push(function () { show(cur); });
+    function show(code) {
+      cur = code;
+      Array.prototype.forEach.call(tabs.children, function (b) { b.setAttribute("aria-pressed", b.dataset.code === code ? "true" : "false"); });
+      while (host.firstChild) host.removeChild(host.firstChild);
+      var ix = D.indices[code];
+      var ch = document.createElement("div"); ch.className = "chart"; host.appendChild(ch);
+      var rows = ix.constituents.map(function (c) {
+        return { label: c.ticker, segs: [{ v: c.dur_contrib, key: "d" }], end: f(c.dur_contrib, 3),
+                 ttHead: c.ticker + " · weight " + f(c.weight, 2) + "%",
+                 tt: [{ name: "Duration contribution", value: f(c.dur_contrib, 3) }, { name: "Mod. duration", value: f(c.mod, 2) },
+                      { name: "Weight", value: f(c.weight, 2) + "%" }, { name: "Yield", value: f(c.ytm, 3) + "%" }] };
+      });
+      hbarChart(ch, rows, { colors: { d: "--s1" }, aria: "Contribution to modified duration by constituent" });
+      table(host, [
+        { h: "Bond", l: true, v: function (r) { return r.ticker; } },
+        { h: "Maturity", v: function (r) { return byT[r.ticker].maturity; } },
+        { h: "Weight %", v: function (r) { return r.weight; }, fmt: function (r) { return f(r.weight, 2); } },
+        { h: "Yield %", v: function (r) { return r.ytm; }, fmt: function (r) { return f(r.ytm, 3); } },
+        { h: "Mod. dur", v: function (r) { return r.mod; }, fmt: function (r) { return f(r.mod, 2); } },
+        { h: "Dur. contrib", v: function (r) { return r.dur_contrib; }, fmt: function (r) { return f(r.dur_contrib, 3); } },
+        { h: "ASW bp", v: function (r) { return r.asw_bp; }, fmt: function (r) { return sg(r.asw_bp, 0); } },
+        { h: "Rich/cheap bp", v: function (r) { return r.rc_bp; }, fmt: function (r) { return r.rc_bp === null ? "–" : sg(r.rc_bp, 1); } }
+      ], ix.constituents);
+    }
+    codes.forEach(function (code) {
+      var b = document.createElement("button"); b.textContent = D.indices[code].label; b.dataset.code = code;
+      b.addEventListener("click", function () { show(code); }); tabs.appendChild(b);
+    });
+    show(cur);
+  })();
+
+  // ---- curve chart
+  (function () { var h = document.getElementById("curveChart"); if (!h) return; var r = function () { curveChart(h); }; renderers.push(r); r(); })();
+
+  // ---- ASW buckets
+  (function () {
+    var h = document.getElementById("aswChart"); if (!h) return;
+    var r = function () {
+    var lseg = D.market_inputs.asw_lseg_2026_11_06 || {};
+    var map = { "2Y": "2Y", "3Y": "3Y", "4Y": "4Y", "5Y": "5Y", "6-7Y": "7Y", "8-9Y": "9Y", "10Y": "10Y" };
+    var items = D.asw_buckets.map(function (b) {
+      var ref = map[b.bucket] ? lseg[map[b.bucket]] : null;
+      return { label: b.bucket, sub: b.bonds.length > 1 ? b.bonds[0] + "–" + b.bonds[b.bonds.length - 1] : b.bonds[0], v: b.avg_asw, ref: ref,
+               tt: [{ name: "Avg ASW", value: sg(b.avg_asw, 0) + " bp", color: cssVar("--s1") }, { name: "Range", value: sg(b.min_asw, 0) + " … " + sg(b.max_asw, 0) + " bp" },
+                    { name: "Widest", value: b.widest }, { name: "Avg yield", value: f(b.avg_ytm, 2) + "%" }, { name: "IRS (mid-bucket)", value: f(b.irs, 2) + "%" },
+                    { name: "LSEG generic ASW (6 Nov)", value: ref === null || ref === undefined ? "–" : ref + " bp" }] };
+    });
+    columnChart(h, items, { unit: "", aria: "Asset swap spread by tenor bucket", color: "--s1" });
+    }; renderers.push(r); r();
+  })();
+
+  // ---- rich / cheap
+  (function () {
+    var h = document.getElementById("rcChart"); if (!h) return;
+    var r = function () {
+    var rows = D.bonds.filter(function (b) { return b.rc_bp !== null; }).map(function (b) {
+      return { label: b.ticker, segs: [{ v: b.rc_bp, key: b.rc_bp >= 0 ? "c" : "r" }], end: sg(b.rc_bp, 1),
+               ttHead: b.ticker + " · " + b.maturity + " · cpn " + f(b.coupon, 2) + "%",
+               tt: [{ name: b.rc_bp >= 0 ? "Cheap vs curve" : "Rich vs curve", value: sg(b.rc_bp, 1) + " bp" }, { name: "Yield", value: f(b.ytm, 3) + "%" },
+                    { name: "Fitted", value: f(b.fit_ytm, 3) + "%" }, { name: "ASW", value: sg(b.asw_bp, 0) + " bp" }, { name: "Price source", value: b.src }] };
+    });
+    hbarChart(h, rows, { colors: { c: "--pos", r: "--neg" }, symmetric: true, unit: "", aria: "Rich/cheap residual vs fitted curve in basis points" });
+    }; renderers.push(r); r();
+  })();
+
+  // ---- carry / roll decomposition
+  (function () {
+    var h = document.getElementById("crChart"), tabs = document.getElementById("crTabs"); if (!h) return;
+    var horizon = "h12";
+    function draw() {
+      Array.prototype.forEach.call(tabs.children, function (b) { b.setAttribute("aria-pressed", b.dataset.h === horizon ? "true" : "false"); });
+      var rows = D.bonds.filter(function (b) { return b[horizon] && !b[horizon].matures && b.ttm > 0.9; }).map(function (b) {
+        var x = b[horizon];
+        return { label: b.ticker, segs: [{ v: x.coupon, key: "c" }, { v: x.pull, key: "p" }, { v: x.roll, key: "r" }], marker: { v: x.funding },
+                 end: f(x.total, 2) + "%", ttHead: b.ticker + " · " + (horizon === "h12" ? "12M" : "3M") + " horizon, unchanged curve",
+                 tt: [{ name: "Coupon income", value: sg(x.coupon) + "%", color: cssVar("--s1") }, { name: "Pull-to-par", value: sg(x.pull) + "%", color: cssVar("--s2") },
+                      { name: "Roll-down", value: sg(x.roll) + "% (" + f(x.roll_bp, 0) + " bp)", color: cssVar("--s3") }, { name: "Total", value: f(x.total) + "%" },
+                      { name: "Funding (repo)", value: "−" + f(x.funding) + "%", color: cssVar("--ink") }, { name: "Excess vs funding", value: sg(x.net) + "%" },
+                      { name: "Breakeven yield rise", value: x.breakeven_bp === null ? "–" : f(x.breakeven_bp, 0) + " bp" }] };
+      });
+      hbarChart(h, rows, { colors: { c: "--s1", p: "--s2", r: "--s3" }, unit: "%", aria: "Horizon return decomposition per bond" });
+    }
+    [["h3", "3 months"], ["h12", "12 months"]].forEach(function (p) {
+      var b = document.createElement("button"); b.textContent = p[1]; b.dataset.h = p[0];
+      b.addEventListener("click", function () { horizon = p[0]; draw(); }); tabs.appendChild(b);
+    });
+    renderers.push(draw); draw();
+    var th = document.getElementById("crTable");
+    table(th, [
+      { h: "Bond", l: true, v: function (r) { return r.ticker; } },
+      { h: "Yield %", v: function (r) { return r.ytm; }, fmt: function (r) { return f(r.ytm, 3); } },
+      { h: "MD", v: function (r) { return r.mod; }, fmt: function (r) { return f(r.mod, 2); } },
+      { h: "Coupon 12M", title: "Coupon income over 12M, % of dirty price", v: function (r) { return r.h12 && r.h12.coupon; }, fmt: function (r) { return r.h12 ? f(r.h12.coupon) : "–"; } },
+      { h: "Pull-to-par", title: "Clean price drift to par at constant own yield", v: function (r) { return r.h12 && r.h12.pull; }, fmt: function (r) { return r.h12 ? sg(r.h12.pull) : "–"; } },
+      { h: "= Yield carry", title: "Coupon + pull-to-par (~ YTM x 1Y)", v: function (r) { return r.h12 && (r.h12.coupon + r.h12.pull); }, fmt: function (r) { return r.h12 ? f(r.h12.coupon + r.h12.pull) : "–"; } },
+      { h: "Roll-down", title: "Extra price gain from rolling down the unchanged fitted curve", v: function (r) { return r.h12 && r.h12.roll; }, fmt: function (r) { return r.h12 ? sg(r.h12.roll) : "–"; } },
+      { h: "Roll bp", v: function (r) { return r.h12 && r.h12.roll_bp; }, fmt: function (r) { return r.h12 && !r.h12.matures ? f(r.h12.roll_bp, 0) : "–"; } },
+      { h: "Total 12M", v: function (r) { return r.h12 && r.h12.total; }, fmt: function (r) { return r.h12 ? f(r.h12.total) : "–"; } },
+      { h: "− Funding", v: function (r) { return r.h12 && r.h12.funding; }, fmt: function (r) { return r.h12 ? f(r.h12.funding) : "–"; } },
+      { h: "Excess", v: function (r) { return r.h12 && r.h12.net; }, fmt: function (r) { return r.h12 ? sg(r.h12.net) : "–"; } },
+      { h: "Excess / MD", title: "Excess return per unit of today's duration (bp of yield cushion)", v: function (r) { return r.h12 && r.h12.net / r.mod; }, fmt: function (r) { return r.h12 ? f(r.h12.net / r.mod * 100, 0) : "–"; } },
+      { h: "3M excess", v: function (r) { return r.h3 && r.h3.net; }, fmt: function (r) { return r.h3 ? sg(r.h3.net) : "–"; } },
+      { h: "3M BE bp", title: "Yield rise over 3M that wipes out the excess carry+roll", v: function (r) { return r.h3 && r.h3.breakeven_bp; }, fmt: function (r) { return r.h3 && r.h3.breakeven_bp !== null ? f(r.h3.breakeven_bp, 0) : "–"; } }
+    ], D.bonds.filter(function (b) { return b.ttm > 0.9; }), { hl: function (r) { return (D.highlight || []).indexOf(r.ticker) >= 0; } });
+  })();
+
+  // ---- auction cycle columns
+  (function () {
+    var h = document.getElementById("cycleChart"); if (!h || !D.cycle) return;
+    var r = function () {
+    var order = [["T-3", "T−3"], ["T-2", "T−2", "final offer"], ["T-1", "T−1"], ["T+0", "Auction"], ["T+1", "T+1"], ["T+2", "T+2"], ["other", "Other days"]];
+    var items = order.filter(function (o) { return D.cycle[o[0]]; }).map(function (o) {
+      var c = D.cycle[o[0]];
+      return { label: o[1], sub: o[2] || ("n=" + c.n), v: c.mean,
+               tt: [{ name: "Mean daily change", value: sg(c.mean, 2) + " bp", color: cssVar("--s1") }, { name: "Median", value: sg(c.median, 2) + " bp" },
+                    { name: "Share of days yields rose", value: Math.round(c.up_share * 100) + "%" }, { name: "Observations", value: String(c.n) }] };
+    });
+    columnChart(h, items, { unit: "", h: 260, dp: 1, aria: "Average daily basket yield change by day relative to auction (bp)", color: "--s1" });
+    }; renderers.push(r); r();
+  })();
+
+  // ---- yield history with auction markers (crosshair)
+  (function () {
+    var host = document.getElementById("histChart"); if (!host || !D.hist) return;
+    var keys = Object.keys(D.hist), cols = ["--s1", "--s2", "--s3"];
+    var r = function () {
+    clear(host);
+    var W = widthOf(host), H = 280, m = { l: 40, r: 92, t: 12, b: 30 };
+    var all = keys[0] ? D.hist[keys[0]].map(function (p) { return p[0]; }) : [];
+    var dates = all.slice();
+    keys.forEach(function (k) { D.hist[k].forEach(function (p) { if (dates.indexOf(p[0]) < 0) dates.push(p[0]); }); });
+    dates.sort();
+    var vals = []; keys.forEach(function (k) { D.hist[k].forEach(function (p) { vals.push(p[1]); }); });
+    var lo = Math.floor((Math.min.apply(null, vals) - 0.05) * 10) / 10, hi = Math.ceil((Math.max.apply(null, vals) + 0.05) * 10) / 10;
+    var X = function (d) { return m.l + dates.indexOf(d) / (dates.length - 1) * (W - m.l - m.r); };
+    var Y = function (v) { return m.t + (hi - v) / (hi - lo) * (H - m.t - m.b); };
+    var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Benchmark yields with auction days" }, host);
+    var g = el("g", {}, svg);
+    niceTicks(lo, hi, 5).forEach(function (v) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), "class": "gl" }, g); txt(g, m.l - 6, Y(v) + 4, v.toFixed(1) + "%", "", "end"); });
+    (D.auctions || []).forEach(function (a) { if (dates.indexOf(a) >= 0) el("line", { x1: X(a), x2: X(a), y1: m.t, y2: H - m.b, stroke: cssVar("--axis"), "stroke-width": 1 }, g); });
+    var lastMonth = "";
+    dates.forEach(function (d) { var mo = d.slice(0, 7); if (mo !== lastMonth) { lastMonth = mo; txt(g, X(d), H - m.b + 16, new Date(d + "T00:00:00").toLocaleString("en", { month: "short" }), "", "start"); } });
+    el("line", { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, "class": "ax" }, g);
+    keys.forEach(function (k, i) {
+      var c = cssVar(cols[i]);
+      var d = D.hist[k].map(function (p, j) { return (j ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1); }).join("");
+      el("path", { d: d, fill: "none", stroke: c, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, g);
+      var last = D.hist[k][D.hist[k].length - 1];
+      el("circle", { cx: X(last[0]), cy: Y(last[1]), r: 4, fill: c, stroke: cssVar("--surface"), "stroke-width": 2 }, g);
+      txt(g, X(last[0]) + 8, Y(last[1]) + 4, k + " " + last[1].toFixed(2), "lbl");
+    });
+    var cross = el("line", { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: cssVar("--ink-2"), "stroke-width": 1, opacity: 0 }, g);
+    var hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, "class": "hit" }, g);
+    hit.addEventListener("pointermove", function (e) {
+      var r = svg.getBoundingClientRect(), sx = (e.clientX - r.left) / r.width * W;
+      var i = Math.round((sx - m.l) / (W - m.l - m.r) * (dates.length - 1)); i = Math.max(0, Math.min(dates.length - 1, i));
+      var d = dates[i]; cross.setAttribute("x1", X(d)); cross.setAttribute("x2", X(d)); cross.setAttribute("opacity", 1);
+      var rows = keys.map(function (k, j) { var p = D.hist[k].filter(function (q) { return q[0] === d; })[0]; return { name: k, value: p ? p[1].toFixed(2) + "%" : "–", color: cssVar(cols[j]) }; });
+      if ((D.auctions || []).indexOf(d) >= 0) rows.push({ name: "MoF auction day", value: "●" });
+      showTT(e, d, rows);
+    });
+    hit.addEventListener("pointerleave", function () { cross.setAttribute("opacity", 0); hideTT(); });
+    }; renderers.push(r); r();
+  })();
+
+  // ---- full bond table
+  (function () {
+    var h = document.getElementById("bondTable"); if (!h) return;
+    table(h, [
+      { h: "Bond", l: true, v: function (r) { return r.ticker; } },
+      { h: "ISIN", l: true, v: function (r) { return r.isin; } },
+      { h: "Cpn %", v: function (r) { return r.coupon; }, fmt: function (r) { return f(r.coupon, 2); } },
+      { h: "Maturity", v: function (r) { return r.maturity; } },
+      { h: "Yrs", v: function (r) { return r.ttm; }, fmt: function (r) { return f(r.ttm, 2); } },
+      { h: "Clean", v: function (r) { return r.clean; }, fmt: function (r) { return f(r.clean, 2); } },
+      { h: "Yield %", v: function (r) { return r.ytm; }, fmt: function (r) { return f(r.ytm, 3); } },
+      { h: "Mac. dur", v: function (r) { return r.mac; }, fmt: function (r) { return f(r.mac, 2); } },
+      { h: "Mod. dur", v: function (r) { return r.mod; }, fmt: function (r) { return f(r.mod, 2); } },
+      { h: "Convexity", v: function (r) { return r.conv; }, fmt: function (r) { return f(r.conv, 1); } },
+      { h: "DV01 /1m", title: "PLN per 1bp per PLN 1m nominal", v: function (r) { return r.dv01; }, fmt: function (r) { return f(r.dv01, 0); } },
+      { h: "IRS %", v: function (r) { return r.irs; }, fmt: function (r) { return f(r.irs, 2); } },
+      { h: "ASW bp", v: function (r) { return r.asw_bp; }, fmt: function (r) { return sg(r.asw_bp, 0); } },
+      { h: "R/C bp", title: "+ cheap / − rich vs fitted NSS curve", v: function (r) { return r.rc_bp; }, fmt: function (r) { return r.rc_bp === null ? "–" : sg(r.rc_bp, 1); } },
+      { h: "Source", l: true, sort: false, v: function (r) { return r.src; } }
+    ], D.bonds, { hl: function (r) { return (D.highlight || []).indexOf(r.ticker) >= 0; } });
+  })();
+})();
+</script>
+</body>
+</html>

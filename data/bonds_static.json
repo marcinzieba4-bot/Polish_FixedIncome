@@ -1,0 +1,28 @@
+{
+  "_source": "Coupons back-solved from Treasury BondSpot Poland fixing price/yield pairs (9 Nov 2026) and rounded to 0.25; WS0437/WS0447/OK0127 from issue terms (Cbonds/MinFin). All fixed-rate POLGBs pay annual coupons on the 25th of the maturity month; OK = zero-coupon.",
+  "bonds": [
+    {"ticker": "OK0127", "isin": "PL0000117289", "coupon": 0.00, "maturity": "2027-01-25"},
+    {"ticker": "PS0527", "isin": "PL0000114393", "coupon": 3.75, "maturity": "2027-05-25"},
+    {"ticker": "DS0727", "isin": "PL0000109427", "coupon": 2.50, "maturity": "2027-07-25"},
+    {"ticker": "OK0128", "isin": "PL0000118089", "coupon": 0.00, "maturity": "2028-01-25"},
+    {"ticker": "WS0428", "isin": "PL0000107611", "coupon": 2.75, "maturity": "2028-04-25"},
+    {"ticker": "PS0728", "isin": "PL0000115192", "coupon": 7.50, "maturity": "2028-07-25"},
+    {"ticker": "OK0129", "isin": "PL0000119178", "coupon": 0.00, "maturity": "2029-01-25"},
+    {"ticker": "WS0429", "isin": "PL0000105391", "coupon": 5.75, "maturity": "2029-04-25"},
+    {"ticker": "PS0729", "isin": "PL0000116760", "coupon": 4.75, "maturity": "2029-07-25"},
+    {"ticker": "DS1029", "isin": "PL0000111498", "coupon": 2.75, "maturity": "2029-10-25"},
+    {"ticker": "PS0130", "isin": "PL0000117370", "coupon": 5.00, "maturity": "2030-01-25"},
+    {"ticker": "PS0730", "isin": "PL0000117990", "coupon": 4.50, "maturity": "2030-07-25"},
+    {"ticker": "DS1030", "isin": "PL0000112736", "coupon": 1.25, "maturity": "2030-10-25"},
+    {"ticker": "PS0131", "isin": "PL0000118519", "coupon": 4.50, "maturity": "2031-01-25"},
+    {"ticker": "PS0731", "isin": "PL0000118998", "coupon": 4.00, "maturity": "2031-07-25"},
+    {"ticker": "PS1031", "isin": "PL0000119426", "coupon": 4.75, "maturity": "2031-10-25"},
+    {"ticker": "DS0432", "isin": "PL0000113783", "coupon": 1.75, "maturity": "2032-04-25"},
+    {"ticker": "DS1033", "isin": "PL0000115291", "coupon": 6.00, "maturity": "2033-10-25"},
+    {"ticker": "DS1034", "isin": "PL0000116851", "coupon": 5.00, "maturity": "2034-10-25"},
+    {"ticker": "DS1035", "isin": "PL0000118188", "coupon": 5.00, "maturity": "2035-10-25"},
+    {"ticker": "DS0436", "isin": "PL0000119087", "coupon": 5.25, "maturity": "2036-04-25"},
+    {"ticker": "WS0437", "isin": "PL0000104857", "coupon": 5.00, "maturity": "2037-04-25"},
+    {"ticker": "WS0447", "isin": "PL0000109765", "coupon": 4.00, "maturity": "2047-04-25"}
+  ]
+}

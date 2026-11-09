@@ -1,0 +1,36 @@
+{
+  "_sources": {
+    "auction_calendar_2026": "https://www.gov.pl/attachment/c0d4ea6f-d58c-4a0c-8a3f-51dd69ac50ce",
+    "q4_2026_plan": "https://www.gov.pl/web/finanse/plan-finansowania-potrzeb-pozyczkowych-budzetu-panstwa-w-czwartym-kwartale-2026-roku",
+    "nov_2026_supply": "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-listopadzie-2026",
+    "auction_results_db": "https://www.gov.pl/web/finanse/bony-i-obligacje-hurtowe1",
+    "mpc_2026": "https://strefainwestorow.pl/wiadomosci/20251107/nbp-opublikowal-harmonogram-posiedzen-rpp-w-2026-r"
+  },
+  "q4_plan": "Q4 2026: 6-7 sale auctions, PLN 60-90bn; 1-2 switch auctions buying back 2026/27 maturities. October sold ~PLN 38bn (+3.4bn supplementary); November plan PLN 15-26bn; two December auctions (9 & 16 Dec) - supply plan published ~end-Nov.",
+  "events": [
+    {"date": "2026-11-10", "type": "data", "title": "US CPI (Oct)", "note": "Global rates driver; Fed December hike priced ~75%."},
+    {"date": "2026-11-11", "type": "holiday", "title": "PL holiday (Independence Day)", "note": "No settlement; T+2 from 9 Nov = 12 Nov."},
+    {"date": "2026-11-12", "type": "auction", "title": "MoF switch auction (settle 16 Nov)", "note": "Buys back WZ1126 / OK0127 / PS0527 / DS0727; sells OK0129, PS1031, NZ0332, DS0436 (+ possibly others). Converts short paper into duration supply."},
+    {"date": "2026-11-13", "type": "data", "title": "PL CPI Oct final (flash 3.5%), GDP Q3 flash, C/A Sep", "note": "Flash already out; GDP consensus ~3.6% y/y."},
+    {"date": "2026-11-16", "type": "data", "title": "PL core inflation (Oct)", "note": "Sep core 3.1%."},
+    {"date": "2026-11-18", "type": "auction", "title": "MoF sale auction PLN 7-12bn (settle 20 Nov)", "note": "OK0129, PS1031, NZ0332, DS0436 + possibly others. Final offer 2 business days before."},
+    {"date": "2026-11-25", "type": "auction", "title": "MoF sale auction PLN 8-14bn (settle 27 Nov)", "note": "Same lines. Coincides with WZ1126 redemption (PLN ~14bn before switch) + WZ coupons (3.96%) -> reinvestment cash."},
+    {"date": "2026-11-25", "type": "flow", "title": "WZ1126 redemption + WZ May/Nov coupons", "note": "PLN 14.2bn outstanding before the 12 Nov switch."},
+    {"date": "2026-11-27", "type": "supply", "title": "December supply plan due (approx.)", "note": "MoF publishes the next month's plan on the last business days of the month."},
+    {"date": "2026-11-30", "type": "index", "title": "GPWB/TBSP periodic portfolio change", "note": "Month-end extension: taps of OK0129 / PS1031 / DS0436 raise their index units."},
+    {"date": "2026-11-30", "type": "data", "title": "PL CPI Nov flash (approx.)", "note": "CPN fuel programme keeps headline subdued until year-end."},
+    {"date": "2026-12-02", "type": "mpc", "title": "MPC decision (meeting 1-2 Dec)", "note": "Base case hold at 3.75%; hawks flag Dec/Jan hike. Key swing: government decision on CPN / energy shields for 2027."},
+    {"date": "2026-12-09", "type": "auction", "title": "MoF auction (2026 calendar)", "note": "Size per December plan; 2026 needs already financed -> pre-financing 2027."},
+    {"date": "2026-12-16", "type": "auction", "title": "MoF auction - last of 2026", "note": "Then supply pause until January."},
+    {"date": "2026-12-31", "type": "index", "title": "GPWB/TBSP periodic change", "note": "DS0727 likely leaves TBSP.Index (~0.57y) -> small extension."},
+    {"date": "2027-01-15", "type": "mpc", "title": "MPC January meeting (date TBC)", "note": "2027 schedule not yet published. Market/hawks see January as the likelier hike date."},
+    {"date": "2027-01-25", "type": "flow", "title": "OK0127 redemption + PS0130/PS0131 coupons", "note": "OK0127 PLN 15.1bn before switch buybacks; coupons ~PLN 5.3bn -> January reinvestment bid."},
+    {"date": "2027-01-29", "type": "index", "title": "GPWB periodic change - expected 1-3Y / 1-4Y extension", "note": "OK0128 drops below 1Y; PS0130 enters 1-3Y and PS0131 enters 1-4Y (based on observed maturity-window rule)."},
+    {"date": "2027-03-25", "type": "flow", "title": "WZ0330/WZ0930 (3.88%) and NZ coupons", "note": ""}
+  ],
+  "recent_auctions": [
+    {"date": "2026-10-28", "offer": "8-12", "sold": 12000.05, "demand": 18478.8, "btc": 1.54, "supp": 1248.5, "lines": "OK0129 1,400 @5.053%; PS0730 1,767 @5.599%; PS1031 3,703 @5.919%; DS0436 1,833 @6.395%; NZ0928 1,010; NZ0332 2,287"},
+    {"date": "2026-10-22", "offer": "8-14", "sold": 13978.8, "demand": 18070.8, "btc": 1.29, "supp": 760.0, "lines": "OK0129 2,079 @5.193%; PS1031 6,356 @6.037%; DS1034 1,172 @6.317%; DS0436 980 @6.447%; NZ0928 2,175; NZ0332 1,216"},
+    {"date": "2026-10-14", "offer": "8-12", "sold": 12004.4, "demand": 20230.4, "btc": 1.69, "supp": 1412.5, "lines": "OK0129 1,624 @5.090%; PS1031 5,427 @5.913%; DS0436 1,128 @6.356%; NZ0928 1,170; NZ0332 2,655"}
+  ]
+}

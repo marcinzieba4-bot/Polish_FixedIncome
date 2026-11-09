@@ -1,0 +1,96 @@
+{
+  "asof": "2026-11-09",
+  "policy": {
+    "nbp_reference": 3.75,
+    "nbp_deposit": 3.25,
+    "nbp_lombard": 4.25,
+    "last_change": "5 Mar 2026 (-25 bp, only move in 2026)",
+    "source": "NBP; MPC held on 3-4 Nov 2026 (strefainwestorow.pl/gospodarka/rpp-decyzja-listopad-2026; Bank Millennium daily 5 Nov 2026)",
+    "next_mpc": "2026-12-01/02"
+  },
+  "money_market": {
+    "wibor_1m": 3.73,
+    "wibor_3m": 3.89,
+    "wibor_6m": 3.97,
+    "repo_special_1w": 3.66,
+    "repo_gc_on": 3.885,
+    "funding_rate": 3.7,
+    "source": "WIBOR 1M/3M/6M/1Y 6 Nov 2026 fixing: 3.73/3.89/3.97/4.03 (Pekao BH archive, totalmoney.pl; 3M also LSEG via Bank Millennium). POLSTR O/N 3.766% (5 Nov), 3M compounded 3.523% (GPW Benchmark). Repo: Treasury BondSpot Poland session 6 Nov 2026 (special repo 1W 3.65-3.67%, GC O/N avg 3.885%). Funding rate used for carry = 3.70% (between special repo and POLSTR/GC).",
+    "wibor_1y": 4.03,
+    "polstr_on": 3.766,
+    "polstr_3m_comp": 3.523
+  },
+  "irs": {
+    "pillars": {
+      "2": 4.5,
+      "5": 4.67,
+      "10": 4.99
+    },
+    "asof": "2026-11-06 16:30 close",
+    "source": "PLN IRS (vs 6M WIBOR) 2Y/5Y/10Y: LSEG Datastream via Bank Millennium 'Makro i rynek' daily, 9 Nov 2026. Other tenors interpolated (monotone PCHIP through 6M WIBOR, 2Y, 5Y, 10Y); >10Y extrapolated with the 5-10Y slope damped by half.",
+    "crosscheck_unverified": {
+      "1Y": 4.285,
+      "3Y": 4.52,
+      "7Y": 4.853,
+      "note": "cbonds snippets 4-5 Nov (not directly verifiable); consistent with the interpolated curve within ~5bp"
+    },
+    "weekly_2026_11_02": {
+      "2Y": 4.67,
+      "5Y": 4.93,
+      "10Y": 5.26,
+      "source": "Bank Millennium weekly 2 Nov 2026 (LSEG)"
+    }
+  },
+  "benchmarks_close_2026_11_06": {
+    "pl2y": 4.82,
+    "pl5y": 5.6,
+    "pl10y": 6.13,
+    "de10y": 3.24,
+    "us10y": 4.86,
+    "eurpln": 4.3934,
+    "usdpln": 3.9368
+  },
+  "asw_lseg_2026_11_06": {
+    "2Y": 32,
+    "3Y": 45,
+    "4Y": 67,
+    "5Y": 92,
+    "6Y": 84,
+    "7Y": 101,
+    "9Y": 105,
+    "10Y": 111
+  },
+  "notes": [
+    "Bond prices: Treasury BondSpot Poland fixing (morning fix) 9 Nov 2026; OK0127/WS0437/WS0447 have no fixing -> mid of best bid/offer from the 6 Nov session summary.",
+    "Settlement T+2 business days (11 Nov is a Polish holiday) -> 12 Nov 2026."
+  ],
+  "curve": {
+    "front_anchor": {
+      "tau": 0.25,
+      "rate": 3.45,
+      "weight": 0.5
+    },
+    "source": "Nelson-Siegel-Svensson zero curve fitted to BondSpot fixings (yield-error weighted). Front end anchored at a 3M zero of 3.45% (short POLGBs PS0527/DS0727 3.47-3.55%, T-bills 3.5-3.95% bid/ask, special repo 3.63-3.70%), so roll-down into the sub-1Y area is not an extrapolation artefact."
+  },
+  "macro": {
+    "cpi_oct_flash": 3.5,
+    "cpi_sep": 4.1,
+    "cpi_note": "fuel-price programme CPN (to end-2026) pulled October down; NBP Nov projection CPI 3.1% 2026 / 4.2% 2027 / 2.8% 2028 (constant rates)",
+    "deficit_2026_gdp": 6.7,
+    "gross_needs_2027_bn": 565.3,
+    "net_needs_2027_bn": 317.1,
+    "budget_cash_bn": 200,
+    "prefinancing_2027_pct": 3,
+    "foreign_holdings_bn": 211.3,
+    "banks_share_pct": 52.4,
+    "ratings": "S&P (6 Nov): FC A- affirmed, LC cut A->A-, outlook negative on both; Fitch A- negative; Moody's A3 stable",
+    "hike_pricing_note": "Bank Millennium (2 Nov): market priced ~125bp of hikes over 12M; FRAs fell sharply 4-6 Nov. MPC hawks (Wnorowski, Zarzecki) flag Dec/Jan hike risk; PAP consensus: hold to Q3 2027; ING: +50bp in Q1 2027.",
+    "sources": [
+      "https://strefainwestorow.pl/gospodarka/projekcja-inflacji-nbp-listopad-2026",
+      "https://strefainwestorow.pl/gospodarka/szacunkowy-odczyt-inflacja-pazdziernik-2026",
+      "https://www.wnp.pl/rynki/mf-szacuje-stan-srodkow-na-rachunkach-budzetowych-na-koniec-pazdziernika-na-ok-200-mld-zl,1114620.html",
+      "https://www.parkiet.com/gospodarka-krajowa/art45079231-rzad-ogranicza-nieco-potrzeby-pozyczkowe",
+      "https://cdn-netpr.pl/file/attachment/3094414/d/pko_dziennik_ekonomiczny_2026_11_09.pdf"
+    ]
+  }
+}

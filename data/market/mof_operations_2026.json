@@ -1,0 +1,2761 @@
+[
+ {
+  "date": "2026-01-09",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 730,
+    "demand": 3125,
+    "avg_yld": 3.678
+   },
+   {
+    "series": "PS0130",
+    "sold": 1567.318,
+    "demand": 3385.318,
+    "avg_yld": 4.258
+   },
+   {
+    "series": "WZ0930",
+    "sold": 872,
+    "demand": 4212,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 4836,
+    "demand": 5556,
+    "avg_yld": 4.504
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1255,
+    "demand": 2070,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1033",
+    "sold": 1050,
+    "demand": 1678,
+    "avg_yld": 4.851
+   },
+   {
+    "series": "DS1035",
+    "sold": 1692,
+    "demand": 2250,
+    "avg_yld": 5.121
+   }
+  ]
+ },
+ {
+  "date": "2026-01-09",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0130",
+    "sold": 240,
+    "demand": 240,
+    "avg_yld": 4.258
+   },
+   {
+    "series": "WZ0930",
+    "sold": 212,
+    "demand": 212,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 50,
+    "demand": 50,
+    "avg_yld": 4.504
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1033",
+    "sold": 13,
+    "demand": 13,
+    "avg_yld": 4.851
+   },
+   {
+    "series": "DS1035",
+    "sold": 1171,
+    "demand": 1171,
+    "avg_yld": 5.121
+   }
+  ]
+ },
+ {
+  "date": "2026-01-22",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 300,
+    "demand": 780,
+    "avg_yld": 3.488
+   },
+   {
+    "series": "WZ0930",
+    "sold": 916,
+    "demand": 3306,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 4453.9,
+    "demand": 5389,
+    "avg_yld": 4.386
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2150,
+    "demand": 2701,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0432",
+    "sold": 1319,
+    "demand": 1535,
+    "avg_yld": 4.611
+   },
+   {
+    "series": "DS1035",
+    "sold": 2873,
+    "demand": 3438,
+    "avg_yld": 5.107
+   }
+  ]
+ },
+ {
+  "date": "2026-01-22",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 587.5,
+    "demand": 587.5,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1037,
+    "demand": 1037,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0432",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 130,
+    "demand": 130,
+    "avg_yld": 5.107
+   }
+  ]
+ },
+ {
+  "date": "2026-01-28",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 250,
+    "demand": 1373,
+    "avg_yld": 3.5290000000000004
+   },
+   {
+    "series": "WZ0930",
+    "sold": 469,
+    "demand": 1189,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 2890,
+    "demand": 4310,
+    "avg_yld": 4.392
+   },
+   {
+    "series": "NZ0331",
+    "sold": 4161,
+    "demand": 8582,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 1029,
+    "demand": 1624,
+    "avg_yld": 4.97
+   },
+   {
+    "series": "DS1035",
+    "sold": 3202,
+    "demand": 4292,
+    "avg_yld": 5.093
+   }
+  ]
+ },
+ {
+  "date": "2026-01-28",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 4,
+    "demand": 4,
+    "avg_yld": 4.392
+   },
+   {
+    "series": "NZ0331",
+    "sold": 771.5,
+    "demand": 771.5,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 59,
+    "demand": 59,
+    "avg_yld": 4.97
+   },
+   {
+    "series": "DS1035",
+    "sold": 1277.5,
+    "demand": 1277.5,
+    "avg_yld": 5.093
+   }
+  ]
+ },
+ {
+  "date": "2026-02-11",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 40,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 725,
+    "demand": 1515,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 3836,
+    "demand": 6132,
+    "avg_yld": 4.298
+   },
+   {
+    "series": "NZ0331",
+    "sold": 571,
+    "demand": 7867.8,
+    "avg_yld": null
+   },
+   {
+    "series": "IZ0831",
+    "sold": 805,
+    "demand": 3289,
+    "avg_yld": 2.276
+   },
+   {
+    "series": "DS1033",
+    "sold": 1401,
+    "demand": 1691.5,
+    "avg_yld": 4.732
+   },
+   {
+    "series": "DS1035",
+    "sold": 3926,
+    "demand": 4686,
+    "avg_yld": 5.035
+   },
+   {
+    "series": "WS0437",
+    "sold": 607.729,
+    "demand": 617.729,
+    "avg_yld": 5.148
+   }
+  ]
+ },
+ {
+  "date": "2026-02-11",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "WZ0930",
+    "sold": 45,
+    "demand": 45,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 389.8,
+    "demand": 389.8,
+    "avg_yld": null
+   },
+   {
+    "series": "IZ0831",
+    "sold": 726.2,
+    "demand": 726.2,
+    "avg_yld": 2.276
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 106,
+    "demand": 106,
+    "avg_yld": 5.035
+   },
+   {
+    "series": "WS0437",
+    "sold": 112,
+    "demand": 112,
+    "avg_yld": 5.148
+   }
+  ]
+ },
+ {
+  "date": "2026-02-18",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 360,
+    "demand": 1405,
+    "avg_yld": 3.4000000000000004
+   },
+   {
+    "series": "PS0730",
+    "sold": 2596,
+    "demand": 3110,
+    "avg_yld": 4.101
+   },
+   {
+    "series": "PS0131",
+    "sold": 2230,
+    "demand": 3490,
+    "avg_yld": 4.212
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2276,
+    "demand": 6879,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 624.6,
+    "demand": 984.6,
+    "avg_yld": 4.792
+   },
+   {
+    "series": "DS1035",
+    "sold": 4328.309,
+    "demand": 4923.309,
+    "avg_yld": 4.927
+   },
+   {
+    "series": "IZ0836",
+    "sold": 585.5,
+    "demand": 1325.5,
+    "avg_yld": 2.667
+   }
+  ]
+ },
+ {
+  "date": "2026-02-18",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0730",
+    "sold": 175,
+    "demand": 175,
+    "avg_yld": 4.101
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 605.74,
+    "demand": 605.74,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 1217.26,
+    "demand": 1217.26,
+    "avg_yld": 4.927
+   },
+   {
+    "series": "IZ0836",
+    "sold": 123,
+    "demand": 123,
+    "avg_yld": 2.667
+   }
+  ]
+ },
+ {
+  "date": "2026-02-25",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 27,
+    "demand": 27,
+    "avg_yld": 3.42
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1237,
+    "demand": 2327,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 2650,
+    "demand": 3706,
+    "avg_yld": 4.233
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2585,
+    "demand": 3613,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0432",
+    "sold": 1806.5,
+    "demand": 2035.5,
+    "avg_yld": 4.447
+   },
+   {
+    "series": "DS1035",
+    "sold": 3585,
+    "demand": 3929,
+    "avg_yld": 4.947
+   }
+  ]
+ },
+ {
+  "date": "2026-02-25",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 75.4,
+    "demand": 75.4,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0432",
+    "sold": 91.8,
+    "demand": 91.8,
+    "avg_yld": 4.447
+   },
+   {
+    "series": "DS1035",
+    "sold": 429.6,
+    "demand": 429.6,
+    "avg_yld": 4.947
+   }
+  ]
+ },
+ {
+  "date": "2026-03-18",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0426",
+    "sold": 0,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0726",
+    "sold": -1834.352,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1026",
+    "sold": -953.978,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ1126",
+    "sold": -3117.18,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0127",
+    "sold": -3265.15,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-03-18",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1790.839,
+    "demand": 3781.091,
+    "avg_yld": 4.257
+   },
+   {
+    "series": "NZ0928",
+    "sold": 728.496,
+    "demand": 923.105,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2154.806,
+    "demand": 2722.467,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 3928.685,
+    "demand": 4969.865,
+    "avg_yld": 5.011
+   },
+   {
+    "series": "NZ0936",
+    "sold": 873.403,
+    "demand": 1308.653,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-03-18",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0928",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-03-25",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 872,
+    "demand": 872,
+    "avg_yld": 4.496
+   },
+   {
+    "series": "NZ0928",
+    "sold": 925,
+    "demand": 925,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1589,
+    "demand": 1739,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 2019.3,
+    "demand": 2424.3,
+    "avg_yld": 5.399
+   },
+   {
+    "series": "DS1035",
+    "sold": 1610.05,
+    "demand": 2068.3,
+    "avg_yld": 5.725
+   },
+   {
+    "series": "NZ0936",
+    "sold": 275,
+    "demand": 495,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-03-25",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 5,
+    "demand": 5,
+    "avg_yld": 4.496
+   },
+   {
+    "series": "NZ0928",
+    "sold": 2,
+    "demand": 2,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 240,
+    "demand": 240,
+    "avg_yld": 5.399
+   },
+   {
+    "series": "DS1035",
+    "sold": 154.833,
+    "demand": 154.833,
+    "avg_yld": 5.725
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-15",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 501,
+    "demand": 501,
+    "avg_yld": 4.267
+   },
+   {
+    "series": "WS0428",
+    "sold": 1340,
+    "demand": 1345,
+    "avg_yld": 4.271
+   },
+   {
+    "series": "NZ0331",
+    "sold": 985.7,
+    "demand": 1420.7,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 5308.65,
+    "demand": 5718.65,
+    "avg_yld": 5.023
+   },
+   {
+    "series": "DS1035",
+    "sold": 2460,
+    "demand": 2910,
+    "avg_yld": 5.514
+   },
+   {
+    "series": "NZ0936",
+    "sold": 118,
+    "demand": 235,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-15",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 158,
+    "demand": 158,
+    "avg_yld": 4.267
+   },
+   {
+    "series": "WS0428",
+    "sold": 20,
+    "demand": 20,
+    "avg_yld": 4.271
+   },
+   {
+    "series": "NZ0331",
+    "sold": 7.5,
+    "demand": 7.5,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 50,
+    "demand": 50,
+    "avg_yld": 5.023
+   },
+   {
+    "series": "DS1035",
+    "sold": 115,
+    "demand": 115,
+    "avg_yld": 5.514
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-23",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1342,
+    "demand": 1734,
+    "avg_yld": 4.368
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1206,
+    "demand": 1640.8,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4618.7,
+    "demand": 5218.7,
+    "avg_yld": 5.147
+   },
+   {
+    "series": "DS0436",
+    "sold": 1364.03,
+    "demand": 2144.03,
+    "avg_yld": 5.68
+   },
+   {
+    "series": "NZ0936",
+    "sold": 450,
+    "demand": 450,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-23",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 296,
+    "demand": 296,
+    "avg_yld": 4.368
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 574,
+    "demand": 574,
+    "avg_yld": 5.147
+   },
+   {
+    "series": "DS0436",
+    "sold": 316.2,
+    "demand": 316.2,
+    "avg_yld": 5.68
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-28",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1147,
+    "demand": 1347,
+    "avg_yld": 4.486
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1353,
+    "demand": 1481,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4790.875,
+    "demand": 5959.875,
+    "avg_yld": 5.323
+   },
+   {
+    "series": "DS1034",
+    "sold": 402,
+    "demand": 402,
+    "avg_yld": 5.608
+   },
+   {
+    "series": "DS0436",
+    "sold": 1312,
+    "demand": 1912,
+    "avg_yld": 5.828
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-04-28",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 65,
+    "demand": 65,
+    "avg_yld": 4.486
+   },
+   {
+    "series": "NZ0331",
+    "sold": 40,
+    "demand": 40,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 6,
+    "demand": 6,
+    "avg_yld": 5.828
+   }
+  ]
+ },
+ {
+  "date": "2026-05-13",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 1155,
+    "demand": 1155,
+    "avg_yld": 4.868
+   },
+   {
+    "series": "PS0130",
+    "sold": 1300,
+    "demand": 1800,
+    "avg_yld": 5.018
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2425,
+    "demand": 2728,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4019,
+    "demand": 5087,
+    "avg_yld": 5.36
+   },
+   {
+    "series": "DS0436",
+    "sold": 2107.33,
+    "demand": 2957.33,
+    "avg_yld": 5.854
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-05-13",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 848,
+    "demand": 848,
+    "avg_yld": 4.868
+   },
+   {
+    "series": "PS0130",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-05-21",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 480,
+    "demand": 1586,
+    "avg_yld": 4.887
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2030,
+    "demand": 2269,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4597,
+    "demand": 5297,
+    "avg_yld": 5.433
+   },
+   {
+    "series": "DS1034",
+    "sold": 894.65,
+    "demand": 1245.65,
+    "avg_yld": 5.718
+   },
+   {
+    "series": "DS0436",
+    "sold": 1845.1,
+    "demand": 2731.1,
+    "avg_yld": 5.883
+   },
+   {
+    "series": "NZ0936",
+    "sold": 155,
+    "demand": 155,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-05-21",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0936",
+    "sold": 40,
+    "demand": 40,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-05-27",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 190,
+    "demand": 407,
+    "avg_yld": 4.757
+   },
+   {
+    "series": "NZ0331",
+    "sold": 785.3,
+    "demand": 1216.3,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4092.6,
+    "demand": 5120.6,
+    "avg_yld": 5.287
+   },
+   {
+    "series": "DS1033",
+    "sold": 1632.405,
+    "demand": 1732.405,
+    "avg_yld": 5.449
+   },
+   {
+    "series": "DS0436",
+    "sold": 3061.9,
+    "demand": 3816.9,
+    "avg_yld": 5.735
+   },
+   {
+    "series": "NZ0936",
+    "sold": 355,
+    "demand": 368.2,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-05-27",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 5,
+    "demand": 5,
+    "avg_yld": 4.757
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0936",
+    "sold": 135,
+    "demand": 135,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-03",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "DS0726",
+    "sold": -990,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1026",
+    "sold": -585,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ1126",
+    "sold": -1745.876,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0127",
+    "sold": -160,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0527",
+    "sold": -7424.049,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-03",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 3841.466,
+    "demand": 4046.599,
+    "avg_yld": 4.812
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2177.522,
+    "demand": 2689.839,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 3584.737,
+    "demand": 3922.362,
+    "avg_yld": 5.269
+   },
+   {
+    "series": "DS1034",
+    "sold": 511.996,
+    "demand": 589.328,
+    "avg_yld": 5.535
+   },
+   {
+    "series": "DS0436",
+    "sold": 1000.659,
+    "demand": 1042.326,
+    "avg_yld": 5.702999999999999
+   },
+   {
+    "series": "NZ0936",
+    "sold": 518.566,
+    "demand": 547.249,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-03",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 1931.5,
+    "demand": 3633.5,
+    "avg_yld": 4.399
+   },
+   {
+    "series": "DS1030",
+    "sold": 1088,
+    "demand": 1950,
+    "avg_yld": 4.711
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1873,
+    "demand": 3138,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4442.03,
+    "demand": 5727.03,
+    "avg_yld": 4.918
+   },
+   {
+    "series": "DS0436",
+    "sold": 2397,
+    "demand": 2862,
+    "avg_yld": 5.416
+   },
+   {
+    "series": "IZ0836",
+    "sold": 151,
+    "demand": 382,
+    "avg_yld": 2.983
+   },
+   {
+    "series": "NZ0936",
+    "sold": 118,
+    "demand": 575,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-17",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 213.2,
+    "demand": 213.2,
+    "avg_yld": 4.399
+   },
+   {
+    "series": "DS1030",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 127,
+    "demand": 127,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 402.8,
+    "demand": 402.8,
+    "avg_yld": 5.416
+   },
+   {
+    "series": "IZ0836",
+    "sold": 38,
+    "demand": 38,
+    "avg_yld": 2.983
+   },
+   {
+    "series": "NZ0936",
+    "sold": 10,
+    "demand": 10,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 2355,
+    "demand": 2882,
+    "avg_yld": 4.396
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2717,
+    "demand": 3649,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4187,
+    "demand": 4937,
+    "avg_yld": 4.911
+   },
+   {
+    "series": "DS1035",
+    "sold": 802,
+    "demand": 1218,
+    "avg_yld": 5.334
+   },
+   {
+    "series": "DS0436",
+    "sold": 1919.3,
+    "demand": 2709.3,
+    "avg_yld": 5.417
+   },
+   {
+    "series": "NZ0936",
+    "sold": 20,
+    "demand": 25,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-24",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 435,
+    "demand": 435,
+    "avg_yld": 4.396
+   },
+   {
+    "series": "NZ0331",
+    "sold": 26,
+    "demand": 26,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 411,
+    "demand": 411,
+    "avg_yld": 4.911
+   },
+   {
+    "series": "DS1035",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 443,
+    "demand": 443,
+    "avg_yld": 5.417
+   },
+   {
+    "series": "NZ0936",
+    "sold": 1,
+    "demand": 1,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-14",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 29.1,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 48.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 77.6,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 38.8,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-15",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 1395,
+    "demand": 1495,
+    "avg_yld": 4.264
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1604,
+    "demand": 2313,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4591,
+    "demand": 5136,
+    "avg_yld": 4.887
+   },
+   {
+    "series": "DS1034",
+    "sold": 605,
+    "demand": 805,
+    "avg_yld": 5.294
+   },
+   {
+    "series": "DS0436",
+    "sold": 2568,
+    "demand": 3018,
+    "avg_yld": 5.482
+   },
+   {
+    "series": "NZ0936",
+    "sold": 100,
+    "demand": 210,
+    "avg_yld": null
+   },
+   {
+    "series": "WS0437",
+    "sold": 170.57,
+    "demand": 209.57,
+    "avg_yld": 5.584
+   }
+  ]
+ },
+ {
+  "date": "2026-07-15",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 71,
+    "demand": 71,
+    "avg_yld": 4.264
+   },
+   {
+    "series": "NZ0331",
+    "sold": 54,
+    "demand": 54,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 10,
+    "demand": 10,
+    "avg_yld": 4.887
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 40,
+    "demand": 40,
+    "avg_yld": 5.482
+   },
+   {
+    "series": "NZ0936",
+    "sold": 70,
+    "demand": 70,
+    "avg_yld": null
+   },
+   {
+    "series": "WS0437",
+    "sold": 52,
+    "demand": 52,
+    "avg_yld": 5.584
+   }
+  ]
+ },
+ {
+  "date": "2026-07-20",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 97.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 162.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 260,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 130,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-23",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 1407,
+    "demand": 1457,
+    "avg_yld": 4.581
+   },
+   {
+    "series": "PS0130",
+    "sold": 166,
+    "demand": 191,
+    "avg_yld": 4.731
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2483,
+    "demand": 2938,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4116.5,
+    "demand": 4571.5,
+    "avg_yld": 5.24
+   },
+   {
+    "series": "DS0436",
+    "sold": 3031,
+    "demand": 3751,
+    "avg_yld": 5.79
+   },
+   {
+    "series": "NZ0936",
+    "sold": 60,
+    "demand": 125,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-23",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0130",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 225,
+    "demand": 225,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 212,
+    "demand": 212,
+    "avg_yld": 5.79
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-29",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 982,
+    "demand": 983,
+    "avg_yld": 4.644
+   },
+   {
+    "series": "NZ0331",
+    "sold": 4102,
+    "demand": 4272,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 3809.2,
+    "demand": 4344.2,
+    "avg_yld": 5.262
+   },
+   {
+    "series": "DS1034",
+    "sold": 380,
+    "demand": 430,
+    "avg_yld": 5.568
+   },
+   {
+    "series": "DS0436",
+    "sold": 1784.7,
+    "demand": 2334.7,
+    "avg_yld": 5.755
+   },
+   {
+    "series": "NZ0936",
+    "sold": 30,
+    "demand": 35,
+    "avg_yld": null
+   },
+   {
+    "series": "WS0447",
+    "sold": 100,
+    "demand": 150,
+    "avg_yld": 5.903
+   }
+  ]
+ },
+ {
+  "date": "2026-07-29",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 7,
+    "demand": 7,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 1074.5,
+    "demand": 1074.5,
+    "avg_yld": 5.262
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 337,
+    "demand": 337,
+    "avg_yld": 5.755
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "WS0447",
+    "sold": 15,
+    "demand": 15,
+    "avg_yld": 5.903
+   }
+  ]
+ },
+ {
+  "date": "2026-08-12",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "PS1026",
+    "sold": -1374,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ1126",
+    "sold": -2032.495,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0127",
+    "sold": -330,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0527",
+    "sold": -938.235,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0727",
+    "sold": -5475.113,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-12",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 3025.426,
+    "demand": 3025.426,
+    "avg_yld": 4.652
+   },
+   {
+    "series": "PS0131",
+    "sold": 1141.829,
+    "demand": 1740.769,
+    "avg_yld": 5.140000000000001
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1030.764,
+    "demand": 2764.139,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4414.543,
+    "demand": 4457.62,
+    "avg_yld": 5.277
+   },
+   {
+    "series": "DS1034",
+    "sold": 376.483,
+    "demand": 453.665,
+    "avg_yld": 5.671
+   },
+   {
+    "series": "DS0436",
+    "sold": 734.689,
+    "demand": 813.335,
+    "avg_yld": 5.848
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-12",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0.111,
+    "demand": 0.111,
+    "avg_yld": 4.652
+   },
+   {
+    "series": "PS0131",
+    "sold": 0.753,
+    "demand": 0.753,
+    "avg_yld": 5.140000000000001
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0.99,
+    "demand": 0.99,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 1.796,
+    "demand": 1.796,
+    "avg_yld": 5.277
+   },
+   {
+    "series": "DS1034",
+    "sold": 1.614,
+    "demand": 1.614,
+    "avg_yld": 5.671
+   },
+   {
+    "series": "DS0436",
+    "sold": 1.013,
+    "demand": 1.013,
+    "avg_yld": 5.848
+   }
+  ]
+ },
+ {
+  "date": "2026-08-19",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 849,
+    "demand": 1791,
+    "avg_yld": 4.66
+   },
+   {
+    "series": "NZ0331",
+    "sold": 5190,
+    "demand": 7243,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 4810,
+    "demand": 5442,
+    "avg_yld": 5.329
+   },
+   {
+    "series": "DS1033",
+    "sold": 521,
+    "demand": 679,
+    "avg_yld": 5.602
+   },
+   {
+    "series": "DS0436",
+    "sold": 625,
+    "demand": 1255,
+    "avg_yld": 5.92
+   },
+   {
+    "series": "NZ0936",
+    "sold": 5,
+    "demand": 15,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-19",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 57,
+    "demand": 57,
+    "avg_yld": 4.66
+   },
+   {
+    "series": "NZ0331",
+    "sold": 232,
+    "demand": 232,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0731",
+    "sold": 755,
+    "demand": 755,
+    "avg_yld": 5.329
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 372,
+    "demand": 372,
+    "avg_yld": 5.92
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-26",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 1261,
+    "demand": 2542,
+    "avg_yld": 4.539
+   },
+   {
+    "series": "NZ0331",
+    "sold": 4079,
+    "demand": 6785,
+    "avg_yld": null
+   },
+   {
+    "series": "IZ0831",
+    "sold": 776,
+    "demand": 1763.1,
+    "avg_yld": 2.525
+   },
+   {
+    "series": "PS1031",
+    "sold": 3915,
+    "demand": 5725,
+    "avg_yld": 5.305
+   },
+   {
+    "series": "DS0436",
+    "sold": 1959,
+    "demand": 2512,
+    "avg_yld": 5.835
+   },
+   {
+    "series": "NZ0936",
+    "sold": 10,
+    "demand": 20,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-26",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 77.9,
+    "demand": 77.9,
+    "avg_yld": 4.539
+   },
+   {
+    "series": "NZ0331",
+    "sold": 259.1,
+    "demand": 259.1,
+    "avg_yld": null
+   },
+   {
+    "series": "IZ0831",
+    "sold": 63,
+    "demand": 63,
+    "avg_yld": 2.525
+   },
+   {
+    "series": "PS1031",
+    "sold": 505.8,
+    "demand": 505.8,
+    "avg_yld": 5.305
+   },
+   {
+    "series": "DS0436",
+    "sold": 350,
+    "demand": 350,
+    "avg_yld": 5.835
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-02",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "PS1026",
+    "sold": -989.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "WZ1126",
+    "sold": -821.766,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0127",
+    "sold": -430,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0527",
+    "sold": -479.9,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0727",
+    "sold": -1484.522,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-02",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 149.878,
+    "demand": 336.79,
+    "avg_yld": 4.813
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1179.835,
+    "demand": 1815.654,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 2730.641,
+    "demand": 3244.841,
+    "avg_yld": 5.65
+   },
+   {
+    "series": "DS1033",
+    "sold": 68.515,
+    "demand": 350.358,
+    "avg_yld": 5.795999999999999
+   },
+   {
+    "series": "DS0436",
+    "sold": 131.004,
+    "demand": 311.736,
+    "avg_yld": 6.0729999999999995
+   },
+   {
+    "series": "NZ0936",
+    "sold": 2.213,
+    "demand": 11.29,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-02",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0936",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-16",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 2725,
+    "demand": 4633,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 530,
+    "demand": 1181,
+    "avg_yld": 5.045
+   },
+   {
+    "series": "NZ0331",
+    "sold": 2337,
+    "demand": 3136,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 3248,
+    "demand": 5080,
+    "avg_yld": 5.941
+   },
+   {
+    "series": "DS0436",
+    "sold": 1160,
+    "demand": 1981,
+    "avg_yld": 6.394
+   }
+  ]
+ },
+ {
+  "date": "2026-09-16",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 25,
+    "demand": 25,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 25,
+    "demand": 25,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 93.25,
+    "demand": 93.25,
+    "avg_yld": 5.941
+   },
+   {
+    "series": "DS0436",
+    "sold": 1075.75,
+    "demand": 1075.75,
+    "avg_yld": 6.394
+   }
+  ]
+ },
+ {
+  "date": "2026-09-23",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 580,
+    "demand": 4567,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 349,
+    "demand": 487,
+    "avg_yld": 4.921
+   },
+   {
+    "series": "NZ0331",
+    "sold": 1496.5,
+    "demand": 5842.5,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 3487,
+    "demand": 4623,
+    "avg_yld": 5.691
+   },
+   {
+    "series": "DS1034",
+    "sold": 1259,
+    "demand": 1790,
+    "avg_yld": 5.969
+   },
+   {
+    "series": "DS0436",
+    "sold": 4825,
+    "demand": 5230,
+    "avg_yld": 6.121
+   }
+  ]
+ },
+ {
+  "date": "2026-09-23",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 256,
+    "demand": 256,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 376,
+    "demand": 376,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-28",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 22.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 60,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0331",
+    "sold": 37.5,
+    "demand": null,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 30,
+    "demand": null,
+    "avg_yld": null
+   }
+  ]
+ },
+ {
+  "date": "2026-10-14",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 1170,
+    "demand": 3847,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 1624,
+    "demand": 3662,
+    "avg_yld": 5.09
+   },
+   {
+    "series": "PS1031",
+    "sold": 5427,
+    "demand": 6688,
+    "avg_yld": 5.913
+   },
+   {
+    "series": "NZ0332",
+    "sold": 2655.4,
+    "demand": 4085.4,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 1128,
+    "demand": 1948,
+    "avg_yld": 6.356000000000001
+   }
+  ]
+ },
+ {
+  "date": "2026-10-14",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 5,
+    "demand": 5,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "PS1031",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "NZ0332",
+    "sold": 752,
+    "demand": 752,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 655.5,
+    "demand": 655.5,
+    "avg_yld": 6.356000000000001
+   }
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 2175,
+    "demand": 2910,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 2079,
+    "demand": 2732,
+    "avg_yld": 5.193
+   },
+   {
+    "series": "PS1031",
+    "sold": 6356.45,
+    "demand": 7117.45,
+    "avg_yld": 6.037
+   },
+   {
+    "series": "NZ0332",
+    "sold": 1216,
+    "demand": 2175,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 1172.4,
+    "demand": 1572.4,
+    "avg_yld": 6.317
+   },
+   {
+    "series": "DS0436",
+    "sold": 979.91,
+    "demand": 1563.91,
+    "avg_yld": 6.447
+   }
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 13,
+    "demand": 13,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 177,
+    "demand": 177,
+    "avg_yld": 5.193
+   },
+   {
+    "series": "PS1031",
+    "sold": 15,
+    "demand": 15,
+    "avg_yld": 6.037
+   },
+   {
+    "series": "NZ0332",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "DS1034",
+    "sold": 348,
+    "demand": 348,
+    "avg_yld": 6.317
+   },
+   {
+    "series": "DS0436",
+    "sold": 207,
+    "demand": 207,
+    "avg_yld": 6.447
+   }
+  ]
+ },
+ {
+  "date": "2026-10-28",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 1010,
+    "demand": 1805,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 1400,
+    "demand": 2719.226,
+    "avg_yld": 5.053
+   },
+   {
+    "series": "PS0730",
+    "sold": 1767,
+    "demand": 2042,
+    "avg_yld": 5.599
+   },
+   {
+    "series": "PS1031",
+    "sold": 3703.05,
+    "demand": 4989.55,
+    "avg_yld": 5.919
+   },
+   {
+    "series": "NZ0332",
+    "sold": 2287,
+    "demand": 4368,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 1833,
+    "demand": 2555,
+    "avg_yld": 6.395
+   }
+  ]
+ },
+ {
+  "date": "2026-10-28",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "NZ0928",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null
+   },
+   {
+    "series": "OK0129",
+    "sold": 36,
+    "demand": 36,
+    "avg_yld": 5.053
+   },
+   {
+    "series": "PS0730",
+    "sold": 425.2,
+    "demand": 425.2,
+    "avg_yld": 5.599
+   },
+   {
+    "series": "PS1031",
+    "sold": 74,
+    "demand": 74,
+    "avg_yld": 5.919
+   },
+   {
+    "series": "NZ0332",
+    "sold": 169,
+    "demand": 169,
+    "avg_yld": null
+   },
+   {
+    "series": "DS0436",
+    "sold": 544.3,
+    "demand": 544.3,
+    "avg_yld": 6.395
+   }
+  ]
+ }
+]
