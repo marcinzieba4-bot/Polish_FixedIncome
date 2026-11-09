@@ -9,7 +9,8 @@ Bond-by-bond analytics for Polish government bonds (POLGB), rendered as one self
 - **Rich/cheap**: residual of each bond vs the fitted zero curve.
 - **Roll yield, decomposed**: coupon income, pull-to-par, roll-down and repo funding as separate additive pieces (3M and 12M horizons), with breakevens.
 - **Poland vs core markets**: curve steepness, carry+roll, central-bank stance and real rates (NBP, ECB, Fed, BoE, CNB, MNB, BNR),
-  PL−DE/PL−US spread history, FX-hedged yields from EUR/PLN forward points, Bund-swapped-into-PLN (asset swap + CCS) and POLGB vs Poland EUR Eurobonds.
+  PL−DE/PL−US spread history, FX-hedged yields from EUR/PLN forward points, German/French/Italian/Spanish/Czech/Hungarian/US bonds
+  asset-swapped and swapped into PLN/EUR (ASW now, 1M and 12M ago) vs POLGB, and POLGB vs Poland EUR Eurobonds.
 - **Auctions & timing**: MoF calendar, recent auction results, measured auction-cycle behaviour, cash flows, index rebalances.
 - **Assessment**: ranked trade ideas with entry timing and risks.
 
@@ -21,6 +22,7 @@ python src/fetch_bondspot.py 2026-11-09          # BondSpot fixing + session sum
 python src/fetch_history.py 2026-08-03 2026-11-09 # optional: fixing history for the auction-cycle study
 python src/auction_study.py                       # auction-cycle stats (add --xlsm to re-read the MoF database)
 python src/analytics.py 2026-11-09               # -> data/analytics/analytics_YYYYMMDD.json
+python src/fetch_swaps.py                        # PLN/CZK/HUF/EUR/USD swap curves + €STR OIS (BlueGamma, last close)
 python src/fetch_core.py 2026-08-01              # Bund/UST curves, €STR, SOFR, EURIBOR, PAP cross-country table
 python src/core_compare.py 2026-11-09            # -> data/analytics/core_YYYYMMDD.json
 python src/build_dashboard.py 2026-11-09         # -> dist/dashboard/index.html

@@ -180,14 +180,14 @@ def irs_curve(mi):
     xs = [0.5] + sorted(piv)
     ys = [mi["money_market"]["wibor_6m"]] + [piv[k] for k in sorted(piv)]
     f = PchipInterpolator(xs, ys, extrapolate=False)
-    slope = (piv[10.0] - piv[5.0]) / 5.0 * 0.5
+    slope = (ys[-1] - ys[-2]) / (xs[-1] - xs[-2]) * 0.5
 
     def irs(T):
         if T <= xs[0]:
             return ys[0]
         if T <= xs[-1]:
             return float(f(T))
-        return ys[-1] + slope * (T - xs[-1]) * (1 - (T - xs[-1]) / 60)  # gently damped
+        return ys[-1] + slope * (T - xs[-1])
     return irs
 
 

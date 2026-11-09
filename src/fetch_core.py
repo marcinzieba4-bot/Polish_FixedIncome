@@ -85,8 +85,14 @@ def main():
         out["bund"][str(T)] = bund(T, start)
     u = ust(2026)
     out["ust"] = {d: v for d, v in u.items() if d >= start}
-    out["estr"], out["sofr"], out["euribor"] = estr(), sofr(), euribor()
-    out["pap"] = pap_table()
+    prev_p = ROOT / "data" / "core" / "core_rates.json"
+    prev = json.loads(prev_p.read_text()) if prev_p.exists() else {}
+    for key, fn in (("estr", estr), ("sofr", sofr), ("euribor", euribor), ("pap", pap_table)):
+        try:
+            out[key] = fn()
+        except Exception as e:  # keep the last good value if a source times out
+            print(f"{key}: fetch failed ({type(e).__name__}); keeping previous value")
+            out[key] = prev.get(key)
     p = ROOT / "data" / "core" / "core_rates.json"
     p.write_text(json.dumps(out, indent=0))
     last = max(out["bund"]["10"])

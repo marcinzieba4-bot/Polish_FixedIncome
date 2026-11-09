@@ -184,8 +184,40 @@ def main(asof: dt.date):
                               local_premium=asw_p - asw_e, polgb_hedged_eur=pl_y - (r_pln1 - r_eur1),
                               hedged_minus_eurobond=(pl_y - (r_pln1 - r_eur1) - eb["yield"]) * 100, issue=eb["issue"]))
 
+    # ------------------------------------------------------------------ govvies swapped into PLN / EUR (matched maturity)
+    SW = load(DATA / "core" / "swaps.json")
+
+    def swap_fn(ccy, col=0):
+        pts = sorted((float(k), v[col]) for k, v in SW[ccy]["tenors"].items() if v[col] is not None)
+        return lambda T: interp([p[0] for p in pts], [p[1] for p in pts], T)
+
+    mk = {"Poland": ("PLN", "PL"), "Germany": ("EUR", "DE"), "France": ("EUR", "FR"), "Italy": ("EUR", "IT"),
+          "Spain": ("EUR", "ES"), "Czechia": ("CZK", "CZ"), "Hungary": ("HUF", "HU"), "United States": ("USD", "US")}
+    pap_pl = {"Poland": "Polska", "Germany": "Niemcy", "France": "Francja", "Italy": "Włochy", "Spain": "Hiszpania",
+              "Czechia": "Czechy", "Hungary": "Węgry", "United States": "USA"}
+    PCOL = {"d6": 1, "m1": 3, "m12": 5}          # PAP columns: now, 1D(=6 Nov), 5D, 1M, 3M, 12M
+    pln0, eur0 = swap_fn("PLN"), swap_fn("EUR")
+    swapped = []
+    for ctry, (ccy, code) in mk.items():
+        d = pap["data"][pap_pl[ctry]]
+        for lab in ("2Y", "3Y", "5Y", "10Y"):
+            if lab not in d or (lab == "3Y" and "2Y" in d):
+                continue
+            T = float(lab[:-1])
+            y6, y1m, y12 = d[lab][PCOL["d6"]], d[lab][PCOL["m1"]], d[lab][PCOL["m12"]]
+            s0, s1m, s12 = swap_fn(ccy, 0)(T), swap_fn(ccy, 2)(T), swap_fn(ccy, 3)(T)
+            asw = (y6 - s0) * 100
+            swapped.append(dict(country=ctry, code=code, ccy=ccy, tenor=lab, T=T, y=y6, swap=s0, asw=asw,
+                                asw_1m=(y1m - s1m) * 100 if y1m is not None else None,
+                                asw_12m=(y12 - s12) * 100 if y12 is not None else None,
+                                to_pln=pln0(T) + asw / 100, to_eur=eur0(T) + asw / 100))
+    for r in swapped:
+        pl_same = next((x for x in swapped if x["code"] == "PL" and (x["T"] == r["T"] or (r["T"] == 3 and x["T"] == 2))), None)
+        r["vs_pl_bp"] = r["asw"] - pl_same["asw"] if pl_same else None
+    swap_meta = {c: dict(dates=SW[c]["dates"], url=SW[c]["url"]) for c in ("PLN", "EUR", "CZK", "HUF", "USD")}
+
     out = dict(asof=asof.isoformat(), bund_date=bd, ust_date=ud, grid=grid, carry_roll=cr, snapshot=snap,
-               spread_hist=hs, hedged=hedged, r3=m3, pick=pick, r1=r1, swap_to_pln=swap_to_pln, eurobonds=eurobonds, inputs=I, pap_date=pap["date"],
+               spread_hist=hs, hedged=hedged, r3=m3, pick=pick, r1=r1, swap_to_pln=swap_to_pln, eurobonds=eurobonds, swapped=swapped, swap_meta=swap_meta, inputs=I, pap_date=pap["date"],
                pap_url=pap["url"], estr=C["estr"], sofr=C["sofr"], euribor=C["euribor"])
     p = DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
     p.write_text(json.dumps(out, indent=1))
@@ -201,6 +233,9 @@ def main(asof: dt.date):
     for x in eurobonds:
         print({k: round(v, 2) if isinstance(v, float) else v for k, v in x.items()})
     print("hist", hs[0], hs[-1], len(hs))
+    for r in swapped:
+        print(f"{r['code']} {r['tenor']:>3} y={r['y']:.2f} swap={r['swap']:.2f} ASW={r['asw']:6.0f} (1m {r['asw_1m']:5.0f}, 12m {r['asw_12m']:5.0f}) "
+              f"toPLN={r['to_pln']:.2f} toEUR={r['to_eur']:.2f} vsPL={r['vs_pl_bp']:6.0f}")
 
 
 if __name__ == "__main__":

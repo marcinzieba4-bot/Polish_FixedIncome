@@ -330,7 +330,7 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
     var maxs = rows.map(function (r) { return Math.max(r.segs.reduce(function (a, s) { return a + Math.max(0, s.v); }, 0), r.marker ? r.marker.v : 0); });
     var lo = Math.min(0, Math.min.apply(null, mins)), hi = Math.max(0, Math.max.apply(null, maxs));
     if (opts.symmetric) { var a = Math.max(-lo, hi) * 1.2; lo = -a; hi = a; }
-    else if (lo < 0) lo -= (hi - lo) * 0.04;
+    else if (lo < 0) lo -= (hi - lo) * 0.14;
     var ticks = niceTicks(lo, hi, 6); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
     var X = function (v) { return m.l + (v - lo) / (hi - lo) * (W - m.l - m.r); };
     var g = el("g", {}, svg);
@@ -662,6 +662,19 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; }
       }
     };
     renderers.push(r); r();
+    var aswCharts = function () {
+      [["coreAsw10", ["10Y"]], ["coreAsw5", ["5Y"]]].forEach(function (cfg) {
+        var h = document.getElementById(cfg[0]); if (!h || !K.swapped) return;
+        var rows = K.swapped.filter(function (x) { return cfg[1].indexOf(x.tenor) >= 0; }).sort(function (a, b) { return b.asw - a.asw; }).map(function (x) {
+          return { label: x.code, strong: x.code === "PL", segs: [{ v: x.asw, key: x.asw >= 0 ? "p" : "n" }], marker: { v: x.asw_12m }, end: sg(x.asw, 0),
+                   ttHead: x.code + " " + x.tenor + " (" + x.ccy + ") · yield " + f(x.y, 2) + "% vs own swap " + f(x.swap, 2) + "%",
+                   tt: [{ name: "ASW now", value: sg(x.asw, 0) + " bp", color: cssVar("--s1") }, { name: "1M ago", value: sg(x.asw_1m, 0) + " bp" }, { name: "12M ago", value: sg(x.asw_12m, 0) + " bp", color: cssVar("--ink") },
+                        { name: "Swapped into PLN", value: f(x.to_pln, 2) + "%" }, { name: "Swapped into EUR", value: f(x.to_eur, 2) + "%" }, { name: "vs POLGB", value: sg(x.vs_pl_bp, 0) + " bp" }] };
+        });
+        hbarChart(h, rows, { colors: { p: "--s1", n: "--neg" }, unit: "", aria: "Asset swap spread by country " + cfg[1][0] });
+      });
+    };
+    renderers.push(aswCharts); aswCharts();
   })();
 
   // ---- full bond table

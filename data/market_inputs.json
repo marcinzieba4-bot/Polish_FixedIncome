@@ -22,18 +22,19 @@
   },
   "irs": {
     "pillars": {
-      "2": 4.5,
+      "1": 4.54,
+      "2": 4.49,
+      "3": 4.56,
+      "4": 4.61,
       "5": 4.67,
-      "10": 4.99
+      "7": 4.79,
+      "8": 4.86,
+      "10": 4.99,
+      "15": 5.31,
+      "20": 5.61
     },
-    "asof": "2026-11-06 16:30 close",
-    "source": "PLN IRS (vs 6M WIBOR) 2Y/5Y/10Y: LSEG Datastream via Bank Millennium 'Makro i rynek' daily, 9 Nov 2026. Other tenors interpolated (monotone PCHIP through 6M WIBOR, 2Y, 5Y, 10Y); >10Y extrapolated with the 5-10Y slope damped by half.",
-    "crosscheck_unverified": {
-      "1Y": 4.285,
-      "3Y": 4.52,
-      "7Y": 4.853,
-      "note": "cbonds snippets 4-5 Nov (not directly verifiable); consistent with the interpolated curve within ~5bp"
-    },
+    "asof": "2026-11-06 close",
+    "source": "PLN IRS vs 6M WIBOR, full curve 1Y-20Y at the 6 Nov 2026 close (BlueGamma interdealer mids; 2Y/5Y/10Y identical to LSEG via Bank Millennium). Interpolated with monotone PCHIP through 6M WIBOR and the pillars; beyond 20Y the last slope is extrapolated at half speed.",
     "weekly_2026_11_02": {
       "2Y": 4.67,
       "5Y": 4.93,

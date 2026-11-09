@@ -48,7 +48,8 @@ def main(asof: dt.date):
     # ------------------------------------------------------------------ derived numbers
     irs1, irs2 = irs(1.0), irs(2.0)
     fwd_1y1y = 2 * irs2 - irs1
-    implied_6m_up = fwd_1y1y - mm["wibor_6m"]
+    fwd_6x12 = (irs1 * 1.0 - mm["wibor_6m"] * 0.5) / 0.5      # implied 6M WIBOR in 6 months (FRA 6x12 proxy)
+    implied_6m_up = fwd_6x12 - mm["wibor_6m"]
     s2s10 = (B["DS0436"]["ytm"] - B["OK0129"]["ytm"]) * 100
     s2s5 = (B["PS1031"]["ytm"] - B["OK0129"]["ytm"]) * 100
     s5s10 = (B["DS0436"]["ytm"] - B["PS1031"]["ytm"]) * 100
@@ -75,6 +76,7 @@ def main(asof: dt.date):
         k_last = K["spread_hist"][-1]
         k_de1 = kh[("DE", 1)]["PLN"]
         k_sub1 = max(B["PS0527"]["ytm"], B["DS0727"]["ytm"])
+        ksw = {(r["code"], r["tenor"]): r for r in K.get("swapped", [])}
     best_front = max(["OK0129", "WS0429", "PS0729", "DS1029", "PS0130"], key=ex_md)
 
     # ------------------------------------------------------------------ data passed to JS
@@ -87,7 +89,7 @@ def main(asof: dt.date):
               market_inputs={"asw_lseg_2026_11_06": mi["asw_lseg_2026_11_06"]}, label_bonds=labels,
               highlight=["OK0129", "PS0729", "PS0130", "PS1031", "DS1035", "DS0436"],
               hist=hist_series, auctions=auc_dates, cycle={k: v for k, v in cyc.items() if not k.startswith("_")},
-              core=({k: K[k] for k in ("grid", "carry_roll", "spread_hist")} if K else None))
+              core=({k: K[k] for k in ("grid", "carry_roll", "spread_hist", "swapped")} if K else None))
 
     # ------------------------------------------------------------------ HTML pieces
     o = []
@@ -136,7 +138,8 @@ def main(asof: dt.date):
     <li><b>Best risk-adjusted carry is the 2-3Y sector.</b> The curve jumps {f(front_jump, 0)}bp from OK0128 (1.2Y) to OK0129 (2.2Y),
       so 2-3Y paper earns ~{f(B['OK0129']['h12']['roll_bp'], 0)}bp of roll-down a year on top of its yield: {E(best_front)} returns {f(B[best_front]['h12']['total'])}% over 12M
       on an unchanged curve, {sg(B[best_front]['h12']['net'])}% over repo, with a {f(B[best_front]['h12']['breakeven_bp'], 0)}bp breakeven.
-      That steepness prices hikes: 1y1y IRS ≈ {f(fwd_1y1y)}% vs 6M WIBOR {f(mm['wibor_6m'])}%. Owning it is a bet that the MPC does at most a 25bp "insurance" hike.</li>
+      That steepness prices hikes: the swap curve humps at 1Y ({f(irs1)}%), implying 6M WIBOR ≈ {f(fwd_6x12)}% in six months vs {f(mm['wibor_6m'])}% now
+      (~{f(implied_6m_up * 100, 0)}bp of tightening), then easing (1y1y ≈ {f(fwd_1y1y)}%). Owning it is a bet that the MPC delivers less than that, e.g. one 25bp "insurance" hike.</li>
     <li><b>Asset swaps are at extreme wides:</b> about {f(A['asw_buckets'][4]['avg_asw'], 0)}bp at 5Y and {f(A['asw_buckets'][6]['avg_asw'], 0)}bp at 8-9Y
       (LSEG generic 10Y: {mi['asw_lseg_2026_11_06']['10Y']}bp). This is a fiscal premium: 2026 deficit ~{f(mac['deficit_2026_gdp'], 1)}% of GDP, and S&amp;P moved to a negative outlook on 6 Nov.
       An asset-swapped DS1035/DS0436 earns ~{f(B['DS0436']['asw_carry_bp'], 0)}bp a year in running carry. Size it modestly and add at supply.</li>
@@ -151,9 +154,11 @@ def main(asof: dt.date):
       PL−Bund 10Y is ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp. Hedged into PLN at market forward points (EUR→PLN hedge pays ~{f(K['pick']['eurpln_1y_market'])}%/yr), Bunds lose to POLGBs from 2Y out
       ({f((kh[('PL', 2)]['PLN'] - kh[('DE', 2)]['PLN']) * 100, 0)}bp at 2Y, ~120bp at 5-10Y matched-maturity), so "buy Bund and swap into PLN" doesn't pay for duration.
       It does pay at the front end: a 1Y Bund hedged into PLN ≈ {f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for the 1Y POLGB and {f(k_sub1)}% for sub-1Y POLGBs.
-      A EUR investor gets ~{f(K['eurobonds'][-1]['hedged_minus_eurobond'], 0) if K.get('eurobonds') else '–'}bp more from a hedged POLGB than from Poland's own EUR 2036 bond.</li>""" if K else "") + f"""
+      A EUR investor gets ~{f(K['eurobonds'][-1]['hedged_minus_eurobond'], 0) if K.get('eurobonds') else '–'}bp more from a hedged POLGB than from Poland's own EUR 2036 bond.
+      Among peers swapped into PLN at 10Y, only French OATs beat POLGB ({sg(ksw[('FR', '10Y')]['vs_pl_bp'], 0)}bp, ASW {sg(ksw[('FR', '10Y')]['asw'], 0)}bp). BTPs are {sg(ksw[('IT', '10Y')]['vs_pl_bp'], 0)}bp,
+      Spain/Czechia/Hungary {sg(ksw[('ES', '10Y')]['vs_pl_bp'], 0)}/{sg(ksw[('CZ', '10Y')]['vs_pl_bp'], 0)}/{sg(ksw[('HU', '10Y')]['vs_pl_bp'], 0)}bp, and Bunds {sg(ksw[('DE', '10Y')]['vs_pl_bp'], 0)}bp.</li>""" if K else "") + f"""
   </ol>
-  <div class="sub">Funding {f(fund)}% · IRS pillars from LSEG via Bank Millennium (6 Nov close), other tenors interpolated · horizon returns assume an unchanged curve and constant rich/cheap.</div>
+  <div class="sub">Funding {f(fund)}% · PLN IRS curve 1Y-20Y at the 6 Nov close (BlueGamma; 2/5/10Y match LSEG) · horizon returns assume an unchanged curve and constant rich/cheap.</div>
 </div>
 """)
 
@@ -221,19 +226,19 @@ def main(asof: dt.date):
 <section class="card" id="curve">
   <h2>Curve &amp; asset swaps <span class="tag">yield − IRS</span></h2>
   <p class="lede">Dots are the BondSpot fixing yields. The blue line is a Nelson-Siegel-Svensson fit and the orange line is the PLN IRS curve (vs 6M WIBOR).
-  The grey verticals show the asset-swap gap for each bond. Swap spreads are near zero inside 2Y, ~{f(A['asw_buckets'][3]['avg_asw'], 0)}bp at 4Y and around
+  The grey verticals show the asset-swap gap for each bond. Paper inside ~1.5Y trades below swaps ({sg(A['asw_buckets'][0]['avg_asw'], 0)}bp at 1Y, where the swap curve humps on priced hikes); swap spreads are ~{f(A['asw_buckets'][1]['avg_asw'], 0)}bp at 2Y, ~{f(A['asw_buckets'][3]['avg_asw'], 0)}bp at 4Y and around
   {f(A['asw_buckets'][6]['avg_asw'], 0)}bp at 8-10Y. The bond curve is far steeper than the swap curve: 2s10s POLGB {f(s2s10, 0)}bp vs IRS {f((mi['irs']['pillars']['10'] - mi['irs']['pillars']['2']) * 100, 0)}bp.
   So the term premium sits in the bonds (fiscal supply), not in rate expectations.</p>
   <div class="legend"><span><i class="dot" style="background:var(--s1)"></i>Bond yield (fixing)</span><span><i class="line" style="background:var(--s1);opacity:.55"></i>Fitted NSS curve</span><span><i class="line" style="background:var(--s2)"></i>PLN IRS</span></div>
   <div class="chart" id="curveChart"></div>
   <h3>ASW by tenor bucket</h3>
-  <div class="legend"><span><i style="background:var(--s1)"></i>Average yield − interpolated IRS (bp)</span><span><i class="tick" style="background:var(--ink-2)"></i>LSEG generic ASW, 6 Nov (Bank Millennium)</span></div>
+  <div class="legend"><span><i style="background:var(--s1)"></i>Average yield − PLN IRS at the same maturity (bp)</span><span><i class="tick" style="background:var(--ink-2)"></i>LSEG generic ASW, 6 Nov (Bank Millennium)</span></div>
   <div class="chart" id="aswChart"></div>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Bucket</th><th class="l">Bonds</th><th>Avg yield %</th><th>IRS %</th><th>Avg ASW bp</th><th>Range bp</th><th class="l">Widest</th></tr></thead><tbody>{asw_rows}</tbody></table></div>
   <div class="note"><b>Reading the ASW.</b> ASW here is the yield-to-swap spread: bond YTM minus the PLN IRS at the same maturity, both annual.
   Positive means the bond pays more than swaps, i.e. cheap sovereign risk. An asset-swap long (buy bond, pay IRS, receive 6M WIBOR, fund at repo) runs at
   ≈ ASW + (6M WIBOR − repo) = ASW + {f((mm['wibor_6m'] - fund) * 100, 0)}bp a year. Its main risk is ASW widening on fiscal or rating news, not the level of rates.
-  Past 10Y the IRS is extrapolated, so the 20Y figure (WS0447) is indicative only. The WIBOR→POLSTR switch (no new WIBOR contracts after 31 Dec 2026) will move liquidity
+  The IRS curve is the full 1Y-20Y WIBOR swap curve; WS0447 (20.5Y) uses a short extrapolation and a wide quote, so treat it as indicative. The WIBOR→POLSTR switch (no new WIBOR contracts after 31 Dec 2026) will move liquidity
   to POLSTR OIS in 2027. Expect an OIS-vs-WIBOR basis to appear in these spreads.</div>
 </section>
 """)
@@ -287,7 +292,7 @@ def main(asof: dt.date):
       This is the only piece that depends on curve shape. It is large where the curve is steep: OK0129 rolls ~{f(ok29['roll_bp'], 0)}bp in 12M toward OK0128's level.</li>
     <li><b>Funding</b>: the repo cost of carrying the dirty price at {f(fund)}%. Excess return is the true "carry trade" P&amp;L. <b>Breakeven</b> is the yield rise over the horizon that wipes that excess out.</li>
     <li><b>The overlap with forwards:</b> roll-down is earned only if the curve stays put. A steep 1-3Y curve prices higher future rates
-      (1y1y IRS {f(fwd_1y1y)}% vs 6M WIBOR {f(mm['wibor_6m'])}%, +{f(implied_6m_up * 100, 0)}bp). If those forwards are realised, roll is ~0 and you keep only the yield carry.
+      (the 1Y swap at {f(irs1)}% implies 6M WIBOR ≈ {f(fwd_6x12)}% in six months vs {f(mm['wibor_6m'])}% now, +{f(implied_6m_up * 100, 0)}bp). If those forwards are realised, roll is ~0 and you keep only the yield carry.
       Roll-down is therefore a view against hikes, not a free lunch.</li>
   </ul>
   <div class="tabs" id="crTabs" role="group" aria-label="Horizon"></div>
@@ -384,6 +389,10 @@ def main(asof: dt.date):
          f"A 1Y Bund/Schatz hedged into PLN on the 1Y forward yields ≈{f(k_de1)}% vs {f(kh[('PL', 1)]['local'])}% for a 1Y POLGB and {f(k_sub1)}% on PS0527/DS0727, with Bund credit and daily liquidity. "
          "The forward points pay for the NBP hikes the market prices.",
          "Risk: forward points move with NBP pricing, and the quotes used are indicative. Lock the forward at execution. If the NBP hikes more than priced, short POLGBs catch up."),
+        ("wait", "Diversifier: French 10Y OATs asset-swapped and CCS-swapped into PLN",
+         f"The only peer bond that beats POLGB once swapped into PLN: {f(ksw[('FR', '10Y')]['to_pln'])}% vs {f(ksw[('PL', '10Y')]['to_pln'])}% ({sg(ksw[('FR', '10Y')]['vs_pl_bp'], 0)}bp). "
+         f"French ASW is {sg(ksw[('FR', '10Y')]['asw'], 0)}bp, {sg(ksw[('FR', '10Y')]['asw'] - ksw[('FR', '10Y')]['asw_12m'], 0)}bp wider in 12M. It swaps Polish fiscal risk for French fiscal/political risk at a better spread.",
+         "Risk: the French ASW kept widening (+27bp in 1M), and the CCS basis plus IBOR-OIS mismatch can eat 10-30bp. Only worth it as diversification, with a live basis quote."),
         ("wait", "Long POLGB 10Y vs short Bund 10Y (DV01-matched, FX-hedged): the fiscal-premium compression trade",
          f"PL−DE 10Y at ~{f((k_last['pl10'] - k_last['de10']) * 100, 0)}bp (peak ~299bp on 28 Oct, ~245bp in early August). It carries ~{f(kc[('PL', 10)]['total_bp'] - kc[('DE', 10)]['total_bp'], 0)}bp/yr more than the Bund leg.",
          "Risk: fiscal or ratings news widens the spread. Needs a catalyst (2027 consolidation, rating stabilisation). Enter on supply-driven widening."),
@@ -417,12 +426,13 @@ def main(asof: dt.date):
     <li><b>Duration:</b> Macaulay = PV-weighted time; modified = Macaulay/(1+y); convexity is standard annual. Index figures are market-value weighted with GPW Benchmark units effective 30 Oct 2026.
       The cash-flow IRR yield is also shown, because on a curve this steep the MV-weighted YTM understates the portfolio yield.</li>
     <li><b>Curve:</b> {E(mi['curve']['source'])}</li>
-    <li><b>IRS / ASW:</b> {E(mi['irs']['source'])} Cross-check (unverified) quotes of 1Y 4.285 / 3Y 4.52 / 7Y 4.853 are within ~5bp of the interpolated curve.</li>
+    <li><b>IRS / ASW:</b> {E(mi['irs']['source'])}</li>
     <li><b>Money market:</b> {E(mm['source'])}</li>
     <li><b>Carry/roll:</b> per-bond horizon repricing. The fitted zero curve is held fixed by time-to-cash-flow and each bond's z-spread residual is held constant. Bonds that mature inside the horizon redeem at par and the cash earns the funding rate.</li>
     <li><b>Poland vs core:</b> Bund curve from the Bundesbank term-structure series (BBSIS, fitted yields by residual maturity); US Treasury daily par yield curve; €STR (ECB data API), SOFR/EFFR (NY Fed), EURIBOR (euribor-rates.eu);
       cross-country benchmark yields from the PAP table republished by wnp.pl; EUR swaps vs 6M EURIBOR, €STR OIS and Fed funds OIS from BlueGamma interdealer mids (6 Nov); EUR/PLN forward points from investing.com (indicative, 9 Nov);
-      Poland EUR Eurobond yields from Borsa Italiana MOT (indicative). Carry+roll = (yield − local 3M rate) + duration × 1Y slide on each market's curve. Hedged yields use 1Y FX-implied rates.
+      Poland EUR Eurobond yields from Borsa Italiana MOT (indicative). Swap curves (PLN/WIBOR, CZK/PRIBOR, HUF/BUBOR, EUR/6M EURIBOR, USD/SOFR, €STR OIS) from BlueGamma public pages (6 Nov close plus 1W/1M/1Y-ago columns);
+      swapped yields = own-currency asset-swap spread + PLN (or EUR) swap at the same maturity, CCS basis zero. Carry+roll = (yield − local 3M rate) + duration × 1Y slide on each market's curve. Hedged yields use 1Y FX-implied rates.
       Matched-maturity swaps assume zero cross-currency basis; no published EUR/PLN basis level was found.</li>
     <li><b>Calendar &amp; supply:</b> MoF 2026 auction calendar, Q4 financing plan, November supply plan and the MoF auction database (<a href="{E(cal['_sources']['nov_2026_supply'])}" rel="noopener">Nov plan</a>,
       <a href="{E(cal['_sources']['auction_results_db'])}" rel="noopener">results DB</a>). MPC: NBP 2026 schedule. Macro: NBP projection, GUS flash CPI, MoF, PKO BP and Bank Millennium dailies of 9 Nov 2026.</li>

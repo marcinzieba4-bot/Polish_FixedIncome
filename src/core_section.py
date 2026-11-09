@@ -72,23 +72,57 @@ def core_section(K, A, B):
 
     # ---------------- matched-maturity Bund -> PLN
     stp = K.get("swap_to_pln") or []
-    if stp:
-        stp_rows = "".join(
-            f"<tr><td class='l'>{int(s['T'])}Y</td><td>{f(s['bund'])}</td><td>{f(s['eur_irs'])}</td><td>{sg(s['bund_asw'], 0)}</td>"
-            f"<td>{f(s['pln_irs'])}</td><td>{f(s['synth_pln'])}</td><td>{f(s['polgb'])}</td><td>{sg(s['pl_asw'], 0)}</td><td><b>{sg(s['adv_pl_bp'], 0)}</b></td></tr>"
-            for s in stp)
-        src = I.get("eur_irs", {}).get("source", "")
+    sw = K.get("swapped") or []
+    sm = K.get("swap_meta", {})
+    stp_html = ""
+    if sw:
+        names = {"PL": "Poland", "DE": "Germany", "FR": "France", "IT": "Italy", "ES": "Spain", "CZ": "Czechia", "HU": "Hungary", "US": "United States"}
+        rows_html = []
+        for ten in ("2Y", "5Y", "10Y"):
+            grp = [r for r in sw if r["tenor"] == ten or (ten == "2Y" and r["tenor"] == "3Y")]
+            best = max(g["to_pln"] for g in grp)
+            for r in sorted(grp, key=lambda x: -x["asw"]):
+                d1 = r["asw"] - r["asw_1m"] if r["asw_1m"] is not None else None
+                d12 = r["asw"] - r["asw_12m"] if r["asw_12m"] is not None else None
+                rows_html.append(
+                    f"<tr{' class=\"hl\"' if r['code'] == 'PL' else ''}><td class='l'>{E(r['tenor'])}</td><td class='l'>{E(names[r['code']])}</td><td class='l'>{E(r['ccy'])}</td>"
+                    f"<td>{f(r['y'])}</td><td>{f(r['swap'])}</td><td><b>{sg(r['asw'], 0)}</b></td><td>{sg(d1, 0)}</td><td>{sg(d12, 0)}</td>"
+                    f"<td{' style=\"font-weight:600\"' if abs(r['to_pln'] - best) < 1e-9 else ''}>{f(r['to_pln'])}</td><td>{f(r['to_eur'])}</td><td>{sg(r['vs_pl_bp'], 0)}</td></tr>")
+        g10 = {r["code"]: r for r in sw if r["tenor"] == "10Y"}
+        g5 = {r["code"]: r for r in sw if r["tenor"] == "5Y"}
+        g2 = {r["code"]: r for r in sw if r["tenor"] in ("2Y", "3Y")}
+        beat10 = [names[k] for k, r in g10.items() if k != "PL" and r["vs_pl_bp"] > 0]
         stp_html = f"""
-  <h3>Bund swapped into PLN at matched maturity (asset swap + cross-currency swap)</h3>
-  <p class="small">Buy the Bund, pay EUR IRS (now earning EURIBOR + Bund ASW), swap the EURIBOR leg into WIBOR with a EUR/PLN cross-currency basis swap,
-  then receive PLN IRS. You end up with a PLN fixed yield of ≈ PLN IRS + Bund ASW + basis. A POLGB gives PLN IRS + POLGB ASW. So the comparison
-  reduces to <b>POLGB ASW vs Bund ASW (+ basis)</b>. Basis is set to 0 here, so the last column is also the basis it would take to flip the result. EUR swap source: {E(src)}</p>
-  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th>Bund %</th><th>EUR IRS %</th><th>Bund ASW bp</th><th>PLN IRS %</th>
-  <th>Synthetic PLN yield %</th><th>POLGB %</th><th>POLGB ASW bp</th><th>POLGB advantage bp</th></tr></thead><tbody>{stp_rows}</tbody></table></div>"""
-    else:
-        stp_html = """<p class="small">EUR swap quotes were not available from a verifiable free source, so the matched-maturity (asset swap + CCS)
-  version is not shown. The rolling-hedge table above is the conservative proxy.</p>"""
+  <h3>Government bonds swapped into PLN (and EUR): Spain, France, Italy, Czechia, Hungary, Germany, US vs Poland</h3>
+  <p class="small">Matched-maturity asset swap: buy the bond, pay its own-currency swap (EURIBOR 6M, PRIBOR, BUBOR, SOFR), and you earn floating + <b>ASW</b> (yield − own swap).
+  Swap that floating leg into WIBOR with a cross-currency basis swap and receive PLN IRS, and the bond becomes a <b>synthetic PLN fixed yield = PLN IRS + ASW</b>
+  (EUR version: EUR IRS + ASW). With the basis set to zero, ranking by ASW is the same as ranking by swapped yield, and "vs POLGB" is simply ASW − POLGB ASW.
+  Yields: PAP benchmarks at the 6 Nov close; swaps: BlueGamma 6 Nov close (history columns: 1 month and 1 year earlier). The marker in each chart is the ASW 12 months ago.</p>
+  <div class="grid2">
+    <div><h3>10Y asset-swap spread by country (bp)</h3><div class="legend"><span><i style="background:var(--s1)"></i>ASW now</span><span><i class="tick" style="background:var(--ink)"></i>12 months ago</span></div><div class="chart" id="coreAsw10"></div></div>
+    <div><h3>5Y asset-swap spread by country (bp)</h3><div class="legend"><span><i style="background:var(--s1)"></i>ASW now</span><span><i class="tick" style="background:var(--ink)"></i>12 months ago</span></div><div class="chart" id="coreAsw5"></div></div>
+  </div>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th class="l">Country</th><th class="l">Ccy</th><th>Yield %</th><th>Own swap %</th><th>ASW bp</th><th>Δ1M</th><th>Δ12M</th>
+  <th>Swapped → PLN %</th><th>Swapped → EUR %</th><th>vs POLGB bp</th></tr></thead><tbody>{''.join(rows_html)}</tbody></table></div>
+  <div class="note"><b>What the swapped comparison says.</b>
+    <ul class="tight">
+      <li><b>At 10Y, {'only ' + ' and '.join(beat10) + ' beat' + ('s' if len(beat10) == 1 else '') + ' Poland' if beat10 else 'nothing beats Poland'}</b>. OATs swapped into PLN give {f(g10['FR']['to_pln'])}% vs POLGB {f(g10['PL']['to_pln'])}% ({sg(g10['FR']['vs_pl_bp'], 0)}bp),
+        because the French ASW has blown out to {sg(g10['FR']['asw'], 0)}bp ({sg(g10['FR']['asw'] - g10['FR']['asw_12m'], 0)}bp in 12M, {sg(g10['FR']['asw'] - g10['FR']['asw_1m'], 0)}bp in 1M).
+        That is France's own fiscal/political premium, so swapping OATs into PLN diversifies away from Polish risk rather than away from fiscal risk.</li>
+      <li><b>Italy is close, the rest are far behind.</b> BTPs swapped are {sg(g10['IT']['vs_pl_bp'], 0)}bp vs POLGB at 10Y and {sg(g5['IT']['vs_pl_bp'], 0)}bp at 5Y.
+        Spain ({sg(g10['ES']['vs_pl_bp'], 0)}), Czechia ({sg(g10['CZ']['vs_pl_bp'], 0)}), Hungary ({sg(g10['HU']['vs_pl_bp'], 0)}) and Bunds ({sg(g10['DE']['vs_pl_bp'], 0)}) give up 60-120bp at 10Y once swapped.
+        Czech and Hungarian bonds trade close to their own swap curves, so their high outright yields are mostly rate expectations, not a credit/term premium you can swap out.</li>
+      <li><b>At 5Y, Poland and France tie</b> ({sg(g5['PL']['asw'], 0)} vs {sg(g5['FR']['asw'], 0)}bp). <b>At 2Y, Poland is the best swapped short bond</b> ({sg(g2['PL']['asw'], 0)}bp vs France {sg(g2['FR']['asw'], 0)}, US {sg(g2['US']['asw'], 0)}, Italy {sg(g2['IT']['asw'], 0)}, Hungary 3Y {sg(g2['HU']['asw'], 0)}).</li>
+      <li><b>Momentum:</b> Poland's 10Y ASW is {sg(g10['PL']['asw'] - g10['PL']['asw_1m'], 0)}bp wider than a month ago and {sg(g10['PL']['asw'] - g10['PL']['asw_12m'], 0)}bp over 12M. France ({sg(g10['FR']['asw'] - g10['FR']['asw_12m'], 0)}) and Italy ({sg(g10['IT']['asw'] - g10['IT']['asw_12m'], 0)}) widened more over the year,
+        so Poland's fiscal premium is large but not an outlier among stretched European sovereigns.</li>
+      <li><b>Caveats:</b> CCS basis assumed zero (EUR/PLN, and CZK/HUF into PLN via EUR); the US ASW is vs SOFR (an OIS curve), so it looks ~20bp wider than an IBOR-based ASW would.
+        Different IBOR-OIS spreads per currency (EUR 10Y swap {f(g10['DE']['swap'])}% vs €STR OIS 3.11%) also mean the PLN numbers are an approximation. Use them to rank, not to the basis point.</li>
+    </ul>
+  </div>"""
+    if not sw and stp:
+        stp_html = "<p class='small'>Swap data unavailable.</p>"
 
+    de_sw = {r["tenor"]: r for r in sw if r["code"] == "DE"}
     basis_note = fx.get("basis_note", "")
     ebs = K.get("eurobonds") or []
     eb_rows = "".join(
@@ -161,8 +195,8 @@ def core_section(K, A, B):
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Eurobond</th><th>Yrs</th><th>EUR yld %</th><th>vs Bund</th><th>ASW EUR</th><th>POLGB %</th><th>ASW PLN</th><th>Local prem.</th><th>POLGB→EUR %</th><th>vs Eurobond</th></tr></thead><tbody>{eb_rows}</tbody></table></div>
   <div class="note"><b>Does "buy Bund, swap into PLN" make sense?</b>
     <ul class="tight">
-      <li><b>From 2Y out, no.</b> POLGBs beat hedged Bunds by {f(adv2_de * 100, 0)}bp at 2Y and {f(adv10_de * 100, 0)}bp at 10Y on the 1Y hedge. At matched maturity (asset swap + CCS) the gap is
-        {', '.join(f"{sg(x['adv_pl_bp'], 0)}bp at {int(x['T'])}Y" for x in stp)}: POLGB ASW is ~+95-115bp, while Bunds trade below EURIBOR swaps ({', '.join(f"{sg(x['bund_asw'], 0)}" for x in stp)}bp).
+      <li><b>From 2Y out, no.</b> POLGBs beat hedged Bunds by {f(adv2_de * 100, 0)}bp at 2Y and {f(adv10_de * 100, 0)}bp at 10Y on the 1Y hedge. At matched maturity (asset swap + CCS, table above) the gap is
+        {', '.join(f"{sg(-de_sw[t]['vs_pl_bp'], 0)}bp at {t}" for t in ('2Y', '5Y', '10Y') if t in de_sw)} in Poland's favour: POLGB ASW is ~+90-110bp at 5-10Y, while Bunds trade below EURIBOR swaps ({', '.join(f"{sg(de_sw[t]['asw'], 0)}" for t in ('2Y', '5Y', '10Y') if t in de_sw)}bp).
         For the Bund route to win, the EUR/PLN cross-currency basis would have to be worth that much. The forward points suggest it is small, so it isn't close.</li>
       <li><b>At the front end, yes, and this is the real basis trade.</b> Sub-1Y POLGBs (PS0527/DS0727) yield {f(lo_pl)}-{f(hi_pl)}%, below repo, and the fitted 1Y POLGB is {f(hed[('PL', 1)]['local'])}%.
         A 1Y Bund/Schatz (or German bill) hedged into PLN on the 1Y forward gives ≈{f(de1_pln)}%, and a 1Y UST ≈{f(us1_pln)}%. That is <b>+{f((de1_pln - hed[('PL', 1)]['local']) * 100, 0)}bp vs the 1Y POLGB and
