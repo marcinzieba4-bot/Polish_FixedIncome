@@ -1,0 +1,125 @@
+{
+ "floaters": {
+  "WZ1126": {
+   "maturity": "2026-11-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": null
+  },
+  "WZ1127": {
+   "maturity": "2027-11-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": 40.59
+  },
+  "WZ0528": {
+   "maturity": "2028-05-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": 28.26
+  },
+  "WZ1128": {
+   "maturity": "2028-11-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": 45.07
+  },
+  "WZ1129": {
+   "maturity": "2029-11-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": 56.49
+  },
+  "WZ0330": {
+   "maturity": "2030-03-25",
+   "months": [
+    3,
+    9
+   ],
+   "coupon": 4.6,
+   "period_start": "2025-09-25",
+   "outstanding_bn": 56.47
+  },
+  "WZ0930": {
+   "maturity": "2030-09-25",
+   "months": [
+    3,
+    9
+   ],
+   "coupon": 4.6,
+   "period_start": "2025-09-25",
+   "outstanding_bn": 37.01
+  },
+  "WZ1131": {
+   "maturity": "2031-11-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": null
+  },
+  "WZ0533": {
+   "maturity": "2033-05-25",
+   "months": [
+    5,
+    11
+   ],
+   "coupon": 4.16,
+   "period_start": "2025-11-25",
+   "outstanding_bn": null
+  },
+  "NZ0928": {
+   "maturity": "2028-09-25",
+   "months": [
+    3,
+    9
+   ],
+   "coupon": null,
+   "period_start": "2025-09-25",
+   "outstanding_bn": null
+  }
+ },
+ "linkers": {
+  "IZ0831": {
+   "maturity": "2031-08-25",
+   "real_coupon": 1.75,
+   "outstanding_bn": null
+  },
+  "IZ0836": {
+   "maturity": "2036-08-25",
+   "real_coupon": 2.0,
+   "outstanding_bn": null
+  }
+ },
+ "polstr_basis": 0.34,
+ "nz_running": 3.7,
+ "basis_note": "WIBOR 6M 3.87% minus POLSTR 3.53% on 30 Dec 2025; running NZ period assumed at 3.70% compounded POLSTR (rates were cut in Oct-Dec 2025)",
+ "cpi_scenarios": {
+  "2.0%": 2.0,
+  "2.9% (NBP 2026 proj.)": 2.9,
+  "3.5%": 3.5
+ },
+ "_sources": "WZ coupons: MoF notices of 20 Nov 2025 (4.16% for 25.11.2025-25.05.2026; WIBOR 6M 4.17/4.16/4.14) and 22 Sep 2025 (4.60% for 25.09.2025-25.03.2026); WZ outstanding = GPWB-BWZ index units after the 30 Dec 2025 rebalance; IZ real coupons 1.75% / 2.00% (issue terms)."
+}

@@ -395,7 +395,8 @@ The full source-and-date audit is at the bottom.</div>
         ideas.append(("go", f"RV switch: sell {rv[1]['ticker']}, buy {rv[2]['ticker']}",
                       f"{sg((rv[2]['ytm'] - rv[1]['ytm']) * 100, 0)}bp of yield at similar duration ({f(rv[1]['mod'])} → {f(rv[2]['mod'])}); {f(rv[0], 0)}bp is rich/cheap.",
                       "Risk: residuals can persist (coupon/tax effects, index flows)."))
-    long_asw = max((b for b in fixed if b["ttm"] > 5), key=lambda b: b["asw_bp"])
+    irs_max = max(float(k) for k in mi["irs"]["pillars"])
+    long_asw = max((b for b in fixed if 5 < b["ttm"] <= irs_max + 0.5 and b["src"] == "fixing"), key=lambda b: b["asw_bp"])
     ideas.append(("wait", f"Asset-swap long in the widest long bond ({long_asw['ticker']}, ASW {sg(long_asw['asw_bp'], 0)}bp)",
                   f"Running carry ≈ ASW + (6M WIBOR − repo) ≈ {f(long_asw['asw_bp'] + (mm['wibor_6m'] - fund) * 100, 0)}bp/yr with little rate duration.",
                   "Risk: fiscal/supply news widens ASW. " + mac.get("fiscal_risk_text", "")))
@@ -422,15 +423,17 @@ The full source-and-date audit is at the bottom.</div>
 
     # ---------------- bonds + method/audit
     audit = F.get("audit", [])
-    arows = "".join(f"<tr><td class='l'>{E(a['input'])}</td><td>{E(a['as_of'])}</td><td>{E(a.get('published', ''))}</td><td class='l' style='white-space:normal;min-width:260px'>{E(a.get('source', ''))}</td>"
-                    f"<td class='l' style='white-space:normal;min-width:200px'>{E(a.get('note', ''))}</td></tr>" for a in audit)
+    ws = "white-space:normal;"
+    arows = "".join(f"<tr><td class='l' style='{ws}min-width:150px'>{E(a['input'])}</td><td class='l' style='{ws}min-width:110px'>{E(a['as_of'])}</td>"
+                    f"<td class='l' style='{ws}min-width:110px'>{E(a.get('published', ''))}</td><td class='l' style='{ws}min-width:220px'>{E(a.get('source', ''))}</td>"
+                    f"<td class='l' style='{ws}min-width:220px'>{E(a.get('note', ''))}</td></tr>" for a in audit)
     w(f"""
 <section class="card" id="bonds"><h2>All fixed-rate POLGBs <span class="tag">sortable</span></h2><div id="bondTable"></div></section>
 <section class="card" id="method">
   <h2>Method &amp; point-in-time audit</h2>
   <p class="lede">Same engine as the live desk: Act/Act ICMA pricing, NSS zero-curve fit with a money-market anchor, PLN IRS interpolation (PCHIP), horizon decomposition, bootstrapped WIBOR forwards for floaters.
   Settlement {E(A['settle'])} (T+2 from {E(dmy(cutoff))}; 31 Dec 2025 and 1 Jan 2026 not settlement days).</p>
-  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Input</th><th>As of</th><th>Published</th><th class="l">Source</th><th class="l">Note</th></tr></thead><tbody>{arows}</tbody></table></div>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Input</th><th class="l">As of</th><th class="l">Published</th><th class="l">Source</th><th class="l">Note</th></tr></thead><tbody>{arows}</tbody></table></div>
   <p class="small">Not investment advice. Private, unlinked page.</p>
 </section>
 <footer>Generated {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} · report date {E(report_date)} · market cut-off {E(cutoff)} · information cut-off {E(info_cut)}</footer>
@@ -477,6 +480,19 @@ def core_html(K, F, A, B, cutoff):
   <div class="grid2"><div><h3>10Y ASW by country (bp)</h3><div class="chart" id="coreAsw10"></div></div><div><h3>5Y ASW by country (bp)</h3><div class="chart" id="coreAsw5"></div></div></div>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th class="l">Country</th><th class="l">Ccy</th><th>Yield %</th><th>Own swap %</th><th>ASW bp</th><th>Swapped → PLN %</th><th>Swapped → EUR %</th><th>vs POLGB bp</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
   <p class="small">{E(K.get('swap_note', ''))}</p>"""
+    if not K.get("swapped") and K.get("hedged_peers"):
+        rows = []
+        for ten in ("2Y", "5Y", "10Y"):
+            grp = [r for r in K["hedged_peers"] if r["tenor"] == ten or (ten == "2Y" and r["tenor"] == "3Y")]
+            for r in sorted(grp, key=lambda x: -x["to_pln"]):
+                rows.append(f"<tr{' class=\"hl\"' if r['country'] == 'Poland' else ''}><td class='l'>{E(r['tenor'])}</td><td class='l'>{E(r['country'])}</td><td class='l'>{E(r['ccy'])}</td>"
+                            f"<td>{f(r['y'])}</td><td>{sg(r['hedge_pln'])}</td><td><b>{f(r['to_pln'])}</b></td><td>{f(r['to_eur'])}</td><td>{sg(r['vs_pl_bp'], 0)}</td></tr>")
+        ib = K.get("ibor_1y") or {}
+        sw_html = f"""<h3>Peer government bonds FX-hedged into PLN / EUR (rolling 1Y hedge)</h3>
+  <p class="small">No verifiable end-2025 swap curves for EUR, CZK or HUF were found, so peers are compared with a rolling 1Y FX hedge priced by covered parity on 1Y interbank fixings of 30 Dec 2025
+  (WIBOR 1Y {f(ib.get('PLN'))}%, EURIBOR 12M {f(ib.get('EUR'))}%, PRIBOR 1Y {f(ib.get('CZK'))}%, BUBOR 12M {f(ib.get('HUF'))}%, 1Y T-bill {f(ib.get('USD'))}%; ACT/360 fixings converted to ACT/365).
+  Hedged yield = local yield + (PLN 1Y − local 1Y). Yields: PAP/Bloomberg 30 Dec 2025. A rolling hedge carries the risk that the short-rate gap changes.</p>
+  <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th class="l">Country</th><th class="l">Ccy</th><th>Yield %</th><th>Hedge pickup into PLN %</th><th>Hedged → PLN %</th><th>Hedged → EUR %</th><th>vs POLGB bp</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>"""
     return f"""
 <section class="card" id="core">
   <h2>Poland vs core markets <span class="tag">steepness · carry · central banks · FX-hedged</span></h2>

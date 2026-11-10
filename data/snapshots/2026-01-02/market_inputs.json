@@ -1,0 +1,46 @@
+{
+ "asof": "2025-12-30",
+ "policy": {
+  "nbp_reference": 4.0,
+  "nbp_deposit": 3.5,
+  "nbp_lombard": 4.5,
+  "last_change": "3 Dec 2025 (-25bp, sixth cut of 2025)",
+  "next_mpc": "2026-01-13/14"
+ },
+ "money_market": {
+  "wibor_1m": 4.07,
+  "wibor_3m": 3.99,
+  "wibor_6m": 3.87,
+  "wibor_1y": 3.78,
+  "polstr_on": 3.528,
+  "repo_special_on": 3.7,
+  "repo_gc": 3.9,
+  "funding_rate": 3.7,
+  "overnight_label": "POLSTR O/N 3.53",
+  "repo_label": "special O/N 3.70, GC 3.90",
+  "source": "WIBOR and POLSTR fixings of 30 Dec 2025 (GPW Benchmark annual files, read for historical fixings only); repo from the Treasury BondSpot Poland session of 30 Dec 2025. Funding = special repo 3.70%."
+ },
+ "irs": {
+  "pillars": {
+   "1": 3.65,
+   "2": 3.61,
+   "3": 3.65,
+   "4": 3.73,
+   "5": 3.81,
+   "8": 4.06,
+   "10": 4.23
+  },
+  "asof": "22 Dec 2025",
+  "source": "PLN IRS vs 6M WIBOR of 22 Dec 2025 (Erste daily) - the latest verifiable quote before the cut-off; no 30 Dec close was found. Between 22 and 30 Dec POLGB yields fell 3-7bp, so ASW computed against this curve are likely understated by roughly that much if swaps moved in line. Interpolated with PCHIP through 6M WIBOR (30 Dec); beyond 10Y extrapolated.",
+  "short_source": "PLN IRS of 22 Dec 2025 (latest verifiable), WIBOR fixings 30 Dec 2025"
+ },
+ "curve": {
+  "front_anchor": {
+   "tau": 0.25,
+   "rate": 3.25,
+   "weight": 0.5
+  },
+  "source": "NSS zero curve fitted to BondSpot closing fixings of 30 Dec 2025; front end anchored at a 3M zero of 3.25% (OK0426 3.28%, DS0726 3.22%, PS1026 3.28%; POLSTR 3.53%)."
+ },
+ "macro": {}
+}

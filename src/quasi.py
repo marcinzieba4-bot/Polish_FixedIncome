@@ -70,7 +70,8 @@ def main(asof, snap=None):
         r["yield"] = r.pop("yield_")
     fixed = [r for r in rows if r["ttm"] <= 11]
     avg_sp = sum(r["spread_polgb_bp"] for r in fixed) / len(fixed)
-    best = max(fixed, key=lambda r: r["spread_polgb_bp"])
+    fresh = [r for r in fixed if "stale" not in r["note"]] or fixed
+    best = max(fresh, key=lambda r: r["spread_polgb_bp"])
     widest_asw = max(fixed, key=lambda r: r["asw_bp"])
     Q = dict(
         asof=asof.isoformat(),

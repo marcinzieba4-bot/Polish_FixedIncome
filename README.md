@@ -50,3 +50,23 @@ Modified duration = Macaulay / (1 + y). Index statistics are market-value weight
 Horizon returns hold the fitted zero curve fixed by time-to-cash-flow and keep each bond's z-spread residual constant.
 
 Not investment advice.
+
+## Point-in-time (retrospective) reports
+
+A snapshot folder holds every input as it was known on a cut-off date, so a report can be rebuilt for a past date
+without look-ahead. Example: `data/snapshots/2026-01-02/` (report date Fri 2 Jan 2026; market close 30 Dec 2025;
+information published by 31 Dec 2025). `facts.json` carries every qualitative statement with its publication date and
+an audit table; benchmarks, RV switches, rebalance projections and trade ideas are chosen by rules in `build_report.py`.
+
+```bash
+S=data/snapshots/2026-01-02
+python src/fetch_bondspot.py 2025-12-30 --out $S/bondspot_20251230.json
+python src/fetch_history.py 2025-08-25 2025-12-30 --out $S/fixing_history.json
+python src/fetch_core_asof.py 2025-12-30 2025-08-25 $S/core_rates.json
+python src/analytics.py 2025-12-30 --snap $S
+python src/auction_study.py --snap $S
+python src/floaters_linkers.py 2025-12-30 --snap $S
+python src/quasi.py 2025-12-30 --snap $S
+python src/core_compare.py 2025-12-30 --snap $S
+python src/build_report.py $S                     # -> $S/dist/index.html
+```

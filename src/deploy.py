@@ -5,6 +5,7 @@ The target is deliberately NOT stored in this (public) repository. Set:
   PFI_S3_KEY      object key of the page (e.g. <site-prefix>/<path>/index.html)
   PFI_CF_DIST     CloudFront distribution id (optional, for invalidation)
   PFI_CF_PATHS    comma-separated invalidation paths (optional)
+  PFI_SRC         page to upload, relative to the repo (default dist/dashboard/index.html)
 Credentials: AWS_Key / AWS_Pass if present, else the default boto3 chain.
 """
 import os
@@ -28,7 +29,7 @@ def main():
     bucket, key = os.environ.get("PFI_S3_BUCKET"), os.environ.get("PFI_S3_KEY")
     if not bucket or not key:
         sys.exit("set PFI_S3_BUCKET and PFI_S3_KEY")
-    page = ROOT / "dist" / "dashboard" / "index.html"
+    page = ROOT / os.environ["PFI_SRC"] if os.environ.get("PFI_SRC") else ROOT / "dist" / "dashboard" / "index.html"
     sess = session()
     sess.client("s3").put_object(Bucket=bucket, Key=key, Body=page.read_bytes(),
                                  ContentType="text/html; charset=utf-8",
