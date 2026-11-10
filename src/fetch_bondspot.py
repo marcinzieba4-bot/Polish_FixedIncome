@@ -105,7 +105,7 @@ def main():
     out = dict(date=d.isoformat(), quotes_date=qd.isoformat(), fixing_url=fx_url, session_url=s_url,
                tbsp_index=level, fixing=fixing, quotes=quotes, repo=repo, tbills=tbills,
                fetched_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))
-    p = ROOT / "data" / "market" / f"bondspot_{d:%Y%m%d}.json"
+    p = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else f"data/market/bondspot_{d:%Y%m%d}.json")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(out, indent=1, ensure_ascii=False))
     print(f"wrote {p}: {len(fixing)} fixings, {len(quotes)} quotes ({qd}), {len(repo)} repo, TBSP={level}")

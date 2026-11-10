@@ -1,0 +1,1655 @@
+[
+ {
+  "date": "2025-08-06",
+  "settle": "2025-08-08",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1600,
+    "demand": 1894,
+    "avg_yld": 4.34,
+    "price": 90.05499999999999
+   },
+   {
+    "series": "PS0730",
+    "sold": 5562.5,
+    "demand": 7216,
+    "avg_yld": 4.82,
+    "price": 98.6
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1757.1,
+    "demand": 2186.6,
+    "avg_yld": null,
+    "price": 96.526
+   },
+   {
+    "series": "DS0432",
+    "sold": 849.2,
+    "demand": 1099.2,
+    "avg_yld": 5.052,
+    "price": 81.561
+   },
+   {
+    "series": "DS1034",
+    "sold": 357,
+    "demand": 407,
+    "avg_yld": 5.349,
+    "price": 97.47
+   },
+   {
+    "series": "DS1035",
+    "sold": 1877.8,
+    "demand": 2869.8,
+    "avg_yld": 5.427,
+    "price": 96.67
+   }
+  ]
+ },
+ {
+  "date": "2025-08-06",
+  "settle": "2025-08-08",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1,
+    "demand": 1,
+    "avg_yld": 4.34,
+    "price": 90.05499999999999
+   },
+   {
+    "series": "PS0730",
+    "sold": 135,
+    "demand": 135,
+    "avg_yld": 4.82,
+    "price": 98.6
+   },
+   {
+    "series": "WZ0930",
+    "sold": 95,
+    "demand": 95,
+    "avg_yld": null,
+    "price": 96.526
+   },
+   {
+    "series": "DS0432",
+    "sold": 13.4,
+    "demand": 13.4,
+    "avg_yld": 5.052,
+    "price": 81.561
+   },
+   {
+    "series": "DS1034",
+    "sold": 1687.1,
+    "demand": 1687.1,
+    "avg_yld": 5.349,
+    "price": 97.47
+   },
+   {
+    "series": "DS1035",
+    "sold": 7.5,
+    "demand": 7.5,
+    "avg_yld": 5.427,
+    "price": 96.67
+   }
+  ]
+ },
+ {
+  "date": "2025-08-27",
+  "settle": "2025-08-29",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK1025",
+    "sold": -3373.186,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0126",
+    "sold": -1426.124,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "OK0426",
+    "sold": -371,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS0726",
+    "sold": -4892.664,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-08-27",
+  "settle": "2025-08-29",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 2552.983,
+    "demand": 2560.838,
+    "avg_yld": 4.333,
+    "price": 90.28999999999999
+   },
+   {
+    "series": "PS0730",
+    "sold": 3478.923,
+    "demand": 3884.904,
+    "avg_yld": 4.787,
+    "price": 98.75
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1132.073,
+    "demand": 1218,
+    "avg_yld": null,
+    "price": 96.671
+   },
+   {
+    "series": "DS1030",
+    "sold": 1765.495,
+    "demand": 1884.368,
+    "avg_yld": 4.793,
+    "price": 84.131
+   },
+   {
+    "series": "IZ0831",
+    "sold": 646.575,
+    "demand": 781.732,
+    "avg_yld": 2.5780000000000003,
+    "price": 95.455
+   },
+   {
+    "series": "DS1035",
+    "sold": 966.584,
+    "demand": 1348.803,
+    "avg_yld": 5.393,
+    "price": 96.95
+   }
+  ]
+ },
+ {
+  "date": "2025-08-27",
+  "settle": "2025-08-29",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "PS0730",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1030",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "IZ0831",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   }
+  ]
+ },
+ {
+  "date": "2025-09-10",
+  "settle": "2025-09-12",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1352,
+    "demand": 1352,
+    "avg_yld": 4.37,
+    "price": 90.36
+   },
+   {
+    "series": "PS0730",
+    "sold": 3271,
+    "demand": 3801,
+    "avg_yld": 4.869,
+    "price": 98.41
+   },
+   {
+    "series": "WZ0930",
+    "sold": 2164.3,
+    "demand": 2404.3,
+    "avg_yld": null,
+    "price": 96.64
+   },
+   {
+    "series": "DS0432",
+    "sold": 608,
+    "demand": 658,
+    "avg_yld": 5.089,
+    "price": 81.6
+   },
+   {
+    "series": "DS1035",
+    "sold": 898,
+    "demand": 1130,
+    "avg_yld": 5.475,
+    "price": 96.35
+   }
+  ]
+ },
+ {
+  "date": "2025-09-10",
+  "settle": "2025-09-12",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 75,
+    "demand": 75,
+    "avg_yld": 4.37,
+    "price": 90.36
+   },
+   {
+    "series": "PS0730",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS0432",
+    "sold": 10,
+    "demand": 10,
+    "avg_yld": 5.089,
+    "price": 81.6
+   },
+   {
+    "series": "DS1035",
+    "sold": 784.4,
+    "demand": 784.4,
+    "avg_yld": 5.475,
+    "price": 96.35
+   }
+  ]
+ },
+ {
+  "date": "2025-09-15",
+  "settle": "2025-09-15",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 152.474,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0730",
+    "sold": 355.772,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 304.947,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 203.298,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-09-17",
+  "settle": "2025-09-19",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK1025",
+    "sold": -1271.822,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0126",
+    "sold": -968.492,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "OK0426",
+    "sold": -1216,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS0726",
+    "sold": -2948,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-09-17",
+  "settle": "2025-09-19",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1630.131,
+    "demand": 1747.328,
+    "avg_yld": 4.382,
+    "price": 90.411
+   },
+   {
+    "series": "PS0730",
+    "sold": 2596.523,
+    "demand": 2647.045,
+    "avg_yld": 4.877,
+    "price": 98.38
+   },
+   {
+    "series": "WZ0930",
+    "sold": 469.561,
+    "demand": 575.221,
+    "avg_yld": null,
+    "price": 96.611
+   },
+   {
+    "series": "DS1030",
+    "sold": 599.149,
+    "demand": 678.458,
+    "avg_yld": 4.84,
+    "price": 84.103
+   },
+   {
+    "series": "DS1035",
+    "sold": 1338.05,
+    "demand": 1722.399,
+    "avg_yld": 5.473,
+    "price": 96.37
+   }
+  ]
+ },
+ {
+  "date": "2025-09-17",
+  "settle": "2025-09-19",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "PS0730",
+    "sold": 0.354,
+    "demand": 0.354,
+    "avg_yld": 4.877,
+    "price": 98.38
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1030",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 0.103,
+    "demand": 0.103,
+    "avg_yld": 5.473,
+    "price": 96.37
+   }
+  ]
+ },
+ {
+  "date": "2025-09-24",
+  "settle": "2025-09-26",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 800,
+    "demand": 1252,
+    "avg_yld": 4.34,
+    "price": 90.57000000000001
+   },
+   {
+    "series": "PS0730",
+    "sold": 5492,
+    "demand": 6430.5,
+    "avg_yld": 4.849,
+    "price": 98.501
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1277,
+    "demand": 2413.9,
+    "avg_yld": null,
+    "price": 96.622
+   },
+   {
+    "series": "DS0432",
+    "sold": 1102.006,
+    "demand": 1252.006,
+    "avg_yld": 5.058,
+    "price": 81.84299999999999
+   },
+   {
+    "series": "DS1035",
+    "sold": 2329.5,
+    "demand": 2779.5,
+    "avg_yld": 5.46,
+    "price": 96.47
+   }
+  ]
+ },
+ {
+  "date": "2025-09-24",
+  "settle": "2025-09-26",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 2,
+    "demand": 2,
+    "avg_yld": 4.34,
+    "price": 90.57000000000001
+   },
+   {
+    "series": "PS0730",
+    "sold": 8,
+    "demand": 8,
+    "avg_yld": 4.849,
+    "price": 98.501
+   },
+   {
+    "series": "WZ0930",
+    "sold": 100,
+    "demand": 100,
+    "avg_yld": null,
+    "price": 96.622
+   },
+   {
+    "series": "DS0432",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 30,
+    "demand": 30,
+    "avg_yld": 5.46,
+    "price": 96.47
+   }
+  ]
+ },
+ {
+  "date": "2025-10-15",
+  "settle": "2025-10-17",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1050,
+    "demand": 2817,
+    "avg_yld": 4.21,
+    "price": 91.049
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1200,
+    "demand": 2532,
+    "avg_yld": null,
+    "price": 96.691
+   },
+   {
+    "series": "DS1030",
+    "sold": 1960,
+    "demand": 3005,
+    "avg_yld": 4.783,
+    "price": 84.53999999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 2944.58,
+    "demand": 4548.58,
+    "avg_yld": 4.82,
+    "price": 98.51
+   },
+   {
+    "series": "DS1035",
+    "sold": 1939,
+    "demand": 2859,
+    "avg_yld": 5.387,
+    "price": 97.03999999999999
+   },
+   {
+    "series": "IZ0836",
+    "sold": 907.33,
+    "demand": 1905.161,
+    "avg_yld": 3.102,
+    "price": 89.952
+   }
+  ]
+ },
+ {
+  "date": "2025-10-15",
+  "settle": "2025-10-17",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 262,
+    "demand": 262,
+    "avg_yld": 4.21,
+    "price": 91.049
+   },
+   {
+    "series": "WZ0930",
+    "sold": 23.7,
+    "demand": 23.7,
+    "avg_yld": null,
+    "price": 96.691
+   },
+   {
+    "series": "DS1030",
+    "sold": 40,
+    "demand": 40,
+    "avg_yld": 4.783,
+    "price": 84.53999999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 478.8,
+    "demand": 478.8,
+    "avg_yld": 4.82,
+    "price": 98.51
+   },
+   {
+    "series": "DS1035",
+    "sold": 311,
+    "demand": 311,
+    "avg_yld": 5.387,
+    "price": 97.03999999999999
+   },
+   {
+    "series": "IZ0836",
+    "sold": 231.831,
+    "demand": 231.831,
+    "avg_yld": 3.102,
+    "price": 89.952
+   }
+  ]
+ },
+ {
+  "date": "2025-10-23",
+  "settle": "2025-10-27",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1732,
+    "demand": 1775.75,
+    "avg_yld": 4.205,
+    "price": 91.161
+   },
+   {
+    "series": "WZ0930",
+    "sold": 3027.5,
+    "demand": 3564.5,
+    "avg_yld": null,
+    "price": 96.67999999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 3801.5,
+    "demand": 4611.5,
+    "avg_yld": 4.797,
+    "price": 98.622
+   },
+   {
+    "series": "IZ0831",
+    "sold": 516,
+    "demand": 668,
+    "avg_yld": 2.588,
+    "price": 95.51
+   },
+   {
+    "series": "DS1033",
+    "sold": 1375,
+    "demand": 1375,
+    "avg_yld": 5.135,
+    "price": 105.53599999999999
+   },
+   {
+    "series": "DS1035",
+    "sold": 1548.55,
+    "demand": 1748.55,
+    "avg_yld": 5.353,
+    "price": 97.301
+   }
+  ]
+ },
+ {
+  "date": "2025-10-23",
+  "settle": "2025-10-27",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 86,
+    "demand": 86,
+    "avg_yld": 4.205,
+    "price": 91.161
+   },
+   {
+    "series": "WZ0930",
+    "sold": 72,
+    "demand": 72,
+    "avg_yld": null,
+    "price": 96.67999999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "IZ0831",
+    "sold": 205,
+    "demand": 205,
+    "avg_yld": 2.588,
+    "price": 95.51
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   }
+  ]
+ },
+ {
+  "date": "2025-10-29",
+  "settle": "2025-10-31",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1327.96,
+    "demand": 1507.96,
+    "avg_yld": 4.185,
+    "price": 91.241
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1037,
+    "demand": 2944,
+    "avg_yld": null,
+    "price": 96.702
+   },
+   {
+    "series": "PS0131",
+    "sold": 4320,
+    "demand": 4886,
+    "avg_yld": 4.797,
+    "price": 98.62100000000001
+   },
+   {
+    "series": "DS0432",
+    "sold": 623.425,
+    "demand": 830.425,
+    "avg_yld": 4.947,
+    "price": 82.601
+   },
+   {
+    "series": "DS1035",
+    "sold": 2435.5,
+    "demand": 2959.5,
+    "avg_yld": 5.358,
+    "price": 97.26
+   },
+   {
+    "series": "WS0437",
+    "sold": 257.44,
+    "demand": 268.44,
+    "avg_yld": 5.415,
+    "price": 96.45
+   }
+  ]
+ },
+ {
+  "date": "2025-10-29",
+  "settle": "2025-10-31",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 26,
+    "demand": 26,
+    "avg_yld": 4.185,
+    "price": 91.241
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS0432",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 1055,
+    "demand": 1055,
+    "avg_yld": 5.358,
+    "price": 97.26
+   },
+   {
+    "series": "WS0437",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   }
+  ]
+ },
+ {
+  "date": "2025-11-14",
+  "settle": "2025-11-18",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "WZ0126",
+    "sold": -1086.802,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "OK0426",
+    "sold": -3116.78,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS0726",
+    "sold": -2198.881,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS1026",
+    "sold": -5704.841,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-11-14",
+  "settle": "2025-11-18",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 4930.026,
+    "demand": 5233.289,
+    "avg_yld": 4.228,
+    "price": 91.345
+   },
+   {
+    "series": "WZ0930",
+    "sold": 2243.332,
+    "demand": 3268.22,
+    "avg_yld": null,
+    "price": 96.776
+   },
+   {
+    "series": "PS0131",
+    "sold": 4231.384,
+    "demand": 4332.785,
+    "avg_yld": 4.825,
+    "price": 98.51
+   },
+   {
+    "series": "DS0432",
+    "sold": 265.621,
+    "demand": 455.36,
+    "avg_yld": 4.916,
+    "price": 82.863
+   },
+   {
+    "series": "DS1035",
+    "sold": 599.529,
+    "demand": 992.12,
+    "avg_yld": 5.313,
+    "price": 97.6
+   },
+   {
+    "series": "IZ0836",
+    "sold": 116.482,
+    "demand": 219.439,
+    "avg_yld": 3.045,
+    "price": 90.5
+   }
+  ]
+ },
+ {
+  "date": "2025-11-14",
+  "settle": "2025-11-18",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1.6,
+    "demand": 1.6,
+    "avg_yld": 4.228,
+    "price": 91.345
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1.291,
+    "demand": 1.291,
+    "avg_yld": null,
+    "price": 96.776
+   },
+   {
+    "series": "PS0131",
+    "sold": 1.246,
+    "demand": 1.246,
+    "avg_yld": 4.825,
+    "price": 98.51
+   },
+   {
+    "series": "DS0432",
+    "sold": 0.539,
+    "demand": 0.539,
+    "avg_yld": 4.916,
+    "price": 82.863
+   },
+   {
+    "series": "DS1035",
+    "sold": 0.916,
+    "demand": 0.916,
+    "avg_yld": 5.313,
+    "price": 97.6
+   },
+   {
+    "series": "IZ0836",
+    "sold": 0.916,
+    "demand": 0.916,
+    "avg_yld": 3.045,
+    "price": 90.5
+   }
+  ]
+ },
+ {
+  "date": "2025-11-20",
+  "settle": "2025-11-20",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 138.3,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 276.6,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 322.7,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 184.4,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-11-21",
+  "settle": "2025-11-25",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1451,
+    "demand": 2771,
+    "avg_yld": 4.181,
+    "price": 91.506
+   },
+   {
+    "series": "NZ0928",
+    "sold": 1476,
+    "demand": 1896,
+    "avg_yld": null,
+    "price": 98.135
+   },
+   {
+    "series": "WZ0930",
+    "sold": 809,
+    "demand": 2515,
+    "avg_yld": null,
+    "price": 96.814
+   },
+   {
+    "series": "PS0131",
+    "sold": 3850.15,
+    "demand": 5605.15,
+    "avg_yld": 4.825,
+    "price": 98.52000000000001
+   },
+   {
+    "series": "IZ0831",
+    "sold": 177,
+    "demand": 293,
+    "avg_yld": 2.579,
+    "price": 95.611
+   },
+   {
+    "series": "DS1035",
+    "sold": 2237.69,
+    "demand": 2717.69,
+    "avg_yld": 5.337,
+    "price": 97.423
+   }
+  ]
+ },
+ {
+  "date": "2025-11-21",
+  "settle": "2025-11-25",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 2,
+    "demand": 2,
+    "avg_yld": 4.181,
+    "price": 91.506
+   },
+   {
+    "series": "NZ0928",
+    "sold": 406,
+    "demand": 406,
+    "avg_yld": null,
+    "price": 98.135
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "PS0131",
+    "sold": 375,
+    "demand": 375,
+    "avg_yld": 4.825,
+    "price": 98.52000000000001
+   },
+   {
+    "series": "IZ0831",
+    "sold": 5,
+    "demand": 5,
+    "avg_yld": 2.579,
+    "price": 95.611
+   },
+   {
+    "series": "DS1035",
+    "sold": 709,
+    "demand": 709,
+    "avg_yld": 5.337,
+    "price": 97.423
+   }
+  ]
+ },
+ {
+  "date": "2025-11-26",
+  "settle": "2025-11-28",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 1569.1,
+    "demand": 2201.1,
+    "avg_yld": 3.994,
+    "price": 91.893
+   },
+   {
+    "series": "NZ0928",
+    "sold": 740,
+    "demand": 780,
+    "avg_yld": null,
+    "price": 98.175
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1285,
+    "demand": 3235,
+    "avg_yld": null,
+    "price": 96.84299999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 4577.1,
+    "demand": 5358.1,
+    "avg_yld": 4.688,
+    "price": 99.13
+   },
+   {
+    "series": "DS1035",
+    "sold": 2497.728,
+    "demand": 3063.474,
+    "avg_yld": 5.206,
+    "price": 98.4
+   },
+   {
+    "series": "WS0437",
+    "sold": 332,
+    "demand": 332,
+    "avg_yld": 5.277,
+    "price": 97.61
+   }
+  ]
+ },
+ {
+  "date": "2025-11-26",
+  "settle": "2025-11-28",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 2,
+    "demand": 2,
+    "avg_yld": 3.994,
+    "price": 91.893
+   },
+   {
+    "series": "NZ0928",
+    "sold": 61,
+    "demand": 61,
+    "avg_yld": null,
+    "price": 98.175
+   },
+   {
+    "series": "WZ0930",
+    "sold": 390,
+    "demand": 390,
+    "avg_yld": null,
+    "price": 96.84299999999999
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 55,
+    "demand": 55,
+    "avg_yld": 5.206,
+    "price": 98.4
+   },
+   {
+    "series": "WS0437",
+    "sold": 84,
+    "demand": 84,
+    "avg_yld": 5.277,
+    "price": 97.61
+   }
+  ]
+ },
+ {
+  "date": "2025-12-08",
+  "settle": "2025-12-10",
+  "type": "S",
+  "op": "AS",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 2050,
+    "demand": 2412,
+    "avg_yld": 3.962,
+    "price": 92.071
+   },
+   {
+    "series": "NZ0928",
+    "sold": 427,
+    "demand": 572,
+    "avg_yld": null,
+    "price": 98.25
+   },
+   {
+    "series": "WZ0930",
+    "sold": 2690,
+    "demand": 3924,
+    "avg_yld": null,
+    "price": 96.923
+   },
+   {
+    "series": "PS0131",
+    "sold": 3832,
+    "demand": 4296.5,
+    "avg_yld": 4.661,
+    "price": 99.26
+   },
+   {
+    "series": "DS1033",
+    "sold": 1285,
+    "demand": 1490,
+    "avg_yld": 4.946,
+    "price": 106.702
+   },
+   {
+    "series": "DS1035",
+    "sold": 1716.6,
+    "demand": 2266.6,
+    "avg_yld": 5.199,
+    "price": 98.453
+   }
+  ]
+ },
+ {
+  "date": "2025-12-08",
+  "settle": "2025-12-10",
+  "type": "S",
+  "op": "SD",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 150,
+    "demand": 150,
+    "avg_yld": 3.962,
+    "price": 92.071
+   },
+   {
+    "series": "NZ0928",
+    "sold": 55,
+    "demand": 55,
+    "avg_yld": null,
+    "price": 98.25
+   },
+   {
+    "series": "WZ0930",
+    "sold": 225,
+    "demand": 225,
+    "avg_yld": null,
+    "price": 96.923
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1033",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": ""
+   },
+   {
+    "series": "DS1035",
+    "sold": 144,
+    "demand": 144,
+    "avg_yld": 5.199,
+    "price": 98.453
+   }
+  ]
+ },
+ {
+  "date": "2025-12-16",
+  "settle": "2025-12-16",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 29.7,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 59.4,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 69.3,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 39.6,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-12-17",
+  "settle": "2025-12-19",
+  "type": "O",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "WZ0126",
+    "sold": -2028.966,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "OK0426",
+    "sold": -40,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS0726",
+    "sold": -1238.46,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS1026",
+    "sold": -595.147,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ1126",
+    "sold": -7579.482,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-12-17",
+  "settle": "2025-12-19",
+  "type": "S",
+  "op": "AZ",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 3231.064,
+    "demand": 3698.402,
+    "avg_yld": 4.026,
+    "price": 92.03999999999999
+   },
+   {
+    "series": "NZ0928",
+    "sold": 894.648,
+    "demand": 1098.855,
+    "avg_yld": null,
+    "price": 98.181
+   },
+   {
+    "series": "WZ0930",
+    "sold": 2824.093,
+    "demand": 3961.277,
+    "avg_yld": null,
+    "price": 96.931
+   },
+   {
+    "series": "PS0131",
+    "sold": 3166.889,
+    "demand": 3925.86,
+    "avg_yld": 4.728000000000001,
+    "price": 98.965
+   },
+   {
+    "series": "IZ0831",
+    "sold": 973.4,
+    "demand": 1274.24,
+    "avg_yld": 2.52,
+    "price": 95.962
+   },
+   {
+    "series": "DS1035",
+    "sold": 704.616,
+    "demand": 781.319,
+    "avg_yld": 5.286,
+    "price": 97.81
+   }
+  ]
+ },
+ {
+  "date": "2025-12-17",
+  "settle": "2025-12-19",
+  "type": "S",
+  "op": "ZG",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "NZ0928",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "IZ0831",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 0,
+    "demand": 0,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-12-23",
+  "settle": "2025-12-23",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 247.5,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 495,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 577.5,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 330,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-12-30",
+  "settle": "2025-12-30",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 690,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 1380,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 1610,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 920,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "OK0128",
+    "sold": 15,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 30,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 35,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 20,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ },
+ {
+  "date": "2025-12-31",
+  "settle": "2025-12-31",
+  "type": "S",
+  "op": "OB",
+  "lines": [
+   {
+    "series": "OK0128",
+    "sold": 150,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "WZ0930",
+    "sold": 300,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "PS0131",
+    "sold": 350,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   },
+   {
+    "series": "DS1035",
+    "sold": 200,
+    "demand": null,
+    "avg_yld": null,
+    "price": null
+   }
+  ]
+ }
+]

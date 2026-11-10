@@ -327,6 +327,7 @@
  ],
  "polstr_basis": 0.35,
  "nz_running": 3.6,
+ "basis_note": "realised WIBOR-POLSTR gap over the last NZ coupon period",
  "wibor6m": 3.97,
  "funding": 3.7,
  "fwd_6m": [

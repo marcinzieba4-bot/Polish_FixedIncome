@@ -1,7 +1,7 @@
 """Fetch BondSpot fixing history (price + yield per bond per day) for a date range.
 
-Usage: python src/fetch_history.py 2026-09-01 2026-11-09
-Writes data/market/fixing_history.json  {date: {ticker: [fix_price, fix_yield]}}
+Usage: python src/fetch_history.py 2026-09-01 2026-11-09 [--out data/market/fixing_history.json]
+Writes {date: {ticker: [fix_price, fix_yield]}} (default data/market/fixing_history.json)
 """
 import datetime as dt
 import json
@@ -16,7 +16,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 def main():
     d0, d1 = (dt.date.fromisoformat(x) for x in sys.argv[1:3])
-    p = ROOT / "data" / "market" / "fixing_history.json"
+    p = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "data/market/fixing_history.json")
+    p.parent.mkdir(parents=True, exist_ok=True)
     hist = json.loads(p.read_text()) if p.exists() else {}
     d = d0
     while d <= d1:

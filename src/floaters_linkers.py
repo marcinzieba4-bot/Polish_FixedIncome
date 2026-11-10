@@ -104,10 +104,25 @@ def interp(xs, ys, x):
     return float(np.interp(x, xs, ys))
 
 
-def main(asof: dt.date):
-    A = json.loads((DATA / "analytics" / f"analytics_{asof:%Y%m%d}.json").read_text())
-    mk = json.loads((DATA / "market" / f"bondspot_{asof:%Y%m%d}.json").read_text())
-    hist = json.loads((DATA / "market" / "fixing_history.json").read_text())
+def main(asof: dt.date, snap=None):
+    global FLOATERS, LINKERS, POLSTR_BASIS, NZ_RUNNING
+    basis_note = "realised WIBOR-POLSTR gap over the last NZ coupon period"
+    cpi_sc = {"3.0%": 3.0, "4.2% (NBP 2027)": 4.2, "5.0%": 5.0}
+    if snap:
+        snap = pathlib.Path(snap)
+        T = json.loads((snap / "floaters.json").read_text())
+        FLOATERS = {k: (v["maturity"], tuple(v["months"]), v["coupon"], v["period_start"], v.get("outstanding_bn")) for k, v in T["floaters"].items()}
+        LINKERS = {k: (v["maturity"], v["real_coupon"], v.get("outstanding_bn")) for k, v in T["linkers"].items()}
+        POLSTR_BASIS, NZ_RUNNING = T["polstr_basis"], T["nz_running"]
+        basis_note = T.get("basis_note", basis_note)
+        cpi_sc = T.get("cpi_scenarios", cpi_sc)
+        A = json.loads((snap / "analytics.json").read_text())
+        mk = json.loads((snap / f"bondspot_{asof:%Y%m%d}.json").read_text())
+        hist = json.loads((snap / "fixing_history.json").read_text())
+    else:
+        A = json.loads((DATA / "analytics" / f"analytics_{asof:%Y%m%d}.json").read_text())
+        mk = json.loads((DATA / "market" / f"bondspot_{asof:%Y%m%d}.json").read_text())
+        hist = json.loads((DATA / "market" / "fixing_history.json").read_text())
     mi = A["market_inputs"]
     settle = add_bdays(asof, 2)
     DF = bootstrap(mi)
@@ -158,7 +173,6 @@ def main(asof: dt.date):
     # ---------------- linkers
     grid = A["curve"]
     nom = lambda T: interp([g["t"] for g in grid], [g["fit"] for g in grid], T)
-    cpi_sc = {"3.0%": 3.0, "4.2% (NBP 2027)": 4.2, "5.0%": 5.0}
     lk = []
     for tk, (mat, rc, out_bn) in LINKERS.items():
         clean, src, ba = px(tk)
@@ -181,9 +195,9 @@ def main(asof: dt.date):
                        be_bid_ask_bp=(ba / r["mod"] * 100) if ba else None))
 
     out = dict(asof=asof.isoformat(), settle=settle.isoformat(), floaters=fl, linkers=lk, polstr_basis=POLSTR_BASIS,
-               nz_running=NZ_RUNNING, wibor6m=mi["money_market"]["wibor_6m"], funding=fund,
+               nz_running=NZ_RUNNING, basis_note=basis_note, wibor6m=mi["money_market"]["wibor_6m"], funding=fund,
                fwd_6m=[dict(t=t, f=(DF(t) / DF(t + 0.5) - 1) / 0.5 * 100) for t in np.arange(0, 10.01, 0.5).tolist()])
-    p = DATA / "analytics" / f"fl_{asof:%Y%m%d}.json"
+    p = (snap / "fl.json") if snap else DATA / "analytics" / f"fl_{asof:%Y%m%d}.json"
     p.write_text(json.dumps(out, indent=1))
     print("wrote", p)
     print(f"{'tk':7}{'ttm':>6}{'clean':>8}{'DM':>7}{'DMw':>7}{'sDur':>6}{'rDur':>6}{'fixASW':>8}{'vsFix':>7}{'DM/sD':>7}{'carry':>7}")
@@ -197,4 +211,5 @@ def main(asof: dt.date):
 
 
 if __name__ == "__main__":
-    main(dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9))
+    main(dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9),
+         sys.argv[sys.argv.index("--snap") + 1] if "--snap" in sys.argv else None)

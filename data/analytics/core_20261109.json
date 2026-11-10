@@ -1132,6 +1132,8 @@
   "EUR": 2.8693055555555556,
   "USD": 4.3597222222222225
  },
+ "hedge_method": "1Y EUR/PLN forward points (market); USD via Fed funds OIS",
+ "swap_note": "",
  "swap_to_pln": [
   {
    "T": 2.0,

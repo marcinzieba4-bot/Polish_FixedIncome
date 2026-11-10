@@ -2365,12 +2365,6 @@
    },
    "asof": "2026-11-06 close",
    "source": "PLN IRS vs 6M WIBOR, full curve 1Y-20Y at the 6 Nov 2026 close (BlueGamma interdealer mids; 2Y/5Y/10Y identical to LSEG via Bank Millennium). Interpolated with monotone PCHIP through 6M WIBOR and the pillars; beyond 20Y the last slope is extrapolated at half speed.",
-   "crosscheck_unverified": {
-    "1Y": 4.285,
-    "3Y": 4.52,
-    "7Y": 4.853,
-    "note": "cbonds snippets 4-5 Nov (not directly verifiable); consistent with the interpolated curve within ~5bp"
-   },
    "weekly_2026_11_02": {
     "2Y": 4.67,
     "5Y": 4.93,

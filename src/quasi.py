@@ -31,8 +31,18 @@ FLOATERS = [
 PFR = [("PFR0627", 1.75, "2027-06-07", 10.0), ("PFR0827", 1.375, "2027-08-30", 5.25), ("PFR0927", 1.50, "2027-09-30", 2.0), ("PFR0330", 2.00, "2030-03-05", 3.25)]
 
 
-def main(asof):
-    A = json.loads((DATA / "analytics" / f"analytics_{asof:%Y%m%d}.json").read_text())
+def main(asof, snap=None):
+    global QUASI, FLOATERS, PFR
+    QI = None
+    if snap:
+        snap = pathlib.Path(snap)
+        QI = json.loads((snap / "quasi_inputs.json").read_text())
+        QUASI = [tuple(x) for x in QI["fixed"]]
+        FLOATERS = [tuple(x) for x in QI.get("floaters", [])]
+        PFR = [tuple(x) for x in QI.get("pfr", [])]
+        A = json.loads((snap / "analytics.json").read_text())
+    else:
+        A = json.loads((DATA / "analytics" / f"analytics_{asof:%Y%m%d}.json").read_text())
     settle = add_bdays(asof, 2)
     curve = Curve(A["curve_params"])
     irs = irs_curve(A["market_inputs"])
@@ -85,11 +95,18 @@ def main(asof):
                  "15.05.2026 and 05.11.2026; ISBnews 30.07.2026; MoF debt strategy 2027-2030; MoF public-debt bulletin Q1 2026; FWSZ status after Q3 2026 (dziennikzbrojny.pl). "
                  "Yields recomputed here with annual ACT/ACT coupons on each bond's anniversary dates (this method reproduces BGK's 29 Oct auction yields)."),
     )
-    (DATA / "quasi.json").write_text(json.dumps(Q, indent=1, ensure_ascii=False))
+    if QI:  # snapshot: point-in-time texts supplied with the inputs; {avg}, {best}, {best_sp}, {widest}, {widest_asw}, {lo}, {hi} filled from data
+        fm = dict(avg=f"{avg_sp:.0f}", best=best["ticker"], best_sp=f"{best['spread_polgb_bp']:+.0f}", widest=widest_asw["ticker"],
+                  widest_asw=f"{widest_asw['asw_bp']:.0f}", lo=f"{min(r['spread_polgb_bp'] for r in fixed):.0f}", hi=f"{max(r['spread_polgb_bp'] for r in fixed):.0f}")
+        Q["lede"] = QI.get("lede", Q["lede"])
+        Q["takeaways_html"] = [t.format(**fm) for t in QI.get("takeaways_html", [])]
+        Q["sources"] = QI.get("sources", "")
+    ((snap / "quasi.json") if snap else (DATA / "quasi.json")).write_text(json.dumps(Q, indent=1, ensure_ascii=False))
     for r in rows:
         print(f"{r['ticker']} T={r['ttm']:.2f} px={r['price']} y={r['yield']:.3f} polgb={r['polgb_same']:.3f} sp={r['spread_polgb_bp']:+.0f} asw={r['asw_bp']:+.0f}")
     print("avg spread", round(avg_sp, 1))
 
 
 if __name__ == "__main__":
-    main(dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9))
+    main(dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9),
+         sys.argv[sys.argv.index("--snap") + 1] if "--snap" in sys.argv else None)

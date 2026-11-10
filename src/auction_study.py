@@ -38,16 +38,25 @@ def extract_ops(xlsm):
 
 
 def main():
+    snap = pathlib.Path(sys.argv[sys.argv.index("--snap") + 1]) if "--snap" in sys.argv else None
     if "--xlsm" in sys.argv:
         ops = extract_ops(sys.argv[sys.argv.index("--xlsm") + 1])
+    elif snap:
+        ops = json.loads((snap / "mof_operations_2025H2.json").read_text())
     else:
         ops = json.loads((ROOT / "data" / "market" / "mof_operations_2026.json").read_text())
-    h = json.loads((ROOT / "data" / "market" / "fixing_history.json").read_text())
+    h = json.loads(((snap / "fixing_history.json") if snap else (ROOT / "data" / "market" / "fixing_history.json")).read_text())
     days = sorted(h)
+    global BASKET
+    if snap:  # point-in-time basket: fixed-rate bonds 1.5-11Y to maturity that existed in the window
+        cand = {t for d in days for t in h[d] if t[:2] in ("OK", "PS", "DS", "WS")}
+        def ttm(t):
+            return (dt.date(2000 + int(t[4:6]), int(t[2:4]), 25) - dt.date.fromisoformat(days[-1])).days / 365.25
+        BASKET = sorted(t for t in cand if 1.5 <= ttm(t) <= 11 and sum(t in h[d] for d in days) >= 0.9 * len(days))
 
     def avg(d):
         v = [h[d][t][1] for t in BASKET if t in h[d] and h[d][t][1] is not None]
-        return sum(v) / len(v) if len(v) >= 11 else None
+        return sum(v) / len(v) if len(v) >= max(5, len(BASKET) - 2) else None
 
     aucs = sorted({o["date"] for o in ops if o["type"] == "S" and o["op"] in ("AS", "AZ") and o["date"] >= days[0]})
     buck = {}
@@ -64,7 +73,7 @@ def main():
         buck.setdefault("other" if rel is None else f"T{rel:+d}", []).append((a1 - a0) * 100)
     out = {k: dict(n=len(v), mean=st.mean(v), median=st.median(v), up_share=sum(x > 0 for x in v) / len(v)) for k, v in buck.items()}
     out["_meta"] = dict(start=days[0], end=days[-1], auctions=aucs, basket=BASKET, total_change_bp=(avg(days[-1]) - avg(days[0])) * 100)
-    p = ROOT / "data" / "analytics" / "auction_cycle.json"
+    p = (snap / "auction_cycle.json") if snap else (ROOT / "data" / "analytics" / "auction_cycle.json")
     p.write_text(json.dumps(out, indent=1))
     for k in sorted(out):
         if not k.startswith("_"):

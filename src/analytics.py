@@ -19,8 +19,10 @@ from scipy.optimize import brentq, least_squares
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
-PL_HOLIDAYS = {dt.date(2026, 11, 11), dt.date(2026, 12, 24), dt.date(2026, 12, 25), dt.date(2026, 12, 26),
-               dt.date(2027, 1, 1), dt.date(2027, 1, 6)}
+PL_HOLIDAYS = {dt.date(2025, 11, 11), dt.date(2025, 12, 24), dt.date(2025, 12, 25), dt.date(2025, 12, 26),
+               dt.date(2025, 12, 31),  # no BondSpot session / settlement on 31 Dec 2025
+               dt.date(2026, 1, 1), dt.date(2026, 1, 6), dt.date(2026, 11, 11), dt.date(2026, 12, 24),
+               dt.date(2026, 12, 25), dt.date(2026, 12, 26), dt.date(2027, 1, 1), dt.date(2027, 1, 6)}
 
 
 def add_bdays(d: dt.date, n: int) -> dt.date:
@@ -242,10 +244,17 @@ def load_json(p):
     return json.loads(pathlib.Path(p).read_text())
 
 
-def build(market_file, asof: dt.date):
-    static = load_json(DATA / "bonds_static.json")["bonds"]
-    mi = load_json(DATA / "market_inputs.json")
-    ip = load_json(DATA / "index_portfolios.json")
+def snap_path(snap, name, default):
+    """File from a snapshot folder if present, else the live default."""
+    if snap and (pathlib.Path(snap) / name).exists():
+        return pathlib.Path(snap) / name
+    return default
+
+
+def build(market_file, asof: dt.date, snap=None):
+    static = load_json(snap_path(snap, "bonds_static.json", DATA / "bonds_static.json"))["bonds"]
+    mi = load_json(snap_path(snap, "market_inputs.json", DATA / "market_inputs.json"))
+    ip = load_json(snap_path(snap, "index_portfolios.json", DATA / "index_portfolios.json"))
     mk = load_json(market_file)
     settle = add_bdays(asof, 2)
     fund = mi["money_market"]["funding_rate"]
@@ -388,8 +397,13 @@ SCENARIOS = {
 if __name__ == "__main__":
     import sys
     d = dt.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else dt.date(2026, 11, 9)
-    out = build(DATA / "market" / f"bondspot_{d:%Y%m%d}.json", d)
-    p = DATA / "analytics" / f"analytics_{d:%Y%m%d}.json"
+    snap = sys.argv[sys.argv.index("--snap") + 1] if "--snap" in sys.argv else None
+    if snap:
+        out = build(pathlib.Path(snap) / f"bondspot_{d:%Y%m%d}.json", d, snap)
+        p = pathlib.Path(snap) / "analytics.json"
+    else:
+        out = build(DATA / "market" / f"bondspot_{d:%Y%m%d}.json", d)
+        p = DATA / "analytics" / f"analytics_{d:%Y%m%d}.json"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(out, indent=1, default=str))
     print("wrote", p)
