@@ -1612,6 +1612,8 @@
    "url": "https://www.bluegamma.io/usd-swap-rates"
   }
  },
+ "hedged_peers": [],
+ "ibor_1y": null,
  "inputs": {
   "_note": "Core-market inputs, research date 9 Nov 2026. Sources per block.",
   "money": {

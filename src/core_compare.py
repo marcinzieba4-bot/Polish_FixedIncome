@@ -242,8 +242,30 @@ def main(asof: dt.date, snapdir=None):
         r["vs_pl_bp"] = r["asw"] - pl_same["asw"] if pl_same else None
     swap_meta = {c: dict(dates=SW[c].get("dates"), url=SW[c].get("url")) for c in ("PLN", "EUR", "CZK", "HUF", "USD") if SW and c in SW}
 
+    # ------------------------------------------------------------------ peers FX-hedged into PLN (rolling 1Y IBOR hedge; used when no swap curves)
+    hedged_peers = []
+    ib = I.get("ibor_1y")
+    if ib and pap["data"]:
+        mkp = {"Poland": ("PLN", "Polska"), "Germany": ("EUR", "Niemcy"), "France": ("EUR", "Francja"), "Italy": ("EUR", "Włochy"),
+               "Spain": ("EUR", "Hiszpania"), "Czechia": ("CZK", "Czechy"), "Hungary": ("HUF", "Węgry"), "United States": ("USD", "USA")}
+        col = I.get("pap_cols", {}).get("d6", 0)
+        for ctry, (ccy, pn) in mkp.items():
+            d = pap["data"].get(pn)
+            if not d or ccy not in ib:
+                continue
+            for lab in ("2Y", "3Y", "5Y", "10Y"):
+                if lab not in d or (lab == "3Y" and "2Y" in d) or d[lab][col] is None:
+                    continue
+                y = d[lab][col]
+                pick_pln = ib["PLN"] - ib[ccy]
+                hedged_peers.append(dict(country=ctry, ccy=ccy, tenor=lab, y=y, hedge_pln=pick_pln, to_pln=y + pick_pln,
+                                         to_eur=y + (ib["EUR"] - ib[ccy])))
+        for r in hedged_peers:
+            pl_same = next((x for x in hedged_peers if x["country"] == "Poland" and (x["tenor"] == r["tenor"] or (r["tenor"] == "3Y" and x["tenor"] == "2Y"))), None)
+            r["vs_pl_bp"] = (r["to_pln"] - pl_same["to_pln"]) * 100 if pl_same else None
+
     out = dict(asof=asof.isoformat(), bund_date=bd, ust_date=ud, grid=grid, carry_roll=cr, snapshot=snap,
-               spread_hist=hs, hedged=hedged, r3=m3, pick=pick, r1=r1, hedge_method=hedge_method, swap_note=I.get("swap_note", ""), swap_to_pln=swap_to_pln, eurobonds=eurobonds, swapped=swapped, swap_meta=swap_meta, inputs=I, pap_date=pap["date"],
+               spread_hist=hs, hedged=hedged, r3=m3, pick=pick, r1=r1, hedge_method=hedge_method, swap_note=I.get("swap_note", ""), swap_to_pln=swap_to_pln, eurobonds=eurobonds, swapped=swapped, swap_meta=swap_meta, hedged_peers=hedged_peers, ibor_1y=ib, inputs=I, pap_date=pap["date"],
                pap_url=pap["url"], estr=C.get("estr"), sofr=C.get("sofr"), euribor=C.get("euribor"))
     p = (S_ / "core.json") if S_ else DATA / "analytics" / f"core_{asof:%Y%m%d}.json"
     p.write_text(json.dumps(out, indent=1))
