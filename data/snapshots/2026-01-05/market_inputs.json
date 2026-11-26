@@ -8,31 +8,31 @@
   "next_mpc": "2026-01-13/14"
  },
  "money_market": {
-  "wibor_1m": 4.07,
-  "wibor_3m": 3.99,
-  "wibor_6m": 3.87,
-  "wibor_1y": 3.78,
-  "polstr_on": 3.528,
+  "wibor_1m": 4.04,
+  "wibor_3m": 3.97,
+  "wibor_6m": 3.85,
+  "wibor_1y": 3.76,
   "repo_special_on": 3.65,
   "repo_gc": 3.93,
   "funding_rate": 3.65,
-  "overnight_label": "POLSTR O/N 3.53",
+  "overnight_label": "WIBOR O/N 3.85",
   "repo_label": "special O/N 3.65, term 3.75-3.80, GC 3.93",
-  "source": "WIBOR and POLSTR fixings of 30 Dec 2025 (GPW Benchmark annual files, read for historical fixings only); repo from the Treasury BondSpot Poland session of 30 Dec 2025. Funding = special repo 3.70%."
+  "source": "WIBOR fixings of 2 Jan 2026 (GPW Benchmark delayed-data page, 2 Jan row); POLSTR for 2 Jan not used (published 5 Jan, T+1); repo from the Treasury BondSpot Poland session of 2 Jan 2026. Funding = special O/N repo 3.65%.",
+  "wibor_on": 3.85
  },
  "irs": {
   "pillars": {
-   "1": 3.65,
-   "2": 3.61,
-   "3": 3.65,
-   "4": 3.73,
-   "5": 3.81,
-   "8": 4.06,
-   "10": 4.23
+   "1": 3.6,
+   "2": 3.54,
+   "3": 3.59,
+   "4": 3.67,
+   "5": 3.75,
+   "8": 4.02,
+   "10": 4.19
   },
-  "asof": "22 Dec 2025",
-  "source": "PLN IRS vs 6M WIBOR of 22 Dec 2025 (Erste daily) - the latest verifiable quote before the cut-off; no 30 Dec close was found. Between 22 and 30 Dec POLGB yields fell 3-7bp, so ASW computed against this curve are likely understated by roughly that much if swaps moved in line. Interpolated with PCHIP through 6M WIBOR (30 Dec); beyond 10Y extrapolated.",
-  "short_source": "PLN IRS of 22 Dec 2025 (latest verifiable), WIBOR fixings 30 Dec 2025"
+  "asof": "2 Jan 2026 close",
+  "source": "PLN IRS vs 6M WIBOR at the 2 Jan 2026 close: LSEG end-of-day interbank bid rates in the Erste/Santander daily of 5 Jan 2026 (table headed 02.01.2026; only the 2 Jan levels are used). Bid side, so roughly 1-2bp below mid. 7Y not available; PCHIP interpolation through 6M WIBOR (2 Jan) and the pillars; beyond 10Y extrapolated.",
+  "short_source": "PLN IRS at the 2 Jan 2026 close (LSEG bid via Erste), WIBOR fixings 2 Jan 2026"
  },
  "curve": {
   "front_anchor": {

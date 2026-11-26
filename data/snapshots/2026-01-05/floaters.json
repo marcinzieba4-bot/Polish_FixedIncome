@@ -113,9 +113,9 @@
    "outstanding_bn": null
   }
  },
- "polstr_basis": 0.34,
+ "polstr_basis": 0.32,
  "nz_running": 3.7,
- "basis_note": "WIBOR 6M 3.87% minus POLSTR 3.53% on 30 Dec 2025; running NZ period assumed at 3.70% compounded POLSTR (rates were cut in Oct-Dec 2025)",
+ "basis_note": "WIBOR 6M 3.85% (2 Jan) minus POLSTR 3.53% (30 Dec; the 31 Dec 2.62% year-end dip and the 2 Jan value published only on 5 Jan are not used); running NZ period assumed at 3.70% compounded POLSTR",
  "cpi_scenarios": {
   "2.0%": 2.0,
   "2.9% (NBP 2026 proj.)": 2.9,
