@@ -1,0 +1,87 @@
+{
+ "_source": "GPW Benchmark 'Portfele obligacji' communique for the periodic change of 30 Dec 2025 (holdings as of 22 Dec 2025). PDF metadata shows regeneration on 7 Jan 2026; units reconciled line-by-line with the 26 Nov 2025 file plus MoF auctions/switches/OB operations to 23 Dec 2025, so content reflects pre-cut-off information only.",
+ "source_url": "https://www.gpwbenchmark.pl/pub/BENCHMARK/files/2025_12_23_3_Portfele_obligacji.pdf",
+ "effective": "2025-12-30",
+ "next_rebalance": "2026-01-30",
+ "official_stats_asof": "2025-12-22",
+ "indices": {
+  "GPWB-B1Y3Y": {
+   "label": "GPWB 1-3Y",
+   "rule": "Fixed-rate POLGBs with 1-3 years to maturity",
+   "official": {
+    "ytm": 3.79,
+    "mac_dur": 1.89,
+    "mod_dur": 1.82,
+    "maturity": 1.96,
+    "coupon": 3.3,
+    "n": 6,
+    "value_mln": 219569.63
+   },
+   "units": {
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "WS0428": 39016939,
+    "OK0128": 36450929,
+    "PS0527": 32829594,
+    "OK0127": 19284162
+   }
+  },
+  "GPWB-B1Y4Y": {
+   "label": "GPWB 1-4Y",
+   "rule": "Fixed-rate POLGBs with 1-4 years to maturity",
+   "official": {
+    "ytm": 3.99,
+    "mac_dur": 2.54,
+    "mod_dur": 2.44,
+    "maturity": 2.69,
+    "coupon": 3.82,
+    "n": 9,
+    "value_mln": 396764.15
+   },
+   "units": {
+    "WS0429": 57196120,
+    "PS0729": 57073247,
+    "DS1029": 58755701,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "WS0428": 39016939,
+    "OK0128": 36450929,
+    "PS0527": 32829594,
+    "OK0127": 19284162
+   }
+  },
+  "TBSP.Index": {
+   "label": "TBSP.Index",
+   "rule": "Fixed-rate POLGBs traded on Treasury BondSpot Poland (broad market)",
+   "official": {
+    "ytm": 4.33,
+    "mac_dur": 3.96,
+    "mod_dur": 3.79,
+    "maturity": 4.44,
+    "coupon": 3.89,
+    "n": 18,
+    "value_mln": 839586.8
+   },
+   "units": {
+    "PS0730": 66710869,
+    "DS1033": 62740227,
+    "WS0429": 57196120,
+    "PS0729": 57073247,
+    "DS1029": 58755701,
+    "PS0130": 52166387,
+    "DS1034": 55249292,
+    "DS0432": 60467661,
+    "PS0728": 45507599,
+    "DS1030": 57010574,
+    "DS0727": 44403632,
+    "WS0428": 39016939,
+    "DS1035": 35095545,
+    "PS0131": 32548149,
+    "OK0128": 36450929,
+    "PS0527": 32829594,
+    "PS1026": 27324165,
+    "OK0127": 19284162
+   }
+  }
+ }
+}

@@ -5,7 +5,7 @@
  "policy": {
   "nbp_reference": 4.0,
   "next_mpc_label": "MPC next: 13-14 Jan",
-  "pricing_text": "FRAs at the 2 Jan close (1x4 3.79, 3x6 3.56, 6x9 3.36, 9x12 3.33 vs WIBOR 3M 3.97) price roughly 60bp of NBP cuts within 12 months. The NBP survey of professional forecasters (published 2 Jan) sees an average reference rate of 3.69% in 2026; December economist calls cluster at 3.50% by mid-2026 and 3.25% by end-2026 (ING). Governor Glapiński (4 Dec): 4% is 'excellent' for now; the MPC is in wait-and-see.",
+  "pricing_text": "FRAs at the 5 Jan close (1x4 3.79, 3x6 3.55, 6x9 3.36, 9x12 3.32 vs WIBOR 3M 3.95) price roughly 65bp of NBP cuts within 12 months. The NBP survey of professional forecasters (2 Jan) sees an average reference rate of 3.69% in 2026. Credit Agricole (5 Jan): the market prices three incomplete cuts by end-2026; Erste/Santander (5 Jan) expects a hold for a while, then cuts in March and May.",
   "risk_text": "MPC members ruled out a January cut (Kotecki 10 Dec; Wnorowski and Kotecki 16 Dec: no change at the next two meetings). If cuts are pushed out, front-end roll-down does not materialise; Santander (9 Dec) expected higher short-end yields in Q1 as cut expectations are repriced."
  },
  "macro": {
@@ -16,11 +16,11 @@
   "projection_text": "NBP November 2025 projection: CPI 3.7% (2025), 2.9% (2026), 2.5% (2027); December 2025 flash CPI 2.4% y/y.",
   "fiscal_text": "2025 general-government deficit ~6.9% of GDP (MoF plan); 2026 budget deficit cap PLN 271.7bn, gross borrowing needs ~PLN 690bn; Santander (19 Dec) noted the 10Y ASW back near 100bp on global fiscal worries.",
   "fiscal_risk_text": "Q1 2026 supply of PLN 75-100bn over 8 auctions; Fitch (27 Feb) and Moody's (20 Mar) reviews with negative outlooks.",
-  "backdrop_text": "The NBP cut six times in 2025 to 4.00% (last on 3 Dec) and signalled a pause; CPI fell to 2.4% in December (flash, 31 Dec), and the NBP projects 2.9% for 2026 (professional forecasters, 2 Jan: 2.6%). Manufacturing PMI fell to 48.5 in December (2 Jan; consensus ~49.3), the eighth month below 50. GDP grew 3.8% y/y in Q3. MoF had pre-financed ~23% of 2026 gross needs by 31 Dec with ~PLN 143bn of budget cash. Ratings: Fitch A- negative (5 Sep), Moody's A2 negative (19 Sep), S&P A- stable (7 Nov). Street views (December): PKO 1Q26 forecast 2Y 3.75 / 5Y 4.50 / 10Y 5.10; Pekao expects yields to drift lower as cuts are priced; Santander expects higher yields in Q1 on supply and cut repricing; ING says early-2026 trading will follow MoF's Q1 issuance. Weekend news before Monday's open (3-4 Jan): a US strike on Venezuela (3 Jan) and Ukraine peace meetings scheduled for 3, 6 and 7 Jan - global risk/oil headlines to watch at the open."
+  "backdrop_text": "The NBP cut six times in 2025 to 4.00% (last on 3 Dec); CPI fell to 2.4% in December (flash, 31 Dec; final on 15 Jan, core estimated ~2.8% by Erste), the NBP projects 2.9% for 2026 (professional forecasters, 2 Jan: 2.6%). Manufacturing PMI fell to 48.5 in December (2 Jan). GDP grew 3.8% y/y in Q3. Ratings: Fitch A- negative, Moody's A2 negative, S&P A- stable. Since 2 Jan: bank dailies (5 Jan) expect POLGBs to keep their relative strength after the sub-target December CPI (PKO), with IRS 2Y/5Y/10Y down 6-7bp in the week to 2 Jan (Credit Agricole). 6 Jan was a Polish holiday; abroad, US ISM manufacturing fell to 47.9 (5 Jan; 48.4 expected) and German December CPI surprised lower (1.8% y/y, HICP 2.0%; 6 Jan). Venezuela after the 3 Jan US operation was shrugged off by markets; the 6 Jan Paris declaration on Ukraine has the UK and France pledging troops after a ceasefire. Street views (December): PKO 1Q26 forecast 2Y 3.75 / 5Y 4.50 / 10Y 5.10; Santander expects higher yields in Q1 on supply and cut repricing; ING says early-2026 trading follows MoF's Q1 issuance."
  },
  "calendar": {
-  "plan_text": "MoF Q1 2026 financing plan (31 Dec 2025): 8 sale auctions for PLN 75-100bn, one switch auction, possible foreign issuance. January: sale auctions on 9 Jan (PLN 7-12bn), 22 Jan (8-13bn) and 28 Jan (7-12bn). 2026 gross borrowing needs ~PLN 690bn, ~23% pre-financed at year-end; budget cash ~PLN 143bn. BGK: FPC to issue domestically in 2026 (up to PLN 18.5bn); the defence fund (FWSZ) to rely mainly on EU SAFE and export-credit loans (BGK, 29 Dec). Series for the 9 Jan auction had not been announced by 4 Jan.",
-  "timing_text": "Within each auction week of the Aug-Dec 2025 sample, yields drifted lower into the auction (rally regime) and the auction-day close was the cheapest point relative to the preceding session, so new buying is best executed at the auction-day close (9, 22, 28 Jan) rather than the day before. January supply is front-loaded (PLN 22-37bn across three auctions) after only ~23% pre-financing. For the front end the 13-14 Jan MPC is the event: members pre-announced no January cut, so a hold is the base case; the December final CPI (mid-January) and the February/March meetings drive the cut timing.",
+  "plan_text": "MoF Q1 2026 financing plan (31 Dec 2025): 8 sale auctions for PLN 75-100bn, one switch auction, possible foreign issuance. January: sale auctions on 9 Jan (PLN 7-12bn), 22 Jan (8-13bn) and 28 Jan (7-12bn); no switch auction in January; 36-week T-bill auction on 16 Jan (PLN 2-4bn). 2026 gross borrowing needs ~PLN 690bn. BGK: FPC to issue domestically in 2026 (up to PLN 18.5bn). Series for the 9 Jan auction had not been announced by 6 Jan.",
+  "timing_text": "Within each auction week of the Aug 2025-Jan 2026 sample, yields drifted lower into the auction (rally regime) and the auction-day close was the cheapest point relative to the preceding session, so new buying is best executed at the auction-day close (9, 22, 28 Jan) rather than the day before. January supply is front-loaded (PLN 22-37bn across three auctions) after only ~21-23% pre-financing. For the front end the 13-14 Jan MPC is the event: members pre-announced no January cut, so a hold is the base case; the December final CPI (15 Jan) and the February/March meetings drive the cut timing.",
   "events": [
    {
     "date": "2026-01-09",
@@ -30,6 +30,20 @@
     "source_date": "MoF via PAP, 31 Dec 2025"
    },
    {
+    "date": "2026-01-09",
+    "type": "Data",
+    "title": "US December payrolls",
+    "note": "",
+    "source_date": "BLS calendar"
+   },
+   {
+    "date": "2026-01-13",
+    "type": "Data",
+    "title": "US December CPI",
+    "note": "",
+    "source_date": "BLS calendar"
+   },
+   {
     "date": "2026-01-14",
     "type": "MPC",
     "title": "MPC decision (meeting 13-14 Jan)",
@@ -37,11 +51,25 @@
     "source_date": "NBP schedule 7 Nov 2025; MPC comments 10/16 Dec"
    },
    {
+    "date": "2026-01-15",
+    "type": "Data",
+    "title": "GUS final December CPI (10:00)",
+    "note": "Flash 2.4% y/y.",
+    "source_date": "GUS calendar"
+   },
+   {
+    "date": "2026-01-16",
+    "type": "Auction",
+    "title": "MoF 36-week T-bill auction PLN 2-4bn",
+    "note": "",
+    "source_date": "MoF January plan, 31 Dec 2025"
+   },
+   {
     "date": "2026-01-22",
     "type": "Auction",
     "title": "MoF sale auction PLN 8-13bn",
-    "note": "",
-    "source_date": "MoF via PAP, 31 Dec 2025"
+    "note": "Plan: OK0128, WZ0930, PS0131, NZ0331, DS1035, possibly IZ; offer 2 days before.",
+    "source_date": "MoF January plan, 31 Dec 2025 (NZ0331 issue letter 22 Dec 2025)"
    },
    {
     "date": "2026-01-25",
@@ -117,7 +145,7 @@
    "next": "13-14 Jan 2026",
    "stance": "Pause after cuts",
    "tone": "wait",
-   "pricing": "FRAs ~60bp of cuts within 12M (22 Dec); consensus 3.50% by mid-2026"
+   "pricing": "FRAs ~65bp of cuts within 12M (5 Jan close)"
   },
   "Euro area": {
    "bank": "ECB depo",
@@ -137,7 +165,7 @@
    "next": "27-28 Jan 2026",
    "stance": "Easing, slower",
    "tone": "go",
-   "pricing": "~15% chance of a January cut; a full cut priced only by June (DM BOŚ, 2 Jan)"
+   "pricing": "FedWatch (5 Jan): 83% hold in January, ~44% chance of a cut by March"
   },
   "United Kingdom": {
    "bank": "BoE",
@@ -211,7 +239,7 @@
   }
  },
  "core_policy_note": "Real rate = policy rate − latest CPI. Fed rate = midpoint of the range. Sources: ECB key-rates page; Fed press release 10 Dec 2025 and SEP; BoE Monetary Policy Summary Dec 2025; CNB press release 18 Dec 2025; MNB press release 16 Dec 2025; NBP/MPC 3 Dec 2025; CPI releases (Eurostat 17 Dec, Destatis 12 Dec, BLS 18 Dec, ONS 17 Dec, CZSO 10 Dec, MNB 16 Dec, INS 12 Dec, GUS 31 Dec).",
- "core_text": "Regime at the start of 2026: the NBP paused at 4.00% with ~60bp more priced, the ECB is done at 2.00%, the Fed and BoE are easing gradually, the CNB and MNB are on hold. Poland's 10Y spread to Bunds was 234bp on benchmark bonds (Erste, 2 Jan close; ~220bp here on DS1035 vs the Bundesbank fitted 10Y) and 5Y CDS 60bp. December manufacturing PMIs (2 Jan): euro area 48.8, Germany 47.0, US 51.8.",
+ "core_text": "Regime: the NBP paused at 4.00% with ~65bp more priced, the ECB is done at 2.00%, the Fed and BoE are easing gradually, the CNB and MNB are on hold. German December inflation surprised lower (6 Jan) and US ISM manufacturing fell to 47.9 (5 Jan).",
  "audit": [
   {
    "input": "POLGB prices & yields",
@@ -292,10 +320,10 @@
   },
   {
    "input": "Bank views",
-   "as_of": "8-30 Dec 2025",
-   "published": "8-30 Dec 2025",
-   "source": "PKO, Pekao, Santander, ING",
-   "note": "Quoted with dates; not used in the rules."
+   "as_of": "to 5-6 Jan 2026",
+   "published": "<= 6 Jan 2026",
+   "source": "PKO, Erste/Santander, Millennium, ING, Deutsche Bank Polska, Credit Agricole, BPS dailies/weeklies; PAP",
+   "note": "Only commentary published by the info cut-off."
   },
   {
    "input": "WZ coupons",
@@ -338,6 +366,13 @@
    "published": "Catalyst daily",
    "source": "Catalyst via biznesradar history; BGK; PAP",
    "note": "FPC0229: no trade; FPC0630: vol 9; FPC0231: vol 3; FPC0733: vol 177; FPC0235: vol 21"
+  },
+  {
+   "input": "New facts 5-6 Jan 2026",
+   "as_of": "5-6 Jan 2026",
+   "published": "5-6 Jan 2026",
+   "source": "PAP feed (strefainwestorow.pl), MoF, NBP, GUS, BGK, Eurostat, BLS, CME FedWatch, CZSO/KSH, bank research",
+   "note": "Facts placed in the window they were first published; release times from PAP summaries are upper bounds."
   },
   {
    "input": "NOT used (unavailable point-in-time)",

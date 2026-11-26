@@ -124,7 +124,7 @@
    "next": "13-14 Jan 2026",
    "stance": "Pause after cuts",
    "tone": "wait",
-   "pricing": "FRAs ~60bp of cuts within 12M (22 Dec); consensus 3.50% by mid-2026"
+   "pricing": "FRAs ~60bp of cuts within 12M (2 Jan close); consensus 3.50% by mid-2026"
   },
   "Euro area": {
    "bank": "ECB depo",
@@ -313,9 +313,9 @@
   },
   {
    "input": "Bund curve, UST curve, €STR, SOFR",
-   "as_of": "2 Jan 2026",
+   "as_of": "2 Jan 2026 (SOFR 31 Dec 2025)",
    "published": "2 Jan 2026",
-   "source": "Bundesbank BBSIS, US Treasury, ECB, NY Fed APIs (observations <= 2 Jan 2026)",
+   "source": "Bundesbank BBSIS, US Treasury, ECB, NY Fed APIs (observations <= 2 Jan 2026; SOFR <= 31 Dec 2025: it is published T+1 at 08:00 New York time)",
    "note": ""
   },
   {

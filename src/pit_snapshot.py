@@ -185,6 +185,9 @@ def main(prev, out, spec_path, raw):
     for a in F["audit"]:
         if a["input"] in auto:
             a.update(auto[a["input"]])
+    for a in F["audit"]:
+        if a["input"] in S.get("audit_updates", {}):
+            a.update(S["audit_updates"][a["input"]])
     F["audit"] = [a for a in F["audit"] if not a["input"].startswith("New facts")]
     nf = S.get("new_facts_audit")
     if nf:
