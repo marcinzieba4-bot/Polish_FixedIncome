@@ -1,0 +1,35 @@
+{
+ "money": {
+  "EUR": {
+   "3m": 2.034,
+   "6m": 2.156,
+   "12m": 2.228,
+   "estr": 1.932
+  },
+  "USD": {
+   "3m": 3.7,
+   "sofr": 3.64
+  }
+ },
+ "hedge_rates_1y": {
+  "PLN": 3.76,
+  "EUR": 2.259,
+  "USD": 3.53,
+  "method": "no market forward points were found, so hedges use covered interest parity on 1Y fixings of 21 Jan 2026 (WIBOR 1Y 3.76%, EURIBOR 12M 2.228% ACT/360, 1Y T-bill 3.53%). With NBP cuts priced, the FX-implied PLN rate is likely below WIBOR 1Y, so these pickups are probably an upper bound"
+ },
+ "ibor_1y": {
+  "PLN": 3.76,
+  "EUR": 2.259,
+  "CZK": 3.518,
+  "HUF": 6.388,
+  "USD": 3.53
+ },
+ "pap_cols": {
+  "d6": 0,
+  "m1": 3,
+  "m12": 5
+ },
+ "swap_note": "",
+ "fx": {},
+ "policy": {}
+}
