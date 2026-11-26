@@ -63,6 +63,8 @@ def main(prev, out, spec_path, raw):
     out.mkdir(parents=True, exist_ok=True)
     for f in STATIC:
         shutil.copy(prev / f, out / f)
+    if S.get("index_portfolios"):  # periodic index change took effect since the previous snapshot
+        shutil.copy(S["index_portfolios"], out / "index_portfolios.json")
 
     # 1) BondSpot close of C, TBSP level dropped
     B = load(raw / f"bondspot_{Cs}.json")
