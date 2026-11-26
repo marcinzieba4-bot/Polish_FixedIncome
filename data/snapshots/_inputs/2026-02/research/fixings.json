@@ -1,0 +1,2481 @@
+{
+ "by_date": {
+  "2026-01-30": {
+   "wibor": {
+    "on": 3.82,
+    "sw": 4.02,
+    "1m": 4.02,
+    "3m": 3.9,
+    "6m": 3.79,
+    "1y": 3.71,
+    "wibid": {
+     "on": 3.54,
+     "sw": 3.82,
+     "1m": 3.82,
+     "3m": 3.7,
+     "6m": 3.59
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-01-30",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.968,
+    "3m": 2.031,
+    "6m": 2.158,
+    "12m": 2.226,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.46,
+    "6m": 3.44,
+    "1y": 3.39,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-01-30",
+    "3m": 6.38,
+    "6m": 6.32,
+    "12m": 6.29,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2131,
+    "usd": 3.5379,
+    "chf": 4.5964,
+    "table": "020/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.83,
+     "vol": 217,
+     "traded": true,
+     "last_trade_date": "2026-01-30",
+     "open": 104.83,
+     "high": 104.83,
+     "low": 104.83,
+     "turnover_pln": 227480.0
+    },
+    "FPC0630": {
+     "close": 91.4,
+     "vol": 2905,
+     "traded": true,
+     "last_trade_date": "2026-01-30",
+     "open": 91.4,
+     "high": 91.41,
+     "low": 91.4,
+     "turnover_pln": 2696280.0
+    },
+    "FPC0231": {
+     "close": 105.5,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-01-28",
+     "last_trade_vol": 8,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 84.0,
+     "vol": 36,
+     "traded": true,
+     "last_trade_date": "2026-01-30",
+     "open": 84.59,
+     "high": 85.0,
+     "low": 84.0,
+     "turnover_pln": 30710.0
+    },
+    "FPC0235": {
+     "close": 105.51,
+     "vol": 967,
+     "traded": true,
+     "last_trade_date": "2026-01-30",
+     "open": 105.84,
+     "high": 105.84,
+     "low": 105.51,
+     "turnover_pln": 1022010.0
+    },
+    "FPC0332": {
+     "close": 96.04,
+     "vol": 183,
+     "traded": true,
+     "last_trade_date": "2026-01-30",
+     "open": 96.04,
+     "high": 96.04,
+     "low": 96.04,
+     "turnover_pln": 179390.0
+    }
+   }
+  },
+  "2026-02-02": {
+   "wibor": {
+    "on": 3.9,
+    "sw": 4.03,
+    "1m": 4.02,
+    "3m": 3.9,
+    "6m": 3.78,
+    "1y": 3.69,
+    "wibid": {
+     "on": 3.62,
+     "sw": 3.83,
+     "1m": 3.82,
+     "3m": 3.7,
+     "6m": 3.58
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-02",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.959,
+    "3m": 2.022,
+    "6m": 2.154,
+    "12m": 2.218,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.46,
+    "6m": 3.44,
+    "1y": 3.39,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-02",
+    "3m": 6.38,
+    "6m": 6.32,
+    "12m": 6.28,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2106,
+    "usd": 3.5495,
+    "chf": 4.581,
+    "table": "021/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.86,
+     "vol": 2,
+     "traded": true,
+     "last_trade_date": "2026-02-02",
+     "open": 106.7,
+     "high": 106.7,
+     "low": 104.86,
+     "turnover_pln": 2120.0
+    },
+    "FPC0630": {
+     "close": 91.4,
+     "vol": 174,
+     "traded": true,
+     "last_trade_date": "2026-02-02",
+     "open": 91.4,
+     "high": 91.48,
+     "low": 91.4,
+     "turnover_pln": 161550.0
+    },
+    "FPC0231": {
+     "close": 105.5,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-01-28",
+     "last_trade_vol": 8,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 83.87,
+     "vol": 536,
+     "traded": true,
+     "last_trade_date": "2026-02-02",
+     "open": 84.0,
+     "high": 84.0,
+     "low": 83.51,
+     "turnover_pln": 456300.0
+    },
+    "FPC0235": {
+     "close": 105.7,
+     "vol": 112,
+     "traded": true,
+     "last_trade_date": "2026-02-02",
+     "open": 105.95,
+     "high": 105.95,
+     "low": 105.69,
+     "turnover_pln": 118410.0
+    },
+    "FPC0332": {
+     "close": 96.15,
+     "vol": 102,
+     "traded": true,
+     "last_trade_date": "2026-02-02",
+     "open": 96.15,
+     "high": 96.15,
+     "low": 96.15,
+     "turnover_pln": 100110.0
+    }
+   }
+  },
+  "2026-02-03": {
+   "wibor": {
+    "on": 3.96,
+    "sw": 4.04,
+    "1m": 4.03,
+    "3m": 3.89,
+    "6m": 3.78,
+    "1y": 3.7,
+    "wibid": {
+     "on": 3.68,
+     "sw": 3.84,
+     "1m": 3.83,
+     "3m": 3.69,
+     "6m": 3.58
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-03",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.956,
+    "3m": 2.029,
+    "6m": 2.161,
+    "12m": 2.225,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.46,
+    "6m": 3.44,
+    "1y": 3.38,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-03",
+    "3m": 6.37,
+    "6m": 6.31,
+    "12m": 6.27,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2198,
+    "usd": 3.5785,
+    "chf": 4.5942,
+    "table": "022/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.9,
+     "vol": 19,
+     "traded": true,
+     "last_trade_date": "2026-02-03",
+     "open": 104.9,
+     "high": 104.9,
+     "low": 104.9,
+     "turnover_pln": 19940.0
+    },
+    "FPC0630": {
+     "close": 91.6,
+     "vol": 66,
+     "traded": true,
+     "last_trade_date": "2026-02-03",
+     "open": 91.47,
+     "high": 91.6,
+     "low": 91.47,
+     "turnover_pln": 61380.0
+    },
+    "FPC0231": {
+     "close": 105.5,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-01-28",
+     "last_trade_vol": 8,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 83.87,
+     "vol": 25,
+     "traded": true,
+     "last_trade_date": "2026-02-03",
+     "open": 83.87,
+     "high": 83.87,
+     "low": 83.87,
+     "turnover_pln": 21270.0
+    },
+    "FPC0235": {
+     "close": 105.91,
+     "vol": 238,
+     "traded": true,
+     "last_trade_date": "2026-02-03",
+     "open": 105.85,
+     "high": 105.92,
+     "low": 105.59,
+     "turnover_pln": 251650.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 340,
+     "traded": true,
+     "last_trade_date": "2026-02-03",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 96.0,
+     "turnover_pln": 333240.0
+    }
+   }
+  },
+  "2026-02-04": {
+   "wibor": {
+    "on": 3.97,
+    "sw": 4.03,
+    "1m": 4.04,
+    "3m": 3.89,
+    "6m": 3.78,
+    "1y": 3.7,
+    "wibid": {
+     "on": 3.67,
+     "sw": 3.83,
+     "1m": 3.84,
+     "3m": 3.69,
+     "6m": 3.58
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-04",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.948,
+    "3m": 2.04,
+    "6m": 2.171,
+    "12m": 2.234,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.46,
+    "6m": 3.43,
+    "1y": 3.38,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-04",
+    "3m": 6.36,
+    "6m": 6.3,
+    "12m": 6.26,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2241,
+    "usd": 3.5755,
+    "chf": 4.6059,
+    "table": "023/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.81,
+     "vol": 14,
+     "traded": true,
+     "last_trade_date": "2026-02-04",
+     "open": 104.81,
+     "high": 104.81,
+     "low": 104.81,
+     "turnover_pln": 14680.0
+    },
+    "FPC0630": {
+     "close": 91.6,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-03",
+     "last_trade_vol": 66,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 2,
+     "traded": true,
+     "last_trade_date": "2026-02-04",
+     "open": 105.25,
+     "high": 105.25,
+     "low": 105.25,
+     "turnover_pln": 2110.0
+    },
+    "FPC0733": {
+     "close": 83.7,
+     "vol": 2068,
+     "traded": true,
+     "last_trade_date": "2026-02-04",
+     "open": 83.7,
+     "high": 83.7,
+     "low": 83.7,
+     "turnover_pln": 1756410.0
+    },
+    "FPC0235": {
+     "close": 105.87,
+     "vol": 144,
+     "traded": true,
+     "last_trade_date": "2026-02-04",
+     "open": 105.88,
+     "high": 105.88,
+     "low": 105.87,
+     "turnover_pln": 152530.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 140,
+     "traded": true,
+     "last_trade_date": "2026-02-04",
+     "open": 95.99,
+     "high": 96.0,
+     "low": 95.99,
+     "turnover_pln": 137230.0
+    }
+   }
+  },
+  "2026-02-05": {
+   "wibor": {
+    "on": 3.96,
+    "sw": 4.04,
+    "1m": 4.0,
+    "3m": 3.9,
+    "6m": 3.78,
+    "1y": 3.69,
+    "wibid": {
+     "on": 3.67,
+     "sw": 3.84,
+     "1m": 3.8,
+     "3m": 3.7,
+     "6m": 3.58
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-05",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.953,
+    "3m": 2.02,
+    "6m": 2.172,
+    "12m": 2.225,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.47,
+    "6m": 3.44,
+    "1y": 3.4,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-05",
+    "3m": 6.35,
+    "6m": 6.3,
+    "12m": 6.25,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2175,
+    "usd": 3.5799,
+    "chf": 4.5985,
+    "table": "024/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.95,
+     "vol": 62,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 104.5,
+     "high": 104.95,
+     "low": 104.5,
+     "turnover_pln": 65120.0
+    },
+    "FPC0630": {
+     "close": 91.7,
+     "vol": 15,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 92.0,
+     "high": 92.0,
+     "low": 91.7,
+     "turnover_pln": 13980.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 299,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 105.25,
+     "high": 105.25,
+     "low": 105.25,
+     "turnover_pln": 314980.0
+    },
+    "FPC0733": {
+     "close": 83.7,
+     "vol": 480,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 83.7,
+     "high": 83.7,
+     "low": 83.7,
+     "turnover_pln": 407760.0
+    },
+    "FPC0235": {
+     "close": 105.92,
+     "vol": 808,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 105.87,
+     "high": 105.92,
+     "low": 105.83,
+     "turnover_pln": 856180.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 311,
+     "traded": true,
+     "last_trade_date": "2026-02-05",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 95.95,
+     "turnover_pln": 304970.0
+    }
+   }
+  },
+  "2026-02-06": {
+   "wibor": {
+    "on": 3.95,
+    "sw": 4.04,
+    "1m": 4.03,
+    "3m": 3.88,
+    "6m": 3.77,
+    "1y": 3.69,
+    "wibid": {
+     "on": 3.65,
+     "sw": 3.84,
+     "1m": 3.83,
+     "3m": 3.68,
+     "6m": 3.57
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-06",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.972,
+    "3m": 1.999,
+    "6m": 2.152,
+    "12m": 2.227,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.46,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-06",
+    "3m": 6.35,
+    "6m": 6.3,
+    "12m": 6.25,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2155,
+    "usd": 3.5749,
+    "chf": 4.592,
+    "table": "025/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.95,
+     "vol": 78,
+     "traded": true,
+     "last_trade_date": "2026-02-06",
+     "open": 104.95,
+     "high": 104.95,
+     "low": 104.95,
+     "turnover_pln": 81950.0
+    },
+    "FPC0630": {
+     "close": 91.8,
+     "vol": 1831,
+     "traded": true,
+     "last_trade_date": "2026-02-06",
+     "open": 91.99,
+     "high": 92.0,
+     "low": 91.8,
+     "turnover_pln": 1708150.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 83.7,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 480,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0235": {
+     "close": 105.84,
+     "vol": 416,
+     "traded": true,
+     "last_trade_date": "2026-02-06",
+     "open": 105.8,
+     "high": 105.89,
+     "low": 105.8,
+     "turnover_pln": 440860.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 731,
+     "traded": true,
+     "last_trade_date": "2026-02-06",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 96.0,
+     "turnover_pln": 716940.0
+    }
+   }
+  },
+  "2026-02-09": {
+   "wibor": {
+    "on": 4.0,
+    "sw": 4.01,
+    "1m": 4.03,
+    "3m": 3.88,
+    "6m": 3.77,
+    "1y": 3.69,
+    "wibid": {
+     "on": 3.72,
+     "sw": 3.81,
+     "1m": 3.83,
+     "3m": 3.68,
+     "6m": 3.57
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-09",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.969,
+    "3m": 1.982,
+    "6m": 2.132,
+    "12m": 2.222,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.48,
+    "1y": 3.44,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-09",
+    "3m": 6.35,
+    "6m": 6.3,
+    "12m": 6.25,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2142,
+    "usd": 3.5527,
+    "chf": 4.5991,
+    "table": "026/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.9,
+     "vol": 18,
+     "traded": true,
+     "last_trade_date": "2026-02-09",
+     "open": 104.9,
+     "high": 104.9,
+     "low": 104.9,
+     "turnover_pln": 18900.0
+    },
+    "FPC0630": {
+     "close": 91.61,
+     "vol": 178,
+     "traded": true,
+     "last_trade_date": "2026-02-09",
+     "open": 93.05,
+     "high": 93.05,
+     "low": 91.61,
+     "turnover_pln": 165990.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 83.7,
+     "vol": 157,
+     "traded": true,
+     "last_trade_date": "2026-02-09",
+     "open": 83.7,
+     "high": 83.7,
+     "low": 83.7,
+     "turnover_pln": 133390.0
+    },
+    "FPC0235": {
+     "close": 105.69,
+     "vol": 11177,
+     "traded": true,
+     "last_trade_date": "2026-02-09",
+     "open": 105.84,
+     "high": 105.84,
+     "low": 105.45,
+     "turnover_pln": 11840860.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 110,
+     "traded": true,
+     "last_trade_date": "2026-02-09",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 96.0,
+     "turnover_pln": 107900.0
+    }
+   }
+  },
+  "2026-02-10": {
+   "wibor": {
+    "on": 4.04,
+    "sw": 4.03,
+    "1m": 4.01,
+    "3m": 3.91,
+    "6m": 3.77,
+    "1y": 3.67,
+    "wibid": {
+     "on": 3.75,
+     "sw": 3.83,
+     "1m": 3.81,
+     "3m": 3.71,
+     "6m": 3.57
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-10",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.976,
+    "3m": 1.981,
+    "6m": 2.114,
+    "12m": 2.227,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.49,
+    "1y": 3.44,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-10",
+    "3m": 6.34,
+    "6m": 6.3,
+    "12m": 6.25,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2148,
+    "usd": 3.5377,
+    "chf": 4.62,
+    "table": "027/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.9,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-09",
+     "last_trade_vol": 18,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0630": {
+     "close": 91.95,
+     "vol": 241,
+     "traded": true,
+     "last_trade_date": "2026-02-10",
+     "open": 91.61,
+     "high": 91.95,
+     "low": 90.56,
+     "turnover_pln": 223130.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 84.44,
+     "vol": 44,
+     "traded": true,
+     "last_trade_date": "2026-02-10",
+     "open": 83.7,
+     "high": 84.44,
+     "low": 83.7,
+     "turnover_pln": 37390.0
+    },
+    "FPC0235": {
+     "close": 105.7,
+     "vol": 99,
+     "traded": true,
+     "last_trade_date": "2026-02-10",
+     "open": 105.65,
+     "high": 105.7,
+     "low": 105.65,
+     "turnover_pln": 104750.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 108,
+     "traded": true,
+     "last_trade_date": "2026-02-10",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 96.0,
+     "turnover_pln": 105950.0
+    }
+   }
+  },
+  "2026-02-11": {
+   "wibor": {
+    "on": 4.03,
+    "sw": 4.01,
+    "1m": 3.98,
+    "3m": 3.87,
+    "6m": 3.76,
+    "1y": 3.68,
+    "wibid": {
+     "on": 3.74,
+     "sw": 3.81,
+     "1m": 3.78,
+     "3m": 3.67,
+     "6m": 3.56
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-11",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.994,
+    "3m": 1.994,
+    "6m": 2.108,
+    "12m": 2.231,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.48,
+    "1y": 3.43,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-11",
+    "3m": 6.34,
+    "6m": 6.3,
+    "12m": 6.25,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2174,
+    "usd": 3.5387,
+    "chf": 4.6213,
+    "table": "028/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.9,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-09",
+     "last_trade_vol": 18,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0630": {
+     "close": 91.95,
+     "vol": 9,
+     "traded": true,
+     "last_trade_date": "2026-02-11",
+     "open": 91.94,
+     "high": 91.95,
+     "low": 91.94,
+     "turnover_pln": 8410.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 84.44,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-10",
+     "last_trade_vol": 44,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0235": {
+     "close": 105.5,
+     "vol": 435,
+     "traded": true,
+     "last_trade_date": "2026-02-11",
+     "open": 105.7,
+     "high": 105.78,
+     "low": 105.5,
+     "turnover_pln": 459840.0
+    },
+    "FPC0332": {
+     "close": 96.0,
+     "vol": 43,
+     "traded": true,
+     "last_trade_date": "2026-02-11",
+     "open": 96.0,
+     "high": 96.0,
+     "low": 96.0,
+     "turnover_pln": 42190.0
+    }
+   }
+  },
+  "2026-02-12": {
+   "wibor": {
+    "on": 4.05,
+    "sw": 4.04,
+    "1m": 4.0,
+    "3m": 3.87,
+    "6m": 3.76,
+    "1y": 3.68,
+    "wibid": {
+     "on": 3.75,
+     "sw": 3.84,
+     "1m": 3.8,
+     "3m": 3.67,
+     "6m": 3.56
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-12",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.968,
+    "3m": 1.984,
+    "6m": 2.131,
+    "12m": 2.246,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.48,
+    "1y": 3.43,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-12",
+    "3m": 6.32,
+    "6m": 6.29,
+    "12m": 6.24,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2131,
+    "usd": 3.5441,
+    "chf": 4.6146,
+    "table": "029/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.0,
+     "vol": 30,
+     "traded": true,
+     "last_trade_date": "2026-02-12",
+     "open": 105.0,
+     "high": 105.0,
+     "low": 105.0,
+     "turnover_pln": 31560.0
+    },
+    "FPC0630": {
+     "close": 92.15,
+     "vol": 258,
+     "traded": true,
+     "last_trade_date": "2026-02-12",
+     "open": 91.94,
+     "high": 92.15,
+     "low": 91.94,
+     "turnover_pln": 241470.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 83.6,
+     "vol": 80,
+     "traded": true,
+     "last_trade_date": "2026-02-12",
+     "open": 84.28,
+     "high": 84.28,
+     "low": 83.6,
+     "turnover_pln": 68020.0
+    },
+    "FPC0235": {
+     "close": 105.94,
+     "vol": 2699,
+     "traded": true,
+     "last_trade_date": "2026-02-12",
+     "open": 105.5,
+     "high": 105.94,
+     "low": 105.44,
+     "turnover_pln": 2859220.0
+    },
+    "FPC0332": {
+     "close": 96.25,
+     "vol": 803,
+     "traded": true,
+     "last_trade_date": "2026-02-12",
+     "open": 96.08,
+     "high": 96.25,
+     "low": 96.08,
+     "turnover_pln": 789550.0
+    }
+   }
+  },
+  "2026-02-13": {
+   "wibor": {
+    "on": 4.02,
+    "sw": 4.03,
+    "1m": 3.96,
+    "3m": 3.86,
+    "6m": 3.75,
+    "1y": 3.67,
+    "wibid": {
+     "on": 3.72,
+     "sw": 3.83,
+     "1m": 3.76,
+     "3m": 3.66,
+     "6m": 3.55
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-13",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.951,
+    "3m": 1.999,
+    "6m": 2.147,
+    "12m": 2.248,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.47,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-13",
+    "3m": 6.31,
+    "6m": 6.28,
+    "12m": 6.23,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.214,
+    "usd": 3.5528,
+    "chf": 4.6163,
+    "table": "030/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.08,
+     "vol": 24,
+     "traded": true,
+     "last_trade_date": "2026-02-13",
+     "open": 105.08,
+     "high": 105.08,
+     "low": 105.08,
+     "turnover_pln": 25270.0
+    },
+    "FPC0630": {
+     "close": 92.15,
+     "vol": 8,
+     "traded": true,
+     "last_trade_date": "2026-02-13",
+     "open": 92.15,
+     "high": 92.15,
+     "low": 92.15,
+     "turnover_pln": 7490.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 84.38,
+     "vol": 3,
+     "traded": true,
+     "last_trade_date": "2026-02-13",
+     "open": 84.38,
+     "high": 84.38,
+     "low": 84.38,
+     "turnover_pln": 2570.0
+    },
+    "FPC0235": {
+     "close": 106.13,
+     "vol": 1151,
+     "traded": true,
+     "last_trade_date": "2026-02-13",
+     "open": 105.7,
+     "high": 106.13,
+     "low": 105.7,
+     "turnover_pln": 1222690.0
+    },
+    "FPC0332": {
+     "close": 96.42,
+     "vol": 266,
+     "traded": true,
+     "last_trade_date": "2026-02-13",
+     "open": 96.35,
+     "high": 96.42,
+     "low": 96.35,
+     "turnover_pln": 262240.0
+    }
+   }
+  },
+  "2026-02-16": {
+   "wibor": {
+    "on": 4.01,
+    "sw": 4.04,
+    "1m": 3.99,
+    "3m": 3.86,
+    "6m": 3.75,
+    "1y": 3.67,
+    "wibid": {
+     "on": 3.71,
+     "sw": 3.84,
+     "1m": 3.79,
+     "3m": 3.66,
+     "6m": 3.55
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-16",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.947,
+    "3m": 1.999,
+    "6m": 2.155,
+    "12m": 2.236,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.45,
+    "1y": 3.41,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-16",
+    "3m": 6.3,
+    "6m": 6.27,
+    "12m": 6.22,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.208,
+    "usd": 3.5467,
+    "chf": 4.6085,
+    "table": "031/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.02,
+     "vol": 122,
+     "traded": true,
+     "last_trade_date": "2026-02-16",
+     "open": 105.02,
+     "high": 105.02,
+     "low": 105.02,
+     "turnover_pln": 128410.0
+    },
+    "FPC0630": {
+     "close": 92.06,
+     "vol": 1434,
+     "traded": true,
+     "last_trade_date": "2026-02-16",
+     "open": 92.04,
+     "high": 92.06,
+     "low": 92.04,
+     "turnover_pln": 1341680.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 84.45,
+     "vol": 22,
+     "traded": true,
+     "last_trade_date": "2026-02-16",
+     "open": 84.45,
+     "high": 84.45,
+     "low": 84.38,
+     "turnover_pln": 18860.0
+    },
+    "FPC0235": {
+     "close": 106.05,
+     "vol": 3332,
+     "traded": true,
+     "last_trade_date": "2026-02-16",
+     "open": 106.13,
+     "high": 106.13,
+     "low": 106.05,
+     "turnover_pln": 3541830.0
+    },
+    "FPC0332": {
+     "close": 96.37,
+     "vol": 1018,
+     "traded": true,
+     "last_trade_date": "2026-02-16",
+     "open": 96.37,
+     "high": 96.37,
+     "low": 96.37,
+     "turnover_pln": 1003250.0
+    }
+   }
+  },
+  "2026-02-17": {
+   "wibor": {
+    "on": 4.03,
+    "sw": 4.05,
+    "1m": 3.97,
+    "3m": 3.85,
+    "6m": 3.74,
+    "1y": 3.66,
+    "wibid": {
+     "on": 3.73,
+     "sw": 3.85,
+     "1m": 3.77,
+     "3m": 3.65,
+     "6m": 3.54
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-17",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.932,
+    "3m": 2.011,
+    "6m": 2.159,
+    "12m": 2.216,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.44,
+    "1y": 3.4,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-17",
+    "3m": 6.29,
+    "6m": 6.26,
+    "12m": 6.21,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2182,
+    "usd": 3.5607,
+    "chf": 4.629,
+    "table": "032/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.0,
+     "vol": 5,
+     "traded": true,
+     "last_trade_date": "2026-02-17",
+     "open": 105.0,
+     "high": 105.0,
+     "low": 105.0,
+     "turnover_pln": 5260.0
+    },
+    "FPC0630": {
+     "close": 92.06,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-16",
+     "last_trade_vol": 1434,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.0,
+     "vol": 54,
+     "traded": true,
+     "last_trade_date": "2026-02-17",
+     "open": 84.45,
+     "high": 85.0,
+     "low": 84.45,
+     "turnover_pln": 46420.0
+    },
+    "FPC0235": {
+     "close": 106.19,
+     "vol": 1587,
+     "traded": true,
+     "last_trade_date": "2026-02-17",
+     "open": 106.1,
+     "high": 106.19,
+     "low": 106.1,
+     "turnover_pln": 1688730.0
+    },
+    "FPC0332": {
+     "close": 96.35,
+     "vol": 5100,
+     "traded": true,
+     "last_trade_date": "2026-02-17",
+     "open": 96.35,
+     "high": 96.35,
+     "low": 96.34,
+     "turnover_pln": 5025730.0
+    }
+   }
+  },
+  "2026-02-18": {
+   "wibor": {
+    "on": 4.02,
+    "sw": 4.04,
+    "1m": 3.97,
+    "3m": 3.85,
+    "6m": 3.73,
+    "1y": 3.64,
+    "wibid": {
+     "on": 3.72,
+     "sw": 3.84,
+     "1m": 3.77,
+     "3m": 3.65,
+     "6m": 3.53
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-18",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.921,
+    "3m": 2.006,
+    "6m": 2.141,
+    "12m": 2.198,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.44,
+    "1y": 3.4,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-18",
+    "3m": 6.28,
+    "6m": 6.25,
+    "12m": 6.2,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2148,
+    "usd": 3.561,
+    "chf": 4.6159,
+    "table": "033/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.9,
+     "vol": 16,
+     "traded": true,
+     "last_trade_date": "2026-02-18",
+     "open": 105.0,
+     "high": 105.0,
+     "low": 104.9,
+     "turnover_pln": 16840.0
+    },
+    "FPC0630": {
+     "close": 92.38,
+     "vol": 97,
+     "traded": true,
+     "last_trade_date": "2026-02-18",
+     "open": 92.06,
+     "high": 92.38,
+     "low": 92.06,
+     "turnover_pln": 91040.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.0,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-17",
+     "last_trade_vol": 54,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0235": {
+     "close": 106.0,
+     "vol": 1874,
+     "traded": true,
+     "last_trade_date": "2026-02-18",
+     "open": 106.15,
+     "high": 106.19,
+     "low": 106.0,
+     "turnover_pln": 1994200.0
+    },
+    "FPC0332": {
+     "close": 96.45,
+     "vol": 3457,
+     "traded": true,
+     "last_trade_date": "2026-02-18",
+     "open": 96.45,
+     "high": 96.45,
+     "low": 96.45,
+     "turnover_pln": 3410570.0
+    }
+   }
+  },
+  "2026-02-19": {
+   "wibor": {
+    "on": 4.04,
+    "sw": 4.06,
+    "1m": 3.97,
+    "3m": 3.85,
+    "6m": 3.72,
+    "1y": 3.63,
+    "wibid": {
+     "on": 3.74,
+     "sw": 3.86,
+     "1m": 3.77,
+     "3m": 3.65,
+     "6m": 3.52
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-19",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.93,
+    "3m": 2.024,
+    "6m": 2.137,
+    "12m": 2.198,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.44,
+    "1y": 3.39,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-19",
+    "3m": 6.27,
+    "6m": 6.25,
+    "12m": 6.2,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.222,
+    "usd": 3.578,
+    "chf": 4.6266,
+    "table": "034/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.0,
+     "vol": 30,
+     "traded": true,
+     "last_trade_date": "2026-02-19",
+     "open": 105.0,
+     "high": 105.0,
+     "low": 105.0,
+     "turnover_pln": 31590.0
+    },
+    "FPC0630": {
+     "close": 92.3,
+     "vol": 534,
+     "traded": true,
+     "last_trade_date": "2026-02-19",
+     "open": 92.3,
+     "high": 92.3,
+     "low": 92.3,
+     "turnover_pln": 501060.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.18,
+     "vol": 6,
+     "traded": true,
+     "last_trade_date": "2026-02-19",
+     "open": 85.18,
+     "high": 85.18,
+     "low": 85.18,
+     "turnover_pln": 5190.0
+    },
+    "FPC0235": {
+     "close": 105.76,
+     "vol": 166,
+     "traded": true,
+     "last_trade_date": "2026-02-19",
+     "open": 106.1,
+     "high": 106.1,
+     "low": 105.76,
+     "turnover_pln": 176330.0
+    },
+    "FPC0332": {
+     "close": 96.28,
+     "vol": 378,
+     "traded": true,
+     "last_trade_date": "2026-02-19",
+     "open": 96.38,
+     "high": 96.48,
+     "low": 96.28,
+     "turnover_pln": 373020.0
+    }
+   }
+  },
+  "2026-02-20": {
+   "wibor": {
+    "on": 4.02,
+    "sw": 4.06,
+    "1m": 3.96,
+    "3m": 3.82,
+    "6m": 3.72,
+    "1y": 3.65,
+    "wibid": {
+     "on": 3.73,
+     "sw": 3.86,
+     "1m": 3.76,
+     "3m": 3.62,
+     "6m": 3.52
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-20",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.942,
+    "3m": 2.024,
+    "6m": 2.141,
+    "12m": 2.205,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.45,
+    "1y": 3.4,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-20",
+    "3m": 6.27,
+    "6m": 6.24,
+    "12m": 6.19,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2241,
+    "usd": 3.5898,
+    "chf": 4.6297,
+    "table": "035/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.0,
+     "vol": 48,
+     "traded": true,
+     "last_trade_date": "2026-02-20",
+     "open": 105.0,
+     "high": 105.0,
+     "low": 105.0,
+     "turnover_pln": 50560.0
+    },
+    "FPC0630": {
+     "close": 92.3,
+     "vol": 166,
+     "traded": true,
+     "last_trade_date": "2026-02-20",
+     "open": 91.57,
+     "high": 92.3,
+     "low": 91.57,
+     "turnover_pln": 155750.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.18,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-19",
+     "last_trade_vol": 6,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0235": {
+     "close": 106.05,
+     "vol": 500,
+     "traded": true,
+     "last_trade_date": "2026-02-20",
+     "open": 106.05,
+     "high": 106.05,
+     "low": 105.77,
+     "turnover_pln": 531710.0
+    },
+    "FPC0332": {
+     "close": 96.37,
+     "vol": 338,
+     "traded": true,
+     "last_trade_date": "2026-02-20",
+     "open": 96.3,
+     "high": 96.37,
+     "low": 96.3,
+     "turnover_pln": 325590.0
+    }
+   }
+  },
+  "2026-02-23": {
+   "wibor": {
+    "on": 3.97,
+    "sw": 4.06,
+    "1m": 3.93,
+    "3m": 3.81,
+    "6m": 3.72,
+    "1y": 3.66,
+    "wibid": {
+     "on": 3.68,
+     "sw": 3.86,
+     "1m": 3.73,
+     "3m": 3.61,
+     "6m": 3.52
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-23",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.96,
+    "3m": 2.034,
+    "6m": 2.145,
+    "12m": 2.205,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.46,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-23",
+    "3m": 6.26,
+    "6m": 6.23,
+    "12m": 6.18,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2173,
+    "usd": 3.5737,
+    "chf": 4.6156,
+    "table": "036/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 104.56,
+     "vol": 10,
+     "traded": true,
+     "last_trade_date": "2026-02-23",
+     "open": 104.56,
+     "high": 104.56,
+     "low": 104.56,
+     "turnover_pln": 10490.0
+    },
+    "FPC0630": {
+     "close": 92.26,
+     "vol": 225,
+     "traded": true,
+     "last_trade_date": "2026-02-23",
+     "open": 92.26,
+     "high": 92.26,
+     "low": 92.26,
+     "turnover_pln": 211060.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.18,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-19",
+     "last_trade_vol": 6,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0235": {
+     "close": 106.34,
+     "vol": 495,
+     "traded": true,
+     "last_trade_date": "2026-02-23",
+     "open": 106.34,
+     "high": 106.34,
+     "low": 106.34,
+     "turnover_pln": 528170.0
+    },
+    "FPC0332": {
+     "close": 96.44,
+     "vol": 1359,
+     "traded": true,
+     "last_trade_date": "2026-02-23",
+     "open": 96.46,
+     "high": 96.64,
+     "low": 96.44,
+     "turnover_pln": 1311180.0
+    }
+   }
+  },
+  "2026-02-24": {
+   "wibor": {
+    "on": 3.82,
+    "sw": 4.06,
+    "1m": 3.94,
+    "3m": 3.82,
+    "6m": 3.71,
+    "1y": 3.63,
+    "wibid": {
+     "on": 3.52,
+     "sw": 3.86,
+     "1m": 3.74,
+     "3m": 3.62,
+     "6m": 3.51
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-24",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.942,
+    "3m": 2.041,
+    "6m": 2.149,
+    "12m": 2.206,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.45,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-24",
+    "3m": 6.25,
+    "6m": 6.22,
+    "12m": 6.17,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2193,
+    "usd": 3.5793,
+    "chf": 4.6252,
+    "table": "037/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.1,
+     "vol": 144,
+     "traded": true,
+     "last_trade_date": "2026-02-24",
+     "open": 105.1,
+     "high": 105.1,
+     "low": 105.1,
+     "turnover_pln": 151870.0
+    },
+    "FPC0630": {
+     "close": 92.3,
+     "vol": 1087,
+     "traded": true,
+     "last_trade_date": "2026-02-24",
+     "open": 92.25,
+     "high": 92.3,
+     "low": 92.25,
+     "turnover_pln": 1020130.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.35,
+     "vol": 151,
+     "traded": true,
+     "last_trade_date": "2026-02-24",
+     "open": 85.18,
+     "high": 85.4,
+     "low": 85.18,
+     "turnover_pln": 130890.0
+    },
+    "FPC0235": {
+     "close": 106.31,
+     "vol": 2581,
+     "traded": true,
+     "last_trade_date": "2026-02-24",
+     "open": 106.2,
+     "high": 106.32,
+     "low": 105.51,
+     "turnover_pln": 2750650.0
+    },
+    "FPC0332": {
+     "close": 96.44,
+     "vol": 769,
+     "traded": true,
+     "last_trade_date": "2026-02-24",
+     "open": 96.44,
+     "high": 96.44,
+     "low": 96.44,
+     "turnover_pln": 741620.0
+    }
+   }
+  },
+  "2026-02-25": {
+   "wibor": {
+    "on": 3.91,
+    "sw": 4.04,
+    "1m": 3.94,
+    "3m": 3.85,
+    "6m": 3.71,
+    "1y": 3.61,
+    "wibid": {
+     "on": 3.61,
+     "sw": 3.84,
+     "1m": 3.74,
+     "3m": 3.65,
+     "6m": 3.51
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-25",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.928,
+    "3m": 2.011,
+    "6m": 2.139,
+    "12m": 2.208,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.45,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-25",
+    "3m": 6.16,
+    "6m": 6.12,
+    "12m": 6.08,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2183,
+    "usd": 3.5785,
+    "chf": 4.6225,
+    "table": "038/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.1,
+     "vol": 5,
+     "traded": true,
+     "last_trade_date": "2026-02-25",
+     "open": 105.1,
+     "high": 105.1,
+     "low": 105.1,
+     "turnover_pln": 5270.0
+    },
+    "FPC0630": {
+     "close": 92.25,
+     "vol": 107,
+     "traded": true,
+     "last_trade_date": "2026-02-25",
+     "open": 92.18,
+     "high": 92.25,
+     "low": 92.18,
+     "turnover_pln": 100370.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.3,
+     "vol": 5,
+     "traded": true,
+     "last_trade_date": "2026-02-25",
+     "open": 85.3,
+     "high": 85.3,
+     "low": 85.3,
+     "turnover_pln": 4330.0
+    },
+    "FPC0235": {
+     "close": 106.33,
+     "vol": 1098,
+     "traded": true,
+     "last_trade_date": "2026-02-25",
+     "open": 106.2,
+     "high": 106.33,
+     "low": 106.01,
+     "turnover_pln": 1169990.0
+    },
+    "FPC0332": {
+     "close": 96.39,
+     "vol": 592,
+     "traded": true,
+     "last_trade_date": "2026-02-25",
+     "open": 96.6,
+     "high": 96.6,
+     "low": 96.39,
+     "turnover_pln": 570910.0
+    }
+   }
+  },
+  "2026-02-26": {
+   "wibor": {
+    "on": 3.92,
+    "sw": 4.02,
+    "1m": 3.9,
+    "3m": 3.84,
+    "6m": 3.71,
+    "1y": 3.62,
+    "wibid": {
+     "on": 3.63,
+     "sw": 3.82,
+     "1m": 3.7,
+     "3m": 3.64,
+     "6m": 3.51
+    },
+    "src": "https://gpwbenchmark.pl/dane-opoznione",
+    "src_row_date": "2026-02-26",
+    "src_fetched": "2026-11-26"
+   },
+   "euribor": {
+    "1m": 1.954,
+    "3m": 2.013,
+    "6m": 2.134,
+    "12m": 2.217,
+    "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-26)"
+   },
+   "pribor": {
+    "3m": 3.48,
+    "6m": 3.45,
+    "1y": 3.42,
+    "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+   },
+   "bubor": {
+    "date": "2026-02-26",
+    "3m": 6.15,
+    "6m": 6.11,
+    "12m": 6.05,
+    "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+   },
+   "nbp_fx": {
+    "eur": 4.2224,
+    "usd": 3.5792,
+    "chf": 4.6245,
+    "table": "039/A/NBP/2026",
+    "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-01-28/2026-02-27/"
+   },
+   "fpc": {
+    "FPC0229": {
+     "close": 105.0,
+     "vol": 239,
+     "traded": true,
+     "last_trade_date": "2026-02-26",
+     "open": 105.05,
+     "high": 105.05,
+     "low": 105.0,
+     "turnover_pln": 252080.0
+    },
+    "FPC0630": {
+     "close": 92.2,
+     "vol": 1290,
+     "traded": true,
+     "last_trade_date": "2026-02-26",
+     "open": 92.22,
+     "high": 92.26,
+     "low": 92.2,
+     "turnover_pln": 1210210.0
+    },
+    "FPC0231": {
+     "close": 105.25,
+     "vol": 0,
+     "traded": false,
+     "last_trade_date": "2026-02-05",
+     "last_trade_vol": 299,
+     "note": "GPW Catalyst daily stats show 0 session trades on C (closing = reference price); biznesradar has no row for C; close = last trade close on last_trade_date (not a C price)"
+    },
+    "FPC0733": {
+     "close": 85.3,
+     "vol": 2,
+     "traded": true,
+     "last_trade_date": "2026-02-26",
+     "open": 85.3,
+     "high": 85.3,
+     "low": 85.3,
+     "turnover_pln": 1730.0
+    },
+    "FPC0235": {
+     "close": 106.4,
+     "vol": 5023,
+     "traded": true,
+     "last_trade_date": "2026-02-26",
+     "open": 106.7,
+     "high": 106.7,
+     "low": 106.2,
+     "turnover_pln": 5360810.0
+    },
+    "FPC0332": {
+     "close": 96.46,
+     "vol": 1457,
+     "traded": true,
+     "last_trade_date": "2026-02-26",
+     "open": 96.6,
+     "high": 96.6,
+     "low": 96.46,
+     "turnover_pln": 1405500.0
+    }
+   }
+  }
+ },
+ "polstr": {
+  "2026-01-29": {
+   "polstr": 3.766,
+   "wiron": 3.25,
+   "polstr_comp": {
+    "1m": 3.70542,
+    "3m": 3.85033,
+    "6m": 4.25889
+   },
+   "polstr_ci": 124.7747116,
+   "wiron_comp": {
+    "1m": 3.32604,
+    "3m": 3.469,
+    "6m": 3.86775
+   },
+   "published_by_convention": "2026-01-30"
+  },
+  "2026-01-30": {
+   "polstr": 3.149,
+   "wiron": 2.388,
+   "polstr_comp": {
+    "1m": 3.71293,
+    "3m": 3.84491,
+    "6m": 4.2542
+   },
+   "polstr_ci": 124.78758562,
+   "wiron_comp": {
+    "1m": 3.32802,
+    "3m": 3.46071,
+    "6m": 3.86155
+   },
+   "published_by_convention": "2026-02-02"
+  },
+  "2026-02-02": {
+   "polstr": 3.617,
+   "wiron": 2.983,
+   "polstr_comp": {
+    "1m": 3.73495,
+    "3m": 3.83761,
+    "6m": 4.23445
+   },
+   "polstr_ci": 124.81988338,
+   "wiron_comp": {
+    "1m": 3.30828,
+    "3m": 3.43758,
+    "6m": 3.83702
+   },
+   "published_by_convention": "2026-02-03"
+  },
+  "2026-02-03": {
+   "polstr": 3.809,
+   "wiron": 3.357,
+   "polstr_comp": {
+    "1m": 3.73162,
+    "3m": 3.83558,
+    "6m": 4.23155
+   },
+   "polstr_ci": 124.83225252,
+   "wiron_comp": {
+    "1m": 3.29837,
+    "3m": 3.43292,
+    "6m": 3.83274
+   },
+   "published_by_convention": "2026-02-04"
+  },
+  "2026-02-04": {
+   "polstr": 3.778,
+   "wiron": 3.436,
+   "polstr_comp": {
+    "1m": 3.73434,
+    "3m": 3.82978,
+    "6m": 4.21712
+   },
+   "polstr_ci": 124.84527953,
+   "wiron_comp": {
+    "1m": 3.30044,
+    "3m": 3.42611,
+    "6m": 3.81757
+   },
+   "published_by_convention": "2026-02-05"
+  },
+  "2026-02-05": {
+   "polstr": 3.757,
+   "wiron": 3.342,
+   "polstr_comp": {
+    "1m": 3.74475,
+    "3m": 3.82416,
+    "6m": 4.21112
+   },
+   "polstr_ci": 124.85820188,
+   "wiron_comp": {
+    "1m": 3.30119,
+    "3m": 3.41897,
+    "6m": 3.8116
+   },
+   "published_by_convention": "2026-02-06"
+  },
+  "2026-02-06": {
+   "polstr": 3.707,
+   "wiron": 3.111,
+   "polstr_comp": {
+    "1m": 3.74551,
+    "3m": 3.81822,
+    "6m": 4.20571
+   },
+   "polstr_ci": 124.87105372,
+   "wiron_comp": {
+    "1m": 3.30276,
+    "3m": 3.41309,
+    "6m": 3.80625
+   },
+   "published_by_convention": "2026-02-09"
+  },
+  "2026-02-09": {
+   "polstr": 3.835,
+   "wiron": 3.252,
+   "polstr_comp": {
+    "1m": 3.75994,
+    "3m": 3.8105,
+    "6m": 4.19299
+   },
+   "polstr_ci": 124.90910005,
+   "wiron_comp": {
+    "1m": 3.29697,
+    "3m": 3.39865,
+    "6m": 3.78896
+   },
+   "published_by_convention": "2026-02-10"
+  },
+  "2026-02-10": {
+   "polstr": 3.822,
+   "wiron": 3.446,
+   "polstr_comp": {
+    "1m": 3.76266,
+    "3m": 3.79311,
+    "6m": 4.1915
+   },
+   "polstr_ci": 124.92222406,
+   "wiron_comp": {
+    "1m": 3.29585,
+    "3m": 3.37707,
+    "6m": 3.7864
+   },
+   "published_by_convention": "2026-02-11"
+  },
+  "2026-02-11": {
+   "polstr": 3.828,
+   "wiron": 3.372,
+   "polstr_comp": {
+    "1m": 3.76484,
+    "3m": 3.79382,
+    "6m": 4.17533
+   },
+   "polstr_ci": 124.93530495,
+   "wiron_comp": {
+    "1m": 3.3007,
+    "3m": 3.37813,
+    "6m": 3.77127
+   },
+   "published_by_convention": "2026-02-12"
+  },
+  "2026-02-12": {
+   "polstr": 3.828,
+   "wiron": 3.343,
+   "polstr_comp": {
+    "1m": 3.74836,
+    "3m": 3.785,
+    "6m": 4.16928
+   },
+   "polstr_ci": 124.94840776,
+   "wiron_comp": {
+    "1m": 3.28736,
+    "3m": 3.36404,
+    "6m": 3.76497
+   },
+   "published_by_convention": "2026-02-13"
+  },
+  "2026-02-13": {
+   "polstr": 3.835,
+   "wiron": 3.372,
+   "polstr_comp": {
+    "1m": 3.74775,
+    "3m": 3.78091,
+    "6m": 4.16336
+   },
+   "polstr_ci": 124.96151194,
+   "wiron_comp": {
+    "1m": 3.28183,
+    "3m": 3.35819,
+    "6m": 3.75976
+   },
+   "published_by_convention": "2026-02-16"
+  },
+  "2026-02-16": {
+   "polstr": 3.765,
+   "wiron": 3.276,
+   "polstr_comp": {
+    "1m": 3.74444,
+    "3m": 3.77884,
+    "6m": 4.155
+   },
+   "polstr_ci": 125.00090049,
+   "wiron_comp": {
+    "1m": 3.26831,
+    "3m": 3.3532,
+    "6m": 3.75099
+   },
+   "published_by_convention": "2026-02-17"
+  },
+  "2026-02-17": {
+   "polstr": 3.862,
+   "wiron": 3.548,
+   "polstr_comp": {
+    "1m": 3.74546,
+    "3m": 3.76297,
+    "6m": 4.15334
+   },
+   "polstr_ci": 125.01379442,
+   "wiron_comp": {
+    "1m": 3.26883,
+    "3m": 3.33341,
+    "6m": 3.74878
+   },
+   "published_by_convention": "2026-02-18"
+  },
+  "2026-02-18": {
+   "polstr": 3.861,
+   "wiron": 3.623,
+   "polstr_comp": {
+    "1m": 3.74937,
+    "3m": 3.75967,
+    "6m": 4.13239
+   },
+   "polstr_ci": 125.02702191,
+   "wiron_comp": {
+    "1m": 3.2776,
+    "3m": 3.32957,
+    "6m": 3.72664
+   },
+   "published_by_convention": "2026-02-19"
+  },
+  "2026-02-19": {
+   "polstr": 3.891,
+   "wiron": 3.7,
+   "polstr_comp": {
+    "1m": 3.74063,
+    "3m": 3.7564,
+    "6m": 4.12594
+   },
+   "polstr_ci": 125.04024737,
+   "wiron_comp": {
+    "1m": 3.26246,
+    "3m": 3.3273,
+    "6m": 3.72092
+   },
+   "published_by_convention": "2026-02-20"
+  },
+  "2026-02-20": {
+   "polstr": 3.885,
+   "wiron": 3.726,
+   "polstr_comp": {
+    "1m": 3.74474,
+    "3m": 3.7538,
+    "6m": 4.12021
+   },
+   "polstr_ci": 125.053577,
+   "wiron_comp": {
+    "1m": 3.27297,
+    "3m": 3.32588,
+    "6m": 3.71595
+   },
+   "published_by_convention": "2026-02-23"
+  },
+  "2026-02-23": {
+   "polstr": 3.841,
+   "wiron": 3.644,
+   "polstr_comp": {
+    "1m": 3.74965,
+    "3m": 3.75468,
+    "6m": 4.10725
+   },
+   "polstr_ci": 125.09350849,
+   "wiron_comp": {
+    "1m": 3.31259,
+    "3m": 3.33365,
+    "6m": 3.70621
+   },
+   "published_by_convention": "2026-02-24"
+  },
+  "2026-02-24": {
+   "polstr": 3.694,
+   "wiron": 3.52,
+   "polstr_comp": {
+    "1m": 3.75289,
+    "3m": 3.74866,
+    "6m": 4.10625
+   },
+   "polstr_ci": 125.10667244,
+   "wiron_comp": {
+    "1m": 3.32326,
+    "3m": 3.33039,
+    "6m": 3.70625
+   },
+   "published_by_convention": "2026-02-25"
+  },
+  "2026-02-25": {
+   "polstr": 3.728,
+   "wiron": 3.481,
+   "polstr_comp": {
+    "1m": 3.75147,
+    "3m": 3.74418,
+    "6m": 4.08871
+   },
+   "polstr_ci": 125.11933392,
+   "wiron_comp": {
+    "1m": 3.32954,
+    "3m": 3.32912,
+    "6m": 3.68797
+   },
+   "published_by_convention": "2026-02-26"
+  },
+  "2026-02-26": {
+   "polstr": 3.755,
+   "wiron": 3.474,
+   "polstr_comp": {
+    "1m": 3.73924,
+    "3m": 3.74,
+    "6m": 4.08206
+   },
+   "polstr_ci": 125.13211323,
+   "wiron_comp": {
+    "1m": 3.32818,
+    "3m": 3.32728,
+    "6m": 3.68157
+   },
+   "published_by_convention": "2026-02-27"
+  }
+ },
+ "notes": [
+  "WIBOR: GPW Benchmark dane-opoznione (fetched 2026-11-26); rolling table still reaches back to 2026-01-02; only rows dated C extracted. Cross-check: Santander/Erste Codziennik issued C+1 (erste.pl regulation_file_server ids 169019,169025,169027,169031,169034,169043,169046,169047,169049,169051,169057,169060,169080,169081,169083,169087,169091,169120,169121,169122 for C=30 Jan,2,3,4,5,6,9,10,11,12,13,16,17,18,19,20,23,24,25,26 Feb), table 'Stawki WIBOR' labelled with C (label checked on every issue): ON/SW/1M/3M/6M match on all 20 dates; 1Y not in that table (single source). WIBID also stored. 30 Jan ON 3.82 (-20bp d/d, month-end) is in both sources.",
+  "POLSTR/WIRON keyed by index date (Data wskaznika) from gpwbenchmark.pl/dane_opoznione, all 21 business index dates 2026-01-29..2026-02-26 present. published_by_convention = next Polish business day (d+1 rule as given, not verified with timestamps); index date 2026-02-26 is published on 2026-02-27, i.e. after the last C. A close-of-C report can see index dates only up to the previous business day. 2026-01-29 values identical to the 2026-01-H2 file. Month-end dip is in the source, not an error: index 30 Jan POLSTR 3.149 / WIRON 2.388 (29 Jan 3.766/3.250), index 2 Feb WIRON 2.983.",
+  "EURIBOR: Bundesbank BBIG1 (published with 1 working-day delay; values dated C; 'Stand vom 26.11.2026'). Single source, as in earlier runs. 29 Jan (outside this C set) identical to the 2026-01-H2 file.",
+  "PRIBOR: CNB year.txt 2026, all C are CZ fixing days.",
+  "BUBOR: MNB bubor2.xls sheet 2026 (saved 2026-11-26); every C is a HU fixing day, so date=C. Step down on 25 Feb (3M 6.25->6.16, 6M 6.22->6.12, 12M 6.17->6.08) follows the MNB 25bp base-rate cut to 6.25% on 24 Feb (reported in Erste Codziennik 25 Feb); genuine, not a data error.",
+  "NBP fx: api.nbp.pl table A 020..039/A/NBP/2026. EUR/USD fixings cross-checked vs Codziennik 'Poprzednia sesja na rynku FX' tables (labelled C) on all 20 dates: match. CHF single source (the Codziennik CHFPLN figure is a morning spot quote, not the fixing, and was stale at 4.5236 in the 2-6 Feb issues).",
+  "Catalyst: PRIMARY = official GPW Catalyst daily statistics gpwcatalyst.pl/pub/CATALYST/statystyki/statystyki_dzienne/catalyst_YYYYMMDD.xls (sheet 'instrumenty'; header date = C in all 20 files; internal last-saved time on C between 17:27 and 18:59, i.e. point-in-time; catalyst_20260217.xls has HTTP Last-Modified 2026-02-18 08:08 UTC but internal save 2026-02-17 17:28). biznesradar.pl notowania-historyczne used as cross-check: open/high/low/close/vol identical for all 93 traded bond-days, every no-trade day (official 0 session trades, closing = reference price) is a missing biznesradar row, and last-trade dates from the official files alone agree with biznesradar. No block (pakietowe) or off-session FPC trades on any C.",
+  "Catalyst units: official nominal = 1,000 PLN per bond. vol = number of bonds. turnover_pln = official 'Wartosc obrotu' (thous. PLN x 1000, includes accrued interest). biznesradar 'Obrot' is only vol x price(%) and is 10.00-10.23x smaller.",
+  "Catalyst traded=false (27 bond-days): vol=0, close = last trade close on last_trade_date (not a C price; equals official closing/reference price on C). FPC0231 traded only 4 Feb (2 bonds) and 5 Feb (299 bonds): no trade 30 Jan-3 Feb (last 28 Jan, 105.50) and 6-26 Feb (last 5 Feb, 105.25), 14 straight sessions stale by 26 Feb. FPC0229 no trade 10-11 Feb (last 9 Feb); FPC0630 no trade 4 Feb (last 3 Feb) and 17 Feb (last 16 Feb); FPC0733 no trade 6, 11, 18, 20, 23 Feb (last 5, 10, 17, 19, 19 Feb). FPC0235 and FPC0332 traded on every C.",
+  "Catalyst thin/suspicious: FPC0229 2 Feb 2 trades / 2 bonds, open=high 106.70 vs close 104.86 (one off-market print ~1.9 pts above surrounding 104.8-104.9); FPC0630 9 Feb open=high 93.05 then close 91.61 (178 bonds) and 10 Feb low 90.56 / close 91.95 (241 bonds) - ~1.4 pt intraday swings vs 91.4-92.4 range elsewhere; FPC0733 30 Jan open 84.59 / high 85.00 / close 84.00 on 36 bonds, 12-13 Feb close 83.60 -> 84.38 on 80 and 3 bonds, many 1-trade days of 2-6 bonds (13, 19, 25, 26 Feb); FPC0235 9 Feb 11,177 bonds (11.84m PLN, 31 trades; ~12x median) and 26 Feb 5,023 bonds; FPC0332 17 Feb 5,100 and 18 Feb 3,457 bonds (~14x/10x median). Context: FPC0229/FPC0231/FPC0235 have a 3 Feb coupon date (maturities 3 Feb 2029/2031/2035); prices are clean, no coupon jump seen.",
+  "No gaps: every requested field for every C has a value; no interpolation or memory used."
+ ]
+}

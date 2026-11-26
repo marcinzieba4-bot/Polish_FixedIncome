@@ -1,0 +1,86 @@
+{
+ "_source": "GPW Benchmark 'Portfele obligacji' communique for the periodic change of 30 Jan 2026 (holdings and statistics as of 27 Jan 2026; scheduled publication 28 Jan 2026). The PDF now served carries 2 Feb 2026 creation metadata (re-upload); every unit change matches MoF settlements up to 26 Jan 2026 and the 28 Jan auction (settled 30 Jan) is excluded, so the content reflects information available by 28 Jan.",
+ "source_url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_01_28_.pdf",
+ "effective": "2026-01-30",
+ "next_rebalance": "2026-02-27",
+ "official_stats_asof": "2026-01-27",
+ "indices": {
+  "GPWB-B1Y3Y": {
+   "label": "GPWB 1-3Y",
+   "rule": "Fixed-rate POLGBs with 1-3 years to maturity",
+   "official": {
+    "ytm": 3.47,
+    "mac_dur": 1.87,
+    "mod_dur": 1.81,
+    "maturity": 1.95,
+    "coupon": 3.57,
+    "n": 5,
+    "value_mln": 204618.26
+   },
+   "units": {
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "WS0428": 39016939,
+    "OK0128": 38335929,
+    "PS0527": 32829594
+   }
+  },
+  "GPWB-B1Y4Y": {
+   "label": "GPWB 1-4Y",
+   "rule": "Fixed-rate POLGBs with 1-4 years to maturity",
+   "official": {
+    "ytm": 3.76,
+    "mac_dur": 2.66,
+    "mod_dur": 2.56,
+    "maturity": 2.83,
+    "coupon": 4.12,
+    "n": 9,
+    "value_mln": 439640.24
+   },
+   "units": {
+    "WS0429": 57196120,
+    "PS0729": 57073247,
+    "DS1029": 58755701,
+    "PS0130": 53973705,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "WS0428": 39016939,
+    "OK0128": 38335929,
+    "PS0527": 32829594
+   }
+  },
+  "TBSP.Index": {
+   "label": "TBSP.Index",
+   "rule": "Fixed-rate POLGBs traded on Treasury BondSpot Poland (broad market)",
+   "official": {
+    "ytm": 4.11,
+    "mac_dur": 3.93,
+    "mod_dur": 3.76,
+    "maturity": 4.4,
+    "coupon": 3.9,
+    "n": 18,
+    "value_mln": 868981.33
+   },
+   "units": {
+    "DS1033": 63803227,
+    "PS0730": 66710869,
+    "WS0429": 57196120,
+    "PS0729": 57073247,
+    "DS1029": 58755701,
+    "DS1034": 55249292,
+    "PS0130": 53973705,
+    "DS0432": 61786661,
+    "PS0728": 45507599,
+    "DS1030": 57010574,
+    "DS0727": 44403632,
+    "PS0131": 43883049,
+    "DS1035": 42101545,
+    "WS0428": 39016939,
+    "OK0128": 38335929,
+    "PS0527": 32829594,
+    "PS1026": 27324165,
+    "OK0127": 19284162
+   }
+  }
+ }
+}

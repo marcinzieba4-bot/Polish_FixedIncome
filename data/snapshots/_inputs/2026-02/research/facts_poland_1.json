@@ -1,0 +1,1514 @@
+{
+ "mof_ops": [
+  {
+   "date": "2026-02",
+   "type": "monthly_plan",
+   "published": "2026-01-30 (MoF page dated 30.01.2026; PDF created 12:59 CET; referenced by PAP 15:18)",
+   "window_report_date": "2026-02-02",
+   "auctions": [
+    {
+     "date": "2026-02-11",
+     "settlement": "2026-02-13",
+     "series": [
+      "OK0128",
+      "WZ0930",
+      "PS0131",
+      "NZ0331",
+      "DS1035",
+      "possible IZ and other series"
+     ],
+     "offer_mn": [
+      7000,
+      12000
+     ]
+    },
+    {
+     "date": "2026-02-18",
+     "settlement": "2026-02-20",
+     "series": [
+      "OK0128",
+      "PS0131",
+      "NZ0331",
+      "DS1035",
+      "possible IZ and other series"
+     ],
+     "offer_mn": [
+      7000,
+      12000
+     ]
+    },
+    {
+     "date": "2026-02-25",
+     "settlement": "2026-02-27",
+     "series": [
+      "OK0128",
+      "WZ0930",
+      "PS0131",
+      "NZ0331",
+      "DS1035",
+      "possible IZ and other series"
+     ],
+     "offer_mn": [
+      7000,
+      12000
+     ]
+    }
+   ],
+   "switch_auctions": "none planned in February",
+   "tbill_auctions": [
+    {
+     "date": "2026-02-06",
+     "settlement": "2026-02-10",
+     "type": "33-week",
+     "maturity": "2026-09-29",
+     "offer_mn": [
+      2000,
+      4000
+     ]
+    }
+   ],
+   "rules": "final offer 2 days before each auction; additional sale after each auction at minimum accepted price",
+   "retail_offer": "OTS0526 2.50% fixed; ROR0227 ref+0.00% (4.25% 1st period); DOR0228 ref+0.15% (4.40%); TOS0229 4.65% fixed; COI0230 CPI+1.50% (5.00%); EDO0236 CPI+2.00% (5.60%); ROS0232 CPI+2.00% (5.20%); ROD0238 CPI+2.50% (5.85%)",
+   "note": "Only the 11 Feb auction (offer 9 Feb, results 11 Feb) falls inside the windows; 18/25 Feb offers and results are outside.",
+   "src": [
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-lutym-2026-roku",
+    "https://www.gov.pl/attachment/be1ae193-e472-4217-8657-fcedd2941bae",
+    "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700"
+   ]
+  },
+  {
+   "date": "2026-02-06",
+   "type": "tbill_sale",
+   "settlement": "2026-02-10",
+   "offer_mn": [
+    2000,
+    4000
+   ],
+   "announced": "monthly plan 2026-01-30; final offer 2-4bn (time n/a, by 6 Feb 08:47 per Millennium; PAP 09:50 'zapowiadana podaz 2-4 mld zl')",
+   "results_published": "2026-02-06 (MoF 11:30 slot per PAP calendar; PAP 16:55 article)",
+   "lines": [
+    {
+     "series": "33-week T-bill",
+     "isin": "PL0000006201 (same line as the 36-week bill of 16 Jan)",
+     "maturity": "2026-09-29",
+     "sold_mn": 2567.2,
+     "noncomp_sold_mn": 385.2,
+     "demand_mn": 4377.0,
+     "noncomp_demand_mn": 500.0,
+     "avg_price": 97.786,
+     "min_price": 97.786,
+     "avg_yield": 3.529
+    }
+   ],
+   "additional_sale": {
+    "total_mn": 205.0,
+    "offered_mn": 414.0,
+    "price": 97.786,
+    "yield": 3.529,
+    "published": "2026-02-06 (PAP Skrot 17:00)"
+   },
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-i-obligacje-stabilne-przyszly-tydzien-pod-znakiem-cpi",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260206",
+    "https://www.gov.pl/attachment/31ac439a (MoF T-bill transaction database 'Bony_Skarbowe', downloaded 2026-11-26) - rows 2026020601/02 used; sold/demand/yield/additional sale match PAP of 6 Feb exactly"
+   ]
+  },
+  {
+   "date": "2026-02-11",
+   "type": "sale",
+   "settlement": "2026-02-13",
+   "offer_mn": [
+    8000,
+    12000
+   ],
+   "planned_offer_in_monthly_plan_mn": [
+    7000,
+    12000
+   ],
+   "monthly_plan_published": "2026-01-30",
+   "announced": "2026-02-09 (MoF 15:00 slot per PAP week-ahead calendar; PAP Skrot 9 Feb 17:00; Millennium 10 Feb)",
+   "series_offered": [
+    "OK0128",
+    "WZ0930",
+    "PS0131",
+    "NZ0331",
+    "IZ0831",
+    "DS1033",
+    "DS1035",
+    "WS0437"
+   ],
+   "results_published": "2026-02-11 (auction 11:30 per PAP calendar; PAP 16:46 article; PAP Skrot 17:01)",
+   "auction_format": "uniform price; avg price = min accepted price; sold_mn includes non-competitive bids",
+   "total_sold_mn": 11871.7,
+   "total_demand_mn": 25839.0,
+   "bid_to_cover": 2.18,
+   "lines": [
+    {
+     "series": "OK0128",
+     "isin": "PL0000118089",
+     "type": "zero (mat 2028-01-25)",
+     "sold_mn": 0,
+     "noncomp_sold_mn": 0,
+     "demand_mn": 40,
+     "avg_price": null,
+     "min_price": null,
+     "avg_yield": null,
+     "note": "no bids accepted"
+    },
+    {
+     "series": "WZ0930",
+     "isin": "PL0000118170",
+     "type": "floater (WIBOR6M), mat 2030-09-25",
+     "sold_mn": 725,
+     "noncomp_sold_mn": 0,
+     "demand_mn": 1515,
+     "avg_price": 97.913,
+     "min_price": 97.913,
+     "avg_yield": null
+    },
+    {
+     "series": "PS0131",
+     "isin": "PL0000118519",
+     "type": "fixed 4.50%, mat 2031-01-25",
+     "sold_mn": 3836,
+     "noncomp_sold_mn": 100,
+     "demand_mn": 6132,
+     "avg_price": 100.87,
+     "min_price": 100.87,
+     "avg_yield": 4.298
+    },
+    {
+     "series": "NZ0331",
+     "isin": "PL0000118774",
+     "type": "floater (POLSTR compounded), mat 2031-03-25",
+     "sold_mn": 571,
+     "noncomp_sold_mn": 86,
+     "demand_mn": 7867.8,
+     "avg_price": 95.822,
+     "min_price": 95.822,
+     "avg_yield": null
+    },
+    {
+     "series": "IZ0831",
+     "isin": "PL0000117743",
+     "type": "CPI-linked 1.75% real, mat 2031-08-25",
+     "sold_mn": 805,
+     "noncomp_sold_mn": 5,
+     "demand_mn": 3289,
+     "avg_price": 97.287,
+     "min_price": 97.287,
+     "avg_yield": 2.276,
+     "yield_note": "real yield"
+    },
+    {
+     "series": "DS1033",
+     "isin": "PL0000115291",
+     "type": "fixed 6.00%, mat 2033-10-25",
+     "sold_mn": 1401,
+     "noncomp_sold_mn": 211,
+     "demand_mn": 1691.5,
+     "avg_price": 107.97,
+     "min_price": 107.97,
+     "avg_yield": 4.732
+    },
+    {
+     "series": "DS1035",
+     "isin": "PL0000118188",
+     "type": "fixed 5.00%, mat 2035-10-25",
+     "sold_mn": 3926,
+     "noncomp_sold_mn": 590,
+     "demand_mn": 4686,
+     "avg_price": 99.685,
+     "min_price": 99.685,
+     "avg_yield": 5.035
+    },
+    {
+     "series": "WS0437",
+     "isin": "PL0000104857",
+     "type": "fixed 5.00%, mat 2037-04-25",
+     "sold_mn": 607.729,
+     "noncomp_sold_mn": 78,
+     "demand_mn": 617.729,
+     "avg_price": 98.71,
+     "min_price": 98.71,
+     "avg_yield": 5.148
+    }
+   ],
+   "additional_sale": {
+    "date": "2026-02-11",
+    "settlement": "2026-02-13",
+    "total_mn": 1379.0,
+    "price": "auction min price per series",
+    "lines": {
+     "OK0128": null,
+     "WZ0930": 45.0,
+     "PS0131": 0,
+     "NZ0331": 389.8,
+     "IZ0831": 726.2,
+     "DS1033": 0,
+     "DS1035": 106.0,
+     "WS0437": 112.0
+    },
+    "published": "2026-02-11 (PAP Skrot 17:01: 'WZ0930, NZ0331, IZ0831, DS1035 i WS0437 za lacznie 1.379,0 mln zl')"
+   },
+   "total_incl_additional_mn": 13250.7,
+   "db_confirmation": "Per-series figures from the MoF database rows 2026021101-15. Same-day release confirmed by dated sources: totals 11,871.7 sold / 25,839.0 demand (PAP 11 Feb 16:46: 11.9bn / 25.8bn; PKO 12 Feb: 11.87bn); additional sale 1,379.0 with exactly the five series listed by PAP 11 Feb; seven series sold with OK0128 unsold and NZ0331 demand ~7.9bn (Millennium 12 Feb 08:46). Per-series prices/yields themselves not independently quoted by a dated source found here.",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF 'Obligacje_Hurtowe.xlsm', downloaded 2026-11-26)",
+    "https://strefainwestorow.pl/wiadomosci/20260211/dzien-na-fxfi-pln-moze-testowac-420eur-rentownosci-10-letnich-spw-spasc-ponizej",
+    "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260209/skrot-wiadomosci-poniedzialek-9-lutego-1700",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260212",
+    "https://cdn-netpr.pl/file/attachment/2945642/38/pko_dziennik_ekonomiczny_2026_02_12.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL"
+   ]
+  },
+  {
+   "date": "n/a",
+   "type": "switch_or_buyback",
+   "detail": "No switch or buyback auction held or announced 30 Jan-12 Feb. February plan (30 Jan): 'switch auctions are not planned'. MoF database shows no wholesale operations 29 Jan-12 Feb other than the 11 Feb sale (+ additional sale). Q1 plan (31 Dec 2025) envisaged one switch auction in Q1 - not in February.",
+   "src": [
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-lutym-2026-roku",
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF 'Obligacje_Hurtowe.xlsm', downloaded 2026-11-26)",
+    "https://www.gov.pl/web/finanse/plan-finansowania-potrzeb-pozyczkowych-budzetu-panstwa-w-pierwszym-kwartale-2026-roku"
+   ]
+  },
+  {
+   "date": "2026-Q1",
+   "type": "plan_status",
+   "detail": "Q1 plan (31 Dec 2025): 8 sale auctions, PLN 75-100bn. Sold so far incl. additional sales: Jan 41.6bn (3 auctions, per PKO/PAP) + 11 Feb 13.25bn = ~54.8bn after 4 of 8 auctions (two more in Feb, outside windows). T-bills: 6 Feb 33-week 2.77bn incl. additional. Financing of 2026 gross needs: ~30% (29 Jan) -> ~33% (11 Feb, MoF to PAP). Budget accounts ~183.4bn end-Jan (133.8bn end-Dec). EUR 3.25bn syndication (8 Jan) and JPY 211.6bn (priced 6 Feb, settles 13 Feb) add FX funding.",
+   "src": [
+    "https://www.gov.pl/web/finanse/plan-finansowania-potrzeb-pozyczkowych-budzetu-panstwa-w-pierwszym-kwartale-2026-roku",
+    "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260211/dzien-na-fxfi-pln-moze-testowac-420eur-rentownosci-10-letnich-spw-spasc-ponizej",
+    "https://strefainwestorow.pl/wiadomosci/20260206/stan-srodkow-na-rachunkach-budzetowych-na-koniec-stycznia-wyniosl-ok-1834-mld"
+   ]
+  },
+  {
+   "date": "2026-02-06",
+   "type": "foreign_issue_JPY",
+   "announced": "2026-02-02 (MoF: Daiwa, Nomura, SMBC mandated for benchmark JPY bonds; Bloomberg: multi-tranche Samurai)",
+   "priced": "2026-02-06 (MoF communique; reported by PAP 09:50)",
+   "settlement": "2026-02-13",
+   "total_nominal": "JPY 211.6bn (~PLN 4.8bn)",
+   "tranches": [
+    {
+     "tenor": "3Y",
+     "nominal_jpy_bn": 116.9,
+     "maturity": "2029-02-13",
+     "spread_bp_over_swap": 50,
+     "yield": 1.88
+    },
+    {
+     "tenor": "5Y",
+     "nominal_jpy_bn": 62.7,
+     "maturity": "2031-02-13",
+     "spread_bp_over_swap": 65,
+     "yield": 2.22
+    },
+    {
+     "tenor": "10Y",
+     "nominal_jpy_bn": 11.8,
+     "maturity": "2036-02-13",
+     "spread_bp_over_swap": 95,
+     "yield": 2.9
+    },
+    {
+     "tenor": "20Y",
+     "nominal_jpy_bn": 20.2,
+     "maturity": "2046-02-13",
+     "spread_bp_over_swap": 105,
+     "yield": 3.65
+    }
+   ],
+   "issue_price": 100.0,
+   "bookrunners": [
+    "Daiwa",
+    "Nomura",
+    "SMBC"
+   ],
+   "rating": "JCR 'A' (6 Feb)",
+   "investors": "Japanese regional banks, insurers, investment funds; foreign institutions",
+   "detail": "Largest-ever MoF JPY transaction. No USD (SEC USD 10bn shelf filed 20 Jan - pre-window), EUR or CHF issue in the windows.",
+   "src": [
+    "https://www.gov.pl/web/finanse/emisja-obligacji-jpy",
+    "https://www.gov.pl/web/finanse/wycena-obligacji-w-jpy5",
+    "https://strefainwestorow.pl/wiadomosci/20260202/skrot-wiadomosci-poniedzialek-2-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-pod-wplywem-geopolityki-retoryka-nbp-moze-umocnic-spw"
+   ]
+  },
+  {
+   "date": "2026-01-30/2026-02-06",
+   "type": "debt_liquidity_stats",
+   "detail": "Non-residents' domestic SPW holdings Dec +4.6bn to 174.3bn (11.8%) [30 Jan]; Dec secondary turnover 1,544.8bn [30 Jan]; budget accounts ~180bn est. [30 Jan] -> 183.4bn actual end-Jan [6 Feb]; remaining 2026 redemptions 202.0bn (wholesale 94.70bn, retail 50.2bn, T-bills 32.4bn, foreign 24.7bn); liquidity consolidation 133.0bn; avg maturity domestic 4.18y, total 5.72y [6 Feb]; retail sales Jan 5.76bn [11 Feb].",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260130/w-grudniu-udzial-inwestorow-zagranicznych-w-polskich-obligacjach-wzrosl-o-46",
+    "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260211/sprzedaz-obligacji-detalicznych-w-styczniu-wyniosla-576-mld-zl-mf"
+   ]
+  }
+ ],
+ "new_series": [
+  {
+   "ticker": "Poland JPY bonds Feb-2029 / Feb-2031 / Feb-2036 / Feb-2046 (Samurai, 4 tranches)",
+   "isin": "NOT FOUND",
+   "coupon": "issued at 100% -> coupons presumably equal to yields 1.88% / 2.22% / 2.90% / 3.65% (coupon rate and frequency not stated in MoF communique)",
+   "maturity": "2029-02-13 / 2031-02-13 / 2036-02-13 / 2046-02-13",
+   "size": "JPY 116.9bn / 62.7bn / 11.8bn / 20.2bn",
+   "pricing": "swap +50 / +65 / +95 / +105bp",
+   "type": "foreign-currency (JPY) fixed-rate bonds",
+   "first_offered": "2026-02-06 (priced)",
+   "announced": "mandate 2026-02-02",
+   "settlement": "2026-02-13",
+   "src": [
+    "https://www.gov.pl/web/finanse/emisja-obligacji-jpy",
+    "https://www.gov.pl/web/finanse/wycena-obligacji-w-jpy5",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700"
+   ]
+  },
+  {
+   "ticker": "NOT NEW (checked)",
+   "note": "No new domestic MoF series first offered 30 Jan-12 Feb. 11 Feb offer: IZ0831 (PL0000117743, CPI-linked 1.75%, 25 Aug 2031; first sold 9 Jan 2025; last op 17 Dec 2025), DS1033 (PL0000115291, 6.00%, 25 Oct 2033; first 2022; last sale 9 Jan 2026), WS0437 (PL0000104857, 5.00%, 25 Apr 2037; first 2007; last sale 26 Nov 2025) are re-openings; OK0128/WZ0930/PS0131/NZ0331/DS1035 regular lines (NZ0331 first sold 9 Jan 2026). 6 Feb 33-week bill = re-opening of PL0000006201 (mat 29 Sep 2026) first sold 16 Jan.",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF 'Obligacje_Hurtowe.xlsm', downloaded 2026-11-26)",
+    "https://www.gov.pl/attachment/31ac439a (MoF T-bill transaction database 'Bony_Skarbowe', downloaded 2026-11-26)"
+   ]
+  },
+  {
+   "ticker": "FWA0931 (BGK, FWSZ) - update",
+   "note": "30 Jan: BGK (P. Marczak) confirmed FWA0931 PLN 1bn was a private placement for the Armed Forces Support Fund; coupon, maturity date and ISIN still NOT FOUND (bgk.pl 403).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700"
+  }
+ ],
+ "bgk": [
+  {
+   "date": "2026-01-29/30",
+   "fund": "FWSZ (Armed Forces Support Fund)",
+   "type": "private placement",
+   "series": "FWA0931",
+   "sold_mn": 1000,
+   "published": "2026-01-30 (PAP Skrot 17:03; BGK's P. Marczak to PAP Biznes)",
+   "window_report_date": "2026-02-02",
+   "note": "BGK open to further PLN private placements for FWSZ at acceptable cost. Terms NOT FOUND.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700"
+  },
+  {
+   "date": "2026-02-12",
+   "fund": "FPC (COVID-19 Response Fund)",
+   "type": "sale",
+   "announced": "2026-02-10 (BGK communique; 15:00 slot per PAP calendar; PAP Skrot 17:00)",
+   "offer": "FPC0229, FPC0231, FPC0332, FPC0235; minimum supply PLN 1.0bn",
+   "results_published": "2026-02-12 (auction 12:00; PAP Skrot 17:01)",
+   "window_report_date": "2026-02-13",
+   "sold_mn": 3394,
+   "demand_mn": 6346,
+   "additional_sale_mn": 754.6,
+   "per_series": "NOT FOUND (bgk.pl 403; no per-series dated source)",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260210/skrot-wiadomosci-wtorek-10-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260209/tydzien-w-kraju-cpi-za-i-pkb-za-iv-kw-wyniki-bankow-aukcja-mf-wyrok-ws-wibor"
+   ]
+  },
+  {
+   "date": "2026-01-30",
+   "fund": "Fundusz Doplat (BGK)",
+   "type": "budget transfer",
+   "detail": "PLN 4bn transferred to BGK's Fundusz Doplat for social housing (FinMin Domanski).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700"
+  },
+  {
+   "date": "2026-02-11/12",
+   "fund": "FIZB (SAFE instrument, to be managed by BGK)",
+   "type": "legislation",
+   "detail": "11 Feb: govt adopted FIZB bill; 12 Feb: latest draft lets FIZB issue bonds; SAFE loans EUR 43.7bn, first 15% (~EUR 6.6bn) with agreement planned for March (Santander).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700",
+    "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "published": "2026-01-30 08:06",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "PKO Dziennik 30 Jan: expects 2025 GDP 3.5% (consensus 3.6%), implying Q4 3.5-3.8% (nowcast at top of range); EURPLN ~4.21, stable FI trading; geopolitical risk (Iran) main destabiliser.",
+   "src": "https://cdn-netpr.pl/file/attachment/2941478/70/pko_dziennik_ekonomiczny_2026_01_30.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-01-30 08:27",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "Santander/Erste Codziennik 30 Jan: forecasts 2025 GDP 3.6% and Q4 3.9% y/y; ESI for Poland rose to 103.2 (highest since Dec 2021); official Q4 GDP flash due 12 Feb.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260130082718/download?id=169016&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-01-30 08:37",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "Millennium daily 30 Jan: forecasts 2025 GDP 3.6% (Q4 3.9% y/y); expects no material market impact; EURPLN should not exceed 4.2250 intraday. Prior close: 2Y 3.54, 5Y 4.39, 10Y 5.07; IRS 2Y 3.57, 5Y 3.80, 10Y 4.24.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260130",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-01-30 10:01",
+   "window_report_date": "2026-02-02",
+   "topic": "macro",
+   "text": "GUS 2025 GDP flash: +3.6% (2024: 3.0%). Consensus 3.6% per PKO calendar (Parkiet), 3.5% per Millennium calendar; PKO forecast 3.5%. Components: total consumption 3.9%, private consumption 3.7%, gross fixed investment 4.2% (2024: -0.9%), domestic demand 4.0%, GVA 3.0% (industry 3.0%, construction 1.7%). Contributions (pp): domestic demand 3.9, consumption 3.1 (households 2.1), investment 0.7; implied net exports about -0.3pp.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260130/pkb-polski-wzrosl-w-2025-r-o-36-proc-wobec-wzrostu-o-30-proc-w-2024-szacunek",
+    "https://strefainwestorow.pl/wiadomosci/20260130/skala-wplywu-poszczegolnych-skladowych-na-pkb-w-2025-r-gus",
+    "https://cdn-netpr.pl/file/attachment/2942185/82/pko_dziennik_ekonomiczny_2026_02_02.pdf",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260202"
+   ],
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-01-30 10:10",
+   "window_report_date": "2026-02-02",
+   "topic": "macro",
+   "text": "GUS: population at end-2025 fell by 157k y/y to 37.332m (births 238k, -14k y/y).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/liczba-ludnosci-polski-na-koniec-2025-spadla-o-157-tys-rdr-do-37332-mln-gus",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 10:29",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "PAP opinion on 2025 GDP: Pekao (X) - Q4 implied 4.0-4.2%, consumption and investment both >4% at year-end, '4-handle' in every quarter of 2026. PKO BP (X) - practically in line; private consumption 3.7%, investment 4.2%, net exports -0.3pp; 2026 GDP 3.7% with investment ~+12%. ING (X) - exactly as forecast; investment contributed 0.7pp; 2026 to be better.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/w-2026-r-nastapi-dalsze-przyspieszenie-pkb-niewykluczona-czworka-z-przodu",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 11:02",
+   "window_report_date": "2026-02-02",
+   "topic": "macro",
+   "text": "Eurostat: Polish s.a. unemployment rate (LFS basis) 3.2% in December, unchanged (576k unemployed).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/stopa-bezrobocia-w-grudniu-w-polsce-wyniosla-32-proc-eurostat",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 15:08",
+   "window_report_date": "2026-02-02",
+   "topic": "MoF",
+   "text": "MoF: non-resident holdings of domestic SPW rose by PLN 4.6bn in December to 174.3bn (share 11.8% vs 11.7%); total domestic SPW debt +24.3bn to 1,470.7bn; banks incl. NBP 758.6bn (51.6%), domestic non-banks 537.9bn (36.6%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/w-grudniu-udzial-inwestorow-zagranicznych-w-polskich-obligacjach-wzrosl-o-46",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 15:18",
+   "window_report_date": "2026-02-02",
+   "topic": "MoF",
+   "text": "Deputy FinMin J. Drop (comment to the February supply plan): budget accounts expected at about PLN 180bn at end-January (133.8bn at end-December) - i.e. large liquidity cushion/prefinancing.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/stan-srodkow-na-rachunkach-budzetowych-na-koniec-stycznia-wyniesie-ok-180-mld",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 15:18",
+   "window_report_date": "2026-02-02",
+   "topic": "MoF",
+   "text": "MoF February 2026 supply plan (page dated 30.01; PDF created 12:59): three sale auctions - 11 Feb (settl. 13 Feb) OK0128/WZ0930/PS0131/NZ0331/DS1035 + possible IZ and other series, PLN 7-12bn; 18 Feb (settl. 20 Feb) OK0128/PS0131/NZ0331/DS1035 + possible IZ/other, 7-12bn; 25 Feb (settl. 27 Feb) OK0128/WZ0930/PS0131/NZ0331/DS1035 + possible IZ/other, 7-12bn. Final offer 2 days before each auction; additional sale at the minimum accepted price. No switch auctions planned. One T-bill auction: 6 Feb (settl. 10 Feb) 33-week bills maturing 29 Sep 2026, 2-4bn. Retail: ROR 4.25%, DOR 4.40%, TOS 4.65% fixed, COI 5.00%, EDO 5.60% first-period coupons.",
+   "src": [
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-lutym-2026-roku",
+    "https://www.gov.pl/attachment/be1ae193-e472-4217-8657-fcedd2941bae",
+    "https://strefainwestorow.pl/wiadomosci/20260130/stan-srodkow-na-rachunkach-budzetowych-na-koniec-stycznia-wyniesie-ok-180-mld",
+    "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700"
+   ],
+   "time_basis": "MoF page date + PDF creation 12:59 CET; PAP references it by 15:18"
+  },
+  {
+   "published": "2026-01-30 17:00",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "PAP close (M. Budzicki, PKO BP): SPW yields -5bp on the week along the whole curve (2Y ~3.55%, 10Y <5.10%); support from expected cuts, strong domestic institutional demand (28 Jan auction); he expects a 25bp NBP cut to 3.75% on Wednesday 4 Feb, which could shift the curve lower, but room for further yield falls limited and February supply (3 auctions x 7-12bn) may cap gains; expects demand to fade slowly auction by auction. Close: OK0128 3.53, PS0131 4.39, DS1035 5.08; EURPLN 4.2082.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/dzien-na-fxfi-eurpln-nadal-w-trendzie-spadkowym-w-przyszlym-tygodniu-rynki-pod",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-01-30 17:03",
+   "window_report_date": "2026-02-02",
+   "topic": "research",
+   "text": "PKO BP report: WZ floaters repriced in 2026 - discount margins tightened 10-25bp and prices rose 0.5-1%, closely linked to narrowing asset-swap spreads.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-01-30 17:03",
+   "window_report_date": "2026-02-02",
+   "topic": "fiscal",
+   "text": "MoF: December secondary-market SPW turnover fell 2.3% m/m to PLN 1,544.8bn. FinMin Domanski: PLN 4bn transferred to BGK's Fundusz Dopłat (social housing). Defence: SAN anti-drone system contract signed (PGZ+APS+Kongsberg; 18 batteries, >700 vehicles; ~PLN 15bn unofficial per PKO 2 Feb); Kosiniak-Kamysz: total air-defence investment ~PLN 250bn; PM Tusk: SAFE funds partly to finance the anti-drone shield.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700",
+    "https://cdn-netpr.pl/file/attachment/2942185/82/pko_dziennik_ekonomiczny_2026_02_02.pdf"
+   ],
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-01-30 17:03",
+   "window_report_date": "2026-02-02",
+   "topic": "MoF",
+   "text": "BGK (P. Marczak, PAP Biznes): bonds for the Armed Forces Support Fund (FWSZ) series FWA0931 for PLN 1bn were issued as a private placement; BGK open to further PLN private placements for FWSZ at acceptable cost.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260130/skrot-wiadomosci-piatek-30-stycznia-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-01 20:02",
+   "window_report_date": "2026-02-02",
+   "topic": "fiscal",
+   "text": "KSeF (National e-Invoicing System) launched on 1 Feb for ~4.2k largest firms; FinMin Domanski: launch smooth.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260201/skrot-wiadomosci-sobota-niedziela-31-stycznia-1-lutego",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-02 06:34",
+   "window_report_date": "2026-02-03",
+   "topic": "MPC",
+   "text": "PAP Biznes survey before the 3-4 Feb MPC: 10 of 18 forecasters expect a hold (ref 4.00%), 8 expect -25bp. Consensus path: next cut in March (3.75%), another in Q2 (3.50%), pause, last cut in Q3 2027 to a 3.25% terminal rate at end-2027. Santander expects Feb hold. ING (weekly): strong Dec data and 3.6% 2025 GDP (Q4 ~4.0%) justify Feb pause; cuts resume in March; three cuts in 2026, terminal 3.25%. Santander: after ~20bp fall in 2Y/5Y yields in January little room for further declines. Week: PMI Mon, MPC Wed (statement 16:00), Glapinski Thu 15:00, T-bill auction Fri 11:30, Jan minutes Fri 14:00.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260202/tydzien-w-kraju-decyzja-rpp-pmi-za-i-bony-mf",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-02 07:07",
+   "window_report_date": "2026-02-03",
+   "topic": "macro",
+   "text": "NBP: new housing loans in December PLN 7,549m (Nov 7,398m); average rate on new mortgages 6.25% (Nov 6.41%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260202/banki-udzielily-w-xii-kredytow-na-nieruchomosci-mieszkaniowe-za-7549-mln-zl-nbp",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-02 08:03",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "PKO Dziennik 2 Feb: PKO sees a 25bp cut on Wednesday (ending the pause, per Glapinski's January hints; NBP forecasts likely show sharp Jan CPI fall); Parkiet consensus split evenly cut/hold (mean 3.88%). Expects sideways EURPLN and SPW this week. 2026 GDP forecast 3.7%.",
+   "src": "https://cdn-netpr.pl/file/attachment/2942185/82/pko_dziennik_ekonomiczny_2026_02_02.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-02 08:27",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "Millennium daily 2 Feb (G. Maliszewski team): expects ref rate held at 4.00% (Parkiet survey 9 hold vs 9 cut); two cuts in 2026; Q4 GDP ~4.0%; solid growth argues for caution in cuts. PMI forecast 49.0.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260202",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-02 08:37",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "Santander/Erste Codziennik 2 Feb: 2025 GDP 3.6% in line; Q4 implied 3.9-4.2%; 2026 growth ~4.0%; new data keep Santander convinced the MPC will hold at least until March. Record 2025 consumer (135bn) and mortgage (90.5bn) lending.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260202083717/download?id=169019&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-02 09:00",
+   "window_report_date": "2026-02-03",
+   "topic": "macro",
+   "text": "S&P Global manufacturing PMI January 48.8 (Dec 48.5) vs consensus 49.2 (Parkiet per PKO/Millennium; 49.1 per Santander/CA); output and new orders improved, employment fell; 12-month output expectations best in 4+ years.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260202/skrot-wiadomosci-poniedzialek-2-lutego-1700",
+    "https://cdn-netpr.pl/file/attachment/2942619/27/pko_dziennik_ekonomiczny_2026_02_03.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260203083152/download?id=169025&lang=pl_PL"
+   ],
+   "time_basis": "scheduled release 09:00 (PAP/PKO calendars); first dated report PAP Skrot 17:01"
+  },
+  {
+   "published": "2026-02-02 09:28",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "PAP morning: Santander - SPW yields 3-6bp lower w/w, little room for further falls given January rally; Millennium - EURPLN to stabilise just below 4.22; PKO - EURPLN 4.20-4.22 sideways.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260202/dzien-na-fxfi-zloty-w-pasmie-420-422eur-przestrzen-do-spadkow-rentownosci-spw",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-02 09:58",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "Credit Agricole MAKROmapa 2 Feb: expects a 25bp cut to 3.75% already on 4 Feb (inflation forecast revised sharply down; Jan CPI likely <2%); cut its terminal-rate call to 3.50% (from 3.75%) after a further 25bp cut in March; alternative: easing moved to March and April. Expects ECB hike in Q1 2027. PMI 48.8 vs CA 48.9, market 49.1.",
+   "src": "https://static.credit-agricole.pl/asset/m/a/k/makromapa-02022026_34812.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-02 10:23",
+   "window_report_date": "2026-02-03",
+   "topic": "macro",
+   "text": "NBP Senior Loan Officer Survey: Q4 2025 banks eased criteria for most loans except consumer; Q1 2026 banks plan to ease corporate lending criteria and expect higher demand for all loan types, esp. from large firms.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260202/w-i-kw-26-banki-chca-lagodzic-kryteria-kredytow-dla-przedsiebiorstw-nbp",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-02 17:01",
+   "window_report_date": "2026-02-03",
+   "topic": "MoF",
+   "text": "MoF communique 2 Feb: Daiwa, Nomura and SMBC mandated to arrange a benchmark JPY-denominated bond issue; timing market-dependent. Bloomberg: Poland returning to the Samurai market after two years with a multi-tranche deal.",
+   "src": [
+    "https://www.gov.pl/web/finanse/emisja-obligacji-jpy",
+    "https://strefainwestorow.pl/wiadomosci/20260202/skrot-wiadomosci-poniedzialek-2-lutego-1700"
+   ],
+   "time_basis": "MoF page date + PAP summary upper bound 17:00"
+  },
+  {
+   "published": "2026-02-02 17:01",
+   "window_report_date": "2026-02-03",
+   "topic": "research",
+   "text": "Citi Handlowy: wage growth consistent with the NBP target ~5% y/y vs 5.7% expected for 2026 - room for further labour-market normalisation. PFR (M. Raczynski): GDP may exceed 4% in the course of 2026, investment up to 10%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260202/skrot-wiadomosci-poniedzialek-2-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-03 08:11",
+   "window_report_date": "2026-02-04",
+   "topic": "research",
+   "text": "PKO Dziennik 3 Feb: PMI 48.8 vs consensus/PKO 49.2; on 2 Feb SPW flat (10Y +1bp to 5.10%) but IRS fell up to 3bp in 10Y - positioning for a possible cut to 3.75% on Wednesday; MoF JPY mandate noted.",
+   "src": "https://cdn-netpr.pl/file/attachment/2942619/27/pko_dziennik_ekonomiczny_2026_02_03.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-03 08:31",
+   "window_report_date": "2026-02-04",
+   "topic": "research",
+   "text": "Santander/Erste 3 Feb: strong 2025 GDP, Dec output and wages lower the probability of a cut - expects ref rate kept at 4.00%; PMI 48.8 slightly below consensus 49.1. IRS/FRA -2bp.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260203083152/download?id=169025&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-03 08:50",
+   "window_report_date": "2026-02-04",
+   "topic": "research",
+   "text": "Millennium daily 3 Feb: assumes no change in rates, as priced by the market; PMI rise was expected but smaller than forecast.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260203",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-03 09:45",
+   "window_report_date": "2026-02-04",
+   "topic": "research",
+   "text": "PAP morning: Pekao - recent fall in PLN IRS reflects market starting to consider NBP rates below 3.5%; minimum FRA (9x12) 3.35% implies terminal 3.25-3.50%. BGK - risk of 10Y SPW slightly above 5.10% if global optimism lifts core yields; EURPLN 4.20-4.22.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260203/dzien-na-fxfi-zloty-pozostaje-mocny-rynek-coraz-bardziej-wycenia-wieksze-ciecia",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-03 17:01",
+   "window_report_date": "2026-02-04",
+   "topic": "fiscal",
+   "text": "Government adopted a bill requiring the budget-law justification to disclose ministers' reserve pools and BGK funds' financial plans and to assess public investments (KPO milestone, budget-system reform). President Nawrocki convened the National Security Council (RBN) for 11 Feb incl. SAFE.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260203/skrot-wiadomosci-wtorek-3-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-03 17:01",
+   "window_report_date": "2026-02-04",
+   "topic": "macro",
+   "text": "NBP: at end-Q3 2025 Poland ranked 5th in the EU by gold holdings in reserves.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260203/skrot-wiadomosci-wtorek-3-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-03 17:02",
+   "window_report_date": "2026-02-04",
+   "topic": "research",
+   "text": "PAP close (M. Kurtek, Bank Pocztowy): market split ~50/50 on a cut tomorrow; even without a cut, March odds rise; SPW yields fell along the curve, more at the long end.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260203/dzien-na-fxfi-zloty-stabilny-w-okolicach-422eur-pln-i-spw-pod-wplywem-decyzji",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 07:31",
+   "window_report_date": "2026-02-05",
+   "topic": "fiscal",
+   "text": "IMF Executive Board concluded the 2025 Article IV consultation (press release 26/030, IMF-dated 3 Feb US time; first Polish dated mention PKO 4 Feb 07:31): growth 3.3% 2025 / 3.5% 2026; 2025 GG deficit ~7% of GDP, debt ~59%; under current policies debt reaches ~78% of GDP by 2031; recommends cumulative fiscal adjustment of 4% of GDP; monetary policy should stay cautious/wait-and-see, further easing only if activity and core inflation fall toward the lower end of the target band.",
+   "src": [
+    "https://www.imf.org/en/news/articles/2026/02/02/pr-26030-poland-imf-concludes-2025-article-iv-consultation",
+    "https://cdn-netpr.pl/file/attachment/2943172/d0/pko_dziennik_ekonomiczny_2026_02_04.pdf"
+   ],
+   "time_basis": "IMF date (US) 3 Feb; placed in 4 Feb window (first Polish-dated source) to avoid look-ahead"
+  },
+  {
+   "published": "2026-02-04 07:31",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "PKO Dziennik 4 Feb ('Powrot do obnizek stop?'): PKO sees a 25bp cut today as slightly more likely (Parkiet survey evenly split); a cut would support further SPW yield falls. 3 Feb: SPW -4/+8bp, 10Y -3bp to 5.07%.",
+   "src": "https://cdn-netpr.pl/file/attachment/2943172/d0/pko_dziennik_ekonomiczny_2026_02_04.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-04 08:43",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "Santander/Erste 4 Feb: expects hold at 4.00%; with no change a slight upward correction of FRA/IRS likely. Jan CPI (mid-Feb) to use COICOP 2018. Poland services output Nov +5.8% y/y.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260204084335/download?id=169027&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-04 08:54",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "Millennium daily 4 Feb: base case hold (Parkiet 9 hold / 9 cut); only three weeks since January, MPC may want to wait for the March projection; room for easing 'not large'. 3 Feb: yields -3bp in belly/long end; 10Y 5.09%.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260204",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-04 09:31",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "PAP morning: Pekao expects the MPC to resume cuts today ('inflation is low and will be lower'); Millennium expects no change (as priced), a cut would lower short-end yields. PAP survey: hold expected but nearly 50/50; next 25bp cut expected in March; market shifted expected terminal rate 25bp lower to 3.25% in H2 2027.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/dzien-na-fxfi-decyzja-rpp-kluczowa-dla-srodowych-wycen-aktywow",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 10:01",
+   "window_report_date": "2026-02-05",
+   "topic": "macro",
+   "text": "GUS: median gross monthly wage in August 2025 PLN 7,280.0 (17.4% below the average).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/mediana-wynagrodzen-w-gospodarce-narodowej-w-sierpniu-wyniosla-72800-zl-gus",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 14:43",
+   "window_report_date": "2026-02-05",
+   "topic": "MPC",
+   "text": "MPC decision (meeting 3-4 Feb), announced ~14:40: all NBP rates unchanged - reference 4.00%, lombard 4.50%, deposit 3.50%, rediscount 4.05%, discount 4.10%; in line with the PAP consensus (but ~half of forecasters expected -25bp). Vote not disclosed (published later).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/rpp-utrzymala-stopy-na-niezmienionym-poziomie-referencyjna-40-proc-zgodnie-z",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 16:13",
+   "window_report_date": "2026-02-05",
+   "topic": "MPC",
+   "text": "MPC statement (16:00): 'Incoming information suggests a possible decline in CPI inflation in Q1 2026 and its remaining at a level consistent with the NBP inflation target in the coming quarters. In these conditions the Council decided to keep rates unchanged.' Dec CPI 2.4%, core 2.7%; 2025 GDP 3.6% signals Q4 growth close to Q3 (~3.8%); enterprise wage growth declined over 2025 despite December rise, employment falling. Future decisions data-dependent; NBP may intervene in FX. Risks: fiscal policy, expected demand recovery, wages, external environment incl. commodity prices.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/mozliwy-spadek-cpi-w-i-kw-26-i-utrzymanie-inflacji-na-poziomie-zgodnym-z-celem",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 16:48",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "Post-decision opinions: ING (X) - dovish statement, MPC unconcerned by Dec wage spike (bonuses e.g. mining); inflation below 2.5% most of the year, may touch 1.5%; cuts a matter of time (March or later), terminal 3.25% or lower. Millennium - wait-and-see until March projection; majority for -25bp in March, another in Q2, cycle ends at 3.50%. Bank Pocztowy (M. Kurtek) - if not today then March; two cuts (March, April) totalling 50bp. Lewiatan (M. Zielonka) - wait-and-see.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/komunikat-rpp-wspiera-oczekiwania-dalszych-ciec-stop-procentowych-opinia",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 16:55",
+   "window_report_date": "2026-02-05",
+   "topic": "research",
+   "text": "PAP close: PLN firmer after the hold (EURPLN ~4.213), SPW yields rose; economists see higher odds of a March cut and possibly April.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260204/dzien-na-fxfi-zloty-mocniejszy-po-decyzji-rpp-wzrasta-szansa-na-obnizke-stop",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-04 17:01",
+   "window_report_date": "2026-02-05",
+   "topic": "rating",
+   "text": "Fitch (M. Trajkovic, Poland lead analyst, Fitch Credit Outlook conference): since the outlook cut to negative in Sep 2025 macro-fiscal indicators developed as expected, fiscal factors remain key; negative/positive outlooks typically last 1-2 years. Per Santander 5 Feb: Fitch sees at most one 25bp NBP cut in 2026, GG deficit ~7% in 2026 with only a small decline later; a downgrade could follow absent extra consolidation, a growth slowdown or a sharp rise in debt-service costs. Fitch (J. Kopiec): negative sovereign outlooks (Poland, Romania, Hungary) weigh on CEE bank ratings.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260204/skrot-wiadomosci-sroda-4-lutego-1700",
+    "https://www.erste.pl/regulation_file_server/time20260205090310/download?id=169031&lang=pl_PL",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260205"
+   ],
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-04 17:01",
+   "window_report_date": "2026-02-05",
+   "topic": "fiscal",
+   "text": "MFiPR minister K. Pelczynska-Nalecz (PR1): due to the 2-year delay it will certainly not be possible to invest 100% of KPO funds; exact amount known mid-year (KPO total EUR 54.7bn: 25.3bn grants, 29.4bn loans per Santander).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260204/skrot-wiadomosci-sroda-4-lutego-1700",
+    "https://www.erste.pl/regulation_file_server/time20260205090310/download?id=169031&lang=pl_PL"
+   ],
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-05 (time n/a)",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "ING Think snap 5 Feb (R. Benecki, A. Antoniak): governor pointed to March as a good moment for a cut; ING sees ref rate at 3.25% or lower by end-2026 (more optimistic on CPI, ~1.5% y/y in some months).",
+   "src": "https://think.ing.com/snaps/national-bank-of-poland-hints-at-a-rate-cut-in-march-as-we-had-expected/",
+   "time_basis": "article date only (ING Think, 5 Feb)"
+  },
+  {
+   "published": "2026-02-05 07:47",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "PKO Dziennik 5 Feb ('Remis ze wskazaniem na jastrzebie'): hold surprised part of economists; PLN marginally firmer, FRA up a few bp; SPW +1bp; market still prices ref rate below 3.50% in 2026; next cut expected in March (with new projection and Jan CPI).",
+   "src": "https://cdn-netpr.pl/file/attachment/2943460/dc/pko_dziennik_ekonomiczny_2026_02_05.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-05 08:49",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "Millennium daily 5 Feb: hold in line; Q1 CPI-decline wording confirms room for cuts; keeps calls for -25bp in March and in Q2. 4 Feb: market rates +3-5bp after decision (more at short swap end), bond move partly reversed; 10Y ~5.09%.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260205",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-05 09:03",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "Santander/Erste 5 Feb: hold as expected; statement downplays Dec wage spike and signals room to ease; next 25bp cut 'very likely' in March (Jan CPI likely <2%), then May to 3.5% and stabilisation.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260205090310/download?id=169031&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-05 09:52",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "PAP morning: PKO - dovish Glapinski likely already priced; expects continued slow fall in SPW yields without curve-shape change; BGK - 10Y to stay above 5.05%; Millennium - March-cut signal could lower market rates.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260205/dzien-na-fxfi-krajowe-aktywa-czekaja-na-konferencje-prezesa-nbp-oraz-decyzje",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-05 15:12",
+   "window_report_date": "2026-02-06",
+   "topic": "MPC",
+   "text": "Glapinski conference (from 15:00): 'Today all forecasts indicate that the return of inflation to target in Poland is durable'; in Q1 inflation may decline (lower electricity tariffs, cheaper agricultural commodities, disinflation in market goods, slowing services prices -> lower core).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260205/dzisiaj-wszystkie-prognozy-wskazuja-ze-powrot-inflacji-do-celu-w-polsce-jest",
+    "https://strefainwestorow.pl/wiadomosci/20260205/w-i-kwartale-cpi-powinna-sie-dalej-obnizac-prezes-nbp"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-05 15:58",
+   "window_report_date": "2026-02-06",
+   "topic": "MPC",
+   "text": "Glapinski on March and terminal rate: asked whether a March cut is possible - 'if our projection does not show anything worrying, nothing suggests it will... and no unexpected external events occur, then in my view the answer is yes'. Feb hold: only three weeks since last meeting, no new inflation data, better activity data - 'nothing fundamentally changed'. In March the MPC will have the Jan flash CPI, wage data and the March projection (incl. effects of 2025 cuts); CPI basket revision mid-March. Inflation assumed broadly on target all year, close to 2.5%, which lets the MPC discuss cuts; a 3.5% level 'is possible' though hard to say what the MPC will decide. Risks: strong 2025 GDP (3.6%), Dec retail/industry, Dec wage acceleration possibly one-off.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260205/jezeli-projekcja-nie-bedzie-niepokojaca-obnizka-stop-mozliwa-w-iii-docelowo-350",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-05 17:01",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "PAP: economists see recent MPC decisions and Glapinski's remarks consistent with further small cuts, ideally at projection rounds, possibly to 3.25%. WIIW forecasts Polish public debt at 72% of GDP in 2028. Eurostat: Polish retail sales Dec +4.0% y/y, +0.6% m/m.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260205/skrot-wiadomosci-czwartek-5-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260205/wiiw-ocenia-ze-dlug-publiczny-w-2028-roku-w-polsce-osiagnie-72-proc-pkb",
+    "https://strefainwestorow.pl/wiadomosci/20260205/sprzedaz-detaliczna-w-polsce-w-grudniu-wzrosla-o-40-proc-rdr-eurostat"
+   ],
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-05 17:22",
+   "window_report_date": "2026-02-06",
+   "topic": "research",
+   "text": "PAP close (A. Kiedrowicz, PKO BP): Glapinski essentially confirmed a possible March cut; cut pricing practically unchanged; SPW yields -3/-5bp, more at the short end; room for further falls 'very limited' (a few bp). EURPLN ~4.221.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260205/dzien-na-fxfi-pln-powinien-byc-stabilny-do-eur-wobec-usd-mozliwe-oslabienie",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 07:52",
+   "window_report_date": "2026-02-09",
+   "topic": "research",
+   "text": "PKO Dziennik 6 Feb ('Marcowa obnizka nie bedzie straszna...'): reads conference as moderately dovish; March good moment for a cut if projection benign, terminal 3.50% possible; PKO expects new projection to lower the CPI path, fully justifying -25bp in March. 5 Feb: SPW -4/+1bp, 10Y 5.09%. BIK: Jan mortgage-application value +50.4% y/y.",
+   "src": "https://cdn-netpr.pl/file/attachment/2943874/aa/pko_dziennik_ekonomiczny_2026_02_06.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-06 08:32",
+   "window_report_date": "2026-02-09",
+   "topic": "research",
+   "text": "Santander/Erste 6 Feb: conference not dovish in Santander's view; Glapinski implied the Feb decision was not unanimous; cautious on terminal (3.5% possible, not assured, nothing below); Santander still sees two more cuts (March and April or May) to 3.5%, but a sharp CPI drop could open room for more.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260206083201/download?id=169034&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-06 08:47",
+   "window_report_date": "2026-02-09",
+   "topic": "research",
+   "text": "Millennium daily 6 Feb: Glapinski scenario matches Millennium's (cut possible in March, 3.50% probable this year) but room limited by solid growth, low unemployment and high deficit; sees potential for further gradual bond strengthening, esp. long end; MoF offers 33-week T-bills for 2-4bn today.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260206",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-06 09:50",
+   "window_report_date": "2026-02-09",
+   "topic": "MoF",
+   "text": "MoF communique 6 Feb: priced four JPY tranches, total nominal JPY 211.6bn (~PLN 4.8bn): 3Y JPY 116.9bn due 13 Feb 2029 at swap+50bp (1.88%); 5Y 62.7bn due 13 Feb 2031 at +65bp (2.22%); 10Y 11.8bn due 13 Feb 2036 at +95bp (2.90%); 20Y 20.2bn due 13 Feb 2046 at +105bp (3.65%); issue price 100%; settlement 13 Feb 2026; leads Daiwa, Nomura, SMBC; largest-ever MoF JPY deal; placed with Japanese regional banks, insurers, funds and foreign institutions. JCR assigned 'A' to the issue.",
+   "src": [
+    "https://www.gov.pl/web/finanse/wycena-obligacji-w-jpy5",
+    "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-pod-wplywem-geopolityki-retoryka-nbp-moze-umocnic-spw",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700"
+   ],
+   "time_basis": "PAP 09:50 cites it (upper bound); MoF page dated 6 Feb"
+  },
+  {
+   "published": "2026-02-06 09:50",
+   "window_report_date": "2026-02-09",
+   "topic": "research",
+   "text": "PAP morning: Millennium sees potential for gradual SPW strengthening, esp. long end, after Glapinski's signal; PKO - conference brought nothing changing terminal-rate expectations (3.50-3.25%); sideways trend today.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-pod-wplywem-geopolityki-retoryka-nbp-moze-umocnic-spw",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 12:07",
+   "window_report_date": "2026-02-09",
+   "topic": "MoF",
+   "text": "MoF: budget accounts at end-January ~PLN 183.4bn (end-Dec 133.8bn; earlier estimate ~180bn). MoF report: debt maturing in rest of 2026 PLN 202.0bn (wholesale bonds 94.70bn, retail 50.2bn, T-bills 32.4bn, foreign 24.7bn); public-sector liquidity consolidation 133.0bn (term deposits 51.7bn, O/N 81.3bn); average maturity domestic debt 4.18y (unch.), total 5.72y (5.75).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260206/stan-srodkow-na-rachunkach-budzetowych-na-koniec-stycznia-wyniosl-ok-1834-mld",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700"
+   ],
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-06 12:17",
+   "window_report_date": "2026-02-09",
+   "topic": "macro",
+   "text": "MoF estimate: Q4 2025 GDP ~+4.1% y/y (range 3.9-4.2%), household consumption ~+4.2% (+/-0.2pp), investment ~+4.3% (+/-0.1pp).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/pkb-w-iv-kwartale-wzrosl-o-41-proc-mf",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 12:44",
+   "window_report_date": "2026-02-09",
+   "topic": "macro",
+   "text": "MoF report: rolling 12m current-account deficit widened to 0.7% of GDP in November (Oct 0.6%); goods deficit 1.4% of GDP.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/w-listopadzie-deficyt-rachunku-biezacego-w-ujeciu-plynnego-roku-poglebil-sie-0",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 14:01",
+   "window_report_date": "2026-02-09",
+   "topic": "macro",
+   "text": "NBP official reserve assets January EUR 246.76bn (Dec 231.02bn); USD 293.85bn.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/oficjalne-aktywa-rezerwowe-w-styczniu-wzrosly-do-24676-mld-eur-nbp",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 14:02",
+   "window_report_date": "2026-02-09",
+   "topic": "MPC",
+   "text": "Minutes of the 13-14 Jan MPC meeting: majority judged a hold justified after 175bp of cuts in 2025; one opinion that current rates are too low; CPI to stay consistent with target in coming quarters and may run clearly below the November projection path (electricity tariffs, low commodity prices); some members stressed persistent services inflation; Jan CPI likely below December; GUS basket re-weighting may affect final reading; wage growth gradually slowing (enterprise ~7% in last two months), labour demand weak; GDP to accelerate in 2026, slower in 2027 (KPO schedule).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/w-26-cpi-zgodna-z-celem-dynamika-plac-stopniowo-spada-przy-importowanej",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 16:55",
+   "window_report_date": "2026-02-09",
+   "topic": "MoF",
+   "text": "MoF 6 Feb T-bill auction: 33-week bills sold PLN 2,567m (2,567.2m incl. 385.2m non-comp.) vs demand 4,377m at 3.529% yield (price 97.786); additional sale 205m. Settlement 10 Feb, maturity 29 Sep 2026.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-i-obligacje-stabilne-przyszly-tydzien-pod-znakiem-cpi",
+    "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700",
+    "https://www.gov.pl/attachment/31ac439a (MoF T-bill transaction database 'Bony_Skarbowe', downloaded 2026-11-26)"
+   ],
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-06 16:55",
+   "window_report_date": "2026-02-09",
+   "topic": "research",
+   "text": "PAP close (M. Sutowicz, ING): 'everyone agrees there will be a cut in March'; expectations for later months to be built; 10Y around 5.07%; low short end reflects cut expectations; next week CPI (Fri 13 Feb) and delayed NFP (Wed).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/dzien-na-fxfi-zloty-i-obligacje-stabilne-przyszly-tydzien-pod-znakiem-cpi",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-06 17:01",
+   "window_report_date": "2026-02-09",
+   "topic": "macro",
+   "text": "NBP full Q3 2025 BoP: remittances by foreign workers abroad fell 36% y/y to PLN 2.8bn; inflows from emigrants PLN 5.2bn. GUS: tourists 2025 58.9m (+11.6%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260206/skrot-wiadomosci-piatek-6-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-09 06:34",
+   "window_report_date": "2026-02-10",
+   "topic": "MoF",
+   "text": "PAP week ahead: MoF offer for the 11 Feb auction due Mon 15:00 (plan 7-12bn of OK0128/WZ0930/PS0131/NZ0331/DS1035, IZ/others possible); BGK FPC offer Tue 15:00 for 12 Feb auction (12:00). Data: Q4 wages Mon, GDP flash Thu 10:00, Jan CPI flash Fri 13 Feb 10:00 (COICOP 2018, old weights; market expects <2%), Dec BoP Fri. CJEU WIBOR ruling Thu 09:30. Santander: Jan CPI 1.7%, 2026 avg 2.0%; PKO base case March cut; Goldman Sachs: NBP likely resumes easing in March, rates could go to 3.5%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260209/tydzien-w-kraju-cpi-za-i-pkb-za-iv-kw-wyniki-bankow-aukcja-mf-wyrok-ws-wibor",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-09 07:37",
+   "window_report_date": "2026-02-10",
+   "topic": "MPC",
+   "text": "PKO Dziennik 9 Feb reports (first dated mention; statements made after PKO's 6 Feb daily, likely 6-8 Feb - exact date/outlet not found): L. Kotecki (MPC) - March cut very likely unless Jan CPI disappoints; MPC may think of one, maybe two cuts; terminal 3.50-3.75%; CPI close to target, temporarily even <2%; core 2.5-3.0%, ~2.5% or lower in 2027. H. Wnorowski (MPC) - probability of a March cut quite high but no certainty 4 weeks ahead; 3.50% a reasonable expectation, decisions meeting by meeting. PKO forecasts Jan CPI 1.7% (cons. 1.9%) and sees it decisive for a March cut.",
+   "src": "https://cdn-netpr.pl/file/attachment/2944276/28/pko_dziennik_ekonomiczny_2026_02_09.pdf",
+   "time_basis": "upper bound (first dated mention PKO 9 Feb 07:37); may belong to the 6-8 Feb window"
+  },
+  {
+   "published": "2026-02-09 08:36",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Credit Agricole MAKROmapa 9 Feb: Jan CPI 1.9% (in line with consensus), Q4 GDP 4.0%; still sees 50bp of easing in 2026, now March and April (instead of Feb and March); terminal 3.50% consistent with Glapinski.",
+   "src": "https://static.credit-agricole.pl/asset/m/a/k/makromapa-09022026_34888.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-09 08:43",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Millennium daily 9 Feb: MoF sold 33-week bills for 2.567bn (demand 4.377bn) at 3.53%; attention on Wednesday auction. 6 Feb: 10Y 5.10%.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260209",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-09 09:44",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Santander/Erste 9 Feb: forecasts Q4 wages 8.1% y/y; January MPC minutes imply CPI path clearly below Nov projection (avg 3.0%); global food prices falling, domestic food inflation may fall below 2% this year; MAKROskop (6 Feb) revised forecasts.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260209094446/download?id=169043&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-09 09:52",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "PAP morning: SPW yields +4-5bp vs Friday open. BGK - EURPLN 4.20-4.22; possible attempt of 10Y below 5.05% on low-CPI speculation, but with BGK's 2.0% CPI forecast end-week near 5.07%. Pekao - GDP and old-weight CPI of secondary importance, no big moves in PLN or POLGBs expected.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260209/dzien-na-fxfi-zloty-marginalnie-sie-umocnil-rentownosci-spw-w-gore",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-09 10:01",
+   "window_report_date": "2026-02-10",
+   "topic": "macro",
+   "text": "GUS: average gross wage in the national economy Q4 2025 +8.5% y/y to PLN 9,197.79 (Q3 7.5%; +4.85% q/q); above expectations (Santander 8.1%, NBP projection 7.5%; consensus figure not found). 2025 average wage PLN 8,903.56 (+9.1%); pension indexation from March 2026 5.3% (budget assumed 4.88%) - ~PLN 4bn extra cost per PKO/ZUS board member L. Kozlowski.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260209/przecietne-wynagrodzenie-w-iv-kw-wzroslo-o-85-proc-rdr-i-wynioslo-919779-zl-gus",
+    "https://strefainwestorow.pl/wiadomosci/20260209/skrot-wiadomosci-poniedzialek-9-lutego-1700",
+    "https://cdn-netpr.pl/file/attachment/2944865/77/pko_dziennik_ekonomiczny_2026_02_10.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260210084333/download?id=169046&lang=pl_PL"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-09 11:33",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Deutsche Bank weekly 9 Feb (A. Krzesniak): expects -25bp in March and another -25bp in May (3.50%); CPI <2% could accelerate/enlarge cuts; forecasts 10Y SPW 5.07% end-Feb, 5.05% Mar, 4.85% Jun, 4.75% Sep; Jan CPI 1.9% (cons 1.9%), Q4 GDP 4.0% (cons 4.0%).",
+   "src": "https://www.country.db.com/poland/documents/market-commentary/2026/02/wa260209pol.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-09 12:17",
+   "window_report_date": "2026-02-10",
+   "topic": "MPC",
+   "text": "Glapinski (AlUla EM conference, Saudi Arabia): 'All forecasts show that this year inflation will remain within our target, probably even below 2.5%.'",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260209/w-2026-r-inflacja-w-granicach-celu-prawdopodobnie-nawet-ponizej-25-proc-prezes",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-09 13:01",
+   "window_report_date": "2026-02-10",
+   "topic": "macro",
+   "text": "MRPiPS estimate: registered unemployment January 6.0% (Dec 5.7%), 934.8k unemployed (+47k m/m, +97.2k y/y); in line with expectations (seasonal; s.a. ~5.7% per Millennium/Santander).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260209/stopa-bezrobocia-w-styczniu-wyniosla-60-proc-wobec-57-proc-miesiac-wczesniej",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260210",
+    "https://www.erste.pl/regulation_file_server/time20260210084333/download?id=169046&lang=pl_PL"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-09 13:18",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Millennium weekly 9 Feb: Jan CPI forecast 1.9% (lowest since 2019) should cement March-cut expectations; Q4 GDP 3.9%; fast growth, high deficit and low unemployment argue for limited further cuts. Bonds: data should support lower swap rates; this week's auction may limit the bond rally and slightly widen ASW spreads.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/weekly260209",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-09 15:00",
+   "window_report_date": "2026-02-10",
+   "topic": "MoF",
+   "text": "MoF final offer for the 11 Feb auction: PLN 8-12bn of OK0128, WZ0930, PS0131, NZ0331, IZ0831, DS1033, DS1035 and WS0437 (vs 7-12bn in the monthly plan; IZ0831, DS1033, WS0437 added).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260209/skrot-wiadomosci-poniedzialek-9-lutego-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260209/tydzien-w-kraju-cpi-za-i-pkb-za-iv-kw-wyniki-bankow-aukcja-mf-wyrok-ws-wibor",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260210"
+   ],
+   "time_basis": "MoF 15:00 slot per PAP calendar; PAP Skrot 17:00 upper bound"
+  },
+  {
+   "published": "2026-02-09 16:05",
+   "window_report_date": "2026-02-10",
+   "topic": "research",
+   "text": "Bank BPS weekly 9 Feb: Feb hold consistent with no new data; lower Jan CPI and wage readings plus a lower March projection could give a majority for -25bp to 3.75% on 3-4 March; risk of Fitch/Moody's downgrade in 2026 noted as PLN risk.",
+   "src": "https://www.bankbps.pl/images/Dokumenty/newsletter_ekonomiczny/komentarz_tygodnia/20260209.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-09 17:01",
+   "window_report_date": "2026-02-10",
+   "topic": "fiscal",
+   "text": "SAFE: govt plenipotentiary M. Sobkowiak - biggest risk is domestic industry delivering SAFE orders by end-2030; bankers fear crowding-out of bank financing. BGK cohesion payouts (2021-27) PLN 65.74bn by 6 Feb; 60.5% of cohesion allocation contracted. TFI PZU: long-dated POLGBs have the most potential in 2026.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260209/skrot-wiadomosci-poniedzialek-9-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-10 07:53",
+   "window_report_date": "2026-02-11",
+   "topic": "research",
+   "text": "PKO Dziennik 10 Feb: Q4 wages 8.5% above expectations - may worry MPC, but PKO sees it as temporary (6% in 2026); pension indexation 5.3% costs ~PLN 4bn (0.2% of GG spending). 9 Feb: SPW -1/+4bp (10Y +4bp to 5.11%); IRS 2s10s spread (peaked ~72bp in late Jan) steepening again as March cut consensus builds.",
+   "src": "https://cdn-netpr.pl/file/attachment/2944865/77/pko_dziennik_ekonomiczny_2026_02_10.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-10 08:41",
+   "window_report_date": "2026-02-11",
+   "topic": "research",
+   "text": "Millennium daily 10 Feb: Q4 wages 8.5% (enterprise 7.4%) imply faster pay in micro firms/budget sector; expects slowdown in Q1 and 6-7% later. 9 Feb: bond yields +2bp.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260210",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-10 08:43",
+   "window_report_date": "2026-02-11",
+   "topic": "research",
+   "text": "Santander/Erste 10 Feb: Q4 wages 8.5% above Santander 8.1% and NBP projection 7.5% - may affect MPC expectations; Santander sees 2026 CPI 2.0% and two cuts (March, April) totalling 50bp.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260210084333/download?id=169046&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-10 15:49",
+   "window_report_date": "2026-02-11",
+   "topic": "MPC",
+   "text": "MPC member P. Litwiniuk (Bloomberg): two short-term scenarios - two 25bp cuts (one in March) or one 50bp cut 'a bit later', possibly in April if March is a pause (to see basket revision); terminal 3.5%, lower not excluded if outlook worsens.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260210/kolejne-dwie-obnizki-stop-po-25-pb-w-tym-w-iii-lub-50-pb-byc-moze-juz-w-iv",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-10 16:48",
+   "window_report_date": "2026-02-11",
+   "topic": "research",
+   "text": "PAP close (R. Sadoch, BM mBank): approaching NBP cuts push SPW yields lower, esp. short end; 10Y trend flatter. EURPLN ~4.217.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260210/dzien-na-fxfi-zloty-lekko-slabszy-wobec-glownych-walut-rynki-pod-wplywem-danych",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-10 17:01",
+   "window_report_date": "2026-02-11",
+   "topic": "MoF",
+   "text": "BGK: 12 Feb auction for the COVID-19 Response Fund will offer FPC0229, FPC0231, FPC0332 and FPC0235, minimum supply PLN 1.0bn.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260210/skrot-wiadomosci-wtorek-10-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-10 17:01",
+   "window_report_date": "2026-02-11",
+   "topic": "fiscal",
+   "text": "Government 'Future Council' set up, chaired by FinMin Domanski; NFOSiGW 2026 budget record PLN 37bn.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260210/skrot-wiadomosci-wtorek-10-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-11 (time n/a)",
+   "window_report_date": "2026-02-12",
+   "topic": "MPC",
+   "text": "MPC member M. Zarzecki (Reuters, 11 Feb per PKO/Santander 12 Feb; original not retrieved): March may be the right moment to resume easing, probably by 25bp, if data and the March projection confirm; March need not be the last cut; 3.50% realistic end-year, 3.25% a 'bold' forecast; warns record fiscal deficit could create demand-driven inflation, arguing for caution; keep positive real rates. PKO: his comments supported SPW on 11 Feb.",
+   "src": [
+    "https://cdn-netpr.pl/file/attachment/2945642/38/pko_dziennik_ekonomiczny_2026_02_12.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL"
+   ],
+   "time_basis": "date per secondary sources (PKO/Santander 12 Feb say published 11 Feb); exact time n/a"
+  },
+  {
+   "published": "2026-02-11 06:29",
+   "window_report_date": "2026-02-12",
+   "topic": "MPC",
+   "text": "MPC member H. Wnorowski (DGP interview): no strong arguments against a March cut, probability higher than three weeks ago but not certain (Jan CPI unknown, March projection to matter); no need for steps larger than 25bp; 3.5% target in 2026 'realistic'.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260211/docelowy-poziom-stop-w-26-na-poziomie-35-proc-realistyczny-obnizka-w-marcu",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-11 07:37",
+   "window_report_date": "2026-02-12",
+   "topic": "research",
+   "text": "PKO Dziennik 11 Feb: 10 Feb SPW -16/-8bp, 10Y -8bp to 5.03% (weak US retail sales, global bond rally); Litwiniuk floated delaying to April with one 50bp move.",
+   "src": "https://cdn-netpr.pl/file/attachment/2945149/23/pko_dziennik_ekonomiczny_2026_02_11.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-11 08:45",
+   "window_report_date": "2026-02-12",
+   "topic": "research",
+   "text": "Millennium daily 11 Feb: Litwiniuk's comments helped market rates fall 2-3bp on 10 Feb; auction today 8-12bn of 8 series. URE cut household gas tariff ~3.4% from 25 Feb.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260211",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-11 10:14",
+   "window_report_date": "2026-02-12",
+   "topic": "MoF",
+   "text": "MoF: retail bond sales January PLN 5.76bn (Dec 5.35bn): ROR 34% (1,973.5m), TOS 29% (1,652.6m), EDO 15%, COI 10%, DOR 6%, OTS 4%; 2026 gross retail plan 81bn (Millennium).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260211/sprzedaz-obligacji-detalicznych-w-styczniu-wyniosla-576-mld-zl-mf",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260212"
+   ],
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-11 10:31",
+   "window_report_date": "2026-02-12",
+   "topic": "research",
+   "text": "Santander/Erste 11 Feb: Litwiniuk and Wnorowski point to 3.50% terminal; Bloomberg: government dropped plans to bring NBP governor Glapinski before the State Tribunal (fear of foreign-investor reaction) - first dated mention, possibly reported 10 Feb; 10 Feb POLGB yields -3/-4bp, IRS/FRA similar.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260211103149/download?id=169047&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-11 16:46",
+   "window_report_date": "2026-02-12",
+   "topic": "MoF",
+   "text": "MoF 11 Feb auction: sold PLN 11.9bn (11.87bn per PKO) vs demand 25.8bn, plus 1.4bn in the additional sale (WZ0930, NZ0331, IZ0831, DS1035, WS0437: 1,379.0m). PKO (Budzicki): demand 'surprisingly strong', not cooled by January's 41.6bn; sees 2Y to 3.40% and 10Y breaking 5%. Close: OK0128 3.45, PS0131 4.31, DS1035 5.04.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260211/dzien-na-fxfi-pln-moze-testowac-420eur-rentownosci-10-letnich-spw-spasc-ponizej",
+    "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700"
+   ],
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-11 17:01",
+   "window_report_date": "2026-02-12",
+   "topic": "MoF",
+   "text": "MoF (to PAP Biznes): 2026 gross borrowing needs ~33% financed (after the 11 Feb auction; 30% on 29 Jan).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-11 17:01",
+   "window_report_date": "2026-02-12",
+   "topic": "fiscal",
+   "text": "Council of Ministers adopted the bill creating the Financial Instrument for Increasing Security SAFE (FIZB) managed by BGK (M. Sobkowiak). Capital Economics (N. Farr): investors underestimate loose fiscal policy and tight labour market risks, inflation likely to rebound.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-11 17:01",
+   "window_report_date": "2026-02-12",
+   "topic": "macro",
+   "text": "PIE MIK business sentiment Feb -4.1pt to 98.0; BIEC WPI (leading inflation) Feb unchanged, no rising price-pressure threat; IRG SGH industry climate improved in Jan.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260211/skrot-wiadomosci-sroda-11-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-12 07:53",
+   "window_report_date": "2026-02-13",
+   "topic": "MPC",
+   "text": "MPC member G. Maslowska (PAP Biznes interview; first dated mention PKO 12 Feb 07:53): everything points to a 25bp cut in March, the next possibly in following months (likely H2 2026, earlier not excluded); terminal 3.50%, better slightly higher to keep room to react; latest NBP forecasts: 2026 CPI below 2.5%, core ~2.6-2.7%; Q1 CPI ~2.0%, then 2.3%, 2.1%, 2.4% in Q2-Q4 (per Santander).",
+   "src": [
+    "https://cdn-netpr.pl/file/attachment/2945642/38/pko_dziennik_ekonomiczny_2026_02_12.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL",
+    "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700"
+   ],
+   "time_basis": "upper bound (first dated mention PKO 12 Feb 07:53)"
+  },
+  {
+   "published": "2026-02-12 07:53",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "PKO Dziennik 12 Feb: 11 Feb SPW -5/+6bp; stronger SPW on positive reception of the auction (11.87bn sold, 25.8bn demand) and Zarzecki's comments; expects continued moderate downtrend in SPW yields (2Y ~3.50%, 10Y 5.0-5.05%); Jan CPI expected to fall to 1.9% (PKO 1.7%).",
+   "src": "https://cdn-netpr.pl/file/attachment/2945642/38/pko_dziennik_ekonomiczny_2026_02_12.pdf",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-12 08:30",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "Santander/Erste 12 Feb: Q4 GDP consensus 4.0%, Santander 3.9%; 'successful' MoF auction - 11.9bn vs ~26bn demand + 1.4bn additional; MoF financing level ~33%. SAFE: FIZB bill adopted; SAFE loans ~EUR 43.7bn, first tranche 15% (~EUR 6.6bn) with the agreement planned for March; >80% to domestic defence industry.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL",
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-12 08:46",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "Millennium daily 12 Feb: 11 Feb auction sold seven series (WZ0930, PS0131, NZ0331, IZ0831, DS1033, DS1035, WS0437; OK0128 not sold) for ~11.9bn vs demand for eight series 25.8bn; ~1.4bn in the additional auction; highest bid-to-cover in NZ0331 (demand ~7.9bn vs 958m sold); ~33% of 2026 needs financed. 11 Feb: IRS +2-3bp, bond yields -1-2bp, 10Y 5.06%; Bloomberg report on dropping the State Tribunal case against Glapinski may have supported bonds and PLN. Maslowska's view matches Millennium base case (March, Q2, 3.50%).",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260212",
+   "time_basis": "PDF creation time (UTC+1)"
+  },
+  {
+   "published": "2026-02-12 09:17",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "PAP morning: PAP Biznes consensus for Jan CPI (due 13 Feb): 1.9% y/y (Dec 2.4%), +0.6% m/m. PKO - Q4 GDP ~4% largely known, no PLN reaction expected; SPW 2Y near 3.50%, 10Y 5.0-5.05%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/dzien-na-fxfi-zloty-powinien-stabilizowac-sie-przy-obecnym-poziomie",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-12 10:01",
+   "window_report_date": "2026-02-13",
+   "topic": "macro",
+   "text": "GUS flash: Q4 2025 GDP +4.0% y/y (Q3 3.8%), +1.0% q/q s.a. (Q3 0.9%); consensus 4.0% (PKO calendar/Parkiet, Santander, DB-Bloomberg), 3.9% per Millennium calendar; MoF estimate 4.1%. Full breakdown 2 March.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260212/pkb-w-iv-kw-25-wzrosl-o-40-proc-rdr-kdk-wzrosl-o-10-proc-szybki-szacunek-gus",
+    "https://cdn-netpr.pl/file/attachment/2945642/38/pko_dziennik_ekonomiczny_2026_02_12.pdf",
+    "https://www.erste.pl/regulation_file_server/time20260212083056/download?id=169049&lang=pl_PL",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260212",
+    "https://www.country.db.com/poland/documents/market-commentary/2026/02/wa260209pol.pdf"
+   ],
+   "time_basis": "Erste upload time from file URL (PDF created earlier)"
+  },
+  {
+   "published": "2026-02-12 10:27",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "PAP opinion on Q4 GDP: ING (X) - strong finish, 1.0% q/q, 2026 GDP 3.7% or more; PKO BP - 8th consecutive quarter of growth, 2026 GDP 3.7% possibly higher; Portu (A. Gwizdz) - high deficit and fast-rising debt may force spending restraint.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/dane-o-pkb-polski-za-iv-kw-potwierdzaja-solidny-punkt-startowy-do-dalszego",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-12 12:20",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "Millennium on Q4 GDP: growth above potential (NBP ~3.0-3.1%), driven by consumption - limited room for further cuts in the ending cycle; still expects -25bp in March and one more in Q2 to 3.50%; 2026 GDP forecast 3.8%; investment boom risks supply constraints/wage pressure.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/dane-o-pkb-sugeruja-ograniczona-przestrzen-do-dalszych-obnizek-stop-proc-opinia",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-12 15:30",
+   "window_report_date": "2026-02-13",
+   "topic": "MPC",
+   "text": "MPC member L. Kotecki (PAP Biznes interview, R. Tuszynski): March 'a very good moment' for -25bp, possibly not the last; April another -25bp if the mid-March CPI basket revision does not surprise (likely the terminal); no need for 50bp steps; terminal 3.50% (3.75% if conservative); real ex-ante rate should be slightly above 1%; risks to CPI to the downside, reaction warranted if CPI <2%; Q4 wage spike (8.5%) one-off; 2026 GDP >4%; wants debate on lowering remuneration of required reserves; strong PLN welcome. He lists Maslowska, Zarzecki, Litwiniuk and Wnorowski as also signalling a likely March cut.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/w-iii-i-iv-mozliwe-ciecia-stop-po-25-pb-docelowo-do-350-proc-ryzyka-dla-cpi-w",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-02-12 17:01",
+   "window_report_date": "2026-02-13",
+   "topic": "MoF",
+   "text": "BGK FPC auction 12 Feb: sold FPC0229, FPC0231, FPC0332 and FPC0235 for a total PLN 3.394bn vs demand 6.346bn; additional sale PLN 754.6m (per-series split and prices not found).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-12 17:01",
+   "window_report_date": "2026-02-13",
+   "topic": "fiscal",
+   "text": "SAFE: Sejm finance and defence committees passed the SAFE implementing bill in first reading on Wednesday evening (EUR 43.7bn); latest draft lets the FIZB issue bonds; RBN met 11 Feb, President's office says doubts on SAFE not dispelled; PM Tusk: no signature would be an 'irreparable loss'. MFiPR: EUR 27.79bn left to be paid under KPO payment requests 6-9. FinMin Domanski: Q4 GDP 4% best in over three years.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-12 17:01",
+   "window_report_date": "2026-02-13",
+   "topic": "macro",
+   "text": "CJEU ruling (C-471/24): a WIBOR benchmark clause does not in itself create a significant imbalance to the consumer's detriment; banks need not explain the index methodology in detail (ZBP, PKO BP: no basis to challenge WIBOR loans).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/skrot-wiadomosci-czwartek-12-lutego-1700",
+   "time_basis": "PAP summary timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-02-12 17:02",
+   "window_report_date": "2026-02-13",
+   "topic": "research",
+   "text": "PAP close (M. Kurtek, Bank Pocztowy): Q4 GDP no surprise; Maslowska/Kotecki comments pushed SPW yields lower along the curve, more than Bunds/UST; 10Y broke below 5%; possible slight correction Friday ahead of CPI/US CPI. EURPLN 4.2131.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260212/dzien-na-fxfi-zloty-z-niewielkimi-zmianami-rentownosc-10-letnich-spw-ponizej-5",
+   "time_basis": "exact article/document timestamp"
+  }
+ ],
+ "gpwb": {
+  "document": "No new GPW Benchmark bond-index portfolio communique published 30 Jan-12 Feb 2026.",
+  "status": "The periodic change announced 28 Jan (Portfele_obligacji_2026_01_28_.pdf; previous window) took effect on 30 Jan 2026 (index calendar: '30 stycznia 2026 - okresowa zmiana portfeli Rodziny Indeksow Obligacji'). Next: announcement 25 Feb, change 27 Feb 2026 - outside windows.",
+  "effective_in_window": {
+   "date": "2026-01-30",
+   "window_report_date": "2026-02-02",
+   "summary": "B1Y3Y: OK0127 (mat 25 Jan 2027, <1Y) leaves, 6->5 bonds; mod dur 1.82->1.81, YTM 3.79->3.47%. B1Y4Y: PS0130 (mat 25 Jan 2030, now <4Y) enters, OK0127 leaves, 9 bonds; mod dur 2.44->2.56, YTM 3.99->3.76%. TBSP: same 18 bonds, units up for OK0128/PS0130/PS0131/DS0432/DS1033/DS1035; value 839.6->869.0bn, mod dur 3.79->3.76, YTM 4.33->4.11%. Note WZ floaters only in GPWB-BWZ; NZ0331 in no index.",
+   "official_stats_from_28Jan_communique": {
+    "TBSP.Index": {
+     "n_constituents": 18,
+     "portfolio_value_mln_pln": 868981.33,
+     "ytm_pct": 4.11,
+     "macaulay_duration_years": 3.93,
+     "modified_duration_pct": 3.76,
+     "maturity_years": 4.4,
+     "coupon_pct": 3.9
+    },
+    "GPWB-B1Y3Y": {
+     "n_constituents": 5,
+     "portfolio_value_mln_pln": 204618.26,
+     "ytm_pct": 3.47,
+     "macaulay_duration_years": 1.87,
+     "modified_duration_pct": 1.81,
+     "maturity_years": 1.95,
+     "coupon_pct": 3.57
+    },
+    "GPWB-B1Y4Y": {
+     "n_constituents": 9,
+     "portfolio_value_mln_pln": 439640.24,
+     "ytm_pct": 3.76,
+     "macaulay_duration_years": 2.66,
+     "modified_duration_pct": 2.56,
+     "maturity_years": 2.83,
+     "coupon_pct": 4.12
+    },
+    "GPWB-B1Y5Y": {
+     "n_constituents": 12,
+     "portfolio_value_mln_pln": 602463.1,
+     "ytm_pct": 3.91,
+     "macaulay_duration_years": 3.13,
+     "modified_duration_pct": 3.01,
+     "maturity_years": 3.34,
+     "coupon_pct": 3.95
+    },
+    "GPWB-B3Y5Y": {
+     "n_constituents": 7,
+     "portfolio_value_mln_pln": 397844.84,
+     "ytm_pct": 4.13,
+     "macaulay_duration_years": 3.77,
+     "modified_duration_pct": 3.62,
+     "maturity_years": 4.05,
+     "coupon_pct": 4.15
+    },
+    "GPWB-B5Y": {
+     "n_constituents": 4,
+     "portfolio_value_mln_pln": 221034.28,
+     "ytm_pct": 4.87,
+     "macaulay_duration_years": 6.74,
+     "modified_duration_pct": 6.43,
+     "maturity_years": 8.02,
+     "coupon_pct": 4.53
+    },
+    "GPWB-BWZ": null
+   }
+  },
+  "integrity_flag": "DOUBT: the PDF now served was generated 2 Feb 2026 (after the 30 Jan effective date) and the file name carries a trailing underscore (other months, e.g. Portfele_obligacji_2026_10_28.pdf, do not), suggesting a re-upload replacing the 28 Jan original; variants without underscore return 404, so the original could not be compared. Supporting evidence the numbers are as originally published: all TBSP unit changes vs the Dec communique reconcile exactly with MoF sales settled 23 Dec-26 Jan (30-31 Dec OB placements, 9 Jan and 22 Jan auctions + additional sales) and exclude the 28 Jan auction (settled 30 Jan), consistent with 'stan na 27 stycznia'; e.g. PS0131 +11,334,900 = 1,645+350 (30-31 Dec) + 4,886 (9 Jan) + 4,453.9 (22 Jan) m; DS1034 unchanged. Treat as probably-original but unverified.",
+  "url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_01_28_.pdf",
+  "src": [
+   "https://gpwbenchmark.pl/kalendarium-indeksow",
+   "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_01_28_.pdf"
+  ]
+ },
+ "meta": {
+  "built": "2026-11-26",
+  "windows": {
+   "2026-01-30": "2026-02-02",
+   "2026-01-31": "2026-02-02",
+   "2026-02-01": "2026-02-02",
+   "2026-02-02": "2026-02-03",
+   "2026-02-03": "2026-02-04",
+   "2026-02-04": "2026-02-05",
+   "2026-02-05": "2026-02-06",
+   "2026-02-06": "2026-02-09",
+   "2026-02-07": "2026-02-09",
+   "2026-02-08": "2026-02-09",
+   "2026-02-09": "2026-02-10",
+   "2026-02-10": "2026-02-11",
+   "2026-02-11": "2026-02-12",
+   "2026-02-12": "2026-02-13"
+  },
+  "times": "Polish time (CET); PDF times converted from UTC creation dates (+1h); Erste = upload time in URL",
+  "notes": "/tmp/claude-0/-home-user/2b986bc3-1107-5358-8c0f-f544109c09bc/scratchpad/agent_feb_plfacts1/notes.md",
+  "gaps": [
+   "January flash CPI NOT released in windows (GUS 13 Feb); only consensus (PAP 1.9% y/y, +0.6% m/m) and forecasts",
+   "MPC 4 Feb vote not published in windows (Santander inferred from Glapinski that the decision was not unanimous)",
+   "Q4 wage consensus number not found (described as above expectations; Santander 8.1%, NBP projection 7.5%)",
+   "Kotecki/Wnorowski comments in PKO 9 Feb: original outlet/date not found (likely 6-8 Feb); placed in 9 Feb window",
+   "Zarzecki (Reuters 11 Feb) and Maslowska (PAP Biznes) originals not retrieved; dated via PKO/Santander 12 Feb",
+   "11 Feb auction per-series data from MoF database only (totals, series list, additional sale and NZ0331 demand confirmed by PAP/Millennium/PKO)",
+   "JPY bond ISINs, coupon rates and coupon frequency not stated in MoF communique",
+   "BGK FPC 12 Feb per-series results and FWA0931 terms NOT FOUND (bgk.pl 403)",
+   "IMF Article IV press release: IMF date 3 Feb (US); Polish-time hour unknown -> placed in 4 Feb window",
+   "mBank and BNP Paribas economists' rate/bond views in windows NOT FOUND (only BM mBank analyst R. Sadoch via PAP)",
+   "No sovereign rating action in windows (only Fitch analyst comments 4 Feb; JCR 'A' for JPY issue 6 Feb)",
+   "No budget/Constitutional Tribunal news in windows; no 2025 budget-execution release found",
+   "NBP Dec BoP (13 Feb), Jan M3, core CPI and MoF Jan FX-funds communique (16 Feb) fall outside windows",
+   "Web searches surfaced post-window outcomes (March 2026); none were used"
+  ]
+ }
+}
