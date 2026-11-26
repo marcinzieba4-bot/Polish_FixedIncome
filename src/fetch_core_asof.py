@@ -53,7 +53,9 @@ def main():
     res = {"cutoff": cutoff, "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "bund": {}}
     for T in (1, 2, 3, 5, 7, 10, 15, 20, 30):
         res["bund"][str(T)] = {d: v for d, v in bund(T, start).items() if d <= cutoff}
-    u = ust_year(int(cutoff[:4]))
+    u = {}
+    for yr in range(int(start[:4]), int(cutoff[:4]) + 1):
+        u.update(ust_year(yr))
     res["ust"] = {d: v for d, v in u.items() if start <= d <= cutoff}
     res["estr"] = {d: v for d, v in estr_range(start, cutoff).items() if d <= cutoff}
     res["sofr"] = {d: v for d, v in sofr_range(start, cutoff).items() if d <= cutoff}

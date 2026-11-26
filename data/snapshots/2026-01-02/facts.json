@@ -353,5 +353,6 @@
    "source": "EUR/CZK/HUF swap curves, EUR/PLN forward points & basis, Poland Eurobond yields, PLN IRS at 30 Dec",
    "note": "Peer comparison uses a rolling 1Y IBOR hedge instead of matched swaps; flagged where used."
   }
- ]
+ ],
+ "settlement_note": "31 Dec 2025 and 1 Jan 2026 not settlement days"
 }

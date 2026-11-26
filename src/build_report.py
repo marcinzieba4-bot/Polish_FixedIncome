@@ -131,7 +131,7 @@ def main(snap: pathlib.Path):
     hist_series = {}
     for t in (b2["ticker"], b5["ticker"], b10["ticker"]):
         hist_series[t] = [[d, v[t][1]] for d, v in sorted(hist.items()) if t in v and v[t][1] is not None]
-    labels = list({b2["ticker"], b5["ticker"], b10["ticker"]} | {b["ticker"] for b in rich[:2]} | {b["ticker"] for b in cheap[:2]})
+    labels = sorted({b2["ticker"], b5["ticker"], b10["ticker"]} | {b["ticker"] for b in rich[:2]} | {b["ticker"] for b in cheap[:2]})
     js = dict(bonds=A["bonds"], curve=A["curve"], asw_buckets=A["asw_buckets"], indices=IX, market_inputs={}, label_bonds=labels,
               highlight=[best_front["ticker"]] + ([rv[1]["ticker"], rv[2]["ticker"]] if rv else []), hist=hist_series,
               auctions=cyc["_meta"]["auctions"] if cyc else [], cycle={k: v for k, v in (cyc or {}).items() if not k.startswith("_")},
@@ -254,7 +254,7 @@ The full source-and-date audit is at the bottom.</div>
     w(f"""
 <section class="card" id="indices">
   <h2>Index modified duration <span class="tag">GPWB 1-3Y · GPWB 1-4Y · TBSP</span></h2>
-  <p class="lede">Computed bond by bond from the GPW Benchmark portfolios in force after the {E(dmy(IP['effective']))} periodic change (<a href="{E(IP['source_url'])}" rel="noopener">communiqué</a>, holdings as of 22 Dec 2025),
+  <p class="lede">Computed bond by bond from the GPW Benchmark portfolios in force after the {E(dmy(IP['effective']))} periodic change (<a href="{E(IP['source_url'])}" rel="noopener">communiqué</a>, holdings as of {E(dmy(IP['official_stats_asof']))}),
   re-weighted at {E(dmy(cutoff))} dirty prices. Next periodic change: {E(dmy(IP['next_rebalance']))}.</p>
   <div class="grid3">{ixcard('GPWB-B1Y3Y')}{ixcard('GPWB-B1Y4Y')}{ixcard('TBSP.Index')}</div>
   <div class="note"><b>Next rebalance ({E(dmy(IP['next_rebalance']))}), applying the maturity windows to today's universe:</b>
@@ -365,7 +365,8 @@ The full source-and-date audit is at the bottom.</div>
     cal = F.get("calendar", {})
     ev_rows = "".join(f"<tr><td>{E(dt.date.fromisoformat(e['date']).strftime('%a %d %b %Y'))}</td><td class='l'><span class='pill'>{E(e['type'])}</span></td><td class='l'>{E(e['title'])}</td>"
                       f"<td class='l' style='white-space:normal;min-width:260px'>{E(e.get('note', ''))}</td><td class='l small'>{E(e.get('source_date', ''))}</td></tr>" for e in cal.get("events", []))
-    sale = [x for x in ops if x["type"] == "S" and x["op"] in ("AS", "AZ") and x["date"] >= "2025-10-01"]
+    first_ra = (dt.date.fromisoformat(cutoff) - dt.timedelta(days=92)).isoformat()
+    sale = [x for x in ops if x["type"] == "S" and x["op"] in ("AS", "AZ") and x["date"] >= first_ra]
     ra = "".join(f"<tr><td>{E(x['date'])}</td><td class='l'>{E(x['op'].replace('AS', 'sale').replace('AZ', 'switch'))}</td><td>{sum((l['sold'] or 0) for l in x['lines']) / 1000:.1f}</td>"
                  f"<td>{sum((l['demand'] or 0) for l in x['lines']) / 1000:.1f}</td><td class='l' style='white-space:normal;min-width:300px'>"
                  + E("; ".join(f"{l['series']} {l['sold']:,.0f}" + (f" @{l['avg_yld']:.3f}%" if l['avg_yld'] else "") for l in x["lines"] if l["sold"])) + "</td></tr>" for x in sale[::-1])
@@ -432,7 +433,7 @@ The full source-and-date audit is at the bottom.</div>
 <section class="card" id="method">
   <h2>Method &amp; point-in-time audit</h2>
   <p class="lede">Same engine as the live desk: Act/Act ICMA pricing, NSS zero-curve fit with a money-market anchor, PLN IRS interpolation (PCHIP), horizon decomposition, bootstrapped WIBOR forwards for floaters.
-  Settlement {E(A['settle'])} (T+2 from {E(dmy(cutoff))}; 31 Dec 2025 and 1 Jan 2026 not settlement days).</p>
+  Settlement {E(A['settle'])} (T+2 from {E(dmy(cutoff))}; {E(F.get('settlement_note', ''))}).</p>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Input</th><th class="l">As of</th><th class="l">Published</th><th class="l">Source</th><th class="l">Note</th></tr></thead><tbody>{arows}</tbody></table></div>
   <p class="small">Not investment advice. Private, unlinked page.</p>
 </section>
@@ -489,9 +490,9 @@ def core_html(K, F, A, B, cutoff):
                             f"<td>{f(r['y'])}</td><td>{sg(r['hedge_pln'])}</td><td><b>{f(r['to_pln'])}</b></td><td>{f(r['to_eur'])}</td><td>{sg(r['vs_pl_bp'], 0)}</td></tr>")
         ib = K.get("ibor_1y") or {}
         sw_html = f"""<h3>Peer government bonds FX-hedged into PLN / EUR (rolling 1Y hedge)</h3>
-  <p class="small">No verifiable end-2025 swap curves for EUR, CZK or HUF were found, so peers are compared with a rolling 1Y FX hedge priced by covered parity on 1Y interbank fixings of 30 Dec 2025
+  <p class="small">No verifiable swap curves for EUR, CZK or HUF were found for the cut-off, so peers are compared with a rolling 1Y FX hedge priced by covered parity on 1Y interbank fixings of {E(dmy(K['asof']))}
   (WIBOR 1Y {f(ib.get('PLN'))}%, EURIBOR 12M {f(ib.get('EUR'))}%, PRIBOR 1Y {f(ib.get('CZK'))}%, BUBOR 12M {f(ib.get('HUF'))}%, 1Y T-bill {f(ib.get('USD'))}%; ACT/360 fixings converted to ACT/365).
-  Hedged yield = local yield + (PLN 1Y − local 1Y). Yields: PAP/Bloomberg 30 Dec 2025. A rolling hedge carries the risk that the short-rate gap changes.</p>
+  Hedged yield = local yield + (PLN 1Y − local 1Y). Yields: PAP/Bloomberg, {E(K.get('pap_date') or '')}. A rolling hedge carries the risk that the short-rate gap changes.</p>
   <div class="tablewrap"><table class="t"><thead><tr><th class="l">Tenor</th><th class="l">Country</th><th class="l">Ccy</th><th>Yield %</th><th>Hedge pickup into PLN %</th><th>Hedged → PLN %</th><th>Hedged → EUR %</th><th>vs POLGB bp</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>"""
     return f"""
 <section class="card" id="core">

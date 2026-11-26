@@ -1,0 +1,64 @@
+{
+ "fixed": [
+  [
+   "FPC0229",
+   "PL0000500443",
+   5.75,
+   "2029-02-03",
+   null,
+   104.12,
+   "Catalyst close 29 Dec 2025",
+   null
+  ],
+  [
+   "FPC0630",
+   "PL0000500278",
+   2.125,
+   "2030-06-05",
+   null,
+   90.7,
+   "Catalyst close 30 Dec 2025",
+   null
+  ],
+  [
+   "FPC0231",
+   "PL0000500450",
+   5.75,
+   "2031-02-03",
+   null,
+   104.0,
+   "Catalyst last trade 10 Dec 2025 (stale)",
+   null
+  ],
+  [
+   "FPC0733",
+   "PL0000500294",
+   2.25,
+   "2033-07-21",
+   null,
+   83.04,
+   "Catalyst close 30 Dec 2025",
+   null
+  ],
+  [
+   "FPC0235",
+   "PL0000500468",
+   6.0,
+   "2035-02-03",
+   null,
+   105.39,
+   "Catalyst close 30 Dec 2025",
+   null
+  ]
+ ],
+ "floaters": [],
+ "pfr": [],
+ "lede": "BGK bonds for the COVID-19 Fund (FPC) carry an explicit State Treasury guarantee, i.e. the same credit as POLGBs. Prices are thin Catalyst retail closes (29-30 Dec 2025; FPC0231 last traded 10 Dec), so levels are indicative. Spread vs POLGB = yield minus the fitted POLGB curve for the same cash flows; ASW = yield minus PLN IRS.",
+ "takeaways_html": [
+  "<b>FPC fixed lines trade ~{lo}-{hi}bp over the POLGB curve</b> (average {avg}bp); widest ASW {widest} at {widest_asw}bp. Same State Treasury guarantee as POLGBs.",
+  "<b>Best pickup: {best}</b> ({best_sp}bp vs POLGB). For buy-and-hold books the guarantee makes the pickup attractive; liquidity is the cost (Pekao became BGK market maker on 13 Nov 2025).",
+  "<b>Supply known on 31 Dec 2025:</b> BGK's 2026 plan foresees FPC issuance of up to PLN 18.5bn, domestic only (plan reported 24 Sep 2025), after PLN 27.7bn in 2025 (plan amended 15 Oct 2025). The 9 Dec 2025 auction was cancelled because the 27 Nov auction covered the year's needs, so there is no year-end supply overhang.",
+  "<b>Use auctions, not Catalyst:</b> trades are small retail lots and some lines go weeks without a print."
+ ],
+ "sources": "Catalyst closes via biznesradar historical pages (29-30 Dec 2025; FPC0231 10 Dec 2025); BGK FPC 2026 plan (reported 24 Sep 2025); FPC 2025 plan amendment (15 Oct 2025); PAP on the cancelled 9 Dec 2025 auction; Pekao market-maker agreement (13 Nov 2025). Yields recomputed with annual ACT/ACT coupons on each bond's anniversary dates."
+}

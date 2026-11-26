@@ -1,0 +1,35 @@
+{
+ "money": {
+  "EUR": {
+   "3m": 2.016,
+   "6m": 2.123,
+   "12m": 2.25,
+   "estr": 1.93
+  },
+  "USD": {
+   "3m": 3.65,
+   "sofr": 3.71
+  }
+ },
+ "hedge_rates_1y": {
+  "PLN": 3.78,
+  "EUR": 2.281,
+  "USD": 3.47,
+  "method": "no market forward points were found for end-2025, so hedges use covered interest parity on 1Y fixings (WIBOR 1Y 3.78%, EURIBOR 12M 2.25% ACT/360, 1Y T-bill 3.47%) of 30 Dec 2025. With NBP cuts priced, the FX-implied PLN rate is likely below WIBOR 1Y, so these pickups are probably an upper bound"
+ },
+ "ibor_1y": {
+  "PLN": 3.78,
+  "EUR": 2.281,
+  "CZK": 3.589,
+  "HUF": 6.469,
+  "USD": 3.47
+ },
+ "pap_cols": {
+  "d6": 0,
+  "m1": 3,
+  "m12": 5
+ },
+ "swap_note": "",
+ "fx": {},
+ "policy": {}
+}
