@@ -1,0 +1,1553 @@
+{
+ "facts": [
+  {
+   "published": "2026-02-27 01:22",
+   "window_report_date": "2026-03-02",
+   "topic": "Fed",
+   "text": "WSJ: the Federal Reserve is challenging in court (sealed grand-jury procedure) two subpoenas issued by US Attorney Jeanine Pirro in the criminal probe of Chair Powell over his testimony on the HQ renovation; the Fed asked the court to quash or narrow them.",
+   "src": "https://www.odaily.news/en/newsflash/469832"
+  },
+  {
+   "published": "2026-02-27 06:34",
+   "window_report_date": "2026-03-02",
+   "topic": "sovereign",
+   "text": "10Y closes 26 Feb (PAP/Bloomberg table, date-stamped): Bund 2.69% (25 Feb 2.71), OAT 3.25%, BTP 3.30%, Bonos 3.10%, gilt 4.27% -> OAT-Bund 56bp, BTP-Bund 61bp, Spain 41bp; Schatz 2.04%, UK2 3.55%; CZ2 3.41%, CZ10 4.34%, HU10 6.42%. Live 06:31 27 Feb: UST10 4.00%, UST2 3.42%, JGB10 2.12%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-02-27 07:06",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "UST10 fell 1.7bp to 3.999% in Asian trade on 27 Feb, a near three-month low (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/469878"
+  },
+  {
+   "published": "2026-02-27 08:01",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "27 Feb morning: Brent (Apr) $71.24 (+0.7%) on US-Iran talks/US troop build-up in the Middle East.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/ceny-ropy-rosna-wkrotce-dalsze-rozmowy-usa-iran-amerykanie-rozmieszczaja-wojska"
+  },
+  {
+   "published": "2026-02-27 09:51",
+   "window_report_date": "2026-03-02",
+   "topic": "EZ data",
+   "text": "France Feb CPI accelerated more than expected and Spain's rose unexpectedly (PAP: France CPI 1.1% y/y vs 0.8% expected, Jan 0.4%; Spain 2.5% vs 2.3% expected, prior 2.4%), supporting the ECB view that no further cuts are needed.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/dzien-na-rynkach-w-europie-na-gieldach-przewaga-zwyzek-indeksow"
+  },
+  {
+   "published": "2026-02-27 14:32",
+   "window_report_date": "2026-03-02",
+   "topic": "US data",
+   "text": "US Jan PPI final demand +0.5% m/m vs +0.3% expected (Dec revised to +0.4%), +2.9% y/y vs 2.6% expected (prior 3.0%) (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/469931"
+  },
+  {
+   "published": "2026-02-27 16:11",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "ECB reference rate 27 Feb: EUR/USD 1.1805, EUR/JPY 184.13.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/euro-w-ebc-11805-usd-i-18413-jpy"
+  },
+  {
+   "published": "2026-02-27 17:02",
+   "window_report_date": "2026-03-02",
+   "topic": "EZ data",
+   "text": "27 Feb: German Feb HICP flash 2.0% y/y vs 2.1% expected (Jan 2.1%); German unemployment 6.3% (in line); France Q4 GDP 2nd est. +0.2% q/q (unrevised); French Jan consumer spending +0.5% m/m vs +0.4% expected. UK GfK consumer confidence Feb -19 vs -15 expected (Jan -16).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/skrot-wiadomosci-piatek-27-lutego-1700"
+  },
+  {
+   "published": "2026-02-27 17:18",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "Spot gold rose above $5,250/oz (+1.3% intraday), highest since 30 Jan; spot silver >$94 (+6.5%) (27 Feb 17:18).",
+   "src": "https://www.odaily.news/en/newsflash/469943"
+  },
+  {
+   "published": "2026-02-27 18:23",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "27 Feb ~18:20: UST10 3.97% (-4bp), UST30 4.63% (-2bp; lowest since Oct per Jin10); Bund 10Y 2.64% (-1bp); DXY 97.62 (-0.15%), EUR/USD 1.1821, USD/JPY 156.07; Brent Apr $72.39 (+2.3%); silver $93.3 (+7.2%). (PAP's gold line '6,054' is a typo; Odaily had spot gold >$5,250, a high since 30 Jan, at 17:18.)",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/dzien-na-rynkach-mieszane-zamkniecie-sesji-gieldowej-w-europie"
+  },
+  {
+   "published": "2026-02-27 21:03",
+   "window_report_date": "2026-03-02",
+   "topic": "sovereign",
+   "text": "Obligacje.pl weekly (27 Feb): DM government bond yields fell this week; USTs could post their lowest weekly close since Oct 2024. BNEF: EU gas storage may end winter at ~24%, ~9pp below norms.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/skrot-wiadomosci-piatek-27-lutego-2100"
+  },
+  {
+   "published": "2026-02-27 21:03",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "Before the strike (27 Feb): ABC said CENTCOM (Adm. Cooper) briefed Trump on strike options for Iran; Trump said he was not happy with how Iran negotiates (more talks later that day); Araghchi had cited 'great progress' and a next round within a week (technical talks in Vienna Mon); confidential IAEA report: cannot verify Iran stopped enrichment; US embassy Jerusalem urged citizens to consider leaving; UK withdrew embassy staff from Tehran. Ukraine: next US-Ukraine-Russia trilateral likely early March in Abu Dhabi (Zelensky); IMF approved a 4-year $8.1bn EFF for Ukraine. EU to apply the Mercosur deal provisionally.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/skrot-wiadomosci-piatek-27-lutego-2100"
+  },
+  {
+   "published": "2026-02-27 22:13",
+   "window_report_date": "2026-03-02",
+   "topic": "US data",
+   "text": "PPI reaction (27 Feb): Jan PPI +0.5% m/m vs 0.3% (Dow Jones), core +0.8% vs 0.3%; commentators saw tariff pass-through to services and a Fed dilemma. Wall St closed lower (S&P 500 -0.43%, Dow -1.05%, Nasdaq -0.92%; VIX 19.9) on AI-disruption and private-credit worries (Block cut ~4,000 jobs; UK lender Market Financial Solutions failure). Nasdaq -3% in Feb, worst month since Mar 2025.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260227/dzien-na-rynkach-gieldy-w-usa-ze-spadkami-po-raporcie-o-inflacji"
+  },
+  {
+   "published": "2026-02-27 23:00",
+   "window_report_date": "2026-03-02",
+   "topic": "sovereign",
+   "text": "S&P revised Portugal's outlook to Positive from Stable, affirming A+ (action dated Fri 27 Feb per countryeconomy rating history; after-US-close time is a placeholder).",
+   "src": "https://countryeconomy.com/ratings/portugal"
+  },
+  {
+   "published": "2026-02-27 23:00",
+   "window_report_date": "2026-03-02",
+   "topic": "sovereign",
+   "text": "Moody's upgraded Slovenia to A2 from A3, outlook Stable (dated Fri 27 Feb per countryeconomy rating history; time is a placeholder).",
+   "src": "https://countryeconomy.com/ratings/slovenia"
+  },
+  {
+   "published": "2026-02-28 01:10",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "Trump (Truth Social, US evening 27 Feb) attacked the Supreme Court's IEEPA ruling for enabling refunds of 'hundreds of billions' and asked whether the case could be reconsidered or retried.",
+   "src": "https://www.odaily.news/en/newsflash/469956"
+  },
+  {
+   "published": "2026-02-28 07:16",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "28 Feb 07:16: Israel launched a 'preemptive' strike on Iran (Israeli media); by 07:39 reported as a joint US-Israel attack.",
+   "src": "https://www.odaily.news/en/newsflash/469993"
+  },
+  {
+   "published": "2026-02-28 13:15",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "Trump confirmed 'major combat operations' against Iran (video on Truth Social), aimed at eliminating threats from the regime; Reuters: US struck by air and sea, ministries in Tehran hit; Iran vowed crushing retaliation; Trump urged Iranians to take over their government afterwards.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260228/trump-mowi-ze-armia-amerykanska-rozpoczela-duze-operacje-bojowe-w-iranie"
+  },
+  {
+   "published": "2026-02-28 13:21",
+   "window_report_date": "2026-03-02",
+   "topic": "sovereign",
+   "text": "Fitch affirmed Poland at A- with a Negative outlook (Fri evening 27 Feb; PAP 28 Feb 13:21), citing persistent high deficits, fast debt growth and no credible consolidation plan.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260228/agencja-fitch-potwierdzila-rating-polski-na-poziomie-z-perspektywa-negatywna"
+  },
+  {
+   "published": "2026-02-28 20:55",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "28 Feb: tanker traffic through the Strait of Hormuz ground to a halt (Odaily 14:07); at 20:55 the IRGC announced the strait's closure (UKMTO said it was still open, caution advised).",
+   "src": "https://www.odaily.news/en/newsflash/470055"
+  },
+  {
+   "published": "2026-02-28 22:59",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "28 Feb 22:59 CET: Trump posted that Supreme Leader Khamenei is dead (Iran's MFA initially denied).",
+   "src": "https://www.odaily.news/en/newsflash/470059"
+  },
+  {
+   "published": "2026-03-01 01:21",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "1 Mar 01:21: US DoE official said there was 'absolutely no discussion' of releasing the Strategic Petroleum Reserve (~415m bbl) (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/470064"
+  },
+  {
+   "published": "2026-03-01 12:45",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "Brent settled Fri 27 Feb at $72.48 (+2.45%), WTI $67.02 (+2.78%) (CNBC via PAP). Rapidan's McNally expected +$5-7/bbl at the Sunday open and said a prolonged Hormuz closure means a 'guaranteed global recession'; Kpler: >14m b/d moved through Hormuz in 2025.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260301/konflikt-z-iranem-grozi-powaznymi-zakloceniami-w-dostawach-ropy-i-nawet"
+  },
+  {
+   "published": "2026-03-01 12:47",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "1 Mar: Iran confirmed the deaths of Supreme Leader Ali Khamenei, IRGC chief Pakpour and adviser Shamkhani; 40 days of mourning; Iran retaliated against Israel and US bases across the Gulf (airports in Abu Dhabi, Dubai, Kuwait; bases in Bahrain, Qatar, UAE, Kuwait, Jordan, Saudi Arabia). A leadership council assumed the leader's duties.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260301/nowe-eksplozje-na-bliskim-wschodzie-iran-potwierdza-smierc-alego-chameneia"
+  },
+  {
+   "published": "2026-03-01 20:31",
+   "window_report_date": "2026-03-02",
+   "topic": "markets",
+   "text": "OPEC+ (8 members, Sunday 1 Mar) agreed in principle to raise output by 206k b/d from 1 Apr (Reuters). PAP reported Brent 'up 10% to ~$80' on Sunday (pre-open indicative); ICIS, RBC and Barclays saw ~$100 if the Hormuz closure persists.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260301/kraje-opec-gotowe-zwiekszyc-wydobycie-eksperci-prognozuja-wzrost-cen-surowca"
+  },
+  {
+   "published": "2026-03-01 20:48",
+   "window_report_date": "2026-03-02",
+   "topic": "geopolitics",
+   "text": "Weekend 28 Feb-1 Mar: Iran's chief of staff and defence minister killed; CENTCOM reported 3 US soldiers killed in 'Operation Epic Fury'; Trump warned Iran against retaliation and said he agreed to talk to Iran's potential new leadership while operations continue; Israel called up 100k reservists; Maersk suspended Hormuz transits; ~150 tankers stuck in the Gulf; at least 3 tankers damaged; Oman's Duqm port hit by drones; China and Russia condemned the killing.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260301/skrot-wiadomosci-sobota-niedziela-28-lutego-1-marca"
+  },
+  {
+   "published": "2026-03-02 06:36",
+   "window_report_date": "2026-03-03",
+   "topic": "BoJ",
+   "text": "BoJ Deputy Governor Himino (2 Mar) gave no signal of a near-term hike and said he would watch the Middle East closely; markets took a March BoJ hike as very unlikely.",
+   "src": "https://www.odaily.news/en/newsflash/470194"
+  },
+  {
+   "published": "2026-03-02 06:38",
+   "window_report_date": "2026-03-03",
+   "topic": "geopolitics",
+   "text": "PAP week-ahead (2 Mar): Trump told the Daily Mail the operation would take 'four weeks or less'; Larijani denied any talks via Oman; IRGC barred ships from Hormuz, hundreds of tankers stranded; ING: oil near $100 could lift US CPI from 2.4% to >4% later this year; Barclays: each sustained +$10/bbl cuts US GDP by 0.1-0.2pp. Consensus: EZ Feb HICP flash 1.7% y/y, core 2.2% (Tue 3 Mar); US Feb payrolls +60k, unemployment 4.3% (Fri 6 Mar). Speakers this week: Lagarde, Fed, BoE, SNB.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/tydzien-na-rynkach-konflikt-usa-iran-pmi-payrolls-i-hicp-w-eurolandzie"
+  },
+  {
+   "published": "2026-03-02 06:39",
+   "window_report_date": "2026-03-03",
+   "topic": "sovereign",
+   "text": "10Y closes 27 Feb (date-stamped): Bund 2.64% (-5bp d/d), OAT 3.22%, BTP 3.27%, Bonos 3.06%, gilt 4.23% -> OAT-Bund 58bp, BTP-Bund 63bp, Spain 42bp; Schatz 2.00%, UK2 3.53%; CZ2 3.39%, CZ10 4.34%, HU10 6.40%. Live 06:37 2 Mar: UST10 3.97% (table's prior-day value 3.94%), UST2 3.39%, JGB10 2.09%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-02 07:08",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "Asian open 2 Mar: Brent jumped 13% (above $80, highest since Jan 2025, biggest open-gain in 4 years) then pared to $77.91 (+6.9%) by 07:00.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/ceny-ropy-poszybowaly-ale-wytracily-prawie-polowe-zwyzek"
+  },
+  {
+   "published": "2026-03-02 07:10",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "JGB 10Y fell 5bp to 2.06% at the open on 2 Mar (safe-haven flows).",
+   "src": "https://www.odaily.news/en/newsflash/470201"
+  },
+  {
+   "published": "2026-03-02 08:55",
+   "window_report_date": "2026-03-03",
+   "topic": "Fed",
+   "text": "2 Mar morning: dollar up against all majors as swaps cut 2026 Fed easing to ~59bp from 61bp on Friday (Macquarie: early sign that the Fed's willingness to cut fades if oil stays high).",
+   "src": "https://www.odaily.news/en/newsflash/470209"
+  },
+  {
+   "published": "2026-03-02 11:55",
+   "window_report_date": "2026-03-03",
+   "topic": "ECB",
+   "text": "2 Mar (Bloomberg via Jin10): money markets scaled back cuts for the Fed, BoE and ECB. Odds of three Fed cuts in 2026 fell to 20% from ~50% last week; BoE March cut odds fell to 60% from >80%; ECB 2026 easing halved to only ~5bp. 2Y UST, gilt and Schatz yields rose.",
+   "src": "https://www.odaily.news/en/newsflash/470236"
+  },
+  {
+   "published": "2026-03-02 14:32",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "2 Mar ~14:30: DXY 98.46 (+0.9%), EUR/USD 1.1697; UST10 4.00% (+6bp), UST30 4.66%, 2s10s +65bp; Bund 10Y 2.71% (+6bp); Brent May $79.34 (+8.9%), WTI $72.53; gold $5,413 (+3.1%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/dzien-na-rynkach-spore-spadki-futures-w-usa-po-ataku-izraela-i-usa-na-iran"
+  },
+  {
+   "published": "2026-03-02 15:13",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "Bank oil views (2 Mar): Citi base case Brent $80-90 for at least a week; Morgan Stanley raised its Q2 Brent forecast to $80 from $62.5; Bernstein raised 2026 to $80 from $65 with a $120-150 extreme case; JPMorgan saw Brent able to surge above $100 (Hormuz crude exports down to ~4m b/d).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/ceny-ropy-moga-dalej-rosnac-z-powodu-zablokowania-ciesniny-ormuz-opinia"
+  },
+  {
+   "published": "2026-03-02 15:57",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "ECB reference rate 2 Mar: EUR/USD 1.1698, EUR/JPY 184.19.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/euro-w-ebc-11698-usd-i-18419-jpy"
+  },
+  {
+   "published": "2026-03-02 17:41",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "Spot silver fell 7% to $86.45 on 2 Mar afternoon; spot gold turned negative for the day around 17:00 after ~$5,400 earlier.",
+   "src": "https://www.odaily.news/en/newsflash/470289"
+  },
+  {
+   "published": "2026-03-02 18:18",
+   "window_report_date": "2026-03-03",
+   "topic": "geopolitics",
+   "text": "Trump (2 Mar): the operation was expected to last 4-5 weeks but could take longer.",
+   "src": "https://www.odaily.news/en/newsflash/470291"
+  },
+  {
+   "published": "2026-03-02 18:19",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "2 Mar European close ~18:20: biggest European equity fall since Nov; UST10 4.05% (+11bp), UST30 4.69%, 2s10s +56bp; Bund 10Y 2.71% (+7bp); DXY 98.62 (+1.0%), EUR/USD 1.1688, USD/JPY 157.46; Brent May $77.17 (+6%); gold $5,315 (+1.3%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/dzien-na-rynkach-najwieksze-spadki-na-europejskich-gieldach-od-listopada"
+  },
+  {
+   "published": "2026-03-02 21:03",
+   "window_report_date": "2026-03-03",
+   "topic": "US data",
+   "text": "US ISM manufacturing Feb 52.4 vs 51.5 consensus (Jan 52.6); S&P Global US manufacturing PMI (final) 51.6 (flash 51.2).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/skrot-wiadomosci-poniedzialek-2-marca-2100"
+  },
+  {
+   "published": "2026-03-02 21:03",
+   "window_report_date": "2026-03-03",
+   "topic": "EZ data",
+   "text": "2 Mar: EZ manufacturing PMI (final) Feb 50.8 (flash 50.8; Jan 49.5), Germany 50.9 (flash 50.7), France 50.1 (flash 49.9); UK 51.7 (flash 52.0); German Jan retail sales -0.9% m/m vs 0.0% expected. European gas prices up ~50% after Qatar halted LNG production at Ras Laffan following an Iranian drone attack; Aramco shut the Ras Tanura refinery after a drone strike; EU gas storage 30.0% vs 45.6% 5-year average.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/skrot-wiadomosci-poniedzialek-2-marca-2100"
+  },
+  {
+   "published": "2026-03-02 21:03",
+   "window_report_date": "2026-03-03",
+   "topic": "geopolitics",
+   "text": "2 Mar: Trump said the 'big wave' of strikes had not yet begun and did not rule out ground troops (NY Post); NATO's Rutte said NATO will not join the war; drone hit RAF Akrotiri (Cyprus); explosions in Doha, UAE, Bahrain, Kuwait; tanker attacked in the Gulf of Oman. France to increase nuclear warheads; France and Germany set up a nuclear steering group. COSCO ordered its ships out of the Gulf.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/skrot-wiadomosci-poniedzialek-2-marca-2100"
+  },
+  {
+   "published": "2026-03-02 22:19",
+   "window_report_date": "2026-03-03",
+   "topic": "markets",
+   "text": "Wall St 2 Mar closed little changed after early losses (dip-buying); Brent ~$78.4 (+7.6%) late evening.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260302/dzien-na-rynkach-gieldy-w-usa-koncza-dzien-z-malymi-zmianami"
+  },
+  {
+   "published": "2026-03-03 00:13",
+   "window_report_date": "2026-03-04",
+   "topic": "geopolitics",
+   "text": "3 Mar 00:13: the Federal Circuit rejected the administration's request for an extra 90-day delay on IEEPA tariff refunds, allowing the refund process to proceed.",
+   "src": "https://www.odaily.news/en/newsflash/470296"
+  },
+  {
+   "published": "2026-03-03 06:39",
+   "window_report_date": "2026-03-04",
+   "topic": "sovereign",
+   "text": "10Y closes 2 Mar: Bund 2.71% (+7bp), OAT 3.29%, BTP 3.36%, Bonos 3.14%, gilt 4.37% (+14bp) -> OAT-Bund 58bp, BTP-Bund 65bp, Spain 43bp; Schatz 2.09%, UK2 3.64%; CZ2 3.49%, CZ10 4.43%, HU10 6.52%. Live 06:37 3 Mar: UST10 4.06%, UST2 3.48%, JGB10 2.13%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-03 07:19",
+   "window_report_date": "2026-03-04",
+   "topic": "geopolitics",
+   "text": "Iran declared the Strait of Hormuz closed and threatened to attack (set fire to) ships attempting passage (IRGC statement Mon evening; Reuters/Iranian media).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/iran-twierdzi-ze-ciesnina-ormuz-zostala-zamknieta-zapowiada-ataki-na"
+  },
+  {
+   "published": "2026-03-03 07:43",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "3 Mar morning: Brent (May) $79.53 (+2.3%) after a ~7% gain on Monday (implied 2 Mar settle ~$77.7).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/ceny-ropy-powiekszaja-wzrosty-usa-i-izrael-zaostrzaja-dzialania-wojenne"
+  },
+  {
+   "published": "2026-03-03 08:15",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "3 Mar Asia: UST yields extended Monday's rise; ING (Garvey/Tukker) said it was surprised the safe-haven bid into bonds was so short-lived.",
+   "src": "https://www.odaily.news/en/newsflash/470369"
+  },
+  {
+   "published": "2026-03-03 08:25",
+   "window_report_date": "2026-03-04",
+   "topic": "Fed",
+   "text": "3 Mar: bets on Fed cuts weakened; the first cut is now priced for September (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/dzien-na-rynkach-w-azji-na-gieldach-mocna-wyprzedaz-akcji"
+  },
+  {
+   "published": "2026-03-03 09:46",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "DXY broke above 99 on 3 Mar morning, highest since 20 Jan.",
+   "src": "https://www.odaily.news/en/newsflash/470377"
+  },
+  {
+   "published": "2026-03-03 11:00",
+   "window_report_date": "2026-03-04",
+   "topic": "EZ data",
+   "text": "Euro-area Feb HICP flash 1.9% y/y vs 1.7% consensus (Jan 1.7%); core 2.4% (Jan 2.2%, consensus 2.2%); services 3.4% (3.2%), non-energy goods 0.7% (0.4%), energy -3.2% (-4.0%), food/alcohol/tobacco 2.6%.",
+   "src": "https://ec.europa.eu/eurostat/product?code=2-03032026-ap"
+  },
+  {
+   "published": "2026-03-03 11:09",
+   "window_report_date": "2026-03-04",
+   "topic": "EZ data",
+   "text": "Trading Economics on the HICP flash: inflation rebounded to 1.9% from a 16-month low of 1.7%, above the 1.7% forecast; core 2.4% rebounding from a four-year-plus low of 2.2%.",
+   "src": "https://tradingeconomics.com/euro-area/inflation-cpi/news/530102"
+  },
+  {
+   "published": "2026-03-03 12:00",
+   "window_report_date": "2026-03-04",
+   "topic": "ECB",
+   "text": "Lane FT interview (ECB transcript, published 3 Mar; 2 questions added 2 Mar): Middle East escalation is a key ECB risk scenario; 2023 staff modelling showed a lasting drop in energy supplies would cause a sharp energy-driven inflation spike and a steep output decline; higher energy prices would push up near-term inflation and weigh on activity; the medium-term effect depends on breadth and duration; the ECB is watching closely. (Time is a placeholder; PAP cited it at 12:21.)",
+   "src": "https://ecb.europa.eu/press/inter/date/2026/html/ecb.in260303~768fa10188.en.html"
+  },
+  {
+   "published": "2026-03-03 12:21",
+   "window_report_date": "2026-03-04",
+   "topic": "ECB",
+   "text": "ECB chief economist Lane (FT interview): a prolonged war could substantially raise inflation and hit growth. Investors now see a 50% chance of an ECB HIKE by year-end (PAP 3 Mar 12:21). Same piece: DXY 99.25 (+0.9%), EUR/USD 1.1597, Bund 10Y 2.71%, Brent May $84.11 (+8.3%) intraday.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/dzien-na-rynkach-akcje-w-europie-spadaja-do-najnizszych-poziomow-od-miesiaca"
+  },
+  {
+   "published": "2026-03-03 14:19",
+   "window_report_date": "2026-03-04",
+   "topic": "BoE",
+   "text": "Trading Economics (3 Mar): gilt 10Y surged to ~4.5%, 2Y gilt above 3.8% (highest since 29 Dec; biggest daily jump since Apr 2025) as markets priced only a ~20% chance of a March BoE cut (75% last week). Investors also absorbed Chancellor Reeves' downgraded growth forecasts in the Spring Statement.",
+   "src": "https://tradingeconomics.com/united-kingdom/government-bond-yield/news/530159"
+  },
+  {
+   "published": "2026-03-03 16:06",
+   "window_report_date": "2026-03-04",
+   "topic": "Fed",
+   "text": "NY Fed's Williams (3 Mar): if inflation cools this year, further rate cuts 'will eventually be necessary' (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/470434"
+  },
+  {
+   "published": "2026-03-03 16:21",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "Spot gold fell below $5,000 on 3 Mar afternoon (-6% intraday, a low since 20 Feb; a ~$300 intraday drop) as the dollar and yields rose.",
+   "src": "https://www.odaily.news/en/newsflash/470436"
+  },
+  {
+   "published": "2026-03-03 17:11",
+   "window_report_date": "2026-03-04",
+   "topic": "Fed",
+   "text": "KC Fed's Schmid (3 Mar): must bring inflation to 2%; significant fiscal stimulus is coming in 2026.",
+   "src": "https://www.odaily.news/en/newsflash/470441"
+  },
+  {
+   "published": "2026-03-03 18:18",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "3 Mar European close ~18:20: European stocks at one-month lows; UST10 4.06% (+2bp), UST30 4.70%, 2s10s +55bp; Bund 10Y 2.75% (+4bp); DXY 99.13 (+0.8%), EUR/USD 1.1604, USD/JPY 157.69; Brent May $83.0 (+6.5%), above $85 intraday (first time since Jul 2024). (PAP's gold/silver line repeats Monday's and is not used.)",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/dzien-na-rynkach-duze-spadki-europejskich-indeksow-wobec-eskalacji-wojny-w"
+  },
+  {
+   "published": "2026-03-03 18:27",
+   "window_report_date": "2026-03-04",
+   "topic": "geopolitics",
+   "text": "Trump (3 Mar) said he was unhappy with Spain (it refused base access for Iran strikes) and that the US would cut off all trade with it; also unhappy with the UK. Spanish govt: any change must respect US-EU agreements.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/usa-zrywaja-handel-z-hiszpania-trump"
+  },
+  {
+   "published": "2026-03-03 21:02",
+   "window_report_date": "2026-03-04",
+   "topic": "geopolitics",
+   "text": "3 Mar: Iranian drones hit the US embassy in Riyadh, Trump promised retaliation; Trump said Iran's air defence, air force and navy were destroyed and 'it's too late' to talk; CENTCOM: >1,700 targets hit; Merz at the White House. Aramco rerouting exports to the Red Sea; European gas +35% to highest since 2023 (Qatar LNG outage); Brent above $85 for the first time since Jul 2024. Ukraine: Zelensky rejected ceding Donbas; Politico: US Iran focus drains missile stocks Ukraine needs.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/skrot-wiadomosci-wtorek-3-marca-2100"
+  },
+  {
+   "published": "2026-03-03 22:17",
+   "window_report_date": "2026-03-04",
+   "topic": "markets",
+   "text": "3 Mar US close: Dow -~400pts, losses pared after Trump offered US Navy tanker escorts through Hormuz and US-backed shipping insurance; Brent +4.7% to $81.4 on the day, WTI ~$75; UST10 4.06%; DXY 99.27.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/dzien-na-rynkach-na-wall-street-spadki-dow-w-dol-o-ok-400-pkt"
+  },
+  {
+   "published": "2026-03-04 01:13",
+   "window_report_date": "2026-03-05",
+   "topic": "geopolitics",
+   "text": "Trump threatened a comprehensive trade embargo on Spain over its refusal of bases; scholars note IEEPA could allow an embargo with a national-emergency declaration.",
+   "src": "https://www.odaily.news/en/newsflash/470461"
+  },
+  {
+   "published": "2026-03-04 01:18",
+   "window_report_date": "2026-03-05",
+   "topic": "Fed",
+   "text": "Minneapolis Fed's Kashkari (US 3 Mar): with war clouding the outlook the Fed can wait and see; if inflation cools, one or two more cuts later this year could be appropriate.",
+   "src": "https://www.odaily.news/en/newsflash/470462"
+  },
+  {
+   "published": "2026-03-04 04:37",
+   "window_report_date": "2026-03-05",
+   "topic": "Fed",
+   "text": "Fed Governor Bowman (US 3 Mar speech) on liquidity regulation and discount-window reform (no rate guidance).",
+   "src": "https://www.odaily.news/en/newsflash/470504"
+  },
+  {
+   "published": "2026-03-04 06:35",
+   "window_report_date": "2026-03-05",
+   "topic": "sovereign",
+   "text": "10Y closes 3 Mar: Bund 2.75%, OAT 3.37%, BTP 3.46%, Bonos 3.20%, gilt 4.47% (+10bp) -> OAT-Bund 62bp, BTP-Bund 71bp, Spain 45bp; Schatz 2.16%, UK2 3.73%; CZ2 3.62%, CZ10 4.59%, HU10 6.68%. Live 06:32 4 Mar: UST10 4.07%, UST2 3.51%, JGB10 2.12%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-04 08:00",
+   "window_report_date": "2026-03-05",
+   "topic": "markets",
+   "text": "4 Mar morning: Brent (May) $83.60 (+2.7%), Hormuz described as 'not working'.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/ceny-ropy-coraz-wyzsze-na-bliskim-wschodzie-nowe-ataki-ciesnina-ormuz-nie"
+  },
+  {
+   "published": "2026-03-04 08:22",
+   "window_report_date": "2026-03-05",
+   "topic": "markets",
+   "text": "4 Mar: Asian equities' biggest fall in almost a year; Korea's KOSPI -12% (circuit breakers triggered); gold $5,157 (+1.4%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/dzien-na-rynkach-w-azji-na-gieldach-najsilniejsze-spadki-od-prawie-roku"
+  },
+  {
+   "published": "2026-03-04 09:00",
+   "window_report_date": "2026-03-05",
+   "topic": "CNB",
+   "text": "Czech Feb CPI flash: +1.4% y/y (Jan 1.6%; consensus ~1.6% per Trading Economics), -0.1% m/m; lowest since 2016. Energy -7.8% y/y (POZE fee waiver), services +4.5% y/y, food +0.4%; ex-energy/food/alcohol/tobacco 3.1% y/y. Bloomberg: 'unexpectedly slows as Iran war brings new risks' to CNB easing. (09:00 is the usual CZSO release time; placeholder.)",
+   "src": "https://csu.gov.cz/rychle-informace/flash-estimate-of-cpi-february-2026"
+  },
+  {
+   "published": "2026-03-04 09:07",
+   "window_report_date": "2026-03-05",
+   "topic": "markets",
+   "text": "Goldman raised its Q2 Brent forecast by $10 to $76 (March ~$80) on lower OECD stocks; if Hormuz flows stay this low for 5 more weeks Brent likely reaches $100.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/goldman-sachs-podwyzsza-prognozy-dla-ropy-brent-i-wti"
+  },
+  {
+   "published": "2026-03-04 13:21",
+   "window_report_date": "2026-03-05",
+   "topic": "geopolitics",
+   "text": "Treasury Sec. Bessent (CNBC, 4 Mar): the global tariff will rise from 10% to 15% (Section 122) probably this week; all tariffs to return to pre-SCOTUS-ruling levels within five months (via other authorities).",
+   "src": "https://www.odaily.news/en/newsflash/470588"
+  },
+  {
+   "published": "2026-03-04 14:17",
+   "window_report_date": "2026-03-05",
+   "topic": "US data",
+   "text": "US ADP Feb private payrolls +63k vs +50k expected (Jan revised to +11k from +22k), largest since Nov 2025.",
+   "src": "https://www.odaily.news/en/newsflash/470609"
+  },
+  {
+   "published": "2026-03-04 14:31",
+   "window_report_date": "2026-03-05",
+   "topic": "markets",
+   "text": "4 Mar ~14:30: DXY 98.90 (-0.15%), EUR/USD 1.1647; UST10 4.07%, 2s10s +56bp; Bund 10Y 2.75%; Brent May $80.88 (-0.6%); gold $5,181. Fed officials say the conflict complicates the policy outlook.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/dzien-na-rynkach-niewielkie-wzrosty-futures-w-usa-ceny-ropy-znizkuja"
+  },
+  {
+   "published": "2026-03-04 14:53",
+   "window_report_date": "2026-03-05",
+   "topic": "Fed",
+   "text": "Fed Governor Miran (Jin10 items 470617-470621, which transliterate him as 'Milan'; 4 Mar): ~100bp of cuts this year is appropriate; policy ~1pp above neutral; appropriate to keep cutting at the March meeting; outlook unchanged by the Iran conflict; unclear when Warsh will take office.",
+   "src": "https://www.odaily.news/en/newsflash/470621"
+  },
+  {
+   "published": "2026-03-04 15:00",
+   "window_report_date": "2026-03-05",
+   "topic": "geopolitics",
+   "text": "Market report (Jin10, 4 Mar): the EU is expected to be exempted from the increase of the general US tariff to 15%.",
+   "src": "https://www.odaily.news/en/newsflash/470622"
+  },
+  {
+   "published": "2026-03-04 17:01",
+   "window_report_date": "2026-03-05",
+   "topic": "EZ data",
+   "text": "4 Mar: EZ unemployment Jan 6.1% (Dec revised 6.3%); EZ PPI Jan +0.7% m/m vs +0.2% expected, -2.1% y/y vs -2.6%; services PMI (final) EZ 51.9 (flash 51.8), Germany 53.5, France 49.6, UK 53.9.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/skrot-wiadomosci-sroda-4-marca-1700"
+  },
+  {
+   "published": "2026-03-04 17:01",
+   "window_report_date": "2026-03-05",
+   "topic": "US data",
+   "text": "US ISM services Feb 56.1 vs 53.5 expected (Jan 53.8); S&P Global US services PMI (final) 51.7 (flash 52.3), composite 51.9.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/skrot-wiadomosci-sroda-4-marca-1700"
+  },
+  {
+   "published": "2026-03-04 17:59",
+   "window_report_date": "2026-03-05",
+   "topic": "Fed",
+   "text": "4 Mar 17:59: the White House said it had formally submitted Kevin Warsh's nomination as Fed Chair to the Senate (Powell's chair term ends 15 May).",
+   "src": "https://www.odaily.news/en/newsflash/470662"
+  },
+  {
+   "published": "2026-03-04 18:10",
+   "window_report_date": "2026-03-05",
+   "topic": "markets",
+   "text": "4 Mar European close: equities rebounded; UST10 4.07%, UST30 4.71%; Bund 10Y 2.75% (-1bp); DXY 98.78 (-0.3%), EUR/USD 1.1638, USD/JPY 156.93; Brent May $80.81 (-0.7%); gold $5,181 (+0.9%), silver $84.2.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/dzien-na-rynkach-indeksy-w-europie-odbily-po-wczesniejszych-spadkach"
+  },
+  {
+   "published": "2026-03-04 21:11",
+   "window_report_date": "2026-03-05",
+   "topic": "geopolitics",
+   "text": "4 Mar: QatarEnergy declared force majeure on LNG deliveries; Ras Tanura hit again; Aramco shifting loadings to Yanbu (Red Sea); Iraq-wide blackout; US to exempt Rosneft's German unit from sanctions; NATO air defence intercepted an Iranian missile heading to Turkey (Hegseth: no Article 5); Hegseth: total air control soon, a US submarine sank an Iranian warship (first since 1945). Trump (Tue): Navy escorts and US insurance for Hormuz shipping if needed. Macron backed Spain against US trade threats.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/skrot-wiadomosci-sroda-4-marca-2110"
+  },
+  {
+   "published": "2026-03-04 22:11",
+   "window_report_date": "2026-03-05",
+   "topic": "Fed",
+   "text": "4 Mar US close: Wall St higher; investors moved the expected first 25bp Fed cut to September from July (energy and tariff costs); Brent ~$81.7 (+0.3%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/dzien-na-rynkach-wall-street-w-gore-inwestorzy-mniej-martwia-sie-konfliktem-z"
+  },
+  {
+   "published": "2026-03-05 06:30",
+   "window_report_date": "2026-03-06",
+   "topic": "geopolitics",
+   "text": "China set a 2026 GDP growth target of 4.5-5%, the lowest since 1991; defence budget +7%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/premier-chin-zapowiedzial-najnizszy-cel-wzrostu-pkb-od-dekad-i-hamowanie"
+  },
+  {
+   "published": "2026-03-05 06:35",
+   "window_report_date": "2026-03-06",
+   "topic": "sovereign",
+   "text": "10Y closes 4 Mar: Bund 2.75%, OAT 3.35%, BTP 3.43%, Bonos 3.19%, gilt 4.44% -> OAT-Bund 60bp, BTP-Bund 68bp, Spain 44bp; Schatz 2.13%, UK2 3.71%; CZ2 3.62%, CZ10 4.56%, HU10 6.62%. Live 06:33 5 Mar: UST10 4.12%, UST2 3.56%, JGB10 2.16%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-05 07:55",
+   "window_report_date": "2026-03-06",
+   "topic": "markets",
+   "text": "5 Mar morning: Brent (May) $84.08 (+3.3%) despite US escort pledges.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/ceny-ropy-rosna-pomimo-zapowiedzi-usa-dot-eskorty-statkow-w-ciesninie-ormuz"
+  },
+  {
+   "published": "2026-03-05 09:34",
+   "window_report_date": "2026-03-06",
+   "topic": "BoE",
+   "text": "Trading Economics (5 Mar): gilt 10Y back to ~4.4% (highest since 12 Feb); markets price only ~20% odds of a March BoE cut and a single 25bp cut over 2026. The OBR (Spring Statement) cut its 2026 UK growth forecast to 1.1% from 1.4%, raising 2027-28 to 1.6%.",
+   "src": "https://tradingeconomics.com/united-kingdom/government-bond-yield/news/530896"
+  },
+  {
+   "published": "2026-03-05 12:00",
+   "window_report_date": "2026-03-06",
+   "topic": "geopolitics",
+   "text": "15% global tariff status (5 Mar): Global Trade Magazine/IndexBox reported the US 'is preparing to raise' the temporary Section 122 tariff to 15% (Bessent), but the administration had not issued a formal schedule. The 10% Section 122 duty in force since 24 Feb runs to 24 Jul unless Congress extends it. (Time is a placeholder.)",
+   "src": "https://www.globaltrademag.com/us-raises-temporary-global-import-tariff-to-15-under-trade-act/"
+  },
+  {
+   "published": "2026-03-05 13:14",
+   "window_report_date": "2026-03-06",
+   "topic": "Fed",
+   "text": "CNBC (via Jin10, 5 Mar): if confirmed, Warsh would likely back cuts even with a big oil rise (he has argued rates should be below the current 3.50-3.75% range); the nomination went to the Senate on 4 Mar; Powell's term ends 15 May.",
+   "src": "https://www.odaily.news/en/newsflash/470766"
+  },
+  {
+   "published": "2026-03-05 14:39",
+   "window_report_date": "2026-03-06",
+   "topic": "Fed",
+   "text": "Richmond Fed's Barkin (5 Mar): recent data put the 'we have conquered inflation' view on hold; textbooks say look through supply shocks but oil hits confidence and spending.",
+   "src": "https://www.odaily.news/en/newsflash/470795"
+  },
+  {
+   "published": "2026-03-05 16:04",
+   "window_report_date": "2026-03-06",
+   "topic": "ECB",
+   "text": "Reuters via RTE (5 Mar): three ECB policymakers warned euro-zone inflation would likely rise and growth sag if the Iran war drags on. Nagel: the situation differs from 2022 (policy now tighter), a quick end means limited short-term effects but sustained high energy prices would raise inflation and weaken activity; Rehn: don't be overly optimistic about a swift end; de Guindos: baseline is a short conflict, a longer one risks shifting inflation expectations; Kazaks: depends on whether inflation or weak growth prevails; Stournaras called for flexibility. No change expected at the 18-19 Mar meeting. (Page stamp 15:04 Irish time.)",
+   "src": "https://www.rte.ie/news/business/2026/0305/1561736-villeroy-sees-no-reason-for-ecb-to-raise-rates"
+  },
+  {
+   "published": "2026-03-05 16:05",
+   "window_report_date": "2026-03-06",
+   "topic": "markets",
+   "text": "ECB reference rate 5 Mar: EUR/USD 1.1618 (3 Mar 1.1606, 4 Mar 1.1649).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/euro-w-ebc-11618-usd-i-18303-jpy"
+  },
+  {
+   "published": "2026-03-05 16:57",
+   "window_report_date": "2026-03-06",
+   "topic": "ECB",
+   "text": "PKO BP's Budzicki (5 Mar): inflation expectations and terminal-rate pricing rose globally; for the ECB, the market now prices a 25bp HIKE in 2026 with >50% probability.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/dzien-na-fxfi-eurpln-i-rentownosci-spw-moga-utrzymywac-sie-na-podwyzszonych"
+  },
+  {
+   "published": "2026-03-05 17:01",
+   "window_report_date": "2026-03-06",
+   "topic": "US data",
+   "text": "US initial jobless claims (w/e 28 Feb) 213k vs 215k expected (prior revised 214k); continuing 1.85m. Challenger Feb job cuts -71.9% y/y. EZ Jan retail sales -0.1% m/m vs +0.3% expected (Dec revised +0.1%); France Jan IP +0.5% m/m.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/skrot-wiadomosci-czwartek-5-marca-1700"
+  },
+  {
+   "published": "2026-03-05 18:02",
+   "window_report_date": "2026-03-06",
+   "topic": "markets",
+   "text": "5 Mar European close: UST10 4.14% (+5bp), UST30 4.76%; Bund 10Y 2.84% (+9bp); DXY 99.30 (+0.55%), EUR/USD 1.1578, USD/JPY 157.67; Brent May $84.50 (+3.8%), WTI $79.2; gold $5,069 (-1.3%), silver $84.2.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/dzien-na-rynkach-indeksy-gieldowe-w-europie-ze-sporymi-spadkami"
+  },
+  {
+   "published": "2026-03-05 21:05",
+   "window_report_date": "2026-03-06",
+   "topic": "geopolitics",
+   "text": "US tariffs, legal: the US Court of International Trade ruled that importers who paid the IEEPA tariffs voided by the Supreme Court are entitled to refunds (experts: up to ~$175bn). Iran war: US Energy Sec. Wright said the Navy will escort tankers 'as early as possible' (no requests yet); Hegseth urged Israel to keep up pressure; Axios: Iran reached out via intermediaries, the US did not reply; Trump said he must be involved in choosing Iran's next leader. Ukraine: Zelensky said trilateral talks may change venue/date; Druzhba pipeline repair ~1.5 months. Hungary: Szijjarto met Putin (energy supplies at the same price).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/skrot-wiadomosci-czwartek-5-marca-2100"
+  },
+  {
+   "published": "2026-03-05 22:10",
+   "window_report_date": "2026-03-06",
+   "topic": "markets",
+   "text": "5 Mar US close: Dow -~800pts; WTI +8% above $80 (highest since Jan 2025), Brent +5% to >$85; weekly gains so far WTI +20%, Brent +17%. LSEG: investors moved the first 25bp Fed cut to September from July.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260305/dzien-na-rynkach-gieldy-w-usa-w-dol-cena-ropy-przekroczyla-80-usdbbl"
+  },
+  {
+   "published": "2026-03-06 06:31",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "Reuters (via Odaily, 6 Mar 06:31): CIT Judge Richard Eaton to hold a closed-door 'settlement conference' with government lawyers on Fri 6 Mar to set a process for refunding up to $175bn of IEEPA tariffs to >300,000 importers.",
+   "src": "https://www.odaily.news/en/newsflash/470890"
+  },
+  {
+   "published": "2026-03-06 07:37",
+   "window_report_date": "2026-03-09",
+   "topic": "sovereign",
+   "text": "10Y closes 5 Mar (rows not date-stamped): Bund 2.84% (+9bp), OAT 3.47%, BTP 3.56%, Bonos 3.30%, gilt 4.54% -> OAT-Bund 63bp, BTP-Bund 72bp, Spain 46bp; Schatz 2.24%, UK2 3.81%; CZ2 3.67%, CZ10 4.70%, HU10 6.69%; UST10 4.14%, UST2 3.58%, JGB10 2.17%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-06 08:32",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "6 Mar Asia: UST yields up ~18bp this week (most in almost a year) and the dollar headed for its biggest weekly gain in 16 months; DXY 99.02.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-futures-w-europie-rosna-gieldy-w-azji-glownie-na-plusach"
+  },
+  {
+   "published": "2026-03-06 10:18",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "FT (6 Mar): Qatar's energy minister expects all Gulf energy exporters to halt output within weeks and oil to reach $150 within 2-3 weeks; Kuwait began cutting output as storage filled (WSJ).",
+   "src": "https://www.odaily.news/en/newsflash/470917"
+  },
+  {
+   "published": "2026-03-06 11:45",
+   "window_report_date": "2026-03-09",
+   "topic": "ECB",
+   "text": "6 Mar: three ECB officials warned inflation may rise as growth slows if the conflict widens; markets now fully price an ECB rate HIKE by year-end (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-gieldy-w-europie-glownie-spadaja-obawy-o-wojne-na-bliskim"
+  },
+  {
+   "published": "2026-03-06 14:12",
+   "window_report_date": "2026-03-09",
+   "topic": "Fed",
+   "text": "Fed Governor Waller (6 Mar interview): the Iran war is unlikely to cause sustained inflation; the Fed looks through one-off energy price rises and focuses on core; January payrolls were 'almost certain' to be revised down.",
+   "src": "https://www.odaily.news/en/newsflash/470962"
+  },
+  {
+   "published": "2026-03-06 14:31",
+   "window_report_date": "2026-03-09",
+   "topic": "US data",
+   "text": "US Feb nonfarm payrolls -92k vs +59k expected (Jin10), first negative print since Oct 2025; unemployment 4.4% vs 4.3% expected (highest since Dec 2025); Jan retail sales -0.2% m/m vs -0.3% expected (released together at 14:30).",
+   "src": "https://www.odaily.news/en/newsflash/470966"
+  },
+  {
+   "published": "2026-03-06 14:32",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "After the payrolls miss: spot gold +$40 to $5,112, silver $83.85, DXY briefly fell >20 pips to 99.14.",
+   "src": "https://www.odaily.news/en/newsflash/470967"
+  },
+  {
+   "published": "2026-03-06 14:47",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "Post-payrolls (6 Mar): USTs rallied, UST10 -3bp to 4.10%, UST2 -5bp to 3.53%; swaps priced 44bp of Fed cuts by December vs 35bp before the report (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/470977"
+  },
+  {
+   "published": "2026-03-06 14:52",
+   "window_report_date": "2026-03-09",
+   "topic": "US data",
+   "text": "PAP on payrolls (6 Mar 14:52): -92k vs +55k expected; two-month net revision -69k; unemployment 4.4% vs 4.3%; average hourly earnings +0.4% m/m, +3.8% y/y vs 0.3%/3.7% expected (prior 0.4%/3.7%). Payrolls consensus elsewhere: ~+50k (PAP 22:09) and +60k (PAP week-ahead).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-futures-w-usa-spadaja-cena-ropy-wti-powyzej-85-usdb"
+  },
+  {
+   "published": "2026-03-06 14:52",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "6 Mar ~14:50: UST10 4.12% (-2bp), UST30 4.74%, 2s10s +56bp; Bund 10Y 2.84%; DXY 99.08, EUR/USD 1.1566; WTI $86.3 (+6.6%, first above $85 since Apr 2024), Brent May $89.2 (+4.4%); gold $5,080.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-futures-w-usa-spadaja-cena-ropy-wti-powyzej-85-usdb"
+  },
+  {
+   "published": "2026-03-06 14:55",
+   "window_report_date": "2026-03-09",
+   "topic": "Fed",
+   "text": "SF Fed's Daly (6 Mar): no single month is decisive, but the labour market is unstable, making an immediate hike difficult; don't over-interpret the weak payrolls.",
+   "src": "https://www.odaily.news/en/newsflash/470981"
+  },
+  {
+   "published": "2026-03-06 15:56",
+   "window_report_date": "2026-03-09",
+   "topic": "Fed",
+   "text": "Chicago Fed's Goolsbee (6 Mar): cuts expected to start by year-end, though the timing for prudent action keeps being pushed back.",
+   "src": "https://www.odaily.news/en/newsflash/471000"
+  },
+  {
+   "published": "2026-03-06 16:05",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "ECB reference rate 6 Mar: EUR/USD 1.1561, EUR/JPY 182.57.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/euro-w-ebc-11561-usd-i-18257-jpy"
+  },
+  {
+   "published": "2026-03-06 17:01",
+   "window_report_date": "2026-03-09",
+   "topic": "EZ data",
+   "text": "6 Mar: Jan payrolls revised to +126k from +130k (US DoL). EZ Q4 GDP (final) revised down to +0.2% q/q from +0.3% (Q3 +0.1%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/skrot-wiadomosci-piatek-6-marca-1700"
+  },
+  {
+   "published": "2026-03-06 17:53",
+   "window_report_date": "2026-03-09",
+   "topic": "Fed",
+   "text": "Fed Governor Miran (6 Mar): neutral rate ~2.5-2.75%; if the Fed does not cut this month he expects dissent, arguing rates should go to neutral before reassessing.",
+   "src": "https://www.odaily.news/en/newsflash/471012"
+  },
+  {
+   "published": "2026-03-06 18:18",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "6 Mar ~18:00: WTI +11.6% above $90; Brent $92.6 (+8.4%); EUR/USD 1.1599, USD/JPY 157.66; European stocks heading for their worst week in almost a year.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-gieldy-w-europie-na-minusach-ropa-wti-ponad-90-usdb"
+  },
+  {
+   "published": "2026-03-06 21:01",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "6 Mar: Trump said he will accept nothing short of Iran's 'unconditional surrender' and that Iran's next leader must be acceptable to the US; Axios: Rubio told Arab counterparts the war will last several more weeks; US Treasury issued a licence (to 4 Apr) for India to buy Russian oil already loaded at sea (5 Mar); Hungary's Orban halted transit of goods to Ukraine until Druzhba flows resume; Der Spiegel: the war hampers Patriot supply for Ukraine.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/skrot-wiadomosci-piatek-6-marca-2100"
+  },
+  {
+   "published": "2026-03-06 22:09",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "Tariff legal challenges (6 Mar): NY AG Letitia James and AGs of 23 other states refiled suit to block Trump's global tariff regime; this followed Thursday's CIT ruling that importers are entitled to refunds of the voided IEEPA tariffs.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-rynkach-na-wall-street-kolejny-dzien-spadkow-gwaltownie-rosna-ceny"
+  },
+  {
+   "published": "2026-03-07 07:13",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "Bessent (Fox Business, 6 Mar US time): the Treasury may lift more sanctions on Russian oil at sea to add supply ('hundreds of millions of barrels'); Brent topped $90 on Friday, up nearly 40% since the war began.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260307/usa-moga-zdjac-kolejne-sankcje-z-rosyjskiej-ropy-bessent"
+  },
+  {
+   "published": "2026-03-07 07:34",
+   "window_report_date": "2026-03-09",
+   "topic": "markets",
+   "text": "Weekly close 6 Mar (Jin10): WTI front month +12.7% on the day to $91.27, +35.6% on the week, the biggest weekly gain since futures began in 1983; Brent +9.26% to $93.32, +27.5% on the week (largest since 1990). PAP's 22:09 quote was Brent $92.32 (+8.1%); the exact settlement is unresolved.",
+   "src": "https://www.odaily.news/en/newsflash/471068"
+  },
+  {
+   "published": "2026-03-08 16:17",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "Trump (ABC, 8 Mar 16:17 CET): without his approval Iran's new supreme leader 'won't last long'; Iran's FM said the leader would be named after the Assembly of Experts votes.",
+   "src": "https://www.odaily.news/en/newsflash/471191"
+  },
+  {
+   "published": "2026-03-08 19:28",
+   "window_report_date": "2026-03-09",
+   "topic": "geopolitics",
+   "text": "Weekend 7-8 Mar: Israel struck Iranian oil infrastructure around Tehran (refinery fire); southern Iraq crude output down ~70% because exports are blocked (Reuters); Iran's Assembly of Experts chose a new supreme leader (name not yet released); President Pezeshkian said attacks on neighbours would stop unless launched from their soil, but strikes continued; NBC: Trump interested in deploying a small US force in Iran; Axios: US-Israel discussed special forces to secure enriched uranium. EU Commission weighing short-term energy-cost relief. Greens narrowly won the Baden-Wuerttemberg election (CDU second, AfD 18.7%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260308/skrot-wiadomosci-sobota-niedziela-7-8-marca"
+  },
+  {
+   "published": "2026-03-09 01:03",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "Sunday-night open (9 Mar ~01:00 CET): WTI +18% above $108 and briefly $110; oil above $100 for the first time since 2022. Trump: higher oil is 'a very small price to pay' for security.",
+   "src": "https://www.odaily.news/en/newsflash/471195"
+  },
+  {
+   "published": "2026-03-09 01:06",
+   "window_report_date": "2026-03-10",
+   "topic": "geopolitics",
+   "text": "9 Mar 01:06 CET: Iran's Assembly of Experts confirmed Mojtaba Khamenei, son of the late leader, as the new supreme leader.",
+   "src": "https://www.odaily.news/en/newsflash/471196"
+  },
+  {
+   "published": "2026-03-09 06:20",
+   "window_report_date": "2026-03-10",
+   "topic": "geopolitics",
+   "text": "On Fri 6 Mar the administration announced a $20bn reinsurance programme to revive Hormuz shipping, with possible US naval escorts (reported in the PAP 9 Mar week-ahead).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/tydzien-na-rynkach-wojna-na-bliskim-wschodzie-pce-z-usa-decyzja-tcmb"
+  },
+  {
+   "published": "2026-03-09 06:33",
+   "window_report_date": "2026-03-10",
+   "topic": "sovereign",
+   "text": "10Y closes 6 Mar: Bund 2.86%, OAT 3.51%, BTP 3.62%, Bonos 3.35%, gilt 4.63% -> OAT-Bund 65bp, BTP-Bund 76bp, Spain 49bp; Schatz 2.31%, UK2 3.87%; CZ2 3.87%, CZ10 4.90%, HU10 6.95%. Live 06:31 9 Mar: UST10 4.19% (prior-day value 4.14%), UST2 3.61%, JGB10 2.20%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-09 07:29",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar Asia: investors kept selling USTs (2Y up ~6bp, Tradeweb); Barclays: USTs failed as a haven because the war's impact skews to inflation and deficits, not growth, forcing repricing of the policy path and fiscal premium.",
+   "src": "https://www.odaily.news/en/newsflash/471261"
+  },
+  {
+   "published": "2026-03-09 07:35",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar morning: Brent May $106.95 (+15.4%) after a 29% spike to $119.50, highest since Apr 2020 (PAP 07:35).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/ceny-ropy-na-swiecie-rosna-bez-granic"
+  },
+  {
+   "published": "2026-03-09 07:40",
+   "window_report_date": "2026-03-10",
+   "topic": "Fed",
+   "text": "Goldman strategists (9 Mar): rates markets have shifted to trading hawkish policy; inflation risk now outranks growth worries; the market reaction to the weak payrolls was muted.",
+   "src": "https://www.odaily.news/en/newsflash/471264"
+  },
+  {
+   "published": "2026-03-09 08:24",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar: Nikkei 225 -5.2% (Odaily had -5.4%, largest since the Apr 2025 tariff rout); USD/JPY 158.7; UST10 4.21% (+7bp); gold $5,088 (-0.6%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/dzien-na-rynkach-w-azji-na-gieldach-silne-spadki"
+  },
+  {
+   "published": "2026-03-09 13:47",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar ~13:45: WTI $100.2 (+10.3%), Brent $102.3 (+10.4%); EUR/USD 1.1563, USD/JPY 158.43; VIX above 30, highest since April.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/dzien-na-rynkach-gieldowe-futures-w-usa-w-dol-wzrost-cen-energii-podsyca-obawy"
+  },
+  {
+   "published": "2026-03-09 15:48",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "IEA's Birol (9 Mar 15:48): the G7 meeting discussed all options, including releasing emergency oil stocks.",
+   "src": "https://www.odaily.news/en/newsflash/471356"
+  },
+  {
+   "published": "2026-03-09 16:05",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "ECB reference rate 9 Mar: EUR/USD 1.1555, EUR/JPY 183.15.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/euro-w-ebc-11555-usd-i-18315-jpy"
+  },
+  {
+   "published": "2026-03-09 17:01",
+   "window_report_date": "2026-03-10",
+   "topic": "EZ data",
+   "text": "9 Mar: German Jan IP -0.5% m/m vs +1.0% expected; German factory orders -11.1% m/m; EZ Sentix Mar -3.1 vs -3.0 expected (Feb +4.2); China Feb CPI +1.3% y/y vs 0.9% expected. Bloomberg: investors are adding bets on ECB and BoE rate hikes.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/skrot-wiadomosci-poniedzialek-9-marca-1700"
+  },
+  {
+   "published": "2026-03-09 18:12",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar ~18:00: Brent $98.6 (+6.4%), WTI $93.4; EUR/USD 1.1588, USD/JPY 158.13; European stocks lower.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/dzien-na-rynkach-gieldy-w-europie-w-dol-wojna-i-wzrost-cen-ropy-w-centrum-uwagi"
+  },
+  {
+   "published": "2026-03-09 20:57",
+   "window_report_date": "2026-03-10",
+   "topic": "geopolitics",
+   "text": "9 Mar ~21:00 CET: Trump said in a phone interview that the Iran war is 'basically over'; oil plunged (WTI -11% to ~$81, Brent -9%); ~$30m of CL contracts liquidated in an hour.",
+   "src": "https://www.odaily.news/en/newsflash/471381"
+  },
+  {
+   "published": "2026-03-09 21:03",
+   "window_report_date": "2026-03-10",
+   "topic": "geopolitics",
+   "text": "Trump called Putin (9 Mar) about Iran and Ukraine; the Kremlin called the hour-long call constructive. G7 finance ministers said they stand ready to take all necessary steps, including releasing strategic oil reserves. Von der Leyen: the stalled EUR90bn Ukraine loan shows the EU needs a new foreign policy. Orban asked the EU to lift energy sanctions on Russia. Aramco began cutting output at two fields. A second Iranian missile toward Turkey was downed by NATO.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/skrot-wiadomosci-poniedzialek-9-marca-2100"
+  },
+  {
+   "published": "2026-03-09 21:20",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar US close: Wall St reversed early losses to close higher on Trump's 'war ending soon'; Brent May $89.60 (-3.3% vs Friday) late evening.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/dzien-na-rynkach-wzrosty-na-wall-street-po-zapowiedziach-trumpa-o-bliskim-koncu"
+  },
+  {
+   "published": "2026-03-09 23:07",
+   "window_report_date": "2026-03-10",
+   "topic": "markets",
+   "text": "9 Mar ~22:30: WTI -6.4% to $85.08, Brent -2.25% to $90.60 after Trump said the war is close to ending and he is considering taking control of Hormuz; Rystad: Brent could reach $135 if disruption lasts four months, >$110 if two months.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260309/ceny-ropy-spadly-po-zapowiedziach-trumpa-dot-wojny-w-iranie-i-przejecia"
+  },
+  {
+   "published": "2026-03-10 01:01",
+   "window_report_date": "2026-03-11",
+   "topic": "geopolitics",
+   "text": "Trump press conference in Miami (US 9 Mar): the military action against Iran will end soon; oil rose less than expected.",
+   "src": "https://www.odaily.news/en/newsflash/471383"
+  },
+  {
+   "published": "2026-03-10 06:34",
+   "window_report_date": "2026-03-11",
+   "topic": "sovereign",
+   "text": "10Y closes 9 Mar: Bund 2.86%, OAT 3.51%, BTP 3.61%, Bonos 3.35%, gilt 4.65% -> OAT-Bund 65bp, BTP-Bund 75bp, Spain 49bp; Schatz 2.32%, UK2 3.99% (+12bp); CZ2 3.93%, CZ10 4.96%, HU3 6.87%, HU10 7.35% (+40bp). Live 06:31 10 Mar: UST10 4.11%, UST2 3.56%, JGB10 2.18%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-10 07:04",
+   "window_report_date": "2026-03-11",
+   "topic": "geopolitics",
+   "text": "Trump (CBS, Mon 9 Mar US time; the 'war ending soon' headline was already out ~20:40 CET 9 Mar) did not rule out taking over Hormuz and threatened strikes '20 times harder', including on power plants, if Iran blocks oil and gas flows; the war ends soon 'but not this week' (PAP 10 Mar).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/trump-zasugerowal-szybkie-zakonczenie-wojny-z-iranem-i-przejecie-ciesniny-ormuz"
+  },
+  {
+   "published": "2026-03-10 07:47",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "10 Mar morning: Brent May $93.51 (-$5.51; implied 9 Mar settle ~$99.0, before the post-settlement slide).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/ceny-ropy-na-swiecie-mocno-spadaja-po-sugestiach-prezydenta-usa-ws-iranu"
+  },
+  {
+   "published": "2026-03-10 09:00",
+   "window_report_date": "2026-03-11",
+   "topic": "ECB",
+   "text": "Lagarde (France 2/France Inter interview, Tue 10 Mar): the ECB will do 'everything necessary' to keep inflation under control so Europeans do not see inflation spikes like 2022-23; the situation is 'very different' and Europe is better placed to absorb the shock. (Time is a placeholder for the morning broadcast.)",
+   "src": "https://eco.sapo.pt/2026/03/10/bce-fara-o-que-for-necessario-para-manter-a-inflacao-sob-controlo/"
+  },
+  {
+   "published": "2026-03-10 09:12",
+   "window_report_date": "2026-03-11",
+   "topic": "MNB",
+   "text": "Hungary Feb CPI 1.4% y/y vs 1.7% consensus (Jan 2.1%), +0.1% m/m; core 2.1% (Jan 2.7%), softest since Sep 2018; lowest headline since Nov 2016. ING: it would have backed a March cut, but if volatility, a weak forint and high energy prices persist the MNB will likely hold on 24 Mar; CPI seen >3% by end-H1, ~4% by year-end.",
+   "src": "https://tradingeconomics.com/hungary/inflation-cpi/news/532194"
+  },
+  {
+   "published": "2026-03-10 10:00",
+   "window_report_date": "2026-03-11",
+   "topic": "CNB",
+   "text": "CNB comment on Feb CPI (10 Mar, final 1.4% y/y, below the CNB forecast of 1.6%): core 2.7% (forecast 2.8%), services 4.3%, policy-relevant inflation 1.7%; 'inflation will be affected by an increase in oil prices in the months ahead, but it could still stay below 2%'; elevated core and rising global cost pressures argue for caution. (10:00 is a placeholder.)",
+   "src": "https://www.cnb.cz/en/public/media-service/the-cnb-comments-on-the-statistical-data-on-inflation-and-gdp/Inflation-falls-to-1.4-in-February-the-lowest-since-2016"
+  },
+  {
+   "published": "2026-03-10 10:14",
+   "window_report_date": "2026-03-11",
+   "topic": "ECB",
+   "text": "Trading Economics (10 Mar): Bund 10Y eased to 2.84% after nearly 2.9% on Monday as Trump hinted at a quick end to the Iran operation; oil back below $100. Markets expect the ECB to raise rates by at least 25bp this year; Lane had warned of a 'substantial spike' in inflation and a 'sharp drop in output' if the conflict lasts.",
+   "src": "https://tradingeconomics.com/germany/government-bond-yield/news/532245"
+  },
+  {
+   "published": "2026-03-10 14:04",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "10 Mar ~14:00: LSEG: markets price at least one ECB hike by year-end; DXY 98.78 (-0.4%), EUR/USD 1.1628; UST10 4.13%, UST30 4.76%; Bund 10Y 2.86%; Brent May $93.59 (-5.4%); gold $5,188 (+1.7%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/dzien-na-rynkach-futures-w-usa-spadaja-obawy-o-wojne-w-iranie-utrzymuja-sie"
+  },
+  {
+   "published": "2026-03-10 16:12",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "ECB reference rate 10 Mar: EUR/USD 1.1641, EUR/JPY 183.67.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/euro-w-ebc-11641-usd-i-18367-jpy"
+  },
+  {
+   "published": "2026-03-10 17:04",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "EIA STEO (10 Mar) raised its 2026 Brent average forecast to $78.84 (WTI $73.61 from $53.42).",
+   "src": "https://www.odaily.news/en/newsflash/471568"
+  },
+  {
+   "published": "2026-03-10 17:52",
+   "window_report_date": "2026-03-11",
+   "topic": "geopolitics",
+   "text": "10 Mar 17:52: US officials said military action against Iran is escalating and diplomacy is unlikely, cooling Trump's 'end soon' message; US intelligence: Iran taking steps to mine Hormuz lanes (19:17).",
+   "src": "https://www.odaily.news/en/newsflash/471572"
+  },
+  {
+   "published": "2026-03-10 18:04",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "10 Mar European close: equities up on hopes for a quick end; UST10 4.11%, UST30 4.75%, 2s10s +56bp; Bund 10Y 2.84% (-2bp); DXY 98.62 (-0.6%), EUR/USD 1.1648, USD/JPY 157.63; Brent May $88.26 (-10.9%), WTI $84.0 (-11.5%); gold $5,242 (+2.7%), silver $90.0.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/dzien-na-rynkach-indeksy-w-europie-zwyzkowaly-odbicie-po-slowach-trumpa-ws"
+  },
+  {
+   "published": "2026-03-10 21:01",
+   "window_report_date": "2026-03-11",
+   "topic": "geopolitics",
+   "text": "10 Mar: G7 energy ministers did not release reserves but asked the IEA to assess (IEA called an emergency meeting); the EU Commission is in talks with the IEA on releasing stocks; Hungary banned exports of crude and some fuels and released reserves; Aramco CEO warned prolonged Hormuz disruption would be catastrophic; UAE Ruwais refinery shut after a drone attack. Trump (Fox) said he would be open to talks with Iran depending on terms; Axios reported a first US-Israel rift over strikes on fuel depots. Costa: Russia is so far the only winner of the Iran war.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/skrot-wiadomosci-wtorek-10-marca-2100"
+  },
+  {
+   "published": "2026-03-10 22:31",
+   "window_report_date": "2026-03-11",
+   "topic": "markets",
+   "text": "10 Mar US close: little changed; Brent May $91.29 (-7.8%) late; WTI $86.4.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260310/dzien-na-rynkach-male-zmiany-na-wall-street-na-koniec-dnia"
+  },
+  {
+   "published": "2026-03-11 06:48",
+   "window_report_date": "2026-03-12",
+   "topic": "sovereign",
+   "text": "10Y closes 10 Mar: Bund 2.84%, OAT 3.45%, BTP 3.53%, Bonos 3.29%, gilt 4.55% -> OAT-Bund 61bp, BTP-Bund 69bp, Spain 45bp; Schatz 2.25%, UK2 3.86%; CZ2 3.78%, CZ10 4.71%, HU10 6.94%. Live 06:35 11 Mar: UST10 4.14% (prior-day value 4.16%), UST2 3.57%, JGB10 2.17%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-11 07:42",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar morning: Brent May $87.64 (-$0.18; implied 10 Mar settle ~$87.8) on talk of strategic reserve releases.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/ceny-ropy-sie-wahaja-mozliwe-uwolnienie-z-rezerw-strategicznych"
+  },
+  {
+   "published": "2026-03-11 09:30",
+   "window_report_date": "2026-03-12",
+   "topic": "ECB",
+   "text": "ECB speakers (11 Mar): Kazimir (Bloomberg) said the war could force the ECB to hike earlier than expected, 'the reaction is potentially closer than many people think', worried that 2022's memory lowers the threshold for price/wage rises; 'we won't let inflation become entrenched'; would not speculate on April vs June. Villeroy (RTL): 'I don't think we should raise rates now' at next week's meeting; the ECB is in a 'good situation'.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/dzien-na-rynkach-w-europie-na-gieldach-spadki-ropa-znow-drozeje"
+  },
+  {
+   "published": "2026-03-11 09:36",
+   "window_report_date": "2026-03-12",
+   "topic": "BoE",
+   "text": "Trading Economics (11 Mar): gilt 10Y ~4.55%, near the 4.59% four-month high hit earlier this week; money markets price very little chance of any BoE cut in 2026 (vs ~two before the conflict). UK monthly GDP due Fri.",
+   "src": "https://tradingeconomics.com/united-kingdom/government-bond-yield/news/532544"
+  },
+  {
+   "published": "2026-03-11 10:38",
+   "window_report_date": "2026-03-12",
+   "topic": "ECB",
+   "text": "Trading Economics (11 Mar): Bund 10Y back to 2.9%, highest since 23 Jan, as markets price an ECB hike later this year (vs a modest chance of a cut before the war); Lagarde (Tue) pledged all necessary measures to keep inflation in check.",
+   "src": "https://tradingeconomics.com/germany/government-bond-yield/news/532568"
+  },
+  {
+   "published": "2026-03-11 10:38",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar 10:38: sources said the IEA's proposed emergency oil release could total 400m bbl (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/471660"
+  },
+  {
+   "published": "2026-03-11 12:00",
+   "window_report_date": "2026-03-12",
+   "topic": "CNB",
+   "text": "CNB board member Kubicek (Bloomberg interview, 11 Mar; republished by CNB): the CNB can hold rates despite higher oil because long-dated oil futures rose much less than spot and low headline inflation is a 'relatively large buffer'; 3.5% is appropriate, not restrictive (strong lending); market pricing of hikes is 'overdone'; a cut only after a strong foreign-demand shock or a clear fall in core (2.7% in Feb). (Time is a placeholder.)",
+   "src": "https://www.cnb.cz/en/public/media-service/interviews-articles/Jan-Kubicek-Czech-rates-are-appropriate-with-oil-shock-buffer"
+  },
+  {
+   "published": "2026-03-11 13:41",
+   "window_report_date": "2026-03-12",
+   "topic": "US data",
+   "text": "US Feb CPI +0.3% m/m, 2.4% y/y (both in line); core +0.2% m/m, 2.5% y/y, the slowest annual rate in nearly five years, i.e. pre-war price pressures were easing (BLS via Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/471694"
+  },
+  {
+   "published": "2026-03-11 13:55",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar ~14:00: UST10 4.17% (+4bp), UST30 4.82%; Bund 10Y 2.90%; DXY 99.02, EUR/USD 1.1598, USD/JPY 158.38; Brent May $91.39 (+3.9%); gold $5,198.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/dzien-na-rynkach-futures-w-usa-spadaja-na-rynkach-obawy-o-ceny-ropy"
+  },
+  {
+   "published": "2026-03-11 14:00",
+   "window_report_date": "2026-03-12",
+   "topic": "MNB",
+   "text": "MNB minutes of the 24 Feb meeting (published 2pm 11 Mar): unanimous 11-0 vote for the 25bp cut to 6.25% (single option discussed); the Council 'did not decide to initiate a cycle of interest rate cuts' and will decide cautiously and data-driven meeting by meeting; some members flagged rising oil prices as an external cost factor; markets then priced two more Fed cuts.",
+   "src": "https://www.mnb.hu/letoltes/en-roviditett-jegyzokonyv-a-monetaris-tanacs-2026-februar-24-i-uleserol.pdf"
+  },
+  {
+   "published": "2026-03-11 15:14",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "IEA (11 Mar 15:14) announced a coordinated release of 400m bbl of emergency oil stocks, the largest action in its history.",
+   "src": "https://www.odaily.news/en/newsflash/471712"
+  },
+  {
+   "published": "2026-03-11 17:31",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "ECB reference rate 11 Mar: EUR/USD 1.1581, EUR/JPY 183.63.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/euro-w-ebc-11581-usd-i-18363-jpy"
+  },
+  {
+   "published": "2026-03-11 18:06",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar European close: UST10 4.21% (+7bp), UST30 4.85%; Bund 10Y 2.94%; DXY 99.23, EUR/USD 1.1569, USD/JPY 158.84; Brent May $92.31 (+5.1%) despite the IEA release; gold $5,182 (-1.2%), silver $85.5.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/dzien-na-rynkach-spadki-na-europejskich-gieldach-wobec-wzrostu-cen-ropy"
+  },
+  {
+   "published": "2026-03-11 21:07",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar: Germany to release part of its oil reserves (DIW: fuel adds ~0.4pp to German 2026 inflation); Japan's PM Takaichi said Japan will start releasing reserves on 16 Mar and cap gasoline at ~JPY170/l; US crude stocks +3.8m bbl (DoE); European gas up slightly after a ~50% rise since the war began.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/skrot-wiadomosci-sroda-11-marca-2100"
+  },
+  {
+   "published": "2026-03-11 21:07",
+   "window_report_date": "2026-03-12",
+   "topic": "geopolitics",
+   "text": "11 Mar: WSJ: the US military rejected several Gulf requests to escort tankers through Hormuz; Trump (Axios): the war ends soon, 'practically nothing left to target', but when he wants; Iran threatened US/Israel-linked banks in the region (Dubai offices of Deloitte, PwC, Citi, StanChart closed) and US tech firms; IRGC navy: ships need Iranian permission to enter Hormuz; Israel: Mojtaba Khamenei lightly wounded; Trump told oil firms to resume exports via Hormuz. G7 (Macron): Hormuz does not justify easing Russia sanctions. Romania opened bases to US support flights.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/skrot-wiadomosci-sroda-11-marca-2100"
+  },
+  {
+   "published": "2026-03-11 21:15",
+   "window_report_date": "2026-03-12",
+   "topic": "US data",
+   "text": "PAP on US Feb CPI (11 Mar 21:15): headline +0.3% m/m, 2.4% y/y vs 0.3%/2.4% expected; core +0.2% m/m, 2.5% y/y vs 0.2%/2.5% expected (Jan: headline 0.2%/2.4%, core 0.3%/2.5%). PAP's 13:55 piece had core +0.3% vs +0.3% expected; the 21:15 and Jin10 figures are used. US close: stocks lower on oil.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260311/dzien-na-rynkach-gieldy-w-usa-w-dol-w-centrum-uwagi-wzrost-cen-ropy"
+  },
+  {
+   "published": "2026-03-11 23:53",
+   "window_report_date": "2026-03-12",
+   "topic": "markets",
+   "text": "11 Mar 23:53: two tankers attacked in the Gulf region; oil prices jumped sharply.",
+   "src": "https://www.odaily.news/en/newsflash/471733"
+  },
+  {
+   "published": "2026-03-12 03:38",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "12 Mar 03:38: Brent futures +9% back above $100 on disruption at a key Omani port.",
+   "src": "https://www.odaily.news/en/newsflash/471765"
+  },
+  {
+   "published": "2026-03-12 06:36",
+   "window_report_date": "2026-03-13",
+   "topic": "sovereign",
+   "text": "10Y closes 11 Mar: Bund 2.93% (+9bp), OAT 3.57%, BTP 3.67%, Bonos 3.41%, gilt 4.69% -> OAT-Bund 64bp, BTP-Bund 74bp, Spain 48bp; Schatz 2.38%, UK2 4.01%; CZ2 3.87%, CZ10 4.80%, HU10 7.07%. Live 06:34 12 Mar: UST10 4.24%, UST2 3.67%, JGB10 2.18%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-12 07:45",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "12 Mar morning: Brent May $98.57 (+$7.16; implied 11 Mar settle ~$91.4) after topping $100 overnight; Iraq halted all oil terminals after tankers were attacked near Umm Qasr; Goldman warned prices could exceed the 2008 peak ($147.5) if Hormuz flows stay low this month.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/ceny-ropy-mocno-rosna-brent-znow-testuje-poziom-100-usd-za-barylke"
+  },
+  {
+   "published": "2026-03-12 10:04",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "IEA Oil Market Report (12 Mar): the war is causing the largest supply disruption in oil market history, hitting ~7.5% of global supply; supply growth forecast cut sharply.",
+   "src": "https://www.odaily.news/en/newsflash/471819"
+  },
+  {
+   "published": "2026-03-12 13:30",
+   "window_report_date": "2026-03-13",
+   "topic": "US data",
+   "text": "US initial jobless claims (w/e 7 Mar) 213k vs 215k expected (prior revised 214k); 4-week average 212k; continuing claims 1.85m (in line).",
+   "src": "https://www.odaily.news/en/newsflash/471863"
+  },
+  {
+   "published": "2026-03-12 13:54",
+   "window_report_date": "2026-03-13",
+   "topic": "Fed",
+   "text": "12 Mar: Goldman pushed its next Fed cut call to September from June; money markets fully price only one 25bp Fed cut by December vs two before the war. ~14:00: DXY 99.47, EUR/USD 1.1534, USD/JPY 158.91; UST10 4.22%; Bund 10Y 2.94%; Brent May $98.41 (+7%); gold $5,177.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/dzien-na-rynkach-kontrakty-w-usa-na-minusach-wraz-ze-wzrostem-cen-ropy"
+  },
+  {
+   "published": "2026-03-12 14:11",
+   "window_report_date": "2026-03-13",
+   "topic": "Fed",
+   "text": "Timiraos (WSJ, 12 Mar): the White House appears likely to oppose or challenge Powell serving as 'acting' chair if his chair term expires before Warsh is confirmed.",
+   "src": "https://www.odaily.news/en/newsflash/471876"
+  },
+  {
+   "published": "2026-03-12 14:29",
+   "window_report_date": "2026-03-13",
+   "topic": "geopolitics",
+   "text": "12 Mar ~14:30: new supreme leader Mojtaba Khamenei said Hormuz should remain closed and new fronts could open if the war drags on (Bloomberg); spot gold dipped ~$25. Deputy FM Takht-Ravanchi said Iran lets ships of some countries pass and denied laying mines.",
+   "src": "https://www.odaily.news/en/newsflash/471883"
+  },
+  {
+   "published": "2026-03-12 16:08",
+   "window_report_date": "2026-03-13",
+   "topic": "sovereign",
+   "text": "Fitch (12 Mar webinar): rating implications of the Middle East war would come mainly via public finances, and fiscal space for new shocks across CEE is limited; the conflict has already moved CEE bond yields and currencies.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/przestrzen-fiskalna-na-nowe-szoki-od-strony-ratingu-w-regionie-cee-jest"
+  },
+  {
+   "published": "2026-03-12 16:19",
+   "window_report_date": "2026-03-13",
+   "topic": "Fed",
+   "text": "12 Mar 16:19: swaps priced only ~24bp of Fed cuts in 2026, less than one full cut, vs ~30bp on Wednesday evening; UST2 +4bp to near 3.70%, a six-month high.",
+   "src": "https://www.odaily.news/en/newsflash/471916"
+  },
+  {
+   "published": "2026-03-12 16:22",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "ECB reference rate 12 Mar: EUR/USD 1.1547, EUR/JPY 183.43.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/euro-w-ebc-11547-usd-i-18343-jpy"
+  },
+  {
+   "published": "2026-03-12 17:01",
+   "window_report_date": "2026-03-13",
+   "topic": "geopolitics",
+   "text": "US tariffs: USTR Greer announced trade investigations of 16 economies including China, the EU and Japan over excess capacity, a step toward permanently restoring tariffs voided by the Supreme Court (PAP 12 Mar 17:01, which dates the announcement 'Tuesday'; filed here at first sighting).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/skrot-wiadomosci-czwartek-12-marca-1700"
+  },
+  {
+   "published": "2026-03-12 17:13",
+   "window_report_date": "2026-03-13",
+   "topic": "ECB",
+   "text": "PKO BP's Sutowicz (12 Mar): markets are re-pricing inflation and rate paths for all central banks; for the euro area investors now see TWO ECB hikes this year, while for the US they just see fewer cuts.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/dzien-na-fxfi-zloty-slabszy-ale-ponizej-430eur-przed-weekendem-moze-jeszcze-sie"
+  },
+  {
+   "published": "2026-03-12 18:04",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "12 Mar European close: UST10 4.22%, UST30 4.87%, 2s10s +52bp; Bund 10Y 2.95%; DXY 99.65 (+0.4%), EUR/USD 1.1524, USD/JPY 159.23; Brent May $98.79 (+7.4%), WTI $94.1; gold $5,137 (-0.8%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/dzien-na-rynkach-indeksy-w-europie-znizkowaly-po-atakach-iranu-na-tankowce"
+  },
+  {
+   "published": "2026-03-12 21:13",
+   "window_report_date": "2026-03-13",
+   "topic": "geopolitics",
+   "text": "12 Mar: US Energy Sec. Wright said the US will begin releasing 172m bbl from the SPR next week (said Wed, first in this digest) and did not rule out Navy escorts before end-March; Italy to release 9m bbl under the IEA action; Erste raised its 2026 CEE-8 inflation forecast to 3.5% from 3.2%; Turkey's CBRT held at 37% (as expected). Iran struck Saudi Arabia, Bahrain and Kuwait overnight; a sixth merchant ship attacked off the UAE in two days. Korea passed a $350bn US-investment law under tariff pressure.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/skrot-wiadomosci-czwartek-12-marca-2110"
+  },
+  {
+   "published": "2026-03-12 21:27",
+   "window_report_date": "2026-03-13",
+   "topic": "markets",
+   "text": "12 Mar US close: Dow -700+pts to its lowest since the start of 2026; Brent May $101.44 (+10.3%), WTI $96.49; Brent above $100 into the close.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/dzien-na-rynkach-mocne-spadki-na-wall-street-dow-najnizej-od-poczatku-roku"
+  },
+  {
+   "published": "2026-03-13 01:02",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "Bessent (Sky News, 12 Mar US time): the US Navy will escort tankers through Hormuz, possibly with an international coalition; he said the strait is not mined.",
+   "src": "https://www.odaily.news/en/newsflash/471930"
+  },
+  {
+   "published": "2026-03-13 06:14",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "Goldman (13 Mar): Brent to average >$100 in March and $85 in April, easing to the low $70s later in the year.",
+   "src": "https://www.odaily.news/en/newsflash/471974"
+  },
+  {
+   "published": "2026-03-13 07:14",
+   "window_report_date": "2026-03-16",
+   "topic": "sovereign",
+   "text": "10Y closes 12 Mar (rows not date-stamped): Bund 2.96%, OAT 3.63%, BTP 3.75%, Bonos 3.46%, gilt 4.77% -> OAT-Bund 67bp, BTP-Bund 79bp, Spain 50bp; Schatz 2.42%, UK2 4.09%; CZ2 4.00%, CZ10 4.92%, HU10 7.12%; UST10 4.26%, UST2 3.73%, JGB10 2.24%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-03-13 08:08",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "13 Mar 08:08: DXY back at 100 for the first time since Nov 2025 (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/471992"
+  },
+  {
+   "published": "2026-03-13 08:30",
+   "window_report_date": "2026-03-16",
+   "topic": "ECB",
+   "text": "13 Mar: money markets fully price an ECB rate HIKE in July and a 70% chance of a second by December; UST2 hit a six-month high on Thursday; DXY 100; Brent May $101.62 (+1.1%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-futures-w-europie-spadaja-indeksy-w-azji-na-minusach"
+  },
+  {
+   "published": "2026-03-13 12:35",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "Bloomberg survey (6-11 Mar, 46 economists): the next Fed cut is now expected in June (was March), with two 25bp cuts in 2026, more than futures price; ~one-third have concerns about Warsh's commitment to 2% (18% 'no', 13% unsure).",
+   "src": "https://www.odaily.news/en/newsflash/472036"
+  },
+  {
+   "published": "2026-03-13 13:35",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "13 Mar (Jin10): traders bet on a Fed cut before September. Barclays (16:25) moved its calls to Sep 2026 and Mar 2027 from Jun/Sep 2026.",
+   "src": "https://www.odaily.news/en/newsflash/472048"
+  },
+  {
+   "published": "2026-03-13 13:37",
+   "window_report_date": "2026-03-16",
+   "topic": "US data",
+   "text": "US Jan core PCE 3.1% y/y vs 3.1% expected (Dec 3.0%), highest since Mar 2024; core +0.4% m/m for a second straight month, a problem for Fed doves (Jin10/investinglive 13:30-13:37).",
+   "src": "https://www.odaily.news/en/newsflash/472049"
+  },
+  {
+   "published": "2026-03-13 13:52",
+   "window_report_date": "2026-03-16",
+   "topic": "US data",
+   "text": "PAP 13 Mar 13:52: Jan PCE deflator 2.8% y/y vs 2.9% consensus (Dec 2.9%); core 3.1% vs 3.1% (Dec 3.0%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-futures-w-usa-rosna-iran-w-centrum-uwagi"
+  },
+  {
+   "published": "2026-03-13 13:52",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "13 Mar ~13:50: DXY 100.06 (+0.3%), EUR/USD 1.1472, USD/JPY 159.31; UST10 4.25% (-1bp), UST30 4.89%, 2s10s +54bp; Bund 10Y 2.96% (-1bp); Brent May $99.44 (-1%); gold $5,119.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-futures-w-usa-rosna-iran-w-centrum-uwagi"
+  },
+  {
+   "published": "2026-03-13 15:15",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "BofA FOMC preview (13 Mar): the SEP should revise headline and core inflation up and the long-run dot could edge higher; Powell may acknowledge stagflation risk while stressing wait-and-see. FOMC 17-18 Mar (under the Fed's blackout rule, no policy remarks from Sat 7 Mar).",
+   "src": "https://www.odaily.news/en/newsflash/472073"
+  },
+  {
+   "published": "2026-03-13 16:02",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "ECB reference rate 13 Mar: EUR/USD 1.1476 (lowest fix of the period; 27 Feb 1.1805).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/euro-w-ebc-11476-usd-i-18285-jpy"
+  },
+  {
+   "published": "2026-03-13 17:01",
+   "window_report_date": "2026-03-16",
+   "topic": "EZ data",
+   "text": "EZ Jan industrial production -1.5% m/m vs +0.6% expected (Dec revised -0.5%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/skrot-wiadomosci-piatek-13-marca-1700"
+  },
+  {
+   "published": "2026-03-13 18:13",
+   "window_report_date": "2026-03-16",
+   "topic": "BoE",
+   "text": "UK Jan GDP 0.0% m/m vs +0.2% expected; industrial production -0.1% m/m vs +0.2% expected (ONS, released 08:00; PAP 18:13). Bank Rate 3.75%; MPC decision due 19 Mar.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-gieldy-w-europie-zakonczyly-sesje-na-minusach"
+  },
+  {
+   "published": "2026-03-13 18:13",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "13 Mar ~18:00: Brent $101.5 (+1%), WTI $96.9, holding ~$100 despite the IEA's record 400m bbl release; EUR/USD 1.1446 (-0.6%), USD/JPY 159.56; European stocks lower.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-gieldy-w-europie-zakonczyly-sesje-na-minusach"
+  },
+  {
+   "published": "2026-03-13 21:13",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "Judge James Boasberg (DC federal court, 13 Mar) quashed the DOJ subpoenas to the Fed Board in the probe of Powell, finding a 'mountain of evidence' the aim was to pressure Powell to cut rates or resign and virtually no evidence of a crime; US Attorney Pirro will appeal. Analysts called it a big win for Fed independence.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/sad-w-usa-zablokowal-sledztwo-przeciwko-szefowi-fed-jeromeowi-powellowi"
+  },
+  {
+   "published": "2026-03-13 21:13",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "13 Mar US close: third straight weekly fall for US stocks; Brent May $102.85 (+2.4%), WTI $98.11 late.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/dzien-na-rynkach-gieldy-w-usa-koncza-nerwowy-tydzien-umiarkowanymi-spadkami"
+  },
+  {
+   "published": "2026-03-13 21:14",
+   "window_report_date": "2026-03-16",
+   "topic": "US data",
+   "text": "13 Mar US data: Q4 GDP (2nd est.) revised to +0.7% SAAR from +1.4%; Jan personal spending +0.4% m/m vs +0.3%; Jan durable goods orders 0.0% vs +1.1% expected; JOLTS Jan openings 6.946m (Dec revised 6.55m); UMich March prelim sentiment 55.5 vs 55.0 expected (Feb 56.6).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/skrot-wiadomosci-piatek-13-marca-2110"
+  },
+  {
+   "published": "2026-03-13 21:14",
+   "window_report_date": "2026-03-16",
+   "topic": "sovereign",
+   "text": "Obligacje.pl weekly (13 Mar): France's 10Y yield hit a 15-year high this week; Bund, gilt and JGB yields are flirting with multi-year highs.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/skrot-wiadomosci-piatek-13-marca-2110"
+  },
+  {
+   "published": "2026-03-13 21:14",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "13 Mar: China's commerce ministry called the US overcapacity trade probe 'typical unilateralism' and threatened countermeasures; US Treasury issued a second Russian-oil sanctions waiver this week (cargo loaded before 12 Mar; Dmitriev: ~100m bbl); UK and Canada keep Russian oil sanctions; Pentagon sending a Marine expeditionary unit (~5,000) to the Middle East (WSJ); Hegseth: Mojtaba Khamenei wounded, US won't let Hormuz stay closed; $10m reward for information on Iranian leaders; WSJ: Iran could extend naval attacks to Bab el-Mandeb; Saudi Arabia cut output by ~2m b/d to ~8m b/d (Reuters). EU SAFE: 16 of 19 plans approved (France, Czechia, Hungary pending).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260313/skrot-wiadomosci-piatek-13-marca-2110"
+  },
+  {
+   "published": "2026-03-13 23:00",
+   "window_report_date": "2026-03-16",
+   "topic": "sovereign",
+   "text": "S&P upgraded Croatia to A from A- (outlook Stable) (dated Fri 13 Mar per countryeconomy rating history; time is a placeholder).",
+   "src": "https://countryeconomy.com/ratings/croatia"
+  },
+  {
+   "published": "2026-03-14 01:17",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "14 Mar 01:17 CET: Trump said US forces struck all military targets on Kharg Island (Iran's main oil export hub) and did not hit oil infrastructure; Iran called Kharg a red line and threatened strikes on Gulf neighbours' energy assets; US officials: the war could last several more weeks.",
+   "src": "https://www.odaily.news/en/newsflash/472097"
+  },
+  {
+   "published": "2026-03-14 02:55",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "Polymarket odds of a Fed cut before the June FOMC ends fell 11pp in 24h to 28% (14 Mar 02:55) after a second straight +0.4% m/m core PCE.",
+   "src": "https://www.odaily.news/en/newsflash/472110"
+  },
+  {
+   "published": "2026-03-14 04:14",
+   "window_report_date": "2026-03-16",
+   "topic": "markets",
+   "text": "14 Mar: the administration began the process for a large SPR drawdown; DoE said the first 86m bbl tranche will be released next week as an exchange (borrow and repay with a premium) (15 Mar 09:55).",
+   "src": "https://www.odaily.news/en/newsflash/472123"
+  },
+  {
+   "published": "2026-03-14 11:23",
+   "window_report_date": "2026-03-16",
+   "topic": "Fed",
+   "text": "After the Boasberg ruling, Senate Banking's top Democrat Warren called the probe a 'political witch hunt' and, with Republican Sen. Tillis (who has vowed to block Fed nominees until the Powell probe ends), urged the DOJ to drop it; Polymarket odds of Warren backing Warsh jumped to 28% from 2% (14 Mar).",
+   "src": "https://www.odaily.news/en/newsflash/472155"
+  },
+  {
+   "published": "2026-03-15 01:09",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "Trump (15 Mar 01:09 CET): not ready to make a deal with Iran because 'the conditions are not good enough'; Kharg Island largely destroyed.",
+   "src": "https://www.odaily.news/en/newsflash/472185"
+  },
+  {
+   "published": "2026-03-15 10:09",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "US-China trade consultations began in Paris on 15 Mar (Xinhua).",
+   "src": "https://www.odaily.news/en/newsflash/472217"
+  },
+  {
+   "published": "2026-03-15 19:32",
+   "window_report_date": "2026-03-16",
+   "topic": "geopolitics",
+   "text": "Weekend 14-15 Mar: Trump and UN envoy Waltz 'demand' other countries join in reopening Hormuz (France, Japan, Korea, UK responded); Trump threatened more strikes on Kharg and doubted Mojtaba Khamenei is alive; Iran threatened US firms in the region and called Ukraine a legitimate target; IEA: reserve oil will soon flow (to Asia first, Europe and the US by end-March); EU-27 extended individual Russia sanctions by six months (Hungary and Slovakia did not block); Hungary election rallies ahead of the 12 Apr vote.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260315/skrot-wiadomosci-sobota-niedziela-14-15-marca"
+  }
+ ],
+ "fed_pricing": [
+  {
+   "published": "2026-03-02 08:55",
+   "text": "Fed swaps (2 Mar morning, Bloomberg/Jin10): ~59bp of 2026 cuts priced, down from 61bp on Fri 27 Feb.",
+   "src": "https://www.odaily.news/en/newsflash/470209"
+  },
+  {
+   "published": "2026-03-02 11:55",
+   "text": "Fed swaps (2 Mar, Bloomberg): probability of three Fed cuts in 2026 fell to ~20% from ~50% last week.",
+   "src": "https://www.odaily.news/en/newsflash/470236"
+  },
+  {
+   "published": "2026-03-03 00:10",
+   "text": "CME FedWatch (3 Mar 00:10 CET): March -25bp 2.5% / hold 97.5%; by April cumulative -25bp 16.3%, hold 83.4%, -50bp 0.4%; by June cumulative -25bp 40.3%.",
+   "src": "https://www.odaily.news/en/newsflash/470293"
+  },
+  {
+   "published": "2026-03-03 08:25",
+   "text": "PAP 3 Mar: first Fed cut now priced for September.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260303/dzien-na-rynkach-w-azji-na-gieldach-mocna-wyprzedaz-akcji"
+  },
+  {
+   "published": "2026-03-04 22:11",
+   "text": "PAP/LSEG 4 Mar: first 25bp cut expectation moved to September from July.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260304/dzien-na-rynkach-wall-street-w-gore-inwestorzy-mniej-martwia-sie-konfliktem-z"
+  },
+  {
+   "published": "2026-03-06 14:10",
+   "text": "CME FedWatch (6 Mar 14:10 CET, pre-payrolls): March -25bp 4.7% / hold 95.3%; by April cumulative -25bp 14%, hold 85.5%, -50bp 0.5%; by June cumulative -25bp 31.5%.",
+   "src": "https://www.odaily.news/en/newsflash/470961"
+  },
+  {
+   "published": "2026-03-06 14:37",
+   "text": "Post-payrolls (6 Mar 14:37): June-cut probability ~50%, up from ~35% before the data (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/470971"
+  },
+  {
+   "published": "2026-03-06 14:47",
+   "text": "Post-payrolls (6 Mar 14:47): swaps price 44bp of cuts by December vs 35bp pre-report; UST2 3.53% (-5bp).",
+   "src": "https://www.odaily.news/en/newsflash/470977"
+  },
+  {
+   "published": "2026-03-11 00:06",
+   "text": "CME FedWatch (11 Mar 00:06 CET): March -25bp 0.6% / hold 99.4%; by April cumulative -25bp 13.9%, hold 86.1%, -50bp 0.1%; by June cumulative -25bp 37.5%.",
+   "src": "https://www.odaily.news/en/newsflash/471585"
+  },
+  {
+   "published": "2026-03-11 13:24",
+   "text": "CME FedWatch (11 Mar 13:24 CET, pre-CPI): March hold 99.3% / -25bp 0.7%; by April cumulative -25bp 10.9%, hold 89.1%; by June cumulative -25bp 33.1%.",
+   "src": "https://www.odaily.news/en/newsflash/471691"
+  },
+  {
+   "published": "2026-03-12 13:54",
+   "text": "PAP 12 Mar: money markets fully price one 25bp cut by December vs two before the war; Goldman moved its next-cut call to September from June.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260312/dzien-na-rynkach-kontrakty-w-usa-na-minusach-wraz-ze-wzrostem-cen-ropy"
+  },
+  {
+   "published": "2026-03-12 16:19",
+   "text": "Swaps (12 Mar 16:19): ~24bp of 2026 cuts, less than one full cut, vs ~30bp on Wed evening; UST2 near 3.70%.",
+   "src": "https://www.odaily.news/en/newsflash/471916"
+  },
+  {
+   "published": "2026-03-13 13:35",
+   "text": "13 Mar 13:35 (Jin10): traders bet on a Fed cut before September.",
+   "src": "https://www.odaily.news/en/newsflash/472048"
+  },
+  {
+   "published": "2026-03-14 02:55",
+   "text": "Polymarket (14 Mar 02:55): 'Fed cut before the June FOMC ends' 28%, down 11pp in 24h (peak 39%).",
+   "src": "https://www.odaily.news/en/newsflash/472110"
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "report_date": "2026-03-03",
+ "market_cutoff": "2026-03-02",
+ "info_cutoff": "2026-03-02",
+ "policy": {
+  "nbp_reference": 4.0,
+  "next_mpc_label": "MPC next: 3-4 Mar",
+  "pricing_text": "FRAs at the 2 Mar close (1x4 3.78, 3x6 3.63, 6x9 3.50, 9x12 3.49 vs WIBOR 3M 3.81) price roughly 30bp of NBP cuts within 12 months. The pre-war consensus for the 3-4 Mar MPC was a 25bp cut to 3.75% with the new projection; the US-Israel war on Iran (28 Feb) has since lifted oil and global yields.",
+  "risk_text": "The war shock (oil, PLN, global yields) collides with the 4 Mar decision: a hold would lift short FRAs further; a cut into rising oil risks being read as a policy error."
+ },
+ "macro": {
+  "cpi": {
+   "v": 2.2,
+   "m": "Jan flash (GUS, 13 Feb; old weights)"
+  },
+  "projection_text": "NBP November 2025 projection: CPI 2.9% (2026); the March projection comes with the 3-4 Mar MPC.",
+  "fiscal_text": "2025 general-government deficit ~7.0% of GDP (MoF figures in Fitch: 7.0% / 6.5% / 6.2% for 2025-27, debt ~70% of GDP by 2027); 2026 deficit cap PLN 271.7bn.",
+  "fiscal_risk_text": "2026 needs ~38% (25 Feb) financed; budget accounts ~PLN 171.6bn at end-February. Moody's reviews Poland on 20 Mar (A2, negative).",
+  "backdrop_text": "The NBP held at 4.00% in January and February; January flash CPI 2.2%; 2025 GDP 3.6%, Q4 4.0%. Ratings: Fitch A- negative (affirmed 27 Feb), Moody's A2 negative, S&P A- stable. 2 Mar: Brent opened 13% higher (above $80); the pre-war consensus for 4 Mar was a 25bp cut; manufacturing PMI 47.1 (49.4 expected); Q4 GDP confirmed at 4.0%; EUR/PLN 4.24. Abroad: US ISM 52.4; Fed swaps ~59bp of 2026 cuts; UST 10Y 4.05% (+11bp)."
+ },
+ "calendar": {
+  "plan_text": "MoF March plan (27 Feb): sale auctions on 18 and 25 Mar (PLN 7-13bn each; OK0128, NZ0331, PS0731 (new 5Y fixed), DS1035, NZ0936 (new 10Y POLSTR floater)) and a switch on 11 Mar buying back OK0426, DS0726, PS1026, WZ1126 and OK0127; no T-bills; WZ sales ended in February. February sales were ~PLN 41bn; ~38% of 2026 needs financed.",
+  "timing_text": "The Aug 2025-Feb 2026 pattern (auction-day close the cheapest point of the week) comes from a rally regime; in March's sell-off MoF is cutting supply (switch instead of sale, a smaller 25 Mar offer), so remaining dates (18 and 25 Mar) are less of a supply event. The 3-4 Mar MPC is the event: the pre-war consensus was a cut.",
+  "events": [
+   {
+    "date": "2026-03-04",
+    "type": "MPC",
+    "title": "MPC decision (3-4 Mar) + March projection",
+    "note": "Pre-war consensus: -25bp.",
+    "source_date": "NBP schedule"
+   },
+   {
+    "date": "2026-03-05",
+    "type": "MPC",
+    "title": "Glapiński press conference",
+    "note": "",
+    "source_date": "NBP"
+   },
+   {
+    "date": "2026-03-06",
+    "type": "MPC",
+    "title": "NBP March Inflation Report",
+    "note": "",
+    "source_date": "NBP practice"
+   },
+   {
+    "date": "2026-03-11",
+    "type": "Auction",
+    "title": "MoF switch auction (buy OK0426, DS0726, PS1026, WZ1126, OK0127)",
+    "note": "",
+    "source_date": "MoF March plan, 27 Feb"
+   },
+   {
+    "date": "2026-03-13",
+    "type": "Data",
+    "title": "GUS February CPI (new COICOP 2018 weights)",
+    "note": "",
+    "source_date": "GUS calendar"
+   },
+   {
+    "date": "2026-03-16",
+    "type": "Data",
+    "title": "NBP core inflation (Jan-Feb)",
+    "note": "",
+    "source_date": "NBP calendar"
+   },
+   {
+    "date": "2026-03-18",
+    "type": "Auction",
+    "title": "MoF sale auction PLN 7-13bn",
+    "note": "",
+    "source_date": "MoF March plan, 27 Feb"
+   },
+   {
+    "date": "2026-03-18",
+    "type": "CB",
+    "title": "FOMC decision",
+    "note": "",
+    "source_date": "Fed calendar"
+   },
+   {
+    "date": "2026-03-19",
+    "type": "CB",
+    "title": "ECB, BoE, CNB decisions",
+    "note": "",
+    "source_date": "CB calendars"
+   },
+   {
+    "date": "2026-03-19",
+    "type": "Data",
+    "title": "GUS February wages, industry, PPI, construction",
+    "note": "",
+    "source_date": "GUS calendar"
+   },
+   {
+    "date": "2026-03-20",
+    "type": "Rating",
+    "title": "Moody's review of Poland (A2, negative)",
+    "note": "Negative outlook since 19 Sep 2025.",
+    "source_date": "MNI rating calendar, 29 Dec 2025"
+   },
+   {
+    "date": "2026-03-23",
+    "type": "Data",
+    "title": "GUS February retail sales",
+    "note": "",
+    "source_date": "GUS calendar"
+   },
+   {
+    "date": "2026-03-24",
+    "type": "CB",
+    "title": "MNB decision",
+    "note": "",
+    "source_date": "MNB calendar"
+   },
+   {
+    "date": "2026-03-25",
+    "type": "Auction",
+    "title": "MoF sale auction PLN 7-13bn",
+    "note": "",
+    "source_date": "MoF March plan, 27 Feb"
+   },
+   {
+    "date": "2026-03-25",
+    "type": "Cash flow",
+    "title": "WZ0330 / WZ0930 coupon reset; NZ coupons",
+    "note": "",
+    "source_date": "bond terms"
+   },
+   {
+    "date": "2026-03-31",
+    "type": "Data",
+    "title": "GUS March flash CPI",
+    "note": "",
+    "source_date": "GUS calendar"
+   },
+   {
+    "date": "2026-03-31",
+    "type": "Index",
+    "title": "GPWB/TBSP periodic portfolio change",
+    "note": "Maturity-window changes (see Index section).",
+    "source_date": "GPW Benchmark rules"
+   }
+  ]
+ },
+ "core_policy": {
+  "Poland": {
+   "bank": "NBP",
+   "rate": 4.0,
+   "rate_disp": "4.00",
+   "last": "held 4 Feb (last cut -25bp 3 Dec 2025)",
+   "next": "3-4 Mar 2026",
+   "stance": "Pause; March cut signalled",
+   "tone": "wait",
+   "pricing": "FRAs ~30bp of cuts within 12M (2 Mar close)"
+  },
+  "Euro area": {
+   "bank": "ECB depo",
+   "rate": 2.0,
+   "rate_disp": "2.00",
+   "last": "held 5 Feb (cut -25bp eff. 11 Jun 2025)",
+   "next": "Mar 2026",
+   "stance": "On hold, cycle over",
+   "tone": "wait",
+   "pricing": "~40% for a cut by year-end (17 Feb); Lagarde (26 Feb): no pre-commitment"
+  },
+  "United States": {
+   "bank": "Fed",
+   "rate": 3.625,
+   "rate_disp": "3.50-3.75",
+   "last": "held 28 Jan (last cut -25bp 10 Dec 2025)",
+   "next": "17-18 Mar 2026",
+   "stance": "On hold, easing bias",
+   "tone": "go",
+   "pricing": "~59bp of 2026 cuts priced (2 Mar)"
+  },
+  "United Kingdom": {
+   "bank": "BoE",
+   "rate": 3.75,
+   "rate_disp": "3.75",
+   "last": "held 5 Feb (5-4; cut -25bp 18 Dec 2025)",
+   "next": "Mar 2026",
+   "stance": "Easing, gradual",
+   "tone": "go",
+   "pricing": "~60% for a March cut (2 Mar)"
+  },
+  "Czechia": {
+   "bank": "CNB",
+   "rate": 3.5,
+   "rate_disp": "3.50",
+   "last": "held 5 Feb (3.50%, 7-0)",
+   "next": "Mar 2026",
+   "stance": "On hold",
+   "tone": "wait",
+   "pricing": "minutes (13 Feb): two members leaning to a cut"
+  },
+  "Hungary": {
+   "bank": "MNB",
+   "rate": 6.25,
+   "rate_disp": "6.25",
+   "last": "-25bp 24 Feb 2026",
+   "next": "Mar 2026",
+   "stance": "Easing cautiously",
+   "tone": "go",
+   "pricing": "Varga: no easing cycle decided (24 Feb)"
+  },
+  "Romania": {
+   "bank": "BNR",
+   "rate": 6.5,
+   "rate_disp": "6.50",
+   "last": "-25bp Aug 2024; held 12 Nov",
+   "next": "Jan 2026",
+   "stance": "On hold",
+   "tone": "wait",
+   "pricing": "not found"
+  }
+ },
+ "core_cpi": {
+  "Poland": {
+   "v": 2.2,
+   "m": "Jan flash"
+  },
+  "Euro area": {
+   "v": 1.7,
+   "m": "Jan final (core 2.2)"
+  },
+  "United States": {
+   "v": 2.4,
+   "m": "Jan (core 2.5)"
+  },
+  "United Kingdom": {
+   "v": 3.0,
+   "m": "Jan"
+  },
+  "Czechia": {
+   "v": 1.6,
+   "m": "Jan flash"
+  },
+  "Hungary": {
+   "v": 2.1,
+   "m": "Jan"
+  },
+  "Romania": {
+   "v": 9.8,
+   "m": "Nov"
+  }
+ },
+ "core_policy_note": "Real rate = policy rate − latest CPI. Fed rate = midpoint of the range. Sources: ECB key-rates page; Fed press release 10 Dec 2025 and SEP; BoE Monetary Policy Summary Dec 2025; CNB press release 18 Dec 2025; MNB press release 16 Dec 2025; NBP/MPC 3 Dec 2025; CPI releases (Eurostat 17 Dec, Destatis 12 Dec, BLS 18 Dec, ONS 17 Dec, CZSO 10 Dec, MNB 16 Dec, INS 12 Dec, GUS 31 Dec). Later releases used where published by the info cut-off (GUS, Eurostat, BLS, ONS, CZSO, KSH; FOMC 18 Mar, ECB/BoE/CNB 19 Mar, MNB 24 Mar where in the window).",
+ "core_text": "Regime: war shock - oil and global yields up, PLN weaker; the NBP was expected to cut on 4 Mar while FRAs price roughly 30bp of NBP cuts; the ECB is priced for hikes, the Fed is on hold, the BoE has turned hawkish, the CNB and MNB are on hold. Poland's 5Y CDS was 55bp and the 10Y spread to Bunds 236bp on benchmark bonds (Erste, 2 Mar close). Brent +13% at the open (2 Mar).",
+ "audit": [
+  {
+   "input": "POLGB prices & yields",
+   "as_of": "2 Mar 2026 close",
+   "published": "2 Mar 2026",
+   "source": "Treasury BondSpot Poland closing fixing + session summary",
+   "note": "TBSP.Index level dropped: the page shows the current value."
+  },
+  {
+   "input": "Index portfolios (GPWB 1-3Y, 1-4Y, TBSP)",
+   "as_of": "27 Feb 2026 change (holdings 24 Feb)",
+   "published": "25 Feb 2026",
+   "source": "GPW Benchmark 'Portfele obligacji' communique",
+   "note": "No membership changes; units match MoF settlements to 20 Feb."
+  },
+  {
+   "input": "PLN IRS curve",
+   "as_of": "2 Mar 2026 close",
+   "published": "read from the Erste Codziennik of 3 Mar 2026 (table headed 02.03.2026)",
+   "source": "LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of 3 Mar 2026",
+   "note": "Only the cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available."
+  },
+  {
+   "input": "WIBOR, POLSTR",
+   "as_of": "2 Mar 2026 (WIBOR); 27 Feb 2026 (POLSTR)",
+   "published": "2 Mar 2026 (fixings)",
+   "source": "GPW Benchmark delayed data",
+   "note": "POLSTR index dates after 27 Feb 2026 are published after the report time and are not used."
+  },
+  {
+   "input": "FRA strip",
+   "as_of": "2 Mar 2026 close",
+   "published": "read from the Erste Codziennik of 3 Mar 2026 (table headed 02.03.2026)",
+   "source": "LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of 3 Mar 2026",
+   "note": ""
+  },
+  {
+   "input": "MoF auctions & switch results",
+   "as_of": "25 Feb 2026 sale",
+   "published": "auction days",
+   "source": "MoF wholesale-bond database (rows whose same-day release PAP confirms); MoF/PAP communiques",
+   "note": ""
+  },
+  {
+   "input": "Fixing history (auction study, charts)",
+   "as_of": "25 Aug 2025 - 2 Mar 2026",
+   "published": "daily",
+   "source": "Treasury BondSpot Poland",
+   "note": ""
+  },
+  {
+   "input": "Q1 2026 plan, January supply, prefunding, cash",
+   "as_of": "31 Dec 2025",
+   "published": "31 Dec 2025",
+   "source": "MoF via PAP (strefainwestorow.pl 31 Dec 18:05)",
+   "note": "Feb-Mar auction dates not found (gov.pl unavailable)."
+  },
+  {
+   "input": "NBP rates, MPC comments, 2026 MPC schedule",
+   "as_of": "4 Feb 2026 decision; comments to 2 Mar",
+   "published": "<= 2 Mar",
+   "source": "NBP/MPC; PAP/Bloomberg/press interviews (first dated mention)",
+   "note": ""
+  },
+  {
+   "input": "CPI, core CPI, GDP, NBP projection",
+   "as_of": "Q3 2025 - Dec 2025 flash",
+   "published": "1 Dec, 15-16 Dec, 31 Dec 2025; projection 7 Nov 2025",
+   "source": "GUS, NBP",
+   "note": "December flash CPI was published 31 Dec (inside the cut-off)."
+  },
+  {
+   "input": "Ratings & 2026 review calendar",
+   "as_of": "31 Dec 2025",
+   "published": "5 Sep, 19 Sep, 7 Nov 2025; calendar 29 Dec 2025",
+   "source": "Fitch, Moody's, S&P; MNI indicative calendar",
+   "note": ""
+  },
+  {
+   "input": "Bank views",
+   "as_of": "to 2 Mar",
+   "published": "<= 2 Mar",
+   "source": "PKO, Erste, Millennium, ING, Pekao, Deutsche Bank Polska, BNP TFI, Bank Pocztowy; PAP",
+   "note": "Only commentary published by the info cut-off."
+  },
+  {
+   "input": "WZ coupons",
+   "as_of": "periods from 25 Sep / 25 Nov 2025",
+   "published": "22 Sep / 20 Nov 2025",
+   "source": "MoF coupon notices (via search-index snippets; fixings match GPW file)",
+   "note": "4.60% and 4.16%."
+  },
+  {
+   "input": "Bund curve, UST curve, €STR, SOFR",
+   "as_of": "2 Mar 2026 (SOFR 27 Feb 2026)",
+   "published": "<= 3 Mar 2026 pre-open",
+   "source": "Bundesbank BBSIS, US Treasury, ECB, NY Fed (observations <= 2 Mar 2026; SOFR < 2 Mar 2026: it is published T+1 at 08:00 New York time)",
+   "note": ""
+  },
+  {
+   "input": "EURIBOR, PRIBOR, BUBOR",
+   "as_of": "2 Mar 2026 (BUBOR 2 Mar 2026)",
+   "published": "fixing dates",
+   "source": "EMMI via Bundesbank; CNB; MNB",
+   "note": ""
+  },
+  {
+   "input": "Cross-country yields",
+   "as_of": "2 Mar 2026 closes (PAP/Bloomberg table published 2026-03-03 06:39; US = US Treasury 2 Mar 2026 curve; live US/Japan quotes excluded)",
+   "published": "2026-03-03 06:39",
+   "source": "PAP/Bloomberg table on strefainwestorow.pl; US from the US Treasury curve",
+   "note": "Rows carrying live quotes from the report morning are excluded."
+  },
+  {
+   "input": "Central banks (ECB, Fed, BoE, CNB, MNB, BNR), peer CPI",
+   "as_of": "Nov-Dec 2025",
+   "published": "10-18 Dec 2025 and earlier",
+   "source": "Official press releases; Reuters",
+   "note": "Some pricing quotes from secondary summaries are marked as such."
+  },
+  {
+   "input": "BGK FPC prices & plans",
+   "as_of": "2 Mar 2026",
+   "published": "Catalyst daily",
+   "source": "Catalyst via biznesradar history; BGK; PAP",
+   "note": "FPC0229: vol 127; FPC0630: vol 4957; FPC0231: no trade; FPC0733: no trade; FPC0235: vol 1774; FPC0332: vol 1335"
+  },
+  {
+   "input": "New facts 2 Mar 2026",
+   "as_of": "2 Mar",
+   "published": "2 Mar",
+   "source": "PAP feed (strefainwestorow.pl), MoF, NBP, GUS, BGK, GPW Benchmark, Eurostat, BLS, CME FedWatch, ECB/BoE/CNB/MNB, rating agencies, bank research",
+   "note": "Facts placed in the window they were first published; PAP summary times are upper bounds."
+  },
+  {
+   "input": "NOT used (unavailable point-in-time)",
+   "as_of": "—",
+   "published": "—",
+   "source": "EUR/CZK/HUF swap curves, EUR/PLN forward points & basis, Poland Eurobond yields, POLSTR of 2 Jan (published 5 Jan), live 5 Jan US/Japan yields",
+   "note": "Peer comparison uses a rolling 1Y IBOR hedge instead of matched swaps; flagged where used."
+  }
+ ],
+ "settlement_note": "normal T+2"
+}

@@ -1,0 +1,815 @@
+{
+ "report_date": "2026-03-09",
+ "market_cutoff": "2026-03-06",
+ "info_cutoff": "2026-03-08",
+ "settlement_note": "normal T+2",
+ "wibor": {
+  "on": 3.9,
+  "sw": 3.94,
+  "1m": 3.88,
+  "3m": 3.77,
+  "6m": 3.7,
+  "1y": 3.65,
+  "wibid": {
+   "on": 3.61,
+   "sw": 3.74,
+   "1m": 3.68,
+   "3m": 3.57,
+   "6m": 3.5
+  },
+  "src": "https://gpwbenchmark.pl/dane-opoznione",
+  "src_row_date": "2026-03-06",
+  "src_fetched": "2026-11-27"
+ },
+ "polstr": {
+  "date": "2026-03-05",
+  "value": 3.596
+ },
+ "irs": {
+  "pillars": {
+   "1": 3.85,
+   "2": 3.96,
+   "3": 4.05,
+   "4": 4.15,
+   "5": 4.24,
+   "7": null,
+   "8": 4.47,
+   "10": 4.61
+  },
+  "header": "05/03/2026",
+  "src_label": "LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of 9 Mar 2026",
+  "published": "read from the Erste Codziennik of 9 Mar 2026 (table headed 05/03/2026)",
+  "short": "LSEG bid via Erste",
+  "missing_note": "7Y not available.",
+  "audit_note": "Only the cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available."
+ },
+ "fra": {
+  "1x4": 3.78,
+  "3x6": 3.77,
+  "6x9": 3.82,
+  "9x12": 3.88,
+  "3x9": 3.78,
+  "6x12": 3.87
+ },
+ "cds5y": 56,
+ "pl_bund_10y": null,
+ "euribor": {
+  "1m": 1.94,
+  "3m": 2.049,
+  "6m": 2.139,
+  "12m": 2.323,
+  "src": "https://api.statistiken.bundesbank.de/rest/data/BBIG1/D.D0.EUR.MMKT.EURIBOR.{M01,M03,M06,M12}.BID._Z?format=csv (fetched 2026-11-27)"
+ },
+ "pribor": {
+  "3m": 3.52,
+  "6m": 3.52,
+  "1y": 3.52,
+  "src": "https://www.cnb.cz/en/financial-markets/money-market/pribor/fixing-of-interest-rates-on-interbank-deposits-pribor/year.txt?year=2026"
+ },
+ "bubor": {
+  "date": "2026-03-06",
+  "3m": 6.18,
+  "6m": 6.16,
+  "12m": 6.12,
+  "src": "https://www.mnb.hu/letoltes/bubor2.xls (sheet 2026)"
+ },
+ "fx": {
+  "eur": 4.2782,
+  "usd": 3.6962,
+  "chf": 4.7262,
+  "table": "045/A/NBP/2026",
+  "src": "https://api.nbp.pl/api/exchangerates/tables/A/2026-02-25/2026-03-31/"
+ },
+ "fpc": {
+  "FPC0229": {
+   "close": 103.8,
+   "vol": 237,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  },
+  "FPC0630": {
+   "close": 90.48,
+   "vol": 2087,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  },
+  "FPC0231": {
+   "close": 104.81,
+   "vol": 1100,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  },
+  "FPC0733": {
+   "close": 82.0,
+   "vol": 86,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  },
+  "FPC0235": {
+   "close": 102.79,
+   "vol": 1738,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  },
+  "FPC0332": {
+   "close": 96.05,
+   "vol": 414,
+   "traded": true,
+   "last_trade_date": "2026-03-06"
+  }
+ },
+ "pap": {
+  "date": "6 Mar 2026 closes (PAP/Bloomberg table published 2026-03-09 06:33; US = US Treasury 6 Mar 2026 curve; live US/Japan quotes excluded)",
+  "cols": [
+   "close",
+   "1D",
+   "5D",
+   "1M",
+   "3M",
+   "12M"
+  ],
+  "url": "https://strefainwestorow.pl/wiadomosci/20260309/rentownosci-obligacji-wybranych-panstw-tabela",
+  "data": {
+   "Polska": {
+    "2Y": [
+     3.97,
+     3.78,
+     3.54,
+     3.52,
+     3.98,
+     5.24
+    ],
+    "5Y": [
+     4.86,
+     4.7,
+     4.25,
+     4.39,
+     4.56,
+     5.68
+    ],
+    "10Y": [
+     5.55,
+     5.37,
+     4.93,
+     5.09,
+     5.2,
+     5.97
+    ]
+   },
+   "Węgry": {
+    "3Y": [
+     6.48,
+     6.26,
+     6.0,
+     6.14,
+     6.45,
+     6.58
+    ],
+    "5Y": [
+     6.61,
+     6.33,
+     6.06,
+     6.27,
+     6.42,
+     6.59
+    ],
+    "10Y": [
+     6.95,
+     6.69,
+     6.4,
+     6.54,
+     6.89,
+     6.94
+    ]
+   },
+   "Czechy": {
+    "2Y": [
+     3.87,
+     3.67,
+     3.39,
+     3.53,
+     3.58,
+     3.59
+    ],
+    "5Y": [
+     4.35,
+     4.12,
+     3.76,
+     3.96,
+     4.07,
+     3.92
+    ],
+    "10Y": [
+     4.9,
+     4.7,
+     4.34,
+     4.55,
+     4.58,
+     4.32
+    ]
+   },
+   "Turcja": {
+    "2Y": [
+     35.16,
+     34.54,
+     33.58,
+     32.62,
+     34.61,
+     34.1
+    ],
+    "5Y": [
+     32.1,
+     31.4,
+     30.97,
+     30.54,
+     31.93,
+     29.33
+    ],
+    "10Y": [
+     29.1,
+     28.35,
+     28.14,
+     28.0,
+     28.64,
+     25.85
+    ]
+   },
+   "Irlandia": {
+    "2Y": [
+     2.35,
+     2.28,
+     2.03,
+     2.11,
+     2.08,
+     2.36
+    ],
+    "5Y": [
+     2.6,
+     2.54,
+     2.32,
+     2.44,
+     2.46,
+     2.71
+    ],
+    "10Y": [
+     3.15,
+     3.12,
+     2.91,
+     3.11,
+     2.98,
+     3.1
+    ]
+   },
+   "Włochy": {
+    "2Y": [
+     2.54,
+     2.43,
+     2.16,
+     2.24,
+     2.23,
+     2.55
+    ],
+    "5Y": [
+     2.98,
+     2.9,
+     2.58,
+     2.75,
+     2.77,
+     3.09
+    ],
+    "10Y": [
+     3.62,
+     3.56,
+     3.27,
+     3.47,
+     3.49,
+     3.96
+    ]
+   },
+   "Portugalia": {
+    "2Y": [
+     2.36,
+     2.29,
+     2.04,
+     2.13,
+     2.09,
+     2.29
+    ],
+    "5Y": [
+     2.74,
+     2.67,
+     2.43,
+     2.6,
+     2.46,
+     2.72
+    ],
+    "10Y": [
+     3.29,
+     3.23,
+     3.0,
+     3.21,
+     3.11,
+     3.35
+    ]
+   },
+   "Hiszpania": {
+    "2Y": [
+     2.46,
+     2.38,
+     2.12,
+     2.21,
+     2.12,
+     2.46
+    ],
+    "5Y": [
+     2.81,
+     2.74,
+     2.49,
+     2.56,
+     2.61,
+     2.86
+    ],
+    "10Y": [
+     3.35,
+     3.3,
+     3.06,
+     3.22,
+     3.26,
+     3.45
+    ]
+   },
+   "Niemcy": {
+    "2Y": [
+     2.31,
+     2.24,
+     2.0,
+     2.09,
+     2.1,
+     2.25
+    ],
+    "5Y": [
+     2.52,
+     2.49,
+     2.24,
+     2.41,
+     2.4,
+     2.52
+    ],
+    "10Y": [
+     2.86,
+     2.84,
+     2.64,
+     2.84,
+     2.8,
+     2.83
+    ]
+   },
+   "Francja": {
+    "2Y": [
+     2.47,
+     2.39,
+     2.12,
+     2.21,
+     2.32,
+     2.39
+    ],
+    "5Y": [
+     2.88,
+     2.82,
+     2.53,
+     2.73,
+     2.83,
+     2.92
+    ],
+    "10Y": [
+     3.51,
+     3.47,
+     3.22,
+     3.45,
+     3.52,
+     3.54
+    ]
+   },
+   "Wielka Brytania": {
+    "2Y": [
+     3.87,
+     3.81,
+     3.53,
+     3.62,
+     3.78,
+     4.22
+    ],
+    "5Y": [
+     4.12,
+     4.03,
+     3.68,
+     3.9,
+     3.93,
+     4.31
+    ],
+    "10Y": [
+     4.63,
+     4.54,
+     4.23,
+     4.51,
+     4.48,
+     4.66
+    ]
+   },
+   "USA": {
+    "2Y": [
+     3.56,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "5Y": [
+     3.72,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "10Y": [
+     4.15,
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  },
+  "row_stamps": {
+   "Polska 2-letnie": "06.03.2026",
+   "Polska 5-letnie": "06.03.2026",
+   "Polska 10-letnie": "06.03.2026",
+   "Węgry 3-letnie": "06.03.2026",
+   "Węgry 5-letnie": "06.03.2026",
+   "Węgry 10-letnie": "06.03.2026",
+   "Czechy 2-letnie": "06.03.2026",
+   "Czechy 5-letnie": "06.03.2026",
+   "Czechy 10-letnie": "06.03.2026",
+   "Turcja 2-letnie": "06.03.2026",
+   "Turcja 5-letnie": "06.03.2026",
+   "Turcja 10-letnie": "06.03.2026",
+   "Irlandia 2-letnie": "06.03.2026",
+   "Irlandia 5-letnie": "06.03.2026",
+   "Irlandia 10-letnie": "06.03.2026",
+   "Włochy 2-letnie": "06.03.2026",
+   "Włochy 5-letnie": "06.03.2026",
+   "Włochy 10-letnie": "06.03.2026",
+   "Portugalia 2-letnie": "06.03.2026",
+   "Portugalia 5-letnie": "06.03.2026",
+   "Portugalia 10-letnie": "06.03.2026",
+   "Hiszpania 2-letnie": "06.03.2026",
+   "Hiszpania 5-letnie": "06.03.2026",
+   "Hiszpania 10-letnie": "06.03.2026",
+   "Niemcy 2-letnie": "06.03.2026",
+   "Niemcy 5-letnie": "06.03.2026",
+   "Niemcy 10-letnie": "06.03.2026",
+   "Francja 2-letnie": "06.03.2026",
+   "Francja 5-letnie": "06.03.2026",
+   "Francja 10-letnie": "06.03.2026",
+   "Wielka Brytania 2-letnie": "06.03.2026",
+   "Wielka Brytania 5-letnie": "06.03.2026",
+   "Wielka Brytania 10-letnie": "06.03.2026"
+  },
+  "published": "2026-03-09 06:33"
+ },
+ "pap_close": {
+  "url": "https://strefainwestorow.pl/wiadomosci/20260306/dzien-na-fxfi-zloty-oslabil-sie-do-428eur-rentownosci-spw-w-gore",
+  "time": "2026-03-06 16:45",
+  "quote_time": "16:29",
+  "y2": 3.96,
+  "y5": 4.88,
+  "y10": 5.58,
+  "bonds": {
+   "OK0128": 3.96,
+   "PS0131": 4.88,
+   "DS1035": 5.58
+  },
+  "eurpln": 4.2769,
+  "usdpln": 3.6952,
+  "note": "Quotes 16:29. The 9 Mar morning tables (\"poniedz. 08:54 / piątek 16:29 / piątek 09:17\") confirm 16:29 is the last 6 Mar quote. The Erste EUR/PLN close for C is stale (see flags), so this is the only C-dated EUR/PLN level"
+ },
+ "policy": {
+  "nbp_reference": 3.75,
+  "nbp_deposit": 3.25,
+  "nbp_lombard": 4.25,
+  "last_change": "4 Mar 2026 (-25bp, eff. 5 Mar)",
+  "next_mpc": "2026-04-08/09"
+ },
+ "facts": {
+  "policy": {
+   "nbp_reference": 3.75,
+   "next_mpc_label": "MPC next: 8-9 Apr",
+   "pricing_text": "FRAs at the 6 Mar close (1x4 3.78, 3x6 3.77, 6x9 3.82, 9x12 3.88 vs WIBOR 3M 3.77) price roughly 10bp of NBP hikes within 12 months. The MPC cut by 25bp to 3.75% on 4 Mar (a 'hawkish cut', ING); the projection excludes the war. Glapiński (5 Mar): if things calm within about two months, one more cut is back on the table; no forward guidance. Wnorowski (6 Mar): no further cuts while the war lasts; Kotecki: room 'much smaller'.",
+   "risk_text": "Oil and the war set the direction: if Brent stays near $100 the market keeps pricing NBP hikes and the front-end roll-down reverses; a ceasefire would bring cuts back (Glapiński's 'two months'). SAFE politics add a fiscal premium."
+  },
+  "macro": {
+   "cpi": {
+    "v": 2.2,
+    "m": "Jan flash (GUS, 13 Feb; old weights)"
+   },
+   "projection_text": "NBP March projection (4 Mar; data to 19 Feb, war excluded): CPI 50% bands 1.6-2.9% (2026), 1.1-3.7% (2027); central path 2.3% / 2.4% / 2.3% (2026-28), GDP 3.9% in 2026 (Inflation Report, 6 Mar).",
+   "fiscal_text": "2025 general-government deficit ~7.0% of GDP (MoF figures in Fitch: 7.0% / 6.5% / 6.2% for 2025-27, debt ~70% of GDP by 2027); 2026 deficit cap PLN 271.7bn.",
+   "fiscal_risk_text": "2026 needs ~38% (25 Feb) financed; budget accounts ~PLN 171.6bn at end-February. Moody's reviews Poland on 20 Mar (A2, negative).",
+   "backdrop_text": "The NBP cut to 3.75% on 4 Mar after holding at 4.00% in January and February; January flash CPI 2.2%; 2025 GDP 3.6%, Q4 4.0%. Ratings: Fitch A- negative (affirmed 27 Feb), Moody's A2 negative, S&P A- stable. 6-8 Mar: the NBP Inflation Report (6 Mar) has central CPI 2.3% (2026), 2.4% (2027), GDP 3.9% (2026); Wnorowski: forget further cuts while the war lasts; Kotecki: room 'much smaller'; the 10Y POLGB rose ~56bp in the week and the 2Y neared 4.0%. Abroad: US payrolls -92k (+55k expected) but Brent rose ~27% in the week to ~$92-93."
+  },
+  "calendar": {
+   "plan_text": "MoF March plan (27 Feb): sale auctions on 18 and 25 Mar (PLN 7-13bn each; OK0128, NZ0331, PS0731 (new 5Y fixed), DS1035, NZ0936 (new 10Y POLSTR floater)) and a switch on 11 Mar buying back OK0426, DS0726, PS1026, WZ1126 and OK0127; no T-bills; WZ sales ended in February. February sales were ~PLN 41bn; ~38% of 2026 needs financed.",
+   "timing_text": "The Aug 2025-Feb 2026 pattern (auction-day close the cheapest point of the week) comes from a rally regime; in March's sell-off MoF is cutting supply (switch instead of sale, a smaller 25 Mar offer), so remaining dates (18 and 25 Mar) are less of a supply event. Next MPC 8-9 Apr: a hold is expected while the market prices hikes.",
+   "events": [
+    {
+     "date": "2026-02-27",
+     "type": "Rating",
+     "title": "Fitch review of Poland (A-, negative)",
+     "note": "Negative outlook since 5 Sep 2025.",
+     "source_date": "MNI rating calendar, 29 Dec 2025"
+    },
+    {
+     "date": "2026-03-04",
+     "type": "MPC",
+     "title": "MPC decision (3-4 Mar) + March projection",
+     "note": "Pre-war consensus: -25bp.",
+     "source_date": "NBP schedule"
+    },
+    {
+     "date": "2026-03-05",
+     "type": "MPC",
+     "title": "Glapiński press conference",
+     "note": "",
+     "source_date": "NBP"
+    },
+    {
+     "date": "2026-03-06",
+     "type": "MPC",
+     "title": "NBP March Inflation Report",
+     "note": "",
+     "source_date": "NBP practice"
+    },
+    {
+     "date": "2026-03-11",
+     "type": "Auction",
+     "title": "MoF switch auction (buy OK0426, DS0726, PS1026, WZ1126, OK0127)",
+     "note": "",
+     "source_date": "MoF March plan, 27 Feb"
+    },
+    {
+     "date": "2026-03-13",
+     "type": "Data",
+     "title": "GUS February CPI (new COICOP 2018 weights)",
+     "note": "",
+     "source_date": "GUS calendar"
+    },
+    {
+     "date": "2026-03-16",
+     "type": "Data",
+     "title": "NBP core inflation (Jan-Feb)",
+     "note": "",
+     "source_date": "NBP calendar"
+    },
+    {
+     "date": "2026-03-18",
+     "type": "Auction",
+     "title": "MoF sale auction PLN 7-13bn",
+     "note": "",
+     "source_date": "MoF March plan, 27 Feb"
+    },
+    {
+     "date": "2026-03-18",
+     "type": "CB",
+     "title": "FOMC decision",
+     "note": "",
+     "source_date": "Fed calendar"
+    },
+    {
+     "date": "2026-03-19",
+     "type": "CB",
+     "title": "ECB, BoE, CNB decisions",
+     "note": "",
+     "source_date": "CB calendars"
+    },
+    {
+     "date": "2026-03-19",
+     "type": "Data",
+     "title": "GUS February wages, industry, PPI, construction",
+     "note": "",
+     "source_date": "GUS calendar"
+    },
+    {
+     "date": "2026-03-20",
+     "type": "Rating",
+     "title": "Moody's review of Poland (A2, negative)",
+     "note": "Negative outlook since 19 Sep 2025.",
+     "source_date": "MNI rating calendar, 29 Dec 2025"
+    },
+    {
+     "date": "2026-03-23",
+     "type": "Data",
+     "title": "GUS February retail sales",
+     "note": "",
+     "source_date": "GUS calendar"
+    },
+    {
+     "date": "2026-03-24",
+     "type": "CB",
+     "title": "MNB decision",
+     "note": "",
+     "source_date": "MNB calendar"
+    },
+    {
+     "date": "2026-03-25",
+     "type": "Auction",
+     "title": "MoF sale auction PLN 7-13bn",
+     "note": "",
+     "source_date": "MoF March plan, 27 Feb"
+    },
+    {
+     "date": "2026-03-25",
+     "type": "Cash flow",
+     "title": "WZ0330 / WZ0930 coupon reset; NZ coupons",
+     "note": "",
+     "source_date": "bond terms"
+    },
+    {
+     "date": "2026-03-31",
+     "type": "Data",
+     "title": "GUS March flash CPI",
+     "note": "",
+     "source_date": "GUS calendar"
+    },
+    {
+     "date": "2026-03-31",
+     "type": "Index",
+     "title": "GPWB/TBSP periodic portfolio change",
+     "note": "Maturity-window changes (see Index section).",
+     "source_date": "GPW Benchmark rules"
+    },
+    {
+     "date": "2026-04-09",
+     "type": "MPC",
+     "title": "MPC decision (8-9 Apr)",
+     "note": "",
+     "source_date": "NBP schedule"
+    }
+   ]
+  },
+  "core_policy": {
+   "_replace": true,
+   "_value": {
+    "Poland": {
+     "bank": "NBP",
+     "rate": 3.75,
+     "rate_disp": "3.75",
+     "last": "-25bp 4 Mar 2026 (eff. 5 Mar)",
+     "next": "8-9 Apr 2026",
+     "stance": "Wait-and-see after a 'hawkish cut'",
+     "tone": "wait",
+     "pricing": "FRAs ~10bp of hikes within 12M (6 Mar close)"
+    },
+    "Euro area": {
+     "bank": "ECB depo",
+     "rate": 2.0,
+     "rate_disp": "2.00",
+     "last": "held 5 Feb (cut -25bp eff. 11 Jun 2025)",
+     "next": "Mar 2026",
+     "stance": "On hold, cycle over",
+     "tone": "wait",
+     "pricing": "a hike by year-end priced above 50% (5 Mar)"
+    },
+    "United States": {
+     "bank": "Fed",
+     "rate": 3.625,
+     "rate_disp": "3.50-3.75",
+     "last": "held 28 Jan (last cut -25bp 10 Dec 2025)",
+     "next": "17-18 Mar 2026",
+     "stance": "On hold, easing bias",
+     "tone": "go",
+     "pricing": "~44bp of 2026 cuts after -92k payrolls (6 Mar)"
+    },
+    "United Kingdom": {
+     "bank": "BoE",
+     "rate": 3.75,
+     "rate_disp": "3.75",
+     "last": "held 5 Feb (5-4; cut -25bp 18 Dec 2025)",
+     "next": "Mar 2026",
+     "stance": "Easing, gradual",
+     "tone": "go",
+     "pricing": "~20% for a March cut (5 Mar)"
+    },
+    "Czechia": {
+     "bank": "CNB",
+     "rate": 3.5,
+     "rate_disp": "3.50",
+     "last": "held 5 Feb (3.50%, 7-0)",
+     "next": "Mar 2026",
+     "stance": "On hold",
+     "tone": "wait",
+     "pricing": "minutes (13 Feb): two members leaning to a cut"
+    },
+    "Hungary": {
+     "bank": "MNB",
+     "rate": 6.25,
+     "rate_disp": "6.25",
+     "last": "-25bp 24 Feb 2026",
+     "next": "Mar 2026",
+     "stance": "Easing cautiously",
+     "tone": "go",
+     "pricing": "Varga: no easing cycle decided (24 Feb)"
+    },
+    "Romania": {
+     "bank": "BNR",
+     "rate": 6.5,
+     "rate_disp": "6.50",
+     "last": "-25bp Aug 2024; held 12 Nov",
+     "next": "Jan 2026",
+     "stance": "On hold",
+     "tone": "wait",
+     "pricing": "not found"
+    }
+   }
+  },
+  "core_cpi": {
+   "_replace": true,
+   "_value": {
+    "Poland": {
+     "v": 2.2,
+     "m": "Jan flash"
+    },
+    "Euro area": {
+     "v": 1.9,
+     "m": "Feb flash (core 2.4)"
+    },
+    "United States": {
+     "v": 2.4,
+     "m": "Jan (core 2.5)"
+    },
+    "United Kingdom": {
+     "v": 3.0,
+     "m": "Jan"
+    },
+    "Czechia": {
+     "v": 1.6,
+     "m": "Jan flash"
+    },
+    "Hungary": {
+     "v": 2.1,
+     "m": "Jan"
+    },
+    "Romania": {
+     "v": 9.8,
+     "m": "Nov"
+    }
+   }
+  },
+  "core_policy_note": "Real rate = policy rate − latest CPI. Fed rate = midpoint of the range. Sources: ECB key-rates page; Fed press release 10 Dec 2025 and SEP; BoE Monetary Policy Summary Dec 2025; CNB press release 18 Dec 2025; MNB press release 16 Dec 2025; NBP/MPC 3 Dec 2025; CPI releases (Eurostat 17 Dec, Destatis 12 Dec, BLS 18 Dec, ONS 17 Dec, CZSO 10 Dec, MNB 16 Dec, INS 12 Dec, GUS 31 Dec). Later releases used where published by the info cut-off (GUS, Eurostat, BLS, ONS, CZSO, KSH; FOMC 18 Mar, ECB/BoE/CNB 19 Mar, MNB 24 Mar where in the window).",
+  "core_text": "Regime: war shock - oil and global yields up, PLN weaker; the NBP cut to 3.75% and turned wait-and-see while FRAs price roughly 10bp of NBP hikes; the ECB is priced for hikes, the Fed is on hold, the BoE has turned hawkish, the CNB and MNB are on hold. (Erste's CDS/spread table for 6 Mar looked stale or inconsistent, so it is not quoted.) Brent +27% in the week (6 Mar)."
+ },
+ "quasi_takeaways": [
+  "<b>FPC fixed lines trade ~{lo}-{hi}bp over the POLGB curve</b> (average {avg}bp); widest ASW {widest} at {widest_asw}bp. Same State Treasury guarantee as POLGBs.",
+  "<b>Best pickup: {best}</b> ({best_sp}bp vs POLGB). For buy-and-hold books the guarantee makes the pickup attractive; liquidity is the cost (Pekao became BGK market maker on 13 Nov 2025).",
+  "<b>Supply:</b> no FPC auction announced yet in March; BGK's February auctions raised PLN 6.4bn incl. additional sales.",
+  "<b>Use auctions, not Catalyst:</b> trades are small retail lots and some lines go weeks without a print."
+ ],
+ "audit_updates": {
+  "MoF auctions & switch results": {
+   "as_of": "25 Feb 2026 sale",
+   "published": "auction days",
+   "source": "MoF wholesale-bond database (rows whose same-day release PAP confirms); MoF/PAP communiques",
+   "note": ""
+  },
+  "Index portfolios (GPWB 1-3Y, 1-4Y, TBSP)": {
+   "as_of": "27 Feb 2026 change (holdings 24 Feb)",
+   "published": "25 Feb 2026",
+   "source": "GPW Benchmark 'Portfele obligacji' communique",
+   "note": "No membership changes; units match MoF settlements to 20 Feb."
+  },
+  "NBP rates, MPC comments, 2026 MPC schedule": {
+   "as_of": "4 Mar 2026 decision (-25bp); comments to 6-8 Mar",
+   "published": "<= 8 Mar",
+   "source": "NBP/MPC; PAP/Bloomberg/press interviews (first dated mention)",
+   "note": ""
+  },
+  "Bank views": {
+   "as_of": "to 6-8 Mar",
+   "published": "<= 8 Mar",
+   "source": "PKO, Erste, Millennium, ING, Pekao, Deutsche Bank Polska, BNP TFI, Bank Pocztowy; PAP",
+   "note": "Only commentary published by the info cut-off."
+  },
+  "PLN IRS curve": {
+   "note": "Erste's 9 Mar daily heads its tables 05/03 but the IRS/FRA levels are new and consistent with its change columns and PAP's 6 Mar bond moves: used as the 6 Mar close. Bid side; 7Y not available."
+  }
+ },
+ "new_facts_audit": {
+  "input": "New facts 6-8 Mar 2026",
+  "as_of": "6-8 Mar",
+  "published": "6-8 Mar",
+  "source": "PAP feed (strefainwestorow.pl), MoF, NBP, GUS, BGK, GPW Benchmark, Eurostat, BLS, CME FedWatch, ECB/BoE/CNB/MNB, rating agencies, bank research",
+  "note": "Facts placed in the window they were first published; PAP summary times are upper bounds."
+ }
+}
