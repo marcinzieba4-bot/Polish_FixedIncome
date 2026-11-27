@@ -21,7 +21,9 @@ DATA = ROOT / "data"
 
 PL_HOLIDAYS = {dt.date(2025, 11, 11), dt.date(2025, 12, 24), dt.date(2025, 12, 25), dt.date(2025, 12, 26),
                dt.date(2025, 12, 31),  # no BondSpot session / settlement on 31 Dec 2025
-               dt.date(2026, 1, 1), dt.date(2026, 1, 6), dt.date(2026, 11, 11), dt.date(2026, 12, 24),
+               dt.date(2026, 1, 1), dt.date(2026, 1, 6),
+               dt.date(2026, 4, 3),  # Good Friday: no BondSpot session / settlement
+               dt.date(2026, 4, 6), dt.date(2026, 5, 1), dt.date(2026, 6, 4), dt.date(2026, 11, 11), dt.date(2026, 12, 24),
                dt.date(2026, 12, 25), dt.date(2026, 12, 26), dt.date(2027, 1, 1), dt.date(2027, 1, 6)}
 
 

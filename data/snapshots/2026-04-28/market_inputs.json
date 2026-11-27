@@ -1,0 +1,46 @@
+{
+ "asof": "2026-04-27",
+ "policy": {
+  "nbp_reference": 3.75,
+  "nbp_deposit": 3.25,
+  "nbp_lombard": 4.25,
+  "last_change": "4 Mar 2026 (-25bp, eff. 5 Mar); held 9 Apr",
+  "next_mpc": "2026-05-05/06"
+ },
+ "money_market": {
+  "wibor_1m": 3.77,
+  "wibor_3m": 3.85,
+  "wibor_6m": 3.9,
+  "wibor_1y": 3.94,
+  "repo_special_on": 3.547,
+  "repo_gc": 3.727,
+  "funding_rate": 3.547,
+  "overnight_label": "WIBOR O/N 3.66",
+  "repo_label": "special 3.55, term 3.55-3.60, GC 3.73",
+  "source": "WIBOR fixings of 27 Apr 2026 (GPW Benchmark delayed data); repo from the Treasury BondSpot Poland session of 27 Apr 2026. Funding = nominal-weighted special repo starting within one day, <= 3 days (3.55%).",
+  "wibor_on": 3.66
+ },
+ "irs": {
+  "pillars": {
+   "1": 4.17,
+   "2": 4.32,
+   "3": 4.36,
+   "4": 4.41,
+   "5": 4.45,
+   "8": 4.61,
+   "10": 4.71
+  },
+  "asof": "27 Apr 2026 close",
+  "source": "PLN IRS vs 6M WIBOR at the 27 Apr 2026 close: LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of 28 Apr 2026 (table headed 27.04.2026; only the 27 Apr 2026 levels are used). Bid side, so roughly 1-2bp below mid. 7Y not available. PCHIP interpolation through 6M WIBOR and the pillars; beyond 10Y extrapolated.",
+  "short_source": "PLN IRS at the 27 Apr 2026 close (LSEG bid via Erste), WIBOR fixings 27 Apr 2026"
+ },
+ "curve": {
+  "front_anchor": {
+   "tau": 0.25,
+   "rate": 3.545,
+   "weight": 0.5
+  },
+  "source": "NSS zero curve fitted to BondSpot closing fixings of 27 Apr 2026; front end anchored at a 3M zero of 3.54% = average of sub-1Y fixed POLGB yields (PS1026 3.59%, OK0127 3.50%)."
+ },
+ "macro": {}
+}

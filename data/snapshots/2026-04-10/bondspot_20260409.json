@@ -1,0 +1,637 @@
+{
+ "date": "2026-04-09",
+ "quotes_date": "2026-04-09",
+ "fixing_url": "https://www.bondspot.pl/fixing_obligacji?date=20260409&month=4&year=2026",
+ "session_url": "https://www.bondspot.pl/notowania_TBSPoland?date=20260409&month=4&year=2026",
+ "tbsp_index": null,
+ "fixing": [
+  {
+   "ticker": "DS0726",
+   "isin": "PL0000108866",
+   "bid": 99.67,
+   "ask": 99.9,
+   "bid_yld": 3.61,
+   "ask_yld": 2.81,
+   "fix_price": 99.79,
+   "fix_yld": 3.19
+  },
+  {
+   "ticker": "PS1026",
+   "isin": "PL0000113460",
+   "bid": 98.25,
+   "ask": 98.39,
+   "bid_yld": 3.59,
+   "ask_yld": 3.31,
+   "fix_price": 98.32,
+   "fix_yld": 3.45
+  },
+  {
+   "ticker": "WZ1126",
+   "isin": "PL0000113130",
+   "bid": 100.23,
+   "ask": 100.48,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 100.36,
+   "fix_yld": null
+  },
+  {
+   "ticker": "OK0127",
+   "isin": "PL0000117289",
+   "bid": 97.27,
+   "ask": 97.47,
+   "bid_yld": 3.57,
+   "ask_yld": 3.3,
+   "fix_price": 97.37,
+   "fix_yld": 3.44
+  },
+  {
+   "ticker": "PS0527",
+   "isin": "PL0000114393",
+   "bid": 99.95,
+   "ask": 100.21,
+   "bid_yld": 3.79,
+   "ask_yld": 3.55,
+   "fix_price": 100.08,
+   "fix_yld": 3.67
+  },
+  {
+   "ticker": "DS0727",
+   "isin": "PL0000109427",
+   "bid": 98.18,
+   "ask": 98.33,
+   "bid_yld": 3.98,
+   "ask_yld": 3.85,
+   "fix_price": 98.26,
+   "fix_yld": 3.91
+  },
+  {
+   "ticker": "WZ1127",
+   "isin": "PL0000114559",
+   "bid": 99.89,
+   "ask": 100.13,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 100.01,
+   "fix_yld": null
+  },
+  {
+   "ticker": "OK0128",
+   "isin": "PL0000118089",
+   "bid": 92.93,
+   "ask": 93.13,
+   "bid_yld": 4.19,
+   "ask_yld": 4.06,
+   "fix_price": 93.03,
+   "fix_yld": 4.13
+  },
+  {
+   "ticker": "WS0428",
+   "isin": "PL0000107611",
+   "bid": 97.11,
+   "ask": 97.29,
+   "bid_yld": 4.26,
+   "ask_yld": 4.16,
+   "fix_price": 97.2,
+   "fix_yld": 4.21
+  },
+  {
+   "ticker": "WZ0528",
+   "isin": "PL0000110383",
+   "bid": 99.46,
+   "ask": 99.78,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 99.62,
+   "fix_yld": null
+  },
+  {
+   "ticker": "PS0728",
+   "isin": "PL0000115192",
+   "bid": 106.74,
+   "ask": 106.94,
+   "bid_yld": 4.32,
+   "ask_yld": 4.23,
+   "fix_price": 106.84,
+   "fix_yld": 4.27
+  },
+  {
+   "ticker": "WZ1128",
+   "isin": "PL0000115697",
+   "bid": 99.01,
+   "ask": 99.26,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 99.14,
+   "fix_yld": null
+  },
+  {
+   "ticker": "WS0429",
+   "isin": "PL0000105391",
+   "bid": 103.36,
+   "ask": 103.63,
+   "bid_yld": 4.53,
+   "ask_yld": 4.44,
+   "fix_price": 103.5,
+   "fix_yld": 4.48
+  },
+  {
+   "ticker": "PS0729",
+   "isin": "PL0000116760",
+   "bid": 100.38,
+   "ask": 100.59,
+   "bid_yld": 4.61,
+   "ask_yld": 4.54,
+   "fix_price": 100.49,
+   "fix_yld": 4.57
+  },
+  {
+   "ticker": "DS1029",
+   "isin": "PL0000111498",
+   "bid": 93.95,
+   "ask": 94.24,
+   "bid_yld": 4.64,
+   "ask_yld": 4.54,
+   "fix_price": 94.1,
+   "fix_yld": 4.59
+  },
+  {
+   "ticker": "WZ1129",
+   "isin": "PL0000111928",
+   "bid": 97.9,
+   "ask": 98.15,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 98.03,
+   "fix_yld": null
+  },
+  {
+   "ticker": "PS0130",
+   "isin": "PL0000117370",
+   "bid": 100.99,
+   "ask": 101.28,
+   "bid_yld": 4.7,
+   "ask_yld": 4.62,
+   "fix_price": 101.14,
+   "fix_yld": 4.66
+  },
+  {
+   "ticker": "WZ0330",
+   "isin": "PL0000117198",
+   "bid": 97.43,
+   "ask": 97.64,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 97.54,
+   "fix_yld": null
+  },
+  {
+   "ticker": "PS0730",
+   "isin": "PL0000117990",
+   "bid": 98.79,
+   "ask": 99.07,
+   "bid_yld": 4.81,
+   "ask_yld": 4.74,
+   "fix_price": 98.93,
+   "fix_yld": 4.77
+  },
+  {
+   "ticker": "WZ0930",
+   "isin": "PL0000118170",
+   "bid": 96.93,
+   "ask": 97.34,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 97.14,
+   "fix_yld": null
+  },
+  {
+   "ticker": "DS1030",
+   "isin": "PL0000112736",
+   "bid": 85.49,
+   "ask": 85.71,
+   "bid_yld": 4.89,
+   "ask_yld": 4.83,
+   "fix_price": 85.6,
+   "fix_yld": 4.86
+  },
+  {
+   "ticker": "PS0131",
+   "isin": "PL0000118519",
+   "bid": 98.26,
+   "ask": 98.49,
+   "bid_yld": 4.91,
+   "ask_yld": 4.85,
+   "fix_price": 98.38,
+   "fix_yld": 4.88
+  },
+  {
+   "ticker": "PS0731",
+   "isin": "PL0000118998",
+   "bid": 95.14,
+   "ask": 95.48,
+   "bid_yld": 5.06,
+   "ask_yld": 4.99,
+   "fix_price": 95.31,
+   "fix_yld": 5.03
+  },
+  {
+   "ticker": "WZ1131",
+   "isin": "PL0000113213",
+   "bid": 96.36,
+   "ask": 96.87,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 96.62,
+   "fix_yld": null
+  },
+  {
+   "ticker": "DS0432",
+   "isin": "PL0000113783",
+   "bid": 82.84,
+   "ask": 83.07,
+   "bid_yld": 5.12,
+   "ask_yld": 5.07,
+   "fix_price": 82.96,
+   "fix_yld": 5.1
+  },
+  {
+   "ticker": "DS1033",
+   "isin": "PL0000115291",
+   "bid": 104.26,
+   "ask": 104.54,
+   "bid_yld": 5.29,
+   "ask_yld": 5.24,
+   "fix_price": 104.4,
+   "fix_yld": 5.27
+  },
+  {
+   "ticker": "DS1034",
+   "isin": "PL0000116851",
+   "bid": 97.02,
+   "ask": 97.36,
+   "bid_yld": 5.44,
+   "ask_yld": 5.39,
+   "fix_price": 97.19,
+   "fix_yld": 5.41
+  },
+  {
+   "ticker": "DS1035",
+   "isin": "PL0000118188",
+   "bid": 95.83,
+   "ask": 96.37,
+   "bid_yld": 5.57,
+   "ask_yld": 5.49,
+   "fix_price": 96.1,
+   "fix_yld": 5.53
+  },
+  {
+   "ticker": "IZ0836",
+   "isin": "PL0000117024",
+   "bid": 91.24,
+   "ask": 92.29,
+   "bid_yld": null,
+   "ask_yld": null,
+   "fix_price": 91.77,
+   "fix_yld": null
+  }
+ ],
+ "quotes": [
+  {
+   "ticker": "OK0426",
+   "isin": "PL0000116596",
+   "bid": 99.9,
+   "ask": 100.0,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS0726",
+   "isin": "PL0000108866",
+   "bid": 99.71,
+   "ask": 99.88,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS1026",
+   "isin": "PL0000113460",
+   "bid": 98.29,
+   "ask": 98.33,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "OK0127",
+   "isin": "PL0000117289",
+   "bid": 97.3,
+   "ask": 97.44,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0527",
+   "isin": "PL0000114393",
+   "bid": 100.12,
+   "ask": 100.13,
+   "last": 99.93,
+   "volume": 140000.0
+  },
+  {
+   "ticker": "DS0727",
+   "isin": "PL0000109427",
+   "bid": 98.3,
+   "ask": 98.28,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "OK0128",
+   "isin": "PL0000118089",
+   "bid": 93.05,
+   "ask": 93.05,
+   "last": 93.05,
+   "volume": 30000.0
+  },
+  {
+   "ticker": "WS0428",
+   "isin": "PL0000107611",
+   "bid": 97.31,
+   "ask": 97.25,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0728",
+   "isin": "PL0000115192",
+   "bid": 106.88,
+   "ask": 106.89,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WS0429",
+   "isin": "PL0000105391",
+   "bid": 103.61,
+   "ask": 103.52,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0729",
+   "isin": "PL0000116760",
+   "bid": 100.62,
+   "ask": 100.55,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS1029",
+   "isin": "PL0000111498",
+   "bid": 94.29,
+   "ask": 94.2,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0130",
+   "isin": "PL0000117370",
+   "bid": 101.29,
+   "ask": 101.07,
+   "last": 101.07,
+   "volume": 20000.0
+  },
+  {
+   "ticker": "PS0730",
+   "isin": "PL0000117990",
+   "bid": 98.91,
+   "ask": 98.96,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS1030",
+   "isin": "PL0000112736",
+   "bid": 85.77,
+   "ask": 85.65,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0131",
+   "isin": "PL0000118519",
+   "bid": 98.42,
+   "ask": 98.42,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "PS0731",
+   "isin": "PL0000118998",
+   "bid": 97.46,
+   "ask": 95.4,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS0432",
+   "isin": "PL0000113783",
+   "bid": 83.17,
+   "ask": 83.0,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS1033",
+   "isin": "PL0000115291",
+   "bid": 104.6,
+   "ask": 104.44,
+   "last": 104.43,
+   "volume": 20000.0
+  },
+  {
+   "ticker": "DS1034",
+   "isin": "PL0000116851",
+   "bid": 97.54,
+   "ask": 97.3,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "DS1035",
+   "isin": "PL0000118188",
+   "bid": 96.55,
+   "ask": 96.15,
+   "last": 96.55,
+   "volume": 110000.0
+  },
+  {
+   "ticker": "WS0437",
+   "isin": "PL0000104857",
+   "bid": 94.77,
+   "ask": 95.6,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WS0447",
+   "isin": "PL0000109765",
+   "bid": 77.58,
+   "ask": 81.5,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "IZ0831",
+   "isin": "PL0000117743",
+   "bid": 97.81,
+   "ask": 98.3,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "IZ0836",
+   "isin": "PL0000117024",
+   "bid": 91.61,
+   "ask": 92.2,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ1126",
+   "isin": "PL0000113130",
+   "bid": 100.28,
+   "ask": 100.45,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ1127",
+   "isin": "PL0000114559",
+   "bid": 99.95,
+   "ask": 100.1,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ0528",
+   "isin": "PL0000110383",
+   "bid": 99.54,
+   "ask": 99.75,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "NZ0928",
+   "isin": "PL0000118600",
+   "bid": 98.5,
+   "ask": 98.65,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ1128",
+   "isin": "PL0000115697",
+   "bid": 99.07,
+   "ask": 99.18,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ1129",
+   "isin": "PL0000111928",
+   "bid": 97.95,
+   "ask": 98.05,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ0330",
+   "isin": "PL0000117198",
+   "bid": 97.52,
+   "ask": 97.52,
+   "last": 97.52,
+   "volume": 10000.0
+  },
+  {
+   "ticker": "WZ0930",
+   "isin": "PL0000118170",
+   "bid": 97.02,
+   "ask": 97.25,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "NZ0331",
+   "isin": "PL0000118774",
+   "bid": 95.33,
+   "ask": 95.55,
+   "last": 0.0,
+   "volume": 0.0
+  },
+  {
+   "ticker": "WZ1131",
+   "isin": "PL0000113213",
+   "bid": 96.54,
+   "ask": 96.75,
+   "last": 96.75,
+   "volume": 10000.0
+  },
+  {
+   "ticker": "WZ0533",
+   "isin": "PL0000115028",
+   "bid": 97.45,
+   "ask": 97.2,
+   "last": 97.45,
+   "volume": 25000.0
+  },
+  {
+   "ticker": "NZ0936",
+   "isin": "PL0000118980",
+   "bid": 89.25,
+   "ask": 90.0,
+   "last": 0.0,
+   "volume": 0.0
+  }
+ ],
+ "repo": [
+  {
+   "name": "OK0426",
+   "isin": "PL0000116596",
+   "term": "0/7",
+   "days": 7.0,
+   "min": 3.3,
+   "max": 3.3,
+   "avg": 3.3,
+   "nominal_mln": 250.0
+  },
+  {
+   "name": "GCZ",
+   "isin": "G.C. Poland",
+   "term": "0/1",
+   "days": 1.0,
+   "min": 3.6,
+   "max": 3.6,
+   "avg": 3.6,
+   "nominal_mln": 1000.0
+  }
+ ],
+ "tbills": [
+  {
+   "name": "30JUN26",
+   "isin": "PL0000006193",
+   "days": 78.0,
+   "bid_yld": 3.55,
+   "ask_yld": 2.0
+  },
+  {
+   "name": "29SEP26",
+   "isin": "PL0000006201",
+   "days": 169.0,
+   "bid_yld": 3.8,
+   "ask_yld": 3.1
+  }
+ ],
+ "fetched_at": "2026-11-27T10:05:03+00:00",
+ "_note": "tbsp_index removed: BondSpot fixing page shows the CURRENT index level regardless of date (look-ahead)"
+}

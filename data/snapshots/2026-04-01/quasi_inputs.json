@@ -1,0 +1,64 @@
+{
+ "fixed": [
+  [
+   "FPC0229",
+   "PL0000500443",
+   5.75,
+   "2029-02-03",
+   null,
+   102.2,
+   "Catalyst close 31 Mar 2026",
+   null
+  ],
+  [
+   "FPC0630",
+   "PL0000500278",
+   2.125,
+   "2030-06-05",
+   null,
+   88.64,
+   "Catalyst close 31 Mar 2026",
+   null
+  ],
+  [
+   "FPC0231",
+   "PL0000500450",
+   5.75,
+   "2031-02-03",
+   null,
+   102.49,
+   "Catalyst close 31 Mar 2026 on 8 bonds (stale: treat as indicative)",
+   null
+  ],
+  [
+   "FPC0733",
+   "PL0000500294",
+   2.25,
+   "2033-07-21",
+   null,
+   80.5,
+   "Catalyst close 31 Mar 2026",
+   null
+  ],
+  [
+   "FPC0235",
+   "PL0000500468",
+   6.0,
+   "2035-02-03",
+   null,
+   100.0,
+   "Catalyst close 31 Mar 2026",
+   null
+  ]
+ ],
+ "floaters": [],
+ "pfr": [],
+ "lede": "BGK bonds for the COVID-19 Fund (FPC) carry an explicit State Treasury guarantee, i.e. the same credit as POLGBs. Prices are thin Catalyst retail closes (31 Mar 2026; FPC0231 traded a single bond), so levels are indicative. Spread vs POLGB = yield minus the fitted POLGB curve for the same cash flows; ASW = yield minus PLN IRS.",
+ "takeaways_html": [
+  "<b>FPC fixed lines trade ~{lo}-{hi}bp over the POLGB curve</b> (average {avg}bp); widest ASW {widest} at {widest_asw}bp. Same State Treasury guarantee as POLGBs.",
+  "<b>Best pickup: {best}</b> ({best_sp}bp vs POLGB). For buy-and-hold books the guarantee makes the pickup attractive; liquidity is the cost (Pekao became BGK market maker on 13 Nov 2025).",
+  "<b>Supply:</b> BGK's Q2 FPC calendar (31 Mar) has tenders on 16 and 29 Apr, 14 and 28 May and 18 Jun; on 26 Mar it sold only PLN 0.87bn (demand 1.06bn) plus 0.20bn.",
+  "<b>Use auctions, not Catalyst:</b> trades are small retail lots and some lines go weeks without a print."
+ ],
+ "sources": "Catalyst closes of 31 Mar 2026 via biznesradar historical pages; BGK FPC 2026 plan (reported 24 Sep 2025); FPC 2025 plan amendment (15 Oct 2025); PAP on the cancelled 9 Dec 2025 auction; Pekao market-maker agreement (13 Nov 2025). Yields recomputed with annual ACT/ACT coupons on each bond's anniversary dates."
+}
