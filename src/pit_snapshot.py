@@ -49,6 +49,10 @@ def repo_stats(repo):
         s0 = min((s for _, s, _ in spec), default=None)
         short = [r for r, s, n in spec if s == s0 and n <= 3] if s0 is not None else []
         rule = f"nearest-start special repo (start T+{s0})"
+        if not short and s0 is not None:  # holiday bridge (e.g. Easter): only longer trades start first
+            n0 = min(n for _, s, n in spec if s == s0)
+            short = [r for r, s, n in spec if s == s0 and n == n0]
+            rule = f"nearest-start, shortest special repo (start T+{s0}, {n0} days across the holiday)"
     w = lambda rs: sum(r["avg"] * r["nominal_mln"] for r in rs) / sum(r["nominal_mln"] for r in rs) if rs else None
     term = [r["avg"] for r, s, n in spec if n > 3]
     return dict(funding=w(short), rule=rule, n_short=len(short), gc=w(gc), gc_terms=sorted({r["term"] for r in gc}),

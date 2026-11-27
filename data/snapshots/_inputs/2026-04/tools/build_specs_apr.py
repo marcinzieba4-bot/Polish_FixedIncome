@@ -18,6 +18,16 @@ DAYS = [('2026-04-01', '2026-03-31', '2026-03-31'), ('2026-04-02', '2026-04-01',
         ('2026-04-21', '2026-04-20', '2026-04-20'), ('2026-04-22', '2026-04-21', '2026-04-21'), ('2026-04-23', '2026-04-22', '2026-04-22'),
         ('2026-04-24', '2026-04-23', '2026-04-23'), ('2026-04-27', '2026-04-24', '2026-04-26'), ('2026-04-28', '2026-04-27', '2026-04-27'),
         ('2026-04-29', '2026-04-28', '2026-04-28'), ('2026-04-30', '2026-04-29', '2026-04-29')]
+# Erste dailies that are not a plain "R-dated daily, table headed C" read (see research/notes_curves*.md)
+_d = lambda R_, daily, how: dict(src_label=f"LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of {daily}" + how,
+                                 published=f"read from the Erste Codziennik of {daily}" + how, audit_note="Only cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available." + how)
+ERSTE = {
+ '2026-04-07': _d('2026-04-07', '3 Apr 2026', " (Good Friday issue, tables headed 02.04.2026 = C; the 7 Apr issue is headed 06/04, after C, and is not used)"),
+ '2026-04-09': _d('2026-04-09', '9 Apr 2026', " (FRA, CDS and spread read directly; its IRS table repeated the 7 Apr table, so the 8 Apr IRS levels are the 10 Apr issue's 09/04 levels minus its change column, +-1bp)"),
+ '2026-04-14': _d('2026-04-14', '15 Apr 2026', " (the 14 Apr issue reprinted the 10 Apr tables and no issue carries a table headed 13.04: 13 Apr levels = the 15 Apr issue's 14.04 levels minus its change column, +-1bp; CDS and the 10Y spread not quoted)"),
+ '2026-04-23': _d('2026-04-23', '24 Apr 2026', " (there is no 23 Apr issue: 22 Apr levels = the 24 Apr issue's 23.04 levels minus its change column, +-1bp; only the 22 Apr closes are read; CDS and the 10Y spread not quoted)"),
+}
+DERIVED_SPREAD = {'2026-04-14', '2026-04-23'}
 PS0731 = dict(bonds=[dict(ticker='PS0731', isin='PL0000118998', coupon=4.0, maturity='2031-07-25')],
               note="PS0731 (4.00%, 25 Jul 2031; first issued 18 Mar 2026) added from the 8 Apr 2026 close, its first BondSpot fixing.")
 if __name__ == '__main__':
@@ -52,11 +62,13 @@ if __name__ == '__main__':
         pap = dict(date=f"{dmy(C)} closes (PAP/Bloomberg table published {pt['published']}{extra}; US = US Treasury {dmy(C)} curve; live US/Japan quotes excluded)",
                    cols=["close", "1D", "5D", "1M", "3M", "12M"], url=pt['url'], data=data, row_stamps=stamps, published=pt['published'])
         s = v['irs_src']
-        irs = dict(pillars=v['irs'], header=s['header_date'], src_label=f"LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of {dmy(s.get('daily_date', R))}",
-                   published=f"read from the Erste Codziennik of {dmy(s.get('daily_date', R))} (table headed {s['header_date']})", short='LSEG bid via Erste', missing_note='7Y not available.',
+        hdr = dt.date.fromisoformat(C).strftime('%d.%m.%Y')
+        irs = dict(pillars=v['irs'], header=hdr, src_label=f"LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of {dmy(R)}",
+                   published=f"read from the Erste Codziennik of {dmy(R)} (table headed {hdr})", short='LSEG bid via Erste', missing_note='7Y not available.',
                    audit_note='Only the cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available.')
+        irs.update(ERSTE.get(R, {}))
         fra = v['fra']; cds = v['cds5y']; spr = v['pl_bund_10y']
-        if v.get('flags'):
+        if R in DERIVED_SPREAD:  # spread rebuilt from a later daily's change column: not quoted
             spr = None
         pols = sorted((d, x) for d, x in FX['polstr'].items() if x['published_by_convention'] < R)
         pd_, px = pols[-1]

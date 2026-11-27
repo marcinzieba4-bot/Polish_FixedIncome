@@ -265,7 +265,7 @@ def build(market_file, asof: dt.date, snap=None):
     bonds, rows = [], []
     for s in static:
         b = Bond(s["ticker"], s["isin"], s["coupon"], dt.date.fromisoformat(s["maturity"]))
-        if b.maturity <= settle:
+        if b.maturity <= settle + dt.timedelta(days=7):  # redemption week: quotes are meaningless (e.g. OK0426 at 100.06)
             continue
         src, clean, ba = None, None, None
         f = fix.get(b.ticker)
