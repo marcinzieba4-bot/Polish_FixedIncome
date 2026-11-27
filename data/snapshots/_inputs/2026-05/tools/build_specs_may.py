@@ -21,7 +21,15 @@ DAYS = [('2026-05-04', '2026-04-30', '2026-05-03'), ('2026-05-05', '2026-05-04',
 # Erste dailies that are not a plain "R-dated daily, table headed C" read (see research/notes_curves*.md)
 _d = lambda R_, daily, how: dict(src_label=f"LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of {daily}" + how,
                                  published=f"read from the Erste Codziennik of {daily}" + how, audit_note="Only cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available." + how)
-ERSTE = {}  # filled after the curves research (see notes_curves*.md)
+# Erste dailies that are not a plain "R-dated daily, table headed C" read (see research/notes_curves*.md)
+_d = lambda daily, how: dict(src_label=f"LSEG end-of-day interbank bid rates in the Erste Bank Polska Codziennik of {daily}" + how,
+                             published=f"read from the Erste Codziennik of {daily}" + how, audit_note="Only cut-off-day levels are used; bid side (~1-2bp below mid); 7Y not available." + how)
+ERSTE = {
+ '2026-05-04': _d('4 May 2026', " (tables headed 01.05.2026, Labour Day: the PL IRS, FRA and spread levels are the 30 Apr closes - their change columns are measured against 30 Apr and are zero)"),
+ '2026-05-05': dict(pillars=CV['2026-05-04']['irs'], header="30.04.2026 (carried)",
+                    **_d('5 May 2026', " (its PL IRS table repeats the 30 Apr levels with zero changes: 4 May was a UK bank holiday and the LSEG PL IRS feed was not updated; no clean 4 May levels exist, so the 30 Apr close is carried and ASW are measured against it; FRA, CDS and spread are 4 May reads)")),
+ '2026-05-26': _d('26 May 2026', " (25 May was a UK bank holiday: PL IRS moved only 0-1bp while bonds fell 6-10bp, so the swap levels sit close to the 22 May print)"),
+}
 DERIVED_SPREAD = set()
 ADD = {'2026-05-12': dict(bonds=[dict(ticker='DS0436', isin='PL0000119087', coupon=5.25, maturity='2036-04-25')],
                          note="DS0436 (5.25%, 25 Apr 2036; first sold 23 Apr 2026; coupon back-solved from its first BondSpot fixing price/yield) added from the 11 May 2026 close."),

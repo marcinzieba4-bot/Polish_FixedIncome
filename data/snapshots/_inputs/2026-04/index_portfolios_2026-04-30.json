@@ -3,7 +3,7 @@
  "source_url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_04_28.pdf",
  "published": "2026-04-28",
  "effective": "2026-04-30",
- "next_rebalance": "2026-05-29 (announcement 27 May, GPWB calendar)",
+ "next_rebalance": "2026-05-29",
  "official_stats_asof": "2026-04-27",
  "indices": {
   "GPWB-B1Y3Y": {
@@ -143,5 +143,6 @@
     }
    }
   }
- }
+ },
+ "next_rebalance_note": "2026-05-29 (announcement 27 May, GPWB calendar)"
 }
