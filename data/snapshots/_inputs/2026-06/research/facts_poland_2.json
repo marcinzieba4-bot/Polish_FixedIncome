@@ -1,0 +1,2415 @@
+{
+ "mof_ops": [
+  {
+   "date": "2026-06-17",
+   "type": "sale",
+   "settlement": "2026-06-19",
+   "offer_mn": [
+    7000.0,
+    12000.0
+   ],
+   "planned_offer_in_monthly_plan_mn": [
+    6000,
+    12000
+   ],
+   "monthly_plan_published": "2026-05-29 (pre-window, context only; June plan: sales 17/24 Jun of OK0129/NZ0331/PS0731/DS0436/NZ0936 + possible IZ and other series, 6-12bn each; switch 3 Jun (part 1); no T-bill auctions)",
+   "announced": "2026-06-15 (MoF communique; PAP weekly 15 Jun 06:31 lists 'MF - Podaz na przetarg sprzedazy SPW' for Mon 15:00; offer content first seen in Millennium 17 Jun 08:50 and PAP FX/FI 17 Jun 09:58): 7,000-12,000m of OK0129, DS1030, NZ0331, PS0731, DS0436, IZ0836 and NZ0936 - minimum raised from 6bn in the June plan; DS1030 and IZ0836 added",
+   "announced_window_report_date": "2026-06-16 (strict first dated mention Millennium 17 Jun 08:50 -> 2026-06-18)",
+   "series_offered": [
+    "OK0129",
+    "DS1030",
+    "NZ0331",
+    "PS0731",
+    "DS0436",
+    "IZ0836",
+    "NZ0936"
+   ],
+   "results_published": "2026-06-17 (auction 11:30 per PAP calendar; PAP Skrot 17 Jun 17:02: sold 12,000.53m at demand 18,267.53m; PAP FX/FI 17 Jun 17:02: cover above 1.5, a 3-month high). Additional sale 791m: MoF DB trade date 17 Jun; first dated mention Erste 18 Jun 08:35 / Millennium 18 Jun 08:44 (strict alternative for the additional sale only: 2026-06-19)",
+   "window_report_date": "2026-06-18",
+   "auction_format": "uniform price; avg price = min accepted price; sold_mn includes non-competitive bids",
+   "total_sold_mn": 12000.53,
+   "total_demand_mn": 18267.53,
+   "bid_to_cover": 1.52,
+   "lines": [
+    {
+     "series": "OK0129",
+     "isin": "PL0000119178",
+     "type": "zero (mat 2029-01-25) - 2Y benchmark, first issued 13 May 2026 (pre-window)",
+     "sold_mn": 1931.5,
+     "noncomp_sold_mn": 250,
+     "demand_mn": 3633.5,
+     "noncomp_demand_mn": 250,
+     "avg_price": 89.39,
+     "min_price": 89.39,
+     "avg_yield": 4.399
+    },
+    {
+     "series": "DS1030",
+     "isin": "PL0000112736",
+     "type": "fixed 1.25%, mat 2030-10-25",
+     "sold_mn": 1088,
+     "noncomp_sold_mn": 10,
+     "demand_mn": 1950,
+     "noncomp_demand_mn": 10,
+     "avg_price": 86.65,
+     "min_price": 86.65,
+     "avg_yield": 4.711
+    },
+    {
+     "series": "NZ0331",
+     "isin": "PL0000118774",
+     "type": "floater (POLSTR compounded), mat 2031-03-25",
+     "sold_mn": 1873,
+     "noncomp_sold_mn": 283,
+     "demand_mn": 3138,
+     "noncomp_demand_mn": 350,
+     "avg_price": 94.862,
+     "min_price": 94.862,
+     "avg_yield": null
+    },
+    {
+     "series": "PS0731",
+     "isin": "PL0000118998",
+     "type": "fixed 4.00%, mat 2031-07-25",
+     "sold_mn": 4442.03,
+     "noncomp_sold_mn": 420,
+     "demand_mn": 5727.03,
+     "noncomp_demand_mn": 420,
+     "avg_price": 95.925,
+     "min_price": 95.925,
+     "avg_yield": 4.918
+    },
+    {
+     "series": "DS0436",
+     "isin": "PL0000119087",
+     "type": "fixed 5.25%, mat 2036-04-25 (first issued 23 Apr 2026)",
+     "sold_mn": 2397,
+     "noncomp_sold_mn": 300,
+     "demand_mn": 2862,
+     "noncomp_demand_mn": 300,
+     "avg_price": 98.71,
+     "min_price": 98.71,
+     "avg_yield": 5.416
+    },
+    {
+     "series": "IZ0836",
+     "isin": "PL0000117024",
+     "type": "CPI-linked, real coupon 2.00%, mat 2036-08-25 (avg_yield = real yield)",
+     "sold_mn": 151,
+     "noncomp_sold_mn": 20,
+     "demand_mn": 382,
+     "noncomp_demand_mn": 20,
+     "avg_price": 91.45,
+     "min_price": 91.45,
+     "avg_yield": 2.983
+    },
+    {
+     "series": "NZ0936",
+     "isin": "PL0000118980",
+     "type": "floater (POLSTR compounded), mat 2036-09-25",
+     "sold_mn": 118,
+     "noncomp_sold_mn": 18,
+     "demand_mn": 575,
+     "noncomp_demand_mn": 50,
+     "avg_price": 88.01,
+     "min_price": 88.01,
+     "avg_yield": null
+    }
+   ],
+   "additional_sale": {
+    "date": "2026-06-17",
+    "settlement": "2026-06-19",
+    "offer_mn": 2067.0,
+    "total_mn": 791,
+    "price": "auction min price per series",
+    "lines": {
+     "OK0129": 213.2,
+     "DS1030": 0,
+     "NZ0331": 127,
+     "PS0731": 0,
+     "DS0436": 402.8,
+     "IZ0836": 38,
+     "NZ0936": 10
+    }
+   },
+   "total_incl_additional_mn": 12791.53,
+   "comment": "First June sale: the full 12bn (top of the 7-12bn range) sold against 18.3bn demand (cover 1.52; PKO: highest demand since the 18 Feb auction; ING's Sutowicz: 3-month high, pre-war levels). PS0731 4,442.03m at 95.925 (4.918%), DS0436 2,397m at 98.71 (5.416%), OK0129 1,931.5m at 89.39 (4.399%), NZ0331 1,873m, DS1030 1,088m at 86.65 (4.711%), IZ0836 151m (real 2.983%), NZ0936 118m. Additional sale 791m (offer 2,067m): OK0129 213.2, DS0436 402.8, NZ0331 127, IZ0836 38, NZ0936 10. Erste 18 Jun: ~58% of 2026 gross needs covered; Millennium 18 Jun: ~59%. Pekao (am, PAP 09:58): the auction could be an occasion for profit-taking after the POLGB rally.",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026); used ONLY for 17 Jun rows - totals 12,000.53 / 18,267.53 match PAP same day; additional 791 matches Millennium 18 Jun",
+    "https://strefainwestorow.pl/wiadomosci/20260617/skrot-wiadomosci-sroda-17-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-fxfi-zloty-w-okolicy-424eur-w-oczekiwaniu-na-fed-na-rynku-dlugu-aukcja",
+    "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-fxfi-zloty-z-niewielka-zmiennoscia-kwestie-geopolityczne-mniej-wazne",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260617",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260618",
+    "https://www.erste.pl/regulation_file_server/time20260618083720/download?id=169523&lang=pl_PL",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-zmiany-w-fomc-a-jastrzebie-jada-dalej",
+    "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-w-kraju-szczegoly-cpi-inflacja-bazowa-produkcja-aukcje-mf-i-bgk",
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-czerwcu-2026"
+   ]
+  },
+  {
+   "date": "2026-06-24",
+   "type": "sale",
+   "settlement": "2026-06-26",
+   "offer_mn": [
+    7000.0,
+    12000.0
+   ],
+   "planned_offer_in_monthly_plan_mn": [
+    6000,
+    12000
+   ],
+   "monthly_plan_published": "2026-05-29 (pre-window, context only; June plan: sales 17/24 Jun of OK0129/NZ0331/PS0731/DS0436/NZ0936 + possible IZ and other series, 6-12bn each; switch 3 Jun (part 1); no T-bill auctions)",
+   "announced": "2026-06-22 (MoF communique; PAP weekly 22 Jun 06:34 lists 'MF - zadluzenie SP za maj, podaz na przetarg sprzedazy SPW' for Mon 15:00; offer content first seen in Millennium 23 Jun 08:41 and PAP FX/FI 23 Jun 16:48): 7,000-12,000m of OK0129, NZ0331, PS0731, DS1035, DS0436 and NZ0936 - minimum again above the 6bn in the plan; DS1035 replaces DS1030/IZ0836 of 17 Jun",
+   "announced_window_report_date": "2026-06-23 (strict first dated mention Millennium 23 Jun 08:41 -> 2026-06-24)",
+   "series_offered": [
+    "OK0129",
+    "NZ0331",
+    "PS0731",
+    "DS1035",
+    "DS0436",
+    "NZ0936"
+   ],
+   "results_published": "2026-06-24 (auction 11:30 per PAP calendar; PAP Skrot 24 Jun 17:02: sold 12,000.3m at demand 15,420.3m; additional sale 1,316.0m in the same Skrot)",
+   "window_report_date": "2026-06-25",
+   "auction_format": "uniform price; avg price = min accepted price; sold_mn includes non-competitive bids",
+   "total_sold_mn": 12000.3,
+   "total_demand_mn": 15420.3,
+   "bid_to_cover": 1.28,
+   "lines": [
+    {
+     "series": "OK0129",
+     "isin": "PL0000119178",
+     "type": "zero (mat 2029-01-25) - 2Y benchmark, first issued 13 May 2026 (pre-window)",
+     "sold_mn": 2355,
+     "noncomp_sold_mn": 130,
+     "demand_mn": 2882,
+     "noncomp_demand_mn": 130,
+     "avg_price": 89.47,
+     "min_price": 89.47,
+     "avg_yield": 4.396
+    },
+    {
+     "series": "NZ0331",
+     "isin": "PL0000118774",
+     "type": "floater (POLSTR compounded), mat 2031-03-25",
+     "sold_mn": 2717,
+     "noncomp_sold_mn": 365,
+     "demand_mn": 3649,
+     "noncomp_demand_mn": 365,
+     "avg_price": 94.9,
+     "min_price": 94.9,
+     "avg_yield": null
+    },
+    {
+     "series": "PS0731",
+     "isin": "PL0000118998",
+     "type": "fixed 4.00%, mat 2031-07-25",
+     "sold_mn": 4187,
+     "noncomp_sold_mn": 400,
+     "demand_mn": 4937,
+     "noncomp_demand_mn": 400,
+     "avg_price": 95.971,
+     "min_price": 95.971,
+     "avg_yield": 4.911
+    },
+    {
+     "series": "DS1035",
+     "isin": "PL0000118188",
+     "type": "fixed 5.00%, mat 2035-10-25",
+     "sold_mn": 802,
+     "noncomp_sold_mn": 0,
+     "demand_mn": 1218,
+     "noncomp_demand_mn": 0,
+     "avg_price": 97.54,
+     "min_price": 97.54,
+     "avg_yield": 5.334
+    },
+    {
+     "series": "DS0436",
+     "isin": "PL0000119087",
+     "type": "fixed 5.25%, mat 2036-04-25 (first issued 23 Apr 2026)",
+     "sold_mn": 1919.3,
+     "noncomp_sold_mn": 200,
+     "demand_mn": 2709.3,
+     "noncomp_demand_mn": 200,
+     "avg_price": 98.7,
+     "min_price": 98.7,
+     "avg_yield": 5.417
+    },
+    {
+     "series": "NZ0936",
+     "isin": "PL0000118980",
+     "type": "floater (POLSTR compounded), mat 2036-09-25",
+     "sold_mn": 20,
+     "noncomp_sold_mn": 0,
+     "demand_mn": 25,
+     "noncomp_demand_mn": 0,
+     "avg_price": 88.11,
+     "min_price": 88.11,
+     "avg_yield": null
+    }
+   ],
+   "additional_sale": {
+    "date": "2026-06-24",
+    "settlement": "2026-06-26",
+    "offer_mn": 1765.0,
+    "total_mn": 1316,
+    "price": "auction min price per series",
+    "lines": {
+     "OK0129": 435,
+     "NZ0331": 26,
+     "PS0731": 411,
+     "DS1035": 0,
+     "DS0436": 443,
+     "NZ0936": 1
+    }
+   },
+   "total_incl_additional_mn": 13316.3,
+   "comment": "Last June sale: the full 12bn sold against 15.4bn demand (cover 1.28; Millennium: highest cover in NZ0331). PS0731 4,187m at 95.971 (4.911%), NZ0331 2,717m at 94.90, OK0129 2,355m at 89.47 (4.396%), DS0436 1,919.3m at 98.70 (5.417%), DS1035 802m at 97.54 (5.334%), NZ0936 20m. Additional sale 1,316m (offer 1,765m): OK0129 435, DS0436 443, PS0731 411, NZ0331 26, NZ0936 1. MoF (to PAP Biznes, Skrot 24 Jun 17:02): ~62% of 2026 gross borrowing needs financed (Millennium: of PLN 688bn). PKO 24 Jun (am) expected sales near the top and a neutral impact; Erste 25 Jun: 5Y took one third; Millennium 25 Jun: the auction did not hurt the rally.",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026); used ONLY for 24 Jun rows - totals 12,000.3 / 15,420.3 and additional 1,316 match PAP same day",
+    "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260624/dzien-na-fxfi-zloty-pod-wplywem-globalnych-czynnikow-i-towarzyszacych-im",
+    "https://strefainwestorow.pl/wiadomosci/20260623/dzien-na-fxfi-zloty-oslabia-sie-piaty-dzien-z-rzedu-eurpln-powyzej-428",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260623",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260625",
+    "https://www.erste.pl/regulation_file_server/time20260625085706/download?id=169536&lang=pl_PL",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-droznosc-ciesniny-pod-znakiem-zapytania",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-program-safe-podbija-zamowienia-w-przemysle",
+    "https://strefainwestorow.pl/wiadomosci/20260622/tydzien-w-kraju-sprzedaz-detaliczna-i-place-za-maj-aukcja-mf-konferencja-o",
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-czerwcu-2026"
+   ]
+  },
+  {
+   "date": "n/a",
+   "type": "switch_or_buyback_or_tbill",
+   "detail": "No switch, buyback or T-bill auction in the windows (15-29 Jun). June plan (29 May): one switch auction on 3 Jun (settled 8 Jun; part-1 window, other agent) and no T-bill auctions. MoF wholesale DB shows no operations between 4 and 30 Jun other than the 17 and 24 Jun sales; the T-bill DB has no rows between 8 May and 10 Jul.",
+   "src": [
+    "https://www.gov.pl/web/finanse/podaz-skarbowych-papierow-wartosciowych-w-czerwcu-2026",
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026)",
+    "https://www.gov.pl/attachment/31ac439a-542c-47f8-a292-ccb1ec763145 (MoF Bony_Skarbowe.xls, downloaded 2026-11-27, Last-Modified 18 Nov 2026)"
+   ]
+  },
+  {
+   "date": "2026-06",
+   "type": "plan_status",
+   "detail": "In-window June sales incl. additional: 17 Jun 12,791.53m + 24 Jun 13,316.3m = 26,107.83m (both at the 12bn maximum; the offers raised the plan's 6bn minimum to 7bn). Financing of 2026 gross borrowing needs (record PLN 688bn): ~58% after 17 Jun (Erste 18 Jun 08:35) / ~59% (Millennium 18 Jun 08:44) -> ~62% after 24 Jun (MoF to PAP Biznes, Skrot 24 Jun 17:02; Millennium 25 Jun). July/Q3 supply plan: NOT published by 29 Jun - PAP weekly 29 Jun 06:31: 'MF i BGK - podaz obligacji na III kw. i na lipiec' on Tue 30 Jun 15:00 (gov.pl list dates both the July supply and the Q3 financing plan 30.06.2026) - not used. Retail bonds: MoF (Skrot 24 Jun 17:02) keeps July coupons and margins unchanged.",
+   "src": [
+    "https://www.erste.pl/regulation_file_server/time20260618083720/download?id=169523&lang=pl_PL",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260618",
+    "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260625",
+    "https://strefainwestorow.pl/wiadomosci/20260629/tydzien-w-kraju-cpi-i-pmi-za-vi-podaz-dlugu-mf-na-iii-kw-kongres-gus",
+    "https://www.gov.pl/web/finanse/komunikaty-dlug?page=2&size=10"
+   ]
+  },
+  {
+   "date": "2026-06-15",
+   "type": "budget_execution",
+   "window_report_date": "2026-06-16",
+   "detail": "MoF estimate (gov.pl; PAP Skrot 15 Jun 17:06): central budget deficit after May PLN 108,214.2m. PKO 16 Jun: 39.8% of the annual limit, practically the same as after May 2025; May revenue -0.7% y/y (excise -15% y/y on the CPN package, VAT +2.5%, CIT +30%), expenditure +2.7% (FUS transfers +6%); debt service fell y/y in May (timing) but +30% YTD; 'under control'. Erste 16 Jun: 108.3bn a year earlier; May VAT 1.8% y/y, excise 2.7%, CIT 19.0%; no big risk to the 271.7bn plan (the two banks' May tax growth rates differ - recorded as published).",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-jastrzebie-z-japonii",
+    "https://www.erste.pl/regulation_file_server/time20260616082706/download?id=169515&lang=pl_PL"
+   ]
+  },
+  {
+   "date": "2026-06-15",
+   "type": "budget_fx_account",
+   "window_report_date": "2026-06-16",
+   "detail": "MoF communique dated 15.06.2026 on gov.pl (PAP item only on 16 Jun 16:58): FX debt service in May - principal EUR 193.3m (PLN 822.0m), interest EUR 364.1m (PLN 1,545.8m); FX on budget accounts end-May EUR 15,677.0m (PLN 66,348.3m) vs EUR 16,509.0m end-April.",
+   "time_basis": "gov.pl page date only (15.06.2026); first PAP mention 16 Jun 16:58 (strict alternative 2026-06-17)",
+   "src": [
+    "https://www.gov.pl/web/finanse/stan-srodkow-walutowych-oraz-operacje-zwiazane-z-zarzadzaniem-dlugiem-zagranicznym-skarbu-panstwa-w-maju-2026-roku",
+    "https://strefainwestorow.pl/wiadomosci/20260616/stan-srodkow-walutowych-na-koniec-maja-wyniosl-15677-mld-euro-mf",
+    "https://www.gov.pl/web/finanse/komunikaty-dlug?page=3&size=10"
+   ]
+  },
+  {
+   "date": "2026-06-22",
+   "type": "state_treasury_debt",
+   "window_report_date": "2026-06-23",
+   "detail": "MoF estimate (PAP 22 Jun 15:13; calendar slot 15:00): State Treasury debt end-May ~PLN 2,135.6bn, +46.8bn (+2.2%) m/m (end-April 2,088.8bn). NBP (Skrot 19 Jun 17:07): projected 12-month government FX debt repayments EUR 7,225m at end-May vs 6,190m a month earlier.",
+   "time_basis": "exact article/document timestamp",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260622/zadluzenie-skarbu-panstwa-na-koniec-maja-wzroslo-o-22-proc-mdm-do-ok-21356-mld",
+    "https://strefainwestorow.pl/wiadomosci/20260619/skrot-wiadomosci-piatek-19-czerwca-1700",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-jak-ai-wplynie-na-polska-gospodarke"
+   ]
+  },
+  {
+   "date": "2026-06-24",
+   "type": "retail_offer",
+   "window_report_date": "2026-06-25",
+   "detail": "MoF communique (PAP Skrot 24 Jun 17:02): coupons and margins of retail (savings) bonds unchanged in the July offer (June offer: ROR 4.00, DOR 4.15, TOS 4.40, COI 4.75, EDO 5.35 per the May/June plans - context).",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700"
+   ]
+  },
+  {
+   "date": "2026-06-26",
+   "type": "eu_funds",
+   "window_report_date": "2026-06-29",
+   "detail": "MoF (PAP 26 Jun 16:27): EU funds inflow in May EUR 1.13bn (cohesion 749.3m, CAP 285.4m); YTD EUR 11.46bn; Poland paid EUR 788.0m to the EU in May (YTD 3.93bn).",
+   "time_basis": "exact article/document timestamp",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260626/do-polski-w-v-naplynelo-113-mld-euro-srodkow-z-ue-mf"
+   ]
+  }
+ ],
+ "new_series": [
+  {
+   "ticker": "OK0129",
+   "isin": "PL0000119178",
+   "type": "zero-coupon (OK) 2Y benchmark",
+   "maturity": "2029-01-25",
+   "nominal_pln": 1000,
+   "issue_letter": "List Emisyjny Nr 49/2026 Ministra Finansow i Gospodarki z dnia 4 maja 2026 r. (per GPW resolution 685/2026; May agent)",
+   "first_issue": "2026-05-13 sale (settlement 15 May) - pre-window (May); also sold 21/27 May and in the 3 Jun switch (part 1)",
+   "in_window_reopenings": "17 Jun: 1,931.5m at 89.39 (4.399%) + 213.2m additional; 24 Jun: 2,355m at 89.47 (4.396%) + 435m additional",
+   "listing": "GPW (Catalyst) since 18 May 2026 (May agent); no new listing item in the windows",
+   "published": "2026-06-26 19:02",
+   "window_report_date": "2026-06-29",
+   "time_basis": "exact article/document timestamp",
+   "gpwb": "ENTERS TBSP, GPWB-B1Y3Y, B1Y4Y and B1Y5Y at the 30 Jun change with 11,454,166 units (= 2,003m after 13 May + 480m 21 May + 195m 27 May + 3,841.466m 3 Jun switch + 2,144.7m 17 Jun + 2,790m 24 Jun); communique 26 Jun",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026)",
+    "https://strefainwestorow.pl/wiadomosci/20260626/gpw-benchmark-komunikat-okresowa-zmiana-portfeli-indeksow-obligacji",
+    "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_06_26_.pdf"
+   ]
+  },
+  {
+   "ticker": "NOT NEW (checked)",
+   "note": "DS1030 (1.25%, Oct 2030), IZ0836 (CPI-linked 2.00%, Aug 2036) and DS1035 (5.00%, Oct 2035) were re-opened (offered for the first time this quarter but long outstanding); OK0129, NZ0331, PS0731, DS0436, NZ0936 regular re-openings. No new MoF wholesale series, no new WZ/IZ, no T-bills in the windows. BGK: FPC0235 (PL0000500468) admitted to Catalyst trading from 22 Jun (GPW resolution 935/2026, PAP 18 Jun 14:50) - see bgk.",
+   "src": [
+    "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026)",
+    "https://www.gov.pl/attachment/31ac439a-542c-47f8-a292-ccb1ec763145 (MoF Bony_Skarbowe.xls, downloaded 2026-11-27, Last-Modified 18 Nov 2026)",
+    "https://strefainwestorow.pl/wiadomosci/20260618/gpw-w-sprawie-dopuszczenia-i-wprowadzenia-do-obrotu-gieldowego-na-catalyst"
+   ]
+  }
+ ],
+ "bgk": [
+  {
+   "date": "2026-06-18",
+   "fund": "FPC (COVID-19 Response Fund)",
+   "type": "switch",
+   "window_report_date": "2026-06-19",
+   "announced": "2026-06-16 (BGK communique; PAP weekly 15 Jun: supply Tue 15:00; PAP Skrot 16 Jun 17:06; Millennium 17 Jun): first FPC switch tender - BGK sells FPC0229, FPC0231, FPC0332, FPC0235 and buys back FPC0427",
+   "announced_window_report_date": "2026-06-17",
+   "results_published": "2026-06-18 (tender 12:00 per PAP calendar; PAP Skrot 18 Jun 17:02)",
+   "sold_mn": 1348.57,
+   "demand_mn": 2110.873,
+   "additional_sale_mn": null,
+   "additional_sale_lines": {},
+   "bought_back": {
+    "FPC0427": 1435.297
+   },
+   "buyback_offers_mn": 2193.527,
+   "series_sold": [
+    "FPC0229",
+    "FPC0231",
+    "FPC0332",
+    "FPC0235"
+   ],
+   "per_series": "per-series split, prices and yields NOT FOUND (bgk.pl not read; PAP gives totals only)",
+   "comment": "First switch tender under the FPC liability-management programme announced by BGK's Dumicz (25 May). Net FPC supply roughly -87m (1,348.57m sold vs 1,435.30m of FPC0427 bought back). No regular FPC sale tender in the windows.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-1700",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260617",
+    "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-w-kraju-szczegoly-cpi-inflacja-bazowa-produkcja-aukcje-mf-i-bgk"
+   ]
+  },
+  {
+   "date": "2026-06-18/30",
+   "fund": "BGK funds",
+   "type": "other",
+   "detail": "18 Jun (PAP 14:50): GPW resolution 935/2026 admits up to 15,000,000 FPC0235 bonds (PL0000500468) to Catalyst, trading from 22 Jun at the earliest (continuous trading, short name FPC0235). 18 Jun (Skrot 17:02): BGK has signed KPO-funded FWE (energy) loans of PLN 67.2bn (Postula). 22/29 Jun: BGK EU 2021-27 payouts PLN 81.0bn / 81.7bn. BGK Q3 supply plan (with MoF) due Tue 30 Jun 15:00 (PAP weekly 29 Jun) - not used. No FWSZ (armed forces fund) auction seen in the windows.",
+   "window_report_date": "2026-06-19 / 2026-06-23 / 2026-06-30",
+   "time_basis": "exact article timestamp (GPW resolution); PAP Skrot upper bound for the rest",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260618/gpw-w-sprawie-dopuszczenia-i-wprowadzenia-do-obrotu-gieldowego-na-catalyst",
+    "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260622/skrot-wiadomosci-poniedzialek-22-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260629/skrot-wiadomosci-poniedzialek-29-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260629/tydzien-w-kraju-cpi-i-pmi-za-vi-podaz-dlugu-mf-na-iii-kw-kongres-gus"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "published": "2026-06-15 00:00",
+   "window_report_date": "2026-06-16",
+   "topic": "research",
+   "text": "PKO Dziennik 15 Jun: on Fri 12 Jun SPW yields fell 9-10bp, 10Y -9bp to 5.61%; after the weekend US-Iran preliminary peace deal it sees room for further falls toward 5.00% (5Y) and 5.50% (10Y); core CPI seen 3.0-3.1% (Tue). (Its recaps of Dabrowski's remark, the CPN extension and the April C/A are part-1 items.)",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-jest-porozumienie-pokojowe",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-15 00:00",
+   "window_report_date": "2026-06-16",
+   "topic": "MoF",
+   "text": "MoF communique (gov.pl 15.06): FX on budget accounts end-May EUR 15,677.0m (end-April 16,509.0m); May FX debt service: principal EUR 193.3m, interest EUR 364.1m.",
+   "src": [
+    "https://www.gov.pl/web/finanse/stan-srodkow-walutowych-oraz-operacje-zwiazane-z-zarzadzaniem-dlugiem-zagranicznym-skarbu-panstwa-w-maju-2026-roku",
+    "https://strefainwestorow.pl/wiadomosci/20260616/stan-srodkow-walutowych-na-koniec-maja-wyniosl-15677-mld-euro-mf"
+   ],
+   "time_basis": "gov.pl page date only (15.06.2026); first PAP mention 16 Jun 16:58 (strict alternative 2026-06-17)"
+  },
+  {
+   "published": "2026-06-15 06:31",
+   "window_report_date": "2026-06-16",
+   "topic": "MoF",
+   "text": "PAP weekly: MoF sale auction Wed 17 Jun (June plan: 6-12bn), offer details due Mon 15:00; BGK holds its first FPC switch tender Thu 18 Jun (offer Tue 15:00); MoF budget estimate due; core CPI Tue 14:00, industry Fri.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-w-kraju-szczegoly-cpi-inflacja-bazowa-produkcja-aukcje-mf-i-bgk",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 08:32",
+   "window_report_date": "2026-06-16",
+   "topic": "research",
+   "text": "Erste Codziennik 15 Jun: the government extended VAT 8% and fuel price caps to end-June but not the excise cut - fuel prices +4.5%, CPI +~0.25pp spread over June-July, possibly offset by cheaper oil; May CPI details and budget data due today.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260615083923/download?id=169503&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-15 08:58",
+   "window_report_date": "2026-06-16",
+   "topic": "research",
+   "text": "Millennium daily 15 Jun: standard fuel excise restored from Mon 15 Jun (+29 gr/l petrol, +28 gr/l diesel); VAT 8% and price caps stay to end-June; the PM says the whole CPN ends in summer; July CPI may slightly exceed 3.5% y/y but not enough to change expectations of stable NBP rates; the Wednesday auction matters (BGK tender too).",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260615",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-15 09:31",
+   "window_report_date": "2026-06-16",
+   "topic": "macro",
+   "text": "GUS final May CPI: 3.1% y/y, -0.3% m/m (= flash; April 3.2% / +0.6%).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/inflacja-cpi-w-maju-wyniosla-rdr-31-proc-gus-odczyt-flash-31-proc-w-kwietniu-32",
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 09:34",
+   "window_report_date": "2026-06-16",
+   "topic": "macro",
+   "text": "GUS: goods trade deficit Jan-Apr EUR 1.7bn; services production March +11.0% y/y, +10.7% m/m (preliminary).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/deficyt-w-obrotach-towarowych-handlu-zagranicznego-po-kwietniu-wyniosl-17-mld",
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 10:15",
+   "window_report_date": "2026-06-16",
+   "topic": "fiscal",
+   "text": "PAP opinion: the end of the fuel excise cut adds ~0.2pp to CPI (PKO; Erste ~0.25pp), half of it in June; from 15 to 30 Jun only VAT 8% and daily maximum prices remain (MoF source, Fri).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/brak-przedluzenia-obnizki-akcyzy-na-paliwa-podbije-cpi-o-02-pkt-proc-efekt",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 10:19",
+   "window_report_date": "2026-06-16",
+   "topic": "fiscal",
+   "text": "KPRM: the government will discuss on Tue the bill on a tax on extraordinary profits from fuel sales in Mar-Dec 2026 (windfall tax).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/we-wtorek-na-rzadzie-projekt-windfall-tax-od-firm-paliwowych-kprm",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 11:44",
+   "window_report_date": "2026-06-16",
+   "topic": "research",
+   "text": "Millennium (PAP opinion): May CPI with moderate growth and wages slightly below the long-run average limits second-round effects; stable rates at least to end-2026. PKO (Skrot 17:06): CPI to stabilise near current levels.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/majowe-dane-o-cpi-ograniczaja-ryzyko-wystapienia-tzw-efektow-drugiej-rundy",
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 13:35",
+   "window_report_date": "2026-06-16",
+   "topic": "rates",
+   "text": "ZBP's Bialek: the WIBOR benchmark-reform roadmap will be updated by end-June with small changes; participants chose natural expiry of WIBOR rather than statutory conversion.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/aktualizacja-mapy-drogowej-reformy-wskaznikow-referencyjnych-w-czerwcu-bialek",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 14:46",
+   "window_report_date": "2026-06-16",
+   "topic": "research",
+   "text": "Alior cut its 2026 GDP forecast to 3.5% from 3.7%; CPI ~3% in 2026 with medium-term upside risks; MPC most likely on hold through 2026 and beyond.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/ekonomisci-alior-banku-obnizyli-prognoze-wzrostu-pkb-polski-w-26-r-do-35-proc",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 15:00",
+   "window_report_date": "2026-06-16",
+   "topic": "MoF",
+   "text": "MoF offer for the 17 Jun sale: PLN 7-12bn of OK0129, DS1030, NZ0331, PS0731, DS0436, IZ0836 and NZ0936 (communique per the PAP calendar slot; content first seen Millennium 17 Jun 08:50 and PAP FX/FI 17 Jun 09:58).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-w-kraju-szczegoly-cpi-inflacja-bazowa-produkcja-aukcje-mf-i-bgk",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260617",
+    "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-fxfi-zloty-w-okolicy-424eur-w-oczekiwaniu-na-fed-na-rynku-dlugu-aukcja"
+   ],
+   "time_basis": "MoF communique time per the PAP weekly calendar slot (15:00); strict first dated mention Millennium 17 Jun 08:50 -> alternative window 2026-06-18"
+  },
+  {
+   "published": "2026-06-15 17:06",
+   "window_report_date": "2026-06-16",
+   "topic": "MPC",
+   "text": "MPC's Kotecki (Bloomberg): the probability of rate changes until end-2026 or even Q1 2027 is small; the Council's inclination to hike is somewhat lower than a month ago; it is not the moment to signal a return to cuts.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-2100"
+   ],
+   "time_basis": "PAP Skrot timestamp = upper bound (Bloomberg original time not found)"
+  },
+  {
+   "published": "2026-06-15 17:06",
+   "window_report_date": "2026-06-16",
+   "topic": "MoF",
+   "text": "MoF estimate: central budget deficit after May PLN 108,214.2m (= 39.8% of the 271.7bn limit). MFiPR: 65.6% of 2021-27 cohesion funds contracted. MON: Poland got USD 4bn of US FMF guarantees.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-15 17:20",
+   "window_report_date": "2026-06-16",
+   "topic": "rates",
+   "text": "PAP FX/FI close: EUR/PLN back at 4.25, yields a few bp below the open; DS0436 5.45% at 17:05 (5.57% Fri). Millennium weekly: EUR/PLN 4.235-4.265 range; the Middle East deal gives room for lower yields.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/dzien-na-fxfi-eurpln-powrocil-do-poziomu-425",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-15 19:55",
+   "window_report_date": "2026-06-16",
+   "topic": "fiscal",
+   "text": "Government spokesman Szlapka (Polsat News): the exit from regulated fuel prices will be gradual - first the higher excise, the reduced VAT and the maximum price stay longer; CPN cost PLN 1.6bn a month but prevented a drastic rise in inflation.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/rzad-stopniowo-bedzie-wychodzil-z-regulowania-cen-paliw-szlapka",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 00:00",
+   "window_report_date": "2026-06-17",
+   "topic": "research",
+   "text": "PKO Dziennik 16 Jun: on 15 Jun SPW yields fell 7-19bp, 10Y -13bp to 5.47% (more than core markets), as investors dropped NBP-hike bets; SPW and IRS near the bottom of the range since mid-April; probability of CPI durably above 3.5% low - supports unchanged NBP rates; budget situation 'under control'.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-jastrzebie-z-japonii",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-16 08:12",
+   "window_report_date": "2026-06-17",
+   "topic": "fiscal",
+   "text": "Energy minister Motyka: Brent back near USD 80/bbl and ARA diesel ~USD 1,000/t, so the conditions for winding down regulated fuel prices are being met.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/zostaja-osiagniete-przeslanki-do-wygaszania-regulowania-cen-paliw-minister",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 08:25",
+   "window_report_date": "2026-06-17",
+   "topic": "research",
+   "text": "Erste Codziennik 16 Jun: May CPI 3.1% driven down by vegetables; services 5.7% y/y; CPI may dip further before rising above 3.0% as CPN is phased out; core to drift toward 3.5% by year-end; core seen 3.0% today; budget no big risk to the 271.7bn plan.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260616082706/download?id=169515&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-16 08:49",
+   "window_report_date": "2026-06-17",
+   "topic": "research",
+   "text": "Millennium daily 16 Jun: CPI 3.1% a positive surprise vs end-May forecasts (consensus had been 3.7% for the flash); supports stable NBP rates at least to end-year; core seen 3.0-3.1%; market rates near key supports, leaving room for a move up.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260616",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-16 10:01",
+   "window_report_date": "2026-06-17",
+   "topic": "macro",
+   "text": "NBP Financial Stability Report (data to 30 Apr): system stable and resilient; geopolitical risk gaining weight; a high and rising share of SPW in bank balance sheets raises the system's sensitivity to geopolitical risk (more so as public debt rises); shock scenario: legal-risk provisions PLN 35bn and credit losses 52bn by end-2028, absorbable by most banks.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260616/krajowy-system-finansowy-jest-stabilny-i-odporny-znaczenia-nabiera-ryzyko",
+    "https://strefainwestorow.pl/wiadomosci/20260616/wrazliwosc-systemu-finans-na-geopolityke-zwieksza-rosnacy-udzial-spw-w-0",
+    "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 11:32",
+   "window_report_date": "2026-06-17",
+   "topic": "macro",
+   "text": "Eurostat: Polish nominal hourly labour costs +7.2% y/y in Q1 2026 (Q4 7.4%); job vacancy rate 0.8%.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260616/koszty-pracy-w-polsce-w-i-kw-26-wzrosly-o-72-proc-rdr-eurostat",
+    "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 12:52",
+   "window_report_date": "2026-06-17",
+   "topic": "fiscal",
+   "text": "PM Tusk: the government monitors the oil market; after the end of the lower excise a decision on the fuel VAT rate comes 'shortly' (VAT 8% and price caps run to end-June); the windfall tax will make large firms, not taxpayers, pay for CPN.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/rzad-monitoruje-sytuacje-na-rynku-ropy-za-chwile-decyzja-dotyczaca-vat-na",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 14:06",
+   "window_report_date": "2026-06-17",
+   "topic": "macro",
+   "text": "NBP: May core inflation (ex food and energy) 3.1% y/y, -0.1% m/m (April 3.0% / +0.9%); ex administered 2.8%, ex most volatile 3.3%, 15% trimmed mean 3.3%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/inflacja-bazowa-w-maju-wyniosla-31-proc-rdr-i-01-proc-mdm-nbp",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 16:30",
+   "window_report_date": "2026-06-17",
+   "topic": "MPC",
+   "text": "NIK (analysis of 2025 budget execution and monetary-policy guidelines): the MPC's conditional communication in 2025 gave market participants limited information on future policy parameters.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/uczestnicy-rynku-otrzymywali-ograniczona-informacje-w-zakresie-polityki",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 16:44",
+   "window_report_date": "2026-06-17",
+   "topic": "fiscal",
+   "text": "Government adopted the bill on a tax on extraordinary profits from fuel sales in Mar-Dec 2026 (to fund CPN). Legislative list (Skrot 17:06): higher alcohol excise in 2027 (H2 2026 bill), sugar-fee overhaul (Q3), 'malpki' fee 25 -> 100 zl/l (Q3); Domanski announced five investment impulses.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260616/rzad-przyjal-projekt-tzw-windfall-tax-od-firm-paliwowych-opis",
+    "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 16:44",
+   "window_report_date": "2026-06-17",
+   "topic": "rates",
+   "text": "PAP FX/FI: SPW yields -5-10bp, 2Y and 10Y testing mid-April lows on lower oil and fading hike bets (PKO's Kiedrowicz); core CPI in line did not disturb; DS0436 5.41% at 16:35.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/dzien-na-fxfi-eurpln-i-usdpln-powinny-konsolidowac-sie-po-wtorkowym-umocnieniu",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-16 17:06",
+   "window_report_date": "2026-06-17",
+   "topic": "BGK",
+   "text": "BGK: at the 18 Jun switch tender it will sell FPC0229, FPC0231, FPC0332 and FPC0235 and buy back FPC0427 - the first FPC switch auction.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-16 21:06",
+   "window_report_date": "2026-06-17",
+   "topic": "fiscal",
+   "text": "NIK on 2025 budget execution: better fiscal discipline but not a reduction of the high imbalance; the projected debt rise narrows fiscal space for future shocks and may weigh on Poland's credit assessment.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-2100",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-17 00:00",
+   "window_report_date": "2026-06-18",
+   "topic": "research",
+   "text": "PKO Dziennik 17 Jun: core CPI 3.1% in line; core to hover ~3% to end-2026 and stay below 3.5%; MPC on hold at least to end-2026; on 16 Jun SPW -2-3bp, 10Y 5.45%.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-wyrazna-poprawa-nastrojow-niemieckich-inwestorow",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-17 08:29",
+   "window_report_date": "2026-06-18",
+   "topic": "research",
+   "text": "Erste Codziennik 17 Jun: core 3.1% (third rise in a row, highest since Sep 2025; -0.1% m/m as Erste expected); no extra grounds for MPC hikes if commodity prices keep falling; the 'malpki' fee could add ~0.1pp to CPI; presidential signature of the excise/sugar bills uncertain.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260617083100/download?id=169517&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-17 08:50",
+   "window_report_date": "2026-06-18",
+   "topic": "research",
+   "text": "Millennium daily 17 Jun: core -0.1% m/m a positive surprise; supports stable rates at least to end-year; today's MoF auction offers 7-12bn; BGK switch tender details.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260617",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-17 09:58",
+   "window_report_date": "2026-06-18",
+   "topic": "rates",
+   "text": "PAP FX/FI (am): MoF results at 11:30 (7 series, 7-12bn). Pekao: no placement problem expected, but after the POLGB rally the auction may be an occasion for profit-taking; BGK: most of the short-term appreciation priced, long end 5.40-5.45%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-fxfi-zloty-w-okolicy-424eur-w-oczekiwaniu-na-fed-na-rynku-dlugu-aukcja",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-17 12:52",
+   "window_report_date": "2026-06-18",
+   "topic": "MPC",
+   "text": "NBP board member Soboń (Sejm finance committee): the NBP runs no policy cycle and announces none - it adapts policy to incoming data under uncertainty, like other central banks; reserve-requirement remuneration at the reference rate is market-neutral; cash in circulation to reach PLN 500bn.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260617/nbp-nie-prowadzi-ani-nie-zapowiada-cyklu-polityki-dostosowuje-ja-do-danych",
+    "https://strefainwestorow.pl/wiadomosci/20260617/obecny-poziom-oprocentowania-rezerwy-obowiazkowej-neutralny-rynkowo-sobon-nbp"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-17 17:02",
+   "window_report_date": "2026-06-18",
+   "topic": "MoF",
+   "text": "MoF sold OK0129, DS1030, NZ0331, PS0731, DS0436, IZ0836 and NZ0936 for PLN 12,000.53m at demand 18,267.53m (see mof_ops).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/skrot-wiadomosci-sroda-17-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-17 17:02",
+   "window_report_date": "2026-06-18",
+   "topic": "rates",
+   "text": "ING's Sutowicz (PAP FX/FI): SPW yields keep falling - MPC members much more dovish than market pricing, which had assumed several hikes, and lower oil erasing tightening bets; 10Y ~5.4%, a 3-month low; the full 12bn sold, cover >1.5, a 3-month high (pre-war levels).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-fxfi-zloty-z-niewielka-zmiennoscia-kwestie-geopolityczne-mniej-wazne",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-17 17:02",
+   "window_report_date": "2026-06-18",
+   "topic": "fiscal",
+   "text": "NIK: financial effects of irregularities in the 2025 stabilising-expenditure-rule (SRW) amount total PLN 84.5bn (i.e. the limit was set too high). Fiscal Council: speed up fiscal consolidation, incl. defence financing; update medium-term deficit/debt forecasts. Deputy FinMin Neneman: the windfall tax must be retroactive.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/skrot-wiadomosci-sroda-17-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-18 00:00",
+   "window_report_date": "2026-06-19",
+   "topic": "research",
+   "text": "PKO Dziennik 18 Jun: on 17 Jun SPW moved -3/+13bp; the MoF auction drew the highest demand since 18 Feb; NIK puts the 2025 SRW limit at 1,811.2bn vs 1,895.8bn in the budget act (actual 1,859.3bn, ~48bn above NIK's figure) - no direct fiscal consequence, but rule credibility at stake; expects a few bp higher SPW yields after the hawkish FOMC projections (market priced two US hikes by year-end at ~33%).",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-zmiany-w-fomc-a-jastrzebie-jada-dalej",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-18 08:35",
+   "window_report_date": "2026-06-19",
+   "topic": "MPC",
+   "text": "MPC's Iwona Duda (DGP interview; Erste 18 Jun, PAP Skrot 17:02): stabilisation of rates is the base scenario for the coming months; little room left for cuts after the March cut.",
+   "src": [
+    "https://www.erste.pl/regulation_file_server/time20260618083720/download?id=169523&lang=pl_PL",
+    "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-1700"
+   ],
+   "time_basis": "first dated mention (Erste PDF CreationDate) = upper bound (DGP original time not found)"
+  },
+  {
+   "published": "2026-06-18 08:35",
+   "window_report_date": "2026-06-19",
+   "topic": "research",
+   "text": "Erste Codziennik 18 Jun: MoF sold 12.0bn plus 0.8bn additional; Erste estimates 2026 gross needs ~58% covered; debt market stable on 17 Jun; US and Iran presidents signed the preliminary peace deal.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260618083720/download?id=169523&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-18 08:44",
+   "window_report_date": "2026-06-19",
+   "topic": "research",
+   "text": "Millennium daily 18 Jun: auction 12bn at ~18.3bn demand, best cover since February; PS0731 the largest (~4.44bn); additional sale 791m (OK0129, NZ0331, DS0436, IZ0836, NZ0936); ~59% of 2026 needs financed; 10Y ~5.43%; Polish HICP 3.3% in May.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260618",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-18 09:33",
+   "window_report_date": "2026-06-19",
+   "topic": "macro",
+   "text": "GUS June consumer survey: inflation expectations shift lower - price-expectations indicator 20.2 (May 24.7, March peak 33.3, February 19.8); BWUK -9.9 (+1.4), WWUK -7.7 (+0.8).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260618/w-czerwcu-przesuniecie-oczekiwan-inflacyjnych-konsumentow-w-kierunku-nizszej-1",
+    "https://strefainwestorow.pl/wiadomosci/20260618/w-czerwcu-poprawa-nastrojow-konsumenckich-dotyczacych-obecnej-i-przyszlej"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-18 14:11",
+   "window_report_date": "2026-06-19",
+   "topic": "MPC",
+   "text": "NBP May voting record: the MPC again rejected Tyrowicz's motion for a 100bp hike, all other members against (rates held, reference 3.75%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/w-maju-rpp-ponownie-odrzucila-wniosek-j-tyrowicz-o-podwyzke-stop-o-100-pb",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-18 14:50",
+   "window_report_date": "2026-06-19",
+   "topic": "BGK",
+   "text": "GPW resolution 935/2026: up to 15m FPC0235 bonds (PL0000500468) admitted to Catalyst, trading from 22 Jun at the earliest.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/gpw-w-sprawie-dopuszczenia-i-wprowadzenia-do-obrotu-gieldowego-na-catalyst",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-18 16:53",
+   "window_report_date": "2026-06-19",
+   "topic": "rates",
+   "text": "PAP FX/FI: SPW yields +5-7bp (Bunds +1-3bp) adjusting to the US rebound after the Fed raised its rate path (PKO's T. Marek); Brent <USD 78 on Hormuz unblocking should gradually remove hike pricing in Europe and Poland; DS0436 5.44%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/dzien-na-fxfi-zloty-i-spw-oslabily-sie-potencjal-do-wzrostu-eurpln-ograniczony",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-18 17:02",
+   "window_report_date": "2026-06-19",
+   "topic": "BGK",
+   "text": "BGK FPC switch: sold FPC0229/FPC0231/FPC0332/FPC0235 for PLN 1,348.570m (demand 2,110.873m); bought back FPC0427 for 1,435.297m (offers 2,193.527m).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-18 17:02",
+   "window_report_date": "2026-06-19",
+   "topic": "fiscal",
+   "text": "Szlapka (TVP Info): Domanski is working on the 2027 budget and tax solutions (asked about raising the second PIT threshold). Deputy FinMin Majszczyk: the 2025 SRW amount was computed lawfully; NIK's objection is its view of how the rule should work. Sejm finance committee backed amendments to the windfall-tax bill (Skrot 21:06).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-1700",
+    "https://strefainwestorow.pl/wiadomosci/20260618/skrot-wiadomosci-czwartek-18-czerwca-2100"
+   ],
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-19 00:00",
+   "window_report_date": "2026-06-22",
+   "topic": "research",
+   "text": "PKO Dziennik 19 Jun: consumer sentiment up for a 2nd month, inflation expectations back to pre-war (February) levels; on 18 Jun SPW +3-5bp, 10Y +5bp to 5.47%.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-inflacja-juz-niestraszna-konsumentom",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-19 07:50",
+   "window_report_date": "2026-06-22",
+   "topic": "research",
+   "text": "Erste Codziennik 19 Jun: on 18 Jun SPW +6-9bp (more at the short end) on the hawkish FOMC while IRS were stable - 10Y asset-swap spread back above 100bp; industry expected ~3% y/y.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260619075545/download?id=169525&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-19 08:53",
+   "window_report_date": "2026-06-22",
+   "topic": "research",
+   "text": "Millennium daily 19 Jun: industry forecast 1.8% y/y (0.0% m/m); consumer inflation expectations down a 3rd month to February levels; 10Y ~5.47%; Swiss MFA said US-Iran talks were called off - oil and core yields up in the morning.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260619",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-19 09:31",
+   "window_report_date": "2026-06-22",
+   "topic": "macro",
+   "text": "GUS: May industrial output +4.1% y/y (PAP consensus 2.5%), -0.8% m/m (consensus -2.2%); seasonally adjusted +4.4% y/y, +1.4% m/m.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/produkcja-przemyslowa-w-maju-wzrosla-o-41-proc-rdr-gus",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-19 09:46",
+   "window_report_date": "2026-06-22",
+   "topic": "fiscal",
+   "text": "Sejm passed the windfall-tax act (231-201): 60% on revenue above that at a reference margin (2025 average +20%), firms pay ~PLN 4bn (3.8bn in 2026) to offset ~4.8bn of VAT/excise losses in the first 3 months of CPN; goes to the Senate. Motyka (Skrot 17:07): no objection heard from the President's office.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260619/sejm-uchwalil-ustawe-o-podatku-od-nadzwyczajnych-zyskow-firm-paliwowych",
+    "https://strefainwestorow.pl/wiadomosci/20260619/skrot-wiadomosci-piatek-19-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-19 14:01",
+   "window_report_date": "2026-06-22",
+   "topic": "macro",
+   "text": "NBP: gold reserves 613.86t at end-May (595.66t end-April); projected 12M government FX debt repayments EUR 7,225m (6,190m a month earlier).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260619/na-koniec-maja-nbp-zwiekszyl-zasob-zlota-do-6139-ton",
+    "https://strefainwestorow.pl/wiadomosci/20260619/skrot-wiadomosci-piatek-19-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-19 16:32",
+   "window_report_date": "2026-06-22",
+   "topic": "rates",
+   "text": "KSF-M: given the 10-year orderly wind-down of WIBOR (to 31 Dec 2036) no replacement needs to be designated by regulation; shares KNF's view that no new WIBOR contracts/instruments should be concluded from 1 Jan 2027; CCyB kept at 2%; geopolitics the main weak point.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260619/w-zw-10-letnim-wygaszaniem-wibor-nie-zachodzi-koniecznosc-wyznaczania-jego",
+    "https://strefainwestorow.pl/wiadomosci/20260619/ryzyko-geopolityczne-najistotniejszym-slabym-punktem-systemu-finansowego-w"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-19 17:07",
+   "window_report_date": "2026-06-22",
+   "topic": "fiscal",
+   "text": "Poland filed its 8th KPO payment request (amount not given; MFiPR had flagged ~EUR 8bn).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/skrot-wiadomosci-piatek-19-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-19 17:13",
+   "window_report_date": "2026-06-22",
+   "topic": "rates",
+   "text": "PAP FX/FI: Bank Pocztowy economist - the MPC has softened and members' remarks rule out hikes; investors unwind hike pricing and even see a possible cut, limiting the rise in SPW yields vs core markets; DS0436 5.44%; EUR/PLN below 4.26.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/dzien-na-fxfi-eurpln-ponizej-426-w-przyszlym-tygodniu-kluczowa-geopolityka",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-19 21:06",
+   "window_report_date": "2026-06-22",
+   "topic": "research",
+   "text": "Obligacje.pl's Szweda: bond prices can rise further if investors become convinced the Hormuz unblocking is durable.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/skrot-wiadomosci-piatek-19-czerwca-2100",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-22 00:00",
+   "window_report_date": "2026-06-23",
+   "topic": "research",
+   "text": "PKO Dziennik 22 Jun: industry 4.1% well above forecasts (kons. 2.5%, PKO 2.2%), sa +1.4% m/m; Sejm passed the windfall tax; on Fri SPW -2/+1bp, 10Y 5.45%.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-zachecajacy-postep-na-bliskim-wschodzie",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-22 06:34",
+   "window_report_date": "2026-06-23",
+   "topic": "MoF",
+   "text": "PAP weekly: second and last June MoF sale on Wed 24 Jun (offer Mon 15:00, with May State Treasury debt). PAP consensus for May: retail 3.8% y/y, wages 6.0%, employment -0.9%, PPI 2.5%, construction 4.9%. Government's 2027 pension indexation proposal at least 3.48% (cost ~16.7bn).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/tydzien-w-kraju-sprzedaz-detaliczna-i-place-za-maj-aukcja-mf-konferencja-o",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-22 08:31",
+   "window_report_date": "2026-06-23",
+   "topic": "research",
+   "text": "Erste Codziennik 22 Jun: industry beat (market 2.8%, Erste 2.9%); other transport equipment incl. military added 1.1pp; full-year industry ~4%; Erste sees retail 5.5% (top of the Parkiet survey), wages 6.0%, construction >7%. (PAP 09:18: strong data could halt the trimming of MPC hike pricing.)",
+   "src": [
+    "https://www.erste.pl/regulation_file_server/time20260622084518/download?id=169527&lang=pl_PL",
+    "https://strefainwestorow.pl/wiadomosci/20260622/dzien-na-fxfi-dane-makro-moga-wspierac-pln-na-fi-trend-boczny"
+   ],
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-22 09:31",
+   "window_report_date": "2026-06-23",
+   "topic": "macro",
+   "text": "GUS May: retail sales +3.0% y/y real (PAP consensus 3.8%), -1.7% m/m (-1.0%); wages +5.8% y/y (6.0%), -3.8% m/m; employment -0.9% y/y; construction +3.9% y/y (4.9%); PPI +2.4% y/y (2.5%), 0.0% m/m (0.3%). June business climate: stable or worse in most sectors.",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260622/sprzedaz-detaliczna-w-cenach-stalych-w-maju-wzrosla-o-30-proc-rdr-gus",
+    "https://strefainwestorow.pl/wiadomosci/20260622/wynagrodzenie-w-przedsiebiorstwach-w-maju-wzroslo-o-58-proc-rdr-zatrudnienie",
+    "https://strefainwestorow.pl/wiadomosci/20260622/skrot-wiadomosci-poniedzialek-22-czerwca-1700"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-22 14:22",
+   "window_report_date": "2026-06-23",
+   "topic": "rates",
+   "text": "MoF draft law (UC132): statutory ban on using the liquidated key benchmark (WIBOR) in new consumer contracts after the wind-down started; lenders must offer existing transitional-period borrowers a switch; derivatives exempt.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/mf-chce-ustawowego-zakazu-stosowania-likwidowanego-wiboru-w-nowych-umowach",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-22 15:00",
+   "window_report_date": "2026-06-23",
+   "topic": "MoF",
+   "text": "MoF offer for the 24 Jun sale: PLN 7-12bn of OK0129, NZ0331, PS0731, DS1035, DS0436 and NZ0936 (communique per the PAP calendar slot; content first seen Millennium 23 Jun 08:41).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260622/tydzien-w-kraju-sprzedaz-detaliczna-i-place-za-maj-aukcja-mf-konferencja-o",
+    "https://www.bankmillennium.pl/documents/d/guest/daily260623"
+   ],
+   "time_basis": "MoF communique time per the PAP weekly calendar slot (15:00); strict first dated mention Millennium 23 Jun 08:41 -> alternative window 2026-06-24"
+  },
+  {
+   "published": "2026-06-22 15:13",
+   "window_report_date": "2026-06-23",
+   "topic": "MoF",
+   "text": "MoF: State Treasury debt end-May ~PLN 2,135.6bn, +46.8bn (+2.2%) m/m.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/zadluzenie-skarbu-panstwa-na-koniec-maja-wzroslo-o-22-proc-mdm-do-ok-21356-mld",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-22 15:30",
+   "window_report_date": "2026-06-23",
+   "topic": "rates",
+   "text": "PAP FX/FI: Millennium sees limited EUR/PLN and USD/PLN moves this week (EUR/PLN above 4.27, resistances 4.285/4.30); yields may rise but not much; DS0436 5.42%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/dzien-na-fxfi-zmiany-notowan-eurpln-i-usdpln-ograniczone",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-22 17:02",
+   "window_report_date": "2026-06-23",
+   "topic": "research",
+   "text": "Citi Handlowy: after fuel prices are unfrozen CPI may briefly exceed 3.5% at end-2026 but fall well below 3% in H1 2027, so the MPC can take its time. Analysts: the labour market shows a gradual cooling with limited wage pressure; retail below forecasts but consumers resilient.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/skrot-wiadomosci-poniedzialek-22-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-23 00:00",
+   "window_report_date": "2026-06-24",
+   "topic": "research",
+   "text": "PKO Dziennik 23 Jun: wages 5.8% (PKO 6.4%; real 2.6%), retail 3.0% (PKO 5.3%), construction 3.9%, PPI 2.4% (April revised to 2.1%); PLN weakness reflects lower FRA hike pricing after the June MPC (narrower carry vs ECB), a stronger USD and a technical break above 4.26; on 22 Jun SPW -3-6bp.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-jak-ai-wplynie-na-polska-gospodarke",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-23 08:41",
+   "window_report_date": "2026-06-24",
+   "topic": "research",
+   "text": "Millennium daily 23 Jun: PLN the weakest in the region (EUR/PLN ~4.276); swaps -7bp on Bunds, lower oil and softer data; 10Y ~5.42%; MoF offers six series for 7-12bn on 24 Jun.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260623",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-23 08:53",
+   "window_report_date": "2026-06-24",
+   "topic": "research",
+   "text": "Erste Codziennik 23 Jun: May retail, construction and wages below expectations (wage consensus 6.2%) but noise in a solid economy; M3 data due today; MNB may cut 25bp.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260623085404/download?id=169531&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-23 09:36",
+   "window_report_date": "2026-06-24",
+   "topic": "macro",
+   "text": "GUS: May procurement prices of main farm products -16.2% y/y (April -13.1%).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/ceny-skupu-podstawowych-produktow-rolnych-w-maju-rdr-spadly-o-162-proc-gus",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-23 09:54",
+   "window_report_date": "2026-06-24",
+   "topic": "rates",
+   "text": "PAP FX/FI: BGK expects SPW yields to keep falling with energy prices as the US-Iran memorandum is implemented, 10Y to 5.30-5.35% this week; Pekao: SPW holding up well despite the return of supply.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/dzien-na-fxfi-zloty-slabnie-w-kierunku-429-430eur-obligacje-z-perspektywa",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-23 14:00",
+   "window_report_date": "2026-06-24",
+   "topic": "macro",
+   "text": "NBP: May M3 +11.0% y/y (April 11.3%; Erste and consensus ~11.4%); cash +15.1%, deposits +10.1%; loans +7.6% (Erste) - credit recovery continues (PKO).",
+   "src": [
+    "https://www.erste.pl/regulation_file_server/time20260624082641/download?id=169534&lang=pl_PL",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-droznosc-ciesniny-pod-znakiem-zapytania",
+    "https://strefainwestorow.pl/wiadomosci/20260622/tydzien-w-kraju-sprzedaz-detaliczna-i-place-za-maj-aukcja-mf-konferencja-o"
+   ],
+   "time_basis": "NBP release slot 14:00 per the PAP weekly calendar (Erste 23 Jun: due today); first dated mention Erste 24 Jun 08:23 (strict alternative 2026-06-25)"
+  },
+  {
+   "published": "2026-06-23 16:48",
+   "window_report_date": "2026-06-24",
+   "topic": "rates",
+   "text": "PAP FX/FI: PLN weaker for a 5th day (EUR/PLN ~4.283); bonds to stabilise; the market prepares for the 24 Jun auction (six series, 7-12bn, slightly more than the 6-12bn plan); DS0436 5.41%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/dzien-na-fxfi-zloty-oslabia-sie-piaty-dzien-z-rzedu-eurpln-powyzej-428",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-23 17:21",
+   "window_report_date": "2026-06-24",
+   "topic": "macro",
+   "text": "MNB cut its base rate 25bp to 6.00% (as expected). ZBP banking-climate index 37.7 (+3.1).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/skrot-wiadomosci-wtorek-23-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-24 00:00",
+   "window_report_date": "2026-06-25",
+   "topic": "research",
+   "text": "PKO Dziennik 24 Jun: M3 11.0% y/y in May (11.3% April), loans +4.0%; today's auction (7-12bn) should sell near the top given improved sentiment and >18bn demand last time; neutral market impact.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-droznosc-ciesniny-pod-znakiem-zapytania",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-24 08:23",
+   "window_report_date": "2026-06-25",
+   "topic": "research",
+   "text": "Erste Codziennik 24 Jun: M3 11.0% y/y, slightly below consensus and Erste (11.4%); total loans +7.6%; MNB cut 25bp and signalled more easing; EUR/PLN above 4.28.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260624082641/download?id=169534&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-24 08:40",
+   "window_report_date": "2026-06-25",
+   "topic": "fiscal",
+   "text": "MoF updates the alcohol excise roadmap (draft sent for government consultation): ~PLN 18bn of extra revenue over 10 years (2027 rates ~+15%, PKO); sugar-fee rise to bring 1.486bn (96.5% to NFZ).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260624/mf-aktualizuje-mape-drogowa-stawek-akcyzy-na-alkohol-liczy-na-18-mld-zl",
+    "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-program-safe-podbija-zamowienia-w-przemysle"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-24 08:55",
+   "window_report_date": "2026-06-25",
+   "topic": "ratings",
+   "text": "Fitch CEO Ian Linnell (reported Millennium/PKO 24 Jun; remarks of 23 Jun): public finances are the main risk to Poland's rating; A- with a negative outlook given a 6-7% of GDP deficit and debt approaching ~70%; no sign of debt stabilisation keeps downgrade pressure; outlook improvement needs debt stabilisation.",
+   "src": [
+    "https://www.bankmillennium.pl/documents/d/guest/daily260624",
+    "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-droznosc-ciesniny-pod-znakiem-zapytania"
+   ],
+   "time_basis": "first dated mention (Millennium PDF CreationDate) = upper bound (original interview time not found; remarks made 23 Jun per Millennium)"
+  },
+  {
+   "published": "2026-06-24 09:34",
+   "window_report_date": "2026-06-25",
+   "topic": "macro",
+   "text": "GUS May: new industrial orders +143.3% y/y (export +6.2%) - PKO: SAFE military orders; wholesale sales +11.9%; registered unemployment 5.9% (MRPiPS estimate 5.9%); June GUS composite 98.8 (98.5).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260624/nowe-zamowienia-w-przemysle-w-maju-rdr-wzrosly-o-1433-proc-gus",
+    "https://strefainwestorow.pl/wiadomosci/20260624/stopa-bezrobocia-w-maju-wyniosla-59-proc-gus",
+    "https://strefainwestorow.pl/wiadomosci/20260624/ogolny-wskaznik-syntetyczny-koniunktury-dla-polski-w-vi-wyniosl-988-wobec-985-w"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-24 10:18",
+   "window_report_date": "2026-06-25",
+   "topic": "macro",
+   "text": "NBP Macroeconomic Survey (21 experts, 3-17 Jun): CPI 3.0% / 2.9% / 2.7% in 2026-28 (P(1.5-3.5%) 70% for 2026), GDP 3.5% / 3.0% / 2.8%, average reference rate 3.76% / 3.66% / 3.50%, Brent USD 84/75/70, EUR/PLN 4.25.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/w-2027-r-inflacja-cpi-w-polsce-wyniesie-29-proc-pkb-urosnie-o-30-proc-ankieta",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-24 16:20",
+   "window_report_date": "2026-06-25",
+   "topic": "research",
+   "text": "Erste (opinion): GDP to re-accelerate after the weather-hit Q1, driven by investment in the final RRF phase; 2026 GDP 3.6%, ~3% in 2027; CPI may temporarily exceed 3.5% in coming months.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/po-okresie-spowolnienia-na-poczatku-roku-w-kolejnych-kw-wzrost-pkb-polski",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-24 17:02",
+   "window_report_date": "2026-06-25",
+   "topic": "MoF",
+   "text": "MoF sold OK0129, NZ0331, PS0731, DS1035, DS0436 and NZ0936 for PLN 12,000.3m at demand 15,420.3m plus 1,316.0m in the additional sale; 2026 gross borrowing needs ~62% financed (MoF to PAP Biznes); July retail-bond coupons and margins unchanged.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-24 17:13",
+   "window_report_date": "2026-06-25",
+   "topic": "rates",
+   "text": "PAP FX/FI: PLN weaker to ~4.29/EUR on the strong USD; mBank's Sadoch: SPW driven by global yields as the US prices more hikes - a trend he doubts will last; DS0436 5.38%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/dzien-na-fxfi-pln-z-kolejnym-oslabieniem-do-ok-429eur-mozliwe-uspokojenie",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-25 00:00",
+   "window_report_date": "2026-06-26",
+   "topic": "research",
+   "text": "PKO Dziennik 25 Jun: the orders jump reflects SAFE military contracts (~PLN 120bn signed end-May); firms' price expectations back to February levels (no second-round effects); NBP survey sees stable rates in 2026-27 and a 25bp cut in 2028; MoF placed the full 12bn at >15bn demand.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-program-safe-podbija-zamowienia-w-przemysle",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-25 08:44",
+   "window_report_date": "2026-06-26",
+   "topic": "research",
+   "text": "Millennium daily 25 Jun: rates -6bp (long end -11bp) despite the auction and strong orders; cover ~1.28, highest in NZ0331; 1.3bn additional; ~62% of the PLN 688bn 2026 needs financed; EUR/PLN ~4.292, weakest since end-March.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260625",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-25 08:56",
+   "window_report_date": "2026-06-26",
+   "topic": "research",
+   "text": "Erste Codziennik 25 Jun: 12bn of new bonds at 15.4bn demand, 5Y one third of sales; Brent fell from USD 78 to 73 as Hormuz traffic normalises; PLN at a 3-month low but the debt market keeps firming.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260625085706/download?id=169536&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-25 09:38",
+   "window_report_date": "2026-06-26",
+   "topic": "macro",
+   "text": "GUS: employment in the national economy at end-January 2026 14,988.3k, -0.4% y/y.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/liczba-pracujacych-w-gospodarce-narodowej-w-koncu-stycznia-26-r-spadla-o-04",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-25 16:48",
+   "window_report_date": "2026-06-26",
+   "topic": "rates",
+   "text": "PKO's Budzicki (PAP FX/FI): the curve is 10-15bp lower since Monday; the market no longer prices NBP hikes - stable rates in 2026-27 the base case - after falling inflation expectations and MPC remarks; Tuesday's flash CPI should show a return near the target and softer MPC rhetoric; 2027 cut expectations may return; DS0436 5.33%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/dzien-na-fxfi-zloty-lekko-mocniejszy-po-kilku-dniach-deprecjacji",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-25 17:02",
+   "window_report_date": "2026-06-26",
+   "topic": "fiscal",
+   "text": "The 8th KPO payment request filed on 19 Jun is worth PLN 33.8bn. Senate amendments to the windfall-tax act introduce a cap on the tax amount.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/skrot-wiadomosci-czwartek-25-czerwca-1700",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-26 00:00",
+   "window_report_date": "2026-06-29",
+   "topic": "research",
+   "text": "PKO Dziennik 26 Jun: Polish yields -10-15bp this week and >30bp since end-May on falling oil/gas (WTI briefly <USD 70); the market stopped pricing NBP hikes, stable rates in 2026-27 the base case; June flash CPI (Tue) the next test.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-trudne-chwile-dla-amerykanskich-konsumentow",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-26 08:33",
+   "window_report_date": "2026-06-29",
+   "topic": "research",
+   "text": "Erste Codziennik 26 Jun: on 25 Jun 10Y -6bp, 2Y -2bp; FRAs covering 2027 fell 3-7bp and all sit within 7bp of the current market rate - the market now shares Erste's view of a long MPC hold.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260626085215/download?id=169539&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-26 08:58",
+   "window_report_date": "2026-06-29",
+   "topic": "research",
+   "text": "Millennium daily 26 Jun: market rates -5-8bp (more at the long end); 10Y ~5.35%, near support (next ~5.20%).",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260626",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-26 12:24",
+   "window_report_date": "2026-06-29",
+   "topic": "fiscal",
+   "text": "e-petrol: pump prices stable until end-June, then an upward correction as the CPN package (incl. maximum prices) ends.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/do-konca-czerwca-stabilizacja-cen-paliw-na-stacjach-pozniej-korekta-w-gore-e",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-26 16:27",
+   "window_report_date": "2026-06-29",
+   "topic": "MoF",
+   "text": "MoF: EU funds inflow in May EUR 1.13bn (YTD 11.46bn); contributions paid 788.0m (YTD 3.93bn).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/do-polski-w-v-naplynelo-113-mld-euro-srodkow-z-ue-mf",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-26 17:17",
+   "window_report_date": "2026-06-29",
+   "topic": "rates",
+   "text": "ING's Sutowicz (PAP FX/FI): the yield-decline trend continues - the 10Y broke 5.35% and is ~5.30%, following Bunds; next week's euro-area CPI may temper ECB-hike expectations; DS0436 5.27% at 16:50.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/dzien-na-fxfi-eurpln-stabilny-po-oslabieniu-sie-dolara-rentownosci-spw-nadal",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-26 17:28",
+   "window_report_date": "2026-06-29",
+   "topic": "macro",
+   "text": "ZBP simulation: 2026 bank-sector net profit -22.9% to PLN 37.9bn (baseline).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/skrot-wiadomosci-piatek-26-czerwca-1730",
+   "time_basis": "PAP Skrot timestamp = upper bound of first publication"
+  },
+  {
+   "published": "2026-06-26 19:02",
+   "window_report_date": "2026-06-29",
+   "topic": "GPWB",
+   "text": "GPW Benchmark communique (26 Jun): after the 30 Jun session OK0129 enters TBSP, GPWB-B1Y3Y, B1Y4Y and B1Y5Y; OK0127 leaves TBSP; unit changes TBSP: DS1033, DS1035, DS1034, DS1030, PS0731, PS0527 (down, 3 Jun switch), DS0436; B5Y: DS1033, DS1035, DS1034, PS0731, DS0436; B1Y5Y/B3Y5Y: DS1030; BWZ: NZ0331 (see gpwb). Official statistics were not in the 26 Jun attachment (first published 29 Jun).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260626/gpw-benchmark-komunikat-okresowa-zmiana-portfeli-indeksow-obligacji",
+    "https://gpwbenchmark.pl/komunikaty-i-uchwaly-gpw_czytaj?cmn_id=2866"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 00:00",
+   "window_report_date": "2026-06-30",
+   "topic": "research",
+   "text": "PKO Dziennik 29 Jun: room for further yield falls is running out; June CPI seen 2.7% y/y (3.1% May); derivatives started on Fri to price a small probability of NBP cuts in 2027; PKO base case 50bp of cuts in H2 2027.",
+   "src": "https://centrumanaliz.pkobp.pl/aktualnosci/dziennik-ekonomiczny-konsumenci-zapominaja-o-wysokiej-inflacji",
+   "time_basis": "PKO item page date only (morning daily; time 00:00 = date only; the cdn-netpr PDF returned HTTP 401, text read from the item page)"
+  },
+  {
+   "published": "2026-06-29 06:31",
+   "window_report_date": "2026-06-30",
+   "topic": "MPC",
+   "text": "PAP weekly: the MPC meets 7-8 Jul (last decision meeting before the summer break); flash June CPI Tue 30 Jun (Goldman 2.7%, Santander 2.7% / -0.3% m/m); Santander: VAT on fuel likely back in July, CPI ~3% Jul-Aug and slightly >3.5% at year-end, no hikes; Goldman: hold to Q1 2027, risks shifting to cuts; MoF and BGK Q3/July supply Tue 15:00.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/tydzien-w-kraju-cpi-i-pmi-za-vi-podaz-dlugu-mf-na-iii-kw-kongres-gus",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 08:19",
+   "window_report_date": "2026-06-30",
+   "topic": "research",
+   "text": "Erste Codziennik 29 Jun: on 26 Jun bonds firmed ~6bp, IRS -3bp, FRA -2-4bp, ASW spreads -3bp; Brent below USD 73 (pre-war), TTF still a third above February.",
+   "src": "https://www.erste.pl/regulation_file_server/time20260629084009/download?id=169541&lang=pl_PL",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-29 08:56",
+   "window_report_date": "2026-06-30",
+   "topic": "research",
+   "text": "Millennium daily 29 Jun: IRS -4bp on Fri, bonds -6bp from the open; 10Y ~5.28%, near support (next ~5.20%); EUR/PLN ~4.29.",
+   "src": "https://www.bankmillennium.pl/documents/d/guest/daily260629",
+   "time_basis": "PDF CreationDate (local time, CEST) = upper bound"
+  },
+  {
+   "published": "2026-06-29 09:48",
+   "window_report_date": "2026-06-30",
+   "topic": "rates",
+   "text": "PAP FX/FI: the curve fell ~20bp last week; Alior: with oil back at pre-war levels high-inflation/tight-policy scenarios fade and the SPW risk premium shrinks (narrower spreads to Bunds and USTs).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/dzien-na-fxfi-zloty-moze-oslabiac-sie-w-kierunku-430eur-spadki-rentownosci",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 10:09",
+   "window_report_date": "2026-06-30",
+   "topic": "MPC",
+   "text": "MSiG: Tyrowicz voted against the MPC resolution adopting the report on the 2025 monetary-policy guidelines (taken in May), and against the assessment of the NBP board and the approval of the NBP 2025 report; all others in favour.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/tyrowicz-przeciw-uchwale-rpp-ws-przyjecia-sprawozdania-z-wykonania-zalozen",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 11:30",
+   "window_report_date": "2026-06-30",
+   "topic": "macro",
+   "text": "EC June survey for Poland: ESI 100.6 (100.3 in May as revised); consumer inflation-expectations indicator 20.2 from 24.7 (PAP; identical to the GUS figures of 18 Jun - likely a PAP mix-up, flagged).",
+   "src": [
+    "https://strefainwestorow.pl/wiadomosci/20260629/wskaznik-oczekiwan-inflacyjnych-w-polsce-w-czerwcu-spadl-do-202-pkt-ke",
+    "https://strefainwestorow.pl/wiadomosci/20260629/wskaznik-nastrojow-w-gospodarce-polski-w-czerwcu-wyniosl-1006-pkt-ke"
+   ],
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 13:51",
+   "window_report_date": "2026-06-30",
+   "topic": "GPWB",
+   "text": "GPW Benchmark re-posted the 30 Jun portfolio PDF (Portfele_obligacji_2026_06_26_.pdf, CreationDate 29 Jun 13:16, Last-Modified 13:51 CEST) with an added statistics page (as of 25 Jun): TBSP 19 bonds, PLN 945.1bn, YTM 4.56%, mod dur 3.76; B1Y3Y 4.08% / 1.81; B1Y4Y 4.21% / 2.29; B5Y 5.07% / 5.93.",
+   "src": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_06_26_.pdf",
+   "time_basis": "HTTP Last-Modified (CEST) = upper bound; PDF CreationDate 13:16 CEST = lower bound of the re-post"
+  },
+  {
+   "published": "2026-06-29 14:30",
+   "window_report_date": "2026-06-30",
+   "topic": "macro",
+   "text": "NBP: bank-sector net profit Jan-May 2026 PLN 17.61bn, -15.6% y/y.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/zysk-netto-sektora-bankowego-w-i-v-26-wyniosl-176-mld-zl-spadl-156-proc-rdr-0",
+   "time_basis": "exact article/document timestamp"
+  },
+  {
+   "published": "2026-06-29 15:15",
+   "window_report_date": "2026-06-30",
+   "topic": "rates",
+   "text": "PAP FX/FI: Millennium - EUR/PLN tests 4.29 (resistance 4.305) and bond yields have exhausted their room to fall; DS0436 5.30% at 15:10 (5.25% in the morning).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/dzien-na-fxfi-zloty-testuje-429eur-z-szansa-na-stabilizacje-rentownosci",
+   "time_basis": "exact article/document timestamp"
+  }
+ ],
+ "gpwb": {
+  "document": "GPW Benchmark 'Portfele obligacji' communique - bond index portfolios after the periodic change of 30 Jun 2026 (wg stanu na 25 czerwca 2026)",
+  "url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_06_26_.pdf",
+  "communique_page": "https://gpwbenchmark.pl/komunikaty-i-uchwaly-gpw_czytaj?cmn_id=2866 (Komunikaty indeksowe 26.06.2026; needs the title parameter, a Referer and the site cookies)",
+  "local_copy": "/tmp/claude-0/-home-user-Polish-FixedIncome/f82df0b1-d4bb-529b-9fb4-ff4ddefccef7/scratchpad/agent_jun_plfacts2/dl/gpwb/Portfele_obligacji_2026_06_26_.pdf",
+  "publication_date": "2026-06-26 (GPWB 2026 calendar: '26 czerwca 2026 - ogloszenie zmian w portfelach Rodziny Indeksow Obligacji'; communique page dated 26.06.2026; PAP/ESPI copy 26 Jun 19:02 CEST with attachment 54533116_..._2026_06_26_5_Portfele_obligacji.pdf: CreationDate 26 Jun 13:25 CEST, 7 pages, holdings only). The PDF now served on gpwbenchmark.pl (file name with a trailing underscore, Portfele_obligacji_2026_06_26_.pdf) was REGENERATED on 29 Jun (CreationDate 13:16 CEST, Last-Modified 13:51 CEST, 8 pages) and adds the statistics page; Portfele_obligacji_2026_06_26.pdf and the _22-_30 variants return 404.",
+  "window_report_date": "2026-06-29 (holdings and changes); official statistics first published 29 Jun -> 2026-06-30",
+  "effective_date": "2026-06-30 (after the session; calendar: '30 czerwca 2026 - okresowa zmiana portfeli Rodziny Indeksow Obligacji')",
+  "holdings_and_stats_as_of": "2026-06-25",
+  "pdf_metadata": {
+   "CreationDate": "2026-06-29T13:16:02+02",
+   "ModDate": "2026-06-29T13:16:02+02",
+   "Producer": "Microsoft: Print To PDF",
+   "Creator": null,
+   "Author": "Wrobel Adam",
+   "Title": "2026_06_26_5_Portfele_obligacji.xls",
+   "pages": 8,
+   "http_last_modified": "Mon, 29 Jun 2026 11:51:53 GMT",
+   "etag": "\"ce0055-63319-65563159d0840\"",
+   "size_bytes": 406297,
+   "sha256": "12715b3b56f6c17ffe52f37d93cdb102ab106a1e2bd67a8fe6bb27e0abe3a8e4"
+  },
+  "integrity_flag": "REGENERATED - the served PDF (CreationDate = ModDate 29 Jun 13:16 CEST, Last-Modified 29 Jun 13:51 CEST, 'Microsoft: Print To PDF', 8 pages) post-dates the 26 Jun publication. The 26 Jun original survives as the PAP/ESPI attachment (https://strefainwestorow.pl/sites/default/files/attachments/54533116_13919448_54533116_2026_06_26_5_Portfele_obligacji.pdf; Last-Modified 26 Jun 23:58 CEST; CreationDate 26 Jun 13:25 CEST, Excel export, author Tomasz.Wisniewski, 7 pages, sha256 67e252449c48a452...): its 7 index tables are identical to the served PDF (pdftotext diff = only the added statistics page). So units/weights/changes are first public 26 Jun (R 29 Jun) and the official statistics only 29 Jun (R 30 Jun). The HTML communique (26.06.2026) lists the same changes. English stats header reads '(on on June 25, 2026)' (typo). Units reconcile exactly with MoF auctions held 27 May-25 Jun (incl. the 24 Jun sale settled 26 Jun, i.e. after the 'as of 25 Jun' date): DS1033 +1,632,405 = 27 May; PS0731 +16,717,367 = 4,092.6 (27 May) + 3,584.737 (3 Jun switch) + 4,442.03 (17 Jun) + 4,598 (24 Jun incl. 411 additional); DS0436 +9,224,659 = 3,061.9 + 1,000.659 + 2,799.8 + 2,362.3; DS1034 +511,996 (3 Jun switch); DS1030 +1,088,000 (17 Jun); DS1035 +802,000 (24 Jun); PS0527 -7,424,049 (3 Jun switch buyback); NZ0331 +7,705,822 (BWZ) = 785.3 + 2,177.522 + 2,000 + 2,743; OK0129 enters with 11,454,166 = all issuance to 24 Jun incl. additional sales. 27 May / 3 Jun amounts used only for this reconciliation (other windows).",
+  "indices": {
+   "TBSP.Index": {
+    "holdings": [
+     {
+      "isin": "PL0000115291",
+      "series": "DS1033",
+      "units": 66836632,
+      "weight_pct": 7.7595
+     },
+     {
+      "isin": "PL0000117990",
+      "series": "PS0730",
+      "units": 69481869,
+      "weight_pct": 7.6323
+     },
+     {
+      "isin": "PL0000118188",
+      "series": "DS1035",
+      "units": 65315097,
+      "weight_pct": 7.0099
+     },
+     {
+      "isin": "PL0000116760",
+      "series": "PS0729",
+      "units": 57073247,
+      "weight_pct": 6.3739
+     },
+     {
+      "isin": "PL0000116851",
+      "series": "DS1034",
+      "units": 58770538,
+      "weight_pct": 6.3602
+     },
+     {
+      "isin": "PL0000105391",
+      "series": "WS0429",
+      "units": 57196120,
+      "weight_pct": 6.343
+     },
+     {
+      "isin": "PL0000117370",
+      "series": "PS0130",
+      "units": 55273705,
+      "weight_pct": 6.0739
+     },
+     {
+      "isin": "PL0000111498",
+      "series": "DS1029",
+      "units": 58755701,
+      "weight_pct": 6.0239
+     },
+     {
+      "isin": "PL0000118519",
+      "series": "PS0131",
+      "units": 55493049,
+      "weight_pct": 5.9427
+     },
+     {
+      "isin": "PL0000113783",
+      "series": "DS0432",
+      "units": 63684961,
+      "weight_pct": 5.7168
+     },
+     {
+      "isin": "PL0000115192",
+      "series": "PS0728",
+      "units": 45507599,
+      "weight_pct": 5.4633
+     },
+     {
+      "isin": "PL0000112736",
+      "series": "DS1030",
+      "units": 58098574,
+      "weight_pct": 5.4053
+     },
+     {
+      "isin": "PL0000118998",
+      "series": "PS0731",
+      "units": 46863577,
+      "weight_pct": 4.9613
+     },
+     {
+      "isin": "PL0000109427",
+      "series": "DS0727",
+      "units": 44403632,
+      "weight_pct": 4.7424
+     },
+     {
+      "isin": "PL0000118089",
+      "series": "OK0128",
+      "units": 45149768,
+      "weight_pct": 4.4921
+     },
+     {
+      "isin": "PL0000107611",
+      "series": "WS0428",
+      "units": 40376939,
+      "weight_pct": 4.1989
+     },
+     {
+      "isin": "PL0000114393",
+      "series": "PS0527",
+      "units": 25405545,
+      "weight_pct": 2.6962
+     },
+     {
+      "isin": "PL0000119087",
+      "series": "DS0436",
+      "units": 16175319,
+      "weight_pct": 1.7162
+     },
+     {
+      "isin": "PL0000119178",
+      "series": "OK0129",
+      "units": 11454166,
+      "weight_pct": 1.0882
+     }
+    ],
+    "official_stats": {
+     "n": 19,
+     "value_mln": 945104.48,
+     "ytm": 4.56,
+     "mac_dur": 3.94,
+     "mod_dur": 3.76,
+     "maturity": 4.48,
+     "coupon": 4.08
+    },
+    "changes_vs_may": {
+     "enter": [
+      "OK0129"
+     ],
+     "leave": [
+      "OK0127"
+     ],
+     "unit_changes": {
+      "DS1033": {
+       "may": 65204227,
+       "jun": 66836632,
+       "diff": 1632405
+      },
+      "DS1035": {
+       "may": 64513097,
+       "jun": 65315097,
+       "diff": 802000
+      },
+      "DS1034": {
+       "may": 58258542,
+       "jun": 58770538,
+       "diff": 511996
+      },
+      "DS1030": {
+       "may": 57010574,
+       "jun": 58098574,
+       "diff": 1088000
+      },
+      "PS0731": {
+       "may": 30146210,
+       "jun": 46863577,
+       "diff": 16717367
+      },
+      "PS0527": {
+       "may": 32829594,
+       "jun": 25405545,
+       "diff": -7424049
+      },
+      "DS0436": {
+       "may": 6950660,
+       "jun": 16175319,
+       "diff": 9224659
+      }
+     }
+    },
+    "may_official_stats": {
+     "n": 19,
+     "value_mln": 908890.02,
+     "ytm": 4.97,
+     "mac_dur": 3.87,
+     "mod_dur": 3.68,
+     "maturity": 4.39,
+     "coupon": 4.04
+    }
+   },
+   "GPWB-B1Y3Y": {
+    "holdings": [
+     {
+      "isin": "PL0000105391",
+      "series": "WS0429",
+      "units": 57196120,
+      "weight_pct": 24.0924
+     },
+     {
+      "isin": "PL0000115192",
+      "series": "PS0728",
+      "units": 45507599,
+      "weight_pct": 20.7509
+     },
+     {
+      "isin": "PL0000109427",
+      "series": "DS0727",
+      "units": 44403632,
+      "weight_pct": 18.0129
+     },
+     {
+      "isin": "PL0000118089",
+      "series": "OK0128",
+      "units": 45149768,
+      "weight_pct": 17.0622
+     },
+     {
+      "isin": "PL0000107611",
+      "series": "WS0428",
+      "units": 40376939,
+      "weight_pct": 15.9483
+     },
+     {
+      "isin": "PL0000119178",
+      "series": "OK0129",
+      "units": 11454166,
+      "weight_pct": 4.1333
+     }
+    ],
+    "official_stats": {
+     "n": 6,
+     "value_mln": 248826.85,
+     "ytm": 4.08,
+     "mac_dur": 1.89,
+     "mod_dur": 1.81,
+     "maturity": 1.98,
+     "coupon": 3.83
+    },
+    "changes_vs_may": {
+     "enter": [
+      "OK0129"
+     ],
+     "leave": [],
+     "unit_changes": {}
+    },
+    "may_official_stats": {
+     "n": 5,
+     "value_mln": 235705.39,
+     "ytm": 4.52,
+     "mac_dur": 1.94,
+     "mod_dur": 1.85,
+     "maturity": 2.03,
+     "coupon": 3.99
+    }
+   },
+   "GPWB-B1Y4Y": {
+    "holdings": [
+     {
+      "isin": "PL0000116760",
+      "series": "PS0729",
+      "units": 57073247,
+      "weight_pct": 14.2276
+     },
+     {
+      "isin": "PL0000105391",
+      "series": "WS0429",
+      "units": 57196120,
+      "weight_pct": 14.1587
+     },
+     {
+      "isin": "PL0000117370",
+      "series": "PS0130",
+      "units": 55273705,
+      "weight_pct": 13.5579
+     },
+     {
+      "isin": "PL0000111498",
+      "series": "DS1029",
+      "units": 58755701,
+      "weight_pct": 13.4463
+     },
+     {
+      "isin": "PL0000115192",
+      "series": "PS0728",
+      "units": 45507599,
+      "weight_pct": 12.1949
+     },
+     {
+      "isin": "PL0000109427",
+      "series": "DS0727",
+      "units": 44403632,
+      "weight_pct": 10.5859
+     },
+     {
+      "isin": "PL0000118089",
+      "series": "OK0128",
+      "units": 45149768,
+      "weight_pct": 10.0271
+     },
+     {
+      "isin": "PL0000107611",
+      "series": "WS0428",
+      "units": 40376939,
+      "weight_pct": 9.3725
+     },
+     {
+      "isin": "PL0000119178",
+      "series": "OK0129",
+      "units": 11454166,
+      "weight_pct": 2.4291
+     }
+    ],
+    "official_stats": {
+     "n": 9,
+     "value_mln": 423403.52,
+     "ytm": 4.21,
+     "mac_dur": 2.39,
+     "mod_dur": 2.29,
+     "maturity": 2.53,
+     "coupon": 3.97
+    },
+    "changes_vs_may": {
+     "enter": [
+      "OK0129"
+     ],
+     "leave": [],
+     "unit_changes": {}
+    },
+    "may_official_stats": {
+     "n": 8,
+     "value_mln": 407118.81,
+     "ytm": 4.67,
+     "mac_dur": 2.46,
+     "mod_dur": 2.35,
+     "maturity": 2.61,
+     "coupon": 4.07
+    }
+   },
+   "GPWB-B1Y5Y": {
+    "holdings": [
+     {
+      "isin": "PL0000117990",
+      "series": "PS0730",
+      "units": 69481869,
+      "weight_pct": 11.9666
+     },
+     {
+      "isin": "PL0000116760",
+      "series": "PS0729",
+      "units": 57073247,
+      "weight_pct": 9.9936
+     },
+     {
+      "isin": "PL0000105391",
+      "series": "WS0429",
+      "units": 57196120,
+      "weight_pct": 9.9452
+     },
+     {
+      "isin": "PL0000117370",
+      "series": "PS0130",
+      "units": 55273705,
+      "weight_pct": 9.5232
+     },
+     {
+      "isin": "PL0000111498",
+      "series": "DS1029",
+      "units": 58755701,
+      "weight_pct": 9.4448
+     },
+     {
+      "isin": "PL0000118519",
+      "series": "PS0131",
+      "units": 55493049,
+      "weight_pct": 9.3175
+     },
+     {
+      "isin": "PL0000115192",
+      "series": "PS0728",
+      "units": 45507599,
+      "weight_pct": 8.5659
+     },
+     {
+      "isin": "PL0000112736",
+      "series": "DS1030",
+      "units": 58098574,
+      "weight_pct": 8.4749
+     },
+     {
+      "isin": "PL0000109427",
+      "series": "DS0727",
+      "units": 44403632,
+      "weight_pct": 7.4356
+     },
+     {
+      "isin": "PL0000118089",
+      "series": "OK0128",
+      "units": 45149768,
+      "weight_pct": 7.0432
+     },
+     {
+      "isin": "PL0000107611",
+      "series": "WS0428",
+      "units": 40376939,
+      "weight_pct": 6.5834
+     },
+     {
+      "isin": "PL0000119178",
+      "series": "OK0129",
+      "units": 11454166,
+      "weight_pct": 1.7062
+     }
+    ],
+    "official_stats": {
+     "n": 12,
+     "value_mln": 602786.83,
+     "ytm": 4.33,
+     "mac_dur": 2.86,
+     "mod_dur": 2.74,
+     "maturity": 3.06,
+     "coupon": 3.86
+    },
+    "changes_vs_may": {
+     "enter": [
+      "OK0129"
+     ],
+     "leave": [],
+     "unit_changes": {
+      "DS1030": {
+       "may": 57010574,
+       "jun": 58098574,
+       "diff": 1088000
+      }
+     }
+    },
+    "may_official_stats": {
+     "n": 11,
+     "value_mln": 581573.15,
+     "ytm": 4.8,
+     "mac_dur": 2.93,
+     "mod_dur": 2.8,
+     "maturity": 3.14,
+     "coupon": 3.93
+    }
+   },
+   "GPWB-B3Y5Y": {
+    "holdings": [
+     {
+      "isin": "PL0000117990",
+      "series": "PS0730",
+      "units": 69481869,
+      "weight_pct": 20.3789
+     },
+     {
+      "isin": "PL0000116760",
+      "series": "PS0729",
+      "units": 57073247,
+      "weight_pct": 17.0189
+     },
+     {
+      "isin": "PL0000117370",
+      "series": "PS0130",
+      "units": 55273705,
+      "weight_pct": 16.2178
+     },
+     {
+      "isin": "PL0000111498",
+      "series": "DS1029",
+      "units": 58755701,
+      "weight_pct": 16.0843
+     },
+     {
+      "isin": "PL0000118519",
+      "series": "PS0131",
+      "units": 55493049,
+      "weight_pct": 15.8675
+     },
+     {
+      "isin": "PL0000112736",
+      "series": "DS1030",
+      "units": 58098574,
+      "weight_pct": 14.4326
+     }
+    ],
+    "official_stats": {
+     "n": 6,
+     "value_mln": 353959.98,
+     "ytm": 4.51,
+     "mac_dur": 3.54,
+     "mod_dur": 3.39,
+     "maturity": 3.82,
+     "coupon": 3.87
+    },
+    "changes_vs_may": {
+     "enter": [],
+     "leave": [],
+     "unit_changes": {
+      "DS1030": {
+       "may": 57010574,
+       "jun": 58098574,
+       "diff": 1088000
+      }
+     }
+    },
+    "may_official_stats": {
+     "n": 6,
+     "value_mln": 345867.76,
+     "ytm": 4.99,
+     "mac_dur": 3.61,
+     "mod_dur": 3.44,
+     "maturity": 3.9,
+     "coupon": 3.88
+    }
+   },
+   "GPWB-B5Y": {
+    "holdings": [
+     {
+      "isin": "PL0000115291",
+      "series": "DS1033",
+      "units": 66836632,
+      "weight_pct": 23.1461
+     },
+     {
+      "isin": "PL0000118188",
+      "series": "DS1035",
+      "units": 65315097,
+      "weight_pct": 20.91
+     },
+     {
+      "isin": "PL0000116851",
+      "series": "DS1034",
+      "units": 58770538,
+      "weight_pct": 18.9722
+     },
+     {
+      "isin": "PL0000113783",
+      "series": "DS0432",
+      "units": 63684961,
+      "weight_pct": 17.0529
+     },
+     {
+      "isin": "PL0000118998",
+      "series": "PS0731",
+      "units": 46863577,
+      "weight_pct": 14.7994
+     },
+     {
+      "isin": "PL0000119087",
+      "series": "DS0436",
+      "units": 16175319,
+      "weight_pct": 5.1193
+     }
+    ],
+    "official_stats": {
+     "n": 6,
+     "value_mln": 316835.38,
+     "ytm": 5.07,
+     "mac_dur": 6.23,
+     "mod_dur": 5.93,
+     "maturity": 7.48,
+     "coupon": 4.54
+    },
+    "changes_vs_may": {
+     "enter": [],
+     "leave": [],
+     "unit_changes": {
+      "DS1033": {
+       "may": 65204227,
+       "jun": 66836632,
+       "diff": 1632405
+      },
+      "DS1035": {
+       "may": 64513097,
+       "jun": 65315097,
+       "diff": 802000
+      },
+      "DS1034": {
+       "may": 58258542,
+       "jun": 58770538,
+       "diff": 511996
+      },
+      "PS0731": {
+       "may": 30146210,
+       "jun": 46863577,
+       "diff": 16717367
+      },
+      "DS0436": {
+       "may": 6950660,
+       "jun": 16175319,
+       "diff": 9224659
+      }
+     }
+    },
+    "may_official_stats": {
+     "n": 6,
+     "value_mln": 278912.48,
+     "ytm": 5.52,
+     "mac_dur": 6.34,
+     "mod_dur": 6.01,
+     "maturity": 7.61,
+     "coupon": 4.54
+    }
+   },
+   "GPWB-BWZ": {
+    "holdings": [
+     {
+      "isin": "PL0000117198",
+      "series": "WZ0330",
+      "units": 56465355,
+      "weight_pct": 16.8437
+     },
+     {
+      "isin": "PL0000111928",
+      "series": "WZ1129",
+      "units": 56493128,
+      "weight_pct": 16.7993
+     },
+     {
+      "isin": "PL0000115697",
+      "series": "WZ1128",
+      "units": 45069356,
+      "weight_pct": 13.5137
+     },
+     {
+      "isin": "PL0000118170",
+      "series": "WZ0930",
+      "units": 43780510,
+      "weight_pct": 12.9992
+     },
+     {
+      "isin": "PL0000114559",
+      "series": "WZ1127",
+      "units": 40588489,
+      "weight_pct": 12.2592
+     },
+     {
+      "isin": "PL0000118774",
+      "series": "NZ0331",
+      "units": 35374268,
+      "weight_pct": 10.2126
+     },
+     {
+      "isin": "PL0000110383",
+      "series": "WZ0528",
+      "units": 28262564,
+      "weight_pct": 8.5088
+     },
+     {
+      "isin": "PL0000113213",
+      "series": "WZ1131",
+      "units": 24393202,
+      "weight_pct": 7.1527
+     },
+     {
+      "isin": "PL0000118600",
+      "series": "NZ0928",
+      "units": 5715144,
+      "weight_pct": 1.7109
+     }
+    ],
+    "official_stats": null,
+    "changes_vs_may": {
+     "enter": [],
+     "leave": [],
+     "unit_changes": {
+      "NZ0331": {
+       "may": 27668446,
+       "jun": 35374268,
+       "diff": 7705822
+      }
+     }
+    },
+    "may_official_stats": null
+   }
+  },
+  "src": [
+   "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_06_26_.pdf",
+   "https://gpwbenchmark.pl/komunikaty-i-uchwaly-gpw_czytaj?cmn_id=2866",
+   "https://strefainwestorow.pl/wiadomosci/20260626/gpw-benchmark-komunikat-okresowa-zmiana-portfeli-indeksow-obligacji",
+   "https://strefainwestorow.pl/sites/default/files/attachments/54533116_13919448_54533116_2026_06_26_5_Portfele_obligacji.pdf",
+   "https://gpwbenchmark.pl/kalendarium-indeksow",
+   "https://www.gov.pl/attachment/d12c559c-9773-4563-905e-c1d6bbcc1c75 (MoF Obligacje_Hurtowe.xlsm, downloaded 2026-11-27, Last-Modified 25 Nov 2026)"
+  ],
+  "communique_text": {
+   "TBSP.Index": "new: OK0129; leaves: OK0127; unit changes: DS1033, DS1035, DS1034, DS1030, PS0731, PS0527, DS0436",
+   "GPWB-B1Y3Y": "new: OK0129",
+   "GPWB-B1Y4Y": "new: OK0129",
+   "GPWB-B1Y5Y": "new: OK0129; unit change: DS1030",
+   "GPWB-B3Y5Y": "unit change: DS1030",
+   "GPWB-B5Y": "unit changes: DS1033, DS1035, DS1034, PS0731, DS0436",
+   "GPWB-BWZ": "unit change: NZ0331"
+  },
+  "summary": "TBSP: OK0129 ENTERS (11.45m units, 1.09%), OK0127 LEAVES -> 19 bonds; units up for DS1033/DS1035/DS1034/DS1030/PS0731/DS0436, PS0527 down 7.42m (3 Jun switch); value 908.9 -> 945.1bn, YTM 4.97 -> 4.56%, mod dur 3.68 -> 3.76, coupon 4.04 -> 4.08%. B1Y3Y: OK0129 enters -> 6 bonds; value 235.7 -> 248.8bn, YTM 4.52 -> 4.08%, mod dur 1.85 -> 1.81. B1Y4Y: OK0129 enters -> 9 bonds; YTM 4.67 -> 4.21%, mod dur 2.35 -> 2.29. B1Y5Y: OK0129 enters -> 12 bonds; YTM 4.80 -> 4.33%. B3Y5Y: same 6 (DS1030 up); YTM 4.99 -> 4.51%. B5Y: same 6; YTM 5.52 -> 5.07%, mod dur 5.93. BWZ: same 9, NZ0331 up to 35.37m units. After the change OK0127 is in no index; IZ0836, NZ0936, WS0437, DS0726 and PS1026 are in none either. TBSP YTM is 41bp below the 26 May statistics (stats as of 25 Jun).",
+  "use_note": "Holdings/changes may be described from R 29 Jun (communique 26 Jun 19:02); official statistics only from R 30 Jun (first published 29 Jun ~13:16-13:51 CEST). The new portfolio applies from the 30 Jun close; reports up to and including R 30 Jun use the 29 May portfolio for performance.",
+  "may_reference": "/home/user/Polish_FixedIncome/data/snapshots/_inputs/2026-05/research/facts_poland_2.json gpwb (communique 2026_05_27, effective 29 May, as of 26 May)"
+ },
+ "wz_coupons": [
+  {
+   "series": [],
+   "note": "No WZ, NZ or PP0931 coupon notice in the windows (gov.pl komunikaty-dlug: the only in-window entry is the 15.06 FX-account notice). Coupons in force: WZ1126-WZ0533 lines 3.96% for 25 May-25 Nov 2026 (notice 20 May); WZ0330/WZ0930 3.86% for 25 Mar-25 Sep (notice 20 Mar). Next notices ~19-22 Sep (NZ, PP0931, WZ0330/WZ0930) - outside.",
+   "src": [
+    "https://www.gov.pl/web/finanse/komunikaty-dlug?page=3&size=10",
+    "https://www.gov.pl/web/finanse/komunikaty-dlug?page=2&size=10"
+   ]
+  }
+ ],
+ "digest": {
+  "2026-06-16": "15 Jun: May CPI final 3.1% y/y, -0.3% m/m (flash). Budget deficit after May PLN 108.2bn (~40% of the 271.7bn limit). MPC's Kotecki: rate changes unlikely to end-2026, hike appetite lower, too early to signal cuts. Fuel excise back from 15 Jun; VAT 8% and price caps to 30 Jun; Szlapka: gradual exit. MoF offers 7-12bn on 17 Jun (incl. DS1030, IZ0836). SPW rallied on the US-Iran deal: DS0436 5.45% (5.57% Fri).",
+  "2026-06-17": "16 Jun: May core CPI 3.1% y/y (-0.1% m/m; April 3.0%). Government adopted the windfall tax (~PLN 4bn for CPN). Tusk: fuel-VAT decision soon; Motyka: conditions to end price caps met (Brent ~$80). BGK: first FPC switch on 18 Jun (buys FPC0427). NBP FSR: the rising SPW share in bank balance sheets adds geopolitical sensitivity. NIK: MPC 2025 guidance gave limited information. PKO: SPW -5-10bp, 2Y/10Y at mid-April lows; DS0436 5.41%.",
+  "2026-06-18": "17 Jun: MoF sold PLN 12.0bn (offer 7-12bn) at 18.3bn demand, cover 1.52 (3-month high); plus 0.79bn additional. PS0731 4.44bn at 4.918%, DS0436 2.40bn at 5.416%, OK0129 1.93bn at 4.399%, DS1030 1.09bn at 4.711%. NBP's Sobon: no policy cycle. NIK: the 2025 SRW limit was overstated by PLN 84.5bn; the Fiscal Council wants faster consolidation. ING: MPC more dovish than priced; 10Y ~5.4%, a 3-month low; DS0436 5.40%.",
+  "2026-06-19": "18 Jun: MPC's Duda: stable rates the base case, little room for cuts. May voting record: Tyrowicz's +100bp motion rejected again. GUS: June consumer confidence up (BWUK -9.9); price expectations 20.2 from 24.7. BGK switch: sold FPC 1.35bn, bought back FPC0427 1.44bn. Banks: 2026 needs 58-59% financed. After the hawkish Fed (dots) SPW rose 5-7bp (PAP); DS0436 5.44%.",
+  "2026-06-22": "19-21 Jun: May industry +4.1% y/y (PAP consensus 2.5%), -0.8% m/m (-2.2%). The Sejm passed the windfall tax (60% rate); it now goes to the Senate. Poland filed its 8th KPO payment request. KSF-M: no regulatory WIBOR replacement needed; no new WIBOR deals from 2027; CCyB 2%. NBP: 12-month FX debt repayments EUR 7.2bn. Economists: the MPC has softened and hikes are off the table. Weekend: US-Iran talks in Switzerland. DS0436 5.44%.",
+  "2026-06-23": "22 Jun: May data below consensus: retail +3.0% y/y (3.8%), wages +5.8% (6.0%), construction +3.9% (4.9%), PPI +2.4% (2.5%); employment -0.9%. State Treasury debt PLN 2,135.6bn (+2.2% m/m). MoF offers 7-12bn on 24 Jun (DS1035 instead of DS1030/IZ0836). MoF drafts a ban on WIBOR in new consumer loans. Citi: CPI may briefly top 3.5% at end-2026. EUR/PLN above 4.27; DS0436 5.42%.",
+  "2026-06-24": "23 Jun: May M3 +11.0% y/y (April 11.3%); farm prices -16.2% y/y. The MNB cut 25bp to 6.00%. PLN weakened for a 5th day (~4.283/EUR, the weakest in the region). PKO: the June MPC trimmed FRA hike pricing and carry. BGK sees the 10Y at 5.30-5.35% this week; Pekao: SPW resilient despite supply. Tomorrow MoF offers 7-12bn (OK0129, NZ0331, PS0731, DS1035, DS0436, NZ0936). DS0436 5.41%.",
+  "2026-06-25": "24 Jun: MoF sold PLN 12.0bn (demand 15.4bn, cover 1.28) plus 1.32bn additional: PS0731 4.19bn at 4.911%, NZ0331 2.72bn, OK0129 2.36bn at 4.396%, DS0436 1.92bn at 5.417%, DS1035 0.80bn at 5.334%. MoF: 2026 needs ~62% financed; July retail coupons unchanged. Fitch CEO: public finances are the key rating risk. Unemployment 5.9%; orders +143% (SAFE). NBP survey: CPI 3.0%/2.9%. M3 11.0%. DS0436 5.38%.",
+  "2026-06-26": "25 Jun: the 8th KPO request is worth PLN 33.8bn. The Senate amended the windfall tax (cap on the amount). Brent fell to ~$73 as Hormuz traffic normalised; Millennium: rates -6-11bp despite the auction. PKO's Budzicki: no NBP hikes priced any more, stable rates 2026-27 the base case; Tuesday's flash CPI is seen near target. EUR/PLN ~4.29, a 3-month low for PLN. DS0436 5.33%.",
+  "2026-06-29": "26-28 Jun: GPWB 30 Jun change: OK0129 joins TBSP, 1-3Y, 1-4Y and 1-5Y; OK0127 leaves TBSP. Units rise for DS1033/DS1035/DS1034/DS1030/PS0731/DS0436, PS0527 falls (switch); 1-3Y now 6 bonds, TBSP 19. MoF: May EU funds EUR 1.13bn. Erste: 2027 FRAs within 7bp of spot. PKO: yields >30bp below end-May. SPW kept falling: 10Y ~5.30% (ING), DS0436 5.27%. e-petrol: pump prices rise after June.",
+  "2026-06-30": "29 Jun: EC June ESI 100.6; consumer inflation expectations 20.2. Tyrowicz voted against the MPC's 2025 policy report. NBP: Jan-May bank profit -15.6%. GPWB re-posted the 30 Jun PDF with stats: TBSP YTM 4.56%, mod dur 3.76 (as of 25 Jun). PKO: June CPI ~2.7%, small 2027 cut odds priced; Millennium: room for lower yields exhausted. Due: flash CPI (30 Jun), MoF/BGK Q3 supply (30 Jun), MPC 7-8 Jul. DS0436 5.30%."
+ },
+ "mpc": [
+  {
+   "member": "Ireneusz Dabrowski",
+   "date": "2026-06-12 (Bloomberg; pre-window, part-1 agent)",
+   "window_report_date": "2026-06-15 (other agent)",
+   "gist": "Context only (recapped in PKO/Erste 15 Jun): a cut is now more likely than a hike; members much more optimistic on inflation than a month earlier; a small chance of one small cut this year."
+  },
+  {
+   "member": "Ludwik Kotecki",
+   "date": "2026-06-15 17:06 (Bloomberg; PAP Skrot upper bound)",
+   "window_report_date": "2026-06-16",
+   "gist": "Small probability of rate changes to end-2026, maybe to Q1 2027 when base effects lower CPI; propensity to hike a bit lower than a month ago (not the base case anyway); too early to signal a return to cuts."
+  },
+  {
+   "member": "NIK on MPC communication",
+   "date": "2026-06-16 16:30",
+   "window_report_date": "2026-06-17",
+   "gist": "Audit office: the MPC's conditional, data-dependent guidance in 2025 gave market participants limited information on future policy."
+  },
+  {
+   "member": "Artur Sobon (NBP board)",
+   "date": "2026-06-17 12:52 (Sejm finance committee)",
+   "window_report_date": "2026-06-18",
+   "gist": "The NBP neither runs nor announces a policy cycle; it adjusts policy to incoming data under uncertainty, like the Fed and ECB; reserve remuneration at the reference rate is neutral."
+  },
+  {
+   "member": "Iwona Duda",
+   "date": "2026-06-18 08:35 (DGP interview; first dated mention Erste; PAP Skrot 17:02)",
+   "window_report_date": "2026-06-19",
+   "gist": "Stabilisation of rates is the base scenario for the coming months; little room left for cuts after the March cut."
+  },
+  {
+   "member": "May voting record (NBP)",
+   "date": "2026-06-18 14:11",
+   "window_report_date": "2026-06-19",
+   "gist": "The MPC again rejected Tyrowicz's motion to hike by 100bp, with all other members against; rates held (reference 3.75%)."
+  },
+  {
+   "member": "Joanna Tyrowicz (MSiG)",
+   "date": "2026-06-29 10:09",
+   "window_report_date": "2026-06-30",
+   "gist": "Voted against the MPC resolution adopting the 2025 monetary-policy report (May), against the assessment of the NBP board and the NBP 2025 report; all others for."
+  },
+  {
+   "member": "Minutes of the 1-2 June meeting / July meeting",
+   "date": "not seen in the windows",
+   "window_report_date": "n/a",
+   "gist": "No minutes ('opis dyskusji') of the 1-2 Jun meeting appeared in the PAP feed or bank dailies by 29 Jun (nbp.pl blocked, so not checked at source). Next MPC 7-8 Jul - the last decision meeting before the summer break (PAP weekly 29 Jun 06:31) - with the July NBP projection expected (flagged by members in May); banks see a hold with risks tilting to cuts (Goldman, PKO) or a long hold (Erste, Santander, Alior)."
+  }
+ ],
+ "data": [
+  {
+   "release": "CPI final (GUS)",
+   "period": "2026-05",
+   "actual": "3.1% y/y, -0.3% m/m",
+   "consensus": "3.1% / -0.3% (= flash; the flash consensus had been 3.7%)",
+   "published": "2026-06-15 09:31"
+  },
+  {
+   "release": "Trade balance (GUS)",
+   "period": "2026-01/04",
+   "actual": "EUR -1.7bn",
+   "consensus": null,
+   "published": "2026-06-15 09:34"
+  },
+  {
+   "release": "Services production (GUS, preliminary)",
+   "period": "2026-03",
+   "actual": "+11.0% y/y, +10.7% m/m",
+   "consensus": null,
+   "published": "2026-06-15 09:35"
+  },
+  {
+   "release": "Labour costs (Eurostat)",
+   "period": "2026-Q1",
+   "actual": "+7.2% y/y hourly; vacancy rate 0.8%",
+   "consensus": null,
+   "published": "2026-06-16 11:32"
+  },
+  {
+   "release": "Core CPI ex food & energy (NBP)",
+   "period": "2026-05",
+   "actual": "3.1% y/y, -0.1% m/m (ex administered 2.8, ex volatile 3.3, trimmed mean 3.3)",
+   "consensus": "no PAP consensus; PKO cites 3.0% market consensus; forecasts Erste 3.0, Millennium 3.0-3.1, PKO 3.0-3.1",
+   "published": "2026-06-16 14:06"
+  },
+  {
+   "release": "Consumer confidence (GUS)",
+   "period": "2026-06",
+   "actual": "BWUK -9.9 (+1.4), WWUK -7.7 (+0.8)",
+   "consensus": null,
+   "published": "2026-06-18 09:38"
+  },
+  {
+   "release": "Consumer price expectations (GUS)",
+   "period": "2026-06",
+   "actual": "20.2 (May 24.7)",
+   "consensus": null,
+   "published": "2026-06-18 09:33"
+  },
+  {
+   "release": "Industrial output (GUS)",
+   "period": "2026-05",
+   "actual": "+4.1% y/y, -0.8% m/m; sa +4.4% y/y, +1.4% m/m",
+   "consensus": "2.5% y/y, -2.2% m/m (PAP); Erste cites 2.8%",
+   "published": "2026-06-19 09:31"
+  },
+  {
+   "release": "Gold reserves / FX debt repayments (NBP)",
+   "period": "2026-05",
+   "actual": "gold 613.86t; 12M govt FX repayments EUR 7,225m",
+   "consensus": null,
+   "published": "2026-06-19 14:01"
+  },
+  {
+   "release": "Retail sales, constant prices (GUS)",
+   "period": "2026-05",
+   "actual": "+3.0% y/y, -1.7% m/m (current prices +4.4%)",
+   "consensus": "3.8% / -1.0% (current 5.4%) (PAP)",
+   "published": "2026-06-22 09:31"
+  },
+  {
+   "release": "PPI (GUS)",
+   "period": "2026-05",
+   "actual": "+2.4% y/y, 0.0% m/m (April revised 2.1%)",
+   "consensus": "2.5% / 0.3% (PAP)",
+   "published": "2026-06-22 09:32"
+  },
+  {
+   "release": "Wages, enterprise sector (GUS)",
+   "period": "2026-05",
+   "actual": "+5.8% y/y, -3.8% m/m",
+   "consensus": "6.0% / -3.6% (PAP); Erste cites 6.2%",
+   "published": "2026-06-22 09:34"
+  },
+  {
+   "release": "Employment, enterprise sector (GUS)",
+   "period": "2026-05",
+   "actual": "-0.9% y/y, -0.1% m/m",
+   "consensus": "-0.9% / -0.2% (PAP)",
+   "published": "2026-06-22 09:34"
+  },
+  {
+   "release": "Construction output (GUS)",
+   "period": "2026-05",
+   "actual": "+3.9% y/y, +7.9% m/m",
+   "consensus": "4.9% / 10.4% (PAP); PKO cites 4.2%",
+   "published": "2026-06-22 09:38"
+  },
+  {
+   "release": "Business climate (GUS)",
+   "period": "2026-06",
+   "actual": "stable or worse vs May in most sectors",
+   "consensus": null,
+   "published": "2026-06-22 09:39"
+  },
+  {
+   "release": "Housing starts, developers (GUS)",
+   "period": "2026-05",
+   "actual": "+7.1% y/y, -20.9% m/m",
+   "consensus": null,
+   "published": "2026-06-22 09:45"
+  },
+  {
+   "release": "Farm procurement prices (GUS)",
+   "period": "2026-05",
+   "actual": "-16.2% y/y",
+   "consensus": null,
+   "published": "2026-06-23 09:36"
+  },
+  {
+   "release": "M3 (NBP)",
+   "period": "2026-05",
+   "actual": "11.0% y/y (April 11.3%); loans +7.6% (Erste) / +4.0% (PKO measure)",
+   "consensus": "~11.4% (Erste: slightly below consensus and its 11.4%)",
+   "published": "2026-06-23 14:00 (NBP slot per PAP weekly 22 Jun; Erste 23 Jun: due today; first dated mention Erste 24 Jun 08:23 / PKO 24 Jun)"
+  },
+  {
+   "release": "New industrial orders (GUS)",
+   "period": "2026-05",
+   "actual": "+143.3% y/y (export +6.2%)",
+   "consensus": null,
+   "published": "2026-06-24 09:34"
+  },
+  {
+   "release": "Registered unemployment (GUS)",
+   "period": "2026-05",
+   "actual": "5.9% (915.9k)",
+   "consensus": "5.9% (MRPiPS estimate)",
+   "published": "2026-06-24 09:38"
+  },
+  {
+   "release": "GUS composite climate indicator",
+   "period": "2026-06",
+   "actual": "98.8 (May 98.5)",
+   "consensus": null,
+   "published": "2026-06-24 09:42"
+  },
+  {
+   "release": "NBP Macroeconomic Survey",
+   "period": "2026-06 round",
+   "actual": "CPI 3.0/2.9/2.7%, GDP 3.5/3.0/2.8%, avg reference rate 3.76/3.66/3.50% (2026-28)",
+   "consensus": null,
+   "published": "2026-06-24 10:18"
+  },
+  {
+   "release": "Employment, national economy (GUS)",
+   "period": "2026-01",
+   "actual": "14,988.3k, -0.4% y/y",
+   "consensus": null,
+   "published": "2026-06-25 09:38"
+  },
+  {
+   "release": "ESI (EC)",
+   "period": "2026-06",
+   "actual": "100.6 (May 100.3 rev.)",
+   "consensus": null,
+   "published": "2026-06-29 11:32"
+  },
+  {
+   "release": "Consumer inflation expectations (EC, per PAP)",
+   "period": "2026-06",
+   "actual": "20.2 (May 24.7) - identical to GUS, flagged",
+   "consensus": null,
+   "published": "2026-06-29 11:30"
+  },
+  {
+   "release": "Bank-sector net profit (NBP)",
+   "period": "2026-01/05",
+   "actual": "PLN 17.61bn, -15.6% y/y",
+   "consensus": null,
+   "published": "2026-06-29 14:30"
+  }
+ ],
+ "meta": {
+  "built": "2026-11-27",
+  "windows": {
+   "15": "2026-06-16",
+   "16": "2026-06-17",
+   "17": "2026-06-18",
+   "18": "2026-06-19",
+   "19": "2026-06-22",
+   "20": "2026-06-22",
+   "21": "2026-06-22",
+   "22": "2026-06-23",
+   "23": "2026-06-24",
+   "24": "2026-06-25",
+   "25": "2026-06-26",
+   "26": "2026-06-29",
+   "27": "2026-06-29",
+   "28": "2026-06-29",
+   "29": "2026-06-30"
+  },
+  "facts_per_window": {
+   "2026-06-16": 17,
+   "2026-06-17": 13,
+   "2026-06-18": 8,
+   "2026-06-19": 10,
+   "2026-06-22": 10,
+   "2026-06-23": 9,
+   "2026-06-24": 8,
+   "2026-06-25": 9,
+   "2026-06-26": 6,
+   "2026-06-29": 8,
+   "2026-06-30": 10
+  },
+  "times": "Warsaw local (CEST). PAP article times exact; PAP Skrot 17:0x/21:xx = upper bounds; PDF CreationDate (local, +02) = upper bound; Erste/Millennium = CreationDate; PKO = item page date only (00:00); gov.pl date only (time 00:00 placeholders mean date only); MoF offer communiques at the PAP calendar slot (15:00) with strict alternatives noted.",
+  "notes": "/tmp/claude-0/-home-user-Polish-FixedIncome/f82df0b1-d4bb-529b-9fb4-ff4ddefccef7/scratchpad/agent_jun_plfacts2/notes_plfacts2.md",
+  "pre_window_not_used": [
+   "MoF June plan (29 May) - context only",
+   "3 Jun switch auction (part 1) - used only to reconcile GPWB units",
+   "MPC 1-2 Jun decision; Dabrowski (12 Jun, Bloomberg) cut-more-likely remark; CPN extension to 30 Jun without the excise cut (12 Jun); April C/A (12 Jun) - part-1 items, recapped in 15 Jun dailies",
+   "27 May sale and 13/21 May OK0129 amounts - used only for GPWB reconciliation"
+  ],
+  "post_window_excluded": [
+   "30 Jun: flash June CPI, MoF July supply and Q3 financing plan, MoF/BGK Q3 supply, PKO/Erste/Millennium dailies of 30 Jun",
+   "gov.pl list titles July-November, PKO listing titles July, GPWB listing items after 26 Jun (seen while paging, not used)",
+   "MoF/T-bill DB rows after 29 Jun (e.g. 10 Jul T-bill) seen in the extract, not used",
+   "One web search (to locate the MoF auction communique) returned only gov.pl plan pages; nothing used"
+  ],
+  "gaps": [
+   "MoF offer communiques for 17 and 24 Jun not retrieved (no gov.pl list page found); offers dated to the 15:00 calendar slot, strict alternatives R 18 / R 24 Jun",
+   "17 Jun additional sale (791m): no same-day PAP item; DB trade date 17 Jun, first dated mention 18 Jun 08:35",
+   "PKO PDFs (cdn-netpr) returned HTTP 401; texts from the item pages (date only)",
+   "nbp.pl behind Imperva: no NBP primary documents (minutes, voting PDF, M3 release time); June MPC minutes not seen in the windows",
+   "BGK per-series switch results not found (bgk.pl not read)",
+   "Original times: Kotecki (Bloomberg), Duda (DGP), Fitch CEO Linnell (remarks 23 Jun, first dated 24 Jun 08:55)",
+   "No PAP consensus for core CPI, M3 or unemployment (bank figures used)",
+   "EC consumer inflation expectations (29 Jun, PAP) equal the GUS figures - probable PAP mix-up, flagged"
+  ]
+ }
+}

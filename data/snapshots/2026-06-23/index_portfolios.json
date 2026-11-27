@@ -1,0 +1,149 @@
+{
+ "_source": "GPW Benchmark 'Portfele obligacji' communique for the periodic change of 29 May 2026 (holdings and statistics as of 26 May 2026; published 27 May 2026, PDF CreationDate 27 May 11:59 CEST, HTTP Last-Modified 27 May 17:27 CEST). Changes: DS0436 enters TBSP and B5Y; PS0527 leaves B1Y3Y, B1Y4Y and B1Y5Y; NZ0331 and NZ0928 enter BWZ. Units match MoF settlements to 26 May (sales of 28 Apr, 13 May and 21 May).",
+ "source_url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_05_27.pdf",
+ "published": "2026-05-27",
+ "effective": "2026-05-29",
+ "next_rebalance": "2026-06-30",
+ "official_stats_asof": "2026-05-26",
+ "indices": {
+  "GPWB-B1Y3Y": {
+   "label": "GPWB 1-3Y",
+   "rule": "Fixed-rate POLGBs with 1-3 years to maturity",
+   "official": {
+    "ytm": 4.52,
+    "mac_dur": 1.94,
+    "mod_dur": 1.85,
+    "maturity": 2.03,
+    "coupon": 3.99,
+    "n": 5,
+    "value_mln": 235705.39
+   },
+   "units": {
+    "WS0429": 57196120,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939
+   }
+  },
+  "GPWB-B1Y4Y": {
+   "label": "GPWB 1-4Y",
+   "rule": "Fixed-rate POLGBs with 1-4 years to maturity",
+   "official": {
+    "ytm": 4.67,
+    "mac_dur": 2.46,
+    "mod_dur": 2.35,
+    "maturity": 2.61,
+    "coupon": 4.07,
+    "n": 8,
+    "value_mln": 407118.81
+   },
+   "units": {
+    "PS0729": 57073247,
+    "WS0429": 57196120,
+    "PS0130": 55273705,
+    "DS1029": 58755701,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939
+   }
+  },
+  "TBSP.Index": {
+   "label": "TBSP.Index",
+   "rule": "Fixed-rate POLGBs traded on Treasury BondSpot Poland (broad market)",
+   "official": {
+    "ytm": 4.97,
+    "mac_dur": 3.87,
+    "mod_dur": 3.68,
+    "maturity": 4.39,
+    "coupon": 4.04,
+    "n": 19,
+    "value_mln": 908890.02
+   },
+   "units": {
+    "PS0730": 69481869,
+    "DS1033": 65204227,
+    "DS1035": 64513097,
+    "PS0729": 57073247,
+    "WS0429": 57196120,
+    "DS1034": 58258542,
+    "PS0130": 55273705,
+    "DS1029": 58755701,
+    "PS0131": 55493049,
+    "DS0432": 63684961,
+    "PS0728": 45507599,
+    "DS1030": 57010574,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939,
+    "PS0527": 32829594,
+    "PS0731": 30146210,
+    "OK0127": 16019012,
+    "DS0436": 6950660
+   }
+  }
+ },
+ "changes_vs_2026-04-30": {
+  "GPWB-B1Y3Y": {
+   "enter": [],
+   "leave": [
+    "PS0527"
+   ],
+   "unit_changes": {
+    "OK0128": {
+     "apr": 43937768,
+     "may": 45149768,
+     "diff": 1212000
+    }
+   }
+  },
+  "GPWB-B1Y4Y": {
+   "enter": [],
+   "leave": [
+    "PS0527"
+   ],
+   "unit_changes": {
+    "PS0130": {
+     "apr": 53973705,
+     "may": 55273705,
+     "diff": 1300000
+    },
+    "OK0128": {
+     "apr": 43937768,
+     "may": 45149768,
+     "diff": 1212000
+    }
+   }
+  },
+  "TBSP.Index": {
+   "enter": [
+    "DS0436"
+   ],
+   "leave": [],
+   "unit_changes": {
+    "DS1034": {
+     "apr": 56961892,
+     "may": 58258542,
+     "diff": 1296650
+    },
+    "PS0130": {
+     "apr": 53973705,
+     "may": 55273705,
+     "diff": 1300000
+    },
+    "OK0128": {
+     "apr": 43937768,
+     "may": 45149768,
+     "diff": 1212000
+    },
+    "PS0731": {
+     "apr": 16739335,
+     "may": 30146210,
+     "diff": 13406875
+    }
+   }
+  }
+ },
+ "next_rebalance_note": "2026-06-30 (announcement 26 Jun, GPWB calendar)"
+}

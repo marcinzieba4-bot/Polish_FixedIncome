@@ -1,0 +1,1635 @@
+{
+ "facts": [
+  {
+   "published": "2026-06-15 00:02",
+   "window_report_date": "2026-06-16",
+   "topic": "geopolitics",
+   "text": "Iran's deputy FM Gharibabadi: the text of the US-Iran memorandum of understanding announced on Sunday is finalised and will be signed in Switzerland on Fri 19 Jun; the 60-day talks will cover ending all sanctions and UN resolutions, the nuclear file and other issues (Odaily 00:23). Iran says it will start negotiating only after funds are unfrozen, the naval blockade ends and the war ends (Reuters via PAP 08:25).",
+   "src": "https://www.odaily.news/en/newsflash/490434"
+  },
+  {
+   "published": "2026-06-15 01:27",
+   "window_report_date": "2026-06-16",
+   "topic": "markets",
+   "text": "TE: Brent plunged >4% toward $83, a two-month low, after the preliminary US-Iran deal to end the conflict and reopen Hormuz by the end of the week (incl. lifting the US blockade of Iranian ports); TTF fell >9% to ~EUR42.3/MWh, the lowest since April (02:38); dollar index ~99.5, a one-week low (02:59); UST10 4.42%, the lowest since May (02:25).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558816"
+  },
+  {
+   "published": "2026-06-15 06:31",
+   "window_report_date": "2026-06-16",
+   "topic": "CNB",
+   "text": "PAP week ahead: economists see a possible CNB hike on 18 Jun after Governor Michl called a June hike 'a real possibility' (excess money supply, elevated core inflation); board member Prochazka says the debate is between a hold and +25bp; PKO BP expects +25bp.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-na-rynkach-porozumie-usa-iran-szczyt-g7-decyzje-fed-boj-boe"
+  },
+  {
+   "published": "2026-06-15 06:31",
+   "window_report_date": "2026-06-16",
+   "topic": "markets",
+   "text": "PAP week ahead: rate decisions due from the Fed (Wed 17 Jun, Warsh's first meeting), BoJ and RBA (Tue), Riksbank (Wed), BoE, Norges Bank, SNB and CNB (Thu 18 Jun); markets price ~60% for a Fed hike by October while most Reuters-polled economists see the Fed on hold through 2026; the BoJ is expected to hike to 1.0%; the BoE to hold at 3.75% with a hike fully priced by September; G7 summit in Evian 15-17 Jun.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/tydzien-na-rynkach-porozumie-usa-iran-szczyt-g7-decyzje-fed-boj-boe"
+  },
+  {
+   "published": "2026-06-15 06:33",
+   "window_report_date": "2026-06-16",
+   "topic": "sovereign",
+   "text": "10Y closes 12 Jun (PAP/Bloomberg table): Bund 3.00%, OAT 3.75%, BTP 3.72%, Bonos 3.42%, gilt 4.84% -> OAT-Bund 75bp, BTP-Bund 72bp (OAT above BTP), Spain 42bp; Schatz 2.62%, gilt 2Y 4.24%; CZ10 4.76%, HU10 5.29%, PL10 5.59%. Live 06:31: UST10 4.43%, UST2 4.02%, JGB10 2.58%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-15 08:35",
+   "window_report_date": "2026-06-16",
+   "topic": "ECB",
+   "text": "TE: money markets now price ~30bp of further ECB tightening this year (one hike), down from nearly two before last Thursday's hike; Bund 10Y toward 2.95%, the lowest since 29 May (09:14); Lagarde welcomed the deal but warned past hopes were dashed and second-round effects are emerging; Nagel: the oil-supply recovery will take months. EUR/USD back above 1.16. PAP 17:06 (Bloomberg): Lagarde says the ECB sees indirect effects of energy inflation in almost all sectors.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558932"
+  },
+  {
+   "published": "2026-06-15 09:35",
+   "window_report_date": "2026-06-16",
+   "topic": "markets",
+   "text": "15 Jun morning in Europe: Brent August $83.22 (-4.7%), WTI July $80.34 (-5.4%); TTF EUR44.43 (-5.0%) after -6.8% earlier to a >5-week low; gold $4,311 (+2.2%); UST10 4.43% (-5bp); USD/JPY 160.0; European indices at records (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/dzien-na-rynkach-w-europie-na-gieldach-indeksy-dochodza-do-kolejnych-rekordow"
+  },
+  {
+   "published": "2026-06-15 09:53",
+   "window_report_date": "2026-06-16",
+   "topic": "BoE",
+   "text": "TE: gilt 10Y fell to 4.8%, the lowest since 17 April; the BoE is expected to hold at 3.75% in a split vote on Thursday; traders now price just one hike this year, a quarter-point not fully priced until December; Thursday's Makerfield by-election matters for the Labour leadership (Burnham would enter a contest if he wins). TE 09:38: one hike each from the ECB and BoE priced by year-end.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558994"
+  },
+  {
+   "published": "2026-06-15 11:00",
+   "window_report_date": "2026-06-16",
+   "topic": "EZ data",
+   "text": "Euro-area April industrial production +0.1% m/m (0.2% expected; March revised to +0.4%); trade balance -EUR 1.0bn nsa vs +7.8bn in March (Eurostat via PAP/TE 11:14-11:21).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559040"
+  },
+  {
+   "published": "2026-06-15 13:12",
+   "window_report_date": "2026-06-16",
+   "topic": "Fed",
+   "text": "Swaps price ~70% for a 25bp Fed hike by December, down from ~80% on Friday; FedWatch >98% for a hold on 17 Jun (PAP, Bloomberg). RBC: if oil stays at $80-85 it will ease central banks' burden; Fars: Iran will allow free transit only for the 60 days.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/dzien-na-rynkach-futures-w-usa-i-indeksy-w-europie-rosna-wobec-oczekiwanego-w"
+  },
+  {
+   "published": "2026-06-15 13:42",
+   "window_report_date": "2026-06-16",
+   "topic": "geopolitics",
+   "text": "Iran: the IRGC navy has issued no transit permits for 96 hours and Hormuz stays closed to all vessels until further notice (Odaily); FM spokesman Baghaei (14:29): Iran will charge for maritime services in Hormuz and the US committed to war reparations and unfreezing assets; US military (16:22): the blockade of Iranian ports stays until the 19 Jun signing. Trump (15:09): ships, many with oil, have begun leaving via the southern route.",
+   "src": "https://www.odaily.news/en/newsflash/490730"
+  },
+  {
+   "published": "2026-06-15 14:30",
+   "window_report_date": "2026-06-16",
+   "topic": "US data",
+   "text": "US Empire State index June 5.7 vs 19.6 in May and 14 expected, prices still elevated (TE 14:39); May industrial production +0.1% m/m (0.3% expected; April revised up to +0.9%), manufacturing flat, capacity utilisation 76.2% (15:20); NAHB June 35 (37 in May, 36 expected) (16:18).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559065"
+  },
+  {
+   "published": "2026-06-15 15:59",
+   "window_report_date": "2026-06-16",
+   "topic": "geopolitics",
+   "text": "Vance (ABC): the US-Iran agreement was signed electronically over the weekend and its terms are in force; no funds have been released (Odaily). White House (17:47): Trump, Vance and Iran's parliament speaker Ghalibaf signed the MoU; details within 24-48 hours. Trump at the G7 in Evian: Hormuz will be fully open on Friday and the text will be published after Friday (PAP 21:02). WSJ: Israel is uneasy about what Trump agreed.",
+   "src": "https://www.odaily.news/en/newsflash/490820"
+  },
+  {
+   "published": "2026-06-15 16:13",
+   "window_report_date": "2026-06-16",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 15 Jun: 1.1607 (EUR/JPY 185.93). EU gas storage 44.3% full vs a 58.7% five-year average (GIE, PAP 17:06).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/euro-w-ebc-11607-usd-i-18593-jpy"
+  },
+  {
+   "published": "2026-06-15 17:06",
+   "window_report_date": "2026-06-16",
+   "topic": "geopolitics",
+   "text": "Tariffs: Trump said the US will have no choice but to impose 100% tariffs on French wine unless Paris scraps its digital services tax (PAP digest). ING: Hormuz reopening will bring only a limited oil-price fall given doubts about the peace and slow infrastructure repairs.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/skrot-wiadomosci-poniedzialek-15-czerwca-1700"
+  },
+  {
+   "published": "2026-06-15 18:35",
+   "window_report_date": "2026-06-16",
+   "topic": "markets",
+   "text": "15 Jun European close: UST10 4.46% (-2.6bp), UST30 4.90%; Bund 10Y 2.96%; DXY 99.59; EUR/USD 1.1597; Brent August $83.01 (-5.0%), the lowest since March, WTI July $80.45; TTF July EUR42.4 (-9.3% at 15:40); gold $4,381 (+3.4%), silver $70.9 (PAP). Late: Brent $83.78 (-4.1%) as the Dow rose >450 points; officials: Hormuz transit toll-free at least for the MoU's 60 days (PAP 22:21).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/dzien-na-rynkach-na-koniec-sesji-gieldy-w-europie-zmniejszyly-zyski"
+  },
+  {
+   "published": "2026-06-16 01:29",
+   "window_report_date": "2026-06-17",
+   "topic": "markets",
+   "text": "TE: Brent below $82, extending losses as markets await the text of the US-Iran MoU (not yet released by either side); shipping firms are delaying sending vessels through Hormuz until there is more clarity; the deal is to be signed in Switzerland on Friday.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559135"
+  },
+  {
+   "published": "2026-06-16 01:53",
+   "window_report_date": "2026-06-17",
+   "topic": "geopolitics",
+   "text": "Trump (G7): Iran has agreed never to seek nuclear weapons; reports that the US will pay Iran $300m are 'fake news' (Odaily). Vance (Fox News, 03:09): if Iran complies, other countries will be invited to invest; Iran could access a ~$300bn fund financed by regional states (PAP 17:06).",
+   "src": "https://www.odaily.news/en/newsflash/490941"
+  },
+  {
+   "published": "2026-06-16 05:25",
+   "window_report_date": "2026-06-17",
+   "topic": "markets",
+   "text": "BoJ raised its policy rate 25bp to 1.0% (7-1; Asada dissented on downside risks to output and jobs), the highest since 1995 and its first hike since December, and will keep raising rates as warranted (TE); JGB10 ~2.64% (06:11); USD/JPY ~160.3 after the decision (PAP 08:27). RBA held at 4.35% unanimously after three 2026 hikes (TE 06:36).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559205"
+  },
+  {
+   "published": "2026-06-16 06:35",
+   "window_report_date": "2026-06-17",
+   "topic": "sovereign",
+   "text": "10Y closes 15 Jun (PAP/Bloomberg table): Bund 2.95%, OAT 3.70%, BTP 3.67%, Bonos 3.38%, gilt 4.81% -> OAT-Bund 75bp, BTP-Bund 72bp, Spain 43bp; Schatz 2.57%, gilt 2Y 4.17%; CZ10 4.70%, HU10 5.20%, PL10 5.47%. Live 06:32: UST10 4.48%, UST2 4.06%, JGB10 2.65%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-16 07:59",
+   "window_report_date": "2026-06-17",
+   "topic": "markets",
+   "text": "16 Jun morning: Brent August $82.77 (-0.5%), a fourth straight fall, the longest losing run this year; Morgan Stanley cut its Q3 Brent forecast to $90 (from $100) and Q4 to $80, seeing Gulf output 50% restored by September and 80% by December; Goldman sees Gulf exports at pre-war levels by end-July and Q4 Brent at $80 (PAP). Barclays keeps a $100 2026 average (Odaily 08:57).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/ceny-ropy-zaliczaja-najdluzsza-serie-spadkowa-w-tym-roku"
+  },
+  {
+   "published": "2026-06-16 09:34",
+   "window_report_date": "2026-06-17",
+   "topic": "geopolitics",
+   "text": "Araghchi (Tasnim): a new round of US-Iran talks may start on 19 Jun in Switzerland, in two phases - first ending hostilities, reopening Hormuz and unfreezing assets, then nuclear issues incl. enrichment and stockpiles (Odaily 09:48/10:39). Fars (07:56): Iran's SNSC resolved to take steps only after the US meets its obligations. Hezbollah (14:52): Iran pledged not to sign a final nuclear deal until Israel leaves Lebanon.",
+   "src": "https://www.odaily.news/en/newsflash/491133"
+  },
+  {
+   "published": "2026-06-16 11:00",
+   "window_report_date": "2026-06-17",
+   "topic": "EZ data",
+   "text": "German ZEW expectations jumped 20.7 points to +10.5 in June (-6.0 expected), the first positive reading since March, on hopes the Iran conflict ends; current conditions -81 (-78 expected) (TE 11:12). Euro-area Q1 wages +3.4% y/y (3.1% in Q4), hourly labour costs +3.2% (Eurostat via TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559314"
+  },
+  {
+   "published": "2026-06-16 12:16",
+   "window_report_date": "2026-06-17",
+   "topic": "ECB",
+   "text": "TE: Bund 10Y fell to 2.93%, the lowest since April (-23bp in four weeks); BTP 10Y at a 12-week low (10:50); HU10 5.14%, the lowest since February 2022 (15:52). ECB pricing still ~30bp (one more hike) this year after the 11 Jun hike (TE 15 Jun).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559328"
+  },
+  {
+   "published": "2026-06-16 12:53",
+   "window_report_date": "2026-06-17",
+   "topic": "Fed",
+   "text": "TE: UST10 fell to 4.44%, the lowest in nearly three weeks, as lower oil eased inflation fears; markets imply ~56% for a Fed hike by December; the FOMC starts its first meeting chaired by Warsh, with a hold at 3.50-3.75% expected and focus on the projections and guidance.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559335"
+  },
+  {
+   "published": "2026-06-16 13:43",
+   "window_report_date": "2026-06-17",
+   "topic": "geopolitics",
+   "text": "Tariffs: the European Parliament approved the regulation implementing the EU-US (Turnberry) tariff commitments, 440-151-50; member states cleared it in late May; it ends the EU's legislative work before Trump's 4 July deadline, after which he threatened 25% tariffs on EU goods; US preferences expire at end-2029 and the Commission can suspend them if the US breaches the deal (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/pe-poparl-w-strasburgu-porozumienie-ws-cel-uzgodnionych-przez-ue-i-usa"
+  },
+  {
+   "published": "2026-06-16 14:30",
+   "window_report_date": "2026-06-17",
+   "topic": "US data",
+   "text": "US May housing starts -15.4% to 1.177m, the lowest since May 2020 (1.43m expected); permits 1.413m (1.418m expected) (TE 14:33-14:35); import prices +1.9% m/m (1.0% expected; April +2.0%), fuel +12.5% (14:38); ADP weekly: +25.5k jobs a week in the four weeks to 30 May (14:19).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559347"
+  },
+  {
+   "published": "2026-06-16 14:34",
+   "window_report_date": "2026-06-17",
+   "topic": "geopolitics",
+   "text": "Trump: US-Iran relations have normalised, he will release the agreement text, the next phase will be easier, and the US will push oil prices further down (Odaily 14:34-14:41); he said tougher Russia sanctions could come soon and he may restore sanctions on Russian seaborne oil when the waiver expires on Wednesday (PAP 17:06). G7 leaders agreed to raise pressure on Russia via oil and gas sanctions (AFP).",
+   "src": "https://www.odaily.news/en/newsflash/491249"
+  },
+  {
+   "published": "2026-06-16 16:13",
+   "window_report_date": "2026-06-17",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 16 Jun: 1.1594 (EUR/JPY 185.94).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/euro-w-ebc-11594-usd-i-18594-jpy"
+  },
+  {
+   "published": "2026-06-16 17:06",
+   "window_report_date": "2026-06-17",
+   "topic": "geopolitics",
+   "text": "Axios: CIA director Ratcliffe told Trump intelligence casts serious doubt on Iran's readiness for nuclear concessions; Netanyahu: Israeli forces stay in Gaza, Lebanon and Syria 'as long as needed'. Germany: AfD at a record 29% in a YouGov poll, nine points ahead of CDU/CSU (PAP digest). Iran's deputy FM (PAP 21:06): the US blockade of Iranian ports was lifted before Friday's signing.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/skrot-wiadomosci-wtorek-16-czerwca-1700"
+  },
+  {
+   "published": "2026-06-16 18:13",
+   "window_report_date": "2026-06-17",
+   "topic": "markets",
+   "text": "16 Jun European close: Brent August below $80 ($79.5, -4.4%) at ~18:00, WTI July $76.6 (-5.1%); EUR/USD 1.1615; USD/JPY 160.4; Switzerland: the signing ceremony will be in Burgenstock on Friday (PAP). TE (18:59): Brent at the lowest since the first week of March, erasing most of the war surge. Late: Brent $79.61 (-4.3%); Trump said Hormuz stays toll-free beyond the initial 60 days (PAP 22:27).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/dzien-na-rynkach-gieldy-w-europie-w-gore-umowa-usa-iran-zwieksza-apetyt-na"
+  },
+  {
+   "published": "2026-06-17 00:01",
+   "window_report_date": "2026-06-18",
+   "topic": "geopolitics",
+   "text": "Reuters: the US-Iran framework includes a $300bn private fund for investment in Iran that can start only after a final agreement (Odaily). Politico (03:39): the US is considering paid naval escorts in Hormuz. A third NITC tanker with 1m barrels has left the blockade (TankerTrackers, 04:37).",
+   "src": "https://www.odaily.news/en/newsflash/491374"
+  },
+  {
+   "published": "2026-06-17 06:34",
+   "window_report_date": "2026-06-18",
+   "topic": "sovereign",
+   "text": "10Y closes 16 Jun (PAP/Bloomberg table): Bund 2.93%, OAT 3.66%, BTP 3.63%, Bonos 3.35%, gilt 4.79% -> OAT-Bund 73bp, BTP-Bund 70bp, Spain 42bp; Schatz 2.57%, gilt 2Y 4.18%; CZ10 4.67%, HU10 5.07%, PL10 5.43%. Live 06:29: UST10 4.43%, UST2 4.05%, JGB10 2.61%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-17 08:00",
+   "window_report_date": "2026-06-18",
+   "topic": "BoE",
+   "text": "UK May CPI 2.8% y/y, unchanged and below the 3.0% expected (lowest since March 2025), +0.2% m/m (0.4% expected); core 2.6% (2.7% expected) with services 3.7% (3.2% in April); transport 6.8% on fuel (ONS via TE 08:08). TE (09:25-09:31): markets scaled back BoE hike bets; gilt 10Y toward 4.75%, the lowest since mid-April.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559587"
+  },
+  {
+   "published": "2026-06-17 09:30",
+   "window_report_date": "2026-06-18",
+   "topic": "markets",
+   "text": "Riksbank held at 1.75% but raised the likelihood of a hike later this year given Middle East supply risks; 2026 CPIF forecast cut to 0.6%, 2027 raised to 2.7% (TE 09:42). Brent August $77.97 (-1.3%), WTI $74.76 (PAP 09:30); WTI below $75 for the first time since 4 March (Odaily 09:15).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559644"
+  },
+  {
+   "published": "2026-06-17 10:21",
+   "window_report_date": "2026-06-18",
+   "topic": "ECB",
+   "text": "TE: Bund 10Y fell toward 2.9%, the lowest since 17 March, as traders cut ECB hike bets on lower oil; money markets price less than 30bp of ECB tightening this year (one hike); Simkus: upside inflation risks still justify further tightening, at least one more hike.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559669"
+  },
+  {
+   "published": "2026-06-17 11:00",
+   "window_report_date": "2026-06-18",
+   "topic": "EZ data",
+   "text": "Euro-area May HICP confirmed at 3.2% y/y (April 3.0%), the highest since September 2023; core 2.6% (flash 2.5%; April 2.2%), services 3.5%, energy +10.8% (Eurostat via TE 11:11; PAP 17:02).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559686"
+  },
+  {
+   "published": "2026-06-17 12:55",
+   "window_report_date": "2026-06-18",
+   "topic": "geopolitics",
+   "text": "Trump (G7): the Iran MoU is not a final agreement and the US will strike again if it does not see what it expects; Hormuz will open within a day or two (Odaily 12:49-12:55); later: the deal will be signed 'tomorrow or the day after', bombing resumes if no deal within 60 days, he does not want to be 'another Hoover' (18:19-18:49). Axios (17:21): the sides discuss moving the signing forward from Friday.",
+   "src": "https://www.odaily.news/en/newsflash/491594"
+  },
+  {
+   "published": "2026-06-17 14:30",
+   "window_report_date": "2026-06-18",
+   "topic": "US data",
+   "text": "US May retail sales +0.9% m/m (0.5-0.6% expected; April revised to +0.4%), ex-gas +0.7%, control group +0.7% (Census via TE 14:33); pending home sales +3.8% (16:07); business inventories +0.5%; EIA crude stocks -8.26mb (-4.6mb expected) and SPR -8.9mb (Odaily 16:53).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559729"
+  },
+  {
+   "published": "2026-06-17 14:45",
+   "window_report_date": "2026-06-18",
+   "topic": "Fed",
+   "text": "Pre-FOMC: CME FedWatch shows a hold through most of the year and almost 43% for a 25bp hike in December (PAP 14:45/18:06); Millennium: markets price a 25bp hike by March 2027.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-rynkach-przewaga-wzrostow-futures-w-usa-rynki-czekaja-na-fed"
+  },
+  {
+   "published": "2026-06-17 16:02",
+   "window_report_date": "2026-06-18",
+   "topic": "markets",
+   "text": "TE: oil rebounded >1.5% (WTI above $77) after Trump said bombing could resume if Iran does not behave; still near three-month lows as the IEA's first 2027 outlook sees supply +8mb/d vs demand +2mb/d, a large surplus. Qatar is bringing empty LNG carriers to its ports ahead of the Hormuz reopening (Bloomberg via PAP 17:02).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559748"
+  },
+  {
+   "published": "2026-06-17 16:13",
+   "window_report_date": "2026-06-18",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 17 Jun: 1.1591 (EUR/JPY 185.82).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/euro-w-ebc-11591-usd-i-18582-jpy"
+  },
+  {
+   "published": "2026-06-17 17:02",
+   "window_report_date": "2026-06-18",
+   "topic": "geopolitics",
+   "text": "G7 leaders (Evian) pledged unity behind Ukraine and more pressure on Russia's economy; Hungary agreed to roll over EU sanctions on Russia for 12 months instead of six (PAP, EU source); NATO's Rutte: European allies raised troop pledges after the US cut its contribution; Trump is weighing restoring sanctions on Russian oil (PAP 22:06).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/skrot-wiadomosci-sroda-17-czerwca-1700"
+  },
+  {
+   "published": "2026-06-17 18:06",
+   "window_report_date": "2026-06-18",
+   "topic": "markets",
+   "text": "17 Jun European close: UST10 4.43% (-1bp), UST30 4.92%, 2s10s +36bp; Bund 10Y 2.93% (-1bp); Brent August $79.85 (+1.1%), WTI July $76.94; TTF EUR41.44 (-0.8%); gold $4,377 (+0.5%), silver $70.7 (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-rynkach-indeksy-w-europie-glownie-na-plusach-oczekiwanie-na-fed"
+  },
+  {
+   "published": "2026-06-17 20:00",
+   "window_report_date": "2026-06-18",
+   "topic": "Fed",
+   "text": "FOMC held at 3.50-3.75% (12-0), Warsh's first meeting, with a much shorter statement: activity expanding at a solid pace, inflation elevated partly on energy supply shocks, 'The Committee will deliver price stability' - no forward guidance. SEP: median funds rate 3.8% end-2026 (March 3.4%), 3.6% 2027, 3.4% 2028, 3.1% longer run; 9 of 18 see at least one 2026 hike (6 two or more, 1 three), 8 no change, 1 a cut; PCE 3.6% (2.7%), core 3.3% (2.7%); GDP 2.2%; Warsh submitted no projections. Next FOMC 28-29 Jul.",
+   "src": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  },
+  {
+   "published": "2026-06-17 20:25",
+   "window_report_date": "2026-06-18",
+   "topic": "Fed",
+   "text": "After the Fed: markets fully price a 25bp hike by year-end (Jin10 20:05; TE 20:25); DXY above 100.3, the highest since March (TE 21:11); UST2 +16bp to 4.21% (PAP 22:34). Warsh (20:30 presser): 'we have abandoned forward guidance'; the committee is unanimous it will deliver 2% inflation; half saw rates at or below the current level by year-end and half higher; nobody wants to hike today; five task forces (communication, balance sheet, data, productivity, inflation framework) (Odaily, PAP 22:06). PAP misreads the 3.75% median as 'no change' (see notes).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559802"
+  },
+  {
+   "published": "2026-06-17 22:06",
+   "window_report_date": "2026-06-18",
+   "topic": "geopolitics",
+   "text": "US officials read reporters the full 14-point MoU: neutralising Iran's uranium stockpile and no Hormuz transit fees, but future tolls not excluded (PAP); Iran's Baghaei (Odaily 22:51): continued Israeli occupation of Lebanon would breach the MoU; the US must end the maritime blockade within 30 days. Merz: the Bundestag may vote on a Hormuz mission mandate before the summer recess.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/skrot-wiadomosci-sroda-17-czerwca-2200"
+  },
+  {
+   "published": "2026-06-17 22:34",
+   "window_report_date": "2026-06-18",
+   "topic": "markets",
+   "text": "17 Jun Wall Street close: stocks fell and Treasury yields rose after the hawkish dots; Brent August $78.81 (-0.2%), WTI $75.91; Gundlach: Warsh 'doesn't sound' as dovish as expected (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-rynkach-na-wall-street-spadki-po-posiedzeniu-fed"
+  },
+  {
+   "published": "2026-06-18 01:25",
+   "window_report_date": "2026-06-19",
+   "topic": "markets",
+   "text": "TE: Brent fell to ~$78 on reports that the US and Iran digitally signed the interim agreement; a US official confirmed the MoU has taken effect, though it is unclear whether Iran has begun fully reopening Hormuz; the deal reportedly includes the swift reopening of the route and removal of sanctions on Iranian oil exports. White House (PAP 17:02): Trump signed the MoU at a dinner in Versailles on Wednesday; Iran's President Pezeshkian also signed.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559840"
+  },
+  {
+   "published": "2026-06-18 06:09",
+   "window_report_date": "2026-06-19",
+   "topic": "markets",
+   "text": "Japan's chief cabinet secretary Kihara: ready to respond to excessive yen moves at any time (TE); the yen hit a 23-month low against the dollar (11:00). Barclays now sees no Fed change in 2027 (previously a March cut), Citi pushed back its cut timing (Odaily 07:51/11:34).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559914"
+  },
+  {
+   "published": "2026-06-18 06:34",
+   "window_report_date": "2026-06-19",
+   "topic": "sovereign",
+   "text": "10Y closes 17 Jun (PAP/Bloomberg table): Bund 2.93%, OAT 3.67%, BTP 3.62%, Bonos 3.34%, gilt 4.75% -> OAT-Bund 74bp, BTP-Bund 69bp, Spain 41bp; Schatz 2.59%, gilt 2Y 4.14%; CZ10 4.65%, HU10 5.10%, PL10 5.42%. Live 06:32 (post-FOMC): UST10 4.45%, UST2 4.16%, JGB10 2.62%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-18 08:00",
+   "window_report_date": "2026-06-19",
+   "topic": "BoE",
+   "text": "UK labour data: ILO unemployment fell to 4.9% in Feb-Apr (5.0% expected), employment +100k; regular pay 3.4% y/y (3.2% expected), private-sector regular pay 2.9%, the weakest since 2020 (ONS via TE 08:07-08:08).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559940"
+  },
+  {
+   "published": "2026-06-18 09:30",
+   "window_report_date": "2026-06-19",
+   "topic": "markets",
+   "text": "SNB held at 0.00% and signalled greater readiness to intervene in FX; inflation forecast 0.6% for 2026 and 2027 (TE 09:50). Norges Bank held at 4.25% but signalled a further hike at one of the coming meetings; its rate path points to slightly above 4.5% by year-end (TE 10:04).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560004"
+  },
+  {
+   "published": "2026-06-18 11:12",
+   "window_report_date": "2026-06-19",
+   "topic": "ECB",
+   "text": "TE: EUR/USD fell below $1.15, the lowest since late March, on broad dollar strength after the hawkish Fed dots; DXY 100.72, the highest since May 2025 (12:49); money markets price at least one more ECB hike before year-end; Bund 10Y slightly higher near 2.93-2.94% (11:00). ECB EUR/USD reference rate 18 Jun: 1.1461 (PAP 16:14).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560048"
+  },
+  {
+   "published": "2026-06-18 12:46",
+   "window_report_date": "2026-06-19",
+   "topic": "geopolitics",
+   "text": "Iran's President Pezeshkian published the text of the MoU signed with the US (Odaily); Iranian state TV (13:31): the IRGC navy will keep controlling Hormuz, with 11 vessels incl. five tankers expected to pass, free of charge for 60 days; Reuters (PAP 17:02): three Saudi supertankers with 6m barrels crossed after the signing. Swiss MFA: US-Iran talks with mediators in Burgenstock on 19 Jun (10:59); Pakistan's PM cancelled his trip (16:13).",
+   "src": "https://www.odaily.news/en/newsflash/492075"
+  },
+  {
+   "published": "2026-06-18 13:00",
+   "window_report_date": "2026-06-19",
+   "topic": "BoE",
+   "text": "BoE held Bank Rate at 3.75% by 7-2 (Greene and Pill for +25bp to 4%); energy prices have fallen since the last meeting but remain above pre-conflict levels and volatile; CPI expected to rise later this year; second-round risks grow the longer energy costs stay high; the labour market is cooling. TE (13:19): gilt 10Y up to 4.78%; the peak CPI projection lowered to 3.25% in Q4 2026 from 3.6%; GBP toward $1.32, the lowest since 3 April.",
+   "src": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026"
+  },
+  {
+   "published": "2026-06-18 14:07",
+   "window_report_date": "2026-06-19",
+   "topic": "Fed",
+   "text": "CME FedWatch: ~50% for a 25bp hike in September after the dots (PAP); Carson Group: only about half of the committee still plans hikes. Gold -2.7% to $4,269, silver -5.5% (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/dzien-na-rynkach-kontrakty-w-usa-rosna-po-podpisaniu-umowy-usa-iran"
+  },
+  {
+   "published": "2026-06-18 14:30",
+   "window_report_date": "2026-06-19",
+   "topic": "CNB",
+   "text": "CNB raised the 2W repo rate 25bp to 3.75% (6-1, one member for a hold), its first hike since 2022, effective 19 Jun (discount 2.75%, Lombard 4.75%); core inflation just below 3% for six months, fast credit and money growth, tight labour market and debt-financed public spending; the updated forecast sees a slight temporary rise in inflation in late 2026/early 2027 and lower 2026 growth; further steps to be considered very carefully (CNB statement; TE 14:49).",
+   "src": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/CNB-Board-decisions-1781766000000/"
+  },
+  {
+   "published": "2026-06-18 14:30",
+   "window_report_date": "2026-06-19",
+   "topic": "US data",
+   "text": "US initial claims 226k (225k expected; prior 230k), continuing 1.81m, a near three-month high (TE 14:37); Philly Fed June 10.3 vs -0.4 (10 expected), prices paid 53.2 (14:38); Conference Board LEI May +0.1% as expected (PAP 17:02).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560091"
+  },
+  {
+   "published": "2026-06-18 17:28",
+   "window_report_date": "2026-06-19",
+   "topic": "geopolitics",
+   "text": "Vance: 12.5m barrels of oil passed Hormuz overnight and nearly ten ships crossed the US blockade line; Iran is so far meeting its obligations (Odaily). The US and Iran announced an immediate and permanent end of military operations on all fronts incl. Lebanon; the US to fully lift the naval blockade within 30 days; the White House sent the MoU to Congress (Politico, 18:01); FT (18:16): Iran may use $6bn of oil revenue held in Qatar to buy US goods.",
+   "src": "https://www.odaily.news/en/newsflash/492144"
+  },
+  {
+   "published": "2026-06-18 18:16",
+   "window_report_date": "2026-06-19",
+   "topic": "markets",
+   "text": "18 Jun European close: UST10 4.44% (-2bp), UST30 4.89%; Bund 10Y 2.93% (+1bp); Brent August $77.44 (-2.7%), WTI July $74.69; TTF EUR40.74 (-2.8%); gold $4,249 (-3.0%), silver $66.2 (-6.4%) (PAP). EU gas storage 45.3% vs a 59.6% five-year average (GIE, PAP 17:02).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/dzien-na-rynkach-przewaga-wzrostow-indeksow-gieldowych-w-europie"
+  },
+  {
+   "published": "2026-06-18 20:55",
+   "window_report_date": "2026-06-19",
+   "topic": "geopolitics",
+   "text": "Trump: the US expects a complete ceasefire 'on all fronts', incl. Lebanon, after Israeli strikes on Hezbollah following the signing (PAP); Iran's Supreme Leader Mojtaba Khamenei said he approved the MoU though he had opposed it, persuaded by Pezeshkian (PAP 21:06). Hegseth: a review of US forces and bases in Europe lasting up to six months; NATO: the cut in the US contribution to crisis-response forces is effective immediately.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/usa-oczekuja-calkowitego-zawieszenia-broni-w-tym-w-libanie-trump"
+  },
+  {
+   "published": "2026-06-18 22:13",
+   "window_report_date": "2026-06-19",
+   "topic": "markets",
+   "text": "18 Jun Wall Street close (ahead of the Juneteenth holiday): stocks recovered after Wednesday's post-Fed sell-off; Brent August $79.64 (+0.1%), WTI $76.91 (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/dzien-na-rynkach-na-wall-street-wzrosty-na-koniec-skroconego-tygodnia-handlu"
+  },
+  {
+   "published": "2026-06-19 01:39",
+   "window_report_date": "2026-06-22",
+   "topic": "markets",
+   "text": "TE: Brent rose back above $80 but heads for a sharp weekly fall; CENTCOM lifted restrictions on traffic to and from Iranian ports, tankers with stranded crude began leaving Hormuz on Thursday and Kuwait will raise output; ships are advised to use a route near Oman's coast to avoid mines. AXS Marine (Odaily 11:47): 25 commercial vessels crossed on 18 Jun, the most since mid-April.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560204"
+  },
+  {
+   "published": "2026-06-19 01:42",
+   "window_report_date": "2026-06-22",
+   "topic": "markets",
+   "text": "Japan May CPI 1.5% y/y, core (ex fresh food) 1.4%, the lowest since March 2022 (TE); BoJ deputy governor Himino: the BoJ will keep raising rates, underlying inflation risks deviating upward (03:11); the yen weakened past 161/USD, near its weakest since 1986, erasing the gains from the record 30 Apr intervention (04:12).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560205"
+  },
+  {
+   "published": "2026-06-19 06:21",
+   "window_report_date": "2026-06-22",
+   "topic": "geopolitics",
+   "text": "Swiss MFA: the US-Iran talks planned for Friday in Burgenstock will not take place as planned (Odaily); the White House had said Vance pulled out of meeting the Iranian delegation (Reuters via PAP 08:35); Iran seeks assurances that hostilities in Lebanon end before resuming talks (Odaily 10:50); Iran's FM (15:57): the meeting is postponed to the coming days. Witkoff told Congress Iran will invite IAEA inspections (AP via PAP).",
+   "src": "https://www.odaily.news/en/newsflash/492272"
+  },
+  {
+   "published": "2026-06-19 07:33",
+   "window_report_date": "2026-06-22",
+   "topic": "sovereign",
+   "text": "PAP/Bloomberg table 07:33 (unstamped; EU rows = 18 Jun closes; US rows unchanged vs 1D as the US cash market is shut for Juneteenth): Bund 2.93%, OAT 3.68%, BTP 3.63%, Bonos 3.35%, gilt 4.76% -> OAT-Bund 75bp, BTP-Bund 70bp, Spain 42bp; Schatz 2.61%, gilt 2Y 4.19%; CZ10 4.63%, HU10 5.21%, PL10 5.46%; UST10 4.45%, UST2 4.18%, JGB10 2.65%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-19 08:00",
+   "window_report_date": "2026-06-22",
+   "topic": "BoE",
+   "text": "UK May retail sales +1.2% m/m (0.5% expected; April revised to -1.0%) (TE 08:08); May public borrowing GBP 23.3bn (18.5bn expected), the second-highest May on record, record May debt interest, net debt 95.1% of GDP (08:17); GfK June -23, unchanged (PAP).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560349"
+  },
+  {
+   "published": "2026-06-19 08:12",
+   "window_report_date": "2026-06-22",
+   "topic": "EZ data",
+   "text": "German May PPI +2.2% y/y (2.5% expected; April 1.7%), the fastest since May 2023, mineral oil +34.9%; +0.3% m/m (Destatis via TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560348"
+  },
+  {
+   "published": "2026-06-19 08:25",
+   "window_report_date": "2026-06-22",
+   "topic": "BoE",
+   "text": "TE: GBP slipped below $1.32, the lowest since late March, after Greater Manchester mayor Andy Burnham won the Makerfield by-election with 54.8%, strengthening him as a potential challenger to PM Starmer; gilt 10Y rose to ~4.8% on the political and fiscal focus and the cancelled US-Iran talks (09:19-10:32); money markets price at least a 25bp hike this year from both the BoE and the Fed (10:32).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560358"
+  },
+  {
+   "published": "2026-06-19 09:07",
+   "window_report_date": "2026-06-22",
+   "topic": "markets",
+   "text": "19 Jun morning: WTI July $77.69 (+1.7%), Brent August $80.51 (+0.5%) after both hit the lowest since early March on Thursday; ADNOC told clients to resume loadings in Gulf ports; Iraq says its fields are ready to restart; analysts see >85m barrels of stranded crude released (PAP). TankerTrackers (Odaily 13:04): Iran exported ~18m barrels in five days.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/ceny-ropy-w-usa-rosna-rynki-oceniaja-sytuacje-w-ciesninie-ormuz"
+  },
+  {
+   "published": "2026-06-19 10:12",
+   "window_report_date": "2026-06-22",
+   "topic": "ECB",
+   "text": "TE: Bund 10Y rebounded to 2.95% from three-month lows on higher oil and hawkish ECB comments - Wunsch: another hike could come as soon as July if inflation broadens beyond energy; Lane: the economy may withstand higher rates; money markets price at least one more ECB hike this year after the hike to a 2.25% deposit rate. EUR/USD ~1.145, the weakest since mid-March (10:19); DXY ~100.8, near one-year highs (12:02).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560431"
+  },
+  {
+   "published": "2026-06-19 13:15",
+   "window_report_date": "2026-06-22",
+   "topic": "geopolitics",
+   "text": "Iran's Persian Gulf Strait Authority: under the MoU, vessels that apply 48 hours in advance and meet requirements may pass (Odaily 12:50-13:15); the foreign ministry denied Hormuz is closed (16:16). Israel and Hezbollah agreed a new truce effective Friday afternoon, but Israeli troops stay in a southern Lebanon 'buffer zone' (Israeli official 15:28; PAP 17:07); Israeli strikes continued. Pakistan's Dar: talks postponed because of Muharram (16:09).",
+   "src": "https://www.odaily.news/en/newsflash/492337"
+  },
+  {
+   "published": "2026-06-19 15:56",
+   "window_report_date": "2026-06-22",
+   "topic": "Fed",
+   "text": "Market pricing fully discounts a 25bp Fed hike in September (Jin10 via Odaily); PAP 18:13: investors see at least one 2026 hike as the dollar holds at 13-month highs on Warsh's 'price stability' message.",
+   "src": "https://www.odaily.news/en/newsflash/492381"
+  },
+  {
+   "published": "2026-06-19 16:05",
+   "window_report_date": "2026-06-22",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 19 Jun: 1.1467 (EUR/JPY 184.88). EU leaders unanimously agreed to extend economic sanctions on Russia for 12 months instead of six (PAP 17:07).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/euro-w-ebc-11467-usd-i-18488-jpy"
+  },
+  {
+   "published": "2026-06-19 18:13",
+   "window_report_date": "2026-06-22",
+   "topic": "markets",
+   "text": "19 Jun European close (US cash markets shut for Juneteenth): Brent August $80.3 (+0.5%), WTI July $77.2; EUR/USD ~1.1465; European stocks slightly lower but up for a second week; Barclays raised its Stoxx 600 target to 670 (PAP). TE (13:05): no outbound tankers seen leaving the Gulf on Friday morning after Thursday's surge.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260619/dzien-na-rynkach-europejskie-akcje-w-piatek-lekko-na-minusie-ale-caly-tydzien"
+  },
+  {
+   "published": "2026-06-20 11:44",
+   "window_report_date": "2026-06-22",
+   "topic": "geopolitics",
+   "text": "Al Arabiya: the Iranian delegation threatened to quit the talks if Israel keeps attacking Lebanon (Odaily); Witkoff and Kushner arrived in Switzerland, talks may be held on Sunday (Vance, 15:14); Pakistan: technical talks in Switzerland on 21 Jun (16:25). Trump (PAP 20-21 Jun digest): Iran will not charge Hormuz transit fees during or after the truce, but the US may charge allies for protection if diplomacy fails.",
+   "src": "https://www.odaily.news/en/newsflash/492575"
+  },
+  {
+   "published": "2026-06-20 16:01",
+   "window_report_date": "2026-06-22",
+   "topic": "geopolitics",
+   "text": "Sat 20 Jun: the IRGC declared Hormuz closed to all vessels and warned ships not to approach (Odaily); US officials (16:15) and Vance: no sign of Iran militarily closing the strait; CENTCOM: safe transit continues, 55 ships crossed (PAP digest 21 Jun 20:12). Netanyahu ordered a ceasefire in Lebanon (Israeli media, 16:46). Iranian sources (21 Jun 10:50-13:11): Hormuz stays shut, with traffic at zero per Tasnim, until the Lebanon ceasefire holds and Iran's oil-sales waiver is approved.",
+   "src": "https://www.odaily.news/en/newsflash/492630"
+  },
+  {
+   "published": "2026-06-21 07:02",
+   "window_report_date": "2026-06-22",
+   "topic": "Fed",
+   "text": "Deutsche Bank raised its US inflation forecast and now expects 50bp of Fed hikes in 2026, taking the funds rate to ~4.1% (Odaily, Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/492699"
+  },
+  {
+   "published": "2026-06-21 09:06",
+   "window_report_date": "2026-06-22",
+   "topic": "geopolitics",
+   "text": "Sun 21 Jun: Vance, the Iranian delegation and Pakistan's leaders met in Burgenstock (first session ~13:30 CEST); Iran: a one-day meeting with the Lebanon ceasefire as the core issue (IRNA, 10:26); Qatar set up teams to implement the MoU (13:19); Pezeshkian: $6bn of frozen funds in Qatar will be returned (11:26). Trump (Fox, 16:29) threatened to resume attacks if Iran does not rein in Hezbollah and said the US could take 20% of Gulf oil revenue as Hormuz 'guardian' if no deal; the first round ended after ~80 minutes, with talks continuing (Xinhua 17:08; Fars 17:29).",
+   "src": "https://www.odaily.news/en/newsflash/492713"
+  },
+  {
+   "published": "2026-06-22 02:52",
+   "window_report_date": "2026-06-23",
+   "topic": "geopolitics",
+   "text": "Iran's foreign ministry: 18 hours of talks in Burgenstock produced an agreement, incl. a mechanism for safe passage through Hormuz; Qatar and Pakistan will publish the outcome (Odaily 02:52-03:00); their joint statement: a 60-day roadmap to a final deal, technical talks continue all week in Burgenstock and a Lebanon coordination mechanism is set up (03:17); Araghchi (03:28): Iran's oil and petrochemical exports exempted, blockade measures lifted, some frozen assets released.",
+   "src": "https://www.odaily.news/en/newsflash/492821"
+  },
+  {
+   "published": "2026-06-22 03:06",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "PBoC kept the 1-year LPR at 3.0% and the 5-year at 3.5%, a 13th month at record lows (TE). Yen ~161.5/USD near its weakest since 1986 (TE 04:50); Finance Minister Katayama ready to act at any time; USD/JPY briefly above 161.9 (Odaily 16:26) and Katayama held an emergency online meeting with US Treasury officials (17:46).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560571"
+  },
+  {
+   "published": "2026-06-22 03:51",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "TE: Brent slipped below $80, giving up early gains (after Trump threatened new strikes if Hezbollah keeps attacking Israel and warned Iran against closing Hormuz again) on the Qatar-Pakistan statement of a 60-day roadmap; millions of barrels crossed Hormuz over the weekend.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560587"
+  },
+  {
+   "published": "2026-06-22 06:34",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "PAP week ahead: euro-area flash PMIs (Tue; Commerzbank sees the composite up from 48.5 to 49.5), US May PCE on Thursday (consensus 4.1% y/y, 0.5% m/m; core 3.4%, 0.3%), Ifo, Lagarde at the EP and other ECB speakers, the MNB on Tuesday with a 25bp cut expected (GS: quarterly cuts; ING: a bigger cut would be justified as the forint is at a five-year high and HU yields at early-2022 lows); about one more Fed hike is priced for later this year; Commerzbank notes dovish Simkus expects at least one more ECB hike.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/tydzien-na-rynkach-pmi-w-europie-deflator-pce-w-usa-decyzja-mnb-wystapienia-ebc"
+  },
+  {
+   "published": "2026-06-22 06:36",
+   "window_report_date": "2026-06-23",
+   "topic": "sovereign",
+   "text": "10Y closes 19 Jun (PAP/Bloomberg table): Bund 2.99%, OAT 3.74%, BTP 3.70%, Bonos 3.46%, gilt 4.84% -> OAT-Bund 75bp, BTP-Bund 71bp, Spain 47bp; Schatz 2.65%, gilt 2Y 4.25%; CZ10 4.66%, HU10 5.23%, PL10 5.45%. Live 06:33: UST10 4.49%, UST2 4.23%, JGB10 2.68% (UST 1D column = 18 Jun, Juneteenth).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-22 08:35",
+   "window_report_date": "2026-06-23",
+   "topic": "Fed",
+   "text": "Bank views after the dots: Standard Chartered sees the Fed on hold for the rest of the year and cuts from Q2 2027 (Odaily 08:35); Bank of America now forecasts 75bp of hikes in 2026 (13:36). Fed: Alan Greenspan died aged 100 (Fed release 14:45 CEST); Waller spoke on the dollar's international role (non-policy).",
+   "src": "https://www.odaily.news/en/newsflash/493022"
+  },
+  {
+   "published": "2026-06-22 11:01",
+   "window_report_date": "2026-06-23",
+   "topic": "BoE",
+   "text": "UK PM Starmer announced he will step down as PM and Labour leader, with a successor in place before September; Burnham, sworn in as an MP, is the leading candidate and Streeting backed him (PAP 17:02/21:02). TE: gilt 10Y fell to ~4.82% and then 4.81% (14:44) as a smooth transition looked likelier; markets focus on Burnham's fiscal plans and possible higher gilt issuance; GBP ~$1.32. The EU-UK summit set for 22 July will be postponed (Costa).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560744"
+  },
+  {
+   "published": "2026-06-22 13:06",
+   "window_report_date": "2026-06-23",
+   "topic": "geopolitics",
+   "text": "Vance: talks with Iran went very smoothly with a lot of progress (Odaily); Tehran agreed to IAEA inspections and unfrozen funds will buy US goods (PAP 17:02), but Iran said cooperation with the IAEA continues 'under existing procedures' (CNN, 20:00) and it made no new nuclear commitments (Baghaei, PAP 21:02); the Iranian delegation went home, technical talks started (12:16); Iran's chief negotiator (22:06): the unfreezing of $12bn has been agreed. Rubio to tour the Gulf on Tuesday.",
+   "src": "https://www.odaily.news/en/newsflash/493012"
+  },
+  {
+   "published": "2026-06-22 14:29",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "22 Jun ~14:30: UST10 4.49% (+4bp), UST30 4.93%; Bund 10Y 2.96% (-2bp); Brent August $78.86 (-2.0%), WTI August $75.0; gold $4,224 (-0.5%) (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/dzien-na-rynkach-futures-w-usa-glownie-na-plusach-negocjacje-usa-iran-w-centrum"
+  },
+  {
+   "published": "2026-06-22 15:27",
+   "window_report_date": "2026-06-23",
+   "topic": "geopolitics",
+   "text": "Bessent: after fruitful talks the Treasury issued a 60-day temporary general licence authorising Iranian oil production and sales (Odaily; PAP 17:02: sanctions on extraction, sale and transport of Iranian oil suspended for 60 days). EU gas storage 46.4% vs a 61.0% five-year average (GIE, PAP).",
+   "src": "https://www.odaily.news/en/newsflash/493067"
+  },
+  {
+   "published": "2026-06-22 15:59",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 22 Jun: 1.1456 (EUR/JPY 185.33). TE (12:09): EUR near a three-month low; markets still price at least one more ECB hike this year.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/euro-w-ebc-11456-usd-i-18533-jpy"
+  },
+  {
+   "published": "2026-06-22 16:11",
+   "window_report_date": "2026-06-23",
+   "topic": "Fed",
+   "text": "TE: UST10 rose to 4.5%, the highest in about two weeks, and UST2 above 4.2%, the highest since February 2025, as investors returned from the long weekend; at least one 25bp hike priced by year-end, ~50% for September; focus on Thursday's PCE. EZ consumer confidence -17.7 in June (-19.0 in May, -17.5 expected) (16:29).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560823"
+  },
+  {
+   "published": "2026-06-22 18:06",
+   "window_report_date": "2026-06-23",
+   "topic": "markets",
+   "text": "22 Jun European close: UST10 4.50% (+5bp), UST30 4.95%; Bund 10Y 2.95% (-3bp); Brent August $77.40 (-4.0%), WTI August $73.33; TTF EUR42.20 (+0.2%); gold $4,197 (-1.2%), silver $65.6 (PAP). Late: Brent $77.98 (-3.2%); after last week's hawkish Fed the first hike is now expected in October (PAP 23:16).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260622/dzien-na-rynkach-przewaga-wzrostow-na-gieldach-w-europie-na-poczatku-tygodnia"
+  },
+  {
+   "published": "2026-06-23 00:42",
+   "window_report_date": "2026-06-24",
+   "topic": "geopolitics",
+   "text": "Iran's parliament speaker Ghalibaf: Hormuz management will never return to its pre-war state and will follow Iran's mechanism (Odaily); Trump: Iran will agree to large-scale, long-term nuclear inspections (00:42, 13:26); Trump also said Hormuz is completely open and Iran will buy US farm goods with unfrozen funds, which Tehran says the deal does not require (PAP 17:21).",
+   "src": "https://www.odaily.news/en/newsflash/493185"
+  },
+  {
+   "published": "2026-06-23 06:35",
+   "window_report_date": "2026-06-24",
+   "topic": "sovereign",
+   "text": "10Y closes 22 Jun (PAP/Bloomberg table): Bund 2.95%, OAT 3.71%, BTP 3.66%, Bonos 3.42%, gilt 4.81% -> OAT-Bund 76bp, BTP-Bund 71bp, Spain 47bp; Schatz 2.60%, gilt 2Y 4.21%; CZ10 4.66%, HU10 5.20%, PL10 5.42%. Live 06:32: UST10 4.50%, UST2 4.21%, JGB10 2.68%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-23 08:37",
+   "window_report_date": "2026-06-24",
+   "topic": "markets",
+   "text": "A tech sell-off hit Asia: the Nikkei 225 fell 3.55% and Korean stocks nearly 10% (Odaily); it spread to Europe (TE 09:38). Brent August $76.66 (-1.6%) and gold $4,120 (-1.7%) in the morning (PAP 09:29); TE (13:46): Brent ~$77, a near three-month low, as the 60-day US waiver lets buyers take Iranian crude; Iran exported >30m barrels in the past week.",
+   "src": "https://www.odaily.news/en/newsflash/493321"
+  },
+  {
+   "published": "2026-06-23 10:00",
+   "window_report_date": "2026-06-24",
+   "topic": "EZ data",
+   "text": "Flash June PMIs: euro-area composite 49.5 (48.5 in May, 49.1 expected), services 48.9 (47.7), manufacturing 51.3 (51.6); input-cost growth the slowest since the war began (S&P Global via PAP/TE 10:27). Germany composite 48.0 (48.8; 49.9 expected), the steepest fall since December 2024, services 46.8, a 43-month low, manufacturing 50.0 (09:53); France manufacturing 50.7, services 47.4 (44.3).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561124"
+  },
+  {
+   "published": "2026-06-23 10:30",
+   "window_report_date": "2026-06-24",
+   "topic": "BoE",
+   "text": "UK flash June composite PMI 49.4 (49.7 in May; 50.6 expected), services 48.7, manufacturing 53.1 (S&P Global via TE 11:05/PAP); manufacturing order books at a six-year low (CBI, 12:20). TE (11:34): gilt 10Y fell to 4.78% for a second day, near the 4.745% two-month low of 17 Jun, as weak PMIs cut BoE hike odds.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561154"
+  },
+  {
+   "published": "2026-06-23 11:19",
+   "window_report_date": "2026-06-24",
+   "topic": "ECB",
+   "text": "TE: Lagarde said on Monday (EP hearing) that the ECB need not respond more aggressively to the Middle East conflict and inflation should return to target over the medium term; markets pared ECB hike bets but still price at least one more 25bp hike this year (deposit rate 2.5%); Bund 10Y fell to 2.92% near the 17 March low, ~2.91% by 12:56; EUR below $1.14, near June-2025 lows (12-month low by 13:51).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561157"
+  },
+  {
+   "published": "2026-06-23 14:00",
+   "window_report_date": "2026-06-24",
+   "topic": "MNB",
+   "text": "MNB cut its base rate 25bp to 6.00%, as expected, resuming easing as inflation fell to 1.8% in May helped by the forint's >8% gain against the euro this year (TE 14:16; PAP 17:21).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561193"
+  },
+  {
+   "published": "2026-06-23 15:45",
+   "window_report_date": "2026-06-24",
+   "topic": "US data",
+   "text": "US flash June S&P Global composite PMI 52.2 (51.5 in May; 52.1 expected), the fastest growth since January; manufacturing PMI 55.7, the highest since May 2022, on front-running of orders; factory employment at a six-year low (TE 15:50-15:55; Odaily 16:02); Richmond Fed manufacturing and services indices fell (16:04-16:17).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561209"
+  },
+  {
+   "published": "2026-06-23 15:57",
+   "window_report_date": "2026-06-24",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 23 Jun: 1.1392 (EUR/JPY 184.02).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/euro-w-ebc-11392-usd-i-18402-jpy"
+  },
+  {
+   "published": "2026-06-23 17:21",
+   "window_report_date": "2026-06-24",
+   "topic": "geopolitics",
+   "text": "Oman and Iran will set up a joint commission to manage Hormuz shipping (joint statement in Muscat); Rubio (Abu Dhabi): there will be no fees for ships transiting Hormuz, with the backing of all regional states; Denmark joins the international Hormuz mission; Lebanon starts new negotiations with Israel in Washington; Fars (Odaily 13:34): only a set number of ships may cross per day (PAP).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/skrot-wiadomosci-wtorek-23-czerwca-1700"
+  },
+  {
+   "published": "2026-06-23 17:21",
+   "window_report_date": "2026-06-24",
+   "topic": "sovereign",
+   "text": "CEE/EU politics: Lithuania's government resigned after a coalition change, with Social Democrat leader Sinkevicius to become PM; Hungary's PM Magyar hosted the first V4 summit in two years and said Hungary will have a new president by 20 August (PAP 17:21/21:02).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/skrot-wiadomosci-wtorek-23-czerwca-1700"
+  },
+  {
+   "published": "2026-06-23 17:22",
+   "window_report_date": "2026-06-24",
+   "topic": "Fed",
+   "text": "TE: DXY rose for a fourth day to 101.3, the highest since April 2025; traders assign ~68% to a Fed hike in September, up from 29% a week ago (TE 09:49: markets increasingly expect 50bp of hikes by year-end); UST10 ~4.48% as the PCE report nears.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561235"
+  },
+  {
+   "published": "2026-06-23 18:06",
+   "window_report_date": "2026-06-24",
+   "topic": "markets",
+   "text": "23 Jun European close: UST10 4.48% (-3bp), UST30 4.93%; Bund 10Y 2.92% (-3bp); Brent August -1.3% (PAP's $77.88 level repeats its 13:55 print; TE 13:46: ~$77, a near three-month low), WTI August $73.03; TTF EUR41.90; gold $4,151 (-1.2%), silver $62.2 (-5.3%); European indices fell on an IT sell-off (PAP). Late: Brent $77.09, WTI $73.31 as Wall Street fell (PAP 22:20); the US Senate voted to bar further war on Iran without congressional approval (Odaily 21:44).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260623/dzien-na-rynkach-spadki-indeksow-w-europie-wyprzedaz-spolek-sektora-it"
+  },
+  {
+   "published": "2026-06-24 01:31",
+   "window_report_date": "2026-06-25",
+   "topic": "markets",
+   "text": "TE: Brent fell toward $76, near pre-war levels, as more tankers transit Hormuz; the IMO received security assurances that could let hundreds of vessels leave the Gulf; the IEA says UAE exports rebounded to ~85% of pre-war levels in early June; Brent at a 16-week low (03:04). Wall Street on 23 Jun: S&P 500 -1.4%, Nasdaq -2.2%, Micron -13% (Odaily 03:00).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561284"
+  },
+  {
+   "published": "2026-06-24 02:20",
+   "window_report_date": "2026-06-25",
+   "topic": "markets",
+   "text": "BoJ June summary of opinions: broad support for further hikes if the outlook holds; some see the policy rate well below a ~2% neutral rate and favour gradual hikes every few months; one member warned of demand risks (TE). Yen near a four-decade low (04:26).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561291"
+  },
+  {
+   "published": "2026-06-24 06:34",
+   "window_report_date": "2026-06-25",
+   "topic": "sovereign",
+   "text": "10Y closes 23 Jun (PAP/Bloomberg table): Bund 2.92%, OAT 3.68%, BTP 3.64%, Bonos 3.39%, gilt 4.75% -> OAT-Bund 76bp, BTP-Bund 72bp, Spain 47bp; Schatz 2.58%, gilt 2Y 4.17%; CZ10 4.65%, HU10 5.21%, PL10 5.42%. Live 06:30: UST10 4.49%, UST2 4.19%, JGB10 2.67%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-24 09:11",
+   "window_report_date": "2026-06-25",
+   "topic": "CNB",
+   "text": "Czech June business confidence 99.8 (100.0 in May), a five-month low; consumer confidence improved (CZSO via TE 09:11-09:25).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561403"
+  },
+  {
+   "published": "2026-06-24 10:00",
+   "window_report_date": "2026-06-25",
+   "topic": "EZ data",
+   "text": "German Ifo June 85.6 (85.0 revised; 85.5 expected), a three-month high; current assessment 87.0, expectations 84.1 (85 expected); Fuest: firms hope geopolitical tensions ease (TE 10:13; PAP).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561437"
+  },
+  {
+   "published": "2026-06-24 10:05",
+   "window_report_date": "2026-06-25",
+   "topic": "BoE",
+   "text": "TE: gilt 10Y fell to 4.736%, a third daily fall to an over two-month low, on weak PMIs and less BoE hike risk; political uncertainty eased after Starmer's resignation, with Burnham the leading candidate who could take office as early as 17 July if unchallenged.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561433"
+  },
+  {
+   "published": "2026-06-24 13:18",
+   "window_report_date": "2026-06-25",
+   "topic": "markets",
+   "text": "JPMorgan cut its Brent outlook: $86 average in Q3 2026 and $80 in Q4 (Odaily). Brent's front spread flipped to contango for the first time since February on supply-surplus expectations (16:07). Trump: Iran told the US it is not charging Hormuz tolls (13:39); Rubio: technical talks resume in Switzerland at the end of June (19:00).",
+   "src": "https://www.odaily.news/en/newsflash/493828"
+  },
+  {
+   "published": "2026-06-24 14:53",
+   "window_report_date": "2026-06-25",
+   "topic": "Fed",
+   "text": "TE: UST10 fell for a second day to 4.45% as Brent returned to pre-war levels, but traders assign ~68% to a September Fed hike (29% a week earlier) and the dollar keeps strengthening (15:18); gold fell below $4,000, a 31-week low (14:25-15:28), silver to December lows.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561536"
+  },
+  {
+   "published": "2026-06-24 16:00",
+   "window_report_date": "2026-06-25",
+   "topic": "US data",
+   "text": "US May new home sales 580k (-7.3%; 640k expected), supply 10.3 months, the highest since 2009 (TE 16:07); EIA crude stocks -6.1mb to 412.1mb, Cushing ~19mb (lowest since 2014), total stocks incl. SPR the lowest since 1984 (16:36); Q1 current-account deficit wider than expected; MBA applications +1%.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561577"
+  },
+  {
+   "published": "2026-06-24 16:06",
+   "window_report_date": "2026-06-25",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 24 Jun: 1.1340 (EUR/JPY 183.35).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/euro-w-ebc-11340-usd-i-18335-jpy"
+  },
+  {
+   "published": "2026-06-24 17:02",
+   "window_report_date": "2026-06-25",
+   "topic": "geopolitics",
+   "text": "Pakistan: US-Iran technical talks resume next week; Iran's deputy FM Gharibabadi: access to nuclear sites and material only under a final deal and after practical steps to lift US sanctions; IAEA's Grossi hinted at inspections; Ghalibaf called the MoU 'an act of American defeat' (PAP); FT (Odaily 11:11): Gulf states negotiate a new security pact with Iran.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260624/skrot-wiadomosci-sroda-24-czerwca-1700"
+  },
+  {
+   "published": "2026-06-24 17:37",
+   "window_report_date": "2026-06-25",
+   "topic": "markets",
+   "text": "TE: Brent fell below $74, the lowest since late February (pre-war levels), ~40% below its wartime peak; WTI below $70 (17:35). 24 Jun European close: UST10 4.40% (-9bp), UST30 4.85%, 2s10s +26bp; Bund 10Y 2.87% (-5bp); Brent August $73.73 (-4.4%), WTI $70.11; gold $4,023 (-3.0%), silver $59.0 (PAP 18:08; its TTF print repeats 23 Jun and is not used).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561606"
+  },
+  {
+   "published": "2026-06-24 22:00",
+   "window_report_date": "2026-06-25",
+   "topic": "Fed",
+   "text": "Fed stress test: all large banks remain well positioned to weather a severe recession (Fed release 4:00 pm ET). Micron Q3 FY26 revenue $41.5bn vs $35.4bn expected and a $50bn Q4 guide; shares +14% after hours, lifting chip stocks (Odaily 22:08-22:29). Late: Brent $73.23 (-5.0%), WTI $69.93 (PAP 22:20).",
+   "src": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm"
+  },
+  {
+   "published": "2026-06-25 00:21",
+   "window_report_date": "2026-06-26",
+   "topic": "Fed",
+   "text": "CME FedWatch: July hold 65.8%, +25bp 34.2%; by September hold 33.6%, +25bp 49.7%, +50bp 16.7% (Jin10 via Odaily; unchanged before PCE at 14:19). Danske Bank (07:45) expects Fed hikes in December 2026 and March 2027 to 4.00-4.25%.",
+   "src": "https://www.odaily.news/en/newsflash/494040"
+  },
+  {
+   "published": "2026-06-25 01:30",
+   "window_report_date": "2026-06-26",
+   "topic": "markets",
+   "text": "TE: Brent below $73, a fourth daily fall that erased all gains since the war began, with more tankers crossing Hormuz with transponders on and a surge of crude offers; US Energy Secretary Wright (PAP 17:02): Hormuz tanker traffic is back to pre-war levels, 72 ships with 20m barrels in a day. Gold below $4,000, near eight-month lows (01:53).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561655"
+  },
+  {
+   "published": "2026-06-25 03:59",
+   "window_report_date": "2026-06-26",
+   "topic": "geopolitics",
+   "text": "IRGC: vessels using Hormuz routes not approved by Tehran will be targeted; ships must use Iran's designated lanes (Odaily; Reuters via PAP). WSJ (16:49): Iran proposed charging Hormuz transit fees jointly with Gulf neighbours, estimating $40bn a year. Rubio (Manama, 12:37): the US wants a deal but not at any cost; US-GCC statement: Lebanon should not be tied to other talks, while Tehran says Israel's withdrawal is a condition (18:45).",
+   "src": "https://www.odaily.news/en/newsflash/494106"
+  },
+  {
+   "published": "2026-06-25 04:00",
+   "window_report_date": "2026-06-26",
+   "topic": "markets",
+   "text": "BoJ board member Tamura: raise rates by 25bp every few months toward a ~2% neutral rate, faster if inflation risks intensify (TE). PBoC to launch overnight reverse repo operations (04:46).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561693"
+  },
+  {
+   "published": "2026-06-25 06:34",
+   "window_report_date": "2026-06-26",
+   "topic": "sovereign",
+   "text": "10Y closes 24 Jun (PAP/Bloomberg table): Bund 2.87%, OAT 3.63%, BTP 3.59%, Bonos 3.34%, gilt 4.68% -> OAT-Bund 76bp, BTP-Bund 72bp, Spain 47bp; Schatz 2.55%, gilt 2Y 4.13%; CZ10 4.61%, HU10 5.12%, PL10 5.39%. Live 06:31: UST10 4.41%, UST2 4.14%, JGB10 2.64%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-25 09:59",
+   "window_report_date": "2026-06-26",
+   "topic": "MNB",
+   "text": "TE: HU10 fell to 5.17%, near its lowest since February 2022, on support for PM Magyar's reforms (over EUR16bn of frozen EU funds secured, euro adoption pledged by 2030); Governor Varga signalled two more cuts this summer after the 23 Jun cut to 6%. Hungary's unemployment 4.3% in March-May (08:41).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561813"
+  },
+  {
+   "published": "2026-06-25 14:30",
+   "window_report_date": "2026-06-26",
+   "topic": "US data",
+   "text": "US May PCE prices +0.4% m/m (0.5% expected), 4.1% y/y (3.8% in April), the highest since April 2023; core +0.3% m/m, 3.4% y/y, the highest since October 2023, both as expected; spending and income beat (BEA via TE 14:39-14:56; PAP). Q1 GDP third estimate revised up to 2.1% (1.6%); initial claims 215k (225k expected); durable goods -4.5% (-5% expected) (14:33-14:38).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561877"
+  },
+  {
+   "published": "2026-06-25 15:04",
+   "window_report_date": "2026-06-26",
+   "topic": "Fed",
+   "text": "TE: UST10 fell below 4.40%, a seven-week low, as PCE undershot and oil fell; rate futures trimmed bets on more than one Fed hike this year, though a hike is still expected; the dollar rally paused (15:24). Supreme Court ruling in the Fed Governor Cook case expected next week (market sources via Odaily 16:42).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561900"
+  },
+  {
+   "published": "2026-06-25 16:06",
+   "window_report_date": "2026-06-26",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 25 Jun: 1.1342 (EUR/JPY 183.57). EU gas storage 47.2% vs a 61.8% five-year average (GIE, PAP 17:02).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/euro-w-ebc-11342-usd-i-18357-jpy"
+  },
+  {
+   "published": "2026-06-25 17:02",
+   "window_report_date": "2026-06-26",
+   "topic": "geopolitics",
+   "text": "Tariffs: EU member states (Council, Luxembourg) gave final approval to the regulation implementing the 2025 EU-US tariff commitments, cutting or removing duties on many US goods incl. farm products, ahead of Trump's 4 July deadline (PAP). Bloomberg: Iraq may consider leaving OPEC unless granted a higher quota.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260625/skrot-wiadomosci-czwartek-25-czerwca-1700"
+  },
+  {
+   "published": "2026-06-25 18:06",
+   "window_report_date": "2026-06-26",
+   "topic": "markets",
+   "text": "TE: Brent rose ~2% to $74.7 after UKMTO said a cargo ship was hit by an unknown projectile off Oman, and several ships turned back; Saudi tankers headed to Ras Tanura to resume Gulf exports for the first time since March. 25 Jun European close: UST10 4.38% (-1bp); Bund 10Y 2.86% (-1bp); Brent August $74.50 (+1.0%), WTI $71.35; TTF EUR40.30 (-1.4%); gold $4,030 (PAP 18:07). Late: Brent $75.39 (+2.2%) (PAP 22:20).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561972"
+  },
+  {
+   "published": "2026-06-26 01:43",
+   "window_report_date": "2026-06-29",
+   "topic": "markets",
+   "text": "TE: Brent fell back below $74 despite Thursday's projectile strike on a ship off Oman, as Gulf flows through Hormuz reached their fastest pace since the war began; Tokyo June core CPI at a three-month high (01:36); yen near a 40-year low (05:02). The IMO suspended the evacuation of hundreds of ships stranded in the Gulf after the attack; Iran's strait authority: ships off its designated routes have no safe-transit guarantee (PAP 17:28).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562019"
+  },
+  {
+   "published": "2026-06-26 07:36",
+   "window_report_date": "2026-06-29",
+   "topic": "sovereign",
+   "text": "PAP/Bloomberg table 07:36 (unstamped; EU rows = 25 Jun closes): Bund 2.86%, OAT 3.63%, BTP 3.59%, Bonos 3.34%, gilt 4.70% -> OAT-Bund 77bp, BTP-Bund 73bp, Spain 48bp; Schatz 2.53%, gilt 2Y 4.12%; CZ10 4.57%, HU10 5.09%, PL10 5.34%; UST10 4.37%, UST2 4.09%, JGB10 2.61%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-26 10:00",
+   "window_report_date": "2026-06-29",
+   "topic": "ECB",
+   "text": "ECB consumer expectations survey: median 12-month inflation expectations fell to 3.5% in May from 4.0% (the highest since 2023 in March-April); three-year 2.9% and five-year 2.4% unchanged (TE 10:10). TE (17:53): expectations that the ECB may hold off another hike this year grew as oil fell further.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562172"
+  },
+  {
+   "published": "2026-06-26 12:48",
+   "window_report_date": "2026-06-29",
+   "topic": "markets",
+   "text": "TE: Brent below $73, the lowest since 27 February, as Hormuz transits accelerated and Gulf exports recovered to ~75% of pre-war levels; Saudi Arabia began loading at Ras Tanura; Trump says the strait remains open after the projectile hit the container ship Ever Lovely. Barclays cut its 2026 Brent forecast to $96 and 2027 to $85 (Odaily 15:45). WTI hit a 17-week low of $68.86 (16:44).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562228"
+  },
+  {
+   "published": "2026-06-26 15:22",
+   "window_report_date": "2026-06-29",
+   "topic": "Fed",
+   "text": "CME FedWatch: 42% for one 2026 hike, while odds of a second fell to 28% from 34% a week earlier as inflation expectations cooled; UST yields and the dollar fell (Jin10 via Odaily). TE (16:25): UST10 4.39%, -7bp on the week; ~62% for a first hike in September. Warsh named Fed economists Covitz and Engstrom as advisers (14:51).",
+   "src": "https://www.odaily.news/en/newsflash/494918"
+  },
+  {
+   "published": "2026-06-26 16:00",
+   "window_report_date": "2026-06-29",
+   "topic": "US data",
+   "text": "UMich June sentiment revised up to 49.5 (prelim 48.9; 44.8 in May, a record low), expectations 50.7; 1-year inflation expectations 4.6% (4.8% in May), 5-10-year 3.3% (TE 16:09-16:10). May goods trade deficit at a 14-month high; wholesale inventories up more than expected (14:35-14:44).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562277"
+  },
+  {
+   "published": "2026-06-26 16:07",
+   "window_report_date": "2026-06-29",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 26 Jun: 1.1401 (EUR/JPY 184.30).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/euro-w-ebc-11401-usd-i-18430-jpy"
+  },
+  {
+   "published": "2026-06-26 17:47",
+   "window_report_date": "2026-06-29",
+   "topic": "Fed",
+   "text": "Kashkari: worried that inflation reflects broader pressures, not just the Middle East; nearly half of last week's dots expect at least one more hike this year (Jin10 via Odaily).",
+   "src": "https://www.odaily.news/en/newsflash/494973"
+  },
+  {
+   "published": "2026-06-26 17:53",
+   "window_report_date": "2026-06-29",
+   "topic": "geopolitics",
+   "text": "Trump: Iran launched at least four one-way attack drones at ships in Hormuz, a 'foolish violation' of the ceasefire (Odaily); a US official said talks are expected to continue (18:48) and the next round was set for 28-29 Jun (Al Arabiya, 15:00); Iran and the US set up a Hormuz hotline (Press TV, PAP 21:02); WSJ: the IRGC attacked a Singapore-flagged cargo ship (PAP 17:28). Israel, Lebanon and the US signed a framework agreement in Washington (PAP 21:02).",
+   "src": "https://www.odaily.news/en/newsflash/494977"
+  },
+  {
+   "published": "2026-06-26 18:20",
+   "window_report_date": "2026-06-29",
+   "topic": "markets",
+   "text": "26 Jun European close: UST10 4.37% (-2bp), Bund 10Y 2.85% (-1bp); EUR/USD 1.140; Brent August $71.9 (-4.5%), WTI August $68.9 (-4.1%), ~8% weekly falls; gold $4,109 (+1.5%); European stocks fell on AI-sector worries (PAP). Late: Brent $72.07 (-4.2%), WTI $69.42; Nasdaq down a fifth day (PAP 22:23).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260626/dzien-na-rynkach-wyrazne-spadki-na-gieldach-w-europie-obawy-o-sektor-ai"
+  },
+  {
+   "published": "2026-06-26 18:26",
+   "window_report_date": "2026-06-29",
+   "topic": "geopolitics",
+   "text": "Tariffs: Trump said any country imposing a digital services tax on US companies will immediately face a 100% tariff on all its exports to the US, regardless of earlier deals, citing European plans (Odaily; PAP 21:02); the European Commission replied that the EU and its members have a sovereign right to regulate and the taxes are non-discriminatory (PAP weekend digest).",
+   "src": "https://www.odaily.news/en/newsflash/494982"
+  },
+  {
+   "published": "2026-06-26 23:01",
+   "window_report_date": "2026-06-29",
+   "topic": "geopolitics",
+   "text": "CENTCOM: on 26 Jun US jets struck Iranian missile and drone storage sites and coastal radars in response to Iran's 25 Jun one-way drone attack on the M/V Ever Lovely, a ceasefire violation (Odaily); NBC: the Pentagon delayed the announcement until after the market close (05:40). Vance (27 Jun 03:11): violence will meet military retaliation. JMIC raised the Hormuz threat level (27 Jun 12:38).",
+   "src": "https://www.odaily.news/en/newsflash/495021"
+  },
+  {
+   "published": "2026-06-28 00:12",
+   "window_report_date": "2026-06-29",
+   "topic": "geopolitics",
+   "text": "CENTCOM: further strikes on multiple Iranian targets on 27 Jun; Trump: Iran repeatedly violated the ceasefire and 'will cease to exist' if the US finishes the job militarily (01:27); Iran fired missiles and drones at Bahrain and Kuwait, with no US casualties reported (05:03); the IRGC threatened a complete halt of talks and tougher measures in Hormuz (02:47; PAP 28 Jun 21:03); Araghchi (11:03): Hormuz will be fully under Iranian control within 30 days.",
+   "src": "https://www.odaily.news/en/newsflash/495243"
+  },
+  {
+   "published": "2026-06-28 22:35",
+   "window_report_date": "2026-06-29",
+   "topic": "geopolitics",
+   "text": "A senior US official: the US and Iran agreed to stop attacking each other and will meet in Doha on Tuesday (30 Jun) to resolve the Hormuz dispute; the planned Switzerland round on the nuclear file was refocused on the strait (Odaily). Israel's army is cutting its forces in southern Lebanon (27 Jun); Hezbollah rejected the US-Israel-Lebanon framework (27 Jun).",
+   "src": "https://www.odaily.news/en/newsflash/495385"
+  },
+  {
+   "published": "2026-06-29 01:22",
+   "window_report_date": "2026-06-30",
+   "topic": "markets",
+   "text": "TE: Brent climbed above $72, recovering modestly from four-month lows after the weekend's tit-for-tat US-Iran attacks (Iran hit a container ship on Thursday, US strikes followed on Friday, and more on Saturday after Tehran struck a vessel carrying Qatari oil); the sides agreed to halt strikes and Axios says they meet in Doha on Tuesday; shipowners stay cautious.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562349"
+  },
+  {
+   "published": "2026-06-29 06:31",
+   "window_report_date": "2026-06-30",
+   "topic": "markets",
+   "text": "PAP week ahead: US June payrolls on Thursday 2 Jul (Bloomberg consensus +220k, unemployment 4.3%, wages 3.5% y/y); euro-area flash June HICP expected at 3.0% (3.2% in May), core 2.6%; final PMIs; ECB Sintra Forum 29 Jun-1 Jul with a Wednesday panel of Lagarde, Warsh, Bailey and Macklem. BofA cut its 2026 euro-area HICP forecast to 2.6% and expects one more ECB hike, in September, then cuts in 2027; ING: a ~110k payrolls print would keep Fed hikes priced.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/tydzien-na-rynkach-payrolls-w-usa-pmi-i-inflacja-z-eurolandu-za-vi-sintra-forum"
+  },
+  {
+   "published": "2026-06-29 06:37",
+   "window_report_date": "2026-06-30",
+   "topic": "sovereign",
+   "text": "10Y closes 26 Jun (PAP/Bloomberg table): Bund 2.85%, OAT 3.64%, BTP 3.59%, Bonos 3.34%, gilt 4.73% -> OAT-Bund 79bp, BTP-Bund 74bp, Spain 49bp; Schatz 2.52%, gilt 2Y 4.13%; CZ10 4.58%, HU10 5.03%, PL10 5.28%. Live 06:35: UST10 4.38%, UST2 4.10%, JGB10 2.65%.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/rentownosci-obligacji-wybranych-panstw-tabela"
+  },
+  {
+   "published": "2026-06-29 09:00",
+   "window_report_date": "2026-06-30",
+   "topic": "EZ data",
+   "text": "Spain June flash CPI 3.2% y/y, unchanged and as expected; core 2.9% (3.0%); HICP 3.6%; +0.6% m/m (INE via TE 09:14).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562466"
+  },
+  {
+   "published": "2026-06-29 09:32",
+   "window_report_date": "2026-06-30",
+   "topic": "ECB",
+   "text": "TE: Bund 10Y at 2.85% at end-June, near its lowest since early March, with oil near $70; since Hormuz reopened, markets have cut bets on the scale of ECB and BoE hikes; EUR back above $1.14 from last week's one-year lows ahead of Sintra (09:39); euro-area household credit demand the strongest since Feb 2023 (10:11).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562479"
+  },
+  {
+   "published": "2026-06-29 11:00",
+   "window_report_date": "2026-06-30",
+   "topic": "BoE",
+   "text": "UK May mortgage approvals 56.2k (62.9k expected), the lowest since December 2023; consumer credit GBP 1.66bn (1.8bn expected) (BoE via TE 10:56-11:00). Burnham, the sole candidate to succeed Starmer, pledged fiscal discipline while devolving fiscal powers; gilt 10Y ~4.73%, near two-month lows (TE 13:47); markets have cut BoE hike bets since Hormuz reopened.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562519"
+  },
+  {
+   "published": "2026-06-29 11:00",
+   "window_report_date": "2026-06-30",
+   "topic": "EZ data",
+   "text": "Euro-area June ESI 95.0 (94.3 expected), a second monthly rise from April's five-year low; consumer price expectations fell to 34.0 from 40.4 and firms' selling-price expectations to 22.3 from 26.7 (EC via TE 11:12).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562531"
+  },
+  {
+   "published": "2026-06-29 13:33",
+   "window_report_date": "2026-06-30",
+   "topic": "geopolitics",
+   "text": "Trump: Iran asked for a meeting, to be held on Tuesday in Doha, with Witkoff and Kushner attending (Odaily 13:33/14:25); Iran's embassy in Doha said the talks are not yet arranged (18:32); Iran's military allows ships only via the route south of Larak Island (13:37) and only Iran will demine Hormuz (deputy FM, PAP 21:06), while Macron and Oman's sultan called for unrestricted navigation; Pezeshkian: $6bn of $12bn frozen in Qatar will be released after oil sanctions are lifted (PAP 17:06).",
+   "src": "https://www.odaily.news/en/newsflash/495669"
+  },
+  {
+   "published": "2026-06-29 14:11",
+   "window_report_date": "2026-06-30",
+   "topic": "Fed",
+   "text": "TE: UST10 below 4.38%, the lowest since early May, as lower energy prices damp inflation risks; DXY eased to 101.2 from a 14-month high of 101.8 on 24 Jun as markets scaled back the size of expected Fed hikes (15:10); USD/JPY 161.95, the weakest yen since December 1986 (15:58). BofA sees June payrolls +110k and a strong report lifting hike bets (Odaily 15:42).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562592"
+  },
+  {
+   "published": "2026-06-29 16:17",
+   "window_report_date": "2026-06-30",
+   "topic": "Fed",
+   "text": "US Supreme Court rejected, for now, Trump's bid to remove Fed Governor Lisa Cook, sending the case back to the lower court on procedural grounds (Jin10 via Odaily; Bloomberg via PAP 21:06: a boost to Fed independence); Trump (17:26) said he will take 'appropriate action' on Cook and hailed the Slaughter ruling on removing executive officials (16:54).",
+   "src": "https://www.odaily.news/en/newsflash/495772"
+  },
+  {
+   "published": "2026-06-29 17:06",
+   "window_report_date": "2026-06-30",
+   "topic": "markets",
+   "text": "ECB EUR/USD reference rate 29 Jun: 1.1406 (EUR/JPY 184.62) (PAP digest). EU trade commissioner Sefcovic and China's commerce minister Wang Wentao started consultations on the EU's trade deficit with China; China blacklisted four Japanese defence research institutes (PAP 21:06).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/skrot-wiadomosci-poniedzialek-29-czerwca-1700"
+  },
+  {
+   "published": "2026-06-29 18:13",
+   "window_report_date": "2026-06-30",
+   "topic": "markets",
+   "text": "29 Jun European close: UST10 4.38% (+1bp), UST30 4.85%; Bund 10Y 2.86% (+1bp); Brent August $73.07 (+1.5%), WTI August $70.55 (+1.9%); TTF EUR42.60 (+4.5%); gold $4,036 (-1.5%), silver $57.8 (PAP); TE (16:19): Brent back above $73 as Hormuz transits fell after the weekend attacks. Late: Brent $72.93, WTI $70.55; the Dow closed above 52,000 for the first time (PAP 22:27).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260629/dzien-na-rynkach-indeksy-w-europie-glownie-na-minusach-na-poczatku-tygodnia"
+  }
+ ],
+ "fed_pricing": [
+  {
+   "published": "2026-06-15 00:24",
+   "text": "CME FedWatch: 98.5% for a hold on 17 Jun (Odaily); 10Y futures up as the market trims hike bets (Jin10).",
+   "src": "https://www.odaily.news/en/newsflash/490444",
+   "window_report_date": "2026-06-16"
+  },
+  {
+   "published": "2026-06-15 13:12",
+   "text": "Swaps: ~70% for a 25bp hike by December, down from ~80% on Friday (PAP, Bloomberg); TE (18:43): traders slightly favour one hike this year.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260615/dzien-na-rynkach-futures-w-usa-i-indeksy-w-europie-rosna-wobec-oczekiwanego-w",
+   "window_report_date": "2026-06-16"
+  },
+  {
+   "published": "2026-06-16 09:31",
+   "text": "Swaps price less than 80% for a Fed hike by December (PAP, Bloomberg).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260616/dzien-na-rynkach-w-europie-na-gieldach-indeksy-ida-w-gore",
+   "window_report_date": "2026-06-17"
+  },
+  {
+   "published": "2026-06-16 12:53",
+   "text": "Markets imply ~56% for a hike by December as lower oil eases inflation fears; hold expected on 17 Jun (TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559335",
+   "window_report_date": "2026-06-17"
+  },
+  {
+   "published": "2026-06-17 14:45",
+   "text": "CME FedWatch: hold seen for most of the year; almost 43% for a 25bp hike in December (PAP, pre-FOMC).",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260617/dzien-na-rynkach-przewaga-wzrostow-futures-w-usa-rynki-czekaja-na-fed",
+   "window_report_date": "2026-06-18"
+  },
+  {
+   "published": "2026-06-17 20:05",
+   "text": "After the FOMC dots (median 3.8% end-2026), the market fully prices a 25bp hike by year-end (Jin10 via Odaily; TE 20:25).",
+   "src": "https://www.odaily.news/en/newsflash/491808",
+   "window_report_date": "2026-06-18"
+  },
+  {
+   "published": "2026-06-18 14:07",
+   "text": "CME FedWatch: ~50% for a 25bp hike in September (PAP, after the FOMC); a year-end hike was fully priced after the dots on 17 Jun.",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260618/dzien-na-rynkach-kontrakty-w-usa-rosna-po-podpisaniu-umowy-usa-iran",
+   "window_report_date": "2026-06-19"
+  },
+  {
+   "published": "2026-06-19 15:56",
+   "text": "Market pricing fully discounts a 25bp Fed hike in September (Jin10 via Odaily); TE (10:32): at least 25bp of hikes priced this year.",
+   "src": "https://www.odaily.news/en/newsflash/492381",
+   "window_report_date": "2026-06-22"
+  },
+  {
+   "published": "2026-06-21 07:02",
+   "text": "Deutsche Bank now expects 50bp of Fed hikes in 2026 to ~4.1% (Odaily).",
+   "src": "https://www.odaily.news/en/newsflash/492699",
+   "window_report_date": "2026-06-22"
+  },
+  {
+   "published": "2026-06-22 16:11",
+   "text": "At least one 25bp hike priced by year-end, ~50% for September (TE); UST2 above 4.2%, highest since Feb 2025. PAP (23:16): first hike now expected in October.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560823",
+   "window_report_date": "2026-06-23"
+  },
+  {
+   "published": "2026-06-23 09:49",
+   "text": "Markets increasingly expect 50bp of Fed hikes by year-end (TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561082",
+   "window_report_date": "2026-06-24"
+  },
+  {
+   "published": "2026-06-23 17:22",
+   "text": "~68% for a Fed hike in September, up from 29% a week ago; DXY 101.3, the highest since April 2025 (TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561235",
+   "window_report_date": "2026-06-24"
+  },
+  {
+   "published": "2026-06-24 14:53",
+   "text": "~68% for a Fed hike in September, up from 29% a week earlier (TE); UST10 4.45% as oil returns to pre-war levels.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561536",
+   "window_report_date": "2026-06-25"
+  },
+  {
+   "published": "2026-06-25 00:21",
+   "text": "CME FedWatch: July hold 65.8%/+25bp 34.2%; by September hold 33.6%, +25bp 49.7%, +50bp 16.7% (Jin10 via Odaily).",
+   "src": "https://www.odaily.news/en/newsflash/494040",
+   "window_report_date": "2026-06-26"
+  },
+  {
+   "published": "2026-06-25 15:04",
+   "text": "After a softer-than-feared May PCE (core 3.4%), futures trimmed bets on more than one 2026 hike; a hike still expected (TE).",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561900",
+   "window_report_date": "2026-06-26"
+  },
+  {
+   "published": "2026-06-26 15:22",
+   "text": "CME FedWatch: 42% for one 2026 hike; odds of a second fell to 28% from 34% a week earlier (Jin10 via Odaily); TE: ~62% for a first move in September.",
+   "src": "https://www.odaily.news/en/newsflash/494918",
+   "window_report_date": "2026-06-29"
+  },
+  {
+   "published": "2026-06-29 15:10",
+   "text": "Markets scaled back the magnitude of expected Fed hikes as oil fell; DXY 101.2 from a 14-month high (TE); UST10 below 4.38%, lowest since early May.",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562597",
+   "window_report_date": "2026-06-30"
+  }
+ ],
+ "fed_pricing_by_R": {
+  "2026-06-16": "Swaps ~70% for a 25bp hike by December, down from ~80% on Friday; FedWatch 98.5% for a hold on 17 Jun; PAP week ahead: ~60% for a hike by October (15 Jun).",
+  "2026-06-17": "~56% for a hike by December as oil falls; swaps below 80% (TE/PAP, 16 Jun); a hold expected at Warsh's first FOMC.",
+  "2026-06-18": "FOMC held 12-0 and the median dot rose to 3.8% for end-2026 (9 of 18 see hikes); a year-end hike became fully priced; FedWatch ~43% for December before it (17 Jun).",
+  "2026-06-19": "FedWatch ~50% for a September hike; a year-end hike fully priced after the hawkish dots; DXY at a one-year high (PAP/TE, 18 Jun).",
+  "2026-06-22": "A September hike fully priced (Jin10, 19 Jun); TE: at least 25bp this year; Deutsche Bank now sees 50bp of 2026 hikes (21 Jun).",
+  "2026-06-23": "At least one 25bp hike priced by year-end, ~50% for September; UST2 above 4.2%, the highest since Feb 2025 (TE, 22 Jun).",
+  "2026-06-24": "~68% for a September hike, up from 29% a week earlier; up to 50bp by year-end seen (TE, 23 Jun); DXY 101.3.",
+  "2026-06-25": "~68% for September (TE, 24 Jun) as gold fell below $4,000; UST10 4.40-4.45% with Brent back to pre-war levels.",
+  "2026-06-26": "FedWatch: July +25bp 34%, by September ~66% for at least one hike (25 Jun); after PCE 4.1%/core 3.4% futures trimmed bets on more than one hike.",
+  "2026-06-29": "FedWatch 42% for one 2026 hike, 28% for a second (34% a week earlier); TE ~62% for September (26 Jun); Kashkari warns of broad inflation.",
+  "2026-06-30": "Markets scaled back the size of expected hikes as oil fell; DXY 101.2, off its 14-month high; UST10 below 4.38% (TE, 29 Jun)."
+ },
+ "ecb_pricing": {
+  "2026-06-16": "~30bp of further hikes priced this year (one hike), down from nearly two before the 11 Jun hike to DFR 2.25% (TE, 15 Jun).",
+  "2026-06-17": "One more hike (~30bp) priced (TE, 15 Jun; nothing new quantified on 16 Jun); Bund 10Y at a nine-week low of 2.93% (TE, 16 Jun).",
+  "2026-06-18": "Less than 30bp of further hikes priced this year as oil fell (TE, 17 Jun); Simkus expects at least one more hike; May HICP 3.2% confirmed.",
+  "2026-06-19": "At least one more hike priced before year-end (TE, 18 Jun) as EUR/USD fell below 1.15 after the Fed dots.",
+  "2026-06-22": "At least one more hike this year (TE, 19 Jun); Wunsch: possibly as soon as July if inflation broadens; Lane: economy can absorb higher rates.",
+  "2026-06-23": "At least one more ECB hike still priced this year (TE, 22 Jun).",
+  "2026-06-24": "Bets pared after Lagarde said no need to respond more aggressively, but at least one more 25bp hike (DFR 2.5%) still priced (TE, 23 Jun).",
+  "2026-06-25": "No new quantified pricing on 24 Jun; latest at least one more hike this year (TE, 23 Jun); Bund 10Y 2.87%.",
+  "2026-06-26": "No new quantified pricing on 25 Jun; latest at least one more hike this year (TE, 23 Jun); Bund 10Y ~2.86%.",
+  "2026-06-29": "Growing expectations the ECB may skip another 2026 hike as oil fell (TE, 26 Jun); consumers' 12-month inflation expectations down to 3.5%.",
+  "2026-06-30": "Markets cut bets on the scale of ECB hikes since Hormuz reopened (TE, 29 Jun); BofA sees one more hike in September."
+ },
+ "boe_pricing": {
+  "2026-06-16": "Just one hike priced this year, a quarter-point not fully priced until December (TE, 15 Jun); PAP week ahead: a hike fully priced by September.",
+  "2026-06-17": "No new quantified pricing on 16 Jun; latest one 2026 hike, fully priced only by December (TE, 15 Jun); split hold expected on 18 Jun.",
+  "2026-06-18": "Hike bets scaled back after May CPI held at 2.8% (TE, 17 Jun); some MPC members are seen favouring just one hike this year (PAP).",
+  "2026-06-19": "BoE held 7-2 (Greene, Pill for +25bp), peak CPI forecast cut to 3.25%; gilt 10Y rose to 4.78% (18 Jun).",
+  "2026-06-22": "At least a 25bp BoE hike priced this year (TE, 19 Jun); Burnham's by-election win lifted gilt 10Y to ~4.8%.",
+  "2026-06-23": "Starmer to resign; gilt 10Y eased to ~4.81% as a smooth handover looked likelier (TE, 22 Jun); latest pricing at least one hike.",
+  "2026-06-24": "Weak flash PMIs (composite 49.4) reduced the likelihood of BoE hikes; gilt 10Y 4.78% (TE, 23 Jun).",
+  "2026-06-25": "Gilt 10Y at 4.736%, an over two-month low, as weak PMIs cut BoE hike odds (TE, 24 Jun).",
+  "2026-06-26": "No new quantified BoE pricing on 25 Jun; latest: hike odds reduced after weak PMIs (TE, 24 Jun); gilt 10Y 4.68% (24 Jun close).",
+  "2026-06-29": "No quantified BoE pricing on 26-28 Jun; gilt 10Y 4.70% (25 Jun close) after the weak PMIs cut hike odds (TE, 24 Jun).",
+  "2026-06-30": "Markets scaled back BoE hike bets as Hormuz reopened and oil fell (TE, 29 Jun); gilt 10Y ~4.73% after Burnham pledged fiscal discipline."
+ },
+ "cb_decisions": [
+  {
+   "bank": "BoJ",
+   "date": "2026-04-28",
+   "decision": "hold",
+   "rate": "0.75%",
+   "vote": "6-3 (Takata, Tamura, Nakagawa for 1.0%)",
+   "published": "2026-04-28 05:11",
+   "note": "last BoJ decision before the windows (May files); next 15-16 June",
+   "src": "https://tradingeconomics.com/japan/interest-rate/news/545386"
+  },
+  {
+   "bank": "Fed",
+   "date": "2026-04-29",
+   "decision": "hold",
+   "rate": "3.50-3.75%",
+   "vote": "8-4 (Miran: cut 25bp; Hammack, Kashkari, Logan: hold but against the easing bias)",
+   "published": "2026-04-29 20:00",
+   "note": "last Fed decision before the windows (May files); next FOMC 16-17 June, Warsh's first",
+   "src": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
+  },
+  {
+   "bank": "BoE",
+   "date": "2026-04-30",
+   "decision": "hold",
+   "rate": "3.75%",
+   "vote": "8-1 (Pill for +25bp to 4.00%)",
+   "published": "2026-04-30 13:00",
+   "note": "last BoE decision before the windows (no May meeting); next 18 June",
+   "src": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026"
+  },
+  {
+   "bank": "RBA",
+   "date": "2026-05-05",
+   "decision": "hike +25bp",
+   "rate": "4.35%",
+   "vote": "8-1",
+   "published": "2026-05-05 06:33",
+   "note": "third 2026 hike (May global1 file); last before the 16 June meeting",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/547685"
+  },
+  {
+   "bank": "Riksbank",
+   "date": "2026-05-07",
+   "decision": "hold",
+   "rate": "1.75%",
+   "vote": null,
+   "published": "2026-05-07 10:02",
+   "note": "May global1 file; next 17 June",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/548680"
+  },
+  {
+   "bank": "Norges Bank",
+   "date": "2026-05-07",
+   "decision": "hike +25bp",
+   "rate": "4.25%",
+   "vote": null,
+   "published": "2026-05-07 10:10",
+   "note": "May global1 file; next 18 June",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/548686"
+  },
+  {
+   "bank": "CNB",
+   "date": "2026-05-07",
+   "decision": "hold",
+   "rate": "2W repo 3.50%",
+   "vote": "7-0",
+   "published": "2026-05-07 14:30",
+   "note": "last CNB decision before the windows; next 18 June",
+   "src": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/CNB-Board-decisions-1778137200000/?tab=statement"
+  },
+  {
+   "bank": "NBR",
+   "date": "2026-05-15",
+   "decision": "hold",
+   "rate": "6.50%",
+   "vote": null,
+   "published": "2026-05-15 14:11",
+   "note": "latest NBR decision found; no NBR meeting found in 15-29 June; next date not verified",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/551183"
+  },
+  {
+   "bank": "PBoC",
+   "date": "2026-05-20",
+   "decision": "hold (LPR)",
+   "rate": "LPR unchanged",
+   "vote": null,
+   "published": "2026-05-20 03:00",
+   "note": "May global2 file (time placeholder)",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260520/skrot-wiadomosci-sroda-20-maja-1700"
+  },
+  {
+   "bank": "MNB",
+   "date": "2026-05-26",
+   "decision": "hold",
+   "rate": "6.25%",
+   "vote": null,
+   "published": "2026-05-26 14:00",
+   "note": "last MNB decision before the windows; Varga saw room to ease this year; next 23 June",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/553772"
+  },
+  {
+   "bank": "RBNZ",
+   "date": "2026-05-27",
+   "decision": "hold",
+   "rate": "unchanged",
+   "vote": null,
+   "published": "2026-05-27 04:16",
+   "note": "May global2 file (TE time)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/553894"
+  },
+  {
+   "bank": "BoC",
+   "date": "2026-06-10",
+   "decision": "hold",
+   "rate": "2.25%",
+   "vote": null,
+   "published": "2026-06-10 15:45",
+   "note": "fifth straight hold; ready to raise if energy inflation persists (TE 15:49, upper bound); pre-window",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558088"
+  },
+  {
+   "bank": "ECB",
+   "date": "2026-06-11",
+   "decision": "hike +25bp",
+   "rate": "DFR 2.25% (MRO 2.40%, MLF 2.65%)",
+   "vote": null,
+   "published": "2026-06-11 14:15",
+   "note": "first hike since 2023, effective 17 June; the war generates inflationary pressure and a hike is warranted across scenarios; staff CPI 3.0% (2026), 2.3% (2027), 2.0% (2028), core 2.5%/2.5%; GDP 0.8%/1.2%/1.5%; Lagarde: inflation back to target in H2 2027; next meeting 22-23 July; vote not retrieved (PAP 14:25; TE 14:18)",
+   "src": "https://strefainwestorow.pl/wiadomosci/20260611/ebc-podniosl-stopy-proc-o-25-pb-ryzyka-dla-wzrostu-inflacji-nasilily-sie"
+  },
+  {
+   "bank": "BoJ",
+   "date": "2026-06-16",
+   "decision": "hike +25bp",
+   "rate": "1.00%",
+   "vote": "7-1 (Asada against)",
+   "published": "2026-06-16 05:25",
+   "note": "highest since 1995, first hike since December; will keep raising rates as warranted (TE time, upper bound)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559205"
+  },
+  {
+   "bank": "RBA",
+   "date": "2026-06-16",
+   "decision": "hold",
+   "rate": "4.35%",
+   "vote": "unanimous",
+   "published": "2026-06-16 06:30",
+   "note": "after three 2026 hikes; ready to hike if needed (TE 06:36)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559230"
+  },
+  {
+   "bank": "Riksbank",
+   "date": "2026-06-17",
+   "decision": "hold",
+   "rate": "1.75%",
+   "vote": null,
+   "published": "2026-06-17 09:30",
+   "note": "raised the likelihood of a hike later this year (TE 09:42)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559644"
+  },
+  {
+   "bank": "Fed",
+   "date": "2026-06-17",
+   "decision": "hold",
+   "rate": "3.50-3.75%",
+   "vote": "12-0",
+   "published": "2026-06-17 20:00",
+   "note": "Warsh's first meeting; shorter statement, 'The Committee will deliver price stability'; SEP median 3.8% end-2026 (9 of 18 see at least one hike), 3.6% 2027, 3.4% 2028; PCE 3.6%, core 3.3% for 2026; Warsh submitted no dots; next FOMC 28-29 July",
+   "src": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  },
+  {
+   "bank": "SNB",
+   "date": "2026-06-18",
+   "decision": "hold",
+   "rate": "0.00%",
+   "vote": null,
+   "published": "2026-06-18 09:30",
+   "note": "greater readiness to intervene in FX; CPI 0.6% in 2026-27 (TE 09:50)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560004"
+  },
+  {
+   "bank": "Norges Bank",
+   "date": "2026-06-18",
+   "decision": "hold",
+   "rate": "4.25%",
+   "vote": null,
+   "published": "2026-06-18 10:00",
+   "note": "signals a further hike at one of the coming meetings; path slightly above 4.5% by year-end (TE 10:04)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560014"
+  },
+  {
+   "bank": "BoE",
+   "date": "2026-06-18",
+   "decision": "hold",
+   "rate": "3.75%",
+   "vote": "7-2 (Greene, Pill for +25bp to 4.00%)",
+   "published": "2026-06-18 13:00",
+   "note": "energy prices down since the last meeting but volatile; CPI to rise later this year; second-round risks; peak CPI projection 3.25% in Q4 2026 (TE)",
+   "src": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026"
+  },
+  {
+   "bank": "CNB",
+   "date": "2026-06-18",
+   "decision": "hike +25bp",
+   "rate": "2W repo 3.75%",
+   "vote": "6-1 (one for a hold)",
+   "published": "2026-06-18 14:30",
+   "note": "first hike since 2022, effective 19 June; core just below 3%, strong money and credit growth, tight labour market",
+   "src": "https://www.cnb.cz/en/monetary-policy/bank-board-decisions/CNB-Board-decisions-1781766000000/"
+  },
+  {
+   "bank": "CBR",
+   "date": "2026-06-19",
+   "decision": "cut -25bp",
+   "rate": "14.25%",
+   "vote": null,
+   "published": "2026-06-19 12:44",
+   "note": "smaller cut than the 50bp expected (TE time, upper bound)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560465"
+  },
+  {
+   "bank": "PBoC",
+   "date": "2026-06-22",
+   "decision": "hold (LPR)",
+   "rate": "1Y LPR 3.0%, 5Y 3.5%",
+   "vote": null,
+   "published": "2026-06-22 03:00",
+   "note": "13th month at record lows (TE 03:06)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560571"
+  },
+  {
+   "bank": "MNB",
+   "date": "2026-06-23",
+   "decision": "cut -25bp",
+   "rate": "6.00%",
+   "vote": null,
+   "published": "2026-06-23 14:00",
+   "note": "as expected; resumes easing as CPI fell to 1.8% and the forint gained >8% vs EUR this year (TE 14:16)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561193"
+  }
+ ],
+ "cpi": [
+  {
+   "country": "Euro area",
+   "period": "May 2026 (flash)",
+   "value": 3.2,
+   "core": 2.5,
+   "published": "2026-06-02 11:00",
+   "note": "pre-window; highest since Sep 2023; energy +10.9%, services 3.5%; April 3.0% (core 2.2%)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/555735"
+  },
+  {
+   "country": "Euro area",
+   "period": "May 2026 (final)",
+   "value": 3.2,
+   "core": 2.6,
+   "published": "2026-06-17 11:00",
+   "note": "headline confirmed; core revised up to 2.6% from 2.5%; energy +10.8%; June flash due 1 Jul (outside, 3.0% expected)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559686"
+  },
+  {
+   "country": "Germany",
+   "period": "May 2026 (final)",
+   "value": 2.6,
+   "core": null,
+   "published": "2026-06-12 08:00",
+   "note": "pre-window; flash (29 May) confirmed; HICP 2.7%; April 2.9%",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558609"
+  },
+  {
+   "country": "Spain",
+   "period": "Jun 2026 (flash)",
+   "value": 3.2,
+   "core": 2.9,
+   "published": "2026-06-29 09:00",
+   "note": "unchanged, as expected; HICP 3.6%",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/562466"
+  },
+  {
+   "country": "United States",
+   "period": "May 2026",
+   "value": 4.2,
+   "core": 2.9,
+   "published": "2026-06-10 14:30",
+   "note": "pre-window; highest since Apr 2023, as expected; +0.5% m/m (core +0.2%); April 3.8% (core 2.8%)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558053"
+  },
+  {
+   "country": "United States (PCE)",
+   "period": "Apr 2026",
+   "value": 3.8,
+   "core": 3.3,
+   "published": "2026-05-28 14:30",
+   "note": "previous print (May file)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/554490"
+  },
+  {
+   "country": "United States (PCE)",
+   "period": "May 2026",
+   "value": 4.1,
+   "core": 3.4,
+   "published": "2026-06-25 14:30",
+   "note": "+0.4% m/m (0.5% expected), core +0.3% as expected; highest since Apr 2023 (core since Oct 2023)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/561877"
+  },
+  {
+   "country": "United Kingdom",
+   "period": "Apr 2026",
+   "value": 2.8,
+   "core": 2.5,
+   "published": "2026-05-20 08:00",
+   "note": "previous print (May file)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/552139"
+  },
+  {
+   "country": "United Kingdom",
+   "period": "May 2026",
+   "value": 2.8,
+   "core": 2.6,
+   "published": "2026-06-17 08:00",
+   "note": "3.0% expected (core 2.7%); +0.2% m/m; services 3.7%; transport 6.8%",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/559587"
+  },
+  {
+   "country": "Japan",
+   "period": "May 2026",
+   "value": 1.5,
+   "core": 1.4,
+   "published": "2026-06-19 01:30",
+   "note": "core = ex fresh food, lowest since Mar 2022; April 1.4%",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/560202"
+  },
+  {
+   "country": "Czechia",
+   "period": "May 2026 (flash)",
+   "value": 2.1,
+   "core": null,
+   "published": "2026-06-04 09:00",
+   "note": "pre-window; 2.3% expected; April 2.5%",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/556421"
+  },
+  {
+   "country": "Czechia",
+   "period": "May 2026 (final)",
+   "value": 2.1,
+   "core": null,
+   "published": "2026-06-10 09:00",
+   "note": "pre-window; flash confirmed; -0.1% m/m; CNB: core just below 3%; June flash due early July (outside)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/557945"
+  },
+  {
+   "country": "Hungary",
+   "period": "May 2026",
+   "value": 1.8,
+   "core": 2.0,
+   "published": "2026-06-09 08:30",
+   "note": "pre-window; 2.3% expected, below the MNB tolerance band; April 2.1% (core 2.2%); June CPI due in July (outside)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/557549"
+  },
+  {
+   "country": "Romania",
+   "period": "May 2026",
+   "value": 10.9,
+   "core": null,
+   "published": "2026-06-12 08:00",
+   "note": "pre-window; highest since Apr 2023; HICP 9.7%; April 10.7%; June CPI due in July (outside)",
+   "src": "https://tradingeconomics.com/united-states/interest-rate/news/558611"
+  }
+ ],
+ "digest": {
+  "2026-06-16": "15 Jun: markets cheered Sunday's preliminary US-Iran deal (MoU to be signed Fri 19 Jun, Hormuz to reopen): Brent -5% to ~$83, the lowest since March, TTF -9% to ~EUR42; UST10 4.46%, Bund ~2.95%, gilt 4.8% (two-month low). ECB pricing cut to ~30bp (one hike) and BoE to one hike by December; swaps ~70% for a December Fed hike. the IRGC says Hormuz stays shut for now; a CNB hike is debated for 18 Jun.",
+  "2026-06-17": "16 Jun: Brent fell below $80 (lowest since early March) as MS and GS cut forecasts; the BoJ hiked to 1.0% (7-1) and the RBA held at 4.35%. Bund 10Y 2.93% (nine-week low), HU10 5.14% (four-year low), UST10 4.44% with ~56% for a December Fed hike. ZEW jumped to +10.5; US housing starts hit a six-year low. The EP approved the EU-US tariff deal ahead of Trump's 4 July deadline; the CIA doubts Iran's nuclear concessions.",
+  "2026-06-18": "17 Jun: the Fed held at 3.50-3.75% (12-0) in Warsh's first meeting with a terse 'will deliver price stability' statement; the median dot rose to 3.8% for end-2026 (9 of 18 see hikes), PCE 3.6%; a year-end hike became fully priced, UST2 +16bp to 4.21%, DXY >100.3. UK May CPI held at 2.8% (3.0% expected); EZ HICP 3.2% confirmed (core 2.6%); Bund 2.93%; Brent ~$79-80; US retail sales +0.9%; Riksbank held.",
+  "2026-06-19": "18 Jun: the BoE held 7-2 (Greene, Pill for a hike), the CNB hiked to 3.75% (6-1), SNB and Norges held (Norges signals a hike). The US-Iran MoU took effect after Trump and Pezeshkian signed; Khamenei approved it and tankers crossed Hormuz; Brent ~$77-80, gold -3%. EUR/USD below 1.15, DXY at a one-year high; FedWatch ~50% for a September hike. UK unemployment fell to 4.9%; Philly Fed 10.3.",
+  "2026-06-22": "19-21 Jun: the planned 19 Jun Burgenstock talks were postponed (Iran wants a Lebanon truce first) and Burnham won the Makerfield by-election (GBP < $1.32, gilt ~4.8%). A September Fed hike was fully priced, Wunsch floated a July ECB hike; Bund 2.95-2.99%. On Saturday the IRGC declared Hormuz closed while the US saw no closure; Netanyahu ordered a Lebanon ceasefire and talks began on Sunday. Brent ~$80 (Fri); yen past 161; Japan CPI 1.5%.",
+  "2026-06-23": "22 Jun: 18 hours of Burgenstock talks yielded a 60-day roadmap and a Hormuz passage mechanism; the US issued a 60-day licence for Iranian oil sales and Brent fell 4% to ~$77.4. Starmer said he will step down, Burnham the favourite (gilt 10Y ~4.81%). UST10 4.50%, UST2 >4.2% (Feb-2025 high), ~50% for a September Fed hike; Bund 2.95%; EZ consumer confidence -17.7; PBoC held LPR; yen ~161.5-161.9.",
+  "2026-06-24": "23 Jun: flash PMIs were weak in Europe (EZ composite 49.5, Germany 48.0 with services at a 43-month low, UK 49.4) but strong in the US (52.2; manufacturing 55.7). Lagarde (22 Jun) saw no need for a stronger response, yet one more ECB hike stays priced; Bund 2.92%, gilt 4.78%. The MNB cut to 6.00%. FedWatch ~68% for September, DXY 101.3; a tech sell-off (Kospi ~-10%); Brent ~$77; EUR below $1.14.",
+  "2026-06-25": "24 Jun: Brent fell below $74 to pre-war levels (lowest since late Feb) as Hormuz traffic normalised and the front spread flipped to contango; gold fell below $4,000. UST10 4.40% (-9bp), Bund 2.87%, gilt 10Y a two-month low of 4.74%; still ~68% for a September Fed hike. Ifo rose to 85.6; US new home sales slumped; Micron beat after hours; Fed stress test passed; technical US-Iran talks resume next week.",
+  "2026-06-26": "25 Jun: US May PCE 4.1% (core 3.4%) was in line or softer, Q1 GDP revised to 2.1%, claims 215k; UST10 fell below 4.40% (seven-week low) as futures trimmed multi-hike bets (FedWatch ~66% for a hike by September). EU states gave final approval to the EU-US tariff deal before 4 July. A projectile hit a ship off Oman and the IRGC warned off non-Iranian routes; Brent ~$73-75. HU10 near 2022 lows; Bund 2.86%.",
+  "2026-06-29": "26-28 Jun: Brent hit ~$72 (lowest since 27 Feb) before US strikes on Iranian missile sites (26-27 Jun) after a drone attack on a ship; Iran fired at bases in Kuwait and Bahrain, then on Sunday both sides agreed to halt attacks and meet in Doha on Tuesday. Trump threatened 100% tariffs on countries with digital taxes. FedWatch 42% for one hike, 28% for two; UST10 4.37%, Bund 2.85%; EZ consumer inflation expectations eased to 3.5%.",
+  "2026-06-30": "29 Jun: Brent rebounded to ~$73 as Hormuz transits slowed after the weekend attacks; Trump says Iran asked for Tuesday's Doha talks, Iran says they are not arranged. The Supreme Court kept Fed Governor Cook in post for now. UST10 below 4.38% (lowest since early May), DXY off its high; Bund 2.86%, gilt ~4.73% after Burnham pledged fiscal discipline; EZ ESI 95.0; Spain CPI 3.2%; Sintra Forum and Thursday payrolls ahead."
+ },
+ "glob": {
+  "2026-06-16": " US-Iran deal: Brent -5% to $83, Bund 2.95% (15 Jun).",
+  "2026-06-17": " Brent below $80; BoJ hikes to 1.0% (16 Jun).",
+  "2026-06-18": " Hawkish Fed dots: 3.8% for end-2026 (17 Jun).",
+  "2026-06-19": " BoE 7-2 hold; CNB hikes to 3.75% (18 Jun).",
+  "2026-06-22": " Iran talks delayed; IRGC shuts Hormuz (19-21 Jun).",
+  "2026-06-23": " Starmer quits; Iran oil licence; Brent $77 (22 Jun).",
+  "2026-06-24": " Weak EZ PMIs; MNB cuts to 6.00% (23 Jun).",
+  "2026-06-25": " Brent back to pre-war $74; gold < $4,000 (24 Jun).",
+  "2026-06-26": " US PCE 4.1%; UST10 below 4.40% (25 Jun).",
+  "2026-06-29": " US strikes Iran, then truce; Brent $72 (26-28 Jun).",
+  "2026-06-30": " Doha talks eyed; UST10 4.38%; Cook stays (29 Jun)."
+ }
+}

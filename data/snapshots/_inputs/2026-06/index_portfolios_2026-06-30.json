@@ -1,0 +1,151 @@
+{
+ "_source": "GPW Benchmark 'Portfele obligacji' communique for the periodic change of 30 Jun 2026 (holdings and statistics as of 25 Jun 2026; published 26 Jun 2026 - communique page 26.06, PAP/ESPI copy 19:02 CEST, original attachment CreationDate 26 Jun 13:25 CEST, holdings only; the gpwbenchmark.pl PDF now served (Portfele_obligacji_2026_06_26_.pdf) was regenerated on 29 Jun, CreationDate 13:16 CEST, HTTP Last-Modified 29 Jun 13:51 CEST, and adds the statistics page, so 'official' was first public on 29 Jun; holdings identical in both versions). Changes: OK0129 enters TBSP, B1Y3Y, B1Y4Y and B1Y5Y; OK0127 leaves TBSP; unit changes in TBSP for DS1033, DS1035, DS1034, DS1030, PS0731, PS0527 (down) and DS0436. Units match MoF auctions held to 25 Jun (27 May sale, 3 Jun switch, 17 Jun and 24 Jun sales; the 24 Jun sale settled 26 Jun).",
+ "source_url": "https://gpwbenchmark.pl/pub/BENCHMARK/files/PDF/komunikaty_indeksowe/Portfele_obligacji_2026_06_26_.pdf",
+ "published": "2026-06-26",
+ "effective": "2026-06-30",
+ "next_rebalance": "2026-07-31",
+ "official_stats_asof": "2026-06-25",
+ "indices": {
+  "GPWB-B1Y3Y": {
+   "label": "GPWB 1-3Y",
+   "rule": "Fixed-rate POLGBs with 1-3 years to maturity",
+   "official": {
+    "ytm": 4.08,
+    "mac_dur": 1.89,
+    "mod_dur": 1.81,
+    "maturity": 1.98,
+    "coupon": 3.83,
+    "n": 6,
+    "value_mln": 248826.85
+   },
+   "units": {
+    "WS0429": 57196120,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939,
+    "OK0129": 11454166
+   }
+  },
+  "GPWB-B1Y4Y": {
+   "label": "GPWB 1-4Y",
+   "rule": "Fixed-rate POLGBs with 1-4 years to maturity",
+   "official": {
+    "ytm": 4.21,
+    "mac_dur": 2.39,
+    "mod_dur": 2.29,
+    "maturity": 2.53,
+    "coupon": 3.97,
+    "n": 9,
+    "value_mln": 423403.52
+   },
+   "units": {
+    "PS0729": 57073247,
+    "WS0429": 57196120,
+    "PS0130": 55273705,
+    "DS1029": 58755701,
+    "PS0728": 45507599,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939,
+    "OK0129": 11454166
+   }
+  },
+  "TBSP.Index": {
+   "label": "TBSP.Index",
+   "rule": "Fixed-rate POLGBs traded on Treasury BondSpot Poland (broad market)",
+   "official": {
+    "ytm": 4.56,
+    "mac_dur": 3.94,
+    "mod_dur": 3.76,
+    "maturity": 4.48,
+    "coupon": 4.08,
+    "n": 19,
+    "value_mln": 945104.48
+   },
+   "units": {
+    "DS1033": 66836632,
+    "PS0730": 69481869,
+    "DS1035": 65315097,
+    "PS0729": 57073247,
+    "DS1034": 58770538,
+    "WS0429": 57196120,
+    "PS0130": 55273705,
+    "DS1029": 58755701,
+    "PS0131": 55493049,
+    "DS0432": 63684961,
+    "PS0728": 45507599,
+    "DS1030": 58098574,
+    "PS0731": 46863577,
+    "DS0727": 44403632,
+    "OK0128": 45149768,
+    "WS0428": 40376939,
+    "PS0527": 25405545,
+    "DS0436": 16175319,
+    "OK0129": 11454166
+   }
+  }
+ },
+ "changes_vs_2026-05-29": {
+  "GPWB-B1Y3Y": {
+   "enter": [
+    "OK0129"
+   ],
+   "leave": [],
+   "unit_changes": {}
+  },
+  "GPWB-B1Y4Y": {
+   "enter": [
+    "OK0129"
+   ],
+   "leave": [],
+   "unit_changes": {}
+  },
+  "TBSP.Index": {
+   "enter": [
+    "OK0129"
+   ],
+   "leave": [
+    "OK0127"
+   ],
+   "unit_changes": {
+    "DS1033": {
+     "may": 65204227,
+     "jun": 66836632,
+     "diff": 1632405
+    },
+    "DS1035": {
+     "may": 64513097,
+     "jun": 65315097,
+     "diff": 802000
+    },
+    "DS1034": {
+     "may": 58258542,
+     "jun": 58770538,
+     "diff": 511996
+    },
+    "DS1030": {
+     "may": 57010574,
+     "jun": 58098574,
+     "diff": 1088000
+    },
+    "PS0731": {
+     "may": 30146210,
+     "jun": 46863577,
+     "diff": 16717367
+    },
+    "PS0527": {
+     "may": 32829594,
+     "jun": 25405545,
+     "diff": -7424049
+    },
+    "DS0436": {
+     "may": 6950660,
+     "jun": 16175319,
+     "diff": 9224659
+    }
+   }
+  }
+ },
+ "next_rebalance_note": "2026-07-31 (announcement 29 Jul, GPWB calendar)"
+}
