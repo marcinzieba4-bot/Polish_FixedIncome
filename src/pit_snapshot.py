@@ -118,6 +118,8 @@ def main(prev, out, spec_path, raw):
     # 5) floaters: POLSTR basis
     FL = load(out / "floaters.json")
     p = S["polstr"]
+    for tk, upd in S.get("floaters_update", {}).items():  # coupon resets (MoF rate notices) once the new period has started
+        FL["floaters"][tk].update(upd)
     FL["polstr_basis"] = round(w["6m"] - p["value"], 3)
     FL["basis_note"] = (f"WIBOR 6M {w['6m']:.2f}% ({dmy(C)}) minus POLSTR {p['value']:.2f}% (index date {dmy(p['date'])}, published the next business day; "
                         f"later index dates are published after the report time and are not used); running NZ period assumed at {FL['nz_running']:.2f}% compounded POLSTR")
