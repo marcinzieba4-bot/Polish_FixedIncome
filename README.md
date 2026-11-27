@@ -94,3 +94,10 @@ python src/fetch_core_asof.py $C 2025-08-25 $J/core_${C//-/}.json
 python src/pit_snapshot.py data/snapshots/$PREV data/snapshots/$R spec_$R.json $J
 # then analytics / auction_study / floaters_linkers / quasi / core_compare / build_report as above
 ```
+
+### Daily archive
+
+`python src/build_archive.py` builds `dist/archive/index.html` (all point-in-time reports by month with key numbers and two
+charts) and injects previous / archive / next links into every report and an archive link into the live dashboard
+(idempotent). `python src/publish_site.py` uploads the dashboard, the archive and all reports and issues one CloudFront
+invalidation (targets from `PFI_S3_BUCKET`, `PFI_S3_PREFIX`, `PFI_CF_DIST`). After adding new daily reports, run both.
