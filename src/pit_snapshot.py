@@ -65,6 +65,13 @@ def main(prev, out, spec_path, raw):
         shutil.copy(prev / f, out / f)
     if S.get("index_portfolios"):  # periodic index change took effect since the previous snapshot
         shutil.copy(S["index_portfolios"], out / "index_portfolios.json")
+    if S.get("bonds_static_add"):  # new fixed-rate line, first seen in the BondSpot fixing of the cut-off
+        BS = load(out / "bonds_static.json")
+        have = {b["ticker"] for b in BS["bonds"]}
+        new = [b for b in S["bonds_static_add"]["bonds"] if b["ticker"] not in have]
+        BS["bonds"] = sorted(BS["bonds"] + new, key=lambda b: b["maturity"])
+        BS["_source"] += " " + S["bonds_static_add"]["note"]
+        dump(out / "bonds_static.json", BS)
 
     # 1) BondSpot close of C, TBSP level dropped
     B = load(raw / f"bondspot_{Cs}.json")
