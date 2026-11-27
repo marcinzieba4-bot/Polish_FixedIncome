@@ -1,0 +1,6569 @@
+{
+ "2026-05-04": {
+  "C": "2026-04-30",
+  "irs": {
+   "1": 4.27,
+   "2": 4.44,
+   "3": 4.47,
+   "4": 4.51,
+   "5": 4.55,
+   "7": null,
+   "8": 4.68,
+   "10": 4.76
+  },
+  "fra": {
+   "1x4": 3.86,
+   "3x6": 4.05,
+   "6x9": 4.37,
+   "9x12": 4.57,
+   "3x9": 4.16,
+   "6x12": 4.48
+  },
+  "cds5y": 52,
+  "pl_bund_10y": 274,
+  "eur_irs": {
+   "1": 2.78,
+   "2": 2.85,
+   "3": 2.85,
+   "4": 2.85,
+   "5": 2.88,
+   "8": 2.99,
+   "10": 3.08
+  },
+  "usd_irs": {
+   "1": 3.99,
+   "2": 3.97,
+   "3": 3.94,
+   "4": 3.93,
+   "5": 3.96,
+   "8": 4.13,
+   "10": 4.19
+  },
+  "eurpln_close": null,
+  "eurpln_session": {
+   "min": null,
+   "max": null,
+   "open": null,
+   "close": null,
+   "fixing": null
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260504085823/download?id=169396&lang=pl_PL",
+   "created": "2026-05-04T06:32:52Z",
+   "upload": "url time 2026-05-04 08:58:23",
+   "header_date": "01.05.2026",
+   "fx_header_date": null,
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "Erste HEADER 01.05 / DERIVED 30.04 (no Erste table headed 30.04 exists): the R-dated daily (4 May, id 169396, created 2026-05-04T06:32:52Z, URL stamp 08:58:23) heads both tables 01.05.2026 (Labour Day, no Polish session); there is no daily dated 1 May and the 30 Apr daily is headed 29.04. Block by block: (a) PL IRS, FRA and the bond table carry change columns of exactly 0 in every row, i.e. they are measured against the last Polish session (30 Apr), so the printed levels are the 30 Apr closes; level minus change = the printed levels: PL IRS 4.27/4.44/4.47/4.51/4.55/4.68/4.76 (1-10Y), FRA 3.86/4.05/4.37/4.57/4.16/4.48. Implied 30 Apr moves vs the 29.04 table: PL IRS +3/+1/-1/-2/-2/-4/-5bp, FRA -1/+4/+4/+4/+2/+5bp, bonds 0/-1/-3; Bloomberg PL 2Y/5Y/10Y 30 Apr +3/-1/-3 (1 May edition, rows stamped 30.04), PAP FX/FI WS0428/PS0731/DS1035 +2/-1/-2 (29 Apr 16:56 -> 30 Apr 16:52); the daily's own text describes the last pre-holiday session the same way (short yields unchanged, longer ones -1 to -3bp, \"podobnie stopy IRS\"). WIBOR (O/N 3.47 (-10) vs 3.57) and the 10Y-spread column (PL 274 (+4) vs 270; FR, ES, IT, PT, IE also consistent; HU 307 (+3) vs 300 is not) are measured against 29.04, i.e. they are the 30 Apr fixings/closes; PL-Bund 274 vs a BBG PL10Y-DE10Y gap of 271 on 30 Apr (Erste usually 1-4bp above; 29.04 270/267). pl_bund_10y = 274 and cds5y = 52 are kept as printed under the 01.05 header (the CDS change column is unreliable; PL CDS is 52 in the 29.04, 01.05, 04/05 and 05/05 tables). (b) US IRS: the 01.05 block is a genuine 1 May (US trading day) session: its change columns (0/+1/+1/+2/+3/+1/+3) are not the differences from 29.04, and the 5 May daily's US change columns match the differences from these 01.05 levels. usd_irs therefore = 01.05 level minus change column (DERIVED 30 Apr): implied 30 Apr moves -4/-7/-7/-8/-7/-3/-9bp vs UST 2Y/5Y/10Y -8/-7/-6 on 30 Apr (UST 1 May +1/+0/+0). EZ IRS likewise derived (01.05 changes 0 to +1bp; Bunds did not trade on 1 May, DE row in the 4 May edition current col = 1D col): implied 30 Apr moves -2/-7/-6/-8/-8/-7/-6bp vs Bund 2Y/5Y/10Y -10/-9/-7. (c) FX block: min/max/open/close 4.2406/4.2573/4.2542/4.2436 are the 1 May (holiday) EUR/PLN trading (open 4.2542 is about the 30 Apr close, PAP 16:52 4.2558; the close 4.2436 is 120 pips lower, and the daily's text says EUR/PLN fell temporarily below 4.24 over the long weekend); only its fixing 4.2589 is a 30 Apr number (NBP table 083/A/NBP/2026). eurpln_close and eurpln_session are therefore null; the C-dated alternative is pap_close.eurpln 4.2558 (16:52) and the NBP 30 Apr fixing 4.2589. irs_src.header_date records the printed header (01.05.2026); fx_header_date = null (nothing taken from the FX block). All values come from the R-dated daily (published on R morning, allowed source); the 5 May and 6 May dailies (published after R) were read only to confirm which session each block reflects (audit only). Rounding: derived US/EZ values are good to about +-1bp.",
+   "PAP table: in the 4 May edition (06:35) only HU and TR are stamped 30.04.2026 (= C; both markets closed on 1 May). PL, CZ, IE, IT, PT, ES, DE, FR and UK are stamped 01.05.2026 (after C): all but UK are 1 May holiday carry-overs (current col = 1D col = the 30 Apr close); UK gilts traded on 1 May. JP and US carry a date stamp 01.05.2026 (1 May closes, not live). For these 11 rows after_C = true and d1 (1D col) = the 30 Apr close, confirmed by the 1 May edition. The 1 May 06:35 edition (published inside the window, all EU/CEE/TR rows stamped 30.04, JP/US live with d1 = 30 Apr close) is included as pap_table_0501_edition; every row there yields the same C close, and its 1D/5D/... columns are measured from C."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260504/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-04 06:35",
+   "columns": [
+    "04.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 4.6,
+     "y3": null,
+     "y5": 5.37,
+     "y10": 5.75,
+     "d1": {
+      "y2": 4.6,
+      "y5": 5.37,
+      "y10": 5.75
+     },
+     "2Y": [
+      4.6,
+      4.6,
+      4.43,
+      4.33,
+      3.55,
+      4.35
+     ],
+     "5Y": [
+      5.37,
+      5.37,
+      5.03,
+      5.1,
+      4.4,
+      4.64
+     ],
+     "10Y": [
+      5.75,
+      5.75,
+      5.59,
+      5.71,
+      5.09,
+      5.21
+     ],
+     "c_close": [
+      4.6,
+      5.37,
+      5.75
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.95,
+     "y5": 5.93,
+     "y10": 6.03,
+     "d1": null,
+     "3Y": [
+      5.95,
+      5.91,
+      5.97,
+      7.23,
+      6.13,
+      6.25
+     ],
+     "5Y": [
+      5.93,
+      5.92,
+      5.99,
+      7.21,
+      6.23,
+      6.36
+     ],
+     "10Y": [
+      6.03,
+      6.03,
+      6.1,
+      7.28,
+      6.53,
+      6.79
+     ],
+     "c_close": [
+      5.95,
+      5.93,
+      6.03
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C; Hungary closed on 1 May); current col = C close (equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 4.08,
+     "y3": null,
+     "y5": 4.44,
+     "y10": 4.87,
+     "d1": {
+      "y2": 4.08,
+      "y5": 4.44,
+      "y10": 4.87
+     },
+     "2Y": [
+      4.08,
+      4.08,
+      4.04,
+      4.18,
+      3.43,
+      3.4
+     ],
+     "5Y": [
+      4.44,
+      4.44,
+      4.36,
+      4.44,
+      3.87,
+      3.61
+     ],
+     "10Y": [
+      4.87,
+      4.87,
+      4.8,
+      4.86,
+      4.45,
+      4.07
+     ],
+     "c_close": [
+      4.08,
+      4.44,
+      4.87
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col, the 11 May edition 5D col)"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.67,
+     "y3": null,
+     "y5": 34.97,
+     "y10": 31.42,
+     "d1": null,
+     "2Y": [
+      37.67,
+      37.41,
+      36.88,
+      39.96,
+      32.1,
+      42.4
+     ],
+     "5Y": [
+      34.97,
+      35.17,
+      34.01,
+      36.1,
+      30.2,
+      36.51
+     ],
+     "10Y": [
+      31.42,
+      31.68,
+      30.43,
+      31.66,
+      27.6,
+      32.35
+     ],
+     "c_close": [
+      37.67,
+      34.97,
+      31.42
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C; Turkey closed on 1 May); current col = C close (equal to the 1 May edition current col, the 5 May edition current col, the 6 May edition current col, the 8 May edition 5D col)"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.65,
+     "y3": null,
+     "y5": 2.78,
+     "y10": 3.27,
+     "d1": {
+      "y2": 2.65,
+      "y5": 2.78,
+      "y10": 3.27
+     },
+     "2Y": [
+      2.65,
+      2.65,
+      2.56,
+      2.62,
+      2.11,
+      1.77
+     ],
+     "5Y": [
+      2.78,
+      2.78,
+      2.72,
+      2.77,
+      2.46,
+      2.2
+     ],
+     "10Y": [
+      3.27,
+      3.27,
+      3.22,
+      3.24,
+      3.11,
+      2.79
+     ],
+     "c_close": [
+      2.65,
+      2.78,
+      3.27
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.84,
+     "y3": null,
+     "y5": 3.22,
+     "y10": 3.86,
+     "d1": {
+      "y2": 2.84,
+      "y5": 3.22,
+      "y10": 3.86
+     },
+     "2Y": [
+      2.84,
+      2.84,
+      2.75,
+      2.83,
+      2.15,
+      1.99
+     ],
+     "5Y": [
+      3.22,
+      3.22,
+      3.14,
+      3.22,
+      2.74,
+      2.71
+     ],
+     "10Y": [
+      3.86,
+      3.86,
+      3.78,
+      3.83,
+      3.46,
+      3.56
+     ],
+     "c_close": [
+      2.84,
+      3.22,
+      3.86
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.68,
+     "y3": null,
+     "y5": 2.93,
+     "y10": 3.44,
+     "d1": {
+      "y2": 2.68,
+      "y5": 2.93,
+      "y10": 3.44
+     },
+     "2Y": [
+      2.68,
+      2.68,
+      2.59,
+      2.65,
+      2.11,
+      1.76
+     ],
+     "5Y": [
+      2.93,
+      2.93,
+      2.86,
+      2.9,
+      2.6,
+      2.23
+     ],
+     "10Y": [
+      3.44,
+      3.44,
+      3.4,
+      3.41,
+      3.2,
+      3.0
+     ],
+     "c_close": [
+      2.68,
+      2.93,
+      3.44
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.73,
+     "y3": null,
+     "y5": 2.98,
+     "y10": 3.5,
+     "d1": {
+      "y2": 2.73,
+      "y5": 2.98,
+      "y10": 3.5
+     },
+     "2Y": [
+      2.73,
+      2.73,
+      2.65,
+      2.7,
+      2.21,
+      1.89
+     ],
+     "5Y": [
+      2.98,
+      2.98,
+      2.91,
+      2.96,
+      2.56,
+      2.36
+     ],
+     "10Y": [
+      3.5,
+      3.5,
+      3.44,
+      3.46,
+      3.21,
+      3.11
+     ],
+     "c_close": [
+      2.73,
+      2.98,
+      3.5
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.64,
+     "y3": null,
+     "y5": 2.75,
+     "y10": 3.04,
+     "d1": {
+      "y2": 2.64,
+      "y5": 2.75,
+      "y10": 3.04
+     },
+     "2Y": [
+      2.64,
+      2.64,
+      2.55,
+      2.6,
+      2.09,
+      1.69
+     ],
+     "5Y": [
+      2.75,
+      2.75,
+      2.69,
+      2.71,
+      2.42,
+      1.99
+     ],
+     "10Y": [
+      3.04,
+      3.04,
+      2.99,
+      2.99,
+      2.84,
+      2.44
+     ],
+     "c_close": [
+      2.64,
+      2.75,
+      3.04
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 2.79,
+     "y3": null,
+     "y5": 3.1,
+     "y10": 3.69,
+     "d1": {
+      "y2": 2.79,
+      "y5": 3.1,
+      "y10": 3.69
+     },
+     "2Y": [
+      2.79,
+      2.79,
+      2.69,
+      2.78,
+      2.21,
+      1.85
+     ],
+     "5Y": [
+      3.1,
+      3.1,
+      3.03,
+      3.1,
+      2.72,
+      2.39
+     ],
+     "10Y": [
+      3.69,
+      3.69,
+      3.64,
+      3.67,
+      3.43,
+      3.17
+     ],
+     "c_close": [
+      2.79,
+      3.1,
+      3.69
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (1 May Labour Day: no session in this market; current col = 1D col, i.e. the 30 Apr close carried over); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 4.42,
+     "y3": null,
+     "y5": 4.49,
+     "y10": 4.96,
+     "d1": {
+      "y2": 4.45,
+      "y5": 4.52,
+      "y10": 5.01
+     },
+     "2Y": [
+      4.42,
+      4.45,
+      4.35,
+      4.3,
+      3.72,
+      3.82
+     ],
+     "5Y": [
+      4.49,
+      4.52,
+      4.44,
+      4.38,
+      3.95,
+      3.94
+     ],
+     "10Y": [
+      4.96,
+      5.01,
+      4.91,
+      4.83,
+      4.52,
+      4.48
+     ],
+     "c_close": [
+      4.45,
+      4.52,
+      5.01
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026: later than C (gilts traded on 1 May; current col 4.42/4.49/4.96 = 1 May close); use d1 (= C close; equal to the 1 May edition current col, the 8 May edition 5D col)"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.89,
+     "y10": 2.52,
+     "d1": {
+      "y2": 1.39,
+      "y5": 1.9,
+      "y10": 2.53
+     },
+     "2Y": [
+      1.39,
+      1.39,
+      1.36,
+      1.36,
+      1.24,
+      0.63
+     ],
+     "5Y": [
+      1.89,
+      1.9,
+      1.84,
+      1.74,
+      1.66,
+      0.83
+     ],
+     "10Y": [
+      2.52,
+      2.53,
+      2.44,
+      2.31,
+      2.25,
+      1.26
+     ],
+     "c_close": [
+      1.39,
+      1.9,
+      2.53
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026 (date stamp, NOT live): JGB session on 1 May; current col = 1 May close (1.39/1.89/2.52), later than C; use d1 (= 30 Apr close; equal to the 1 May edition 1D col, the 7 May edition 5D col)"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "01.05.2026",
+     "live": false,
+     "after_C": true,
+     "intraday_on_C": false,
+     "y2": 3.88,
+     "y3": null,
+     "y5": 4.01,
+     "y10": 4.37,
+     "d1": {
+      "y2": 3.87,
+      "y5": 4.01,
+      "y10": 4.37
+     },
+     "2Y": [
+      3.88,
+      3.87,
+      3.78,
+      3.8,
+      3.52,
+      3.7
+     ],
+     "5Y": [
+      4.01,
+      4.01,
+      3.91,
+      3.95,
+      3.79,
+      3.8
+     ],
+     "10Y": [
+      4.37,
+      4.37,
+      4.3,
+      4.32,
+      4.24,
+      4.22
+     ],
+     "c_close": [
+      3.87,
+      4.01,
+      4.37
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "stamped 01.05.2026 (date stamp, NOT live): US Treasury session on 1 May; current col = 1 May close (3.88/4.01/4.37), later than C; use d1 (= 30 Apr close; equal to the 1 May edition 1D col, the 7 May edition 5D col)"
+    }
+   }
+  },
+  "pap_table_0501_edition": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260501/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-01 06:35",
+   "columns": [
+    "01.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.6,
+     "y3": null,
+     "y5": 5.37,
+     "y10": 5.75,
+     "d1": null,
+     "2Y": [
+      4.6,
+      4.57,
+      4.41,
+      4.62,
+      3.55,
+      4.35
+     ],
+     "5Y": [
+      5.37,
+      5.38,
+      5.0,
+      5.37,
+      4.4,
+      4.64
+     ],
+     "10Y": [
+      5.75,
+      5.78,
+      5.59,
+      5.93,
+      5.09,
+      5.21
+     ],
+     "c_close": [
+      4.6,
+      5.37,
+      5.75
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.95,
+     "y5": 5.93,
+     "y10": 6.03,
+     "d1": null,
+     "3Y": [
+      5.95,
+      5.91,
+      5.97,
+      7.23,
+      6.13,
+      6.25
+     ],
+     "5Y": [
+      5.93,
+      5.92,
+      5.99,
+      7.21,
+      6.23,
+      6.36
+     ],
+     "10Y": [
+      6.03,
+      6.03,
+      6.1,
+      7.28,
+      6.53,
+      6.79
+     ],
+     "c_close": [
+      5.95,
+      5.93,
+      6.03
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.08,
+     "y3": null,
+     "y5": 4.44,
+     "y10": 4.87,
+     "d1": null,
+     "2Y": [
+      4.08,
+      4.11,
+      3.98,
+      4.29,
+      3.43,
+      3.4
+     ],
+     "5Y": [
+      4.44,
+      4.45,
+      4.25,
+      4.58,
+      3.87,
+      3.61
+     ],
+     "10Y": [
+      4.87,
+      4.9,
+      4.73,
+      4.97,
+      4.45,
+      4.07
+     ],
+     "c_close": [
+      4.08,
+      4.44,
+      4.87
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.67,
+     "y3": null,
+     "y5": 34.97,
+     "y10": 31.42,
+     "d1": null,
+     "2Y": [
+      37.67,
+      37.41,
+      36.88,
+      39.96,
+      32.1,
+      42.4
+     ],
+     "5Y": [
+      34.97,
+      35.17,
+      34.01,
+      36.1,
+      30.2,
+      36.51
+     ],
+     "10Y": [
+      31.42,
+      31.68,
+      30.43,
+      31.66,
+      27.6,
+      32.35
+     ],
+     "c_close": [
+      37.67,
+      34.97,
+      31.42
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.65,
+     "y3": null,
+     "y5": 2.78,
+     "y10": 3.27,
+     "d1": null,
+     "2Y": [
+      2.65,
+      2.76,
+      2.58,
+      2.64,
+      2.11,
+      1.77
+     ],
+     "5Y": [
+      2.78,
+      2.88,
+      2.74,
+      2.82,
+      2.46,
+      2.2
+     ],
+     "10Y": [
+      3.27,
+      3.35,
+      3.24,
+      3.29,
+      3.11,
+      2.79
+     ],
+     "c_close": [
+      2.65,
+      2.78,
+      3.27
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.84,
+     "y3": null,
+     "y5": 3.22,
+     "y10": 3.86,
+     "d1": null,
+     "2Y": [
+      2.84,
+      2.95,
+      2.76,
+      2.93,
+      2.15,
+      1.99
+     ],
+     "5Y": [
+      3.22,
+      3.34,
+      3.16,
+      3.37,
+      2.74,
+      2.71
+     ],
+     "10Y": [
+      3.86,
+      3.96,
+      3.8,
+      3.99,
+      3.46,
+      3.56
+     ],
+     "c_close": [
+      2.84,
+      3.22,
+      3.86
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.68,
+     "y3": null,
+     "y5": 2.93,
+     "y10": 3.44,
+     "d1": null,
+     "2Y": [
+      2.68,
+      2.78,
+      2.62,
+      2.71,
+      2.11,
+      1.76
+     ],
+     "5Y": [
+      2.93,
+      3.02,
+      2.89,
+      2.98,
+      2.6,
+      2.23
+     ],
+     "10Y": [
+      3.44,
+      3.53,
+      3.42,
+      3.51,
+      3.2,
+      3.0
+     ],
+     "c_close": [
+      2.68,
+      2.93,
+      3.44
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.73,
+     "y3": null,
+     "y5": 2.98,
+     "y10": 3.5,
+     "d1": null,
+     "2Y": [
+      2.73,
+      2.84,
+      2.67,
+      2.77,
+      2.21,
+      1.89
+     ],
+     "5Y": [
+      2.98,
+      3.07,
+      2.94,
+      3.05,
+      2.56,
+      2.36
+     ],
+     "10Y": [
+      3.5,
+      3.58,
+      3.47,
+      3.56,
+      3.21,
+      3.11
+     ],
+     "c_close": [
+      2.73,
+      2.98,
+      3.5
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.64,
+     "y3": null,
+     "y5": 2.75,
+     "y10": 3.04,
+     "d1": null,
+     "2Y": [
+      2.64,
+      2.74,
+      2.57,
+      2.62,
+      2.09,
+      1.69
+     ],
+     "5Y": [
+      2.75,
+      2.84,
+      2.71,
+      2.75,
+      2.42,
+      1.99
+     ],
+     "10Y": [
+      3.04,
+      3.11,
+      3.01,
+      3.04,
+      2.84,
+      2.44
+     ],
+     "c_close": [
+      2.64,
+      2.75,
+      3.04
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.79,
+     "y3": null,
+     "y5": 3.1,
+     "y10": 3.69,
+     "d1": null,
+     "2Y": [
+      2.79,
+      2.9,
+      2.7,
+      2.82,
+      2.21,
+      1.85
+     ],
+     "5Y": [
+      3.1,
+      3.2,
+      3.06,
+      3.18,
+      2.72,
+      2.39
+     ],
+     "10Y": [
+      3.69,
+      3.78,
+      3.66,
+      3.77,
+      3.43,
+      3.17
+     ],
+     "c_close": [
+      2.79,
+      3.1,
+      3.69
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "30.04.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.45,
+     "y3": null,
+     "y5": 4.52,
+     "y10": 5.01,
+     "d1": null,
+     "2Y": [
+      4.45,
+      4.56,
+      4.37,
+      4.45,
+      3.72,
+      3.8
+     ],
+     "5Y": [
+      4.52,
+      4.62,
+      4.46,
+      4.5,
+      3.95,
+      3.92
+     ],
+     "10Y": [
+      5.01,
+      5.07,
+      4.94,
+      4.94,
+      4.52,
+      4.44
+     ],
+     "c_close": [
+      4.45,
+      4.52,
+      5.01
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 30.04.2026 (= C); current col = C close"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "06:33:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.89,
+     "y10": 2.52,
+     "d1": {
+      "y2": 1.39,
+      "y5": 1.9,
+      "y10": 2.53
+     },
+     "2Y": [
+      1.39,
+      1.39,
+      1.36,
+      1.36,
+      1.24,
+      0.63
+     ],
+     "5Y": [
+      1.89,
+      1.9,
+      1.84,
+      1.74,
+      1.66,
+      0.83
+     ],
+     "10Y": [
+      2.52,
+      2.53,
+      2.44,
+      2.31,
+      2.25,
+      1.26
+     ],
+     "c_close": [
+      1.39,
+      1.9,
+      2.53
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:33:00 on 1 May morning (live 1 May); its d1 column is the 30 Apr close (= C)"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "06:33:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.89,
+     "y3": null,
+     "y5": 4.02,
+     "y10": 4.39,
+     "d1": {
+      "y2": 3.87,
+      "y5": 4.01,
+      "y10": 4.37
+     },
+     "2Y": [
+      3.89,
+      3.87,
+      3.78,
+      3.8,
+      3.52,
+      3.7
+     ],
+     "5Y": [
+      4.02,
+      4.01,
+      3.91,
+      3.95,
+      3.79,
+      3.8
+     ],
+     "10Y": [
+      4.39,
+      4.37,
+      4.3,
+      4.32,
+      4.24,
+      4.22
+     ],
+     "c_close": [
+      3.87,
+      4.01,
+      4.37
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:33:00 on 1 May morning (live 1 May); its d1 column is the 30 Apr close (= C)"
+    }
+   },
+   "why": "Supplementary: edition published 1 May 06:35 (Labour Day, PL holiday), before R and inside the window (30 Apr - 3 May). All 11 EU/CEE/TR rows are stamped 30.04.2026 (= C), so the current col is the C close; JP/US are live 1 May (06:33) with 1D = 30 Apr close. In the 4 May edition (the R edition) 11 of 13 rows (PL, CZ, IE, IT, PT, ES, DE, FR, UK, JP, US) are stamped 01.05.2026 (after C) and only HU and TR are stamped 30.04; this edition gives the same C closes with C-based 1D/5D/1M/3M/12M columns. There are no 2 or 3 May editions (404)."
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260430/dzien-na-fxfi-pln-lekko-mocniejszy-do-eur-rentownosci-spw-na-lokalnych",
+   "time": "2026-04-30 17:03",
+   "quote_time": "16:52",
+   "y2": 4.56,
+   "y5": 5.35,
+   "y10": 5.74,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.74
+   },
+   "eurpln": 4.2558,
+   "usdpln": 3.6301,
+   "note": "Quotes 16:52 (published 17:03); 2 FX/FI pieces on C (09:17, 17:03); the next piece (04.05 09:32) uses \"czwartek 16:52\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. Bloomberg PL C close 4.60/5.37/5.75; Erste EUR/PLN close n/a (the 01.05 Erste FX block is the 1 May session)"
+  }
+ },
+ "2026-05-05": {
+  "C": "2026-05-04",
+  "irs": {
+   "1": null,
+   "2": null,
+   "3": null,
+   "4": null,
+   "5": null,
+   "7": null,
+   "8": null,
+   "10": null
+  },
+  "fra": {
+   "1x4": 3.88,
+   "3x6": 4.04,
+   "6x9": 4.36,
+   "9x12": 4.56,
+   "3x9": 4.14,
+   "6x12": 4.45
+  },
+  "cds5y": 52,
+  "pl_bund_10y": 273,
+  "eur_irs": {
+   "1": 2.84,
+   "2": 2.93,
+   "3": 2.91,
+   "4": 2.92,
+   "5": 2.95,
+   "8": 3.05,
+   "10": 3.12
+  },
+  "usd_irs": {
+   "1": 4.04,
+   "2": 4.06,
+   "3": 4.03,
+   "4": 4.03,
+   "5": 4.06,
+   "8": 4.21,
+   "10": 4.27
+  },
+  "eurpln_close": 4.2569,
+  "eurpln_session": {
+   "min": 4.2426,
+   "max": 4.2612,
+   "open": 4.2449,
+   "close": 4.2569,
+   "fixing": 4.2544
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260505084734/download?id=169401&lang=pl_PL",
+   "created": "2026-05-05T06:30:50Z",
+   "upload": "url time 2026-05-05 08:47:34",
+   "header_date": "04/05/2026",
+   "fx_header_date": "04/05/2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published. For this R all PL IRS tenors are null: the 5 May Erste PL IRS block is a stale copy of the 30 Apr levels (see flags).",
+  "flags": [
+   "Erste STALE PL IRS (irs = null): the 5 May daily (id 169401) is headed 04/05/2026 (= C), but its PL IRS block repeats the 01.05 (= 30 Apr close) levels exactly (4.27/4.44/4.47/4.51/4.55/4.68/4.76, 1-10Y) with all seven change columns 0. 4 May was a UK bank holiday (Early May): the LSEG PL IRS feed evidently was not updated, while every other block of the same daily moved (FRA +2/-1/-1/-1/-2/-4bp, consistent with the 01.05 levels; US IRS +4 to +8; EZ IRS +4 to +8; PL bonds 5Y/10Y +5/+4; Bloomberg PL 2Y/5Y/10Y +4/+4/+4 on 4 May; Bund +9/+6/+5). The 6 May daily's change columns (headed 05/05; PL IRS +4/+4/+5/+5/+5/+5/+7) reproduce exactly these stale levels (level minus change = 4.27/4.44/4.47/4.51/4.55/4.68/4.76), i.e. they are measured against the stale feed value and cover 30 Apr -> 5 May (Bloomberg PL over the two days +3/+5/+5; on 5 May alone -1/+1/+1), so no later daily reconstructs a 4 May PL IRS close: no PL IRS value is available for C. [Post-R evidence, audit only: the 6 May daily above, and the same feed pattern on the later UK-only holidays, checked only to understand the feed, no value used: the 26 May daily (headed 25.05, UK Spring bank holiday) shows PL IRS changes 0/+1/+1/0/0/0/0 while PL 5Y/10Y bonds fell 10bp, followed by -5 to -9 the next day; the 1 Sep daily (headed 31.08, UK Summer bank holiday) shows 0 on most tenors while bonds rose 8-10bp, followed by +10 to +15.] Evidence available by R: the exact copy of the 01.05 levels with zero changes on a UK bank holiday while FRA, bonds, US/EZ IRS and Bloomberg PL all moved. Kept from this daily (fresh, change columns consistent with the 01.05 levels): fra, eur_irs, usd_irs, cds5y 52, pl_bund_10y 273 (-1; BBG PL10Y-DE10Y gap 270), eurpln_close 4.2569 and the FX session (fixing 4.2544 = NBP 4 May). The daily's bond table (not used) labels the 2Y OK0128 at 4.67 (+13), while its own text says 2Y yields fell slightly on Monday; the 6 May daily relabels the row WS0428.",
+   "PAP table: in the 5 May edition every row carries a date stamp; JP, UK and US are stamped 04.05.2026 and are NOT live. 4 May was a Japanese holiday (Greenery Day) and a UK bank holiday, so the JP (1.39/1.89/2.52) and UK (4.42/4.49/4.96) current cols are the 1 May closes carried over (no 4 May close exists); US current col 3.95/4.09/4.44 = the 4 May close (confirmed by the 6 May edition 1D col and the 11/12 May editions 5D col). TR is stamped 30.04/04.05/04.05 (2Y/5Y/10Y): its 2Y (37.67) is the 30 Apr close, earlier than C. The current col is used for all 13 rows.",
+   "PAP close note: the afternoon FX/FI piece on C (4 May) is an early piece (published 14:49, quotes 14:44); no later piece exists (the 5 May 09:40 piece uses \"pon. 14:44\" as its previous column). WS0428/PS0731/DS1035 4.58/5.37/5.76 are 6/4/3bp below the Bloomberg PL C close 4.64/5.41/5.79 (the BBG 2Y generic normally runs 2-4bp above WS0428: 30 Apr 4.60 vs 4.56). EUR/PLN 4.2555 at 14:44 vs Erste close 4.2569."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260505/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-05 06:37",
+   "columns": [
+    "05.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.64,
+     "y3": null,
+     "y5": 5.41,
+     "y10": 5.79,
+     "d1": null,
+     "2Y": [
+      4.64,
+      4.6,
+      4.47,
+      4.34,
+      3.55,
+      4.37
+     ],
+     "5Y": [
+      5.41,
+      5.37,
+      5.09,
+      5.1,
+      4.38,
+      4.67
+     ],
+     "10Y": [
+      5.79,
+      5.75,
+      5.65,
+      5.72,
+      5.08,
+      5.24
+     ],
+     "c_close": [
+      4.64,
+      5.41,
+      5.79
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.93,
+     "y5": 5.89,
+     "y10": 5.99,
+     "d1": null,
+     "3Y": [
+      5.93,
+      5.95,
+      5.9,
+      7.04,
+      6.11,
+      6.25
+     ],
+     "5Y": [
+      5.89,
+      5.93,
+      5.93,
+      6.98,
+      6.21,
+      6.36
+     ],
+     "10Y": [
+      5.99,
+      6.03,
+      6.03,
+      6.94,
+      6.45,
+      6.79
+     ],
+     "c_close": [
+      5.93,
+      5.89,
+      5.99
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.1,
+     "y3": null,
+     "y5": 4.46,
+     "y10": 4.91,
+     "d1": null,
+     "2Y": [
+      4.1,
+      4.08,
+      4.05,
+      4.19,
+      3.41,
+      3.41
+     ],
+     "5Y": [
+      4.46,
+      4.44,
+      4.38,
+      4.45,
+      3.83,
+      3.65
+     ],
+     "10Y": [
+      4.91,
+      4.87,
+      4.85,
+      4.9,
+      4.44,
+      4.11
+     ],
+     "c_close": [
+      4.1,
+      4.46,
+      4.91
+     ],
+     "c_close_src": "current column"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": [
+      "30.04.2026",
+      "04.05.2026",
+      "04.05.2026"
+     ],
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.67,
+     "y3": null,
+     "y5": 35.29,
+     "y10": 31.72,
+     "d1": null,
+     "2Y": [
+      37.67,
+      37.41,
+      36.88,
+      39.96,
+      32.1,
+      42.4
+     ],
+     "5Y": [
+      35.29,
+      34.97,
+      34.64,
+      35.04,
+      30.28,
+      35.8
+     ],
+     "10Y": [
+      31.72,
+      31.42,
+      31.03,
+      30.42,
+      27.83,
+      31.79
+     ],
+     "c_close": [
+      37.67,
+      35.29,
+      31.72
+     ],
+     "c_close_src": "current column",
+     "note": "stamps 30.04.2026/04.05.2026/04.05.2026 (2Y/5Y/10Y): the 2Y current col (37.67) is the 30 Apr close (stamped earlier than C; no Bloomberg TR 2Y print since 30 Apr; Turkey was closed on 1 May), the 5Y/10Y current cols are 4 May closes. c_close = current col for all three tenors, so the TR 2Y is the last available close (30 Apr), not a C close"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.75,
+     "y3": null,
+     "y5": 2.86,
+     "y10": 3.32,
+     "d1": null,
+     "2Y": [
+      2.75,
+      2.65,
+      2.58,
+      2.64,
+      2.11,
+      1.87
+     ],
+     "5Y": [
+      2.86,
+      2.78,
+      2.75,
+      2.77,
+      2.46,
+      2.3
+     ],
+     "10Y": [
+      3.32,
+      3.27,
+      3.26,
+      3.24,
+      3.12,
+      2.89
+     ],
+     "c_close": [
+      2.75,
+      2.86,
+      3.32
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.93,
+     "y3": null,
+     "y5": 3.31,
+     "y10": 3.94,
+     "d1": null,
+     "2Y": [
+      2.93,
+      2.84,
+      2.78,
+      2.85,
+      2.16,
+      2.04
+     ],
+     "5Y": [
+      3.31,
+      3.22,
+      3.19,
+      3.23,
+      2.75,
+      2.78
+     ],
+     "10Y": [
+      3.94,
+      3.86,
+      3.83,
+      3.85,
+      3.47,
+      3.64
+     ],
+     "c_close": [
+      2.93,
+      3.31,
+      3.94
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.76,
+     "y3": null,
+     "y5": 3.0,
+     "y10": 3.51,
+     "d1": null,
+     "2Y": [
+      2.76,
+      2.68,
+      2.62,
+      2.67,
+      2.12,
+      1.82
+     ],
+     "5Y": [
+      3.0,
+      2.93,
+      2.9,
+      2.9,
+      2.61,
+      2.31
+     ],
+     "10Y": [
+      3.51,
+      3.44,
+      3.44,
+      3.42,
+      3.22,
+      3.08
+     ],
+     "c_close": [
+      2.76,
+      3.0,
+      3.51
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.82,
+     "y3": null,
+     "y5": 3.05,
+     "y10": 3.57,
+     "d1": null,
+     "2Y": [
+      2.82,
+      2.73,
+      2.68,
+      2.73,
+      2.22,
+      1.96
+     ],
+     "5Y": [
+      3.05,
+      2.98,
+      2.95,
+      2.96,
+      2.57,
+      2.44
+     ],
+     "10Y": [
+      3.57,
+      3.5,
+      3.49,
+      3.47,
+      3.23,
+      3.19
+     ],
+     "c_close": [
+      2.82,
+      3.05,
+      3.57
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.73,
+     "y3": null,
+     "y5": 2.81,
+     "y10": 3.09,
+     "d1": null,
+     "2Y": [
+      2.73,
+      2.64,
+      2.57,
+      2.62,
+      2.09,
+      1.76
+     ],
+     "5Y": [
+      2.81,
+      2.75,
+      2.72,
+      2.71,
+      2.43,
+      2.08
+     ],
+     "10Y": [
+      3.09,
+      3.04,
+      3.03,
+      2.99,
+      2.86,
+      2.53
+     ],
+     "c_close": [
+      2.73,
+      2.81,
+      3.09
+     ],
+     "c_close_src": "current column"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.89,
+     "y3": null,
+     "y5": 3.18,
+     "y10": 3.76,
+     "d1": null,
+     "2Y": [
+      2.89,
+      2.79,
+      2.72,
+      2.8,
+      2.22,
+      1.93
+     ],
+     "5Y": [
+      3.18,
+      3.1,
+      3.07,
+      3.1,
+      2.73,
+      2.48
+     ],
+     "10Y": [
+      3.76,
+      3.69,
+      3.69,
+      3.68,
+      3.45,
+      3.25
+     ],
+     "c_close": [
+      2.89,
+      3.18,
+      3.76
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.42,
+     "y3": null,
+     "y5": 4.49,
+     "y10": 4.96,
+     "d1": null,
+     "2Y": [
+      4.42,
+      4.42,
+      4.39,
+      4.32,
+      3.72,
+      3.86
+     ],
+     "5Y": [
+      4.49,
+      4.49,
+      4.49,
+      4.38,
+      3.97,
+      3.98
+     ],
+     "10Y": [
+      4.96,
+      4.96,
+      4.97,
+      4.83,
+      4.55,
+      4.51
+     ],
+     "c_close": [
+      4.42,
+      4.49,
+      4.96
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 04.05.2026: 4 May was a UK bank holiday (Early May), so the current col (4.42/4.49/4.96) = the 1 May close carried over (current col = 1D col); no 4 May gilt close exists. Current col used"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.89,
+     "y10": 2.52,
+     "d1": null,
+     "2Y": [
+      1.39,
+      1.39,
+      1.37,
+      1.39,
+      1.28,
+      0.61
+     ],
+     "5Y": [
+      1.89,
+      1.89,
+      1.86,
+      1.8,
+      1.69,
+      0.83
+     ],
+     "10Y": [
+      2.52,
+      2.52,
+      2.48,
+      2.39,
+      2.26,
+      1.26
+     ],
+     "c_close": [
+      1.39,
+      1.89,
+      2.52
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 04.05.2026 (date stamp, NOT live): 4 May was a Japanese holiday (Greenery Day, Golden Week), so the current col (1.39/1.89/2.52) = the 1 May close carried over (current col = 1D col); no 4 May JGB close exists. Current col used"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "04.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.95,
+     "y3": null,
+     "y5": 4.09,
+     "y10": 4.44,
+     "d1": null,
+     "2Y": [
+      3.95,
+      3.88,
+      3.8,
+      3.84,
+      3.55,
+      3.82
+     ],
+     "5Y": [
+      4.09,
+      4.01,
+      3.95,
+      3.98,
+      3.83,
+      3.92
+     ],
+     "10Y": [
+      4.44,
+      4.37,
+      4.34,
+      4.34,
+      4.27,
+      4.31
+     ],
+     "c_close": [
+      3.95,
+      4.09,
+      4.44
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 04.05.2026, i.e. NOT live (unusual: US is normally clock-stamped on the morning of R). Current col 3.95/4.09/4.44 = the 4 May close (1D col = 1 May close); equal to the 6 May edition 1D col, the 11 May edition 5D col, the 12 May edition 5D col. Current col used"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260504/dzien-na-fxfi-kurs-eurpln-powinien-utrzymac-sie-w-przedziale-4225-4265",
+   "time": "2026-05-04 14:49",
+   "quote_time": "14:44",
+   "y2": 4.58,
+   "y5": 5.37,
+   "y10": 5.76,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.76
+   },
+   "eurpln": 4.2555,
+   "usdpln": 3.6348,
+   "note": "EARLY PIECE: quotes 14:44 (published 14:49); 2 FX/FI pieces on C (09:32, 14:49); the next piece (05.05 09:40) uses \"pon. 14:44\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. Bloomberg PL C close 4.64/5.41/5.79; Erste EUR/PLN close 4.2569"
+  }
+ },
+ "2026-05-06": {
+  "C": "2026-05-05",
+  "irs": {
+   "1": 4.31,
+   "2": 4.48,
+   "3": 4.52,
+   "4": 4.56,
+   "5": 4.6,
+   "7": null,
+   "8": 4.73,
+   "10": 4.83
+  },
+  "fra": {
+   "1x4": 3.88,
+   "3x6": 4.06,
+   "6x9": 4.43,
+   "9x12": 4.62,
+   "3x9": 4.18,
+   "6x12": 4.52
+  },
+  "cds5y": 52,
+  "pl_bund_10y": 276,
+  "eur_irs": {
+   "1": 2.79,
+   "2": 2.88,
+   "3": 2.87,
+   "4": 2.88,
+   "5": 2.91,
+   "8": 3.01,
+   "10": 3.09
+  },
+  "usd_irs": {
+   "1": 4.03,
+   "2": 4.06,
+   "3": 4.02,
+   "4": 4.02,
+   "5": 4.05,
+   "8": 4.2,
+   "10": 4.26
+  },
+  "eurpln_close": 4.2452,
+  "eurpln_session": {
+   "min": 4.2452,
+   "max": 4.2587,
+   "open": 4.2578,
+   "close": 4.2452,
+   "fixing": 4.2551
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260506085231/download?id=169402&lang=pl_PL",
+   "created": "2026-05-06T06:39:50Z",
+   "upload": "url time 2026-05-06 08:52:31",
+   "header_date": "05/05/2026",
+   "fx_header_date": "05/05/2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "Erste (PL IRS change column, table headed 05/05/2026): the levels are fresh 5 May closes, but the PL IRS change column (+4/+4/+5/+5/+5/+5/+7) is measured against the stale 04/05 PL IRS print (= 30 Apr levels; see R 2026-05-05), so it is a two-session change (30 Apr -> 5 May; Bloomberg PL 2Y/5Y/10Y +3/+5/+5 over the same two sessions). FRA, US/EZ IRS and spread change columns match the day-on-day differences from the 04/05 table within 1bp. The bond table switches its labels from OK0128/PS0131 to WS0428/PS0731 here (not used).",
+   "PAP table: in the 6 May edition every row carries a date stamp 05.05.2026 (TR 2Y: 30.04.2026); JP and US are NOT live. 5 May was a Japanese holiday (Children's Day): the JP current col (1.39/1.89/2.52) is the 1 May close carried over; US current col 3.94/4.08/4.42 = the 5 May close (seen only in this edition: the 7 May edition 1D col is 6 May and the 12 May edition 5D col is 4 May). TR 2Y (37.67) is still the 30 Apr close (stamped 30.04, earlier than C). The current col is used for all 13 rows."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260506/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-06 06:33",
+   "columns": [
+    "06.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.63,
+     "y3": null,
+     "y5": 5.42,
+     "y10": 5.8,
+     "d1": null,
+     "2Y": [
+      4.63,
+      4.64,
+      4.53,
+      4.34,
+      3.53,
+      4.41
+     ],
+     "5Y": [
+      5.42,
+      5.41,
+      5.33,
+      5.1,
+      4.39,
+      4.75
+     ],
+     "10Y": [
+      5.8,
+      5.79,
+      5.74,
+      5.72,
+      5.08,
+      5.32
+     ],
+     "c_close": [
+      4.63,
+      5.42,
+      5.8
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.95,
+     "y5": 5.91,
+     "y10": 6.02,
+     "d1": null,
+     "3Y": [
+      5.95,
+      5.93,
+      5.92,
+      7.04,
+      6.11,
+      6.29
+     ],
+     "5Y": [
+      5.91,
+      5.89,
+      5.95,
+      6.98,
+      6.21,
+      6.41
+     ],
+     "10Y": [
+      6.02,
+      5.99,
+      6.07,
+      6.94,
+      6.47,
+      6.86
+     ],
+     "c_close": [
+      5.95,
+      5.91,
+      6.02
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.11,
+     "y3": null,
+     "y5": 4.48,
+     "y10": 4.92,
+     "d1": null,
+     "2Y": [
+      4.11,
+      4.1,
+      4.1,
+      4.19,
+      3.49,
+      3.41
+     ],
+     "5Y": [
+      4.48,
+      4.46,
+      4.44,
+      4.45,
+      3.93,
+      3.64
+     ],
+     "10Y": [
+      4.92,
+      4.91,
+      4.91,
+      4.9,
+      4.52,
+      4.1
+     ],
+     "c_close": [
+      4.11,
+      4.48,
+      4.92
+     ],
+     "c_close_src": "current column"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": [
+      "30.04.2026",
+      "05.05.2026",
+      "05.05.2026"
+     ],
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.67,
+     "y3": null,
+     "y5": 35.41,
+     "y10": 31.8,
+     "d1": null,
+     "2Y": [
+      37.67,
+      37.41,
+      36.88,
+      39.96,
+      32.1,
+      42.4
+     ],
+     "5Y": [
+      35.41,
+      35.29,
+      35.04,
+      35.04,
+      30.72,
+      35.96
+     ],
+     "10Y": [
+      31.8,
+      31.72,
+      31.46,
+      30.42,
+      28.1,
+      32.04
+     ],
+     "c_close": [
+      37.67,
+      35.41,
+      31.8
+     ],
+     "c_close_src": "current column",
+     "note": "stamps 30.04.2026/05.05.2026/05.05.2026 (2Y/5Y/10Y): the 2Y current col (37.67) is the 30 Apr close (stamped earlier than C; no Bloomberg TR 2Y print since 30 Apr; Turkey was closed on 1 May), the 5Y/10Y current cols are 5 May closes. c_close = current col for all three tenors, so the TR 2Y is the last available close (30 Apr), not a C close"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.69,
+     "y3": null,
+     "y5": 2.8,
+     "y10": 3.28,
+     "d1": null,
+     "2Y": [
+      2.69,
+      2.75,
+      2.66,
+      2.64,
+      2.11,
+      1.84
+     ],
+     "5Y": [
+      2.8,
+      2.86,
+      2.8,
+      2.77,
+      2.45,
+      2.28
+     ],
+     "10Y": [
+      3.28,
+      3.32,
+      3.3,
+      3.24,
+      3.11,
+      2.87
+     ],
+     "c_close": [
+      2.69,
+      2.8,
+      3.28
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.86,
+     "y3": null,
+     "y5": 3.24,
+     "y10": 3.86,
+     "d1": null,
+     "2Y": [
+      2.86,
+      2.93,
+      2.85,
+      2.85,
+      2.25,
+      2.02
+     ],
+     "5Y": [
+      3.24,
+      3.31,
+      3.25,
+      3.23,
+      2.76,
+      2.75
+     ],
+     "10Y": [
+      3.86,
+      3.94,
+      3.89,
+      3.85,
+      3.47,
+      3.6
+     ],
+     "c_close": [
+      2.86,
+      3.24,
+      3.86
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.7,
+     "y3": null,
+     "y5": 2.94,
+     "y10": 3.45,
+     "d1": null,
+     "2Y": [
+      2.7,
+      2.76,
+      2.69,
+      2.67,
+      2.12,
+      1.81
+     ],
+     "5Y": [
+      2.94,
+      3.0,
+      2.95,
+      2.9,
+      2.61,
+      2.29
+     ],
+     "10Y": [
+      3.45,
+      3.51,
+      3.48,
+      3.42,
+      3.21,
+      3.05
+     ],
+     "c_close": [
+      2.7,
+      2.94,
+      3.45
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.76,
+     "y3": null,
+     "y5": 2.99,
+     "y10": 3.51,
+     "d1": null,
+     "2Y": [
+      2.76,
+      2.82,
+      2.75,
+      2.73,
+      2.22,
+      1.94
+     ],
+     "5Y": [
+      2.99,
+      3.05,
+      3.0,
+      2.96,
+      2.56,
+      2.41
+     ],
+     "10Y": [
+      3.51,
+      3.57,
+      3.53,
+      3.47,
+      3.22,
+      3.17
+     ],
+     "c_close": [
+      2.76,
+      2.99,
+      3.51
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.68,
+     "y3": null,
+     "y5": 2.77,
+     "y10": 3.06,
+     "d1": null,
+     "2Y": [
+      2.68,
+      2.73,
+      2.65,
+      2.62,
+      2.1,
+      1.75
+     ],
+     "5Y": [
+      2.77,
+      2.81,
+      2.77,
+      2.71,
+      2.42,
+      2.06
+     ],
+     "10Y": [
+      3.06,
+      3.09,
+      3.07,
+      2.99,
+      2.84,
+      2.52
+     ],
+     "c_close": [
+      2.68,
+      2.77,
+      3.06
+     ],
+     "c_close_src": "current column"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.83,
+     "y3": null,
+     "y5": 3.12,
+     "y10": 3.71,
+     "d1": null,
+     "2Y": [
+      2.83,
+      2.89,
+      2.8,
+      2.8,
+      2.22,
+      1.91
+     ],
+     "5Y": [
+      3.12,
+      3.18,
+      3.13,
+      3.1,
+      2.74,
+      2.46
+     ],
+     "10Y": [
+      3.71,
+      3.76,
+      3.72,
+      3.68,
+      3.45,
+      3.24
+     ],
+     "c_close": [
+      2.83,
+      3.12,
+      3.71
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.52,
+     "y3": null,
+     "y5": 4.59,
+     "y10": 5.06,
+     "d1": null,
+     "2Y": [
+      4.52,
+      4.42,
+      4.45,
+      4.32,
+      3.66,
+      3.86
+     ],
+     "5Y": [
+      4.59,
+      4.49,
+      4.53,
+      4.38,
+      3.94,
+      3.98
+     ],
+     "10Y": [
+      5.06,
+      4.96,
+      5.01,
+      4.83,
+      4.56,
+      4.51
+     ],
+     "c_close": [
+      4.52,
+      4.59,
+      5.06
+     ],
+     "c_close_src": "current column"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.89,
+     "y10": 2.52,
+     "d1": null,
+     "2Y": [
+      1.39,
+      1.39,
+      1.38,
+      1.39,
+      1.29,
+      0.61
+     ],
+     "5Y": [
+      1.89,
+      1.89,
+      1.87,
+      1.8,
+      1.69,
+      0.83
+     ],
+     "10Y": [
+      2.52,
+      2.52,
+      2.48,
+      2.39,
+      2.24,
+      1.26
+     ],
+     "c_close": [
+      1.39,
+      1.89,
+      2.52
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 05.05.2026 (date stamp, NOT live): 5 May was a Japanese holiday (Children's Day, Golden Week), so the current col (1.39/1.89/2.52) = the 1 May close carried over (current col = 1D col); no 5 May JGB close exists. Current col used; all three tenors unchanged vs the 4 May close"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "05.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.94,
+     "y3": null,
+     "y5": 4.08,
+     "y10": 4.42,
+     "d1": null,
+     "2Y": [
+      3.94,
+      3.95,
+      3.84,
+      3.84,
+      3.45,
+      3.83
+     ],
+     "5Y": [
+      4.08,
+      4.09,
+      3.98,
+      3.98,
+      3.72,
+      3.94
+     ],
+     "10Y": [
+      4.42,
+      4.44,
+      4.35,
+      4.34,
+      4.18,
+      4.34
+     ],
+     "c_close": [
+      3.94,
+      4.08,
+      4.42
+     ],
+     "c_close_src": "current column",
+     "note": "stamped 05.05.2026, i.e. NOT live (unusual: US is normally clock-stamped on the morning of R). Current col 3.94/4.08/4.42 = the 5 May close (1D col = 4 May close); seen only in this edition (the 7 May edition 1D col is the 6 May close, the 12 May edition 5D col the 4 May close). Current col used"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260505/dzien-na-fxfi-lekka-poprawa-notowan-pln-rynek-spodziewa-sie-zaostrzenia",
+   "time": "2026-05-05 17:16",
+   "quote_time": "17:02",
+   "y2": 4.6,
+   "y5": 5.41,
+   "y10": 5.8,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.8
+   },
+   "eurpln": 4.2479,
+   "usdpln": 3.6288,
+   "note": "Quotes 17:02 (published 17:16); 2 FX/FI pieces on C (09:40, 17:16); the next piece (06.05 09:19) uses \"wtorek 17:02\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. Bloomberg PL C close 4.63/5.42/5.80; Erste EUR/PLN close 4.2452"
+  }
+ },
+ "2026-05-07": {
+  "C": "2026-05-06",
+  "irs": {
+   "1": 4.18,
+   "2": 4.31,
+   "3": 4.34,
+   "4": 4.38,
+   "5": 4.42,
+   "7": null,
+   "8": 4.57,
+   "10": 4.67
+  },
+  "fra": {
+   "1x4": 3.86,
+   "3x6": 3.99,
+   "6x9": 4.22,
+   "9x12": 4.4,
+   "3x9": 4.09,
+   "6x12": 4.32
+  },
+  "cds5y": 52,
+  "pl_bund_10y": 263,
+  "eur_irs": {
+   "1": 2.73,
+   "2": 2.78,
+   "3": 2.78,
+   "4": 2.79,
+   "5": 2.82,
+   "8": 2.94,
+   "10": 3.03
+  },
+  "usd_irs": {
+   "1": 3.99,
+   "2": 3.98,
+   "3": 3.95,
+   "4": 3.95,
+   "5": 3.98,
+   "8": 4.13,
+   "10": 4.21
+  },
+  "eurpln_close": 4.2337,
+  "eurpln_session": {
+   "min": 4.226,
+   "max": 4.2456,
+   "open": 4.2448,
+   "close": 4.2337,
+   "fixing": 4.2351
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260507083924/download?id=169407&lang=pl_PL",
+   "created": "2026-05-07T06:24:16Z",
+   "upload": "url time 2026-05-07 08:39:24",
+   "header_date": "06/05/2026",
+   "fx_header_date": "06/05/2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "PAP table: C = 6 May was a Japanese holiday (substitute holiday; JGB market closed 4-6 May). The JP row c_close (d1) = 1.39/1.89/2.52 = the 1 May close, the last JGB close before C; there is no 6 May JP close."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260507/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-07 06:33",
+   "columns": [
+    "07.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.48,
+     "y3": null,
+     "y5": 5.2,
+     "y10": 5.6,
+     "d1": null,
+     "2Y": [
+      4.48,
+      4.63,
+      4.57,
+      4.34,
+      3.52,
+      4.41
+     ],
+     "5Y": [
+      5.2,
+      5.42,
+      5.38,
+      5.1,
+      4.39,
+      4.67
+     ],
+     "10Y": [
+      5.6,
+      5.8,
+      5.78,
+      5.72,
+      5.09,
+      5.27
+     ],
+     "c_close": [
+      4.48,
+      5.2,
+      5.6
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.87,
+     "y5": 5.79,
+     "y10": 5.9,
+     "d1": null,
+     "3Y": [
+      5.87,
+      5.95,
+      5.91,
+      7.04,
+      6.14,
+      6.35
+     ],
+     "5Y": [
+      5.79,
+      5.91,
+      5.92,
+      6.98,
+      6.27,
+      6.46
+     ],
+     "10Y": [
+      5.9,
+      6.02,
+      6.03,
+      6.94,
+      6.54,
+      6.9
+     ],
+     "c_close": [
+      5.87,
+      5.79,
+      5.9
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.99,
+     "y3": null,
+     "y5": 4.39,
+     "y10": 4.82,
+     "d1": null,
+     "2Y": [
+      3.99,
+      4.11,
+      4.11,
+      4.19,
+      3.53,
+      3.39
+     ],
+     "5Y": [
+      4.39,
+      4.48,
+      4.45,
+      4.45,
+      3.96,
+      3.62
+     ],
+     "10Y": [
+      4.82,
+      4.92,
+      4.9,
+      4.9,
+      4.55,
+      4.1
+     ],
+     "c_close": [
+      3.99,
+      4.39,
+      4.82
+     ],
+     "c_close_src": "current column"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.53,
+     "y3": null,
+     "y5": 34.5,
+     "y10": 31.09,
+     "d1": null,
+     "2Y": [
+      37.53,
+      37.67,
+      37.41,
+      38.69,
+      32.62,
+      42.73
+     ],
+     "5Y": [
+      34.5,
+      35.41,
+      35.17,
+      34.85,
+      30.54,
+      36.17
+     ],
+     "10Y": [
+      31.09,
+      31.8,
+      31.68,
+      30.25,
+      28.0,
+      32.21
+     ],
+     "c_close": [
+      37.53,
+      34.5,
+      31.09
+     ],
+     "c_close_src": "current column"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.57,
+     "y3": null,
+     "y5": 2.71,
+     "y10": 3.21,
+     "d1": null,
+     "2Y": [
+      2.57,
+      2.69,
+      2.76,
+      2.64,
+      2.11,
+      1.84
+     ],
+     "5Y": [
+      2.71,
+      2.8,
+      2.88,
+      2.77,
+      2.44,
+      2.3
+     ],
+     "10Y": [
+      3.21,
+      3.28,
+      3.35,
+      3.24,
+      3.11,
+      2.91
+     ],
+     "c_close": [
+      2.57,
+      2.71,
+      3.21
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.73,
+     "y3": null,
+     "y5": 3.11,
+     "y10": 3.75,
+     "d1": null,
+     "2Y": [
+      2.73,
+      2.86,
+      2.95,
+      2.85,
+      2.24,
+      2.02
+     ],
+     "5Y": [
+      3.11,
+      3.24,
+      3.34,
+      3.23,
+      2.75,
+      2.76
+     ],
+     "10Y": [
+      3.75,
+      3.86,
+      3.96,
+      3.85,
+      3.47,
+      3.63
+     ],
+     "c_close": [
+      2.73,
+      3.11,
+      3.75
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.59,
+     "y3": null,
+     "y5": 2.84,
+     "y10": 3.36,
+     "d1": null,
+     "2Y": [
+      2.59,
+      2.7,
+      2.78,
+      2.67,
+      2.13,
+      1.77
+     ],
+     "5Y": [
+      2.84,
+      2.94,
+      3.02,
+      2.9,
+      2.6,
+      2.29
+     ],
+     "10Y": [
+      3.36,
+      3.45,
+      3.53,
+      3.42,
+      3.21,
+      3.07
+     ],
+     "c_close": [
+      2.59,
+      2.84,
+      3.36
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.64,
+     "y3": null,
+     "y5": 2.89,
+     "y10": 3.43,
+     "d1": null,
+     "2Y": [
+      2.64,
+      2.76,
+      2.84,
+      2.73,
+      2.21,
+      1.94
+     ],
+     "5Y": [
+      2.89,
+      2.99,
+      3.07,
+      2.96,
+      2.56,
+      2.42
+     ],
+     "10Y": [
+      3.43,
+      3.51,
+      3.58,
+      3.47,
+      3.22,
+      3.19
+     ],
+     "c_close": [
+      2.64,
+      2.89,
+      3.43
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.57,
+     "y3": null,
+     "y5": 2.69,
+     "y10": 3.0,
+     "d1": null,
+     "2Y": [
+      2.57,
+      2.68,
+      2.74,
+      2.62,
+      2.09,
+      1.74
+     ],
+     "5Y": [
+      2.69,
+      2.77,
+      2.84,
+      2.71,
+      2.41,
+      2.06
+     ],
+     "10Y": [
+      3.0,
+      3.06,
+      3.11,
+      2.99,
+      2.84,
+      2.54
+     ],
+     "c_close": [
+      2.57,
+      2.69,
+      3.0
+     ],
+     "c_close_src": "current column"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.72,
+     "y3": null,
+     "y5": 3.02,
+     "y10": 3.62,
+     "d1": null,
+     "2Y": [
+      2.72,
+      2.83,
+      2.9,
+      2.8,
+      2.21,
+      1.9
+     ],
+     "5Y": [
+      3.02,
+      3.12,
+      3.2,
+      3.1,
+      2.73,
+      2.47
+     ],
+     "10Y": [
+      3.62,
+      3.71,
+      3.78,
+      3.68,
+      3.45,
+      3.26
+     ],
+     "c_close": [
+      2.72,
+      3.02,
+      3.62
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "06.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.38,
+     "y3": null,
+     "y5": 4.48,
+     "y10": 4.94,
+     "d1": null,
+     "2Y": [
+      4.38,
+      4.52,
+      4.56,
+      4.32,
+      3.62,
+      3.83
+     ],
+     "5Y": [
+      4.48,
+      4.59,
+      4.62,
+      4.38,
+      3.9,
+      3.97
+     ],
+     "10Y": [
+      4.94,
+      5.06,
+      5.07,
+      4.83,
+      4.51,
+      4.51
+     ],
+     "c_close": [
+      4.38,
+      4.48,
+      4.94
+     ],
+     "c_close_src": "current column"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "06:31:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.38,
+     "y3": null,
+     "y5": 1.87,
+     "y10": 2.49,
+     "d1": {
+      "y2": 1.39,
+      "y5": 1.89,
+      "y10": 2.52
+     },
+     "2Y": [
+      1.38,
+      1.39,
+      1.39,
+      1.39,
+      1.29,
+      0.62
+     ],
+     "5Y": [
+      1.87,
+      1.89,
+      1.9,
+      1.81,
+      1.69,
+      0.85
+     ],
+     "10Y": [
+      2.49,
+      2.52,
+      2.53,
+      2.42,
+      2.23,
+      1.31
+     ],
+     "c_close": [
+      1.39,
+      1.89,
+      2.52
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:31:00 on morning of R (live, after C); current col unusable, use d1; JGB market closed on C (6 May, substitute holiday for Constitution Day): d1 = 1.39/1.89/2.52 = the 1 May close carried over (the last JGB close before C, not a C-dated close; also the 6 May edition current col); all three tenors unchanged vs the 5 May close"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "06:31:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.87,
+     "y3": null,
+     "y5": 4.0,
+     "y10": 4.35,
+     "d1": {
+      "y2": 3.87,
+      "y5": 4.0,
+      "y10": 4.35
+     },
+     "2Y": [
+      3.87,
+      3.87,
+      3.87,
+      3.79,
+      3.5,
+      3.78
+     ],
+     "5Y": [
+      4.0,
+      4.0,
+      4.01,
+      3.93,
+      3.76,
+      3.86
+     ],
+     "10Y": [
+      4.35,
+      4.35,
+      4.37,
+      4.29,
+      4.21,
+      4.27
+     ],
+     "c_close": [
+      3.87,
+      4.0,
+      4.35
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:31:00 on morning of R (live, after C); current col unusable, use d1"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260506/dzien-na-fxfi-zloty-i-obligacje-umocnily-sie-dalsze-notowania-zalezne-od",
+   "time": "2026-05-06 17:14",
+   "quote_time": "16:55",
+   "y2": 4.44,
+   "y5": 5.19,
+   "y10": 5.59,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.59
+   },
+   "eurpln": 4.2323,
+   "usdpln": 3.5994,
+   "note": "Quotes 16:55 (published 17:14); 2 FX/FI pieces on C (09:19, 17:14); the next piece (07.05 09:16) uses \"środa 16:55\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. Bloomberg PL C close 4.48/5.20/5.60; Erste EUR/PLN close 4.2337"
+  }
+ },
+ "2026-05-08": {
+  "C": "2026-05-07",
+  "irs": {
+   "1": 4.18,
+   "2": 4.31,
+   "3": 4.34,
+   "4": 4.37,
+   "5": 4.41,
+   "7": null,
+   "8": 4.55,
+   "10": 4.66
+  },
+  "fra": {
+   "1x4": 3.88,
+   "3x6": 4.02,
+   "6x9": 4.24,
+   "9x12": 4.41,
+   "3x9": 4.11,
+   "6x12": 4.34
+  },
+  "cds5y": 51,
+  "pl_bund_10y": 261,
+  "eur_irs": {
+   "1": 2.73,
+   "2": 2.8,
+   "3": 2.81,
+   "4": 2.82,
+   "5": 2.85,
+   "8": 2.96,
+   "10": 3.05
+  },
+  "usd_irs": {
+   "1": 4.01,
+   "2": 4.01,
+   "3": 3.99,
+   "4": 3.99,
+   "5": 4.03,
+   "8": 4.18,
+   "10": 4.26
+  },
+  "eurpln_close": 4.2264,
+  "eurpln_session": {
+   "min": 4.224,
+   "max": 4.2331,
+   "open": 4.232,
+   "close": 4.2264,
+   "fixing": 4.2286
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260508083732/download?id=169409&lang=pl_PL",
+   "created": "2026-05-08T06:25:13Z",
+   "upload": "url time 2026-05-08 08:37:32",
+   "header_date": "07/05/2026",
+   "fx_header_date": "07/05/2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "PAP table / PAP close note: the Bloomberg PL 10Y generic (and the PAP FX/FI 10Y row, still labelled DS1035) appear to switch to the new 10Y benchmark DS0436 on C = 7 May. Evidence available by R: Bloomberg PL 10Y 5.60 -> 5.67 (+7bp) and PAP \"DS1035\" 5.59 (6 May 16:55) -> 5.66 (7 May 09:11 and 16:44), while 2Y/5Y fell (-5/-2 BBG, -2/-3 PAP) and the Erste (LSEG) DS1035 went 5.62 -> 5.60 (-2) with PL IRS 10Y 4.67 -> 4.66; the Erste PL-Bund spread fell 263 -> 261 while the BBG PL10Y-DE10Y gap rose 260 -> 267 (Erste had been 2-3bp above BBG). So day-on-day 10Y changes across 6/7 May in the Bloomberg row (this edition's 1D col 5.60 and older cols refer to the previous bond) and in pap_close.y10 mix two bonds; DS0436 appears to trade roughly 7-9bp above DS1035. [Post-R confirmation, audit only: Erste DS1035 stays 7-9bp below Bloomberg and the Erste spread 7-9bp below the BBG gap through 13 May (11.05 268/276, 13.05 273/282); on 12 May PAP relabels its 10Y row DS0436 (\"*nowy benchmark\") and shows its 11 May 14:03 quote (5.78, published on 11 May as DS1035) unchanged under the new label.]"
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260508/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-08 07:21",
+   "columns": [
+    "08.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.43,
+     "y3": null,
+     "y5": 5.18,
+     "y10": 5.67,
+     "d1": null,
+     "2Y": [
+      4.43,
+      4.48,
+      4.6,
+      4.49,
+      3.52,
+      4.41
+     ],
+     "5Y": [
+      5.18,
+      5.2,
+      5.37,
+      5.26,
+      4.39,
+      4.68
+     ],
+     "10Y": [
+      5.67,
+      5.6,
+      5.75,
+      5.87,
+      5.09,
+      5.25
+     ],
+     "c_close": [
+      4.43,
+      5.18,
+      5.67
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col); PL 10Y +7bp on 7 May (5.60 -> 5.67) while 2Y -5 and 5Y -2: the Bloomberg PL 10Y generic appears to have rolled from DS1035 to DS0436 on 7 May (see flags); the 1D col (5.60) and older columns refer to the previous 10Y bond"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.8,
+     "y5": 5.74,
+     "y10": 5.87,
+     "d1": null,
+     "3Y": [
+      5.8,
+      5.87,
+      5.95,
+      7.04,
+      6.14,
+      6.3
+     ],
+     "5Y": [
+      5.74,
+      5.79,
+      5.93,
+      6.94,
+      6.27,
+      6.41
+     ],
+     "10Y": [
+      5.87,
+      5.9,
+      6.03,
+      6.9,
+      6.54,
+      6.88
+     ],
+     "c_close": [
+      5.8,
+      5.74,
+      5.87
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.97,
+     "y3": null,
+     "y5": 4.35,
+     "y10": 4.8,
+     "d1": null,
+     "2Y": [
+      3.97,
+      3.99,
+      4.08,
+      4.24,
+      3.53,
+      3.44
+     ],
+     "5Y": [
+      4.35,
+      4.39,
+      4.44,
+      4.52,
+      3.96,
+      3.6
+     ],
+     "10Y": [
+      4.8,
+      4.82,
+      4.87,
+      4.97,
+      4.55,
+      4.07
+     ],
+     "c_close": [
+      3.97,
+      4.35,
+      4.8
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 11 May edition current col, the 15 May edition 5D col)"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.34,
+     "y3": null,
+     "y5": 34.36,
+     "y10": 30.88,
+     "d1": null,
+     "2Y": [
+      37.34,
+      37.53,
+      37.67,
+      38.68,
+      32.62,
+      42.72
+     ],
+     "5Y": [
+      34.36,
+      34.5,
+      34.97,
+      34.97,
+      30.54,
+      36.44
+     ],
+     "10Y": [
+      30.88,
+      31.09,
+      31.42,
+      30.35,
+      28.0,
+      32.33
+     ],
+     "c_close": [
+      37.34,
+      34.36,
+      30.88
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col, the 18 May edition 5D col)"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.58,
+     "y3": null,
+     "y5": 2.73,
+     "y10": 3.22,
+     "d1": null,
+     "2Y": [
+      2.58,
+      2.57,
+      2.65,
+      2.72,
+      2.11,
+      1.82
+     ],
+     "5Y": [
+      2.73,
+      2.71,
+      2.78,
+      2.85,
+      2.44,
+      2.26
+     ],
+     "10Y": [
+      3.22,
+      3.21,
+      3.27,
+      3.3,
+      3.11,
+      2.87
+     ],
+     "c_close": [
+      2.58,
+      2.73,
+      3.22
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.75,
+     "y3": null,
+     "y5": 3.13,
+     "y10": 3.74,
+     "d1": null,
+     "2Y": [
+      2.75,
+      2.73,
+      2.84,
+      2.96,
+      2.24,
+      1.98
+     ],
+     "5Y": [
+      3.13,
+      3.11,
+      3.22,
+      3.36,
+      2.75,
+      2.7
+     ],
+     "10Y": [
+      3.74,
+      3.75,
+      3.86,
+      3.97,
+      3.47,
+      3.55
+     ],
+     "c_close": [
+      2.75,
+      3.13,
+      3.74
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.61,
+     "y3": null,
+     "y5": 2.86,
+     "y10": 3.37,
+     "d1": null,
+     "2Y": [
+      2.61,
+      2.59,
+      2.68,
+      2.77,
+      2.13,
+      1.76
+     ],
+     "5Y": [
+      2.86,
+      2.84,
+      2.93,
+      3.0,
+      2.6,
+      2.25
+     ],
+     "10Y": [
+      3.37,
+      3.36,
+      3.44,
+      3.51,
+      3.21,
+      3.01
+     ],
+     "c_close": [
+      2.61,
+      2.86,
+      3.37
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.66,
+     "y3": null,
+     "y5": 2.91,
+     "y10": 3.43,
+     "d1": null,
+     "2Y": [
+      2.66,
+      2.64,
+      2.73,
+      2.84,
+      2.21,
+      1.91
+     ],
+     "5Y": [
+      2.91,
+      2.89,
+      2.98,
+      3.07,
+      2.56,
+      2.38
+     ],
+     "10Y": [
+      3.43,
+      3.43,
+      3.5,
+      3.57,
+      3.22,
+      3.13
+     ],
+     "c_close": [
+      2.66,
+      2.91,
+      3.43
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.59,
+     "y3": null,
+     "y5": 2.7,
+     "y10": 3.0,
+     "d1": null,
+     "2Y": [
+      2.59,
+      2.57,
+      2.64,
+      2.72,
+      2.09,
+      1.71
+     ],
+     "5Y": [
+      2.7,
+      2.69,
+      2.75,
+      2.82,
+      2.41,
+      2.01
+     ],
+     "10Y": [
+      3.0,
+      3.0,
+      3.04,
+      3.08,
+      2.84,
+      2.48
+     ],
+     "c_close": [
+      2.59,
+      2.7,
+      3.0
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.74,
+     "y3": null,
+     "y5": 3.03,
+     "y10": 3.63,
+     "d1": null,
+     "2Y": [
+      2.74,
+      2.72,
+      2.79,
+      2.91,
+      2.21,
+      1.87
+     ],
+     "5Y": [
+      3.03,
+      3.02,
+      3.1,
+      3.22,
+      2.73,
+      2.42
+     ],
+     "10Y": [
+      3.63,
+      3.62,
+      3.69,
+      3.78,
+      3.45,
+      3.2
+     ],
+     "c_close": [
+      2.74,
+      3.03,
+      3.63
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": null,
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.39,
+     "y3": null,
+     "y5": 4.49,
+     "y10": 4.95,
+     "d1": null,
+     "2Y": [
+      4.39,
+      4.38,
+      4.45,
+      4.41,
+      3.62,
+      3.8
+     ],
+     "5Y": [
+      4.49,
+      4.48,
+      4.52,
+      4.46,
+      3.9,
+      3.93
+     ],
+     "10Y": [
+      4.95,
+      4.94,
+      5.01,
+      4.9,
+      4.51,
+      4.46
+     ],
+     "c_close": [
+      4.39,
+      4.49,
+      4.95
+     ],
+     "c_close_src": "current column",
+     "note": "no stamp column in this edition; current col verified = C close (equals the 11 May edition 1D col, the 15 May edition 5D col)"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": null,
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.37,
+     "y3": null,
+     "y5": 1.86,
+     "y10": 2.48,
+     "d1": {
+      "y2": 1.37,
+      "y5": 1.86,
+      "y10": 2.48
+     },
+     "2Y": [
+      1.37,
+      1.37,
+      1.39,
+      1.39,
+      1.29,
+      0.63
+     ],
+     "5Y": [
+      1.86,
+      1.86,
+      1.89,
+      1.79,
+      1.69,
+      0.87
+     ],
+     "10Y": [
+      2.48,
+      2.48,
+      2.52,
+      2.37,
+      2.23,
+      1.34
+     ],
+     "c_close": [
+      1.37,
+      1.86,
+      2.48
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "no stamp column in this edition (published 07:21); inferred live morning-of-R quote: its 5D col (1.39/1.89/2.52) is the 1 May close, so the row refers to 8 May (current col equals the 1D col in all three tenors). d1 = C close (1.37/1.86/2.48, confirmed by the 14 May edition 5D col)"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": null,
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.91,
+     "y3": null,
+     "y5": 4.04,
+     "y10": 4.39,
+     "d1": {
+      "y2": 3.91,
+      "y5": 4.04,
+      "y10": 4.39
+     },
+     "2Y": [
+      3.91,
+      3.91,
+      3.88,
+      3.79,
+      3.5,
+      3.87
+     ],
+     "5Y": [
+      4.04,
+      4.04,
+      4.01,
+      3.92,
+      3.76,
+      3.98
+     ],
+     "10Y": [
+      4.39,
+      4.39,
+      4.37,
+      4.29,
+      4.21,
+      4.38
+     ],
+     "c_close": [
+      3.91,
+      4.04,
+      4.39
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "no stamp column in this edition (published 07:21); inferred live morning-of-R quote: its 5D col (3.88/4.01/4.37) is the 1 May close, so the row refers to 8 May (current col equals the 1D col in all three tenors). d1 = C close (3.91/4.04/4.39, confirmed by the 14 May edition 5D col)"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260507/dzien-na-fxfi-zloty-stabilny-po-konferencji-prezesa-nbp",
+   "time": "2026-05-07 17:06",
+   "quote_time": "16:44",
+   "y2": 4.42,
+   "y5": 5.16,
+   "y10": 5.66,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.66
+   },
+   "eurpln": 4.2265,
+   "usdpln": 3.5906,
+   "note": "Quotes 16:44 (published 17:06); 2 FX/FI pieces on C (09:16, 17:06); the next piece (08.05 09:37) uses \"czwartek 16:44\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. y10/bonds.DS1035 as labelled (DS1035); the row appears to track the new 10Y DS0436 from 7 May (+7bp jump on 7 May while the LSEG DS1035 fell 2bp and 2Y/5Y fell); see the R 2026-05-08 flag. Bloomberg PL C close 4.43/5.18/5.67; Erste EUR/PLN close 4.2264"
+  }
+ },
+ "2026-05-11": {
+  "C": "2026-05-08",
+  "irs": {
+   "1": 4.21,
+   "2": 4.34,
+   "3": 4.36,
+   "4": 4.4,
+   "5": 4.43,
+   "7": null,
+   "8": 4.56,
+   "10": 4.65
+  },
+  "fra": {
+   "1x4": 3.9,
+   "3x6": 4.04,
+   "6x9": 4.27,
+   "9x12": 4.46,
+   "3x9": 4.14,
+   "6x12": 4.37
+  },
+  "cds5y": 50,
+  "pl_bund_10y": 261,
+  "eur_irs": {
+   "1": 2.7,
+   "2": 2.77,
+   "3": 2.77,
+   "4": 2.8,
+   "5": 2.82,
+   "8": 2.94,
+   "10": 3.02
+  },
+  "usd_irs": {
+   "1": 3.99,
+   "2": 3.99,
+   "3": 3.97,
+   "4": 3.96,
+   "5": 4.0,
+   "8": 4.15,
+   "10": 4.22
+  },
+  "eurpln_close": 4.2332,
+  "eurpln_session": {
+   "min": 4.2268,
+   "max": 4.2341,
+   "open": 4.2287,
+   "close": 4.2332,
+   "fixing": 4.2284
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260511085013/download?id=169416&lang=pl_PL",
+   "created": "2026-05-11T06:36:25Z",
+   "upload": "url time 2026-05-11 08:50:13",
+   "header_date": "08.05.2026",
+   "fx_header_date": "08.05.2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "PAP table: the CZ row is stamped 08.05/08.05/07.05.2026 (2Y/5Y/10Y). 8 May was a Czech holiday (Liberation Day); CZ 10Y c_close = 4.80 is the 7 May close (earlier than C); 2Y/5Y (3.98/4.35) are dated 8 May. All other EU/CEE/TR rows are stamped 08.05.2026; JP/US live."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260511/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-11 06:37",
+   "columns": [
+    "11.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.46,
+     "y3": null,
+     "y5": 5.2,
+     "y10": 5.69,
+     "d1": null,
+     "2Y": [
+      4.46,
+      4.43,
+      4.6,
+      4.16,
+      3.52,
+      4.51
+     ],
+     "5Y": [
+      5.2,
+      5.18,
+      5.37,
+      4.89,
+      4.39,
+      4.79
+     ],
+     "10Y": [
+      5.69,
+      5.67,
+      5.75,
+      5.5,
+      5.09,
+      5.32
+     ],
+     "c_close": [
+      4.46,
+      5.2,
+      5.69
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.66,
+     "y5": 5.56,
+     "y10": 5.68,
+     "d1": null,
+     "3Y": [
+      5.66,
+      5.8,
+      5.95,
+      6.68,
+      6.14,
+      6.28
+     ],
+     "5Y": [
+      5.56,
+      5.74,
+      5.93,
+      6.68,
+      6.27,
+      6.39
+     ],
+     "10Y": [
+      5.68,
+      5.87,
+      6.03,
+      6.72,
+      6.54,
+      6.87
+     ],
+     "c_close": [
+      5.66,
+      5.56,
+      5.68
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": [
+      "08.05.2026",
+      "08.05.2026",
+      "07.05.2026"
+     ],
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.98,
+     "y3": null,
+     "y5": 4.35,
+     "y10": 4.8,
+     "d1": null,
+     "2Y": [
+      3.98,
+      3.97,
+      4.08,
+      4.0,
+      3.53,
+      3.44
+     ],
+     "5Y": [
+      4.35,
+      4.35,
+      4.44,
+      4.27,
+      3.96,
+      3.6
+     ],
+     "10Y": [
+      4.8,
+      4.82,
+      4.87,
+      4.97,
+      4.55,
+      4.07
+     ],
+     "c_close": [
+      3.98,
+      4.35,
+      4.8
+     ],
+     "c_close_src": "current column",
+     "note": "stamps 08.05/08.05/07.05.2026 (2Y/5Y/10Y): 8 May was a Czech holiday (Liberation Day); the 10Y current col (4.80) is the 7 May close (earlier than C), 2Y/5Y current cols (3.98/4.35) are dated 8 May. c_close = current col for all three tenors, so the CZ 10Y is the last available close (7 May), not a C close"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 37.19,
+     "y3": null,
+     "y5": 34.66,
+     "y10": 31.17,
+     "d1": null,
+     "2Y": [
+      37.19,
+      37.34,
+      37.67,
+      36.78,
+      32.62,
+      42.59
+     ],
+     "5Y": [
+      34.66,
+      34.36,
+      34.97,
+      33.54,
+      30.54,
+      36.22
+     ],
+     "10Y": [
+      31.17,
+      30.88,
+      31.42,
+      29.05,
+      28.0,
+      32.19
+     ],
+     "c_close": [
+      37.19,
+      34.66,
+      31.17
+     ],
+     "c_close_src": "current column"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.6,
+     "y3": null,
+     "y5": 2.73,
+     "y10": 3.21,
+     "d1": null,
+     "2Y": [
+      2.6,
+      2.58,
+      2.65,
+      2.5,
+      2.11,
+      1.87
+     ],
+     "5Y": [
+      2.73,
+      2.73,
+      2.78,
+      2.65,
+      2.44,
+      2.31
+     ],
+     "10Y": [
+      3.21,
+      3.22,
+      3.27,
+      3.14,
+      3.11,
+      2.88
+     ],
+     "c_close": [
+      2.6,
+      2.73,
+      3.21
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.76,
+     "y3": null,
+     "y5": 3.11,
+     "y10": 3.73,
+     "d1": null,
+     "2Y": [
+      2.76,
+      2.75,
+      2.84,
+      2.69,
+      2.24,
+      2.02
+     ],
+     "5Y": [
+      3.11,
+      3.13,
+      3.22,
+      3.09,
+      2.75,
+      2.74
+     ],
+     "10Y": [
+      3.73,
+      3.74,
+      3.86,
+      3.71,
+      3.47,
+      3.58
+     ],
+     "c_close": [
+      2.76,
+      3.11,
+      3.73
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.61,
+     "y3": null,
+     "y5": 2.85,
+     "y10": 3.36,
+     "d1": null,
+     "2Y": [
+      2.61,
+      2.61,
+      2.68,
+      2.56,
+      2.13,
+      1.81
+     ],
+     "5Y": [
+      2.85,
+      2.86,
+      2.93,
+      2.8,
+      2.6,
+      2.28
+     ],
+     "10Y": [
+      3.36,
+      3.37,
+      3.44,
+      3.33,
+      3.21,
+      3.05
+     ],
+     "c_close": [
+      2.61,
+      2.85,
+      3.36
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.67,
+     "y3": null,
+     "y5": 2.91,
+     "y10": 3.42,
+     "d1": null,
+     "2Y": [
+      2.67,
+      2.66,
+      2.73,
+      2.61,
+      2.21,
+      1.96
+     ],
+     "5Y": [
+      2.91,
+      2.91,
+      2.98,
+      2.86,
+      2.56,
+      2.42
+     ],
+     "10Y": [
+      3.42,
+      3.43,
+      3.5,
+      3.38,
+      3.22,
+      3.18
+     ],
+     "c_close": [
+      2.67,
+      2.91,
+      3.42
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.6,
+     "y3": null,
+     "y5": 2.71,
+     "y10": 3.01,
+     "d1": null,
+     "2Y": [
+      2.6,
+      2.59,
+      2.64,
+      2.49,
+      2.09,
+      1.77
+     ],
+     "5Y": [
+      2.71,
+      2.7,
+      2.75,
+      2.64,
+      2.41,
+      2.08
+     ],
+     "10Y": [
+      3.01,
+      3.0,
+      3.04,
+      2.94,
+      2.84,
+      2.54
+     ],
+     "c_close": [
+      2.6,
+      2.71,
+      3.01
+     ],
+     "c_close_src": "current column"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.75,
+     "y3": null,
+     "y5": 3.03,
+     "y10": 3.62,
+     "d1": null,
+     "2Y": [
+      2.75,
+      2.74,
+      2.79,
+      2.66,
+      2.21,
+      1.92
+     ],
+     "5Y": [
+      3.03,
+      3.03,
+      3.1,
+      2.99,
+      2.73,
+      2.47
+     ],
+     "10Y": [
+      3.62,
+      3.63,
+      3.69,
+      3.58,
+      3.45,
+      3.24
+     ],
+     "c_close": [
+      2.75,
+      3.03,
+      3.62
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "08.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.38,
+     "y3": null,
+     "y5": 4.46,
+     "y10": 4.91,
+     "d1": null,
+     "2Y": [
+      4.38,
+      4.39,
+      4.42,
+      4.17,
+      3.62,
+      3.93
+     ],
+     "5Y": [
+      4.46,
+      4.49,
+      4.49,
+      4.26,
+      3.9,
+      4.03
+     ],
+     "10Y": [
+      4.91,
+      4.95,
+      4.96,
+      4.71,
+      4.51,
+      4.55
+     ],
+     "c_close": [
+      4.38,
+      4.46,
+      4.91
+     ],
+     "c_close_src": "current column"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "06:34:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.88,
+     "y10": 2.51,
+     "d1": {
+      "y2": 1.38,
+      "y5": 1.86,
+      "y10": 2.48
+     },
+     "2Y": [
+      1.39,
+      1.38,
+      1.39,
+      1.41,
+      1.31,
+      0.65
+     ],
+     "5Y": [
+      1.88,
+      1.86,
+      1.89,
+      1.86,
+      1.71,
+      0.89
+     ],
+     "10Y": [
+      2.51,
+      2.48,
+      2.52,
+      2.44,
+      2.24,
+      1.37
+     ],
+     "c_close": [
+      1.38,
+      1.86,
+      2.48
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:34:00 on morning of R (live, after C); current col unusable, use d1"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "06:34:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.92,
+     "y3": null,
+     "y5": 4.04,
+     "y10": 4.39,
+     "d1": {
+      "y2": 3.88,
+      "y5": 4.0,
+      "y10": 4.35
+     },
+     "2Y": [
+      3.92,
+      3.88,
+      3.95,
+      3.8,
+      3.51,
+      3.89
+     ],
+     "5Y": [
+      4.04,
+      4.0,
+      4.09,
+      3.94,
+      3.74,
+      4.0
+     ],
+     "10Y": [
+      4.39,
+      4.35,
+      4.44,
+      4.32,
+      4.17,
+      4.38
+     ],
+     "c_close": [
+      3.88,
+      4.0,
+      4.35
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:34:00 on morning of R (live, after C); current col unusable, use d1"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260508/dzien-na-fxfi-w-skali-tygodnia-pln-umocnil-sie-dalsze-notownia-zalezne-od",
+   "time": "2026-05-08 17:03",
+   "quote_time": "16:39",
+   "y2": 4.43,
+   "y5": 5.18,
+   "y10": 5.67,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.67
+   },
+   "eurpln": 4.2319,
+   "usdpln": 3.5944,
+   "note": "Quotes 16:39 (published 17:03); 2 FX/FI pieces on C (09:37, 17:03); the next piece (11.05 09:15) uses \"piątek 16:39\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. y10/bonds.DS1035 as labelled (DS1035); the row appears to track the new 10Y DS0436 from 7 May (+7bp jump on 7 May while the LSEG DS1035 fell 2bp and 2Y/5Y fell); see the R 2026-05-08 flag. Bloomberg PL C close 4.46/5.20/5.69; Erste EUR/PLN close 4.2332"
+  }
+ },
+ "2026-05-12": {
+  "C": "2026-05-11",
+  "irs": {
+   "1": 4.27,
+   "2": 4.43,
+   "3": 4.45,
+   "4": 4.47,
+   "5": 4.51,
+   "7": null,
+   "8": 4.64,
+   "10": 4.73
+  },
+  "fra": {
+   "1x4": 3.9,
+   "3x6": 4.08,
+   "6x9": 4.36,
+   "9x12": 4.56,
+   "3x9": 4.18,
+   "6x12": 4.45
+  },
+  "cds5y": 50,
+  "pl_bund_10y": 268,
+  "eur_irs": {
+   "1": 2.75,
+   "2": 2.84,
+   "3": 2.85,
+   "4": 2.85,
+   "5": 2.88,
+   "8": 2.99,
+   "10": 3.08
+  },
+  "usd_irs": {
+   "1": 4.03,
+   "2": 4.06,
+   "3": 4.03,
+   "4": 4.03,
+   "5": 4.06,
+   "8": 4.2,
+   "10": 4.27
+  },
+  "eurpln_close": 4.2373,
+  "eurpln_session": {
+   "min": 4.2362,
+   "max": 4.2407,
+   "open": 4.2399,
+   "close": 4.2373,
+   "fixing": 4.2386
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260512085345/download?id=169421&lang=pl_PL",
+   "created": "2026-05-12T06:42:41Z",
+   "upload": "url time 2026-05-12 08:53:45",
+   "header_date": "11.05.2026",
+   "fx_header_date": "11.05.2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260512/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-12 06:34",
+   "columns": [
+    "12.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 4.52,
+     "y3": null,
+     "y5": 5.31,
+     "y10": 5.8,
+     "d1": null,
+     "2Y": [
+      4.52,
+      4.46,
+      4.64,
+      4.16,
+      3.48,
+      4.59
+     ],
+     "5Y": [
+      5.31,
+      5.2,
+      5.41,
+      4.87,
+      4.32,
+      4.98
+     ],
+     "10Y": [
+      5.8,
+      5.69,
+      5.79,
+      5.51,
+      5.04,
+      5.38
+     ],
+     "c_close": [
+      4.52,
+      5.31,
+      5.8
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "13:52:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": null,
+     "y3": 5.66,
+     "y5": 5.56,
+     "y10": 5.68,
+     "d1": null,
+     "3Y": [
+      5.66,
+      5.66,
+      5.93,
+      6.54,
+      6.13,
+      6.29
+     ],
+     "5Y": [
+      5.56,
+      5.56,
+      5.89,
+      6.5,
+      6.28,
+      6.4
+     ],
+     "10Y": [
+      5.68,
+      5.68,
+      5.99,
+      6.55,
+      6.56,
+      6.88
+     ],
+     "c_close": [
+      5.66,
+      5.56,
+      5.68
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 13:52:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col); the 13:52 snapshot and the 11 May close equal the 8 May close in all three tenors (5.66/5.56/5.68)"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": [
+      "17:59:00",
+      "17:59:00",
+      "17:41:00"
+     ],
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 4.07,
+     "y3": null,
+     "y5": 4.43,
+     "y10": 4.89,
+     "d1": null,
+     "2Y": [
+      4.07,
+      3.98,
+      4.1,
+      4.03,
+      3.46,
+      3.42
+     ],
+     "5Y": [
+      4.43,
+      4.35,
+      4.46,
+      4.29,
+      3.87,
+      3.63
+     ],
+     "10Y": [
+      4.89,
+      4.8,
+      4.91,
+      4.77,
+      4.48,
+      4.1
+     ],
+     "c_close": [
+      4.07,
+      4.43,
+      4.89
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) ['17:59:00', '17:59:00', '17:41:00'] later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "16:32:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 38.14,
+     "y3": null,
+     "y5": 34.87,
+     "y10": 31.36,
+     "d1": null,
+     "2Y": [
+      38.14,
+      37.19,
+      37.67,
+      36.65,
+      33.17,
+      42.49
+     ],
+     "5Y": [
+      34.87,
+      34.66,
+      35.29,
+      33.71,
+      30.77,
+      36.22
+     ],
+     "10Y": [
+      31.36,
+      31.17,
+      31.72,
+      29.67,
+      28.13,
+      32.15
+     ],
+     "c_close": [
+      38.14,
+      34.87,
+      31.36
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 16:32:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col, the 20 May edition 5D col)"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.65,
+     "y3": null,
+     "y5": 2.78,
+     "y10": 3.25,
+     "d1": null,
+     "2Y": [
+      2.65,
+      2.6,
+      2.75,
+      2.62,
+      2.09,
+      1.87
+     ],
+     "5Y": [
+      2.78,
+      2.73,
+      2.86,
+      2.79,
+      2.42,
+      2.32
+     ],
+     "10Y": [
+      3.25,
+      3.21,
+      3.32,
+      3.29,
+      3.07,
+      2.9
+     ],
+     "c_close": [
+      2.65,
+      2.78,
+      3.25
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.81,
+     "y3": null,
+     "y5": 3.16,
+     "y10": 3.78,
+     "d1": null,
+     "2Y": [
+      2.81,
+      2.76,
+      2.93,
+      2.81,
+      2.2,
+      2.04
+     ],
+     "5Y": [
+      3.16,
+      3.11,
+      3.31,
+      3.21,
+      2.69,
+      2.77
+     ],
+     "10Y": [
+      3.78,
+      3.73,
+      3.94,
+      3.84,
+      3.4,
+      3.61
+     ],
+     "c_close": [
+      2.81,
+      3.16,
+      3.78
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.66,
+     "y3": null,
+     "y5": 2.89,
+     "y10": 3.4,
+     "d1": null,
+     "2Y": [
+      2.66,
+      2.61,
+      2.76,
+      2.67,
+      2.1,
+      1.83
+     ],
+     "5Y": [
+      2.89,
+      2.85,
+      3.0,
+      2.92,
+      2.55,
+      2.33
+     ],
+     "10Y": [
+      3.4,
+      3.36,
+      3.51,
+      3.46,
+      3.15,
+      3.08
+     ],
+     "c_close": [
+      2.66,
+      2.89,
+      3.4
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.72,
+     "y3": null,
+     "y5": 2.95,
+     "y10": 3.46,
+     "d1": null,
+     "2Y": [
+      2.72,
+      2.67,
+      2.82,
+      2.72,
+      2.18,
+      1.98
+     ],
+     "5Y": [
+      2.95,
+      2.91,
+      3.05,
+      2.99,
+      2.51,
+      2.45
+     ],
+     "10Y": [
+      3.46,
+      3.42,
+      3.57,
+      3.52,
+      3.16,
+      3.21
+     ],
+     "c_close": [
+      2.72,
+      2.95,
+      3.46
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.65,
+     "y3": null,
+     "y5": 2.75,
+     "y10": 3.04,
+     "d1": null,
+     "2Y": [
+      2.65,
+      2.6,
+      2.73,
+      2.6,
+      2.07,
+      1.79
+     ],
+     "5Y": [
+      2.75,
+      2.71,
+      2.81,
+      2.74,
+      2.38,
+      2.1
+     ],
+     "10Y": [
+      3.04,
+      3.01,
+      3.09,
+      3.06,
+      2.79,
+      2.56
+     ],
+     "c_close": [
+      2.65,
+      2.75,
+      3.04
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 2.79,
+     "y3": null,
+     "y5": 3.07,
+     "y10": 3.66,
+     "d1": null,
+     "2Y": [
+      2.79,
+      2.75,
+      2.89,
+      2.77,
+      2.18,
+      1.93
+     ],
+     "5Y": [
+      3.07,
+      3.03,
+      3.18,
+      3.1,
+      2.68,
+      2.49
+     ],
+     "10Y": [
+      3.66,
+      3.62,
+      3.76,
+      3.71,
+      3.38,
+      3.27
+     ],
+     "c_close": [
+      2.79,
+      3.07,
+      3.66
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "17:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 4.46,
+     "y3": null,
+     "y5": 4.55,
+     "y10": 5.0,
+     "d1": null,
+     "2Y": [
+      4.46,
+      4.38,
+      4.42,
+      4.26,
+      3.62,
+      3.91
+     ],
+     "5Y": [
+      4.55,
+      4.46,
+      4.49,
+      4.36,
+      3.88,
+      4.03
+     ],
+     "10Y": [
+      5.0,
+      4.91,
+      4.96,
+      4.84,
+      4.48,
+      4.57
+     ],
+     "c_close": [
+      4.46,
+      4.55,
+      5.0
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 17:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); equals the C close seen later (the 13 May edition 1D col, the 19 May edition 5D col)"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "09:59:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 1.39,
+     "y3": null,
+     "y5": 1.89,
+     "y10": 2.52,
+     "d1": null,
+     "2Y": [
+      1.39,
+      1.38,
+      1.39,
+      1.41,
+      1.31,
+      0.65
+     ],
+     "5Y": [
+      1.89,
+      1.86,
+      1.89,
+      1.86,
+      1.71,
+      0.89
+     ],
+     "10Y": [
+      2.52,
+      2.48,
+      2.52,
+      2.44,
+      2.24,
+      1.37
+     ],
+     "c_close": [
+      1.39,
+      1.89,
+      2.52
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 09:59:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); 09:59 CEST = 16:59 JST, after the JGB close; equals the 11 May close seen later (the 18 May edition 5D col)"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "18:01:00",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": true,
+     "y2": 3.92,
+     "y3": null,
+     "y5": 4.04,
+     "y10": 4.39,
+     "d1": null,
+     "2Y": [
+      3.92,
+      3.88,
+      3.95,
+      3.8,
+      3.51,
+      3.89
+     ],
+     "5Y": [
+      4.04,
+      4.0,
+      4.09,
+      3.94,
+      3.74,
+      4.0
+     ],
+     "10Y": [
+      4.39,
+      4.35,
+      4.44,
+      4.32,
+      4.17,
+      4.38
+     ],
+     "c_close": [
+      3.92,
+      4.04,
+      4.39
+     ],
+     "c_close_src": "current column (intraday snapshot on C)",
+     "note": "time stamp(s) 18:01:00 later than the 06:34 publication time, so they refer to the evening snapshot of C (intraday on C, not necessarily the close); US at 18:01 CEST (12:01 EDT) is mid-session NY, NOT the US close. The 11 May US close seen later (the 18 May edition 5D col) is 3.95/4.07/4.41, 3/3/2bp above this snapshot"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260511/dzien-na-fxfi-zloty-w-przedziale-422-425eur-z-ryzykiem-oslabienia",
+   "time": "2026-05-11 14:10",
+   "quote_time": "14:03",
+   "y2": 4.5,
+   "y5": 5.29,
+   "y10": 5.78,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": 5.78
+   },
+   "eurpln": 4.24,
+   "usdpln": 3.6032,
+   "note": "EARLY PIECE: quotes 14:03 (published 14:10); 2 FX/FI pieces on C (09:15, 14:10); the next piece (12.05 09:57) uses \"poniedziałek 14:03\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. y10/bonds.DS1035 as labelled (DS1035); the row appears to track the new 10Y DS0436 from 7 May (+7bp jump on 7 May while the LSEG DS1035 fell 2bp and 2Y/5Y fell); see the R 2026-05-08 flag. Bloomberg PL C close 4.52/5.31/5.80; Erste EUR/PLN close 4.2373. Early piece (no later 11 May piece; the 12 May 09:57 piece uses \"poniedziałek 14:03\" as its previous column); its 2Y/5Y/10Y are 2/2/2bp below the Bloomberg PL C close, so not flagged"
+  }
+ },
+ "2026-05-13": {
+  "C": "2026-05-12",
+  "irs": {
+   "1": 4.32,
+   "2": 4.49,
+   "3": 4.52,
+   "4": 4.56,
+   "5": 4.59,
+   "7": null,
+   "8": 4.71,
+   "10": 4.8
+  },
+  "fra": {
+   "1x4": 3.92,
+   "3x6": 4.1,
+   "6x9": 4.42,
+   "9x12": 4.66,
+   "3x9": 4.2,
+   "6x12": 4.51
+  },
+  "cds5y": 50,
+  "pl_bund_10y": 269,
+  "eur_irs": {
+   "1": 2.78,
+   "2": 2.89,
+   "3": 2.9,
+   "4": 2.91,
+   "5": 2.94,
+   "8": 3.05,
+   "10": 3.13
+  },
+  "usd_irs": {
+   "1": 4.05,
+   "2": 4.09,
+   "3": 4.08,
+   "4": 4.08,
+   "5": 4.1,
+   "8": 4.24,
+   "10": 4.31
+  },
+  "eurpln_close": 4.2522,
+  "eurpln_session": {
+   "min": 4.2375,
+   "max": 4.2535,
+   "open": 4.239,
+   "close": 4.2522,
+   "fixing": 4.2478
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260513085744/download?id=169422&lang=pl_PL",
+   "created": "2026-05-13T06:36:33Z",
+   "upload": "url time 2026-05-13 08:57:44",
+   "header_date": "12.05.2026",
+   "fx_header_date": "12.05.2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "flags": [
+   "PAP close note: 10Y benchmark change. From the 12 May morning piece (09:57) the PAP FX/FI table quotes DS0436 (\"*nowy benchmark\") instead of DS1035. pap_close.y10 = DS0436 5.86 (16:22); bonds.DS1035 = null. The 11 May y10 (5.78, labelled DS1035) is shown unchanged under the DS0436 label in the 12 May tables, and the row already jumped +7bp on 7 May; Bloomberg PL 10Y generic 5.80 (11 May) -> 5.88 (12 May) shows no further jump, consistent with a roll on 7 May (see R 2026-05-08)."
+  ],
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260513/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-13 06:41",
+   "columns": [
+    "13.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.55,
+     "y3": null,
+     "y5": 5.39,
+     "y10": 5.88,
+     "d1": null,
+     "2Y": [
+      4.55,
+      4.52,
+      4.63,
+      4.16,
+      3.47,
+      4.62
+     ],
+     "5Y": [
+      5.39,
+      5.31,
+      5.42,
+      4.87,
+      4.28,
+      5.02
+     ],
+     "10Y": [
+      5.88,
+      5.8,
+      5.8,
+      5.51,
+      4.97,
+      5.44
+     ],
+     "c_close": [
+      4.55,
+      5.39,
+      5.88
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.77,
+     "y5": 5.68,
+     "y10": 5.77,
+     "d1": null,
+     "3Y": [
+      5.77,
+      5.66,
+      5.95,
+      6.54,
+      6.11,
+      6.35
+     ],
+     "5Y": [
+      5.68,
+      5.56,
+      5.91,
+      6.5,
+      6.23,
+      6.45
+     ],
+     "10Y": [
+      5.77,
+      5.68,
+      6.02,
+      6.55,
+      6.55,
+      6.92
+     ],
+     "c_close": [
+      5.77,
+      5.68,
+      5.77
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.11,
+     "y3": null,
+     "y5": 4.51,
+     "y10": 4.96,
+     "d1": null,
+     "2Y": [
+      4.11,
+      4.07,
+      4.11,
+      4.03,
+      3.44,
+      3.46
+     ],
+     "5Y": [
+      4.51,
+      4.43,
+      4.48,
+      4.29,
+      3.84,
+      3.69
+     ],
+     "10Y": [
+      4.96,
+      4.89,
+      4.92,
+      4.77,
+      4.43,
+      4.16
+     ],
+     "c_close": [
+      4.11,
+      4.51,
+      4.96
+     ],
+     "c_close_src": "current column"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 38.38,
+     "y3": null,
+     "y5": 35.05,
+     "y10": 31.78,
+     "d1": null,
+     "2Y": [
+      38.38,
+      38.14,
+      37.67,
+      36.65,
+      33.04,
+      42.42
+     ],
+     "5Y": [
+      35.05,
+      34.87,
+      35.41,
+      33.71,
+      30.63,
+      36.21
+     ],
+     "10Y": [
+      31.78,
+      31.36,
+      31.8,
+      29.67,
+      27.95,
+      31.82
+     ],
+     "c_close": [
+      38.38,
+      35.05,
+      31.78
+     ],
+     "c_close_src": "current column"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.72,
+     "y3": null,
+     "y5": 2.85,
+     "y10": 3.31,
+     "d1": null,
+     "2Y": [
+      2.72,
+      2.65,
+      2.69,
+      2.62,
+      2.08,
+      1.99
+     ],
+     "5Y": [
+      2.85,
+      2.78,
+      2.8,
+      2.79,
+      2.4,
+      2.42
+     ],
+     "10Y": [
+      3.31,
+      3.25,
+      3.28,
+      3.29,
+      3.05,
+      2.96
+     ],
+     "c_close": [
+      2.72,
+      2.85,
+      3.31
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.88,
+     "y3": null,
+     "y5": 3.25,
+     "y10": 3.87,
+     "d1": null,
+     "2Y": [
+      2.88,
+      2.81,
+      2.86,
+      2.81,
+      2.19,
+      2.15
+     ],
+     "5Y": [
+      3.25,
+      3.16,
+      3.24,
+      3.21,
+      2.68,
+      2.86
+     ],
+     "10Y": [
+      3.87,
+      3.78,
+      3.86,
+      3.84,
+      3.38,
+      3.68
+     ],
+     "c_close": [
+      2.88,
+      3.25,
+      3.87
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.74,
+     "y3": null,
+     "y5": 2.97,
+     "y10": 3.48,
+     "d1": null,
+     "2Y": [
+      2.74,
+      2.66,
+      2.7,
+      2.67,
+      2.09,
+      1.94
+     ],
+     "5Y": [
+      2.97,
+      2.89,
+      2.94,
+      2.92,
+      2.54,
+      2.43
+     ],
+     "10Y": [
+      3.48,
+      3.4,
+      3.45,
+      3.46,
+      3.14,
+      3.16
+     ],
+     "c_close": [
+      2.74,
+      2.97,
+      3.48
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.79,
+     "y3": null,
+     "y5": 3.02,
+     "y10": 3.53,
+     "d1": null,
+     "2Y": [
+      2.79,
+      2.72,
+      2.76,
+      2.72,
+      2.18,
+      2.09
+     ],
+     "5Y": [
+      3.02,
+      2.95,
+      2.99,
+      2.99,
+      2.5,
+      2.54
+     ],
+     "10Y": [
+      3.53,
+      3.46,
+      3.51,
+      3.52,
+      3.15,
+      3.27
+     ],
+     "c_close": [
+      2.79,
+      3.02,
+      3.53
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.71,
+     "y3": null,
+     "y5": 2.82,
+     "y10": 3.1,
+     "d1": null,
+     "2Y": [
+      2.71,
+      2.65,
+      2.68,
+      2.6,
+      2.06,
+      1.91
+     ],
+     "5Y": [
+      2.82,
+      2.75,
+      2.77,
+      2.74,
+      2.37,
+      2.22
+     ],
+     "10Y": [
+      3.1,
+      3.04,
+      3.06,
+      3.06,
+      2.78,
+      2.65
+     ],
+     "c_close": [
+      2.71,
+      2.82,
+      3.1
+     ],
+     "c_close_src": "current column"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.86,
+     "y3": null,
+     "y5": 3.16,
+     "y10": 3.74,
+     "d1": null,
+     "2Y": [
+      2.86,
+      2.79,
+      2.83,
+      2.77,
+      2.18,
+      2.05
+     ],
+     "5Y": [
+      3.16,
+      3.07,
+      3.12,
+      3.1,
+      2.67,
+      2.59
+     ],
+     "10Y": [
+      3.74,
+      3.66,
+      3.71,
+      3.71,
+      3.37,
+      3.33
+     ],
+     "c_close": [
+      2.86,
+      3.16,
+      3.74
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "12.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.54,
+     "y3": null,
+     "y5": 4.64,
+     "y10": 5.1,
+     "d1": null,
+     "2Y": [
+      4.54,
+      4.46,
+      4.52,
+      4.26,
+      3.6,
+      4.0
+     ],
+     "5Y": [
+      4.64,
+      4.55,
+      4.59,
+      4.36,
+      3.86,
+      4.13
+     ],
+     "10Y": [
+      5.1,
+      5.0,
+      5.06,
+      4.84,
+      4.45,
+      4.64
+     ],
+     "c_close": [
+      4.54,
+      4.64,
+      5.1
+     ],
+     "c_close_src": "current column"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "06:39:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.4,
+     "y3": null,
+     "y5": 1.93,
+     "y10": 2.57,
+     "d1": {
+      "y2": 1.4,
+      "y5": 1.92,
+      "y10": 2.56
+     },
+     "2Y": [
+      1.4,
+      1.4,
+      1.39,
+      1.4,
+      1.29,
+      0.72
+     ],
+     "5Y": [
+      1.93,
+      1.92,
+      1.89,
+      1.87,
+      1.69,
+      0.98
+     ],
+     "10Y": [
+      2.57,
+      2.56,
+      2.52,
+      2.47,
+      2.23,
+      1.44
+     ],
+     "c_close": [
+      1.4,
+      1.92,
+      2.56
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:39:00 on morning of R (live, after C); current col unusable, use d1"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "06:39:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.99,
+     "y3": null,
+     "y5": 4.12,
+     "y10": 4.46,
+     "d1": {
+      "y2": 3.99,
+      "y5": 4.13,
+      "y10": 4.46
+     },
+     "2Y": [
+      3.99,
+      3.99,
+      3.87,
+      3.77,
+      3.41,
+      4.0
+     ],
+     "5Y": [
+      4.12,
+      4.13,
+      4.0,
+      3.91,
+      3.6,
+      4.1
+     ],
+     "10Y": [
+      4.46,
+      4.46,
+      4.35,
+      4.29,
+      4.05,
+      4.47
+     ],
+     "c_close": [
+      3.99,
+      4.13,
+      4.46
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:39:00 on morning of R (live, after C); current col unusable, use d1"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260512/dzien-na-fxfi-zloty-nieco-slabszy-wobec-euro-i-dolara",
+   "time": "2026-05-12 16:34",
+   "quote_time": "16:22",
+   "y2": 4.53,
+   "y5": 5.38,
+   "y10": 5.86,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": null
+   },
+   "eurpln": 4.249,
+   "usdpln": 3.6219,
+   "note": "Quotes 16:22 (published 16:34); 2 FX/FI pieces on C (09:57, 16:34); the next piece (13.05 09:21) uses \"wtorek 16:22\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. y10 = DS0436 (new 10Y benchmark: the 12 May 09:57 piece marks it \"*nowy benchmark\"); bonds.DS1035 = null because DS1035 is no longer quoted. PAP shows the 11 May quotes under the DS0436 label unchanged (14:03 5.78), so its 10Y row appears to have tracked DS0436 since 7 May (see R 2026-05-08). Bloomberg PL C close 4.55/5.39/5.88; Erste EUR/PLN close 4.2522"
+  }
+ },
+ "2026-05-14": {
+  "C": "2026-05-13",
+  "irs": {
+   "1": 4.33,
+   "2": 4.51,
+   "3": 4.56,
+   "4": 4.59,
+   "5": 4.63,
+   "7": null,
+   "8": 4.75,
+   "10": 4.84
+  },
+  "fra": {
+   "1x4": 3.9,
+   "3x6": 4.09,
+   "6x9": 4.43,
+   "9x12": 4.71,
+   "3x9": 4.21,
+   "6x12": 4.53
+  },
+  "cds5y": 50,
+  "pl_bund_10y": 273,
+  "eur_irs": {
+   "1": 2.79,
+   "2": 2.89,
+   "3": 2.89,
+   "4": 2.91,
+   "5": 2.93,
+   "8": 3.03,
+   "10": 3.11
+  },
+  "usd_irs": {
+   "1": 4.05,
+   "2": 4.09,
+   "3": 4.08,
+   "4": 4.07,
+   "5": 4.1,
+   "8": 4.24,
+   "10": 4.32
+  },
+  "eurpln_close": 4.2465,
+  "eurpln_session": {
+   "min": 4.245,
+   "max": 4.2538,
+   "open": 4.2517,
+   "close": 4.2465,
+   "fixing": 4.2524
+  },
+  "irs_src": {
+   "url": "https://www.erste.pl/regulation_file_server/time20260514091240/download?id=169425&lang=pl_PL",
+   "created": "2026-05-14T06:53:18Z",
+   "upload": "url time 2026-05-14 09:12:40",
+   "header_date": "13/05/2026",
+   "fx_header_date": "13/05/2026",
+   "side": "bid",
+   "side_note": "footnote: \"Informacje odnoszą się do stawek kupna na rynku międzybankowym na koniec dnia\" (bid, interbank, end of day); source LSEG Datastream",
+   "publisher": "Erste Bank Polska (ex-Santander) Codziennik"
+  },
+  "irs_gap_note": "IRS 7Y: null. The Erste table has only 1,2,3,4,5,8,10Y for PL/US/EZ; no 7Y is published.",
+  "pap_table": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260514/rentownosci-obligacji-wybranych-panstw-tabela",
+   "published": "2026-05-14 06:33",
+   "columns": [
+    "14.05.2026",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "array_order": [
+    "current",
+    "1D",
+    "5D",
+    "1M",
+    "3M",
+    "12M"
+   ],
+   "rows": {
+    "PL": {
+     "name_pl": "Polska",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.62,
+     "y3": null,
+     "y5": 5.43,
+     "y10": 5.92,
+     "d1": null,
+     "2Y": [
+      4.62,
+      4.55,
+      4.48,
+      4.26,
+      3.47,
+      4.63
+     ],
+     "5Y": [
+      5.43,
+      5.39,
+      5.2,
+      4.92,
+      4.26,
+      5.02
+     ],
+     "10Y": [
+      5.92,
+      5.88,
+      5.6,
+      5.54,
+      4.94,
+      5.43
+     ],
+     "c_close": [
+      4.62,
+      5.43,
+      5.92
+     ],
+     "c_close_src": "current column"
+    },
+    "HU": {
+     "name_pl": "Węgry",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": null,
+     "y3": 5.63,
+     "y5": 5.57,
+     "y10": 5.71,
+     "d1": null,
+     "3Y": [
+      5.63,
+      5.77,
+      5.87,
+      6.25,
+      6.11,
+      6.36
+     ],
+     "5Y": [
+      5.57,
+      5.68,
+      5.79,
+      6.2,
+      6.24,
+      6.45
+     ],
+     "10Y": [
+      5.71,
+      5.77,
+      5.9,
+      6.23,
+      6.56,
+      6.92
+     ],
+     "c_close": [
+      5.63,
+      5.57,
+      5.71
+     ],
+     "c_close_src": "current column"
+    },
+    "CZ": {
+     "name_pl": "Czechy",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.1,
+     "y3": null,
+     "y5": 4.51,
+     "y10": 4.95,
+     "d1": null,
+     "2Y": [
+      4.1,
+      4.11,
+      3.99,
+      3.99,
+      3.42,
+      3.47
+     ],
+     "5Y": [
+      4.51,
+      4.51,
+      4.39,
+      4.29,
+      3.82,
+      3.72
+     ],
+     "10Y": [
+      4.95,
+      4.96,
+      4.82,
+      4.79,
+      4.4,
+      4.23
+     ],
+     "c_close": [
+      4.1,
+      4.51,
+      4.95
+     ],
+     "c_close_src": "current column"
+    },
+    "TR": {
+     "name_pl": "Turcja",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 38.74,
+     "y3": null,
+     "y5": 35.14,
+     "y10": 31.99,
+     "d1": null,
+     "2Y": [
+      38.74,
+      38.38,
+      37.53,
+      37.24,
+      33.12,
+      42.42
+     ],
+     "5Y": [
+      35.14,
+      35.05,
+      34.5,
+      34.15,
+      30.57,
+      36.17
+     ],
+     "10Y": [
+      31.99,
+      31.78,
+      31.09,
+      30.24,
+      27.89,
+      31.9
+     ],
+     "c_close": [
+      38.74,
+      35.14,
+      31.99
+     ],
+     "c_close_src": "current column"
+    },
+    "IE": {
+     "name_pl": "Irlandia",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.73,
+     "y3": null,
+     "y5": 2.85,
+     "y10": 3.31,
+     "d1": null,
+     "2Y": [
+      2.73,
+      2.72,
+      2.57,
+      2.66,
+      2.07,
+      1.96
+     ],
+     "5Y": [
+      2.85,
+      2.85,
+      2.71,
+      2.82,
+      2.38,
+      2.43
+     ],
+     "10Y": [
+      3.31,
+      3.31,
+      3.21,
+      3.32,
+      3.03,
+      2.98
+     ],
+     "c_close": [
+      2.73,
+      2.85,
+      3.31
+     ],
+     "c_close_src": "current column"
+    },
+    "IT": {
+     "name_pl": "Włochy",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.88,
+     "y3": null,
+     "y5": 3.23,
+     "y10": 3.85,
+     "d1": null,
+     "2Y": [
+      2.88,
+      2.88,
+      2.73,
+      2.85,
+      2.17,
+      2.17
+     ],
+     "5Y": [
+      3.23,
+      3.25,
+      3.11,
+      3.26,
+      2.66,
+      2.88
+     ],
+     "10Y": [
+      3.85,
+      3.87,
+      3.75,
+      3.89,
+      3.36,
+      3.7
+     ],
+     "c_close": [
+      2.88,
+      3.23,
+      3.85
+     ],
+     "c_close_src": "current column"
+    },
+    "PT": {
+     "name_pl": "Portugalia",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.72,
+     "y3": null,
+     "y5": 2.96,
+     "y10": 3.46,
+     "d1": null,
+     "2Y": [
+      2.72,
+      2.74,
+      2.59,
+      2.71,
+      2.08,
+      1.97
+     ],
+     "5Y": [
+      2.96,
+      2.97,
+      2.84,
+      2.97,
+      2.52,
+      2.46
+     ],
+     "10Y": [
+      3.46,
+      3.48,
+      3.36,
+      3.5,
+      3.12,
+      3.19
+     ],
+     "c_close": [
+      2.72,
+      2.96,
+      3.46
+     ],
+     "c_close_src": "current column"
+    },
+    "ES": {
+     "name_pl": "Hiszpania",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.77,
+     "y3": null,
+     "y5": 3.01,
+     "y10": 3.52,
+     "d1": null,
+     "2Y": [
+      2.77,
+      2.79,
+      2.64,
+      2.77,
+      2.16,
+      2.11
+     ],
+     "5Y": [
+      3.01,
+      3.02,
+      2.89,
+      3.03,
+      2.48,
+      2.56
+     ],
+     "10Y": [
+      3.52,
+      3.53,
+      3.43,
+      3.55,
+      3.13,
+      3.3
+     ],
+     "c_close": [
+      2.77,
+      3.01,
+      3.52
+     ],
+     "c_close_src": "current column"
+    },
+    "DE": {
+     "name_pl": "Niemcy",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.71,
+     "y3": null,
+     "y5": 2.82,
+     "y10": 3.1,
+     "d1": null,
+     "2Y": [
+      2.71,
+      2.71,
+      2.57,
+      2.65,
+      2.04,
+      1.94
+     ],
+     "5Y": [
+      2.82,
+      2.82,
+      2.69,
+      2.79,
+      2.34,
+      2.25
+     ],
+     "10Y": [
+      3.1,
+      3.1,
+      3.0,
+      3.09,
+      2.76,
+      2.68
+     ],
+     "c_close": [
+      2.71,
+      2.82,
+      3.1
+     ],
+     "c_close_src": "current column",
+     "note": "all three tenors unchanged vs the 12 May close"
+    },
+    "FR": {
+     "name_pl": "Francja",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 2.85,
+     "y3": null,
+     "y5": 3.15,
+     "y10": 3.73,
+     "d1": null,
+     "2Y": [
+      2.85,
+      2.86,
+      2.72,
+      2.81,
+      2.16,
+      2.06
+     ],
+     "5Y": [
+      3.15,
+      3.16,
+      3.02,
+      3.15,
+      2.64,
+      2.61
+     ],
+     "10Y": [
+      3.73,
+      3.74,
+      3.62,
+      3.75,
+      3.34,
+      3.36
+     ],
+     "c_close": [
+      2.85,
+      3.15,
+      3.73
+     ],
+     "c_close_src": "current column"
+    },
+    "UK": {
+     "name_pl": "Wielka Brytania",
+     "stamp": "13.05.2026",
+     "live": false,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 4.49,
+     "y3": null,
+     "y5": 4.6,
+     "y10": 5.07,
+     "d1": null,
+     "2Y": [
+      4.49,
+      4.54,
+      4.38,
+      4.32,
+      3.59,
+      3.98
+     ],
+     "5Y": [
+      4.6,
+      4.64,
+      4.48,
+      4.4,
+      3.83,
+      4.13
+     ],
+     "10Y": [
+      5.07,
+      5.1,
+      4.94,
+      4.87,
+      4.42,
+      4.67
+     ],
+     "c_close": [
+      4.49,
+      4.6,
+      5.07
+     ],
+     "c_close_src": "current column"
+    },
+    "JP": {
+     "name_pl": "Japonia",
+     "stamp": "06:30:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 1.4,
+     "y3": null,
+     "y5": 1.94,
+     "y10": 2.62,
+     "d1": {
+      "y2": 1.4,
+      "y5": 1.93,
+      "y10": 2.59
+     },
+     "2Y": [
+      1.4,
+      1.4,
+      1.37,
+      1.38,
+      1.29,
+      0.71
+     ],
+     "5Y": [
+      1.94,
+      1.93,
+      1.86,
+      1.84,
+      1.69,
+      0.98
+     ],
+     "10Y": [
+      2.62,
+      2.59,
+      2.48,
+      2.42,
+      2.23,
+      1.46
+     ],
+     "c_close": [
+      1.4,
+      1.93,
+      2.59
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:30:00 on morning of R (live, after C); current col unusable, use d1"
+    },
+    "US": {
+     "name_pl": "USA",
+     "stamp": "06:30:00",
+     "live": true,
+     "after_C": false,
+     "intraday_on_C": false,
+     "y2": 3.97,
+     "y3": null,
+     "y5": 4.11,
+     "y10": 4.46,
+     "d1": {
+      "y2": 3.98,
+      "y5": 4.12,
+      "y10": 4.47
+     },
+     "2Y": [
+      3.97,
+      3.98,
+      3.91,
+      3.74,
+      3.41,
+      4.05
+     ],
+     "5Y": [
+      4.11,
+      4.12,
+      4.04,
+      3.87,
+      3.6,
+      4.17
+     ],
+     "10Y": [
+      4.46,
+      4.47,
+      4.39,
+      4.25,
+      4.05,
+      4.54
+     ],
+     "c_close": [
+      3.98,
+      4.12,
+      4.47
+     ],
+     "c_close_src": "d1 column of this edition",
+     "note": "time stamp 06:30:00 on morning of R (live, after C); current col unusable, use d1"
+    }
+   }
+  },
+  "pap_close": {
+   "url": "https://strefainwestorow.pl/wiadomosci/20260513/dzien-na-fxfi-zloty-stabilny-rentownosci-spw-w-gore",
+   "time": "2026-05-13 16:57",
+   "quote_time": "16:40",
+   "y2": 4.59,
+   "y5": 5.41,
+   "y10": 5.9,
+   "bonds": {
+    "OK0128": null,
+    "PS0131": null,
+    "DS1035": null
+   },
+   "eurpln": 4.2501,
+   "usdpln": 3.6301,
+   "note": "Quotes 16:40 (published 16:57); 2 FX/FI pieces on C (09:21, 16:57); the next piece (14.05 09:49) uses \"środa 16:40\" as its previous-session column. y2 = WS0428 (2Y benchmark since 26 Mar); bonds.OK0128 = null because OK0128 is no longer quoted (key set of bonds kept as in the earlier schema). y5 = PS0731 (5Y benchmark since 28 Apr); bonds.PS0131 = null because PS0131 is no longer quoted. y10 = DS0436 (new 10Y benchmark: the 12 May 09:57 piece marks it \"*nowy benchmark\"); bonds.DS1035 = null because DS1035 is no longer quoted. PAP shows the 11 May quotes under the DS0436 label unchanged (14:03 5.78), so its 10Y row appears to have tracked DS0436 since 7 May (see R 2026-05-08). Bloomberg PL C close 4.62/5.43/5.92; Erste EUR/PLN close 4.2465"
+  }
+ }
+}
